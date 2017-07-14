@@ -28,8 +28,21 @@
       }
     ],
     "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
+    "externalReference": [    ],
+    "globalMetadata": {
+    
+     "apiPlatform": "dotnet",
+      "author": "KevinAsgari",
+
+      "ms.author": "kevinasg",
+
+      "ms.topic": "reference",
+
+      "ms.prod": "windows",
+
+      "ms.devlang": "dotnet"
+
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "XboxLive-API"
