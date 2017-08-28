@@ -1,0 +1,97 @@
+<Type Name="TournamentGameResultSource" FullName="Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource">
+  <TypeSignature Language="C#" Value="public enum TournamentGameResultSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentGameResultSource extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines values used to indicate the source for a tournament game state.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Adjusted">
+      <MemberSignature Language="C#" Value="Adjusted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource Adjusted = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Adjusted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Game result is adjusted by tournament administrator.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Arbitration">
+      <MemberSignature Language="C#" Value="Arbitration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource Arbitration = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Arbitration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Game result source is from client arbitration submit.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+No game result source .
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Server">
+      <MemberSignature Language="C#" Value="Server" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource Server = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Server" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Game result is determined by game servers.
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

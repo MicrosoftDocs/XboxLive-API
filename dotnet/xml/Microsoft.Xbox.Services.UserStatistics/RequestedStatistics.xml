@@ -1,0 +1,60 @@
+<Type Name="RequestedStatistics" FullName="Microsoft.Xbox.Services.UserStatistics.RequestedStatistics">
+  <TypeSignature Language="C#" Value="public sealed class RequestedStatistics" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RequestedStatistics extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.UserStatistics.RequestedStatistics" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.UserStatistics.__IRequestedStatisticsFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Contains requested statistics.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestedStatistics (string serviceConfigurationId, Windows.Foundation.Collections.IVectorView&lt;string&gt; statistics);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serviceConfigurationId, class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; statistics) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.RequestedStatistics.#ctor(System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="statistics" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="statistics">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,107 @@
+<Type Name="XboxLiveUser" FullName="Microsoft.Xbox.Services.System.XboxLiveUser">
+  <TypeSignature Language="C#" Value="public sealed class XboxLiveUser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveUser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.XboxLiveUser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.System.__IXboxLiveUserFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.System.__IXboxLiveUserStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a player that is associated with a device or a controller.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XboxLiveUser ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.XboxLiveUser.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>
+Creates a new instance of XboxLiveUser for Single User Application.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XboxLiveUser (Windows.System.User systemUser);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.System.User systemUser) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.XboxLiveUser.#ctor(Windows.System.User)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="systemUser" Type="Windows.System.User" />
+      </Parameters>
+      <Docs>
+        <param name="systemUser">To be added.</param>
+        <summary>
+Creates a new instance of XboxLiveUser for Multi-User Application.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOutCompleted">
+      <MemberSignature Language="C#" Value="public static event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.System.SignOutCompletedEventArgs&gt; SignOutCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.System.SignOutCompletedEventArgs&gt; SignOutCompleted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.System.XboxLiveUser.SignOutCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.System.SignOutCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Event signaling that sign out has completed for a user. 
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

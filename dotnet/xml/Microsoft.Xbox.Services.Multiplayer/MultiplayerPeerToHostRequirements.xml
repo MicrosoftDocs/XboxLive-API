@@ -1,0 +1,42 @@
+<Type Name="MultiplayerPeerToHostRequirements" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerPeerToHostRequirements" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerPeerToHostRequirements extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Sets threshold requirements that apply to each connection between a host candidate and a session member. 
+</summary>
+    <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"peerToHostRequirements": {
+   "latencyMaximum": 250,
+   "bandwidthDownMinimum" : 100000,
+   "bandwidthUpMinimum" : 1000,
+   "hostSelectionMetric" : "bandwidthUp"
+},
+</code></example>
+  </Docs>
+  <Members />
+</Type>

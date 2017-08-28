@@ -1,0 +1,74 @@
+<Type Name="XboxLiveContextSettings" FullName="Microsoft.Xbox.Services.XboxLiveContextSettings">
+  <TypeSignature Language="C#" Value="public sealed class XboxLiveContextSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveContextSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveContextSettings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents settings for an HTTP call.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XboxLiveContextSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveContextSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceCallRouted">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs&gt; ServiceCallRouted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs&gt; ServiceCallRouted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.XboxLiveContextSettings.ServiceCallRouted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Registers for all service call notifications.  Event handlers will receive an XboxServiceCallRoutedEventArgs object.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

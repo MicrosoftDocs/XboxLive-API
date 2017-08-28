@@ -1,0 +1,31 @@
+<Type Name="PreferredColor" FullName="Microsoft.Xbox.Services.Social.Manager.PreferredColor">
+  <TypeSignature Language="C#" Value="public sealed class PreferredColor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PreferredColor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.PreferredColor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+The users preferred color scheme
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

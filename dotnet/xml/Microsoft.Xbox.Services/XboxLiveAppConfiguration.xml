@@ -1,0 +1,55 @@
+<Type Name="XboxLiveAppConfiguration" FullName="Microsoft.Xbox.Services.XboxLiveAppConfiguration">
+  <TypeSignature Language="C#" Value="public sealed class XboxLiveAppConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveAppConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveAppConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.__IXboxLiveAppConfigurationStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents the configuration of an Xbox Live application.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SingletonInstance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.XboxLiveAppConfiguration SingletonInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.XboxLiveAppConfiguration SingletonInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.SingletonInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.XboxLiveAppConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the global instance of XboxLiveAppConfiguration
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

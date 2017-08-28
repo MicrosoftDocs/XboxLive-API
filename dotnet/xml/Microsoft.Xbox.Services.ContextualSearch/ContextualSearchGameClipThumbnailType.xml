@@ -1,0 +1,71 @@
+<Type Name="ContextualSearchGameClipThumbnailType" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType">
+  <TypeSignature Language="C#" Value="public enum ContextualSearchGameClipThumbnailType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchGameClipThumbnailType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the type of thumbnail</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LargeThumbnail">
+      <MemberSignature Language="C#" Value="LargeThumbnail" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType LargeThumbnail = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType.LargeThumbnail" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a large thumbnail. Large is 754 pixels in height by 424 pixels in width.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Thumbnail type is not specified. This is an invalid value in most cases.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallThumbnail">
+      <MemberSignature Language="C#" Value="SmallThumbnail" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType SmallThumbnail = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType.SmallThumbnail" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a small thumbnail. Small is 370 pixels in height by 208 pixels in width.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

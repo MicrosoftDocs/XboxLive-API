@@ -1,0 +1,32 @@
+<Type Name="GetTokenAndSignatureResult" FullName="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult">
+  <TypeSignature Language="C#" Value="public sealed class GetTokenAndSignatureResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GetTokenAndSignatureResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Contains information about the authorization token and digital signature for an HTTP request by a user.
+This class is returned as the result of a call to XboxLiveUser.GetTokenAndSignatureAsync.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

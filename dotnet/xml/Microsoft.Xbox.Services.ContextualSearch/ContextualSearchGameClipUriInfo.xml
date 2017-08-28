@@ -1,0 +1,29 @@
+<Type Name="ContextualSearchGameClipUriInfo" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo">
+  <TypeSignature Language="C#" Value="public sealed class ContextualSearchGameClipUriInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchGameClipUriInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains information about a contextual search game clips uri info.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

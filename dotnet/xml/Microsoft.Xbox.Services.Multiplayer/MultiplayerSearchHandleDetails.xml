@@ -1,0 +1,31 @@
+<Type Name="MultiplayerSearchHandleDetails" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerSearchHandleDetails" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSearchHandleDetails extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a users current search handle, along with some details about the corresponding session.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

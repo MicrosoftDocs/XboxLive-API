@@ -1,0 +1,31 @@
+<Type Name="XboxUserProfile" FullName="Microsoft.Xbox.Services.Social.XboxUserProfile">
+  <TypeSignature Language="C#" Value="public sealed class XboxUserProfile" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxUserProfile extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.XboxUserProfile" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary> 
+Represents a user's Xbox Live profile.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

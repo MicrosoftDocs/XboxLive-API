@@ -1,0 +1,103 @@
+<Type Name="GameServerHostStatus" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus">
+  <TypeSignature Language="C#" Value="public enum GameServerHostStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GameServerHostStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines values that indicate the host state.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aborted">
+      <MemberSignature Language="C#" Value="Aborted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus Aborted = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus.Aborted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the cluster request was aborted. This will only be returned if "abortIfQueued" is set to true.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus Active = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the cluster request is active.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus Error = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the cluster request had an error.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Queued">
+      <MemberSignature Language="C#" Value="Queued" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus Queued = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus.Queued" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the cluster request is queued.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The fulfillment state is unknown.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

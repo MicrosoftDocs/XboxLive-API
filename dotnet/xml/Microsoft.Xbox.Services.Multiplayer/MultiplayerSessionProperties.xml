@@ -1,0 +1,70 @@
+<Type Name="MultiplayerSessionProperties" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents multiplayer session properties.
+</summary>
+    <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"properties": {
+       "system": {
+           "keywords": [
+               "hello"
+           ],
+           "turn": [
+               0
+           ],
+           "host": "99e4c701",
+           "initializationSucceeded": true,
+           "joinRestriction": "None",
+           "readRestriction": "None",
+           "serverConnectionStringCandidates": [
+               "west.azure.com",
+               "east.azure.com"
+           ],
+           "matchmaking": {
+               "clientResult": {
+                   "status": "Searching",
+                   "statusDetails": "Description",
+                   "typicalWait": 30,
+                   "targetSessionRef": {
+                       "scid": "1ECFDB89-36EB-4E59-8901-11F7393689AE",
+                       "templateName": "capture-the-flag",
+                       "name": "2D58F65F-0E3C-4F1F-8277-2BC9873FDB23"
+                   }
+               },
+               "targetSessionConstants": {},
+               "serverConnectionString": "west.azure.com"
+           },
+           "matchmakingResubmit": true
+       },
+       "custom": {}
+   },
+</code></example>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,51 @@
+<Type Name="UserStatisticsService" FullName="Microsoft.Xbox.Services.UserStatistics.UserStatisticsService">
+  <TypeSignature Language="C#" Value="public sealed class UserStatisticsService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UserStatisticsService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents an endpoint that you can use to access the user statistic service.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="StatisticChanged">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt; StatisticChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt; StatisticChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.StatisticChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Registers for statistic change notifications.  Event handlers receive a StatisticChangeEventArgs^ object.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

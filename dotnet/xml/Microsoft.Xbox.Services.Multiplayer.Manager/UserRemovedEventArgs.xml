@@ -1,0 +1,35 @@
+<Type Name="UserRemovedEventArgs" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.UserRemovedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class UserRemovedEventArgs : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UserRemovedEventArgs extends System.Object implements class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.UserRemovedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Notifies the title when a user was removed.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,55 @@
+<Type Name="ServiceCallLoggingConfig" FullName="Microsoft.Xbox.Services.ServiceCallLoggingConfig">
+  <TypeSignature Language="C#" Value="public sealed class ServiceCallLoggingConfig" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceCallLoggingConfig extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ServiceCallLoggingConfig" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.__IServiceCallLoggingConfigStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Wrapper for Win32 service_call_logging_config object.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SingletonInstance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.ServiceCallLoggingConfig SingletonInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.ServiceCallLoggingConfig SingletonInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ServiceCallLoggingConfig.SingletonInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ServiceCallLoggingConfig</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Gets the ServiceCallLoggingConfig singleton instance
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,203 @@
+<Type Name="TitleStorageBlobMetadata" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata">
+  <TypeSignature Language="C#" Value="public sealed class TitleStorageBlobMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleStorageBlobMetadata extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Metadata about a blob.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TitleStorageBlobMetadata (string serviceConfigurationId, Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string xboxUserId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serviceConfigurationId, valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string xboxUserId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.#ctor(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance3")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="storageType" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageType" />
+        <Parameter Name="blobPath" Type="System.String" />
+        <Parameter Name="blobType" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType" />
+        <Parameter Name="xboxUserId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="storageType">The TitleStorageType to get blob metadata objects for.  Valid values are TrustedPlatormStorage, JsonStorage and GlobalStorage.</param>
+        <param name="blobPath">The full path to to the blob.  examples: "gameconfig.json" and "user/settings/playerconfiguration.json".</param>
+        <param name="blobType">The TitleStorageBlobType of this object.  Valid values are Binary, Json and Config.</param>
+        <param name="xboxUserId">The Xbox User ID of the title storage to enumerate. Ignored when dealing with GlobalStorage, so passing nullptr is acceptable in that case. (Optional)</param>
+        <summary>
+Initializes a new instance of the TitleStorageBlobMetadata class with the minimum arguments.
+</summary>
+        <remarks>
+All other properties of this class are optional.  To initialize optional properties, use the other constructors.
+ClientTimestamp.UniversalTime is initialized to 0. Length is initialized to 0.
+TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMetadataAsync will have current Length and ETag values.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TitleStorageBlobMetadata (string serviceConfigurationId, Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string xboxUserId, string displayName, string eTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serviceConfigurationId, valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string xboxUserId, string displayName, string eTag) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.#ctor(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="storageType" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageType" />
+        <Parameter Name="blobPath" Type="System.String" />
+        <Parameter Name="blobType" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType" />
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="eTag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="storageType">The TitleStorageType to get blob metadata objects for.  Valid values are TrustedPlatormStorage, JsonStorage and GlobalStorage.</param>
+        <param name="blobPath">The full path to to the blob.  examples: "gameconfig.json" and "user/settings/playerconfiguration.json".</param>
+        <param name="blobType">The TitleStorageBlobType of this object.  Valid values are Binary, Json and Config.</param>
+        <param name="xboxUserId">The Xbox User ID of the title storage to enumerate. Ignored when dealing with GlobalStorage, so passing nullptr is acceptable in that case. (Optional)</param>
+        <param name="displayName">A display name suitable for displaying to the user. (Optional)</param>
+        <param name="eTag">An ETag value to be associated with this instance.  It is used for upload, download and delete operations. (Optional)</param>
+        <summary>
+Initializes a new instance of the TitleStorageBlobMetadata class including support for all optional properties except ClientTimestamp.
+</summary>
+        <remarks>
+ClientTimestamp.UniversalTime is initialized to 0. Length is initialized to 0.
+TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMetadataAsync will have current Length and ETag values.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TitleStorageBlobMetadata (string serviceConfigurationId, Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string xboxUserId, string displayName, string eTag, Windows.Foundation.DateTime clientTimestamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serviceConfigurationId, valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string xboxUserId, string displayName, string eTag, valuetype Windows.Foundation.DateTime clientTimestamp) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.#ctor(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String,System.String,System.String,Windows.Foundation.DateTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="storageType" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageType" />
+        <Parameter Name="blobPath" Type="System.String" />
+        <Parameter Name="blobType" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType" />
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="eTag" Type="System.String" />
+        <Parameter Name="clientTimestamp" Type="Windows.Foundation.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="storageType">The TitleStorageType to get blob metadata objects for.  Valid values are TrustedPlatormStorage, JsonStorage and GlobalStorage.</param>
+        <param name="blobPath">The full path to to the blob.  examples: "gameconfig.json" and "user/settings/playerconfiguration.json".</param>
+        <param name="blobType">The TitleStorageBlobType of this object.  Valid values are Binary, Json and Config.</param>
+        <param name="xboxUserId">The Xbox User ID of the title storage to enumerate. Ignored when dealing with GlobalStorage, so passing nullptr is acceptable in that case. (Optional)</param>
+        <param name="displayName">A display name suitable for displaying to the user. (Optional)</param>
+        <param name="eTag">An ETag value to be associated with this instance.  It is used for upload, download and delete operations. (Optional)</param>
+        <param name="clientTimestamp">A client provided timestamp value to be associated with this instance.</param>
+        <summary>
+Initializes a new instance of the TitleStorageBlobMetadata class including support for all optional properties.
+</summary>
+        <remarks>
+Length is initialized to 0.
+TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMetadataAsync will have current Length and ETag values.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTitleStorageBlobMetadataForSessionStorage">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata CreateTitleStorageBlobMetadataForSessionStorage (string serviceConfigurationId, string blobPath, Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string multiplayerSessionTemplateName, string multiplayerSessionName, string displayName, string eTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata CreateTitleStorageBlobMetadataForSessionStorage(string serviceConfigurationId, string blobPath, valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string multiplayerSessionTemplateName, string multiplayerSessionName, string displayName, string eTag) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.CreateTitleStorageBlobMetadataForSessionStorage(System.String,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Title Storage for sessions has been deprecated. Use universal instead.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="blobPath" Type="System.String" />
+        <Parameter Name="blobType" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType" />
+        <Parameter Name="multiplayerSessionTemplateName" Type="System.String" />
+        <Parameter Name="multiplayerSessionName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="eTag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="blobPath">The full path to to the blob.  examples: "gameconfig.json" and "user/settings/playerconfiguration.json"</param>
+        <param name="blobType">The TitleStorageBlobType of this object.  Valid values are Binary, Json and Config.</param>
+        <param name="multiplayerSessionTemplateName">The multiplayer session template name associated with this object</param>
+        <param name="multiplayerSessionName">The multiplayer session name associated with this object</param>
+        <param name="displayName">A display name suitable for displaying to the user. (Optional)</param>
+        <param name="eTag">An ETag value to be associated with this instance.  It is used for upload, download and delete operations. (Optional)</param>
+        <summary>
+Creates metadata for a blob for session storage, including support for all optional properties except ClientTimestamp.
+</summary>
+        <returns>
+A new instance of the TitleStorageBlobMetadata class for SessionStorage.
+</returns>
+        <remarks>
+ClientTimestamp.UniversalTime is initialized to 0. Length is initialized to 0.
+TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMetadataAsync will have current Length and ETag values.
+</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

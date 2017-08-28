@@ -1,0 +1,60 @@
+<Type Name="XboxLiveContext" FullName="Microsoft.Xbox.Services.XboxLiveContext">
+  <TypeSignature Language="C#" Value="public sealed class XboxLiveContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.__IXboxLiveContextFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines methods used to retrieve objects that in turn provide access to different Xbox Live service components.
+
+Note: the XboxLiveContext is unique per instance. Changing state on one instance for a user does not affect a second instance of the context for the same user. Using multiple instances can therefore result in unexpected behavior. Titles should ensure to only use one instance of the XboxLiveContext per user.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XboxLiveContext (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveContext.#ctor(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

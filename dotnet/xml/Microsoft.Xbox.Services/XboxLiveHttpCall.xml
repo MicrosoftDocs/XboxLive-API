@@ -1,0 +1,63 @@
+<Type Name="XboxLiveHttpCall" FullName="Microsoft.Xbox.Services.XboxLiveHttpCall">
+  <TypeSignature Language="C#" Value="public sealed class XboxLiveHttpCall" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveHttpCall extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveHttpCall" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.__IXboxLiveHttpCallStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines methods used to retrieve objects that in turn provide access to different Xbox Live service components.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateXboxLiveHttpCall">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.XboxLiveHttpCall CreateXboxLiveHttpCall (Microsoft.Xbox.Services.XboxLiveContextSettings settings, string httpMethod, string serverName, string pathQueryFragment);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Xbox.Services.XboxLiveHttpCall CreateXboxLiveHttpCall(class Microsoft.Xbox.Services.XboxLiveContextSettings settings, string httpMethod, string serverName, string pathQueryFragment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveHttpCall.CreateXboxLiveHttpCall(Microsoft.Xbox.Services.XboxLiveContextSettings,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.XboxLiveHttpCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Xbox.Services.XboxLiveContextSettings" />
+        <Parameter Name="httpMethod" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="pathQueryFragment" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="settings">To be added.</param>
+        <param name="httpMethod">To be added.</param>
+        <param name="serverName">To be added.</param>
+        <param name="pathQueryFragment">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

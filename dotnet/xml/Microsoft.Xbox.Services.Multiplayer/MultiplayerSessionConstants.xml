@@ -1,0 +1,90 @@
+<Type Name="MultiplayerSessionConstants" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents constant values for a multiplayer session.
+</summary>
+    <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"constants": {
+    "system": {
+        "capabilities": {
+            "clientMatchmaking": true,
+            "connectivity": true,
+            "suppressPresenceActivityCheck": true,
+            "gameplay": true,
+            "large": false
+        },
+        "version": 1,
+        "maxMembersCount": 100,
+        "visibility": "Open",
+        "initiators": [
+            "3456"
+        ],
+        "inviteProtocol": "party",
+        "reservedRemovalTimeout": 30000,
+        "inactiveRemovalTimeout": 7200000,
+        "readyRemovalTimeout": 180000,
+        "sessionEmptyTimeout": 0,
+        "metrics": {
+            "latency": true,
+            "bandwidthDown": true,
+            "bandwidthUp": true,
+            "custom": true
+        },
+        "memberInitialization": {
+            "joinTimeout": 4000,
+            "measurementTimeout": 5000,
+            "evaluationTimeout": 5000,
+            "externalEvaluation": false,
+            "membersNeededToStart": 2
+        },
+        "peerToPeerRequirements": {
+            "latencyMaximum": 250,
+            "bandwidthMinimum": 10000
+        },
+        "peerToHostRequirements": {
+            "latencyMaximum": 250,
+            "bandwidthDownMinimum": 100000,
+            "bandwidthUpMinimum": 1000,
+            "hostSelectionMetric": "bandwidthUp"
+        },
+        "measurementServerAddresses": {
+            "east.azure.com": {
+                "secureDeviceAddress": "r5Y="
+            },
+            "west.azure.com": {
+                "secureDeviceAddress": "rwY="
+            }
+        }
+    },
+    "custom": {}
+}
+</code></example>
+  </Docs>
+  <Members />
+</Type>

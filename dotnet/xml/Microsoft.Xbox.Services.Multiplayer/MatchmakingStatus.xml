@@ -1,0 +1,133 @@
+<Type Name="MatchmakingStatus" FullName="Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus">
+  <TypeSignature Language="C#" Value="public enum MatchmakingStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MatchmakingStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines values that indicate the current status of the matchmaking operation.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Canceled">
+      <MemberSignature Language="C#" Value="Canceled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus Canceled = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.Canceled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates that the matchmaking search has been canceled.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Expired">
+      <MemberSignature Language="C#" Value="Expired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus Expired = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.Expired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates that the matchmaking search has expired.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Found">
+      <MemberSignature Language="C#" Value="Found" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus Found = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.Found" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates that the matchmaking search has found a session.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates that the matchmaking search is not specified.  This status is optional and requires the clientMatchmaking capability.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Searching">
+      <MemberSignature Language="C#" Value="Searching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus Searching = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.Searching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates that the matchmaking search is still searching.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The server returned an unrecognized response.
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

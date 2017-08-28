@@ -1,0 +1,137 @@
+<Type Name="TeamState" FullName="Microsoft.Xbox.Services.Tournaments.TeamState">
+  <TypeSignature Language="C#" Value="public enum TeamState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TeamState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TeamState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary />
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckedIn">
+      <MemberSignature Language="C#" Value="CheckedIn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState CheckedIn = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.CheckedIn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="Completed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState Completed = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.Completed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+      </Docs>
+    </Member>
+    <Member MemberName="Playing">
+      <MemberSignature Language="C#" Value="Playing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState Playing = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.Playing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+      </Docs>
+    </Member>
+    <Member MemberName="Registered">
+      <MemberSignature Language="C#" Value="Registered" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState Registered = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.Registered" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+      </Docs>
+    </Member>
+    <Member MemberName="StandBy">
+      <MemberSignature Language="C#" Value="StandBy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState StandBy = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.StandBy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The team state is unknown.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Waitlisted">
+      <MemberSignature Language="C#" Value="Waitlisted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState Waitlisted = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.Waitlisted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

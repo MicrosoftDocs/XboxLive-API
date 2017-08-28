@@ -1,0 +1,187 @@
+<Type Name="MultiplayerSession" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerSession" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSession extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a multiplayer session. 
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiplayerSession (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance3")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="xboxLiveContext" Type="Microsoft.Xbox.Services.XboxLiveContext" />
+      </Parameters>
+      <Docs>
+        <param name="xboxLiveContext">The XboxLiveContext containing the user who is creating this session.</param>
+        <summary>
+Creates a new MultiplayerSession Class object from the supplied Xbox Live context, without any constants or session reference. 
+</summary>
+        <remarks>
+This override is intended to be used when the session serviceconfigid, template, and name are not known.  A MultiplayerSession created
+using this constructor must be retrieved or written to by using the "ByHandle" overrides.  
+(e.g. WriteSessionByHandleAsync and GetCurrentSessionByHandleAsync)
+
+After calling this constructor, the client must use the MultiplayerService::WriteSessionAsync method to write batched local changes to the service. 
+If this constructor is called without calling MultiplayerService::WriteSessionAsync, it only changes the local session 
+object but does not commit it to the service.
+
+This constructor is intended for use with template contract 104/105 or later.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiplayerSession (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="xboxLiveContext" Type="Microsoft.Xbox.Services.XboxLiveContext" />
+        <Parameter Name="multiplayerSessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+      </Parameters>
+      <Docs>
+        <param name="xboxLiveContext">The XboxLiveContext containing the user who is creating this session.</param>
+        <param name="multiplayerSessionReference">A reference that uniquely identifies the session.</param>
+        <summary>
+Creates a new MultiplayerSession without any constants, which allows the request to simply use whatever constants
+are already specified in the session template on the service.  Those constants are returned in the response session data.
+</summary>
+        <remarks>
+After calling this constructor, the client must use the MultiplayerService::WriteSessionAsync method to write batched local changes to the service. 
+If this constructor is called without calling MultiplayerService::WriteSessionAsync, it only changes the local session 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiplayerSession (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference, uint maxMembersInSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility multiplayerSessionVisibility, Windows.Foundation.Collections.IVectorView&lt;string&gt; initiatorXboxUserIds, string sessionCustomConstantsJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference, unsigned int32 maxMembersInSession, valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility multiplayerSessionVisibility, class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; initiatorXboxUserIds, string sessionCustomConstantsJson) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.UInt32,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,Windows.Foundation.Collections.IVectorView{System.String},System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="xboxLiveContext" Type="Microsoft.Xbox.Services.XboxLiveContext" />
+        <Parameter Name="multiplayerSessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+        <Parameter Name="maxMembersInSession" Type="System.UInt32" />
+        <Parameter Name="multiplayerSessionVisibility" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility" />
+        <Parameter Name="initiatorXboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="sessionCustomConstantsJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxLiveContext">To be added.</param>
+        <param name="multiplayerSessionReference">To be added.</param>
+        <param name="maxMembersInSession">To be added.</param>
+        <param name="multiplayerSessionVisibility">To be added.</param>
+        <param name="initiatorXboxUserIds">To be added.</param>
+        <param name="sessionCustomConstantsJson">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareMultiplayerSessions">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes CompareMultiplayerSessions (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession currentSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSession oldSession);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes CompareMultiplayerSessions(class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession currentSession, class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession oldSession) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.CompareMultiplayerSessions(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSession)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="currentSession" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+        <Parameter Name="oldSession" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+      </Parameters>
+      <Docs>
+        <param name="currentSession">The current session to compare to an older session.</param>
+        <param name="oldSession">The older session to compare to the current session.</param>
+        <summary>
+Static compare method that compares two sessions and returns an Or'ed MultiplayerSessionChangeType.
+</summary>
+        <returns>An OR'ed MultiplayerSessionChangeType that contains all of the differences.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertHttpStatusToWriteSessionStatus">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus ConvertHttpStatusToWriteSessionStatus (int httpStatusCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus ConvertHttpStatusToWriteSessionStatus(int32 httpStatusCode) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ConvertHttpStatusToWriteSessionStatus(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpStatusCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="httpStatusCode">Status code of a http result</param>
+        <summary>
+Static method that converts an HTTP Status code to a WriteSessionStatus.
+</summary>
+        <returns>A WriteSessionStatus which gives more specific information about the status code in regards to the Write Session call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

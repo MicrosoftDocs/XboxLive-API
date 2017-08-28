@@ -1,0 +1,934 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework Name="xboxlive">
+  <Namespace Name="Microsoft.Xbox.Services.Achievements">
+    <Type Name="Microsoft.Xbox.Services.Achievements.Achievement" Id="T:Microsoft.Xbox.Services.Achievements.Achievement" />
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementMediaAsset" Id="T:Microsoft.Xbox.Services.Achievements.AchievementMediaAsset" />
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementMediaAssetType" Id="T:Microsoft.Xbox.Services.Achievements.AchievementMediaAssetType">
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementMediaAssetType.Art" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementMediaAssetType.Icon" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementMediaAssetType.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementOrderBy" Id="T:Microsoft.Xbox.Services.Achievements.AchievementOrderBy">
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementOrderBy.Default" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementOrderBy.TitleId" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementOrderBy.UnlockTime" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementParticipationType" Id="T:Microsoft.Xbox.Services.Achievements.AchievementParticipationType">
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementParticipationType.Group" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementParticipationType.Individual" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementParticipationType.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementProgression" Id="T:Microsoft.Xbox.Services.Achievements.AchievementProgression" />
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementProgressState" Id="T:Microsoft.Xbox.Services.Achievements.AchievementProgressState">
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementProgressState.Achieved" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementProgressState.InProgress" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementProgressState.NotStarted" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementProgressState.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementRequirement" Id="T:Microsoft.Xbox.Services.Achievements.AchievementRequirement" />
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementReward" Id="T:Microsoft.Xbox.Services.Achievements.AchievementReward" />
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementRewardType" Id="T:Microsoft.Xbox.Services.Achievements.AchievementRewardType">
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementRewardType.Art" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementRewardType.Gamerscore" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementRewardType.InApp" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementRewardType.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementService" Id="T:Microsoft.Xbox.Services.Achievements.AchievementService" />
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementsResult" Id="T:Microsoft.Xbox.Services.Achievements.AchievementsResult" />
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementTimeWindow" Id="T:Microsoft.Xbox.Services.Achievements.AchievementTimeWindow" />
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementTitleAssociation" Id="T:Microsoft.Xbox.Services.Achievements.AchievementTitleAssociation" />
+    <Type Name="Microsoft.Xbox.Services.Achievements.AchievementType" Id="T:Microsoft.Xbox.Services.Achievements.AchievementType">
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementType.All" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementType.Challenge" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementType.Persistent" />
+      <Member Id="F:Microsoft.Xbox.Services.Achievements.AchievementType.Unknown" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Clubs">
+    <Type Name="Microsoft.Xbox.Services.Clubs.Club" Id="T:Microsoft.Xbox.Services.Clubs.Club" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubActionSetting" Id="T:Microsoft.Xbox.Services.Clubs.ClubActionSetting" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubActionSettings" Id="T:Microsoft.Xbox.Services.Clubs.ClubActionSettings" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubBooleanSetting" Id="T:Microsoft.Xbox.Services.Clubs.ClubBooleanSetting" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubPresenceCounts" Id="T:Microsoft.Xbox.Services.Clubs.ClubPresenceCounts" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubProfile" Id="T:Microsoft.Xbox.Services.Clubs.ClubProfile" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubRecommendation" Id="T:Microsoft.Xbox.Services.Clubs.ClubRecommendation" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubRole" Id="T:Microsoft.Xbox.Services.Clubs.ClubRole">
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubRole.Banned" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubRole.Follower" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubRole.Invited" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubRole.Member" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubRole.Moderator" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubRole.Nonmember" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubRole.Owner" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubRole.Recommended" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubRole.RequestedToJoin" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubRoleRecord" Id="T:Microsoft.Xbox.Services.Clubs.ClubRoleRecord" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubRoster" Id="T:Microsoft.Xbox.Services.Clubs.ClubRoster" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubSearchAutoComplete" Id="T:Microsoft.Xbox.Services.Clubs.ClubSearchAutoComplete" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubSearchFacetResult" Id="T:Microsoft.Xbox.Services.Clubs.ClubSearchFacetResult" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubsOwnedResult" Id="T:Microsoft.Xbox.Services.Clubs.ClubsOwnedResult" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubsSearchResult" Id="T:Microsoft.Xbox.Services.Clubs.ClubsSearchResult" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubsService" Id="T:Microsoft.Xbox.Services.Clubs.ClubsService" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting" Id="T:Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubStringSetting" Id="T:Microsoft.Xbox.Services.Clubs.ClubStringSetting" />
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubType" Id="T:Microsoft.Xbox.Services.Clubs.ClubType">
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubType.Hidden" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubType.Private" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubType.Public" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubType.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubUserPresence" Id="T:Microsoft.Xbox.Services.Clubs.ClubUserPresence">
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Chat" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Feed" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.InClub" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.InGame" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.NotInClub" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Play" />
+      <Member Id="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Roster" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord" Id="T:Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord" />
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.ContextualSearch">
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast" />
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat" />
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator">
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.Equal" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.GreaterThan" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.GreaterThanOrEqual" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.LessThan" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.LessThanOrEqual" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.NotEqual" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip" />
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult" />
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat" />
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnail" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnail" />
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType">
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType.LargeThumbnail" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType.None" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType.SmallThumbnail" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType">
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.Achievement" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.DeveloperInitiated" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.None" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.UserGenerated" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo" />
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType">
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.Download" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.HttpLiveStreaming" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.None" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.Original" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.SmoothStreaming" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService" />
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatDisplayType" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatDisplayType">
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatDisplayType.DefinedRange" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatDisplayType.Set" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatDisplayType.UndefinedRange" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatDisplayType.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility" Id="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility">
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility.PrivateVisibility" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility.PublicVisibility" />
+      <Member Id="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility.Unknown" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Events">
+    <Type Name="Microsoft.Xbox.Services.Events.EventsService" Id="T:Microsoft.Xbox.Services.Events.EventsService" />
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.GameServerPlatform">
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.AllocationResult" Id="T:Microsoft.Xbox.Services.GameServerPlatform.AllocationResult" />
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.ClusterResult" Id="T:Microsoft.Xbox.Services.GameServerPlatform.ClusterResult" />
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.GameServerFulfillmentState" Id="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerFulfillmentState">
+      <Member Id="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerFulfillmentState.Aborted" />
+      <Member Id="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerFulfillmentState.Fulfilled" />
+      <Member Id="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerFulfillmentState.Queued" />
+      <Member Id="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerFulfillmentState.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus" Id="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus">
+      <Member Id="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus.Aborted" />
+      <Member Id="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus.Active" />
+      <Member Id="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus.Error" />
+      <Member Id="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus.Queued" />
+      <Member Id="F:Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet" Id="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet" />
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult" Id="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult" />
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService" Id="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService" />
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping" Id="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping" />
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.GameServerTicketStatus" Id="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerTicketStatus" />
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.GameVariant" Id="T:Microsoft.Xbox.Services.GameServerPlatform.GameVariant" />
+    <Type Name="Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer" Id="T:Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer" />
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services">
+    <Type Name="Microsoft.Xbox.Services.HttpCallRequestMessage" Id="T:Microsoft.Xbox.Services.HttpCallRequestMessage" />
+    <Type Name="Microsoft.Xbox.Services.HttpCallResponseBodyType" Id="T:Microsoft.Xbox.Services.HttpCallResponseBodyType">
+      <Member Id="F:Microsoft.Xbox.Services.HttpCallResponseBodyType.JsonBody" />
+      <Member Id="F:Microsoft.Xbox.Services.HttpCallResponseBodyType.StringBody" />
+      <Member Id="F:Microsoft.Xbox.Services.HttpCallResponseBodyType.VectorBody" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.HttpRequestMessageType" Id="T:Microsoft.Xbox.Services.HttpRequestMessageType">
+      <Member Id="F:Microsoft.Xbox.Services.HttpRequestMessageType.EmptyMessage" />
+      <Member Id="F:Microsoft.Xbox.Services.HttpRequestMessageType.StringMessage" />
+      <Member Id="F:Microsoft.Xbox.Services.HttpRequestMessageType.VectorMessage" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.ServiceCallLoggingConfig" Id="T:Microsoft.Xbox.Services.ServiceCallLoggingConfig">
+      <Member Id="P:Microsoft.Xbox.Services.ServiceCallLoggingConfig.SingletonInstance" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.XboxLiveAppConfiguration" Id="T:Microsoft.Xbox.Services.XboxLiveAppConfiguration">
+      <Member Id="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.SingletonInstance" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.XboxLiveContext" Id="T:Microsoft.Xbox.Services.XboxLiveContext">
+      <Member Id="M:Microsoft.Xbox.Services.XboxLiveContext.#ctor(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting" Id="T:Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting">
+      <Member Id="F:Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting.ThisCodeNeedsToBeChangedToFollowBestPractices" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.XboxLiveContextSettings" Id="T:Microsoft.Xbox.Services.XboxLiveContextSettings">
+      <Member Id="E:Microsoft.Xbox.Services.XboxLiveContextSettings.ServiceCallRouted" />
+      <Member Id="M:Microsoft.Xbox.Services.XboxLiveContextSettings.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.XboxLiveContextThrottleSetting" Id="T:Microsoft.Xbox.Services.XboxLiveContextThrottleSetting">
+      <Member Id="F:Microsoft.Xbox.Services.XboxLiveContextThrottleSetting.ThisCodeNeedsToBeChangedToAvoidThrottling" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.XboxLiveHttpCall" Id="T:Microsoft.Xbox.Services.XboxLiveHttpCall">
+      <Member Id="M:Microsoft.Xbox.Services.XboxLiveHttpCall.CreateXboxLiveHttpCall(Microsoft.Xbox.Services.XboxLiveContextSettings,System.String,System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.XboxLiveHttpCallResponse" Id="T:Microsoft.Xbox.Services.XboxLiveHttpCallResponse" />
+    <Type Name="Microsoft.Xbox.Services.XboxLiveLogCallEventArgs" Id="T:Microsoft.Xbox.Services.XboxLiveLogCallEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.XboxLiveWnsEventArgs" Id="T:Microsoft.Xbox.Services.XboxLiveWnsEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs" Id="T:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel" Id="T:Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel">
+      <Member Id="F:Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel.Error" />
+      <Member Id="F:Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel.Info" />
+      <Member Id="F:Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel.Off" />
+      <Member Id="F:Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel.Verbose" />
+      <Member Id="F:Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel.Warning" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Leaderboard">
+    <Type Name="Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn" Id="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn" />
+    <Type Name="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery" Id="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery">
+      <Member Id="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Leaderboard.LeaderboardResult" Id="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult" />
+    <Type Name="Microsoft.Xbox.Services.Leaderboard.LeaderboardRow" Id="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardRow" />
+    <Type Name="Microsoft.Xbox.Services.Leaderboard.LeaderboardService" Id="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardService" />
+    <Type Name="Microsoft.Xbox.Services.Leaderboard.SortOrder" Id="T:Microsoft.Xbox.Services.Leaderboard.SortOrder">
+      <Member Id="F:Microsoft.Xbox.Services.Leaderboard.SortOrder.Ascending" />
+      <Member Id="F:Microsoft.Xbox.Services.Leaderboard.SortOrder.Descending" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Matchmaking">
+    <Type Name="Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse" Id="T:Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse" />
+    <Type Name="Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse" Id="T:Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse" />
+    <Type Name="Microsoft.Xbox.Services.Matchmaking.MatchmakingService" Id="T:Microsoft.Xbox.Services.Matchmaking.MatchmakingService" />
+    <Type Name="Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse" Id="T:Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse" />
+    <Type Name="Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode" Id="T:Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode">
+      <Member Id="F:Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode.Always" />
+      <Member Id="F:Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode.Never" />
+      <Member Id="F:Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Matchmaking.TicketStatus" Id="T:Microsoft.Xbox.Services.Matchmaking.TicketStatus">
+      <Member Id="F:Microsoft.Xbox.Services.Matchmaking.TicketStatus.Canceled" />
+      <Member Id="F:Microsoft.Xbox.Services.Matchmaking.TicketStatus.Expired" />
+      <Member Id="F:Microsoft.Xbox.Services.Matchmaking.TicketStatus.Found" />
+      <Member Id="F:Microsoft.Xbox.Services.Matchmaking.TicketStatus.Searching" />
+      <Member Id="F:Microsoft.Xbox.Services.Matchmaking.TicketStatus.Unknown" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Multiplayer.Manager">
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.FindMatchCompletedEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.FindMatchCompletedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.HostChangedEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.HostChangedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.Joinability" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.Closed" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.DisableWhileGameInProgress" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.InviteOnly" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.JoinableByFriends" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.None" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.JoinLobbyCompletedEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.JoinLobbyCompletedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Canceled" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Canceling" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Completed" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Evaluating" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Expired" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Failed" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Found" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Joining" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Measuring" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.None" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Resubmitting" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Searching" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.SubmittingMatchTicket" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.UploadingQosMeasurements" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.WaitingForRemoteClientsToJoin" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.WaitingForRemoteClientsToUploadQos" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MemberJoinedEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MemberJoinedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MemberLeftEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MemberLeftEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MemberPropertyChangedEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MemberPropertyChangedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.ArbitrationComplete" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.ClientDisconnectedFromMultiplayerService" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.FindMatchCompleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.HostChanged" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.InviteSent" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.JoinabilityStateChanged" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.JoinGameCompleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.JoinLobbyCompleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.LeaveGameCompleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.LocalMemberConnectionAddressWriteCompleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.LocalMemberPropertyWriteCompleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.MemberJoined" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.MemberLeft" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.MemberPropertyChanged" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.PerformQosMeasurements" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SessionPropertyChanged" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SessionPropertyWriteCompleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SessionSynchronizedPropertyWriteCompleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SynchronizedHostWriteCompleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.TournamentGameSessionReady" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.TournamentRegistrationStateChanged" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.UserAdded" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.UserRemoved" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerLobbySession" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerLobbySession" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager">
+      <Member Id="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.SingletonInstance" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType.GameSession" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType.LobbySession" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.PerformQosMeasurementsEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.PerformQosMeasurementsEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.SessionPropertyChangedEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.SessionPropertyChangedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.TournamentGameSessionReadyEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.TournamentGameSessionReadyEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.TournamentRegistrationStateChangedEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.TournamentRegistrationStateChangedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.UserAddedEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.UserAddedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.Manager.UserRemovedEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.Manager.UserRemovedEventArgs" />
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Multiplayer">
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus" Id="T:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.Canceled" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.Expired" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.Found" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.None" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.Searching" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest">
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.#ctor(System.String,System.UInt32)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Evaluating" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Failed" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Joining" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Measuring" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.None" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure.BandwidthDown" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure.BandwidthUp" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure.Episode" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure.Group" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure.Latency" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure.Network" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure.None" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure.Timeout" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements">
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.#ctor(System.String,Windows.Foundation.TimeSpan,System.UInt64,System.UInt64,System.String)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest">
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.#ctor(System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleInfo" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleInfo">
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleInfo.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType">
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest">
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest.#ctor(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerService" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerService">
+      <Member Id="E:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.MultiplayerSessionChanged" />
+      <Member Id="E:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.MultiplayerSubscriptionLost" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession">
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext)" />
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.UInt32,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,Windows.Foundation.Collections.IVectorView{System.String},System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.CompareMultiplayerSessions(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSession)" />
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ConvertHttpStatusToWriteSessionStatus(System.Int32)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities">
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.ArbitrationPropertyChange" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.CustomPropertyChange" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.Everything" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.HostDeviceTokenChange" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.InitializationStateChange" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MatchmakingStatusChange" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MemberCustomPropertyChange" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MemberListChange" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MemberStatusChange" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.None" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.SessionJoinabilityChange" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.TournamentPropertyChange" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Active" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Inactive" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Ready" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Reserved" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference">
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.#ctor(System.String,System.String,System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.ParseFromUriPath(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.Followed" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.Local" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.None" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRoleTypes" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRoleTypes" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStatus" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStatus">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStatus.Active" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStatus.Inactive" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStatus.Reserved" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStatus.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Any" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Full" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Open" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Private" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Unknown" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Visible" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.CreateNew" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.SynchronizedUpdate" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.UpdateExisting" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.UpdateOrCreateNew" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics" Id="T:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.Bandwidth" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.BandwidthDown" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.BandwidthUp" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.Latency" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting" Id="T:Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting.Max" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting.Target" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting" Id="T:Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Moderate" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Open" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Strict" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.WriteSessionResult" Id="T:Microsoft.Xbox.Services.Multiplayer.WriteSessionResult" />
+    <Type Name="Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus" Id="T:Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus">
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus.AccessDenied" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus.Conflict" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus.Created" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus.HandleNotFound" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus.OutOfSync" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus.SessionDeleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus.Unknown" />
+      <Member Id="F:Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus.Updated" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Presence">
+    <Type Name="Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs" Id="T:Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription" Id="T:Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription" />
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord" Id="T:Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord" />
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceData" Id="T:Microsoft.Xbox.Services.Presence.PresenceData">
+      <Member Id="M:Microsoft.Xbox.Services.Presence.PresenceData.#ctor(System.String,System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.Presence.PresenceData.#ctor(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceDetailLevel" Id="T:Microsoft.Xbox.Services.Presence.PresenceDetailLevel">
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDetailLevel.All" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDetailLevel.Default" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDetailLevel.Device" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDetailLevel.Title" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDetailLevel.User" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceDeviceRecord" Id="T:Microsoft.Xbox.Services.Presence.PresenceDeviceRecord" />
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceDeviceType" Id="T:Microsoft.Xbox.Services.Presence.PresenceDeviceType">
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.PC" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.Unknown" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.Web" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.Windows8" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsOneCore" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsOneCoreMobile" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsPhone" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsPhone7" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.Xbox360" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.XboxOne" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceMediaIdType" Id="T:Microsoft.Xbox.Services.Presence.PresenceMediaIdType">
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceMediaIdType.Bing" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceMediaIdType.MediaProvider" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceMediaIdType.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceMediaRecord" Id="T:Microsoft.Xbox.Services.Presence.PresenceMediaRecord" />
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceRecord" Id="T:Microsoft.Xbox.Services.Presence.PresenceRecord" />
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceService" Id="T:Microsoft.Xbox.Services.Presence.PresenceService">
+      <Member Id="E:Microsoft.Xbox.Services.Presence.PresenceService.DevicePresenceChanged" />
+      <Member Id="E:Microsoft.Xbox.Services.Presence.PresenceService.TitlePresenceChanged" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceTitleRecord" Id="T:Microsoft.Xbox.Services.Presence.PresenceTitleRecord" />
+    <Type Name="Microsoft.Xbox.Services.Presence.PresenceTitleViewState" Id="T:Microsoft.Xbox.Services.Presence.PresenceTitleViewState">
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Background" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Filled" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceTitleViewState.FullScreen" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Snapped" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs" Id="T:Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription" Id="T:Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription" />
+    <Type Name="Microsoft.Xbox.Services.Presence.TitlePresenceState" Id="T:Microsoft.Xbox.Services.Presence.TitlePresenceState">
+      <Member Id="F:Microsoft.Xbox.Services.Presence.TitlePresenceState.Ended" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.TitlePresenceState.Started" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.TitlePresenceState.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Presence.UserPresenceState" Id="T:Microsoft.Xbox.Services.Presence.UserPresenceState">
+      <Member Id="F:Microsoft.Xbox.Services.Presence.UserPresenceState.Away" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.UserPresenceState.Offline" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.UserPresenceState.Online" />
+      <Member Id="F:Microsoft.Xbox.Services.Presence.UserPresenceState.Unknown" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Privacy">
+    <Type Name="Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult" Id="T:Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult" />
+    <Type Name="Microsoft.Xbox.Services.Privacy.PermissionCheckResult" Id="T:Microsoft.Xbox.Services.Privacy.PermissionCheckResult" />
+    <Type Name="Microsoft.Xbox.Services.Privacy.PermissionDenyReason" Id="T:Microsoft.Xbox.Services.Privacy.PermissionDenyReason" />
+    <Type Name="Microsoft.Xbox.Services.Privacy.PermissionIdConstants" Id="T:Microsoft.Xbox.Services.Privacy.PermissionIdConstants">
+      <Member Id="M:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.#ctor" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.BroadcastWithTwitch" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.CommunicateUsingText" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.CommunicateUsingVideo" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.CommunicateUsingVoice" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.PlayMultiplayer" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.ViewTargetExerciseInfo" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.ViewTargetGameHistory" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.ViewTargetMusicHistory" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.ViewTargetMusicStatus" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.ViewTargetPresence" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.ViewTargetProfile" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.ViewTargetUserCreatedContent" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.ViewTargetVideoHistory" />
+      <Member Id="P:Microsoft.Xbox.Services.Privacy.PermissionIdConstants.ViewTargetVideoStatus" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Privacy.PrivacyService" Id="T:Microsoft.Xbox.Services.Privacy.PrivacyService" />
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.RealTimeActivity">
+    <Type Name="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityConnectionState" Id="T:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityConnectionState">
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityConnectionState.Connected" />
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityConnectionState.Connecting" />
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityConnectionState.Disconnected" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityResyncEventArgs" Id="T:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityResyncEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityService" Id="T:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityService">
+      <Member Id="E:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityService.RealTimeActivityConnectionStateChange" />
+      <Member Id="E:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityService.RealTimeActivityResync" />
+      <Member Id="E:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityService.RealTimeActivitySubscriptionError" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError" Id="T:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError">
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.JsonError" />
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.NoError" />
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.RTAAccessDenied" />
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.RTAGenericError" />
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.RTASubscriptionLimit" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionErrorEventArgs" Id="T:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionErrorEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState" Id="T:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState">
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState.Closed" />
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState.PendingSubscribe" />
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState.PendingUnsubscribe" />
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState.Subscribed" />
+      <Member Id="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState.Unknown" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Social.Manager">
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.PreferredColor" Id="T:Microsoft.Xbox.Services.Social.Manager.PreferredColor" />
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.PresenceFilter" Id="T:Microsoft.Xbox.Services.Social.Manager.PresenceFilter">
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.All" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.AllOffline" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.AllOnline" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.AllTitle" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.TitleOffline" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.TitleOnline" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.RelationshipFilter" Id="T:Microsoft.Xbox.Services.Social.Manager.RelationshipFilter">
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.RelationshipFilter.Favorite" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.RelationshipFilter.Friends" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.SocialEvent" Id="T:Microsoft.Xbox.Services.Social.Manager.SocialEvent" />
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.SocialEventArgs" Id="T:Microsoft.Xbox.Services.Social.Manager.SocialEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.SocialEventType" Id="T:Microsoft.Xbox.Services.Social.Manager.SocialEventType">
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.LocalUserAdded" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.LocalUserRemoved" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.PresenceChanged" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.ProfilesChanged" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.SocialRelationshipsChanged" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.SocialUserGroupLoaded" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.SocialUserGroupUpdated" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.UsersAddedToSocialGraph" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.UsersRemovedFromSocialGraph" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.SocialManager" Id="T:Microsoft.Xbox.Services.Social.Manager.SocialManager">
+      <Member Id="P:Microsoft.Xbox.Services.Social.Manager.SocialManager.SingletonInstance" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel" Id="T:Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel">
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel.NoExtraDetail" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel.PreferredColorLevel" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel.TitleHistoryLevel" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord" Id="T:Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord" />
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceTitleRecord" Id="T:Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceTitleRecord" />
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.SocialUserGroupLoadedEventArgs" Id="T:Microsoft.Xbox.Services.Social.Manager.SocialUserGroupLoadedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.SocialUserGroupType" Id="T:Microsoft.Xbox.Services.Social.Manager.SocialUserGroupType">
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialUserGroupType.FilterType" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.Manager.SocialUserGroupType.UserListType" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.TitleHistory" Id="T:Microsoft.Xbox.Services.Social.Manager.TitleHistory" />
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser" Id="T:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser" />
+    <Type Name="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup" Id="T:Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup" />
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Social">
+    <Type Name="Microsoft.Xbox.Services.Social.ProfileService" Id="T:Microsoft.Xbox.Services.Social.ProfileService" />
+    <Type Name="Microsoft.Xbox.Services.Social.ReputationFeedbackItem" Id="T:Microsoft.Xbox.Services.Social.ReputationFeedbackItem">
+      <Member Id="M:Microsoft.Xbox.Services.Social.ReputationFeedbackItem.#ctor" />
+      <Member Id="M:Microsoft.Xbox.Services.Social.ReputationFeedbackItem.#ctor(System.String,Microsoft.Xbox.Services.Social.ReputationFeedbackType,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.ReputationFeedbackType" Id="T:Microsoft.Xbox.Services.Social.ReputationFeedbackType">
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsPhishing" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsPictureMessage" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsSpam" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsTextMessage" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsVoiceMessage" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommunicationsAbusiveVoice" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommunicationsInappropriateVideo" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayCheater" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayConsoleBanRequest" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayIdler" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayKicked" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayKillsTeammates" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayLeaderboardCheater" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayQuitter" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayTampering" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayUnsporting" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayUserBanRequest" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.InappropriateUserGeneratedContent" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.PositiveHelpfulPlayer" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.PositiveHighQualityUserGeneratedContent" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.PositiveSkilledPlayer" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.UserContentGamerpic" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.UserContentPersonalinfo" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.ReputationService" Id="T:Microsoft.Xbox.Services.Social.ReputationService" />
+    <Type Name="Microsoft.Xbox.Services.Social.SocialGroupConstants" Id="T:Microsoft.Xbox.Services.Social.SocialGroupConstants">
+      <Member Id="M:Microsoft.Xbox.Services.Social.SocialGroupConstants.#ctor" />
+      <Member Id="P:Microsoft.Xbox.Services.Social.SocialGroupConstants.Favorite" />
+      <Member Id="P:Microsoft.Xbox.Services.Social.SocialGroupConstants.People" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.SocialNotificationType" Id="T:Microsoft.Xbox.Services.Social.SocialNotificationType">
+      <Member Id="F:Microsoft.Xbox.Services.Social.SocialNotificationType.added" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.SocialNotificationType.changed" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.SocialNotificationType.removed" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.SocialNotificationType.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.SocialRelationship" Id="T:Microsoft.Xbox.Services.Social.SocialRelationship">
+      <Member Id="F:Microsoft.Xbox.Services.Social.SocialRelationship.All" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.SocialRelationship.Favorite" />
+      <Member Id="F:Microsoft.Xbox.Services.Social.SocialRelationship.LegacyXboxLiveFriends" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs" Id="T:Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription" Id="T:Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription" />
+    <Type Name="Microsoft.Xbox.Services.Social.SocialService" Id="T:Microsoft.Xbox.Services.Social.SocialService">
+      <Member Id="E:Microsoft.Xbox.Services.Social.SocialService.SocialRelationshipChanged" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Social.XboxSocialRelationship" Id="T:Microsoft.Xbox.Services.Social.XboxSocialRelationship" />
+    <Type Name="Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult" Id="T:Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult" />
+    <Type Name="Microsoft.Xbox.Services.Social.XboxUserProfile" Id="T:Microsoft.Xbox.Services.Social.XboxUserProfile" />
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Statistics.Manager">
+    <Type Name="Microsoft.Xbox.Services.Statistics.Manager.LeaderboardResultEventArgs" Id="T:Microsoft.Xbox.Services.Statistics.Manager.LeaderboardResultEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Statistics.Manager.StatisticDataType" Id="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticDataType">
+      <Member Id="F:Microsoft.Xbox.Services.Statistics.Manager.StatisticDataType.Number" />
+      <Member Id="F:Microsoft.Xbox.Services.Statistics.Manager.StatisticDataType.String" />
+      <Member Id="F:Microsoft.Xbox.Services.Statistics.Manager.StatisticDataType.Undefined" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent" Id="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent" />
+    <Type Name="Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs" Id="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType" Id="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType">
+      <Member Id="F:Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType.GetLeaderboardComplete" />
+      <Member Id="F:Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType.LocalUserAdded" />
+      <Member Id="F:Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType.LocalUserRemoved" />
+      <Member Id="F:Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType.StatisticUpdateComplete" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Statistics.Manager.StatisticManager" Id="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager">
+      <Member Id="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.SingletonInstance" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Statistics.Manager.StatisticValue" Id="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticValue" />
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.System">
+    <Type Name="Microsoft.Xbox.Services.System.GamingPrivilege" Id="T:Microsoft.Xbox.Services.System.GamingPrivilege">
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.AddFriend" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.Broadcast" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.CloudGamingJoinSession" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.CloudGamingManageSession" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.CloudSavedGames" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.Communications" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.CommunicationVoiceIngame" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.CommunicationVoiceSkype" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.GameDVR" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.MultiplayerParties" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.MultiplayerSessions" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.PremiumContent" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.PremiumVideo" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.ProfileViewing" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.PurchaseContent" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.ShareContent" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.ShareKinectContent" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.SocialNetworkSharing" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.SubscriptionContent" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.UserCreatedContent" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.VideoCommunications" />
+      <Member Id="F:Microsoft.Xbox.Services.System.GamingPrivilege.ViewFriendsList" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult" Id="T:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult" />
+    <Type Name="Microsoft.Xbox.Services.System.SignInResult" Id="T:Microsoft.Xbox.Services.System.SignInResult" />
+    <Type Name="Microsoft.Xbox.Services.System.SignInStatus" Id="T:Microsoft.Xbox.Services.System.SignInStatus">
+      <Member Id="F:Microsoft.Xbox.Services.System.SignInStatus.Success" />
+      <Member Id="F:Microsoft.Xbox.Services.System.SignInStatus.UserCancel" />
+      <Member Id="F:Microsoft.Xbox.Services.System.SignInStatus.UserInteractionRequired" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.System.SignOutCompletedEventArgs" Id="T:Microsoft.Xbox.Services.System.SignOutCompletedEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.System.StringService" Id="T:Microsoft.Xbox.Services.System.StringService" />
+    <Type Name="Microsoft.Xbox.Services.System.TitleCallableUI" Id="T:Microsoft.Xbox.Services.System.TitleCallableUI">
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeSilently(Microsoft.Xbox.Services.System.GamingPrivilege)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeSilentlyForUser(Microsoft.Xbox.Services.System.GamingPrivilege,Windows.System.User)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeWithUI(Microsoft.Xbox.Services.System.GamingPrivilege,System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeWithUIForUser(Microsoft.Xbox.Services.System.GamingPrivilege,System.String,Windows.System.User)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowChangeFriendRelationshipUIAsync(System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowChangeFriendRelationshipUIForUserAsync(System.String,Windows.System.User)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIForUserAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,System.String,Windows.System.User)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIForUserAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,Windows.System.User)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowPlayerPickerUI(System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{System.String},System.UInt32,System.UInt32)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowPlayerPickerUIForUser(System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{System.String},System.UInt32,System.UInt32,Windows.System.User)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowProfileCardUIAsync(System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowProfileCardUIForUserAsync(System.String,Windows.System.User)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowTitleAchievementsUIAsync(System.UInt32)" />
+      <Member Id="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowTitleAchievementsUIForUserAsync(System.UInt32,Windows.System.User)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.System.VerifyStringResult" Id="T:Microsoft.Xbox.Services.System.VerifyStringResult" />
+    <Type Name="Microsoft.Xbox.Services.System.VerifyStringResultCode" Id="T:Microsoft.Xbox.Services.System.VerifyStringResultCode">
+      <Member Id="F:Microsoft.Xbox.Services.System.VerifyStringResultCode.Offensive" />
+      <Member Id="F:Microsoft.Xbox.Services.System.VerifyStringResultCode.Success" />
+      <Member Id="F:Microsoft.Xbox.Services.System.VerifyStringResultCode.TooLong" />
+      <Member Id="F:Microsoft.Xbox.Services.System.VerifyStringResultCode.UnknownError" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.System.XboxLiveServicesSettings" Id="T:Microsoft.Xbox.Services.System.XboxLiveServicesSettings">
+      <Member Id="E:Microsoft.Xbox.Services.System.XboxLiveServicesSettings.LogCallRouted" />
+      <Member Id="E:Microsoft.Xbox.Services.System.XboxLiveServicesSettings.WnsEventRecevied" />
+      <Member Id="P:Microsoft.Xbox.Services.System.XboxLiveServicesSettings.SingletonInstance" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.System.XboxLiveUser" Id="T:Microsoft.Xbox.Services.System.XboxLiveUser">
+      <Member Id="E:Microsoft.Xbox.Services.System.XboxLiveUser.SignOutCompleted" />
+      <Member Id="M:Microsoft.Xbox.Services.System.XboxLiveUser.#ctor" />
+      <Member Id="M:Microsoft.Xbox.Services.System.XboxLiveUser.#ctor(Windows.System.User)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.TitleStorage">
+    <Type Name="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" Id="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata">
+      <Member Id="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.#ctor(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.#ctor(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String,System.String,System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.#ctor(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String,System.String,System.String,Windows.Foundation.DateTime)" />
+      <Member Id="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.CreateTitleStorageBlobMetadataForSessionStorage(System.String,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String,System.String,System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult" Id="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult" />
+    <Type Name="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult" Id="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult" />
+    <Type Name="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType" Id="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType">
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Binary" />
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Config" />
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Json" />
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition" Id="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition">
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition.IfMatch" />
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition.IfNotMatch" />
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition.NotUsed" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota" Id="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota" />
+    <Type Name="Microsoft.Xbox.Services.TitleStorage.TitleStorageService" Id="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageService" />
+    <Type Name="Microsoft.Xbox.Services.TitleStorage.TitleStorageType" Id="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageType">
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.GlobalStorage" />
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.JsonStorage" />
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.SessionStorage" />
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.TrustedPlatformStorage" />
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.Universal" />
+      <Member Id="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.UntrustedPlatformStorage" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.Tournaments">
+    <Type Name="Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata" Id="T:Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.MatchMetadata" Id="T:Microsoft.Xbox.Services.Tournaments.MatchMetadata" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata" Id="T:Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TeamChangeEventArgs" Id="T:Microsoft.Xbox.Services.Tournaments.TeamChangeEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription" Id="T:Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TeamCompletedReason" Id="T:Microsoft.Xbox.Services.Tournaments.TeamCompletedReason">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Completed" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Eliminated" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Evicted" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Rejected" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TeamInfo" Id="T:Microsoft.Xbox.Services.Tournaments.TeamInfo" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TeamOrderBy" Id="T:Microsoft.Xbox.Services.Tournaments.TeamOrderBy">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamOrderBy.Name" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamOrderBy.None" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamOrderBy.Ranking" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TeamRequest" Id="T:Microsoft.Xbox.Services.Tournaments.TeamRequest">
+      <Member Id="M:Microsoft.Xbox.Services.Tournaments.TeamRequest.#ctor(System.String,System.String,System.Boolean)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TeamRequestResult" Id="T:Microsoft.Xbox.Services.Tournaments.TeamRequestResult" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TeamState" Id="T:Microsoft.Xbox.Services.Tournaments.TeamState">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamState.CheckedIn" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamState.Completed" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamState.Playing" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamState.Registered" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamState.StandBy" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamState.Unknown" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TeamState.Waitlisted" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TeamSummary" Id="T:Microsoft.Xbox.Services.Tournaments.TeamSummary" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.Tournament" Id="T:Microsoft.Xbox.Services.Tournaments.Tournament" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.Canceled" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.Completed" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.None" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.NoResults" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.PartialResults" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Complete" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.InComplete" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.InProgress" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Joining" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Playing" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Waiting" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentChangeEventArgs" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentChangeEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentChangeSubscription" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentChangeSubscription" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Adjusted" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Arbitration" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.None" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Server" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentGameResultState" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentGameResultState">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultState.Draw" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultState.Loss" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultState.NoContest" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultState.NoShow" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultState.Rank" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultState.Win" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentOrderBy" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.EndTime" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.None" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.StartTime" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentReference" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentReference">
+      <Member Id="M:Microsoft.Xbox.Services.Tournaments.TournamentReference.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.MemberAlreadyRegistered" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.RegistrationClosed" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.TeamEliminated" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.TournamentCompleted" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.TournamentFull" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState.Completed" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState.Pending" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState.Registered" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState.Rejected" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState.Unknown" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState.Withdrawn" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentRequest" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentRequest">
+      <Member Id="M:Microsoft.Xbox.Services.Tournaments.TournamentRequest.#ctor(System.Boolean)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentRequestResult" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentRequestResult" />
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentService" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentService">
+      <Member Id="E:Microsoft.Xbox.Services.Tournaments.TournamentService.TeamChanged" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentSortOrder" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentSortOrder">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentSortOrder.Ascending" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentSortOrder.Descending" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentSortOrder.None" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentState" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentState">
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentState.Active" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentState.Canceled" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentState.Completed" />
+      <Member Id="F:Microsoft.Xbox.Services.Tournaments.TournamentState.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.Tournaments.TournamentTeamResult" Id="T:Microsoft.Xbox.Services.Tournaments.TournamentTeamResult">
+      <Member Id="M:Microsoft.Xbox.Services.Tournaments.TournamentTeamResult.#ctor" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.UserStatistics">
+    <Type Name="Microsoft.Xbox.Services.UserStatistics.RequestedStatistics" Id="T:Microsoft.Xbox.Services.UserStatistics.RequestedStatistics">
+      <Member Id="M:Microsoft.Xbox.Services.UserStatistics.RequestedStatistics.#ctor(System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.UserStatistics.ServiceConfigurationStatistic" Id="T:Microsoft.Xbox.Services.UserStatistics.ServiceConfigurationStatistic" />
+    <Type Name="Microsoft.Xbox.Services.UserStatistics.Statistic" Id="T:Microsoft.Xbox.Services.UserStatistics.Statistic" />
+    <Type Name="Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs" Id="T:Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs" />
+    <Type Name="Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription" Id="T:Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription" />
+    <Type Name="Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult" Id="T:Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult" />
+    <Type Name="Microsoft.Xbox.Services.UserStatistics.UserStatisticsService" Id="T:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService">
+      <Member Id="E:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.StatisticChanged" />
+    </Type>
+  </Namespace>
+</Framework>

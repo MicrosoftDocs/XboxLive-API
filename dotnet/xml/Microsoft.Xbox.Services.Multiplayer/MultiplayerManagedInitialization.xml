@@ -1,0 +1,54 @@
+<Type Name="MultiplayerManagedInitialization" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerManagedInitialization" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerManagedInitialization extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents managed initialization for a session.
+</summary>
+    <remarks>
+If using managed initialization, the session expects the system or the title to perform initialization
+following the session creation and/or as new members join the session. The session automatically tracks
+the timeouts and initialization stages, including QoS measurements if any metrics are set.
+These timeouts override the session's reservation and ready timeouts for members that have the
+MultiplayerSessionMember.InitializationEpisode Property set. 
+
+In managed initialization, the initialization stage goes from "joining" to "measuring" to "evaluating". 
+If the MultiplayerManagedInitialization.AutoEvaluate Property is set to true, the evaluating stage is skipped.
+If metrics are not set for the session, the measuring stage is skipped. 
+If the stage is set to "failed", the session cannot be initialized. 
+</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"managedInitialization": {
+    "joinTimeout": 4000,
+    "measurementTimeout" : 5000,
+    "evaluationTimeout" : 5000,
+    "autoEvaluate" : true,
+    "membersNeededToStart" : 2
+},
+</code></example>
+  </Docs>
+  <Members />
+</Type>

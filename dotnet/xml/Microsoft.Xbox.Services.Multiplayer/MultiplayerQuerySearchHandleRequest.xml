@@ -1,0 +1,61 @@
+<Type Name="MultiplayerQuerySearchHandleRequest" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerQuerySearchHandleRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerQuerySearchHandleRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQuerySearchHandleRequestFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Sets the search handle based on the configuration of this request.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiplayerQuerySearchHandleRequest (string serviceConfigurationId, string sessionTemplateName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serviceConfigurationId, string sessionTemplateName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sessionTemplateName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="sessionTemplateName">To be added.</param>
+        <summary> Creates a MultiplayerGetSearchHandleRequest object.
+<param name="serviceConfigurationId">The scid within which to query for search handles.</param><param name="sessionTemplateName">The name of the template to query for search handles.</param></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

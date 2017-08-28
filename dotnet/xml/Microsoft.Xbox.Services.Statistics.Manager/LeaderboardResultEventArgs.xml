@@ -1,0 +1,35 @@
+<Type Name="LeaderboardResultEventArgs" FullName="Microsoft.Xbox.Services.Statistics.Manager.LeaderboardResultEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class LeaderboardResultEventArgs : Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LeaderboardResultEventArgs extends System.Object implements class Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Statistics.Manager.LeaderboardResultEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents the results of a leaderboard request.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,71 @@
+<Type Name="MultiplayerService" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerService">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Handles interactions with an Xbox Live service endpoint on a server.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MultiplayerSessionChanged">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt; MultiplayerSessionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt; MultiplayerSessionChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.MultiplayerSessionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Registers for multiplayer session change notifications.  Event handlers receive MultiplayerSessionChangeEventArgs^.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplayerSubscriptionLost">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs&gt; MultiplayerSubscriptionLost;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs&gt; MultiplayerSubscriptionLost" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.MultiplayerSubscriptionLost" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Notification sent when a multiplayer connectivity via RTA is lost or stopped.
+Event handlers receive Windows::Networking::Sockets::RealTimeActivityMultiplayerSubscriptionsLostEventArgs^.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

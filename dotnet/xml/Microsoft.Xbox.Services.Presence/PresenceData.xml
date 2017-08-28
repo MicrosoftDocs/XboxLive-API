@@ -1,0 +1,89 @@
+<Type Name="PresenceData" FullName="Microsoft.Xbox.Services.Presence.PresenceData">
+  <TypeSignature Language="C#" Value="public sealed class PresenceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.PresenceData" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.Presence.__IPresenceDataFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents data supporting Rich Presence features.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PresenceData (string serviceConfigurationId, string presenceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serviceConfigurationId, string presenceId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceData.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="presenceId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) that identifies where the presence strings are defined by Id.</param>
+        <param name="presenceId">Id of the presence string that should be used.</param>
+        <summary>
+Initializes a new instance of the PresenceData class.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PresenceData (string serviceConfigurationId, string presenceId, Windows.Foundation.Collections.IVectorView&lt;string&gt; presenceTokenIds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serviceConfigurationId, string presenceId, class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; presenceTokenIds) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceData.#ctor(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="presenceId" Type="System.String" />
+        <Parameter Name="presenceTokenIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="presenceId">To be added.</param>
+        <param name="presenceTokenIds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

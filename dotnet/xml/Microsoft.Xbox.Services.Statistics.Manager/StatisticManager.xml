@@ -1,0 +1,53 @@
+<Type Name="StatisticManager" FullName="Microsoft.Xbox.Services.Statistics.Manager.StatisticManager">
+  <TypeSignature Language="C#" Value="public sealed class StatisticManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatisticManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SingletonInstance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Statistics.Manager.StatisticManager SingletonInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.Statistics.Manager.StatisticManager SingletonInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.SingletonInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Statistics.Manager.StatisticManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> 
+Instantiates and returns an instance of simplified stats
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

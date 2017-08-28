@@ -1,0 +1,507 @@
+<Type Name="TitleCallableUI" FullName="Microsoft.Xbox.Services.System.TitleCallableUI">
+  <TypeSignature Language="C#" Value="public sealed class TitleCallableUI" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleCallableUI extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.TitleCallableUI" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.System.__ITitleCallableUIStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a class that contains static functions used for displaying stock UI during a game such as showing a people picker.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckGamingPrivilegeSilently">
+      <MemberSignature Language="C#" Value="public static bool CheckGamingPrivilegeSilently (Microsoft.Xbox.Services.System.GamingPrivilege privilege);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckGamingPrivilegeSilently(valuetype Microsoft.Xbox.Services.System.GamingPrivilege privilege) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeSilently(Microsoft.Xbox.Services.System.GamingPrivilege)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="privilege" Type="Microsoft.Xbox.Services.System.GamingPrivilege" />
+      </Parameters>
+      <Docs>
+        <param name="privilege">The privilege to check.</param>
+        <summary>
+Checks if the current user has a specific privilege
+</summary>
+        <returns>
+A boolean which is true if the current user has the privilege.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckGamingPrivilegeSilentlyForUser">
+      <MemberSignature Language="C#" Value="public static bool CheckGamingPrivilegeSilentlyForUser (Microsoft.Xbox.Services.System.GamingPrivilege privilege, Windows.System.User user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckGamingPrivilegeSilentlyForUser(valuetype Microsoft.Xbox.Services.System.GamingPrivilege privilege, class Windows.System.User user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeSilentlyForUser(Microsoft.Xbox.Services.System.GamingPrivilege,Windows.System.User)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="privilege" Type="Microsoft.Xbox.Services.System.GamingPrivilege" />
+        <Parameter Name="user" Type="Windows.System.User" />
+      </Parameters>
+      <Docs>
+        <param name="privilege">The privilege to check.</param>
+        <param name="user">System user that identifies the user to check the privilege on behalf of</param>
+        <summary>
+Checks if the current user has a specific privilege
+</summary>
+        <returns>
+A boolean which is true if the current user has the privilege.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckGamingPrivilegeWithUI">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncOperation&lt;bool&gt; CheckGamingPrivilegeWithUI (Microsoft.Xbox.Services.System.GamingPrivilege privilege, string friendlyMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncOperation`1&lt;bool&gt; CheckGamingPrivilegeWithUI(valuetype Microsoft.Xbox.Services.System.GamingPrivilege privilege, string friendlyMessage) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeWithUI(Microsoft.Xbox.Services.System.GamingPrivilege,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="privilege" Type="Microsoft.Xbox.Services.System.GamingPrivilege" />
+        <Parameter Name="friendlyMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="privilege">The privilege to check.</param>
+        <param name="friendlyMessage">Text to display in addition to the stock text about the privilege</param>
+        <summary>
+Checks if the current user has a specific privilege and if it doesn't, it shows UI 
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+A boolean which is true if the current user has the privilege.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckGamingPrivilegeWithUIForUser">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncOperation&lt;bool&gt; CheckGamingPrivilegeWithUIForUser (Microsoft.Xbox.Services.System.GamingPrivilege privilege, string friendlyMessage, Windows.System.User user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncOperation`1&lt;bool&gt; CheckGamingPrivilegeWithUIForUser(valuetype Microsoft.Xbox.Services.System.GamingPrivilege privilege, string friendlyMessage, class Windows.System.User user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeWithUIForUser(Microsoft.Xbox.Services.System.GamingPrivilege,System.String,Windows.System.User)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="privilege" Type="Microsoft.Xbox.Services.System.GamingPrivilege" />
+        <Parameter Name="friendlyMessage" Type="System.String" />
+        <Parameter Name="user" Type="Windows.System.User" />
+      </Parameters>
+      <Docs>
+        <param name="privilege">The privilege to check.</param>
+        <param name="friendlyMessage">Text to display in addition to the stock text about the privilege</param>
+        <param name="user">System user that identifies the user to show the UI on behalf of</param>
+        <summary>
+Checks if the current user has a specific privilege and if it doesn't, it shows UI 
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+A boolean which is true if the current user has the privilege.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowChangeFriendRelationshipUIAsync">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowChangeFriendRelationshipUIAsync (string targetXboxUserId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowChangeFriendRelationshipUIAsync(string targetXboxUserId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowChangeFriendRelationshipUIAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetXboxUserId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetXboxUserId">The Xbox User ID to show information about.</param>
+        <summary>
+Shows UI for adding or removing a specified person to or from the requesting user's friend list.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowChangeFriendRelationshipUIForUserAsync">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowChangeFriendRelationshipUIForUserAsync (string targetXboxUserId, Windows.System.User user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowChangeFriendRelationshipUIForUserAsync(string targetXboxUserId, class Windows.System.User user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowChangeFriendRelationshipUIForUserAsync(System.String,Windows.System.User)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetXboxUserId" Type="System.String" />
+        <Parameter Name="user" Type="Windows.System.User" />
+      </Parameters>
+      <Docs>
+        <param name="targetXboxUserId">The Xbox User ID to show information about.</param>
+        <param name="user">System user that identifies the user to show the UI on behalf of</param>
+        <summary>
+Shows UI for adding or removing a specified person to or from the requesting user's friend list.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowGameInviteUIAsync">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowGameInviteUIAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, string contextStringId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowGameInviteUIAsync(class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, string contextStringId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+        <Parameter Name="contextStringId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sessionReference">A reference to the multiplayer session to invite people to.</param>
+        <param name="contextStringId">The custom context string ID.  This string ID is defined 
+during Xbox Live ingestion to identify the invitation text that is additional to the standard 
+invitation text. The ID string must be prefixed with "///".  Pass an empty string if 
+you don't want a custom string added to the invite.</param>
+        <summary>
+Shows a picker UI populated from the selected user's friend list and suggested friend list. 
+After selection, the user can send an invitation to play a game and/or party chat for a 
+specified game session to the selected people.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowGameInviteUIForUserAsync">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowGameInviteUIForUserAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, string invitationDisplayText, Windows.System.User user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowGameInviteUIForUserAsync(class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, string invitationDisplayText, class Windows.System.User user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIForUserAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,Windows.System.User)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("ShowGameInviteUIForUserAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+        <Parameter Name="invitationDisplayText" Type="System.String" />
+        <Parameter Name="user" Type="Windows.System.User" />
+      </Parameters>
+      <Docs>
+        <param name="sessionReference">A reference to the multiplayer session to invite people to.</param>
+        <param name="invitationDisplayText">The ID of the custom invite string that is displayed with 
+the invite notification.The ID must match the ID that is assigned to the custom invite string 
+in the title's multiplayer service configuration. The format of the parameter is "///{id}", 
+where {id} is replaced with the ID of the custom string. For example, if the ID of the custom string 
+"Play Capture the Flag" is 1, then you would set this parameter to "///1" in order to display the 
+"Play Capture the Flag" custom string in the game invite. 
+Pass an empty string if you don't want a custom string added to the invite.</param>
+        <param name="user">System user that identifies which user is sending the invite</param>
+        <summary>
+Shows a picker UI populated from the selected user's friend list and suggested friend list. 
+After selection, the user can send an invitation to play a game and/or party chat for a 
+specified game session to the selected people.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowGameInviteUIForUserAsync">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowGameInviteUIForUserAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, string invitationDisplayText, string contextStringId, Windows.System.User user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowGameInviteUIForUserAsync(class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, string invitationDisplayText, string contextStringId, class Windows.System.User user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIForUserAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,System.String,Windows.System.User)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("ShowGameInviteUIForUserAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+        <Parameter Name="invitationDisplayText" Type="System.String" />
+        <Parameter Name="contextStringId" Type="System.String" />
+        <Parameter Name="user" Type="Windows.System.User" />
+      </Parameters>
+      <Docs>
+        <param name="sessionReference">A reference to the multiplayer session to invite people to.</param>
+        <param name="invitationDisplayText">The ID of the custom invite string that is displayed with 
+the invite notification.The ID must match the ID that is assigned to the custom invite string 
+in the title's multiplayer service configuration. The format of the parameter is "///{id}", 
+where {id} is replaced with the ID of the custom string. For example, if the ID of the custom string 
+"Play Capture the Flag" is 1, then you would set this parameter to "///1" in order to display the 
+"Play Capture the Flag" custom string in the game invite. 
+Pass an empty string if you don't want a custom string added to the invite.</param>
+        <param name="contextStringId">The custom activation context that is available to the invitee in the 
+activation URI for an invite. The custom activation context string must be URL-safe and binary content 
+should be encoded with URL-safe base64 encoding. The maximum length is 160 characters.</param>
+        <param name="user">System user that identifies which user is sending the invite</param>
+        <summary>
+Shows a picker UI populated from the selected user's friend list and suggested friend list. 
+After selection, the user can send an invitation to play a game and/or party chat for a 
+specified game session to the selected people.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowPlayerPickerUI">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt; ShowPlayerPickerUI (string promptDisplayText, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, Windows.Foundation.Collections.IVectorView&lt;string&gt; preselectedXboxUserIds, uint minSelectionCount, uint maxSelectionCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;string&gt;&gt; ShowPlayerPickerUI(string promptDisplayText, class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; preselectedXboxUserIds, unsigned int32 minSelectionCount, unsigned int32 maxSelectionCount) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowPlayerPickerUI(System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{System.String},System.UInt32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="promptDisplayText" Type="System.String" />
+        <Parameter Name="xboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="preselectedXboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="minSelectionCount" Type="System.UInt32" />
+        <Parameter Name="maxSelectionCount" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="promptDisplayText">To be added.</param>
+        <param name="xboxUserIds">To be added.</param>
+        <param name="preselectedXboxUserIds">To be added.</param>
+        <param name="minSelectionCount">To be added.</param>
+        <param name="maxSelectionCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowPlayerPickerUIForUser">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt; ShowPlayerPickerUIForUser (string promptDisplayText, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, Windows.Foundation.Collections.IVectorView&lt;string&gt; preselectedXboxUserIds, uint minSelectionCount, uint maxSelectionCount, Windows.System.User user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;string&gt;&gt; ShowPlayerPickerUIForUser(string promptDisplayText, class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; preselectedXboxUserIds, unsigned int32 minSelectionCount, unsigned int32 maxSelectionCount, class Windows.System.User user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowPlayerPickerUIForUser(System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{System.String},System.UInt32,System.UInt32,Windows.System.User)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="promptDisplayText" Type="System.String" />
+        <Parameter Name="xboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="preselectedXboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="minSelectionCount" Type="System.UInt32" />
+        <Parameter Name="maxSelectionCount" Type="System.UInt32" />
+        <Parameter Name="user" Type="Windows.System.User" />
+      </Parameters>
+      <Docs>
+        <param name="promptDisplayText">To be added.</param>
+        <param name="xboxUserIds">To be added.</param>
+        <param name="preselectedXboxUserIds">To be added.</param>
+        <param name="minSelectionCount">To be added.</param>
+        <param name="maxSelectionCount">To be added.</param>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowProfileCardUIAsync">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowProfileCardUIAsync (string targetXboxUserId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowProfileCardUIAsync(string targetXboxUserId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowProfileCardUIAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetXboxUserId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetXboxUserId">The Xbox User ID to show information about.</param>
+        <summary>
+Shows UI displaying the profile card for a specified user.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowProfileCardUIForUserAsync">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowProfileCardUIForUserAsync (string targetXboxUserId, Windows.System.User user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowProfileCardUIForUserAsync(string targetXboxUserId, class Windows.System.User user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowProfileCardUIForUserAsync(System.String,Windows.System.User)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetXboxUserId" Type="System.String" />
+        <Parameter Name="user" Type="Windows.System.User" />
+      </Parameters>
+      <Docs>
+        <param name="targetXboxUserId">The Xbox User ID to show information about.</param>
+        <param name="user">System user that identifies the user to show the UI on behalf of</param>
+        <summary>
+Shows UI displaying the profile card for a specified user.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowTitleAchievementsUIAsync">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowTitleAchievementsUIAsync (uint titleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowTitleAchievementsUIAsync(unsigned int32 titleId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowTitleAchievementsUIAsync(System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="titleId" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="titleId">The Xbox titleId to show information about.</param>
+        <summary>
+Shows UI presenting the requesting user's achievements for the specified title.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowTitleAchievementsUIForUserAsync">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowTitleAchievementsUIForUserAsync (uint titleId, Windows.System.User user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowTitleAchievementsUIForUserAsync(unsigned int32 titleId, class Windows.System.User user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowTitleAchievementsUIForUserAsync(System.UInt32,Windows.System.User)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="titleId" Type="System.UInt32" />
+        <Parameter Name="user" Type="Windows.System.User" />
+      </Parameters>
+      <Docs>
+        <param name="titleId">The Xbox titleId to show information about.</param>
+        <param name="user">System user that identifies the user to show the UI on behalf of</param>
+        <summary>
+Shows UI presenting the requesting user's achievements for the specified title.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

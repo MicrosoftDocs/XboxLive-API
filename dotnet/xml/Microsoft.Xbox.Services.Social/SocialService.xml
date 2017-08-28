@@ -1,0 +1,51 @@
+<Type Name="SocialService" FullName="Microsoft.Xbox.Services.Social.SocialService">
+  <TypeSignature Language="C#" Value="public sealed class SocialService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.SocialService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines access methods that return social relationship information between the user and one or more other Xbox Live users.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SocialRelationshipChanged">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs&gt; SocialRelationshipChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs&gt; SocialRelationshipChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.Social.SocialService.SocialRelationshipChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Registers for social relationship change notifications.  Event handlers will receive SocialRelationshipChangeEventArgs^.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

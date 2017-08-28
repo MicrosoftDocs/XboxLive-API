@@ -1,0 +1,31 @@
+<Type Name="XboxLiveLogCallEventArgs" FullName="Microsoft.Xbox.Services.XboxLiveLogCallEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class XboxLiveLogCallEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveLogCallEventArgs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveLogCallEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Contains information about a service call.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,79 @@
+<Type Name="TournamentOrderBy" FullName="Microsoft.Xbox.Services.Tournaments.TournamentOrderBy">
+  <TypeSignature Language="C#" Value="public enum TournamentOrderBy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentOrderBy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary />
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EndTime">
+      <MemberSignature Language="C#" Value="EndTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentOrderBy EndTime = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.EndTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentOrderBy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+end_time is only set on completed tournaments so it is only valid to sort by end_time when 
+the state query parameter is set to tournament_state::completed.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentOrderBy None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentOrderBy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+No order by provided.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTime">
+      <MemberSignature Language="C#" Value="StartTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentOrderBy StartTime = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.StartTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentOrderBy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The only valid sort order for playing_start is tournament_sort_order::ascending. 
+TODO: clarify what this is used for
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

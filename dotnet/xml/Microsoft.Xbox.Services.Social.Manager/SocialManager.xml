@@ -1,0 +1,53 @@
+<Type Name="SocialManager" FullName="Microsoft.Xbox.Services.Social.Manager.SocialManager">
+  <TypeSignature Language="C#" Value="public sealed class SocialManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.SocialManager" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.Social.Manager.__ISocialManagerStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SingletonInstance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Social.Manager.SocialManager SingletonInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.Social.Manager.SocialManager SingletonInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialManager.SingletonInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Gets the social_manager singleton instance
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

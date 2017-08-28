@@ -1,0 +1,116 @@
+<Type Name="RealTimeActivitySubscriptionState" FullName="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState">
+  <TypeSignature Language="C#" Value="public enum RealTimeActivitySubscriptionState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RealTimeActivitySubscriptionState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Enumeration for the possible states of a statistic subscription request
+to the real-time activity service.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Closed">
+      <MemberSignature Language="C#" Value="Closed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState Closed = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState.Closed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Unsubscribe confirmed.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingSubscribe">
+      <MemberSignature Language="C#" Value="PendingSubscribe" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState PendingSubscribe = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState.PendingSubscribe" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Waiting for the server to respond to the subscription request.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingUnsubscribe">
+      <MemberSignature Language="C#" Value="PendingUnsubscribe" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState PendingUnsubscribe = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState.PendingUnsubscribe" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Waiting for the server to respond to the unsubscribe request.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscribed">
+      <MemberSignature Language="C#" Value="Subscribed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState Subscribed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState.Subscribed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Subscription confirmed.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The subscription state is unknown.
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,56 @@
+<Type Name="MultiplayerSessionStates" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionStates" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionStates extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents high-level information about the state of a session.
+</summary>
+    <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+   "results": [
+   {
+       "xuid": "9876",
+       "startTime": "2013-02-01T00:00:00Z",
+       "sessionRef": {
+           "scid": "foo",
+           "templateName": "bar",
+           "name": "session-seven"
+       },
+       "accepted": 4,
+       "status": "Active",
+       "visibility": "Open",
+       "joinRestriction": "Local",
+       "myTurn": true,
+       "keywords": [
+           "one",
+           "two"
+       ]
+   }
+   ]
+</code></example>
+  </Docs>
+  <Members />
+</Type>

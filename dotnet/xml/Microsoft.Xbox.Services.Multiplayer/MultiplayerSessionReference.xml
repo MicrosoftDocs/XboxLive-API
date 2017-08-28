@@ -1,0 +1,103 @@
+<Type Name="MultiplayerSessionReference" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionReference extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionReferenceFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionReferenceStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a reference to a multiplayer session.
+</summary>
+    <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"sessionRef": {
+  "scid": "foo",
+  "templateName" : "bar",
+  "name" : "session-seven"
+}
+</code></example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiplayerSessionReference (string serviceConfigurationId, string sessionTemplateName, string sessionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serviceConfigurationId, string sessionTemplateName, string sessionName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sessionTemplateName" Type="System.String" />
+        <Parameter Name="sessionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">A service configuration ID appropriate for the title.</param>
+        <param name="sessionTemplateName">The name of the template for the session to be based on.</param>
+        <param name="sessionName">A unique name for the session.</param>
+        <summary>
+Constructs the MultiplayerSession object with data about the session.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseFromUriPath">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference ParseFromUriPath (string uriPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference ParseFromUriPath(string uriPath) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.ParseFromUriPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uriPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uriPath">A string indicating the parsed URI path.</param>
+        <summary>
+Returns the session reference parsed from the specified URI.
+</summary>
+        <returns>
+An object representing the multiplayer session reference.
+</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

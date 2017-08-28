@@ -1,0 +1,35 @@
+<Type Name="TournamentGameSessionReadyEventArgs" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.TournamentGameSessionReadyEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class TournamentGameSessionReadyEventArgs : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentGameSessionReadyEventArgs extends System.Object implements class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.TournamentGameSessionReadyEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Contains information for an event that indicates when the tournament registration state changes.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>
