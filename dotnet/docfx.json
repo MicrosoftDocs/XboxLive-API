@@ -47,7 +47,10 @@
     "externalReference": [],
     "globalMetadata": {
       "apiPlatform": "dotnet",
-      "author": "dotnet-bot"
+      "author": "KevinAsgari",
+      "ms.author": "kevinasg",
+      "ms.prod": "windows",
+      "ms.technology": "winrt-reference",
     },
     "fileMetadata": {},
     "template": [],
