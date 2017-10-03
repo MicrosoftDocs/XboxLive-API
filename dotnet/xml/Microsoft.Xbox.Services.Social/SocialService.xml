@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines access methods that return social relationship information between the user and one or more other Xbox Live users.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,9 +47,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+Returns a XboxSocialRelationshipResult containing a the list of people that the user is connected to.
+Defaults to filtering to PersonView.All
+Defaults to startIndex and maxItems of 0 to return entire list if possible
+</summary>
+        <returns>An XboxSocialRelationshipResult object.</returns>
+        <remarks>Calls V1 GET /users/{ownerId}/people?view={view}&amp;startIndex={startIndex}&amp;maxItems={maxItems}</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSocialRelationshipsAsync">
@@ -74,10 +80,12 @@
         <Parameter Name="socialRelationshipFilter" Type="Microsoft.Xbox.Services.Social.SocialRelationship" />
       </Parameters>
       <Docs>
-        <param name="socialRelationshipFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="socialRelationshipFilter">Controls how the list is filtered</param>
+        <summary>
+Returns a XboxSocialRelationshipResult containing a the list of people that the user is connected to.
+</summary>
+        <returns>An XboxSocialRelationshipResult object.</returns>
+        <remarks>Calls V1 GET /users/{ownerId}/people?view={view}&amp;startIndex={startIndex}&amp;maxItems={maxItems}</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSocialRelationshipsAsync">
@@ -130,12 +138,14 @@
         <Parameter Name="maxItems" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="socialRelationshipFilter">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <param name="maxItems">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="socialRelationshipFilter">Controls how the list is filtered</param>
+        <param name="startIndex">Controls the starting index to return</param>
+        <param name="maxItems">Controls the number of XboxSocialRelationship objects to get.  0 will return as many as possible</param>
+        <summary>
+Returns a XboxSocialRelationshipResult containing a the list of people that the user is connected to.
+</summary>
+        <returns>An XboxSocialRelationshipResult object.</returns>
+        <remarks>Calls V1 GET /users/{ownerId}/people?view={view}&amp;startIndex={startIndex}&amp;maxItems={maxItems}</remarks>
       </Docs>
     </Member>
     <Member MemberName="SocialRelationshipChanged">
@@ -151,7 +161,9 @@
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Registers for social relationship change notifications.  Event handlers will receive SocialRelationshipChangeEventArgs^.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,9 +183,12 @@
         <Parameter Name="xboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="xboxUserId">The Xbox User ID of the person of the subscription</param>
+        <summary>
+Subscribes to social relationship change notifications via the SocialRelationshipChanged event
+</summary>
+        <returns>SocialRelationshipChangeSubscription containing the initial value of the Xbox User Id
+Register for social relationship changes via the SocialRelationshipChanged event</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,8 +208,10 @@
         <Parameter Name="subscription" Type="Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription" />
       </Parameters>
       <Docs>
-        <param name="subscription">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="subscription">The subscription object to unsubscribe</param>
+        <summary>
+Unsubscribes a previously created social relationship change subscription
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

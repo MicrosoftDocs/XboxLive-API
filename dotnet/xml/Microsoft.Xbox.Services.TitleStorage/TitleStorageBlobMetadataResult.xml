@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Metadata about blob data returned from the cloud.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,9 +44,11 @@
         <Parameter Name="maxItems" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="maxItems">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="maxItems">The maximum number of items the result can contain.  Pass 0 to request all items.</param>
+        <summary>
+Gets the next page of blob metadata results.
+</summary>
+        <returns>A TitleStorageBlobMetadataResult object containing the next page of TitleStorageBlobMetadata objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +65,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates if there is additional data to retrieve from a GetNextAsync call
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,7 +85,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The collection of blob metadata objects returned by a service metadata request.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

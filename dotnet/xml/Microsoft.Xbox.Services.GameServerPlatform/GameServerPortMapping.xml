@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a mapping between the port numbers requested for the server to use, and the port numbers exposed via load balancing hardware.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +41,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The external port number clients should use when connecting.  This port is mapped by networking hardware to the internal port number.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +61,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The internal port number for the named port.  This is the port that the server will open using the socket API.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +81,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The name of the port, which is specified in your Azure project cscfg.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

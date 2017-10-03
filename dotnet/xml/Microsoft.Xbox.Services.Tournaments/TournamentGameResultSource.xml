@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values used to indicate the source for a tournament game state.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Game result is adjusted by tournament administrator.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Arbitration">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Game result source is from client arbitration submit.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+No game result source .
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -80,7 +88,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Game result is determined by game servers.
+</summary>
       </Docs>
     </Member>
   </Members>

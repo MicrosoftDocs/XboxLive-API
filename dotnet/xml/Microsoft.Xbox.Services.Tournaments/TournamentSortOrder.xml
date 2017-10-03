@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+The order in which to sort the results.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentSortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Sorts smaller items first.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentSortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Sorts larger items first.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentSortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+No sort order provided.
+</summary>
       </Docs>
     </Member>
   </Members>

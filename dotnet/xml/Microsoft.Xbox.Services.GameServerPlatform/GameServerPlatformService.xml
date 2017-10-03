@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents the game server platform service for allocating game server clusters and retrieving game server metadata.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,14 +48,16 @@
         <Parameter Name="abortIfQueued" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="gameServerTitleId">To be added.</param>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="sessionTemplateName">To be added.</param>
-        <param name="sessionName">To be added.</param>
-        <param name="abortIfQueued">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="gameServerTitleId">Title ID of the game server.</param>
+        <param name="serviceConfigurationId">Service configuration ID (SCID).  This can come from the MatchTicket.</param>
+        <param name="sessionTemplateName">Session template name.  This can come from the MatchTicket.</param>
+        <param name="sessionName">Session name.  This can come from the MatchTicket.</param>
+        <param name="abortIfQueued">Indicates if the allocate should aborted if the operation is queued.</param>
+        <summary>
+Allocates a new Game Server Cluster using an existing Game Server Image.
+</summary>
+        <returns>ClusterResult object</returns>
+        <remarks>Calls V1 POST /titles/{gameServerTitleId}/clusters</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocateClusterInlineAsync">
@@ -80,18 +84,20 @@
         <Parameter Name="abortIfQueued" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="gameServerTitleId">To be added.</param>
-        <param name="serviceConfigurationId">To be added.</param>
+        <param name="gameServerTitleId">Title ID of the game server.</param>
+        <param name="serviceConfigurationId">Service configuration ID (SCID).</param>
         <param name="sandboxId">To be added.</param>
-        <param name="ticketId">To be added.</param>
-        <param name="gsiSetId">To be added.</param>
-        <param name="gameVariantId">To be added.</param>
-        <param name="maxAllowedPlayers">To be added.</param>
-        <param name="location">To be added.</param>
-        <param name="abortIfQueued">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="ticketId">Unique id for this request.  The ticket id should be the same for all members of the group.</param>
+        <param name="gsiSetId">The GSI Set id to use for this request.  Comes from GetGameServerMetadataAsync.</param>
+        <param name="gameVariantId">Which game variant to use.  Comes from GetGameServerMetadataAsync.</param>
+        <param name="maxAllowedPlayers">The maximum players allowed by this variant.</param>
+        <param name="location">Which datacenter to use for allocation.  This information should come from QoS probes.</param>
+        <param name="abortIfQueued">Indicates if the allocate should aborted if the operation is queued.</param>
+        <summary>
+Allocates a new Game Server Cluster using an existing Game Server Image, without interacting with MPSD.
+</summary>
+        <returns>ClusterResult object</returns>
+        <remarks>Calls V2 POST /titles/{gameServerTitleId}/inlineclusters</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocateSessionHost">
@@ -151,14 +157,16 @@
         <Parameter Name="locale" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="titleId">To be added.</param>
-        <param name="maxAllowedPlayers">To be added.</param>
-        <param name="publisherOnly">To be added.</param>
-        <param name="maxVariants">To be added.</param>
-        <param name="locale">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="titleId">The title ID.</param>
+        <param name="maxAllowedPlayers">The maximum players the variant allows.</param>
+        <param name="publisherOnly">Indicates whether to filter on publisher-created variants; otherwise user-created variants.</param>
+        <param name="maxVariants">The maximum number of variants to return.</param>
+        <param name="locale">Deprecated. This value is ignored and no longer required. (Optional)</param>
+        <summary>
+Retrieves a list of game variants for the specified title Id. 
+</summary>
+        <returns>GameServerMetadataResult object</returns>
+        <remarks>Calls V1 POST /titles/{titleId}/variants</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetGameServerMetadataAsync">
@@ -212,9 +220,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+Retrieves a collection of Quality of Service (QoS) servers. 
+</summary>
+        <returns>A collection of QualityOfServiceServer objects.</returns>
+        <remarks>Calls V1 GET /qosservers/</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSessionHostAllocationStatus">
@@ -234,11 +244,13 @@
         <Parameter Name="sessionId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="gameServerTitleId">To be added.</param>
-        <param name="sessionId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="gameServerTitleId">Title ID of the game server</param>
+        <param name="sessionId">This is the caller specified identifier. It is assigned to the session host that is allocated and returned. Later on you can reference the specific sessionhost by this identifier. It must be globally unique(i.e.GUID).</param>
+        <summary>
+Get allocation status for a previous allocate session host request
+</summary>
+        <returns>AllocationResult object</returns>
+        <remarks>Calls V8 POST /titles/{gameServerTitleId}/sessionhosts</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTicketStatusAsync">
@@ -258,11 +270,13 @@
         <Parameter Name="ticketId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="gameServerTitleId">To be added.</param>
-        <param name="ticketId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="gameServerTitleId">Title ID of the game server.</param>
+        <param name="ticketId">Unique id for this request.  The ticket id should be the same for all members of the group.</param>
+        <summary>
+Allocates a new Game Server Cluster using an existing Game Server Image, without interacting with MPSD.
+</summary>
+        <returns>GameServerTicketStatus object</returns>
+        <remarks>Calls V6 GET titles/{titleId}/tickets/{ticketId}/status</remarks>
       </Docs>
     </Member>
   </Members>

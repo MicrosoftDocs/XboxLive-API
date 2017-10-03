@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines enumberation values that indicate the types of changes to a session that can be subscribed to.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Changes within tournament server properties. Such as next game, last game, or registration.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="CustomPropertyChange">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Changes within the /properties/custom object.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Everything">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Changes to anything in the session.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="HostDeviceTokenChange">
@@ -80,7 +88,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Changes to the host device token.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="InitializationStateChange">
@@ -96,7 +106,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Changes to the stage of initialization has changed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="MatchmakingStatusChange">
@@ -112,7 +124,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Changes to the matchmaking status (e.g. match found or expired) occured.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="MemberCustomPropertyChange">
@@ -128,7 +142,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Changed within the /member/properties/custom object, for any of the members.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="MemberListChange">
@@ -144,7 +160,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A member joined or left the session.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="MemberStatusChange">
@@ -160,7 +178,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Changes to the status of a member.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -176,7 +196,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+None.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionJoinabilityChange">
@@ -192,7 +214,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Changes to the joinability of the session.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="TournamentPropertyChange">
@@ -208,7 +232,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Changes within tournament server properties. Such as next game, last game, or registration.
+</summary>
       </Docs>
     </Member>
   </Members>

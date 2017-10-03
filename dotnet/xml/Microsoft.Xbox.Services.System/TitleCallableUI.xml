@@ -25,7 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a class that contains static functions used for displaying stock UI during a game such as showing a people picker.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,9 +47,13 @@
         <Parameter Name="privilege" Type="Microsoft.Xbox.Services.System.GamingPrivilege" />
       </Parameters>
       <Docs>
-        <param name="privilege">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="privilege">The privilege to check.</param>
+        <summary>
+Checks if the current user has a specific privilege
+</summary>
+        <returns>
+A boolean which is true if the current user has the privilege.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,10 +74,14 @@
         <Parameter Name="user" Type="Windows.System.User" />
       </Parameters>
       <Docs>
-        <param name="privilege">To be added.</param>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="privilege">The privilege to check.</param>
+        <param name="user">System user that identifies the user to check the privilege on behalf of</param>
+        <summary>
+Checks if the current user has a specific privilege
+</summary>
+        <returns>
+A boolean which is true if the current user has the privilege.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +102,16 @@
         <Parameter Name="friendlyMessage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="privilege">To be added.</param>
-        <param name="friendlyMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="privilege">The privilege to check.</param>
+        <param name="friendlyMessage">Text to display in addition to the stock text about the privilege</param>
+        <summary>
+Checks if the current user has a specific privilege and if it doesn't, it shows UI 
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+A boolean which is true if the current user has the privilege.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,11 +133,17 @@
         <Parameter Name="user" Type="Windows.System.User" />
       </Parameters>
       <Docs>
-        <param name="privilege">To be added.</param>
-        <param name="friendlyMessage">To be added.</param>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="privilege">The privilege to check.</param>
+        <param name="friendlyMessage">Text to display in addition to the stock text about the privilege</param>
+        <param name="user">System user that identifies the user to show the UI on behalf of</param>
+        <summary>
+Checks if the current user has a specific privilege and if it doesn't, it shows UI 
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+A boolean which is true if the current user has the privilege.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,9 +163,14 @@
         <Parameter Name="targetXboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetXboxUserId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="targetXboxUserId">The Xbox User ID to show information about.</param>
+        <summary>
+Shows UI for adding or removing a specified person to or from the requesting user's friend list.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,10 +191,15 @@
         <Parameter Name="user" Type="Windows.System.User" />
       </Parameters>
       <Docs>
-        <param name="targetXboxUserId">To be added.</param>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="targetXboxUserId">The Xbox User ID to show information about.</param>
+        <param name="user">System user that identifies the user to show the UI on behalf of</param>
+        <summary>
+Shows UI for adding or removing a specified person to or from the requesting user's friend list.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,10 +220,20 @@
         <Parameter Name="contextStringId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sessionReference">To be added.</param>
-        <param name="contextStringId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sessionReference">A reference to the multiplayer session to invite people to.</param>
+        <param name="contextStringId">The custom context string ID.  This string ID is defined 
+during Xbox Live ingestion to identify the invitation text that is additional to the standard 
+invitation text. The ID string must be prefixed with "///".  Pass an empty string if 
+you don't want a custom string added to the invite.</param>
+        <summary>
+Shows a picker UI populated from the selected user's friend list and suggested friend list. 
+After selection, the user can send an invitation to play a game and/or party chat for a 
+specified game session to the selected people.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,11 +260,24 @@
         <Parameter Name="user" Type="Windows.System.User" />
       </Parameters>
       <Docs>
-        <param name="sessionReference">To be added.</param>
-        <param name="invitationDisplayText">To be added.</param>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sessionReference">A reference to the multiplayer session to invite people to.</param>
+        <param name="invitationDisplayText">The ID of the custom invite string that is displayed with 
+the invite notification.The ID must match the ID that is assigned to the custom invite string 
+in the title's multiplayer service configuration. The format of the parameter is "///{id}", 
+where {id} is replaced with the ID of the custom string. For example, if the ID of the custom string 
+"Play Capture the Flag" is 1, then you would set this parameter to "///1" in order to display the 
+"Play Capture the Flag" custom string in the game invite. 
+Pass an empty string if you don't want a custom string added to the invite.</param>
+        <param name="user">System user that identifies which user is sending the invite</param>
+        <summary>
+Shows a picker UI populated from the selected user's friend list and suggested friend list. 
+After selection, the user can send an invitation to play a game and/or party chat for a 
+specified game session to the selected people.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,12 +305,27 @@
         <Parameter Name="user" Type="Windows.System.User" />
       </Parameters>
       <Docs>
-        <param name="sessionReference">To be added.</param>
-        <param name="invitationDisplayText">To be added.</param>
-        <param name="contextStringId">To be added.</param>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sessionReference">A reference to the multiplayer session to invite people to.</param>
+        <param name="invitationDisplayText">The ID of the custom invite string that is displayed with 
+the invite notification.The ID must match the ID that is assigned to the custom invite string 
+in the title's multiplayer service configuration. The format of the parameter is "///{id}", 
+where {id} is replaced with the ID of the custom string. For example, if the ID of the custom string 
+"Play Capture the Flag" is 1, then you would set this parameter to "///1" in order to display the 
+"Play Capture the Flag" custom string in the game invite. 
+Pass an empty string if you don't want a custom string added to the invite.</param>
+        <param name="contextStringId">The custom activation context that is available to the invitee in the 
+activation URI for an invite. The custom activation context string must be URL-safe and binary content 
+should be encoded with URL-safe base64 encoding. The maximum length is 160 characters.</param>
+        <param name="user">System user that identifies which user is sending the invite</param>
+        <summary>
+Shows a picker UI populated from the selected user's friend list and suggested friend list. 
+After selection, the user can send an invitation to play a game and/or party chat for a 
+specified game session to the selected people.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,9 +407,14 @@
         <Parameter Name="targetXboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetXboxUserId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="targetXboxUserId">The Xbox User ID to show information about.</param>
+        <summary>
+Shows UI displaying the profile card for a specified user.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,10 +435,15 @@
         <Parameter Name="user" Type="Windows.System.User" />
       </Parameters>
       <Docs>
-        <param name="targetXboxUserId">To be added.</param>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="targetXboxUserId">The Xbox User ID to show information about.</param>
+        <param name="user">System user that identifies the user to show the UI on behalf of</param>
+        <summary>
+Shows UI displaying the profile card for a specified user.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,9 +463,14 @@
         <Parameter Name="titleId" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="titleId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="titleId">The Xbox titleId to show information about.</param>
+        <summary>
+Shows UI presenting the requesting user's achievements for the specified title.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,10 +491,15 @@
         <Parameter Name="user" Type="Windows.System.User" />
       </Parameters>
       <Docs>
-        <param name="titleId">To be added.</param>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="titleId">The Xbox titleId to show information about.</param>
+        <param name="user">System user that identifies the user to show the UI on behalf of</param>
+        <summary>
+Shows UI presenting the requesting user's achievements for the specified title.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The operation completes when the UI is closed.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a collection of TeamInfo class objects returned by a request.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +42,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+Returns an TeamRequestResult object that contains the next page of Tournament.
+</summary>
+        <returns>An TeamRequestResult object that contains a list of tournament objects.</returns>
+        <remarks>
+Returns a concurrency::task{T} object that represents the state of the asynchronous operation.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasNext">
@@ -58,8 +64,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+Returns a boolean value that indicates if there are more pages of teams to retrieve.
+</summary>
+        <value>True if there are more pages, otherwise false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +84,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Tournaments.TeamInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A collection of TeamInfo objects returned by a request.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

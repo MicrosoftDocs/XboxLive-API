@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Manager for managing members that are local to this device.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +41,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A unique ID to the session used to query trace logs for entries that relate to the session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +61,11 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns the host member for the game.
+There could be multiple hosts if there are multiple users on the same host device.
+This returns user with the lowest index for that host device.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,8 +86,10 @@
         <Parameter Name="xboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xboxUserId">The Xbox User ID of the user</param>
+        <summary>
+Whether or not the Xbox User ID is the host.
+</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +107,10 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A collection of members that are in the lobby. When a friend accepts a game invite, 
+members will be added to the lobby.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,7 +128,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+JSON string that specify the custom properties for the game.  These can be changed anytime.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +148,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A set of constants associated with this session. These can only be set through the session template.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,7 +168,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Object containing identifying information for the session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,10 +193,14 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="valueJson">To be added.</param>
+        <param name="name">The name of the property to set.</param>
+        <param name="valueJson">The JSON value to assign to the property. (Optional)</param>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Set a custom game property to the specified JSON string.
+Changes are batched and written to the service on the next do_work(). All session properties and members
+contain updated response returned from the server upon calling do_work().
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +221,15 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="gameHost">To be added.</param>
+        <param name="gameHost">The host member.</param>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Sets the host for the game using multiplayer_session_write_mode::synchronized_update. Use this method to resolve
+any conflicts between devices trying to set the host at the same time. It ensures that updates to the session are atomic. 
+The service may reject your request if a race condition occurred(due to a conflict) resulting in error_code
+http_status_412_precondition_failed (HTTP status 412). To resolve this, evaluate the need to write again and re-submit if needed.
+The result is delivered via multiplayer_event callback of type write_synchronized_host_completed through do_work().
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,10 +251,17 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="valueJson">To be added.</param>
+        <param name="name">The name of the property to set.</param>
+        <param name="valueJson">The JSON value to assign to the property. (Optional)</param>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Sets a custom property to the specified JSON string using multiplayer_session_write_mode::synchronized_update.
+Use this method to resolve any conflicts between devices while trying to set properties to a shared portion that other 
+devices can also modify. It ensures that updates to the session are atomic. If writing to non-sharable properties, use set_properties() instead.
+The service may reject your request if a race condition occurred (due to a conflict) resulting in error_code 
+http_status_412_precondition_failed (HTTP status 412). To resolve this, evaluate the need to write again and re-submit if needed.
+The result is delivered via multiplayer_event callback of type write_synchronized_properties_completed through do_work().
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +278,10 @@
         <ReturnType>Windows.Foundation.Collections.IMapView&lt;System.String,Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Only applicable if you are using Xbox Live Tournaments.
+Tournament team results for the game.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,7 +299,10 @@
         <ReturnType>Windows.Foundation.Collections.IMapView&lt;System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Only applicable if you are using Xbox Live Tournaments.
+Teams currently participating in this tournament game.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

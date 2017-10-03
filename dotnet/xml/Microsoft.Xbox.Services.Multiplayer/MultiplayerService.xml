@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Handles interactions with an Xbox Live service endpoint on a server.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,9 +44,12 @@
         <Parameter Name="serviceConfigurationId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceConfigurationId">A string containing the service configuration ID in which to clear activity.</param>
+        <summary>
+Clears the user's current activity session for the specified service configuration ID.
+</summary>
+        <returns>Returns an IAsyncAction object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncAction.Completed property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +69,11 @@
         <Parameter Name="handleId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="handleId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="handleId">The handleId associated with the session to clear.</param>
+        <summary>
+Clears the search handle that is associated with the session.
+</summary>
+        <returns>The async object for notifying when the operation is completed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +91,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+Stops multiplayerservice connectivity via Real Time Activity (RTA).
+</summary>
+        <remarks>
+When stopping multiplayer is complete, a MultiplayerSubscriptionsLost event is fired.
+It is not necessary to wait for this event to fire, unless you intend to call EnableMultiplayerSubscriptions() to restart it,
+in which case you must wait for the stop to complete.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableMultiplayerSubscriptions">
@@ -102,8 +115,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+Starts multiplayerservice connectivity via Real Time Activity (RTA), for two purposes:
+1. Subscriptions to changes on specific sessions, using the MultiplayerSession object.
+2. Automatic removal of members from sessions when the collection underlying this multiplayer subscription is broken.
+
+This method does not actually make the connection, but enables the connection, and helps track its lifetime.
+</summary>
+        <remarks>
+This method fails if called twice, unless the multiplayerconnection has been lost or stopped in the interim.  
+This can be detected by listening for the MultiplayerSubscriptionsLost event.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetActivitiesForSocialGroupAsync">
@@ -124,12 +146,24 @@
         <Parameter Name="socialGroup" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="socialGroupOwnerXboxUserId">To be added.</param>
-        <param name="socialGroup">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceConfigurationId">The service configuration ID to query for activities.</param>
+        <param name="socialGroupOwnerXboxUserId">The Xbox user ID of the person whose social group will be used for the query.</param>
+        <param name="socialGroup">The social group ID to use in order to get the list of users. (e.g. "friends" or "favorites").</param>
+        <summary>
+Gets the current activity for a social group of users associated with a user that is designated as
+the owner of the session.
+</summary>
+        <returns>The async object for notifying when the operation is completed.  
+This contains a vectorview of MultiplayerActivityDetails objects, containing the details of the activities of the targeted users.</returns>
+        <returns>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
+When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+The result is a vectorview of MultiplayerActivityDetails objects, containing the details of the activities for the social group of users.</returns>
+        <remarks>
+There is no paging or continuation, and the multiplayer service limit the number of items returned to 100.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetActivitiesForUsersAsync">
@@ -172,10 +206,22 @@
         <Parameter Name="sessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
       </Parameters>
       <Docs>
-        <param name="sessionReference">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sessionReference">A MultiplayerSessionReference object that contains identifying information for the session.</param>
+        <summary>
+Gets a session object, with all of its attributes, from the server.
+</summary>
+        <returns>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
+When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+The result is a MultiplayerSession object containing the response returned from the server.
+</returns>
+        <remarks>
+If the client tries to get a session that does not exist, this method returns an HTTP/204 status code.
+Additionally an exception is thrown for trying to retrieve a nonexistent session. 
+
+Calls V102 GET /serviceconfigs/{serviceConfigurationId}/sessionTemplates/{sessiontemplateName}/sessions/{sessionName}</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentSessionByHandleAsync">
@@ -194,10 +240,24 @@
         <Parameter Name="handleId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="handleId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="handleId">A multiplayer handle id, which uniquely identifies the session.</param>
+        <summary>
+Gets a session object with all its attributes from the server, given a session handle id.
+A handle is a service-side pointer to a session.  The handleid is a GUID identifier of the handle.  Callers will
+usually get the handleid either from another player's MultiplayerActivityDetails, or from a protocol
+activation after a user has accepted an invite.
+</summary>
+        <returns>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
+When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+The result is a MultiplayerSession object that contains the response returned from the server.</returns>
+        <remarks>
+If the client tries to get a session that does not exist, this method returns an HTTP/204 status code.
+Additionally an exception is thrown for trying to retrieve a nonexistent session. 
+
+Calls GET /handles/{handleId}/session</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSearchHandlesAsync">
@@ -221,9 +281,12 @@
         <Parameter Name="searchHandleRequest" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest" />
       </Parameters>
       <Docs>
-        <param name="searchHandleRequest">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="searchHandleRequest"> A search handle request object that queries for the all search handles.</param>
+        <summary>
+Queries for the all search handles that references the searchable sessions given the specific query.
+There is no paging or continuation, and the multiplayer service will limit the number of items returned to 100.
+</summary>
+        <returns>The async object for notifying when the operation is completed.  This contains a vectorview of MultiplayerSearchHandleDetails objects, containing the details of the search handles.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,13 +315,32 @@
         <Parameter Name="searchFilter" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="sessionTemplateName">To be added.</param>
-        <param name="orderBy">To be added.</param>
-        <param name="orderAscending">To be added.</param>
-        <param name="searchFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceConfigurationId">The scid within which to query for search handles.</param>
+        <param name="sessionTemplateName">The name of the template to query for search handles.</param>
+        <param name="orderBy">This specifies the attribute to sort the search handles by.  Pass empty string to default to ordering by 'Timestamp asc' </param>
+        <param name="orderAscending">Pass true to order ascending, false to order descending</param>
+        <param name="searchFilter">The query string to get the search handles for.
+The search query.
+The query syntax is an OData like syntax with only the following operators supported EQ, NE, GE, GT, LE and LT along with the logical operators of AND and OR.
+
+Example 1:
+To search for search handles for a specific XboxUserId use
+    "MemberXuids/any(d:d eq '12345678')" or "OwnerXuids/any(d:d eq '12345678')"
+
+Example 2:
+To search for search handles for a title defined string metadata use
+    "Strings/stringMetadataType eq 'value'"
+
+Example 3:
+To search for search handles for a title defined numbers metadata AND a tag type value use
+    "Numbers/numberMetadataType eq 53 AND Tags/tagType eq 'value'"
+</param>
+        <summary>
+Queries for the all search handles that references the searchable sessions given the specific query.
+There is no paging or continuation, and the multiplayer service will limit the number of items returned to 100.
+Call GetSearchHandlesAsync(MultiplayerQuerySearchHandleRequest^ ) instead.
+</summary>
+        <returns>The async object for notifying when the operation is completed.  This contains a vectorview of MultiplayerSearchHandleDetails objects, containing the details of the search handles.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +365,23 @@
         <Parameter Name="getSessionsRequest" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest" />
       </Parameters>
       <Docs>
-        <param name="getSessionsRequest">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="getSessionsRequest">An object that defines the search filters for retrieveing a collection of discoverable sessions.</param>
+        <summary>
+Retrieve a list of sessions with various filters. You can use this method to filter sessions for a single Xbox User ID,
+a collection of Xbox User IDs, or for a keyword.
+</summary>
+        <returns>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
+When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+The result is a collection of SessionStates objects where each object contains metadata about one session.
+</returns>
+        <remarks>
+You can use this method to filter sessions for a collection of Xbox User IDs.
+
+Calls V102 GET /serviceconfigs/{scid}/sessions or /serviceconfigs/{scid}/sessiontemplates/{session-template-name}/sessions
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSessionsAsync">
@@ -322,19 +417,32 @@
         <Parameter Name="maxItems" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="sessionTemplateNameFilter">To be added.</param>
-        <param name="xboxUserIdFilter">To be added.</param>
-        <param name="keywordFilter">To be added.</param>
-        <param name="visibilityFilter">To be added.</param>
-        <param name="contractVersionFilter">To be added.</param>
-        <param name="includePrivateSessions">To be added.</param>
-        <param name="includeReservations">To be added.</param>
-        <param name="includeInactiveSessions">To be added.</param>
-        <param name="maxItems">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceConfigurationId">The service configuration id that contains the sessions.</param>
+        <param name="sessionTemplateNameFilter">(Optional) The name of the template for the multiplayer session to filter on.</param>
+        <param name="xboxUserIdFilter">(Optional) An Xbox user ID to use for filtering results to sessions for that user.
+You must specify either xboxUserIdFilter or keywordFilter.</param>
+        <param name="keywordFilter">(Optional) A keyword to use for filtering results to sessions with that keyword.
+You must specify either xboxUserIdFilter or keywordFilter.</param>
+        <param name="visibilityFilter">An enumeration value specifying the visibilty to use for filtering results.</param>
+        <param name="contractVersionFilter">A value specifying the major version, or less, of the contract to use for filtering results.
+Set to 0 to ignore the contract version.</param>
+        <param name="includePrivateSessions">True to include private sessions in the results, and false otherwise.</param>
+        <param name="includeReservations">True to include sessions that the user has not accepted in the results, and false otherwise.
+For a setting of true, xboxUserIdFilter must be specified.</param>
+        <param name="includeInactiveSessions">True to include inactive sessions in the results, and false otherwise.
+For a setting of true, xboxUserIdFilter must be specified.</param>
+        <param name="maxItems">The maximum number of sessions to return.</param>
+        <summary>
+Retrieve a list of sessions with various filters
+</summary>
+        <returns>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
+When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+The result is a collection of SessionStates objects where each object contains metadata about one session.
+</returns>
+        <remarks>Calls V105 GET /serviceconfigs/{scid}/sessions or /serviceconfigs/{scid}/sessiontemplates/{session-template-name}/sessions</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSessionsForUsersFilterAsync">
@@ -395,7 +503,9 @@
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Registers for multiplayer session change notifications.  Event handlers receive MultiplayerSessionChangeEventArgs^.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -412,7 +522,10 @@
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Notification sent when a multiplayer connectivity via RTA is lost or stopped.
+Event handlers receive Windows::Networking::Sockets::RealTimeActivityMultiplayerSubscriptionsLostEventArgs^.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,7 +542,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates whether multiplayer subscriptions are currently enabled.  
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -516,9 +631,15 @@
         <Parameter Name="sessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
       </Parameters>
       <Docs>
-        <param name="sessionReference">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sessionReference">A MultiplayerSessionReference for the session of the activity.</param>
+        <summary>
+Sets the passed session as the user's current activity, which will be displayed in Xbox 
+dashboard user experiences (e.g. friends and gamercard) as associated with the currently 
+running title.  If the session is joinable, it may also be displayed as joinable in those 
+user experiences.
+</summary>
+        <returns>Returns an IAsyncAction object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncAction.Completed property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -538,9 +659,12 @@
         <Parameter Name="searchHandleRequest" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest" />
       </Parameters>
       <Docs>
-        <param name="searchHandleRequest">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="searchHandleRequest">A search handle request object for the associated session</param>
+        <summary>
+Creates a search handle associated with the session. The visibility of the session is dependent on its search handle. 
+While you can create an searchable session, it is not queryable and visible to others unless you have the associated search handle committed as well. 
+</summary>
+        <returns>The async object for notifying when the operation is completed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -561,10 +685,20 @@
         <Parameter Name="originSessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
       </Parameters>
       <Docs>
-        <param name="targetSessionReference">To be added.</param>
-        <param name="originSessionReference">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="targetSessionReference">Target multiplayer_session_reference for the session you want to extend the access rights to.</param>
+        <param name="originSessionReference">Origin multiplayer_session_reference for the session that grants access to the target session.</param>
+        <summary>
+Extends the access rights for the caller from the origin session to the target session.
+For example, in a title with a lobby session and a game session, the title could put a transfer handle 
+linking the lobby to the game inside the lobby session. Users invited to the lobby can use the handle to join the game session as well.
+The transfer handle is deleted once the target session is deleted.
+</summary>
+        <returns>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
+When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+The result is a string that contains the transfer handle ID.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -585,11 +719,28 @@
         <Parameter Name="multiplayerSessionWriteMode" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode" />
       </Parameters>
       <Docs>
-        <param name="multiplayerSession">To be added.</param>
-        <param name="multiplayerSessionWriteMode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="multiplayerSession">A MultiplayerSession object that has been modified with the changes to write.</param>
+        <param name="multiplayerSessionWriteMode">An enumeration value indicating the type of write operation.</param>
+        <summary>
+Attempts to write a new or updated multiplayer session to the service.
+The passed multiplayerSession must have a valid MultiplayerSessionReference set on it. The purpose of this method is to give the caller
+additional details on the failure or success of the operation. 
+
+This method returns a WriteSessionResult instead of throwing an exception, but only in cases where the write failed for a reason that is expected to occur 
+during normal operation. 
+</summary>
+        <returns>Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
+When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+The result is an object representing a WriteSessionResult object that contains the response returned from the server, 
+a status with the result, as well as if the status was successful. The attributes in it may be different
+from the attributes in the passed in MultiplayerSessionRequest object. 
+</returns>
+        <remarks>If you leave a session that you are the last member of, and the sessionEmptyTimeout is equal to 0, then the session is deleted immediately
+and a nullptr is returned. 
+
+Calls V105 PUT /serviceconfigs/{serviceConfigurationId}/sessionTemplates/{sessiontemplateName}/sessions/{sessionName}.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryWriteSessionByHandleAsync">
@@ -610,12 +761,34 @@
         <Parameter Name="handleId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="multiplayerSession">To be added.</param>
-        <param name="multiplayerSessionWriteMode">To be added.</param>
+        <param name="multiplayerSession">A MultiplayerSession object that has been modified with the changes to write.</param>
+        <param name="multiplayerSessionWriteMode">An enumeration value indicating the type of write operation.</param>
         <param name="handleId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+Attempts to write a new or updated multiplayer session to the service, using the specified handle to the session.  
+A handle is a service-side pointer to a session.  The handleid is a GUID identifier of the handle.  Callers will
+usually get the handleid either from another player's MultiplayerActivityDetails, or from a protocol
+activation after a user has accepted an invite.
+The purpose of this method is to give the caller additional details on the failure or success. 
+
+This method returns a WriteSessionResult instead of throwing an exception, but only in cases where the write failed for a reason that is expected to occur 
+during normal operation. 
+</summary>
+        <returns>Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
+When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+The result is an object representing a WriteSessionResult object that contains the response returned from the server,
+a status with the result, as well as if the status was successful. The attributes in it may be different
+from the attributes in the passed in MultiplayerSessionRequest object. </returns>
+        <remarks>
+Use this method only if your MultiplayerSession object doesn't have a MultiplayerSessionReference, as  
+a handle's lifetime may be shorter than that of the session it points to.
+
+If you leave a session that you are the last member of, and the sessionEmptyTimeout is equal to 0, then the session is deleted immediately
+and a nullptr is returned. 
+
+Calls V105 PUT /serviceconfigs/{serviceConfigurationId}/sessionTemplates/{sessiontemplateName}/sessions/{sessionName}</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteSessionAsync">
@@ -635,11 +808,26 @@
         <Parameter Name="multiplayerSessionWriteMode" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode" />
       </Parameters>
       <Docs>
-        <param name="multiplayerSession">To be added.</param>
-        <param name="multiplayerSessionWriteMode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="multiplayerSession">A MultiplayerSession object that has been modified with the changes to write.</param>
+        <param name="multiplayerSessionWriteMode">An enumeration value indicating the type of write operation.</param>
+        <summary>
+Writes a new or updated multiplayer session to the multiplayer service.
+</summary>
+        <returns>Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
+When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+The result is a MultiplayerSession object containing the response returned from the server.
+The attributes in it might be different from the attributes in the passed-in MultiplayerSession object. </returns>
+        <remarks>Calls V102 PUT /serviceconfigs/{serviceConfigurationId}/sessionTemplates/{sessiontemplateName}/sessions/{sessionName}.
+
+If your client needs to pass a handle ID when writing the session, it should call the MultiplayerService.WriteSessionByHandleAsync Method.
+
+If the client calls the MultiplayerSession.Leave Method for the last member of the session, when the session is 
+using a sessionEmptyTimeout value of 0, the session is deleted immediately. After the call to MultiplayerSession.Leave, 
+the client calls WriteSessionAsync to write local changes. This call returns a null pointer with an HTTP/204 status code, 
+since the session has been deleted. 
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteSessionByHandleAsync">
@@ -660,12 +848,27 @@
         <Parameter Name="handleId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="multiplayerSession">To be added.</param>
-        <param name="multiplayerSessionWriteMode">To be added.</param>
-        <param name="handleId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="multiplayerSession">A MultiplayerSession object that has been modified with the changes to write.</param>
+        <param name="multiplayerSessionWriteMode">An enumeration value indicating the type of write operation.</param>
+        <param name="handleId">The ID (GUID) of the handle that should be used when writing the session.</param>
+        <summary>
+Writes a new or updated multiplayer session to the service, using the specified handle to the session.  
+A handle is a service-side pointer to a session.  The handleid is a GUID identifier of the handle.  Callers will
+usually get the handleid either from another player's MultiplayerActivityDetails, or from a protocol
+activation after a user has accepted an invite.
+</summary>
+        <returns>Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
+When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+The result is an object representing the new or updated MultiplayerSession object that contains the response returned from the server.
+The returned MultiplayerSession contains a MultiplayerSessionReference, so it can be used when calling WriteSessionAsync.
+</returns>
+        <remarks>
+Use this method only if your MultiplayerSession object doesn't have a MultiplayerSessionReference, as  
+a handle's lifetime may be shorter than that of the session it points to.
+
+Calls V105 PUT /handles/{handleid}/session.</remarks>
       </Docs>
     </Member>
   </Members>

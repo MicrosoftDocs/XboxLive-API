@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Provides methods to validate a string for use with Xbox Live.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,10 +44,15 @@
         <Parameter Name="stringToVerify" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="stringToVerify">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stringToVerify">The string to verify.</param>
+        <summary>
+Verifies if a string contains acceptable text for use with Xbox Live.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+The result is a VerifyStringResult object which indicates if the string contains unacceptable text.
+</returns>
+        <remarks>Calls V2 GET /system/strings/validate</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerifyStringsAsync">

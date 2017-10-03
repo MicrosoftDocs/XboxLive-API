@@ -15,7 +15,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Enumeration values that indicate the media asset type associated with
+the achievement.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +35,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementMediaAssetType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An art media asset.</summary>
       </Docs>
     </Member>
     <Member MemberName="Icon">
@@ -48,7 +51,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementMediaAssetType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An icon media asset.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -64,7 +67,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementMediaAssetType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The media asset type is unknown.</summary>
       </Docs>
     </Member>
   </Members>

@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Returns the amount of storage space allocated and used.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,7 +46,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The multiplayer session name associated with the quota if StorageType is SessionStorage, otherwise null.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,7 +71,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The multiplayer session template name associated with the quota if StorageType is SessionStorage, otherwise null.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +91,10 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The maximum number of bytes that can be used in title storage of type StorageType.
+Note that this is a soft limit and the used bytes can actually exceed this value.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +112,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The service configuration ID associated with the quota.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +132,9 @@
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The type of storage counted in the quota.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +152,9 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The number of bytes used in title storage of type StorageType.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,7 +172,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The Xbox User ID associated with the quota if StorageType is TrustedPlatformStorage or JsonStorage, otherwise null.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumeration values that indicate the state of a player's progress towards unlocking an achievement.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Achievement has been earned.</summary>
       </Docs>
     </Member>
     <Member MemberName="InProgress">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Achievement progress has started.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotStarted">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Achievement progress has not been started.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Achievement progress is unknown.</summary>
       </Docs>
     </Member>
   </Members>

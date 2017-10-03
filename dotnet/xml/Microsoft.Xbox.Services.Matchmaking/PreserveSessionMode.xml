@@ -15,7 +15,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values that indicate if a match ticket is for a new
+game session or an existing session.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +35,10 @@
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Always use an existing game session. This is for matching more players
+for a game session that is already created or in progress.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -48,7 +54,10 @@
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Never use an existing game session. This is for matching players
+for a new game session.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -64,7 +73,9 @@
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The server returned an unrecognized response.
+</summary>
       </Docs>
     </Member>
   </Members>

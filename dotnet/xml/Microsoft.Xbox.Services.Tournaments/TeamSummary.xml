@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents details of the team participating in the tournament.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +41,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The ID of the team. It is an opaque string specified by the tournament organizer.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +61,9 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The team's final rank within the tournament, if it is available. If missing, the rank is not available.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +81,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The state of the team.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

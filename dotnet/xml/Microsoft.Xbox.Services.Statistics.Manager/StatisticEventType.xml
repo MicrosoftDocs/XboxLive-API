@@ -32,7 +32,9 @@
         <ReturnType>Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+cast event args to leaderboard_result_event_args
+</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalUserAdded">
@@ -48,7 +50,9 @@
         <ReturnType>Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+A local user has been added
+</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalUserRemoved">
@@ -64,7 +68,9 @@
         <ReturnType>Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+A local user has been removed
+</summary>
       </Docs>
     </Member>
     <Member MemberName="StatisticUpdateComplete">
@@ -80,7 +86,9 @@
         <ReturnType>Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+stat has been updated
+</summary>
       </Docs>
     </Member>
   </Members>

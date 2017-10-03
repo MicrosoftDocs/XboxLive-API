@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a service for matchmaking. 
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,15 +49,19 @@
         <Parameter Name="ticketAttributesJson" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ticketSessionReference">To be added.</param>
-        <param name="matchmakingServiceConfigurationId">To be added.</param>
-        <param name="hopperName">To be added.</param>
-        <param name="ticketTimeout">To be added.</param>
-        <param name="preserveSession">To be added.</param>
-        <param name="ticketAttributesJson">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="ticketSessionReference">The multiplayer session to use for the match.</param>
+        <param name="matchmakingServiceConfigurationId">The service configuration ID for the match.</param>
+        <param name="hopperName">The name of the hopper.</param>
+        <param name="ticketTimeout">The maximum time to wait for players to join the session.</param>
+        <param name="preserveSession">Indicates if the session should be preserved.</param>
+        <param name="ticketAttributesJson">The ticket attributes for the session. (Optional)</param>
+        <summary>
+Sends a matchmaking request to the server and returns the match ticket with a ticket id.
+</summary>
+        <returns>The async object for notifying when the operation is completed. With the handler, a new match ticket
+object is returned. The match ticket object contains server returned information such as ticket id and wait
+time, and also contains copies of the title specified data from the ticket data object.</returns>
+        <remarks>Calls V103 POST /serviceconfigs/{serviceConfigId}/hoppers/{hopperName}</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteMatchTicketAsync">
@@ -76,12 +82,14 @@
         <Parameter Name="ticketId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="hopperName">To be added.</param>
-        <param name="ticketId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceConfigurationId">The service config id that is specific for the title.</param>
+        <param name="hopperName">The name of the hopper where the match ticket is located.</param>
+        <param name="ticketId">The id of the ticket to delete on the server.</param>
+        <summary>
+Deletes a the match ticket on the server.
+</summary>
+        <returns>The async object for notifying when the operation has been completed.</returns>
+        <remarks>Calls V103 DELETE /serviceconfigs/{serviceConfigId}/hoppers/{hopperName}/tickets/{ticketId}</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHopperStatisticsAsync">
@@ -101,11 +109,14 @@
         <Parameter Name="hopperName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="hopperName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceConfigurationId">The service config id that is specific for the title.</param>
+        <param name="hopperName">The name of the hopper to query stats for.</param>
+        <summary>
+Gets statistics about a hopper such as how many players are in it.
+</summary>
+        <returns>The async object for notifying when the operation is completed. With the handler, an object
+containing statistics about the hopper is returned.</returns>
+        <remarks>Calls V103 GET /serviceconfigs/{serviceConfigId}/hoppers/{hopperName}/stats</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMatchTicketDetailsAsync">
@@ -126,12 +137,16 @@
         <Parameter Name="ticketId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="hopperName">To be added.</param>
-        <param name="ticketId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceConfigurationId">The service config id that is specific for the title.</param>
+        <param name="hopperName">The name of the hopper where the match ticket is located.</param>
+        <param name="ticketId">The ticket id of the match ticket to retrieve.</param>
+        <summary>
+Retrieves the properties of a match ticket from the server.
+</summary>
+        <returns>The async object for notifying when the operation is completed. With the handler, the match
+ticket object with the data for the ticket, including ticket id and wait time information, is returned
+returned from the server.</returns>
+        <remarks>Calls V103 GET /serviceconfigs/{serviceConfigId}/hoppers/{hopperName}/tickets/{ticketId}</remarks>
       </Docs>
     </Member>
   </Members>

@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values used to indicate join in progress state on who can join your game.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+This option will close the lobby immediately.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="DisableWhileGameInProgress">
@@ -48,7 +52,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+This option will close the lobby only when a game is in progress. All other times,
+it will keep the lobby open for invite_only so invitees can join when no game is in progress.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="InviteOnly">
@@ -64,7 +71,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The lobby is joinable only via an invite.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="JoinableByFriends">
@@ -80,7 +89,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Default value. The lobby is joinable by users who are followed by an existing member of the session.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -96,7 +107,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Joinability not set or no lobby exists yet.
+</summary>
       </Docs>
     </Member>
   </Members>

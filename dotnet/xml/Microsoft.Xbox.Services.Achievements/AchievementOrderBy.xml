@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumeration values that indicate the achievement sort order.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementOrderBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default order does not guarantee sort order.</summary>
       </Docs>
     </Member>
     <Member MemberName="TitleId">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementOrderBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sort by title id.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnlockTime">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementOrderBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sort by achievement unlock time.</summary>
       </Docs>
     </Member>
   </Members>

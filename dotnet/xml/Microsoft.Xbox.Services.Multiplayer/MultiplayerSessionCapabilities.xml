@@ -25,8 +25,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents the capabilities for a MultiplayerSession Class object. 
+</summary>
     <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"capabilities": {
+    "clientMatchmaking": true,
+     "connectivity" : true,
+     "suppressPresenceActivityCheck" : true,
+     "gameplay" : true,
+     "large" : false
+}
+</code></example>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,7 +59,9 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Creates a MultiplayerSessionCapabilities object.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +78,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+True if the session supports arbitration used for a tournament.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -80,7 +98,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Aa Boolean value that determines whether a connection is required for active members in a multiplayer session. 
+If true, a connection is required for active members in the multiplayer session; otherwise, false.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +119,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if the session supports connectivity. 
+If false, the session can't enable any metrics and the session members can't set their SecureDeviceAddress.
+This value can't be set for large sessions.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +141,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A Boolean value that determines whether a multiplayer session supports crossplay between Xbox One and Windows 10.
+True indicates that crossplay is supported.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,7 +162,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates whether the session represents actual gameplay, as opposed to setup/menu time
+such as a lobby or matchmaking.
+If true, then the session is in gameplay mode.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,7 +184,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+True, if the session has owners. If you have user_authorization_style set, then in order to be searchable, you must have owners set.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,7 +204,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if the session can host a large number of users, which has impact on other session properties.
+If true, this session can host a large number of users.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,7 +225,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+True, if the session can be linked to a search handle for searching.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +245,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if active users of the session are demoted to inactive status. 
+By default (false), active users are required to remain online playing the title, otherwise they get demoted to 
+inactive status. Setting this flag to true disables this check so that members stay active indefinitely.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,7 +267,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+True if the session supports team capability used for a tournament. 
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,7 +287,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+a Boolean value that determines whether a multiplayer session uses user authorization style, which means that
+the session supports calls from platforms without strong title identity.
+This calue can't be set on large sessions.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

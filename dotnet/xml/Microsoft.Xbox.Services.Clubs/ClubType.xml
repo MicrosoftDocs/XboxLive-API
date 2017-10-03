@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Secret club</summary>
       </Docs>
     </Member>
     <Member MemberName="Private">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Closed club</summary>
       </Docs>
     </Member>
     <Member MemberName="Public">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Open club</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unknown club type</summary>
       </Docs>
     </Member>
   </Members>

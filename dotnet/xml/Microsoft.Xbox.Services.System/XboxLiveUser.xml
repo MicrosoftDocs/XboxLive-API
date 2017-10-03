@@ -31,7 +31,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a player that is associated with a device or a controller.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,7 +53,9 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Creates a new instance of XboxLiveUser for Single User Application.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +78,9 @@
       </Parameters>
       <Docs>
         <param name="systemUser">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Creates a new instance of XboxLiveUser for Multi-User Application.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +97,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets the age group of the user.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +117,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The Xbox Live public gamertag name associated with the user.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,12 +143,18 @@
         <Parameter Name="requestBodyArray" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="httpMethod">To be added.</param>
-        <param name="url">To be added.</param>
-        <param name="headers">To be added.</param>
+        <param name="httpMethod">The HTTP method (GET, PUT, POST, etc.) for this request.</param>
+        <param name="url">The URL for which to retrieve the authorization token and digital signature.</param>
+        <param name="headers">The headers to be included in the HTTP request.</param>
         <param name="requestBodyArray">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+Retrieves an authorization token and digital signature for an HTTP request by this user,
+with a request body expressed as an array of bytes.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call. The result is an object
+indicating the token and the digital signature of the entire request, including the token.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,12 +181,18 @@
         <Parameter Name="headers" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="httpMethod">To be added.</param>
-        <param name="url">To be added.</param>
-        <param name="headers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="httpMethod">The HTTP method (GET, PUT, POST, etc.) for this request.</param>
+        <param name="url">The URL for which to retrieve the authorization token and digital signature.</param>
+        <param name="headers">The headers to be included in the HTTP request.</param>
+        <summary>
+Retrieves an authorization token and digital signature for an HTTP request by this user,
+with no request body.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call. The result is an object
+indicating the token and the digital signature of the entire request, including the token.
+</returns>
+        <remarks />
       </Docs>
     </Member>
     <Member MemberName="GetTokenAndSignatureAsync">
@@ -197,12 +219,18 @@
         <Parameter Name="body" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="httpMethod">To be added.</param>
-        <param name="url">To be added.</param>
-        <param name="headers">To be added.</param>
-        <param name="body">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="httpMethod">The HTTP method (GET, PUT, POST, etc.) for this request.</param>
+        <param name="url">The URL for which to retrieve the authorization token and digital signature.</param>
+        <param name="headers">The headers to be included in the HTTP request.</param>
+        <param name="body">The body of the request, expressed as a string.</param>
+        <summary>
+Retrieves an authorization token and digital signature for an HTTP request by this user,
+with a request body expressed as a string.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call. The result is an object
+indicating the token and the digital signature of the entire request, including the token.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,7 +247,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates if the Xbox Live user is currently signed in.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +267,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets the privileges of the user.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,10 +290,23 @@
         <Parameter Name="coreDispatcher" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="coreDispatcher">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="coreDispatcher">The Windows Runtime core event message dispatcher.</param>
+        <summary>
+Attempt to sign a player into their Xbox Live account. This call may bring up
+a sign-in user interface.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+</returns>
+        <remarks>
+You should only call this method if silent sign-in indicates that user interaction is required.
+
+This is cast as Platform::Object^ instead of Windows::UI::Core::CoreDispatcher^ to avoid the
+[Windows::Foundation::Metadata::WebHostHidden] requirement.
+
+If you're calling this API from non-UI thread, parameter coreDispatcherObj is required, so that app UI
+can be rendered and locale can be generated.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="SignInSilentlyAsync">
@@ -280,10 +325,20 @@
         <Parameter Name="coreDispatcher" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="coreDispatcher">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="coreDispatcher">The Windows Runtime core event message dispatcher.</param>
+        <summary>
+Attempt to silently sign a player into their Xbox Live account. This call can be used to prefetch xbox live
+data before the UI is ready.
+</summary>
+        <returns>
+An interface for tracking the progress of the asynchronous call.
+</returns>
+        <remarks>
+If the app is unable to silently sign-in, the API return SignInResult with UserInteractionRequired Status .
+to sign-in, so the app should then call SignInAsync().
+
+If you're calling this API from non-UI thread, parameter coreDispatcherObj is required, so that app locale can be generated.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="SignOutCompleted">
@@ -299,7 +354,9 @@
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.System.SignOutCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Event signaling that sign out has completed for a user. 
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,9 +373,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets id of WebAccount returned by the Xbox live WebAccountProvider.
+</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+Check https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.credentials.webaccount.aspx
+for more information about WebAccount
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowsSystemUser">
@@ -334,7 +396,9 @@
         <ReturnType>Windows.System.User</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The Windows System NT user associated with the Xbox Live User, only available in Multi-User application.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -352,7 +416,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets a unique ID that is tied to the user's account which persists across multiple devices.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -43,7 +43,9 @@
       </Parameters>
       <Docs>
         <param name="titleId">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Returns whether the user is playing this title id
+</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,7 +63,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceTitleRecord&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Collection of presence title record objects returned by a request.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,7 +83,9 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.UserPresenceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The user's presence state.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

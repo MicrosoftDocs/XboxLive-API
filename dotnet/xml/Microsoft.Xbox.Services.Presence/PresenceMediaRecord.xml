@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a media record for Rich Presence. 
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +41,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+ID of the media used by the Bing catalog or the provider catalog. 
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +61,9 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceMediaIdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The ID type of the media.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +81,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Localized name of the media content.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

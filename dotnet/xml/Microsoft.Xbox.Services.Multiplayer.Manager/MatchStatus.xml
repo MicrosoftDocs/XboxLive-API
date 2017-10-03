@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values used to indicate status for the matchmaking stages.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates the matchmaking search has been canceled.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Canceling">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates that matchmaking is in the process of canceling the search.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Match was found and QoS measurement was successful.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Evaluating">
@@ -80,7 +88,11 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Evaluating initialization stage.
+If auto evaluate is true, then this stage is skipped.  
+Otherwise the title will do its own evaluation.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -96,7 +108,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates the matchmaking search has expired.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Failed">
@@ -112,7 +126,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Failed initialization stage.
+The initialization failed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Found">
@@ -128,7 +145,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates the matchmaking search has found a match.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Joining">
@@ -144,7 +163,11 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+Joining initialization stage.
+Matchmaking creates the game session and adds users to it.
+The client has up to the joining timeout to join the session during this phase.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Measuring">
@@ -160,7 +183,11 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Measuring initialization stage.
+Stage where QoS measurement happens.
+The client has up to the measurement timeout to upload qos measurements to the service during this phase.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -176,7 +203,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates no matchmaking search has been started.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Resubmitting">
@@ -192,7 +221,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+If the match that was found was not successful and is resubmitting.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Searching">
@@ -208,7 +239,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates the matchmaking is still searching.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="SubmittingMatchTicket">
@@ -224,7 +257,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates that a match ticket was submitted for matchmaking.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="UploadingQosMeasurements">
@@ -240,7 +275,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Uploading QoS measurement results to the service.
+The client has up to the measurement timeout to upload qos measurements to the service during this phase.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="WaitingForRemoteClientsToJoin">
@@ -256,7 +294,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+Waiting for remote clients to join the game session.
+The client has up to the joining timeout to join the session during this phase.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="WaitingForRemoteClientsToUploadQos">
@@ -272,7 +313,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Waiting for remote clients to upload QoS measurement results to the service.
+The client has up to the measurement timeout to upload qos measurements to the service during this phase.
+</summary>
       </Docs>
     </Member>
   </Members>

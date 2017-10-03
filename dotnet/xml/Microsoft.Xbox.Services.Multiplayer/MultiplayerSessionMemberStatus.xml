@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values used to indicate status for member of a session. 
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The member is active in the current title.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Inactive">
@@ -48,7 +52,11 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The member is inactive in the current title.  
+The member may be active in another title as specified by ActiveTitleId,
+If a inactive member doesn't mark themselves as Active within the MemberInactiveTimeout they will be removed from the session.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Ready">
@@ -64,7 +72,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+When the shell launches the title to start a multiplayer game, the member is marked as ready.
+If a ready member doesn't mark themselves as Active within the MemberReadyTimeout they will be marked as inactive.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Reserved">
@@ -80,7 +91,11 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The member slot is reserved for a specific Xbox User ID.  
+This specific member must join the session to fill the reservation before
+the JoinTimeout or they will be removed.
+</summary>
       </Docs>
     </Member>
   </Members>

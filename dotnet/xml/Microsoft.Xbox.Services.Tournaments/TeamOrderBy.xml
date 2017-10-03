@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+The property used to order results by for retrieving a list of teams.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamOrderBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Order by name.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamOrderBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+No order provided.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Ranking">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamOrderBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Order by ranking.
+</summary>
       </Docs>
     </Member>
   </Members>

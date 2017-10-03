@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values that indicate the current status of a session.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The session is active and there is at least one user.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Inactive">
@@ -48,7 +52,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The session is inactive. This means that no users in the session are
+active or all users left the session.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Reserved">
@@ -64,7 +71,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The session is reserved. This means one for more users have not
+accepted the session invite.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -80,7 +90,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The server returned an unrecognized response.
+</summary>
       </Docs>
     </Member>
   </Members>

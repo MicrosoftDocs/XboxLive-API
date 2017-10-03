@@ -22,8 +22,69 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents constant values for a multiplayer session.
+</summary>
     <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"constants": {
+    "system": {
+        "capabilities": {
+            "clientMatchmaking": true,
+            "connectivity": true,
+            "suppressPresenceActivityCheck": true,
+            "gameplay": true,
+            "large": false
+        },
+        "version": 1,
+        "maxMembersCount": 100,
+        "visibility": "Open",
+        "initiators": [
+            "3456"
+        ],
+        "inviteProtocol": "party",
+        "reservedRemovalTimeout": 30000,
+        "inactiveRemovalTimeout": 7200000,
+        "readyRemovalTimeout": 180000,
+        "sessionEmptyTimeout": 0,
+        "metrics": {
+            "latency": true,
+            "bandwidthDown": true,
+            "bandwidthUp": true,
+            "custom": true
+        },
+        "memberInitialization": {
+            "joinTimeout": 4000,
+            "measurementTimeout": 5000,
+            "evaluationTimeout": 5000,
+            "externalEvaluation": false,
+            "membersNeededToStart": 2
+        },
+        "peerToPeerRequirements": {
+            "latencyMaximum": 250,
+            "bandwidthMinimum": 10000
+        },
+        "peerToHostRequirements": {
+            "latencyMaximum": 250,
+            "bandwidthDownMinimum": 100000,
+            "bandwidthUpMinimum": 1000,
+            "hostSelectionMetric": "bandwidthUp"
+        },
+        "measurementServerAddresses": {
+            "east.azure.com": {
+                "secureDeviceAddress": "r5Y="
+            },
+            "west.azure.com": {
+                "secureDeviceAddress": "rwY="
+            }
+        }
+    },
+    "custom": {}
+}
+</code></example>
   </Docs>
   <Members>
     <Member MemberName="ArbitrationTimeout">
@@ -39,7 +100,10 @@
         <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Delta from start time representing the point at which results are finalized. 
+If no one has reported (client or server) at this point, we declare the match results incomplete.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +121,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+True if arbitration capability is set on the session for a tournament.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +141,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A Boolean value that indicates whether a connection is required for active members in a multiplayer session.
+If true, this connection is required to have a member be active.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +162,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if the session has connectivity capabilities.
+True if the session has connectivity capabilities, and false otherwise.
+If false, the session can't enable any metrics and the session members can not set their SecureDeviceAddress.  
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +184,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A Boolean value that indicates whether a multiplayer session supports crossplay between Xbox One and Windows 10. 
+True if the multiplayer session supports crossplay.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +205,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates whether the session represents actual gameplay, as opposed to setup/menu time
+such as a lobby or matchmaking.
+If true, then the session is in gameplay mode.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,7 +227,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if the session can host a large number of users, which has impact on other session properties.
+If true, this session can host a large number of users.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,7 +248,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+True, if the session can be linked to a search handle for searching.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,7 +268,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if active users of the session are demoted to inactive status. 
+By default (if false), active users are required to remain online playing the title, otherwise they get demoted to 
+inactive status. Setting this flag to true disables this check so that members stay active indefinitely.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,7 +290,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+True if team capability is set on the session for a tournament.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,7 +310,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Aa Boolean value that indicates whether a multiplayer session uses user authorization style, which indicates
+that the session supports calls from platforms without strong title identity. This capability can't be set on large sessions.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +331,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A JSON string that specifies the custom constants for the session.  These can not be changed after the session is created (Optional).
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,7 +351,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates if the title wants bandwidth down (host to session members) measured for determining connectivity.
+Requires CapabilitiesConnectivity capability.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,7 +372,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates if the title wants bandwidth up (session members to host) measured for determining connectivity.
+Requires CapabilitiesConnectivity capability.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,7 +393,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates if the title wants a custom measurement measured for determining connectivity.
+Requires CapabilitiesConnectivity capability.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -309,7 +414,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates if the title wants latency measured for determining connectivity.
+Requires CapabilitiesConnectivity capability.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,7 +435,9 @@
         <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Delta from start time representing the point at which, if the session has no active users, the match is canceled.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -345,7 +455,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A collection of Xbox User IDs indicating who initiated the session (Optional).
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -368,7 +480,12 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Information about managed initialization for the session.
+If a ManagedInitialization object is set, the session expects the client system or title to perform
+initialization following session creation. The timeouts and initialization stages are automatically tracked by
+the session, including initial QoS if any metrics are set.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -386,9 +503,14 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The maximum number of members in this session.
+</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+To accommodate a maximum number of members that is over 100, the session must be considered large
+and have the MultiplayerSessionConstants.CapabilitiesLarge Property set to true.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="MeasurementServerAddressesJson">
@@ -404,7 +526,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A JSON string specifying the servers that can be used for QoS measurements.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -422,7 +546,12 @@
         <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The period of time, in milliseconds, that the session waits for an inactive member reservation
+to become active, after which the session removes the member.
+The default value is 2 hours. A value of 0 is allowed and indicates an immediate timeout.
+If the timeout is not specified, it is considered infinite.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -440,7 +569,12 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Information about managed initialization for the session.
+If a MemberInitialization object is set, the session expects the client system or title to perform
+initialization following session creation. The timeouts and initialization stages are automatically tracked by
+the session, including initial QoS if any metrics are set.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -458,7 +592,13 @@
         <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The period of time, in milliseconds, that the session waits for a member marked as ready by the
+shell to be set as active. 
+When the shell launches the title to start a multiplayer game, the member is marked as ready.
+The default value is 1 minute. A value of 0 is allowed and indicates an immediate timeout.
+If the timeout is not specified, it is considered infinite.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,7 +616,11 @@
         <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The period of time, in milliseconds, that the session holds a member reservation, after which the member is removed.
+The default value is 10 seconds. A value of 0 is allowed and indicates an immediate timeout.
+If the timeout is not specified, it is considered infinite.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -494,7 +638,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The visibility of this session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -512,7 +658,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+An object that contains QoS requirements for the connection between the host and session members. 
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -530,7 +678,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+An object that contains QoS requirements for the connection between session members. 
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -548,7 +698,12 @@
         <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The period of time, in milliseconds, that the session is empty before the session is deleted.
+If the session is empty for this timeout, then the session is deleted.
+The default value is 0, which indicates an immediate timeout.
+If the timeout is not specified, it is considered infinite.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

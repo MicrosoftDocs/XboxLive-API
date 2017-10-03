@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Social graph load complete from adding a local user</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalUserRemoved">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Social graph removal complete</summary>
       </Docs>
     </Member>
     <Member MemberName="PresenceChanged">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users presence record has changed</summary>
       </Docs>
     </Member>
     <Member MemberName="ProfilesChanged">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users profile information has changed</summary>
       </Docs>
     </Member>
     <Member MemberName="SocialRelationshipsChanged">
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Relationship to users has changed</summary>
       </Docs>
     </Member>
     <Member MemberName="SocialUserGroupLoaded">
@@ -112,7 +112,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Xbox Social User Group load complete (will only trigger for views that take a list of users)</summary>
       </Docs>
     </Member>
     <Member MemberName="SocialUserGroupUpdated">
@@ -128,7 +128,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Social user group updated</summary>
       </Docs>
     </Member>
     <Member MemberName="UsersAddedToSocialGraph">
@@ -144,7 +144,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users added to social graph</summary>
       </Docs>
     </Member>
     <Member MemberName="UsersRemovedFromSocialGraph">
@@ -160,7 +160,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users removed from</summary>
       </Docs>
     </Member>
   </Members>

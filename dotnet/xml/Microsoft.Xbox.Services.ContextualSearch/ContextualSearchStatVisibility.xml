@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumerates the visibility of a contextual search statistic.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>If a stat is private, only the title itself, or a companion application that has special privileges, can access this information.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublicVisibility">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This is important, as third party applications like Twitch will only be able to view OPEN stats.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unknown visibility.</summary>
       </Docs>
     </Member>
   </Members>

@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Provides methods to perform Xbox Live contextual search.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,10 +49,15 @@
         <Parameter Name="titleId" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="titleId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="titleId">The title ID.</param>
+        <summary>
+Get information to hydrate a UI for the end user to choose what data from a game they want to use 
+to filter or sort the broadcast.  Defaults to the top 100 broadcasts ordered by viewers descending with no filter
+</summary>
+        <returns>
+The result is a contextual_search_broadcasts_result object which contains information about broadcasts.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleId}/broadcasts</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBroadcastsAsync">
@@ -79,15 +86,21 @@
         <Parameter Name="searchQuery" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="titleId">To be added.</param>
-        <param name="skipItems">To be added.</param>
-        <param name="maxItems">To be added.</param>
-        <param name="orderByStatName">To be added.</param>
-        <param name="orderAscending">To be added.</param>
-        <param name="searchQuery">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="titleId">The title ID.</param>
+        <param name="skipItems">The number of broadcasts to skip.</param>
+        <param name="maxItems">The maximum number of broadcasts the result can contain.  Pass 0 to attempt to retrieve the top 100 items.</param>
+        <param name="orderByStatName">This specifies a stat to sort the broadcasts by.  Pass empty string to default to ordering by viewers descending</param>
+        <param name="orderAscending">Pass true to order ascending, false to order descending</param>
+        <param name="searchQuery">This specifies a OData Filter Expressions string that specifies the stats to filter on.
+For example "stats:maptype eq 1" means filtering by the stat "maptype" to the value 1.</param>
+        <summary>
+Get information to hydrate a UI for the end user to choose what data from a game they want to use 
+to filter or sort the broadcast
+</summary>
+        <returns>
+The result is a contextual_search_broadcasts_result object which contains information about broadcasts.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleId}/broadcasts</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBroadcastsAsync">
@@ -118,17 +131,22 @@
         <Parameter Name="filterStatValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="titleId">To be added.</param>
-        <param name="skipItems">To be added.</param>
-        <param name="maxItems">To be added.</param>
-        <param name="orderByStatName">To be added.</param>
-        <param name="orderAscending">To be added.</param>
-        <param name="filterStatName">To be added.</param>
-        <param name="filterOperator">To be added.</param>
-        <param name="filterStatValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="titleId">The title ID.</param>
+        <param name="skipItems">The number of broadcasts to skip.</param>
+        <param name="maxItems">The maximum number of broadcasts the result can contain.  Pass 0 to attempt to retrieve the top 100 items.</param>
+        <param name="orderByStatName">This specifies a stat to sort the broadcasts by.  Pass empty string to default to ordering by viewers descending</param>
+        <param name="orderAscending">Pass true to order ascending, false to order descending</param>
+        <param name="filterStatName">This specifies the stat to filter on. Pass empty string for no filter</param>
+        <param name="filterOperator">This specifies operator to apply for the filter.</param>
+        <param name="filterStatValue">This specifies the value to filter on. Pass empty string for no filter</param>
+        <summary>
+Get information to hydrate a UI for the end user to choose what data from a game they want to use 
+to filter or sort the broadcast
+</summary>
+        <returns>
+The result is a contextual_search_broadcasts_result object which contains information about broadcasts.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleId}/broadcasts</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConfigurationAsync">
@@ -147,10 +165,15 @@
         <Parameter Name="titleId" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="titleId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="titleId">The title ID.</param>
+        <summary>
+Get information to hydrate a UI for the end user to choose what data from a game they want to use 
+to filter or sort the broadcast
+</summary>
+        <returns>
+The result contains information to hydrate a UI.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleid}/configuration</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetGameClipsAsync">
@@ -179,15 +202,38 @@
         <Parameter Name="searchQuery" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="titleId">To be added.</param>
-        <param name="skipItems">To be added.</param>
-        <param name="maxItems">To be added.</param>
-        <param name="orderByStatName">To be added.</param>
-        <param name="orderAscending">To be added.</param>
-        <param name="searchQuery">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="titleId">The title ID.</param>
+        <param name="skipItems">The number of game clips to skip.</param>
+        <param name="maxItems">The maximum number of game clips the result can contain.  Pass 0 to attempt to retrieve the top 100 items.</param>
+        <param name="orderByStatName">This specifies a stat to sort the game clips by.  Pass empty string to default to ordering by viewers descending</param>
+        <param name="orderAscending">Pass true to order ascending, false to order descending</param>
+        <param name="searchQuery">
+The search query.
+The query syntax is an OData like syntax with only the following operators supported EQ, NE, GE, GT, LE and LT along with the logical operators of AND and OR. You can also use grouping operator '()'. The stat properties that can be used to search with are "value", "min", "max", and "delta".
+
+Example 1:
+To search for game clips during which the "gametype" stat had a value of 1 use
+    "stats:gametype.value eq 1"
+
+Example 2:
+To search for game clips during which the "rank" stat jumped more than 2.
+    "stats:rank.value gt 2"
+
+Example 3:
+To search for game clips during which the "rank" stat jumped more than 2 and the "gametype" stat had a value of 1 use
+    "stats:rank.value gt 2 and stat:gametype.value eq 1"
+
+Note:
+- The "value" property is only available for string stats and integer stats that are used with a Set.
+- The "min", "max" and "delta" properties are only available for double stats and integer stats that are not used with a Set.
+</param>
+        <summary>
+Get information to hydrate a UI that allows end users to filter or sort game clips
+</summary>
+        <returns>
+The result is an object which contains information about game clips.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleId}/gameclips</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetGameClipsAsync">
@@ -218,17 +264,24 @@
         <Parameter Name="filterStatValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="titleId">To be added.</param>
-        <param name="skipItems">To be added.</param>
-        <param name="maxItems">To be added.</param>
-        <param name="orderByStatName">To be added.</param>
-        <param name="orderAscending">To be added.</param>
-        <param name="filterStatName">To be added.</param>
-        <param name="filterOperator">To be added.</param>
-        <param name="filterStatValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="titleId">The title ID.</param>
+        <param name="skipItems">The number of game clips to skip.</param>
+        <param name="maxItems">The maximum number of game clips the result can contain.  Pass 0 to attempt to retrieve the top 100 items.</param>
+        <param name="orderByStatName">This specifies a stat to sort the game clips by.  Pass empty string to default to ordering by viewers descending</param>
+        <param name="orderAscending">Pass true to order ascending, false to order descending</param>
+        <param name="filterStatName">This specifies the stat to filter on. Pass empty string for no filter. For example, "gametype.value".
+The "value" property is only available for string stats and integer stats. 
+The "min", "max" and "delta" properties are only available for double stats and integer stats.
+</param>
+        <param name="filterOperator">This specifies operator to apply for the filter.</param>
+        <param name="filterStatValue">This specifies the value to filter on. The stat properties that can be used to search with are 'value', 'min', 'max', and 'delta'. Pass empty string for no filter</param>
+        <summary>
+Get information to hydrate a UI that allows end users to filter or sort game clips
+</summary>
+        <returns>
+The result is an object which contains information about game clips.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleId}/gameclips</remarks>
       </Docs>
     </Member>
   </Members>

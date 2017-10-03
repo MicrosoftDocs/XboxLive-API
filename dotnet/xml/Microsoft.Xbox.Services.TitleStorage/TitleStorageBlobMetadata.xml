@@ -28,7 +28,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Metadata about a blob.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,13 +56,19 @@
         <Parameter Name="xboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="storageType">To be added.</param>
-        <param name="blobPath">To be added.</param>
-        <param name="blobType">To be added.</param>
-        <param name="xboxUserId">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="storageType">The TitleStorageType to get blob metadata objects for.  Valid values are TrustedPlatormStorage, JsonStorage and GlobalStorage.</param>
+        <param name="blobPath">The full path to to the blob.  examples: "gameconfig.json" and "user/settings/playerconfiguration.json".</param>
+        <param name="blobType">The TitleStorageBlobType of this object.  Valid values are Binary, Json and Config.</param>
+        <param name="xboxUserId">The Xbox User ID of the title storage to enumerate. Ignored when dealing with GlobalStorage, so passing nullptr is acceptable in that case. (Optional)</param>
+        <summary>
+Initializes a new instance of the TitleStorageBlobMetadata class with the minimum arguments.
+</summary>
+        <remarks>
+All other properties of this class are optional.  To initialize optional properties, use the other constructors.
+ClientTimestamp.UniversalTime is initialized to 0. Length is initialized to 0.
+TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMetadataAsync will have current Length and ETag values.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -87,15 +95,20 @@
         <Parameter Name="eTag" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="storageType">To be added.</param>
-        <param name="blobPath">To be added.</param>
-        <param name="blobType">To be added.</param>
-        <param name="xboxUserId">To be added.</param>
-        <param name="displayName">To be added.</param>
-        <param name="eTag">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="storageType">The TitleStorageType to get blob metadata objects for.  Valid values are TrustedPlatormStorage, JsonStorage and GlobalStorage.</param>
+        <param name="blobPath">The full path to to the blob.  examples: "gameconfig.json" and "user/settings/playerconfiguration.json".</param>
+        <param name="blobType">The TitleStorageBlobType of this object.  Valid values are Binary, Json and Config.</param>
+        <param name="xboxUserId">The Xbox User ID of the title storage to enumerate. Ignored when dealing with GlobalStorage, so passing nullptr is acceptable in that case. (Optional)</param>
+        <param name="displayName">A display name suitable for displaying to the user. (Optional)</param>
+        <param name="eTag">An ETag value to be associated with this instance.  It is used for upload, download and delete operations. (Optional)</param>
+        <summary>
+Initializes a new instance of the TitleStorageBlobMetadata class including support for all optional properties except ClientTimestamp.
+</summary>
+        <remarks>
+ClientTimestamp.UniversalTime is initialized to 0. Length is initialized to 0.
+TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMetadataAsync will have current Length and ETag values.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,16 +136,21 @@
         <Parameter Name="clientTimestamp" Type="Windows.Foundation.DateTime" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="storageType">To be added.</param>
-        <param name="blobPath">To be added.</param>
-        <param name="blobType">To be added.</param>
-        <param name="xboxUserId">To be added.</param>
-        <param name="displayName">To be added.</param>
-        <param name="eTag">To be added.</param>
-        <param name="clientTimestamp">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="storageType">The TitleStorageType to get blob metadata objects for.  Valid values are TrustedPlatormStorage, JsonStorage and GlobalStorage.</param>
+        <param name="blobPath">The full path to to the blob.  examples: "gameconfig.json" and "user/settings/playerconfiguration.json".</param>
+        <param name="blobType">The TitleStorageBlobType of this object.  Valid values are Binary, Json and Config.</param>
+        <param name="xboxUserId">The Xbox User ID of the title storage to enumerate. Ignored when dealing with GlobalStorage, so passing nullptr is acceptable in that case. (Optional)</param>
+        <param name="displayName">A display name suitable for displaying to the user. (Optional)</param>
+        <param name="eTag">An ETag value to be associated with this instance.  It is used for upload, download and delete operations. (Optional)</param>
+        <param name="clientTimestamp">A client provided timestamp value to be associated with this instance.</param>
+        <summary>
+Initializes a new instance of the TitleStorageBlobMetadata class including support for all optional properties.
+</summary>
+        <remarks>
+Length is initialized to 0.
+TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMetadataAsync will have current Length and ETag values.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="BlobPath">
@@ -148,7 +166,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The blob path is a unique string that conforms to a SubPath\file format.  For example: "alpha\beta\blob.txt".
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,7 +186,9 @@
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The type of storage used by the blob. Possible values are: Binary, Json, and Config.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,7 +206,9 @@
         <ReturnType>Windows.Foundation.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+[optional] The timestamp assigned for the blob by the client.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,16 +240,23 @@
         <Parameter Name="eTag" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="blobPath">To be added.</param>
-        <param name="blobType">To be added.</param>
-        <param name="multiplayerSessionTemplateName">To be added.</param>
-        <param name="multiplayerSessionName">To be added.</param>
-        <param name="displayName">To be added.</param>
-        <param name="eTag">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="blobPath">The full path to to the blob.  examples: "gameconfig.json" and "user/settings/playerconfiguration.json"</param>
+        <param name="blobType">The TitleStorageBlobType of this object.  Valid values are Binary, Json and Config.</param>
+        <param name="multiplayerSessionTemplateName">The multiplayer session template name associated with this object</param>
+        <param name="multiplayerSessionName">The multiplayer session name associated with this object</param>
+        <param name="displayName">A display name suitable for displaying to the user. (Optional)</param>
+        <param name="eTag">An ETag value to be associated with this instance.  It is used for upload, download and delete operations. (Optional)</param>
+        <summary>
+Creates metadata for a blob for session storage, including support for all optional properties except ClientTimestamp.
+</summary>
+        <returns>
+A new instance of the TitleStorageBlobMetadata class for SessionStorage.
+</returns>
+        <remarks>
+ClientTimestamp.UniversalTime is initialized to 0. Length is initialized to 0.
+TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMetadataAsync will have current Length and ETag values.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -241,7 +272,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+[optional] The friendly display name to show in app UI.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,7 +292,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The ETag for the file used in read and write requests.
+Etags are used to determine if a file have been updated. Each time the file is changes, a new ETag is applied by the service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -277,7 +313,9 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets the number of bytes of the blob data.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -300,7 +338,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The multiplayer session name this file belongs to if the StorageType is SessionStorage, otherwise null.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -323,7 +363,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The multiplayer session template name this file belongs to if the StorageType is SessionStorage, otherwise null.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,7 +383,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The service configuration ID associated with this blob data.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -380,7 +424,9 @@
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The type of storage that contains the blob.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -398,7 +444,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The Xbox User ID of the player that this file belongs to.
+This value is null for Global and Session files.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

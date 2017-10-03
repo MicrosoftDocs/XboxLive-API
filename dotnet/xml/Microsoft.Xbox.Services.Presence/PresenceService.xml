@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a service for Rich Presence features.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +41,9 @@
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Registers for device presence change notifications.  Event handlers will receive DevicePresenceChangeEventArgs^.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,10 +63,12 @@
         <Parameter Name="xboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xboxUserId">The Xbox User ID of the user to get presence for</param>
+        <summary>
+Gets presence info for a specific Xbox User Id.
+</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>Calls V3 GET /users/xuid({xuid})</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPresenceForMultipleUsersAsync">
@@ -150,10 +156,13 @@
         <Parameter Name="socialGroup" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="socialGroup">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="socialGroup">The name of the group of users to get presence for.
+See Microsoft::Xbox::Services::Social::SocialGroupConstants for the latest options.</param>
+        <summary>
+Gets presence info for a specific group of users.
+</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>Calls V3 GET /users/xuid({xuid})/groups/{socialGroup}</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPresenceForSocialGroupAsync">
@@ -216,10 +225,13 @@
         <Parameter Name="isUserActiveInTitle" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isUserActiveInTitle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isUserActiveInTitle">Indicates if the current user context is currently active or inactive in the title.
+The application can choose to set this based on an amount of inactivity.</param>
+        <summary>
+Sets presence info for the current user context.
+</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>Calls V1 POST /users/xuid({xuid})/devices/current/titles/current</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPresenceAsync">
@@ -244,11 +256,14 @@
         <Parameter Name="presenceData" Type="Microsoft.Xbox.Services.Presence.PresenceData" />
       </Parameters>
       <Docs>
-        <param name="isUserActiveInTitle">To be added.</param>
-        <param name="presenceData">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isUserActiveInTitle">Indicates if the current user context is currently active or inactive in the title.
+The application can choose to set this based on an amount of inactivity.</param>
+        <param name="presenceData">Current user's presence data. (Optional)</param>
+        <summary>
+Sets presence info for the current user context.
+</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>Calls V1 POST /users/xuid({xuid})/devices/current/titles/current</remarks>
       </Docs>
     </Member>
     <Member MemberName="SubscribeToDevicePresenceChange">
@@ -267,9 +282,12 @@
         <Parameter Name="xboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="xboxUserId">The Xbox User ID of the person of the subscription</param>
+        <summary>
+Subscribes to device presence change notifications via the DevicePresenceChanged event
+</summary>
+        <returns>RealTimeActivityDevicePresenceChangeSubscription containing the initial value of the PresenceDeviceRecord
+Register for device presence changes via the DevicePresenceChanged event</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,10 +308,13 @@
         <Parameter Name="titleId" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <param name="titleId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="xboxUserId">The Xbox User ID of the person of the subscription</param>
+        <param name="titleId">The title ID of the subscription</param>
+        <summary>
+Subscribes to title presence change notifications via the TitlePresenceChanged event
+</summary>
+        <returns>RealTimeActivityDevicePresenceChangeSubscription containing the initial value of the PresenceDeviceRecord
+Register for device presence changes via the DevicePresenceChanged event</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +331,9 @@
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Registers for title presence change notifications.  Event handlers will receive TitlePresenceChangeEventArgs^.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,8 +353,10 @@
         <Parameter Name="subscription" Type="Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription" />
       </Parameters>
       <Docs>
-        <param name="subscription">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="subscription">The subscription object to unsubscribe</param>
+        <summary>
+Unsubscribes a previously created device presence change subscription
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,8 +376,10 @@
         <Parameter Name="subscription" Type="Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription" />
       </Parameters>
       <Docs>
-        <param name="subscription">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="subscription">The subscription object to unsubscribe</param>
+        <summary>
+Unsubscribes a previously created title presence change subscription
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

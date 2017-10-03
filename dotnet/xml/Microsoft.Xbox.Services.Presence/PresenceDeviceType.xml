@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary> Defines values that indicate the device type associate with a PresenceTitleRecord.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Games for Windows LIVE device</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unknown device</summary>
       </Docs>
     </Member>
     <Member MemberName="Web">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Web device (like Xbox.com)</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows8">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Xbox LIVE for Windows device</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsOneCore">
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Windows One Core device</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsOneCoreMobile">
@@ -112,7 +112,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Windows One Core Mobile device</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsPhone">
@@ -128,7 +128,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Windows Phone device</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsPhone7">
@@ -144,7 +144,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Windows Phone 7 device</summary>
       </Docs>
     </Member>
     <Member MemberName="Xbox360">
@@ -160,7 +160,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Xbox360 device</summary>
       </Docs>
     </Member>
     <Member MemberName="XboxOne">
@@ -176,7 +176,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Xbox One device</summary>
       </Docs>
     </Member>
   </Members>

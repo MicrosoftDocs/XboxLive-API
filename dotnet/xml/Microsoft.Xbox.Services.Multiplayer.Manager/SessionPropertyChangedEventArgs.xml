@@ -26,7 +26,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Notifies the title when a session property has been added or modified.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,7 +45,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The JSON of the property that changed.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

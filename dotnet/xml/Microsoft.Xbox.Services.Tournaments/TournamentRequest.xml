@@ -25,7 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Gets tournaments based on the configuration of this request.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,8 +49,8 @@
         <Parameter Name="filterResultsForUser" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="filterResultsForUser">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filterResultsForUser">Filter results to only tournaments where this user is participating.</param>
+        <summary>Creates a tournament_request object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +67,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The maximum number of items to return.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,7 +87,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentOrderBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The property used to order results.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,7 +107,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The organizer of the tournament.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +127,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentSortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The order in which to sort the results.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +147,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Tournaments.TournamentState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Filter results based on the multiple states of the tournament.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

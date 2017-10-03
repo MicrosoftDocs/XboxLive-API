@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents an endpoint that you can use to access the Achievement service.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,12 +46,23 @@
         <Parameter Name="achievementId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="achievementId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xboxUserId">The Xbox User ID of the player.</param>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) for the service.</param>
+        <param name="achievementId">The achievement ID.</param>
+        <summary>
+Returns a specific Achievement object for a specified player.
+</summary>
+        <returns>The requested Achievement object if it exists.
+If the achievement does not exist, the method throws a Platform::COMException() exception,
+with hr = INET_E_OBJECT_NOT_FOUND (0x800C0006L).</returns>
+        <remarks>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the
+IAsyncOperation&lt;TResult&gt;.Completed property. When the asynchronous operation is complete, the result of the
+operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+This method calls V2 GET /users/xuid({xuid})/achievements/{scid}/{achievementId}.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAchievementsForTitleIdAsync">
@@ -74,16 +87,29 @@
         <Parameter Name="maxItems" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <param name="titleId">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="unlockedOnly">To be added.</param>
+        <param name="xboxUserId">The Xbox User ID of the player.</param>
+        <param name="titleId">The title ID.</param>
+        <param name="type">The achievement type to retrieve.</param>
+        <param name="unlockedOnly">Indicates whether to return unlocked achievements only.</param>
         <param name="orderBy">To be added.</param>
-        <param name="skipItems">To be added.</param>
-        <param name="maxItems">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="skipItems">The number of achievements to skip.</param>
+        <param name="maxItems">The maximum number of achievements the result can contain.  Pass 0 to attempt
+to retrieve all items.</param>
+        <summary>
+Returns an AchievementsResult object containing the first page of achievements
+for a player of the specified title.
+</summary>
+        <returns>An AchievementsResult object that contains a list of Achievement objects.</returns>
+        <remarks>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the
+IAsyncOperation&lt;TResult&gt;.Completed property. When the asynchronous operation is complete, the result of the
+operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+See AchievementsResult::GetNextAsync to page in the next set of results.
+
+This method calls V2 GET /users/xuid({xuid})/achievements.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateAchievementAsync">
@@ -109,12 +135,22 @@
         <Parameter Name="percentComplete" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <param name="achievementId">To be added.</param>
-        <param name="percentComplete">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xboxUserId">The Xbox User ID of the player.</param>
+        <param name="achievementId">The achievement ID as defined by XDP or Dev Center.</param>
+        <param name="percentComplete">The completion percentage of the achievement to indicate progress.
+Valid values are from 1 to 100. Set to 100 to unlock the achievement.
+Progress will be set by the server to the highest value sent</param>
+        <summary>
+Allow achievement progress to be updated and achievements to be unlocked.
+This API will work even when offline. On PC and Xbox One, updates will be 
+posted by the system when connection is re-established even if the title isn't running.
+</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+Returns a task&lt;T&gt; object that represents the state of the asynchronous operation.
+
+This method calls V2 POST /users/xuid({xuid})/achievements/{scid}/update
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateAchievementAsync">
@@ -142,14 +178,24 @@
         <Parameter Name="percentComplete" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <param name="titleId">To be added.</param>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="achievementId">To be added.</param>
-        <param name="percentComplete">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xboxUserId">The Xbox User ID of the player.</param>
+        <param name="titleId">The title ID.</param>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) for the title.</param>
+        <param name="achievementId">The achievement ID as defined by XDP or Dev Center.</param>
+        <param name="percentComplete">The completion percentage of the achievement to indicate progress.
+Valid values are from 1 to 100. Set to 100 to unlock the achievement.
+Progress will be set by the server to the highest value sent</param>
+        <summary>
+Allow achievement progress to be updated and achievements to be unlocked.
+This API will work even when offline. On PC and Xbox One, updates will be 
+posted by the system when connection is re-established even if the title isn't running.
+</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+Returns a task&lt;T&gt; object that represents the state of the asynchronous operation.
+
+This method calls V2 POST /users/xuid({xuid})/achievements/{scid}/update
+</remarks>
       </Docs>
     </Member>
   </Members>

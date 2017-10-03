@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values that indicate the current NAT setting for a device connecting to Xbox LIVE.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Devices using moderate NAT settings can only connect with other devices using moderate or open settings.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Can connect with any other devices regardless of their NAT setting.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Strict">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Devices using strict NAT settings can only connect with other devices using open NAT settings.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -80,7 +88,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The server returned an unrecognized response.
+</summary>
       </Docs>
     </Member>
   </Members>

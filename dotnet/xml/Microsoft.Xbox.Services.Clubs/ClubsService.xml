@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents the leaderboard service.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,12 +46,14 @@
         <Parameter Name="titleFamilyId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="titleFamilyId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">Name of the club to be created</param>
+        <param name="type">Type of the club to be created</param>
+        <param name="titleFamilyId">Information about the title the club is associated with</param>
+        <summary>Creates a club.</summary>
+        <returns>A Club object describing the club.</returns>
+        <remarks>
+Calls V1 POST clubaccounts.xboxlive.com/clubs/create
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteClubAsync">
@@ -68,10 +72,12 @@
         <Parameter Name="clubId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="clubId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="clubId">Club Id of the club to delete</param>
+        <summary>Deletes a club.</summary>
+        <returns>A Club object describing the deleted club.</returns>
+        <remarks>
+Calls V1 DELETE clubaccounts.xboxlive.com/clubs/{clubId}
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClubAssociationsAsync">
@@ -93,9 +99,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns details about all the clubs the caller is associated with.</summary>
+        <returns>An IVectorView of all clubs the caller is associated with in any way.</returns>
+        <remarks>
+Calls V4 GET clubhub.xboxlive.com/clubs/Xuid{xuid}
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClubAssociationsAsync">
@@ -119,10 +127,12 @@
         <Parameter Name="xuid" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xuid">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xuid">Xuid of the user</param>
+        <summary>Returns details about all the clubs a particular user is associated with.</summary>
+        <returns>An IVectorView of all clubs the user is associated with in any way.</returns>
+        <remarks>
+Calls V4 GET clubhub.xboxlive.com/clubs/Xuid{xuid}
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClubAsync">
@@ -141,10 +151,12 @@
         <Parameter Name="clubId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="clubId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="clubId">The club ID of the club.</param>
+        <summary>Get information about a club.</summary>
+        <returns>A club object describing the club.</returns>
+        <remarks>
+Calls V4 GET clubhub.xboxlive.com/clubs/Ids({clubId})/decoration/settings
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClubRecommendationsAsync">
@@ -161,9 +173,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Get recommended clubs for the caller.</summary>
+        <returns>
+An IVectorView of ClubRecommendation. A ClubRecommendation contains the recommended club and an IVectorView
+of localized "reason" strings describing why the club was recommended.
+</returns>
+        <remarks>
+Calls V4 POST clubhub.xboxlive.com/clubs/recommendations
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClubsAsync">
@@ -202,9 +219,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Get information about the clubs the caller owns.</summary>
+        <returns>A ClubsOwnedResult containing info about the clubs owned</returns>
+        <remarks>
+Calls V1 GET clubaccounts.xboxlive.com/users/{userId}/clubsowned
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="SearchClubsAsync">

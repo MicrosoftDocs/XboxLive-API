@@ -28,8 +28,20 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a reference to a multiplayer session.
+</summary>
     <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"sessionRef": {
+  "scid": "foo",
+  "templateName" : "bar",
+  "name" : "session-seven"
+}
+</code></example>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,10 +64,12 @@
         <Parameter Name="sessionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="sessionTemplateName">To be added.</param>
-        <param name="sessionName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceConfigurationId">A service configuration ID appropriate for the title.</param>
+        <param name="sessionTemplateName">The name of the template for the session to be based on.</param>
+        <param name="sessionName">A unique name for the session.</param>
+        <summary>
+Constructs the MultiplayerSession object with data about the session.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +89,13 @@
         <Parameter Name="uriPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uriPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uriPath">A string indicating the parsed URI path.</param>
+        <summary>
+Returns the session reference parsed from the specified URI.
+</summary>
+        <returns>
+An object representing the multiplayer session reference.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +112,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The service configuration ID specific to the title.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,7 +132,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The unique name of the session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,7 +152,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The name of the template for the session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,8 +173,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+Returns a URI path representation of the session reference.
+</summary>
+        <returns>
+A string indicating the URI path.
+</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

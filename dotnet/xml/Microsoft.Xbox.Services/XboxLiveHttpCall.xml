@@ -25,7 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines methods used to retrieve objects that in turn provide access to different Xbox Live service components.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +44,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Get if retry is allowed during this call.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,7 +64,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Sets the content type header value for this call.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,7 +118,9 @@
       <Docs>
         <param name="user">To be added.</param>
         <param name="httpCallResponseBodyType">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Attach the Xbox Live token, sign the request, send the request to the service, and return the response.
+</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,7 +142,9 @@
       </Parameters>
       <Docs>
         <param name="httpCallResponseBodyType">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Send the request to the service, and return the response without an Xbox Live token
+</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,7 +162,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets the http method for this call.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,7 +182,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets the path for this call.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,7 +202,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Sets if retry is allowed during this call.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +222,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets the server name for this call.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,7 +248,9 @@
       <Docs>
         <param name="headerName">To be added.</param>
         <param name="headerValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Sets a custom header.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,7 +271,9 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Sets the request body using a string.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,7 +294,9 @@
       </Parameters>
       <Docs>
         <param name="requestBodyArray">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Sets the request body using a byte array value.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

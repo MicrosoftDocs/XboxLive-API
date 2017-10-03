@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the type of thumbnail</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a large thumbnail. Large is 754 pixels in height by 424 pixels in width.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Thumbnail type is not specified. This is an invalid value in most cases.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallThumbnail">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnailType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a small thumbnail. Small is 370 pixels in height by 208 pixels in width.</summary>
       </Docs>
     </Member>
   </Members>

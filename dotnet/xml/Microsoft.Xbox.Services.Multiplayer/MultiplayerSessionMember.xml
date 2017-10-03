@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a reference to a member in a multiplayer session.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +41,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The identifier of the title for the game being played in the session, if the member is active.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +61,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The current status/state of the results.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +81,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The case-insensitive device token string for the multiplayer session member, which can be used for equality comparisons. 
+The token is set when the member uploads a secure device address.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +102,9 @@
         <ReturnType>Windows.Foundation.Collections.IVector&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets a list of group names for the current user indicating which groups that user encountered during a multiplayer session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +122,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+(Optional) The Gamertag of the member.  This value is only known if the member has accepted.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +142,10 @@
         <ReturnType>Windows.Foundation.Collections.IVector&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets or sets a string vector of group names for the current user indicating which groups that user
+was part of during a multiplayer session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,9 +163,20 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The number of the initialization episode that the member participates in during managed initialization.
+This value is only useful to read when the title is manually managing its own QoS.
+</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+Users join sessions in batches. Each batch of users is assigned to a new initialization episode.
+The initialization episode number indicates the set of users that require QoS.
+Initialization episode 0 indicates that the member is not taking part in managed initialization.
+Initialization episode 1 is a special value used for the members added to a new session at create time.
+
+If the "memberInitialization" section is set and the member was added with "initialize":true, 
+this is set to the initialization episode that the member will participate in; otherwise it is 0.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializationFailureCause">
@@ -165,7 +192,11 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The cause of why the initialization failed for the member.
+If there is no failure, this value is MultiplayerMeasurementFailure::None.
+Set when transitioning out of the "joining" or "measuring" stage if this member doesn't pass.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,7 +214,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if a QoS initialization stage has been requested for this user during managed initialization.
+Ignored if there is not a "memberInitialization" section for the session.
+Defaults to false.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,7 +236,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if this multiplayer session member is the player whose Xbox Live context was used to
+create or retrieve the current MultiplayerSession object.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,7 +257,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if this member has an available turn in the session.  
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +277,9 @@
         <ReturnType>Windows.Foundation.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The time the user joined the session. If "reserved" is true, this is the time when the reservation was made.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,7 +297,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A JSON string id that defines items that provide some matchmaking context around how and why they were matched into the session.
+This is a copy of the user's QoS serverMeasurements from the matchmaking session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,7 +318,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A JSON string that specifies the custom player constants for the member.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,7 +338,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A JSON string that specifies the custom player properties for the member.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -309,7 +358,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The Id for this multiplayer session member.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,9 +378,14 @@
         <ReturnType>Windows.Foundation.Collections.IVector&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+QoS measurements for the member's secure device address.
+</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+Like all fields, "measurements" must be updated as a whole. It should be set once when measurement is complete, not incrementally.
+If a "measurements" object is set, it can't contain an entry for the member's own address.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="MemberServerMeasurementsJson">
@@ -345,9 +401,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Identifier of a JSON string defining the QoS measurements for the multiplayer session member in a session.
+</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+Like all fields, "serverMeasurements" must be updated as a whole, so it should be set once when measurement is complete.
+If it is empty, it means that none of the measurements completed within the "serverMeasurementTimeout".
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="MembersInGroup">
@@ -363,9 +424,14 @@
         <ReturnType>Windows.Foundation.Collections.IVector&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A collection of members in any groups to which the session member belongs. 
+</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+If a "initializationGroup" list is set, the member's own index is always added if it isn't already present.
+During managed initialization, if any members in the list fail, this member will also fail.
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="Nat">
@@ -381,7 +447,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The device's NAT setting when the member uploads a secure device address.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -399,7 +467,9 @@
         <ReturnType>Windows.Foundation.Collections.IMap&lt;System.String,Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The arbitration results submitted by the member.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -417,7 +487,9 @@
         <ReturnType>Windows.Foundation.Collections.IMapView&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A collection of role types to role names for this member. (Optional)
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,7 +507,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+(Optional) The base64 encoded secure device address of the member.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -453,7 +527,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The status of this member.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -471,7 +547,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The Id of this members' team in a tournament.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -489,7 +567,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The tournament team session reference.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -507,7 +587,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The Xbox User ID of the member.  This value is only known if the member has accepted.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

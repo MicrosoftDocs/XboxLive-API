@@ -25,7 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines methods used to retrieve objects that in turn provide access to different Xbox Live service components.
+
+Note: the XboxLiveContext is unique per instance. Changing state on one instance for a user does not affect a second instance of the context for the same user. Using multiple instances can therefore result in unexpected behavior. Titles should ensure to only use one instance of the XboxLiveContext per user.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -65,7 +69,9 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox Achievement service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,7 +89,9 @@
         <ReturnType>Microsoft.Xbox.Services.XboxLiveAppConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns an object containing Xbox Live app config such as title ID
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,7 +109,9 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubsService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the title clubs service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +129,9 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the contextual search service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +149,9 @@
         <ReturnType>Microsoft.Xbox.Services.Events.EventsService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the events service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,7 +169,9 @@
         <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the GameServerPlatform service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,7 +189,9 @@
         <ReturnType>Microsoft.Xbox.Services.Leaderboard.LeaderboardService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox Leaderboard service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,7 +209,9 @@
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.MatchmakingService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox Matchmaking service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,7 +229,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox Multiplayer service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,7 +249,9 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Presence service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,7 +269,9 @@
         <ReturnType>Microsoft.Xbox.Services.Privacy.PrivacyService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Privacy service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,7 +289,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.ProfileService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox Profile service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -281,7 +309,9 @@
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox Real Time Activity service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,7 +329,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox Reputation service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,7 +349,9 @@
         <ReturnType>Microsoft.Xbox.Services.XboxLiveContextSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns an object containing settings that apply to all REST calls made such as retry and diagnostic settings.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -335,7 +369,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.SocialService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox Social service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -353,7 +389,9 @@
         <ReturnType>Microsoft.Xbox.Services.System.StringService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox String service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -371,7 +409,9 @@
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the TitleStorage service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -389,7 +429,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox Tournament service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -407,7 +449,9 @@
         <ReturnType>Microsoft.Xbox.Services.System.XboxLiveUser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns the associated system user. 
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -425,7 +469,9 @@
         <ReturnType>Microsoft.Xbox.Services.UserStatistics.UserStatisticsService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns object containing access methods to the Xbox User Stats service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

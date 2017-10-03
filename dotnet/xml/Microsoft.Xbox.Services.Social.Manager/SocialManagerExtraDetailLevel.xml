@@ -18,7 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Detail level controls how much information is exposed in each xbox_live_social_graph_user
+Detail level can only be set on construction of social_manager
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

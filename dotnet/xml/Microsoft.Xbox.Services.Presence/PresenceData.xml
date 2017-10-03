@@ -25,7 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents data supporting Rich Presence features.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,9 +50,11 @@
         <Parameter Name="presenceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="presenceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) that identifies where the presence strings are defined by Id.</param>
+        <param name="presenceId">Id of the presence string that should be used.</param>
+        <summary>
+Initializes a new instance of the PresenceData class.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +98,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The ID of a presence string that is defined in the service configuration.
+For example, PresenceId = "1" could equal "Playing {0} on {1}" in the service configuration.
+The service configuration might map token 0 to Maps and token 1 to MapId
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,7 +120,13 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The IDs of the strings to replace the format string tokens found in the presence string.  These strings are also defined in the service configuration.
+The ID values in the collection map to the strings associated with the token arguments found in the PresenceId.
+For example let's say this vector view contained the values "4" and "1" and PresenceId = "1" equals "Playing {0} on {1}" in the service configuration.
+The service configuration might map Token 0 = Maps, where MapId = "4" equals "Hometown".
+The service configuration might map Token 1 = Difficulty, where DifficultyId = "1" equals "Casual"
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,7 +144,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+ID of the service configuration containing the presence strings.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

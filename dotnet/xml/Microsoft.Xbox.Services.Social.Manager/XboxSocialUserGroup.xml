@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+A subset snapshot of the users social graph
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -61,7 +63,9 @@
         <ReturnType>Microsoft.Xbox.Services.System.XboxLiveUser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The local user who the user group is related to
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,7 +83,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns the presence filter used if group type is filter type
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +103,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.RelationshipFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns the relationship filter used if group type is filter type
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,7 +123,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialUserGroupType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The type of social user group
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,8 +143,10 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.XboxSocialUser&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+Gets an up to date list of users from the social graph
+</summary>
+        <value>Returns a list of users</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +163,10 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Users who are contained in this user group currently
+For list this is static, for filter this is dynamic and will change on do_work
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

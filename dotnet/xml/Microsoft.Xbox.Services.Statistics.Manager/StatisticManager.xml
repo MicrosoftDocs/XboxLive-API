@@ -45,8 +45,11 @@
         <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The user to add to the statistic manager</param>
+        <summary> 
+Adds a local user to the simplified stats manager
+Returns a local_user_added event from do_work
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +70,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The local user whose stats to access</param>
+        <param name="name">The name of the statistic to modify</param>
+        <summary> 
+Deletes a stat value
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +92,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+Returns any events that have been processed
+</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>A list of events that have happened since previous do_work</return>
       </Docs>
     </Member>
     <Member MemberName="GetLeaderboard">
@@ -110,11 +118,15 @@
         <Parameter Name="query" Type="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="statName">To be added.</param>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The local user whose stats to access</param>
+        <param name="statName">The name of the statistic to get the leaderboard of</param>
+        <param name="query">The query parameters of the leaderboard request</param>
+        <summary> 
+Starts a request for a global leaderboard. You can retrieve the resulting data by checking
+the events returned from do_work for an event of type get_leaderboard_complete
+</summary>
         <remarks>To be added.</remarks>
+        <return>Whether or not the leaderboard request was started correctly</return>
       </Docs>
     </Member>
     <Member MemberName="GetSocialLeaderboard">
@@ -136,12 +148,16 @@
         <Parameter Name="query" Type="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="statName">To be added.</param>
-        <param name="socialGroup">To be added.</param>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The local user whose stats to access</param>
+        <param name="statName">The name of the statistic to get the leaderboard of</param>
+        <param name="socialGroup">The name of the social group</param>
+        <param name="query">The query parameters of the leaderboard request</param>
+        <summary> 
+Starts a request for a social leaderboard. You can retrieve the resulting data by checking
+the events returned from do_work for an event of type get_leaderboard_complete
+</summary>
         <remarks>To be added.</remarks>
+        <return>Whether or not the leaderboard request was started correctly</return>
       </Docs>
     </Member>
     <Member MemberName="GetStatistic">
@@ -161,11 +177,14 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The local user whose stats to access</param>
+        <param name="name">The name of the statistic to modify</param>
+        <summary> 
+Gets a stat value
+</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The updated stat</return>
       </Docs>
     </Member>
     <Member MemberName="GetStatisticNames">
@@ -184,10 +203,13 @@
         <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The local user whose stats to access</param>
+        <summary> 
+Gets all stat names in the stat document.
+</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The list of statistic anmes.</return>
       </Docs>
     </Member>
     <Member MemberName="RemoveLocalUser">
@@ -206,8 +228,11 @@
         <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The user to be removed from the statistic manager</param>
+        <summary> 
+Removes a local user from the simplified stats manager
+Returns a local_user_removed event from do_work
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,9 +257,12 @@
         <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="user">The user to flush the stat for</param>
+        <summary> 
+Force the current stat values to be uploaded to the service
+This will send immediately instead of automatically during a 30 second window
+</summary>
+        <remarks>This can be throttled if called too often</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestFlushToService">
@@ -259,10 +287,13 @@
         <Parameter Name="isHighPriority" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
+        <param name="user">The user to flush the stat for</param>
         <param name="isHighPriority">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary> 
+Force the current stat values to be uploaded to the service
+This will send immediately instead of automatically during a 30 second window
+</summary>
+        <remarks>This can be throttled if called too often</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetStatisticIntegerData">
@@ -283,11 +314,14 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The local user whose stats to access</param>
+        <param name="name">The name of the statistic to modify</param>
+        <param name="value">Value to replace the stat by</param>
+        <summary> 
+Replaces the numerical stat by the value. Can be positive or negative
+</summary>
         <remarks>To be added.</remarks>
+        <return>Whether or not the setting was successful. Can fail if stat is not of numerical type. Will return updated stat</return>
       </Docs>
     </Member>
     <Member MemberName="SetStatisticNumberData">
@@ -308,11 +342,14 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The local user whose stats to access</param>
+        <param name="name">The name of the statistic to modify</param>
+        <param name="value">Value to replace the stat by</param>
+        <summary> 
+Replaces the numerical stat by the value. Can be positive or negative
+</summary>
         <remarks>To be added.</remarks>
+        <return>Whether or not the setting was successful. Can fail if stat is not of numerical type. Will return updated stat</return>
       </Docs>
     </Member>
     <Member MemberName="SetStatisticStringData">
@@ -333,11 +370,14 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The local user whose stats to access</param>
+        <param name="name">The name of the statistic to modify</param>
+        <param name="value">Value to replace the stat by</param>
+        <summary> 
+Replaces the string stat by the value.
+</summary>
         <remarks>To be added.</remarks>
+        <return>Whether or not the setting was successful. Can fail if stat is not of string type. Will return updated stat</return>
       </Docs>
     </Member>
     <Member MemberName="SingletonInstance">
@@ -353,7 +393,9 @@
         <ReturnType>Microsoft.Xbox.Services.Statistics.Manager.StatisticManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+Instantiates and returns an instance of simplified stats
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

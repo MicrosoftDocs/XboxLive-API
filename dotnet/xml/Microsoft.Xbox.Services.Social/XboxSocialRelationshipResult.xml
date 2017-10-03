@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Contains a collection of social relationships the user has with other Xbox Live users.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,10 +44,13 @@
         <Parameter Name="maxItems" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="maxItems">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="maxItems">The maximum number of items the response can contain.  Pass 0 to attempt
+retrieving all items.</param>
+        <summary>
+Returns an XboxSocialRelationshipResult object containing the next page
+</summary>
+        <returns>Returns a XboxSocialRelationshipResult object</returns>
+        <remarks>Calls V1 GET /users/{ownerId}/people</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasNext">
@@ -61,8 +66,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+Returns a boolean value that indicates if there are more pages of social relationships to retrieve.
+</summary>
+        <value>True if there are more pages, otherwise false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +86,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationship&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Collection of XboxSocialRelationship objects returned by a request
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +106,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The total number of XboxSocialRelationship objects that can be requested
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

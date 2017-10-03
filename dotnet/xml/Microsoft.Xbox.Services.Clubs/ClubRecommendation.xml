@@ -39,7 +39,7 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Localized string giving the reason the club is recommended</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +57,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.Club</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The club being recommended</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

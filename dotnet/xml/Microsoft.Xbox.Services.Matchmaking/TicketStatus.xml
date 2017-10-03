@@ -15,7 +15,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values that indicate the status of the match request.
+request.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +35,9 @@
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Matchmaking has been canceled for this ticket.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -48,7 +53,10 @@
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Matchmaking has not found a match and the search
+request has expired according to its give up duration.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Found">
@@ -64,7 +72,10 @@
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Matchmaking has found a match and the ticket contains a
+reference to the session that is to be created.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Searching">
@@ -80,7 +91,10 @@
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Matchmaking has not found a match yet and it is
+still searching.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -96,7 +110,10 @@
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The status of the match request has not been returned by the server yet
+or the server returned an unrecognized response.
+</summary>
       </Docs>
     </Member>
   </Members>

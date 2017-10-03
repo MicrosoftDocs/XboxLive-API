@@ -15,7 +15,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Enumeration for the possible connection states of the connection
+to the real-time activity service.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +35,9 @@
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Currently connected to the real-time activity service.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Connecting">
@@ -48,7 +53,9 @@
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Currently connecting to the real-time activity service.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Disconnected">
@@ -64,7 +71,9 @@
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Currently disconnected from the real-time activity service .
+</summary>
       </Docs>
     </Member>
   </Members>

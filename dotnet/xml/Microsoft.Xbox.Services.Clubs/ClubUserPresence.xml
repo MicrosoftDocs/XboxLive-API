@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User is on the chat page.</summary>
       </Docs>
     </Member>
     <Member MemberName="Feed">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User is viewing the club feed.</summary>
       </Docs>
     </Member>
     <Member MemberName="InClub">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User is viewing the club, but not on any specific page.</summary>
       </Docs>
     </Member>
     <Member MemberName="InGame">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User is playing the associated game.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotInClub">
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User is no longer on a club page.</summary>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -112,7 +112,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User is on the play tab in the club (not actually playing anything).</summary>
       </Docs>
     </Member>
     <Member MemberName="Roster">
@@ -128,7 +128,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User is viewing the club roster/presence.</summary>
       </Docs>
     </Member>
   </Members>

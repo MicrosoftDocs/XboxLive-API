@@ -25,8 +25,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents matchmaking quality of service (QoS) measurements for the network used by a session member.
+</summary>
     <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"measurement=": {
+    "latency": 5953,
+    "bandwidthDown" : 19342,
+    "bandwidthUp" : 944,
+    "custom" : {}
+}
+</code></example>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,12 +64,14 @@
         <Parameter Name="customJson" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="memberDeviceToken">To be added.</param>
-        <param name="latency">To be added.</param>
-        <param name="bandwidthDownInKilobitsPerSecond">To be added.</param>
-        <param name="bandwidthUpInKilobitsPerSecond">To be added.</param>
-        <param name="customJson">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="memberDeviceToken">The device token of the session member that this measurement is for.</param>
+        <param name="latency">The measured latency, in milliseconds, for the session member.</param>
+        <param name="bandwidthDownInKilobitsPerSecond">The minimum bandwidth down, in kilobits per second, for downloading data from the host to the session member.</param>
+        <param name="bandwidthUpInKilobitsPerSecond">The minimum bandwidth up, in kilobits per second, for uploading data from the session member to the host.</param>
+        <param name="customJson">A JSON string that specifies the custom QoS properties.</param>
+        <summary>
+Creates a new MultiplayerQualityOfServiceMeasurements object for a session member.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +88,9 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The minimum bandwidth down, in kilobits per second, for downloading data from the host to the session member.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +108,9 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The minimum bandwidth up, in kilobits per second, for uploading data from the session member to the host.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +128,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A JSON string that specifies the custom QoS properties.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,7 +148,9 @@
         <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The measured latency, in milliseconds, for the session member.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,7 +168,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The device token of the session member that this measurement is for.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

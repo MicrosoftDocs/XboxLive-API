@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Enumeration for the types of statuses that may result from a WriteSessionAsync.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Allows you to set a max count for the multiplayer role
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Allows you to set a target count for the multiplayer role
+</summary>
       </Docs>
     </Member>
   </Members>

@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Services that manage user profile.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,10 +44,15 @@
         <Parameter Name="xboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xboxUserId">The Xbox User ID of the user to get the profile for.</param>
+        <summary>
+Gets a user profile for a specific Xbox user.
+</summary>
+        <returns>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+The result of the asynchronous operation is an XboxUserProfile object.
+</returns>
+        <remarks>Calls V2 GET /users/batch/profile/settings</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUserProfilesAsync">
@@ -86,10 +93,16 @@
         <Parameter Name="socialGroup" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="socialGroup">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="socialGroup">The name of the social group of users to search.
+See Microsoft::Xbox::Services::Social::SocialGroupConstants for the latest options.</param>
+        <summary>
+Gets user profiles for users in a specified social group.
+</summary>
+        <returns>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+The result of the asynchronous operation is a collection of XboxUserProfile objects.
+</returns>
+        <remarks>Calls V2 GET /users/{userId}/profile/settings/people/{socialGroup}</remarks>
       </Docs>
     </Member>
   </Members>

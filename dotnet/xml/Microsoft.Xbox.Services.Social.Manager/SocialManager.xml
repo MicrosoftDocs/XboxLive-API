@@ -70,11 +70,13 @@
         <Parameter Name="relationshipFilter" Type="Microsoft.Xbox.Services.Social.Manager.RelationshipFilter" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="presenceFilter">To be added.</param>
-        <param name="relationshipFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="user">Xbox Live User</param>
+        <param name="presenceFilter">The restriction of users based on their presence and title activity</param>
+        <param name="relationshipFilter">The restriction of users based on their relationship to the calling user</param>
+        <summary>
+Constructs a social social user group, which is a collection of users with social information
+</summary>
+        <returns>The created view</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +120,11 @@
         <Parameter Name="xboxSocialUserGroup" Type="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup" />
       </Parameters>
       <Docs>
-        <param name="xboxSocialUserGroup">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xboxSocialUserGroup">The social social user group to destroy and stop tracking</param>
+        <summary>
+Destroys a created social social user group
+This will stop updating the social user group and remove tracking for any users the social user group holds
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +142,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+Called whenever the title wants to update the social graph and get list of change events
+Events that are returned will only be for the page that is is currently selected
+Must be called every frame for data to be up to date
+</summary>
+        <returns> The list of what has changed in between social graph updates</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +164,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.System.XboxLiveUser&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns all local users who have been added to the social manager
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,8 +187,10 @@
         <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">Xbox Live User</param>
+        <summary>
+Removes a social graph for the specified local user
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +211,12 @@
         <Parameter Name="shouldEnablePolling" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="shouldEnablePolling">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">Xbox Live User</param>
+        <param name="shouldEnablePolling">Whether or not polling should enabled</param>
+        <summary>
+Whether to enable social manager to poll every 30 seconds from the presence service 
+</summary>
+        <returns>An xbox_live_result representing the success enabling polling</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,7 +233,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets the social_manager singleton instance
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

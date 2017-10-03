@@ -15,7 +15,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Enumeration values that indicate the trace levels of debug output for service diagnostics.
+
+Setting the debug trace level to Error or higher reports the last HRESULT, the current
+function, the source file, and the line number for many trace points in the Xbox Live code.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +37,9 @@
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Output error-handling messages.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -48,7 +55,9 @@
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Output informational messages, warnings, and error-handling messages.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Off">
@@ -64,7 +73,9 @@
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Output no tracing and debugging messages.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Verbose">
@@ -80,7 +91,9 @@
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Output all debugging and tracing messages.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -96,7 +109,9 @@
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Output warnings and error-handling messages.
+</summary>
       </Docs>
     </Member>
   </Members>

@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Enum used with disable_asserts_for_xbox_live_throttling_in_dev_sandboxes()
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,10 @@
         <ReturnType>Microsoft.Xbox.Services.XboxLiveContextThrottleSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Passed to xboxLiveContext-&gt;Settings-&gt;DisableAssertsForXboxLiveThrottlingInDevSandboxes()
+to warn code reviewers that there's an outstanding Xbox Live calling pattern issue that needs to be addressed.
+</summary>
       </Docs>
     </Member>
   </Members>

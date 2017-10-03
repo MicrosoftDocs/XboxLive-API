@@ -26,7 +26,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Notifies the title when a new game member joins the game. 
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,7 +45,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A list of members that joined the game.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

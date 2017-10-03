@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents an endpoint that you can use to access the user statistic service.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -102,12 +104,14 @@
         <Parameter Name="statisticName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="statisticName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xboxUserId">The Xbox User ID of the player to get statistics for.</param>
+        <param name="serviceConfigurationId">The service configuration ID for the service holding the statistic.</param>
+        <param name="statisticName">The name of the statistic to return.</param>
+        <summary>
+Get a specified statistic for a specified user.
+</summary>
+        <returns>An interface for tracking the progress of the asynchronous call. The result is the requested statistic.</returns>
+        <remarks>Calls V1 GET /users/xuid({xuid})/scids/{scid}/stats/{statname1}</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSingleUserStatisticsAsync">
@@ -154,7 +158,9 @@
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Registers for statistic change notifications.  Event handlers receive a StatisticChangeEventArgs^ object.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,11 +182,14 @@
         <Parameter Name="statisticName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="statisticName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="xboxUserId">The Xbox User ID of the player requesting the subscription.</param>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the subscription.</param>
+        <param name="statisticName">The name of the statistic to subscribe to.</param>
+        <summary>
+Subscribes to statistic update notifications via the StatisticChanged event.
+</summary>
+        <returns>A subscription object that contains the state of the subscription. 
+You can register an event handler for statistic changes by using the StatisticChanged event.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,8 +209,10 @@
         <Parameter Name="subscription" Type="Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription" />
       </Parameters>
       <Docs>
-        <param name="subscription">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="subscription">The subscription object to unsubscribe.</param>
+        <summary>
+Unsubscribes a previously created statistic change subscription.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

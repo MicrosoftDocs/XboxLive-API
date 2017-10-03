@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values used to indicate the host selection metrics for measuring matchmaking QoS for a session.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Bandwidth host selection metric.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="BandwidthDown">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Bandwidth down host selection metric.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="BandwidthUp">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Bandwidth up host selection metric.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Latency">
@@ -80,7 +88,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Latency host selection metric.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -96,7 +106,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Unknown metric.
+</summary>
       </Docs>
     </Member>
   </Members>

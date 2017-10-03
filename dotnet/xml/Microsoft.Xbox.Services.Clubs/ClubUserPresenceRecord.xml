@@ -39,7 +39,7 @@
         <ReturnType>Windows.Foundation.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Time when the user was last present within the club.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +57,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users state when they were last seen.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +75,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Xuid of the user who was present at the club.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

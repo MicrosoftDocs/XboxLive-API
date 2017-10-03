@@ -26,7 +26,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents the results of a leaderboard request.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,7 +45,9 @@
         <ReturnType>Microsoft.Xbox.Services.Leaderboard.LeaderboardResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+Gets the leaderboard result from a leaderboard request
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

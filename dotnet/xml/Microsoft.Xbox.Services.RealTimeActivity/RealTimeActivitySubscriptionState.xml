@@ -15,7 +15,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Enumeration for the possible states of a statistic subscription request
+to the real-time activity service.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +35,9 @@
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Unsubscribe confirmed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="PendingSubscribe">
@@ -48,7 +53,9 @@
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Waiting for the server to respond to the subscription request.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="PendingUnsubscribe">
@@ -64,7 +71,9 @@
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Waiting for the server to respond to the unsubscribe request.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Subscribed">
@@ -80,7 +89,9 @@
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Subscription confirmed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -96,7 +107,9 @@
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The subscription state is unknown.
+</summary>
       </Docs>
     </Member>
   </Members>

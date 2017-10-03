@@ -32,7 +32,10 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+User has been banned from all interaction with a club. A user cannot have any other role
+with a club if they are banned from it
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Follower">
@@ -48,7 +51,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Follower of a club</summary>
       </Docs>
     </Member>
     <Member MemberName="Invited">
@@ -64,7 +67,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User has been invited to a club</summary>
       </Docs>
     </Member>
     <Member MemberName="Member">
@@ -80,7 +83,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Member of a club</summary>
       </Docs>
     </Member>
     <Member MemberName="Moderator">
@@ -96,7 +99,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Moderator of a club</summary>
       </Docs>
     </Member>
     <Member MemberName="Nonmember">
@@ -112,7 +115,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Not a member of the club. Used exclusively for permissions/settings</summary>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -128,7 +131,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Owner of a club</summary>
       </Docs>
     </Member>
     <Member MemberName="Recommended">
@@ -144,7 +147,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User has been recommended for a club</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestedToJoin">
@@ -160,7 +163,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User has requested to join a club</summary>
       </Docs>
     </Member>
   </Members>

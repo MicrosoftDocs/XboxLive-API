@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values used to indicate the state of a tournament game.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Draw
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Loss">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Loss
+</summary>
       </Docs>
     </Member>
     <Member MemberName="NoContest">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+No game
+</summary>
       </Docs>
     </Member>
     <Member MemberName="NoShow">
@@ -80,7 +88,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Didn't show up
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Rank">
@@ -96,7 +106,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Rank
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Win">
@@ -112,7 +124,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Win
+</summary>
       </Docs>
     </Member>
   </Members>

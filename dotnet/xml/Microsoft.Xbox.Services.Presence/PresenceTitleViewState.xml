@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines values that indicate the title's view state as last reported to the Presence Service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The title's running in the background and is not visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Filled">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The title's view is using part of the screen with another application snapped.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullScreen">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The title's view is using the full screen.</summary>
       </Docs>
     </Member>
     <Member MemberName="Snapped">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The title's view is snapped with another application using a part of the screen.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unknown view state.</summary>
       </Docs>
     </Member>
   </Members>

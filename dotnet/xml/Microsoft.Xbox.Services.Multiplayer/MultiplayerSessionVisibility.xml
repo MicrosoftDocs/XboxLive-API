@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values that indicate how visible a session is.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Ignore the SessionVisibility filter. 
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Full">
@@ -48,7 +52,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The session is full and cannot be joined by anyone.  
+Joining an open but full session causes the service to return HTTP_E_STATUS_BAD_REQUEST (400).
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -64,7 +71,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The session is open and can be joined by anyone.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Private">
@@ -80,7 +89,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The session is private and it's not visible to other users who
+aren't in the session. Attempting to join a private session causes the server to return HTTP_E_STATUS_FORBIDDEN.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -96,7 +108,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Unknown.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -112,7 +126,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The session is visible to other users who aren't in the session, but the session is read-only to them and they can't join.
+Attempting to join a visible session causes the service to return HTTP_E_STATUS_FORBIDDEN.
+</summary>
       </Docs>
     </Member>
   </Members>

@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Provides access methods for the reputation service.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -68,14 +70,16 @@
         <Parameter Name="evidenceResourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <param name="reputationFeedbackType">To be added.</param>
-        <param name="sessionName">To be added.</param>
-        <param name="reasonMessage">To be added.</param>
-        <param name="evidenceResourceId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xboxUserId">The Xbox User ID of the user that reputation feedback is being submitted on.</param>
+        <param name="reputationFeedbackType">The reputation feeback type being submitted.</param>
+        <param name="sessionName">The name of the multiplayer session directory session the user is sending feedback from. (Optional)</param>
+        <param name="reasonMessage">User supplied text added to explain the reason for the feedback. (Optional)</param>
+        <param name="evidenceResourceId">The Id of a resource that can be used as evidence for the feedback. Example: the Id of a video file. (Optional)</param>
+        <summary>
+Submits reputation feedback on the specified user.
+</summary>
+        <returns>The async object for notifying when the operation has been completed.</returns>
+        <remarks>Calls V100 POST /users/xuid({xuid})/feedback</remarks>
       </Docs>
     </Member>
   </Members>

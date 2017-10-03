@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a multiplayer event.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +41,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A pointer to the application-defined data passed into the set_ methods.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +61,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The error code indicating the result of the operation.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +81,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns call specific debug information if join fails
+It is not localized, so only use for debugging purposes.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +102,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+You need to cast this to one of the event arg classes to retrieve the data for that particular event.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +122,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Type of the event triggered.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +142,10 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The multiplayer session type this event was triggered for. Depending upon the session type,
+you can then retrieve the latest lobby or game session from the multiplayer_manager class.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

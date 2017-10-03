@@ -25,7 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents settings for an HTTP call.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +44,9 @@
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates the level of debug messages to send to the debugger's Output window.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,7 +64,9 @@
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveLogCallEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Registers for log calls.  Event handlers will receive an XboxLiveLogCallEventArgs object.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +83,9 @@
         <ReturnType>Microsoft.Xbox.Services.System.XboxLiveServicesSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets the XboxLiveServicesSettings singleton instance
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,7 +103,9 @@
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveWnsEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Registers for WNS notification.  Event handlers will receive an XboxLiveWNSEventArgs object.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values used to indicate the state of a tournament game.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The match was canceled, for example in the case of forfeiting
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Results were fully uploaded and complete
+</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+No arbitration state set.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="NoResults">
@@ -80,7 +88,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The match begun, but no players or servers reported results in time before the arbitration deadline
+</summary>
       </Docs>
     </Member>
     <Member MemberName="PartialResults">
@@ -96,7 +106,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Some results were received, and results were compiled based on this incomplete data
+</summary>
       </Docs>
     </Member>
   </Members>

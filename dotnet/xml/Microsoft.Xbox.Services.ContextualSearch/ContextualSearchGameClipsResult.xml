@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains information about a contextual search game clips result.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,8 +42,10 @@
         <Parameter Name="maxItems" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="maxItems">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="maxItems">The maximum number of game clips the result can contain.  Pass 0 to attempt to retrieve the top 100 items.</param>
+        <summary>
+Returns the next page of game clips.
+</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,7 +63,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Array of game clips returned.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

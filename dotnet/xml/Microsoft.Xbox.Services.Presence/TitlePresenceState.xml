@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines values that indicate the title presence state for a user.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,9 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.TitlePresenceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates the user ended playing the title.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Started">
@@ -48,7 +50,9 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.TitlePresenceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates the user started playing the title.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -64,7 +68,9 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.TitlePresenceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates this is a Unknown state.
+</summary>
       </Docs>
     </Member>
   </Members>

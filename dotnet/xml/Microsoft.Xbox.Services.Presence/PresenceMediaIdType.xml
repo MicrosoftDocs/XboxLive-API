@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary> Defines values that indicate the media id types for media presence data.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceMediaIdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bing media Id.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediaProvider">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceMediaIdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>MediaProvider media Id.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Presence.PresenceMediaIdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unknown media Id.</summary>
       </Docs>
     </Member>
   </Members>

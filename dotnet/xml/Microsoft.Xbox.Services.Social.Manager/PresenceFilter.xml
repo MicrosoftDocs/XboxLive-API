@@ -15,7 +15,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+The filter level of information
+Title will only show users associated with a particular title
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +35,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Everyone</summary>
       </Docs>
     </Member>
     <Member MemberName="AllOffline">
@@ -48,7 +51,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Everyone currently offline</summary>
       </Docs>
     </Member>
     <Member MemberName="AllOnline">
@@ -64,7 +67,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Everyone currently online</summary>
       </Docs>
     </Member>
     <Member MemberName="AllTitle">
@@ -80,7 +83,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Everyone who has played or is playing the title</summary>
       </Docs>
     </Member>
     <Member MemberName="TitleOffline">
@@ -96,7 +99,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Has played this title and is offline</summary>
       </Docs>
     </Member>
     <Member MemberName="TitleOnline">
@@ -112,7 +115,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Is currently playing current title and is online</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -128,7 +131,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unknown</summary>
       </Docs>
     </Member>
   </Members>

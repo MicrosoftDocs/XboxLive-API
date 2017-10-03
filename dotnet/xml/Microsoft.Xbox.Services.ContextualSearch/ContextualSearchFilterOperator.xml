@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumerates the operators of a contextual search filter.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Matches if filter name is equals to filter value.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThan">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Matches if filter name is greater than filter value.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanOrEqual">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Matches if filter name is greater than or equal to filter value.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Matches if filter name is less than filter value.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEqual">
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Matches if filter name is less than or equal to filter value.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotEqual">
@@ -112,7 +112,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Matches if filter name is not equal to filter value.</summary>
       </Docs>
     </Member>
   </Members>

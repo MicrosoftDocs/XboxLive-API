@@ -32,7 +32,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.SocialNotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+User(s) were added.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="changed">
@@ -48,7 +50,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.SocialNotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+User(s) data changed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="removed">
@@ -64,7 +68,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.SocialNotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+User(s) were removed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -80,7 +86,9 @@
         <ReturnType>Microsoft.Xbox.Services.Social.SocialNotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+unknown
+</summary>
       </Docs>
     </Member>
   </Members>

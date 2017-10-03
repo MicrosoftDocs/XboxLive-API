@@ -25,7 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents role info for a multiplayer role.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +47,9 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Creates a MultiplayerRoleInfo object.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +66,12 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Maximum number of slots available for this role.
+Note: Only the session owner can modify role settings and only those that are multiplayer_role_type::mutable_role_settings()
+In your session template, you also need to set 'hasOwners' capability and 'ownerManaged' to true for the specific role type 
+that you want to modify the mutable_role_setting off.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -80,7 +89,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Number of slots occupied for this role.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +109,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Member XboxUserIds currently assigned for this role.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +129,12 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Number of target slots assigned for this role.
+Note: Only the session owner can modify role settings and only those that are multiplayer_role_type::mutable_role_settings()
+In your session template, you also need to set 'hasOwners' capability and 'ownerManaged' to true for the specific role type 
+that you want to modify the mutable_role_setting off.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

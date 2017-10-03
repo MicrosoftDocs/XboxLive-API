@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Provides an endpoint for managing privacy settings.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -67,11 +69,18 @@
         <Parameter Name="targetXboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="permissionId">To be added.</param>
-        <param name="targetXboxUserId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="permissionId">The ID of the permission to check.
+See Microsoft::Xbox::Services::Privacy::PermissionIdConstants for the latest options.</param>
+        <param name="targetXboxUserId">The target user's xbox Live ID for validation</param>
+        <summary>
+Check a single permission with a single target user.
+</summary>
+        <returns>The permission check result against a single user.</returns>
+        <remarks>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+
+Calls V1 GET /users/{requestorId}/permission/validate
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAvoidListAsync">
@@ -88,9 +97,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+Get the list of Xbox Live Ids the calling user should avoid during multiplayer matchmaking.
+</summary>
+        <returns>A collection of XboxUserIds that correspond to the calling user's avoid list.</returns>
+        <remarks>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+
+Calls V1 GET /users/xuid({xuid})/people/avoid</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMuteListAsync">
@@ -107,9 +121,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+Get the list of Xbox Live Ids that the calling user should not hear (mute) during multiplayer matchmaking.
+</summary>
+        <returns>The collection of Xbox user IDs that represent the mute list for a user.</returns>
+        <remarks>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+
+Calls V1 GET /users/xuid({xuid})/people/mute
+</remarks>
       </Docs>
     </Member>
   </Members>

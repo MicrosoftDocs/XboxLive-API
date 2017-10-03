@@ -25,7 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines the search filters for retrieveing a collection of discoverable sessions. Used in MultiplayerService::GetSessionsAsync().
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,9 +50,11 @@
         <Parameter Name="maxItems" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="serviceConfigurationId">To be added.</param>
-        <param name="maxItems">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceConfigurationId">The service configuration id associated with the sessions.</param>
+        <param name="maxItems">The maximum number of sessions to return.</param>
+        <summary>
+Constructs a new MultiplayerGetSessionsRequest object.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +71,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Filter results to just sessions with this major version, or less, of the contract. Set to 0 to ignore the contract version.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +91,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates if inactive sessions are included in the results.  You must specify xboxUserIdFilter if this value is set to true.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +111,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates if private sessions are included in the results.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +131,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Indicates if sessions that the user hasn't accepted are included in the results.  You must specify xboxUserIdFilter if this value is set to true.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +151,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Optional. Filter results to just sessions with this keyword.
+You must specify one of XboxUserIdFilter, XboxUserIdsFilter, or KeywordFilter. 
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,7 +172,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The maximum number of sessions to return.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,7 +192,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The service configuration id that the sessions are part of.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,7 +212,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Optional. The name of the template for the multiplayer session to filter on.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +232,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Filter results to just sessions with the specified visibility.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -229,7 +252,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Optional. Filter results to just sessions that contain this Xbox User ID.
+You must specify one of XboxUserIdFilter, XboxUserIdsFilter, or KeywordFilter. 
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -247,7 +273,10 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Optional. Filter results to just sessions that contains these Xbox User IDs.
+You must specify one of XboxUserIdFilter, XboxUserIdsFilter, or KeywordFilter. 
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

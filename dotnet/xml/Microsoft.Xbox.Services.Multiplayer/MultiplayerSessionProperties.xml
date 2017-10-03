@@ -22,8 +22,49 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents multiplayer session properties.
+</summary>
     <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"properties": {
+       "system": {
+           "keywords": [
+               "hello"
+           ],
+           "turn": [
+               0
+           ],
+           "host": "99e4c701",
+           "initializationSucceeded": true,
+           "joinRestriction": "None",
+           "readRestriction": "None",
+           "serverConnectionStringCandidates": [
+               "west.azure.com",
+               "east.azure.com"
+           ],
+           "matchmaking": {
+               "clientResult": {
+                   "status": "Searching",
+                   "statusDetails": "Description",
+                   "typicalWait": 30,
+                   "targetSessionRef": {
+                       "scid": "1ECFDB89-36EB-4E59-8901-11F7393689AE",
+                       "templateName": "capture-the-flag",
+                       "name": "2D58F65F-0E3C-4F1F-8277-2BC9873FDB23"
+                   }
+               },
+               "targetSessionConstants": {},
+               "serverConnectionString": "west.azure.com"
+           },
+           "matchmakingResubmit": true
+       },
+       "custom": {}
+   },
+</code></example>
   </Docs>
   <Members>
     <Member MemberName="AllocateCloudCompute">
@@ -39,7 +80,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if there is an outstanding request to allocate.
+Set to true to indicate that the client would like an allocation. Set to false to cancel the allocation request.
+MPSD will remove this property entirely if the allocation has failed.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +102,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A value that indicates if the session is closed. 
+Thsi value controls whether a session is joinable, independent of visibility, joinrestriction, and available space in the session.
+Does not affect reservations.  Defaults to false.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +124,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A token representing the host device. 
+Must match the "deviceToken" of at least one member, otherwise this field is deleted.
+If "peerToHostRequirements" is set and "host" is set, the measurement stage assumes that 
+the given host is the correct host and only measures metrics to that host.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,9 +147,21 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets or sets the restriction that is applied to members when joining an open session.
+Defaults to "none".
+</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+The join restriction has no effect on reservations, which means that it has no impact on "private" and "visible" sessions.
+
+If "local", only users whose token's DeviceId matches someone else already in the session and "active": true.
+If "followed", only local users (as defined above) and users who are followed by an existing (not reserved) member of the session can join without a reservation.
+
+The join restriction must be at least as closed as the ReadRestriction restriction.
+For example, ReadRestriction cannot be set to MultiplayerSessionReadRestriction.Local without also setting
+JoinRestriction to MultiplayerSessionJoinRestriction.Local. 
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="Keywords">
@@ -111,7 +177,10 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+(Optional) A collection of case-insensitive keywords associated with the session. This value can be empty.
+When changing keywords, call MultiplayerService::WriteSessionAsync to write the changes to the service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +198,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+If true, it would allow the members of the session to be locked, such that if a user leaves they are able to 
+come back into the session but no other user could take that spot. Defaults to false.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,7 +219,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Force a specific connection string to be used, which is useful for join in progress scenarios.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,7 +239,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A JSON string of title-defined constants for the target session to use in matchmaking. 
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,9 +259,21 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Gets or sets the restriction that is applied to members when reading an open session. 
+Defaults to "none".
+</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+The read restriction has no effect on reservations, which means that it has no impact on "private" and "visible" sessions.
+
+If "local", only users whose token's DeviceId matches someone else already in the session and "active": true.
+If "followed", only local users (as defined above) and users who are followed by an existing (not reserved) member of the session can read without a reservation.
+
+The read restriction must be at least as open as the JoinRestriction restriction.
+For example, JoinRestriction cannot be set to MultiplayerSessionJoinRestriction.Followed without also setting
+ReadRestriction to MultiplayerSessionReadRestriction.Followed. 
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServerConnectionStringCandidates">
@@ -201,7 +289,10 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The ordered list of connection strings that the session can use to connect to a game server. Generally titles should use the first on
+the list, but sophisticated titles could use a custom mechanism for choosing one of the others (e.g. based on load).
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,7 +310,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A JSON string that specifies the custom properties for the session.  These can be changed anytime.
+When changing, call MultiplayerService::WriteSessionAsync to write the changes to the service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +331,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.UInt32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Member index of owners of the session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,7 +351,10 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A collection of MultiplayerSessionMember objects indicating who has played turns in the sessions.
+When changing, call MultiplayerService::WriteSessionAsync to write the changes to the service.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

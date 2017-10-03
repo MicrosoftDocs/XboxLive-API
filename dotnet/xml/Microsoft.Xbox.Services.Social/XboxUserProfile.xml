@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary> 
+Represents a user's Xbox Live profile.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +41,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The user's display name to be used in application UI.  This value is privacy gated and could
+be a user's real name or their gamertag.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +62,15 @@
         <ReturnType>Windows.Foundation.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Uri for the user's display picture to be used in application UI.
+The Uri is a resizable Uri. It can be used to specify one of the following sizes and formats by appending '&amp;format={format}&amp;w={width}&amp;h={height}:
+Format: png
+Width   Height
+64      64
+208     208
+424     424
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +88,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The user's display name to be used in game UI.  This value is privacy gated and could
+be a user's real name or their gamertag.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +109,15 @@
         <ReturnType>Windows.Foundation.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Uri for the user's display picture to be used in games.
+The Uri is a resizable Uri. It can be used to specify one of the following sizes and formats by appending '&amp;format={format}&amp;w={width}&amp;h={height}:
+Format: png
+Width   Height
+64      64
+208     208
+424     424
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +135,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The user's gamerscore.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +155,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The user's gamertag.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,7 +175,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The user's Xbox user ID.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

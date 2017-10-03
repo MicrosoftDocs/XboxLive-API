@@ -26,7 +26,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Notifies the title when a new host member has been set. 
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,7 +45,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The new host member. If an existing host leaves, the HostMember will be nullptr.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

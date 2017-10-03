@@ -25,7 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Sets the search handle based on the configuration of this request.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,7 +52,8 @@
       <Docs>
         <param name="serviceConfigurationId">To be added.</param>
         <param name="sessionTemplateName">To be added.</param>
-        <summary>To be added.</summary>
+        <summary> Creates a MultiplayerGetSearchHandleRequest object.
+<param name="serviceConfigurationId">The scid within which to query for search handles.</param><param name="sessionTemplateName">The name of the template to query for search handles.</param></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +70,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The order to sort the search handles by.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +90,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The attribute to sort the search handles by.
+Valid values are "Timestamp desc", "Timestamp asc" or any Numbers search attribute followed by 'asc or 'desc' (ex: 'Numbers/gamerank asc')
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +111,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The filter to search for.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +131,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The service configuration id that the sessions part of.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +151,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The name of the template that the sessions part of.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,7 +171,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The social group to get the search handles for.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

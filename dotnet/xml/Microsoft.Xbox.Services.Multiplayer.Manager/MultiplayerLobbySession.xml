@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Manager for managing members that are local to this device.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,8 +44,15 @@
         <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The associated xbox_live_context for the User.</param>
+        <summary>
+Changes are batched and written to the service on the next do_work(). All session properties and members
+contain updated response returned from the server upon calling do_work().
+Hosts a new lobby when the first user is added. For all other users, they will be added to the existing lobby
+You can send invites, set lobby properties, access lobby members via lobby() only once you've added the local user.
+While joining a lobby via an invite, or a handleId, you can skip adding the local user to avoid creating a lobby and 
+instead pass in the list of users in the join_lobby() API.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +69,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A unique ID to the session used to query trace logs for entries that relate to the session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,10 +94,14 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="name">To be added.</param>
+        <param name="user">The associated xbox_live_context for the User you want to delete the property for.</param>
+        <param name="name">The name of the property to delete</param>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Delete a custom property on the local member
+Changes are batched and written to the service on the next do_work(). All session properties and members
+contain updated response returned from the server upon calling do_work().
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +118,11 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Returns the host member for the lobby.
+There could be multiple hosts if there are multiple users on the same host device.
+This returns user with the lowest index for that host device.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,10 +145,17 @@
         <Parameter Name="customActivationContext" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="contextStringId">To be added.</param>
-        <param name="customActivationContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The associated xbox_live_context for the User.</param>
+        <param name="contextStringId">The custom context string ID.  This string ID is defined 
+during Xbox Live ingestion to identify the invitation text that is additional to the standard 
+invitation text. The ID string must be prefixed with "///".  Pass an empty string if 
+you don't want a custom string added to the invite.</param>
+        <param name="customActivationContext">The activation context string. Pass an empty string if 
+you don't want a custom context added to the invite.</param>
+        <summary>
+Displays the invite UI and allows the user to select people from the user's people list and invite them to join the user's party
+If a user accepts that notification the title will be activated.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +202,10 @@
         <Parameter Name="xboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xboxUserId">The Xbox User ID of the user</param>
+        <summary>
+Whether or not the Xbox User ID is the host.
+</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,7 +223,10 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentTeamResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Only applicable if you are using Xbox Live Tournaments.
+The known last team result of the tournament.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,7 +244,9 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A collection of members that are local to this device.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,7 +264,10 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A collection of members that are in the lobby. When a friend accepts a game invite, 
+members will be added to the lobby.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -249,7 +285,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+JSON string that specify the custom properties for the game.  These can be changed anytime.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,8 +308,14 @@
         <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">The associated xbox_live_context for the User.</param>
+        <summary>
+Changes are batched and written to the service on the next do_work(). All session properties and members
+contain updated response returned from the server upon calling do_work().
+Removes the local user from the lobby and game session.
+After this method is called, if no local users are active, title will not be able to perform any further multiplayer operations.
+You can join another game or re-add the local user.
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,7 +332,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+A set of constants associated with this session. These can only be set through the session template.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,7 +352,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Object containing identifying information for the session.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -329,10 +377,14 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="connectionAddress">To be added.</param>
+        <param name="user">The associated system User you want to set the property for.</param>
+        <param name="connectionAddress">The network connection address to set.</param>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Set connection address for the local member. The address can be used for network and secure socket connection.
+Changes are batched and written to the service on the next do_work(). All session properties and members
+contain updated response returned from the server upon calling do_work().
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,11 +407,15 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="valueJson">To be added.</param>
+        <param name="user">The associated xbox_live_context for the User you want to set the property for.</param>
+        <param name="name">The name of the property to set.</param>
+        <param name="valueJson">The JSON value to assign to the property. (Optional)</param>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Set a custom property on the local member to the specified JSON string
+Changes are batched and written to the service on the next do_work(). All session properties and members
+contain updated response returned from the server upon calling do_work().
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,10 +437,14 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="valueJson">To be added.</param>
+        <param name="name">The name of the property to set.</param>
+        <param name="valueJson">The JSON value to assign to the property. (Optional)</param>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Set a custom game property to the specified JSON string.
+Changes are batched and written to the service on the next do_work(). All session properties and members
+contain updated response returned from the server upon calling do_work().
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,9 +465,15 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="gameHost">To be added.</param>
+        <param name="gameHost">The host member.</param>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Sets the host for the game using multiplayer_session_write_mode::synchronized_update. Use this method to resolve
+any conflicts between devices trying to set the host at the same time. It ensures that updates to the session are atomic. 
+The service may reject your request if a race condition occurred(due to a conflict) resulting in error_code
+http_status_412_precondition_failed (HTTP status 412). To resolve this, evaluate the need to write again and re-submit if needed.
+The result is delivered via multiplayer_event callback of type write_synchronized_host_completed through do_work().
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,10 +495,17 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="valueJson">To be added.</param>
+        <param name="name">The name of the property to set.</param>
+        <param name="valueJson">The JSON value to assign to the property. (Optional)</param>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+Sets a custom property to the specified JSON string using multiplayer_session_write_mode::synchronized_update.
+Use this method to resolve any conflicts between devices while trying to set properties to a shared portion that other 
+devices can also modify. It ensures that updates to the session are atomic. If writing to non-sharable properties, use set_properties() instead.
+The service may reject your request if a race condition occurred (due to a conflict) resulting in error_code 
+http_status_412_precondition_failed (HTTP status 412). To resolve this, evaluate the need to write again and re-submit if needed.
+The result is delivered via multiplayer_event callback of type write_synchronized_properties_completed through do_work().
+</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

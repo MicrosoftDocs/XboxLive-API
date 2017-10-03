@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values used to indicate the reason why the team in under selected tournament registration state.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+One of the team members have already been registered for this tournament.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="RegistrationClosed">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The registration for this tournament has been closed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="TeamEliminated">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The team has been eliminated from the tournament.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="TournamentCompleted">
@@ -80,7 +88,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The tournament has been completed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="TournamentFull">
@@ -96,7 +106,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The tournament has reached its max team registration limit and is now full.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -112,7 +124,9 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+The team registration reason is unknown.
+</summary>
       </Docs>
     </Member>
   </Members>

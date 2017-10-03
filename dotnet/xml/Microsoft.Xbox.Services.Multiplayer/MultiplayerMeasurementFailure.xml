@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Defines values used to indicate points of measurement failure during the metric stage.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+This player failed because bandwidth down measurement test failed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="BandwidthUp">
@@ -48,7 +52,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+This player failed because bandwidth up measurement test failed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Episode">
@@ -64,7 +70,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+This player failed because your episode failed.  This likely happened because there weren't enough users in the session.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -80,7 +88,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+This player failed because another player in their group failed.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Latency">
@@ -96,7 +106,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+This player failed because latency measurement test failed. 
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Network">
@@ -112,7 +124,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+This player failed due to a network error, such as the member was unable to reach another member.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -128,7 +142,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+This player has no measurement failure.
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -144,7 +160,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+This player failed because timeout measurement test failed. 
+</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -160,7 +178,9 @@
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Unknown measurement failure.
+</summary>
       </Docs>
     </Member>
   </Members>

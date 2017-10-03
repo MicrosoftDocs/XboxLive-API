@@ -15,7 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Enum used with DisableAsserts APIs
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +34,10 @@
         <ReturnType>Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Passed to xboxLiveContext-&gt;Settings-&gt;DisableAsserts APIs
+to warn code reviewers that there's an outstanding calling pattern issue that needs to be addressed.
+</summary>
       </Docs>
     </Member>
   </Members>

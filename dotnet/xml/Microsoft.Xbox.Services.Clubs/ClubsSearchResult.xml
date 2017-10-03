@@ -39,7 +39,7 @@
         <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.Club&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>List of clubs that match the search query</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +57,11 @@
         <ReturnType>Windows.Foundation.Collections.IMapView&lt;System.String,Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubSearchFacetResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+Facets can be used to further narrow down search results. The return map maps a facet (ie. tag or title) to
+to a collection of search search facet result objects.  A search facet result object describes how often a particular 
+value of that facet occurred.
+</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
