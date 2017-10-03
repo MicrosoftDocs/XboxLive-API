@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Enumeration for the types of statuses that may result from a WriteSessionAsync.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Enumeration for the types of statuses that may result from a WriteSessionAsync.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-HTTP/403 status, access denied.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Conflict">
@@ -52,9 +48,7 @@ HTTP/403 status, access denied.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-HTTP/409 status, conflict.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -70,9 +64,7 @@ HTTP/409 status, conflict.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-HTTP/201 status, created.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HandleNotFound">
@@ -88,9 +80,7 @@ HTTP/201 status, created.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-HTTP/404 status, handle not found.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfSync">
@@ -106,9 +96,7 @@ HTTP/404 status, handle not found.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-HTTP/412 status, out of sync.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionDeleted">
@@ -124,9 +112,7 @@ HTTP/412 status, out of sync.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-HTTP/204 status, session deleted.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -142,9 +128,7 @@ HTTP/204 status, session deleted.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Unknown status.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Updated">
@@ -160,9 +144,7 @@ Unknown status.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-HTTP/200 status, updated.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

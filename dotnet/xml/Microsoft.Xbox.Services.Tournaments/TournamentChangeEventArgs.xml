@@ -22,10 +22,45 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Contains information about a change to a subscribed team.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="OrganizerId">
+      <MemberSignature Language="C#" Value="public string OrganizerId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OrganizerId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentChangeEventArgs.OrganizerId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TournamentId">
+      <MemberSignature Language="C#" Value="public string TournamentId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TournamentId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentChangeEventArgs.TournamentId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate change types for a multiplayer game.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +32,7 @@ Defines values used to indicate change types for a multiplayer game.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Only applicable if you are using Xbox Live Tournaments.
-Triggered when arbitration is complete and game results have been written to the game session.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClientDisconnectedFromMultiplayerService">
@@ -53,10 +48,7 @@ Triggered when arbitration is complete and game results have been written to the
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Fired when the title's connection to MPSD using the real-time activity service is lost. 
-When this event occurs, the title should shut down the multiplayer.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindMatchCompleted">
@@ -72,9 +64,7 @@ When this event occurs, the title should shut down the multiplayer.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates the find_match() operation has completed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HostChanged">
@@ -90,9 +80,7 @@ Indicates the find_match() operation has completed.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates host has changed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InviteSent">
@@ -108,9 +96,7 @@ Indicates host has changed.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the invite API operation has been completed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JoinabilityStateChanged">
@@ -126,10 +112,7 @@ Indicates that the invite API operation has been completed.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the joinability value has changed.
-A game can be change the state by calling the set_joinability() operation.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JoinGameCompleted">
@@ -145,11 +128,7 @@ A game can be change the state by calling the set_joinability() operation.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the join_game() operation has completed. Once the join succeeds, 
-the member is now part of the game session, and can use data in the session 
-A game can be joined by calling the join_game() operation.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JoinLobbyCompleted">
@@ -165,10 +144,7 @@ A game can be joined by calling the join_game() operation.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the join_lobby() operation has completed. Once the join succeeds, 
-the member is now part of the lobby session, and can use data in the session 
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeaveGameCompleted">
@@ -184,11 +160,7 @@ the member is now part of the lobby session, and can use data in the session
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the leave_game() operation has completed. After recieving this event,
-the game session object will be set to null. You can join another game by calling 
-join_game() or join_game_from_lobby().
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalMemberConnectionAddressWriteCompleted">
@@ -204,11 +176,7 @@ join_game() or join_game_from_lobby().
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the set_local_member_connection_address() operation has completed.
-Upon completion, the game can view the err() to see if the write succeeded.
-A game can be write local member properties by calling the set_local_member_connection_address() operation.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalMemberPropertyWriteCompleted">
@@ -224,11 +192,7 @@ A game can be write local member properties by calling the set_local_member_conn
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the set_local_member_properties() or delete_local_member_properties() operation has completed.
-Upon completion, the game can view the err() to see if the write succeeded.
-A game can be write local member properties by calling the set_local_member_properties() operation.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MemberJoined">
@@ -244,9 +208,7 @@ A game can be write local member properties by calling the set_local_member_prop
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates a new member has joined.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MemberLeft">
@@ -262,9 +224,7 @@ Indicates a new member has joined.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates a member has left.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MemberPropertyChanged">
@@ -280,9 +240,7 @@ Indicates a member has left.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates a member property has changed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PerformQosMeasurements">
@@ -298,11 +256,7 @@ Indicates a member property has changed.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Fired when a match has been found, and the client has joined the target game session.
-When this event occurs, title should provide qos measurement results between itself and a list of remote clients.
-Note: If your title does not require QoS (based on the session template), this event will not be triggered.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionPropertyChanged">
@@ -318,9 +272,7 @@ Note: If your title does not require QoS (based on the session template), this e
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates a game property has changed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionPropertyWriteCompleted">
@@ -336,11 +288,7 @@ Indicates a game property has changed.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the set_synchronized_properties() operation has completed.
-Upon completion, the game can view the err() to see if the write succeeded.
-A game can be write synchronized properties by calling the set_properties() operation.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionSynchronizedPropertyWriteCompleted">
@@ -356,11 +304,7 @@ A game can be write synchronized properties by calling the set_properties() oper
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the set_synchronized_properties() operation has completed.
-Upon completion, the game can view the err() to see if the write succeeded.
-A game can be write synchronized properties by calling the set_synchronized_properties() operation.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SynchronizedHostWriteCompleted">
@@ -376,11 +320,7 @@ A game can be write synchronized properties by calling the set_synchronized_prop
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the set_synchronized_host() operation has completed.
-Upon completion, the game can view the err() to see if the write succeeded.
-A game can be write synchronized host by calling the set_synchronized_host() operation.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TournamentGameSessionReady">
@@ -396,11 +336,7 @@ A game can be write synchronized host by calling the set_synchronized_host() ope
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Only applicable if you are using Xbox Live Tournaments.
-Triggered when a new game has been scheduled. The event_args object 
-should be cast to a tournament_game_session_ready_event_args object for more information.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TournamentRegistrationStateChanged">
@@ -416,11 +352,7 @@ should be cast to a tournament_game_session_ready_event_args object for more inf
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Only applicable if you are using Xbox Live Tournaments.
-Triggered when the tournament's team registration state changes. The event_args object 
-should be cast to a tournament_registration_state_changed_event_args object for more information.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserAdded">
@@ -436,9 +368,7 @@ should be cast to a tournament_registration_state_changed_event_args object for 
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates the user was added.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserRemoved">
@@ -454,9 +384,7 @@ Indicates the user was added.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates the user was removed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

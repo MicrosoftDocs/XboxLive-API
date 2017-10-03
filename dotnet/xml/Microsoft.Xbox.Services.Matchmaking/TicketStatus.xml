@@ -15,10 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values that indicate the status of the match request.
-request.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,9 +32,7 @@ request.
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Matchmaking has been canceled for this ticket.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -53,10 +48,7 @@ Matchmaking has been canceled for this ticket.
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Matchmaking has not found a match and the search
-request has expired according to its give up duration.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Found">
@@ -72,10 +64,7 @@ request has expired according to its give up duration.
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Matchmaking has found a match and the ticket contains a
-reference to the session that is to be created.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Searching">
@@ -91,10 +80,7 @@ reference to the session that is to be created.
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Matchmaking has not found a match yet and it is
-still searching.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -110,10 +96,7 @@ still searching.
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The status of the match request has not been returned by the server yet
-or the server returned an unrecognized response.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

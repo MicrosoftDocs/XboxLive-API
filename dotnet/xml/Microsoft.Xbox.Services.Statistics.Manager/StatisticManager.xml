@@ -29,6 +29,317 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="AddLocalUser">
+      <MemberSignature Language="C#" Value="public void AddLocalUser (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddLocalUser([in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.AddLocalUser(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteStatistic">
+      <MemberSignature Language="C#" Value="public void DeleteStatistic (Microsoft.Xbox.Services.System.XboxLiveUser user, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteStatistic([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string name) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.DeleteStatistic(Microsoft.Xbox.Services.System.XboxLiveUser,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoWork">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent&gt; DoWork ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent&gt; DoWork() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.DoWork" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLeaderboard">
+      <MemberSignature Language="C#" Value="public void GetLeaderboard (Microsoft.Xbox.Services.System.XboxLiveUser user, string statName, Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery query);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetLeaderboard([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string statName, [in]class Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery query) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.GetLeaderboard(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="statName" Type="System.String" />
+        <Parameter Name="query" Type="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="statName">To be added.</param>
+        <param name="query">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSocialLeaderboard">
+      <MemberSignature Language="C#" Value="public void GetSocialLeaderboard (Microsoft.Xbox.Services.System.XboxLiveUser user, string statName, string socialGroup, Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery query);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSocialLeaderboard([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string statName, [in]string socialGroup, [in]class Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery query) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.GetSocialLeaderboard(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.String,Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="statName" Type="System.String" />
+        <Parameter Name="socialGroup" Type="System.String" />
+        <Parameter Name="query" Type="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="statName">To be added.</param>
+        <param name="socialGroup">To be added.</param>
+        <param name="query">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStatistic">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Statistics.Manager.StatisticValue GetStatistic (Microsoft.Xbox.Services.System.XboxLiveUser user, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Statistics.Manager.StatisticValue GetStatistic([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string name) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.GetStatistic(Microsoft.Xbox.Services.System.XboxLiveUser,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Statistics.Manager.StatisticValue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStatisticNames">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; GetStatisticNames (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; GetStatisticNames([in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.GetStatisticNames(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveLocalUser">
+      <MemberSignature Language="C#" Value="public void RemoveLocalUser (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveLocalUser([in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.RemoveLocalUser(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestFlushToService">
+      <MemberSignature Language="C#" Value="public void RequestFlushToService (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestFlushToService([in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.RequestFlushToService(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("RequestFlushToService2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestFlushToService">
+      <MemberSignature Language="C#" Value="public void RequestFlushToService (Microsoft.Xbox.Services.System.XboxLiveUser user, bool isHighPriority);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestFlushToService([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]bool isHighPriority) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.RequestFlushToService(Microsoft.Xbox.Services.System.XboxLiveUser,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("RequestFlushToService1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="isHighPriority" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="isHighPriority">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStatisticIntegerData">
+      <MemberSignature Language="C#" Value="public void SetStatisticIntegerData (Microsoft.Xbox.Services.System.XboxLiveUser user, string name, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStatisticIntegerData([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string name, [in]int64 value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.SetStatisticIntegerData(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStatisticNumberData">
+      <MemberSignature Language="C#" Value="public void SetStatisticNumberData (Microsoft.Xbox.Services.System.XboxLiveUser user, string name, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStatisticNumberData([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string name, [in]float64 value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.SetStatisticNumberData(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStatisticStringData">
+      <MemberSignature Language="C#" Value="public void SetStatisticStringData (Microsoft.Xbox.Services.System.XboxLiveUser user, string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStatisticStringData([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string name, [in]string value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.SetStatisticStringData(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SingletonInstance">
       <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Statistics.Manager.StatisticManager SingletonInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.Statistics.Manager.StatisticManager SingletonInstance" />
@@ -42,9 +353,7 @@
         <ReturnType>Microsoft.Xbox.Services.Statistics.Manager.StatisticManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> 
-Instantiates and returns an instance of simplified stats
-</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

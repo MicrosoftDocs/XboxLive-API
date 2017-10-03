@@ -22,10 +22,45 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Contains information about the results of a string verification.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="FirstOffendingSubstring">
+      <MemberSignature Language="C#" Value="public string FirstOffendingSubstring { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FirstOffendingSubstring" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.VerifyStringResult.FirstOffendingSubstring" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultCode">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.System.VerifyStringResultCode ResultCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.System.VerifyStringResultCode ResultCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.VerifyStringResult.ResultCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.System.VerifyStringResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

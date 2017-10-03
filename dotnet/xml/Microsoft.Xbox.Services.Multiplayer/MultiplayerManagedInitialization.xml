@@ -22,33 +22,117 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents managed initialization for a session.
-</summary>
-    <remarks>
-If using managed initialization, the session expects the system or the title to perform initialization
-following the session creation and/or as new members join the session. The session automatically tracks
-the timeouts and initialization stages, including QoS measurements if any metrics are set.
-These timeouts override the session's reservation and ready timeouts for members that have the
-MultiplayerSessionMember.InitializationEpisode Property set. 
-
-In managed initialization, the initialization stage goes from "joining" to "measuring" to "evaluating". 
-If the MultiplayerManagedInitialization.AutoEvaluate Property is set to true, the evaluating stage is skipped.
-If metrics are not set for the session, the measuring stage is skipped. 
-If the stage is set to "failed", the session cannot be initialized. 
-</remarks>
-    <example>
-The following example shows the format of the JSON object that represents
-this class:
-<code>
-"managedInitialization": {
-    "joinTimeout": 4000,
-    "measurementTimeout" : 5000,
-    "evaluationTimeout" : 5000,
-    "autoEvaluate" : true,
-    "membersNeededToStart" : 2
-},
-</code></example>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="AutoEvaluate">
+      <MemberSignature Language="C#" Value="public bool AutoEvaluate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoEvaluate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization.AutoEvaluate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluationTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan EvaluationTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan EvaluationTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization.EvaluationTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JoinTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan JoinTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan JoinTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization.JoinTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInitializationSet">
+      <MemberSignature Language="C#" Value="public bool ManagedInitializationSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ManagedInitializationSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization.ManagedInitializationSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasurementTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan MeasurementTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan MeasurementTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization.MeasurementTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MembersNeededToStart">
+      <MemberSignature Language="C#" Value="public uint MembersNeededToStart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MembersNeededToStart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization.MembersNeededToStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

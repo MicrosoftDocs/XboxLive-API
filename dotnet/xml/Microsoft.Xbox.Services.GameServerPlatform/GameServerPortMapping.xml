@@ -22,10 +22,63 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents a mapping between the port numbers requested for the server to use, and the port numbers exposed via load balancing hardware.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="ExternalPortNumber">
+      <MemberSignature Language="C#" Value="public uint ExternalPortNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ExternalPortNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping.ExternalPortNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalPortNumber">
+      <MemberSignature Language="C#" Value="public uint InternalPortNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 InternalPortNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping.InternalPortNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortName">
+      <MemberSignature Language="C#" Value="public string PortName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PortName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping.PortName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary />
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamCompletedReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The team has successfully completed the tournament.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Eliminated">
@@ -50,9 +48,7 @@ The team has successfully completed the tournament.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamCompletedReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The team was eliminated.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Evicted">
@@ -68,9 +64,7 @@ The team was eliminated.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamCompletedReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The team was evicted.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rejected">
@@ -86,9 +80,7 @@ The team was evicted.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamCompletedReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The team was rejected.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

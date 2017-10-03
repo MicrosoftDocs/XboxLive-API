@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate the state of a tournament game.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +32,7 @@ Defines values used to indicate the state of a tournament game.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The user has reported results and his role in the arbitration process is now done.
-Occurs either after (arbitrationForfeitTime and no players have joined), (arbitration succeeded), or (arbitrationFinishTime).
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InComplete">
@@ -53,9 +48,7 @@ Occurs either after (arbitrationForfeitTime and no players have joined), (arbitr
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The user was not able to upload results before the arbitrationTimeout deadline.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InProgress">
@@ -71,9 +64,7 @@ The user was not able to upload results before the arbitrationTimeout deadline.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Occurs after arbitrationStartTime and at least one user has gone active.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Joining">
@@ -89,9 +80,7 @@ Occurs after arbitrationStartTime and at least one user has gone active.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The status is "joining" until both the TournamentArbitrationStatus is "InProgress" and the member is active.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Playing">
@@ -107,9 +96,7 @@ The status is "joining" until both the TournamentArbitrationStatus is "InProgres
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The user has gone active at least once and is now participating in the match.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Waiting">
@@ -125,9 +112,7 @@ The user has gone active at least once and is now participating in the match.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Occurs before arbitrationStartTime.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

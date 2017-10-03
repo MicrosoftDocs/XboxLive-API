@@ -22,10 +22,65 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents a service class that provides APIs that you can use to write in-game events
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="WriteInGameEvent">
+      <MemberSignature Language="C#" Value="public void WriteInGameEvent (string eventName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteInGameEvent([in]string eventName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Events.EventsService.WriteInGameEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("WriteInGameEvent2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteInGameEvent">
+      <MemberSignature Language="C#" Value="public void WriteInGameEvent (string eventName, Windows.Foundation.Collections.PropertySet dimensions, Windows.Foundation.Collections.PropertySet measurements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteInGameEvent([in]string eventName, [in]class Windows.Foundation.Collections.PropertySet dimensions, [in]class Windows.Foundation.Collections.PropertySet measurements) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Events.EventsService.WriteInGameEvent(System.String,Windows.Foundation.Collections.PropertySet,Windows.Foundation.Collections.PropertySet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("WriteInGameEvent1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="dimensions" Type="Windows.Foundation.Collections.PropertySet" />
+        <Parameter Name="measurements" Type="Windows.Foundation.Collections.PropertySet" />
+      </Parameters>
+      <Docs>
+        <param name="eventName">To be added.</param>
+        <param name="dimensions">To be added.</param>
+        <param name="measurements">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

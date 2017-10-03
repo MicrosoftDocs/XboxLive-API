@@ -28,9 +28,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Contains constant data about social groups.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -67,9 +65,7 @@ Contains constant data about social groups.
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-A string describing the social group's favorites.
-</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,9 +83,7 @@ A string describing the social group's favorites.
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-A string describing the people in the social group.
-</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

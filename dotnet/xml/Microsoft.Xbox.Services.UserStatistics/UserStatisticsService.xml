@@ -22,12 +22,125 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents an endpoint that you can use to access the user statistic service.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetMultipleUserStatisticsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt; GetMultipleUserStatisticsAsync (Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, string serviceConfigurationId, Windows.Foundation.Collections.IVectorView&lt;string&gt; statisticNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt; GetMultipleUserStatisticsAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]string serviceConfigurationId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; statisticNames) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.GetMultipleUserStatisticsAsync(Windows.Foundation.Collections.IVectorView{System.String},System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="statisticNames" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserIds">To be added.</param>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="statisticNames">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt; GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync (Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.RequestedStatistics&gt; requestedServiceConfigurationStatisticsCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt; GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.UserStatistics.RequestedStatistics&gt; requestedServiceConfigurationStatisticsCollection) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync(Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.UserStatistics.RequestedStatistics})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="requestedServiceConfigurationStatisticsCollection" Type="Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.RequestedStatistics&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserIds">To be added.</param>
+        <param name="requestedServiceConfigurationStatisticsCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSingleUserStatisticsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt; GetSingleUserStatisticsAsync (string xboxUserId, string serviceConfigurationId, string statisticName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt; GetSingleUserStatisticsAsync([in]string xboxUserId, [in]string serviceConfigurationId, [in]string statisticName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.GetSingleUserStatisticsAsync(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.DefaultOverload</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetSingleUserStatisticsAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="statisticName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">To be added.</param>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="statisticName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSingleUserStatisticsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt; GetSingleUserStatisticsAsync (string xboxUserId, string serviceConfigurationId, Windows.Foundation.Collections.IVectorView&lt;string&gt; statisticNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt; GetSingleUserStatisticsAsync([in]string xboxUserId, [in]string serviceConfigurationId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; statisticNames) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.GetSingleUserStatisticsAsync(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetSingleUserStatisticsAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="statisticNames" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">To be added.</param>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="statisticNames">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="StatisticChanged">
       <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt; StatisticChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt; StatisticChanged" />
@@ -41,9 +154,54 @@ Represents an endpoint that you can use to access the user statistic service.
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Registers for statistic change notifications.  Event handlers receive a StatisticChangeEventArgs^ object.
-</summary>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToStatisticChange">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription SubscribeToStatisticChange (string xboxUserId, string serviceConfigurationId, string statisticName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription SubscribeToStatisticChange([in]string xboxUserId, [in]string serviceConfigurationId, [in]string statisticName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.SubscribeToStatisticChange(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="statisticName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">To be added.</param>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="statisticName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeFromStatisticChange">
+      <MemberSignature Language="C#" Value="public void UnsubscribeFromStatisticChange (Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription subscription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnsubscribeFromStatisticChange([in]class Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription subscription) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.UnsubscribeFromStatisticChange(Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription" />
+      </Parameters>
+      <Docs>
+        <param name="subscription">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

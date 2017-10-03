@@ -22,10 +22,45 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents a server response to a create match ticket request.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="EstimatedWaitTime">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan EstimatedWaitTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan EstimatedWaitTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse.EstimatedWaitTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchTicketId">
+      <MemberSignature Language="C#" Value="public string MatchTicketId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MatchTicketId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse.MatchTicketId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

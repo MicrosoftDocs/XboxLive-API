@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate the host selection metrics for measuring matchmaking QoS for a session.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate the host selection metrics for measuring matchma
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Bandwidth host selection metric.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BandwidthDown">
@@ -52,9 +48,7 @@ Bandwidth host selection metric.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Bandwidth down host selection metric.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BandwidthUp">
@@ -70,9 +64,7 @@ Bandwidth down host selection metric.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Bandwidth up host selection metric.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Latency">
@@ -88,9 +80,7 @@ Bandwidth up host selection metric.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Latency host selection metric.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -106,9 +96,7 @@ Latency host selection metric.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Unknown metric.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -22,12 +22,130 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents an endpoint that you can use to access the Tournament service.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetTeamDetailsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TeamInfo&gt; GetTeamDetailsAsync (string organizerId, string tournamentId, string teamId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Tournaments.TeamInfo&gt; GetTeamDetailsAsync([in]string organizerId, [in]string tournamentId, [in]string teamId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.GetTeamDetailsAsync(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TeamInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="organizerId" Type="System.String" />
+        <Parameter Name="tournamentId" Type="System.String" />
+        <Parameter Name="teamId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="organizerId">To be added.</param>
+        <param name="tournamentId">To be added.</param>
+        <param name="teamId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTeamsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TeamRequestResult&gt; GetTeamsAsync (Microsoft.Xbox.Services.Tournaments.TeamRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Tournaments.TeamRequestResult&gt; GetTeamsAsync([in]class Microsoft.Xbox.Services.Tournaments.TeamRequest request) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.GetTeamsAsync(Microsoft.Xbox.Services.Tournaments.TeamRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TeamRequestResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Xbox.Services.Tournaments.TeamRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTournamentDetailsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.Tournament&gt; GetTournamentDetailsAsync (string organizerId, string tournamentId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Tournaments.Tournament&gt; GetTournamentDetailsAsync([in]string organizerId, [in]string tournamentId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.GetTournamentDetailsAsync(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.Tournament&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="organizerId" Type="System.String" />
+        <Parameter Name="tournamentId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="organizerId">To be added.</param>
+        <param name="tournamentId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTournamentsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt; GetTournamentsAsync (Microsoft.Xbox.Services.Tournaments.TournamentRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt; GetTournamentsAsync([in]class Microsoft.Xbox.Services.Tournaments.TournamentRequest request) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.GetTournamentsAsync(Microsoft.Xbox.Services.Tournaments.TournamentRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Xbox.Services.Tournaments.TournamentRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToTeamChange">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription SubscribeToTeamChange (string organizerId, string tournamentId, string teamId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription SubscribeToTeamChange([in]string organizerId, [in]string tournamentId, [in]string teamId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.SubscribeToTeamChange(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="organizerId" Type="System.String" />
+        <Parameter Name="tournamentId" Type="System.String" />
+        <Parameter Name="teamId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="organizerId">To be added.</param>
+        <param name="tournamentId">To be added.</param>
+        <param name="teamId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TeamChanged">
       <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Tournaments.TeamChangeEventArgs&gt; TeamChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Tournaments.TeamChangeEventArgs&gt; TeamChanged" />
@@ -41,9 +159,28 @@ Represents an endpoint that you can use to access the Tournament service.
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Tournaments.TeamChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Registers for team change notifications.  Event handlers receive a TeamChangeEventArgs^ object.
-</summary>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeFromTeamChange">
+      <MemberSignature Language="C#" Value="public void UnsubscribeFromTeamChange (Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription subscription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnsubscribeFromTeamChange([in]class Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription subscription) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.UnsubscribeFromTeamChange(Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription" />
+      </Parameters>
+      <Docs>
+        <param name="subscription">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

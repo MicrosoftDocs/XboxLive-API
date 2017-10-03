@@ -22,10 +22,63 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents the server used to measure network quality of service (QoS) for the session. 
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="SecureDeviceAddressBase64">
+      <MemberSignature Language="C#" Value="public string SecureDeviceAddressBase64 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SecureDeviceAddressBase64" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer.SecureDeviceAddressBase64" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerFullQualifiedDomainName">
+      <MemberSignature Language="C#" Value="public string ServerFullQualifiedDomainName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerFullQualifiedDomainName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer.ServerFullQualifiedDomainName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetLocation">
+      <MemberSignature Language="C#" Value="public string TargetLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetLocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer.TargetLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

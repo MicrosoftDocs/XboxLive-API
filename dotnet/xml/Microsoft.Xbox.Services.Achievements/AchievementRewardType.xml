@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enumeration values that indicate the reward type for an achievement.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementRewardType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A digital art reward.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gamerscore">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementRewardType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Gamerscore reward.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InApp">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementRewardType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An in-app reward, defined and delivered by the title.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementRewardType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The reward type is unknown.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

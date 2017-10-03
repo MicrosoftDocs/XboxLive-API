@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate the state of a tournament game.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate the state of a tournament game.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Draw
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Loss">
@@ -52,9 +48,7 @@ Draw
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Loss
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoContest">
@@ -70,9 +64,7 @@ Loss
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-No game
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoShow">
@@ -88,9 +80,7 @@ No game
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Didn't show up
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rank">
@@ -106,9 +96,7 @@ Didn't show up
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Rank
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Win">
@@ -124,9 +112,7 @@ Rank
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Win
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

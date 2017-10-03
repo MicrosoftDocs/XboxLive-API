@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines values that indicate title storage blob type.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Binary blob type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Config">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Configuration information blob type. </summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Json">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>JSON blob type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unknown blob type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

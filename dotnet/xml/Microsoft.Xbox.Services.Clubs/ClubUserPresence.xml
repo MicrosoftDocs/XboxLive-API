@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>User is on the chat page.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Feed">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>User is viewing the club feed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InClub">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>User is viewing the club, but not on any specific page.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InGame">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>User is playing the associated game.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotInClub">
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>User is no longer on a club page.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -112,7 +112,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>User is on the play tab in the club (not actually playing anything).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roster">
@@ -128,7 +128,7 @@
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>User is viewing the club roster/presence.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

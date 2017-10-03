@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate the state of a tournament game.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate the state of a tournament game.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The match was canceled, for example in the case of forfeiting
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -52,9 +48,7 @@ The match was canceled, for example in the case of forfeiting
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Results were fully uploaded and complete
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -70,9 +64,7 @@ Results were fully uploaded and complete
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-No arbitration state set.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoResults">
@@ -88,9 +80,7 @@ No arbitration state set.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The match begun, but no players or servers reported results in time before the arbitration deadline
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PartialResults">
@@ -106,9 +96,7 @@ The match begun, but no players or servers reported results in time before the a
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Some results were received, and results were compiled based on this incomplete data
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

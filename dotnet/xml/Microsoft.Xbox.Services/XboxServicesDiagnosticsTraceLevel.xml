@@ -15,12 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Enumeration values that indicate the trace levels of debug output for service diagnostics.
-
-Setting the debug trace level to Error or higher reports the last HRESULT, the current
-function, the source file, and the line number for many trace points in the Xbox Live code.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,9 +32,7 @@ function, the source file, and the line number for many trace points in the Xbox
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Output error-handling messages.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -55,9 +48,7 @@ Output error-handling messages.
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Output informational messages, warnings, and error-handling messages.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Off">
@@ -73,9 +64,7 @@ Output informational messages, warnings, and error-handling messages.
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Output no tracing and debugging messages.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Verbose">
@@ -91,9 +80,7 @@ Output no tracing and debugging messages.
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Output all debugging and tracing messages.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -109,9 +96,7 @@ Output all debugging and tracing messages.
         <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Output warnings and error-handling messages.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

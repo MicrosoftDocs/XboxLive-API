@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary> Defines values for reputation feedback types.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report phishing message may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommsPictureMessage">
@@ -50,9 +48,7 @@ Titles that allow users to report phishing message may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report communication based on a picture may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommsSpam">
@@ -68,9 +64,7 @@ Titles that allow users to report communication based on a picture may send this
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report spam messages may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommsTextMessage">
@@ -86,9 +80,7 @@ Titles that allow users to report spam messages may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report text messages may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommsVoiceMessage">
@@ -104,9 +96,7 @@ Titles that allow users to report text messages may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report voice messages may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommunicationsAbusiveVoice">
@@ -122,10 +112,7 @@ Titles that allow users to report voice messages may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report innappropriate voice communications
-may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommunicationsInappropriateVideo">
@@ -141,10 +128,7 @@ may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report innappropriate video communications
-may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FairPlayCheater">
@@ -160,10 +144,7 @@ may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that are able to automatically determine that a user is cheating
-may send this feedback without user intervention.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FairPlayConsoleBanRequest">
@@ -179,9 +160,7 @@ may send this feedback without user intervention.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report voice messages may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FairPlayIdler">
@@ -197,9 +176,7 @@ Titles that allow users to report voice messages may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report if determine if a user stands idle on purpose in a game, usually round after round, may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FairPlayKicked">
@@ -215,10 +192,7 @@ Titles that allow users to report if determine if a user stands idle on purpose 
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-When a user is voted out of a game (kicked), titles
-may send this feedback without user intervention.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FairPlayKillsTeammates">
@@ -234,10 +208,7 @@ may send this feedback without user intervention.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that are able to automatically determine that a user kills a teammate
-may send this feedback without user intervention.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FairPlayLeaderboardCheater">
@@ -253,9 +224,7 @@ may send this feedback without user intervention.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report leaderboard cheating may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FairPlayQuitter">
@@ -271,10 +240,7 @@ Titles that allow users to report leaderboard cheating may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that are able to automatically determine that a user quit a game early
-may send this feedback without user intervention.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FairPlayTampering">
@@ -290,10 +256,7 @@ may send this feedback without user intervention.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that are able to automatically determine that a user has tampered with on-disk content
-may send this feedback without user intervention.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FairPlayUnsporting">
@@ -309,9 +272,7 @@ may send this feedback without user intervention.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report unsporting behavior may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FairPlayUserBanRequest">
@@ -327,9 +288,7 @@ Titles that allow users to report unsporting behavior may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that report a recommendation to ban a user from Xbox Live may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InappropriateUserGeneratedContent">
@@ -345,10 +304,7 @@ Titles that report a recommendation to ban a user from Xbox Live may send this f
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report innappropriate user generated content
-may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PositiveHelpfulPlayer">
@@ -364,10 +320,7 @@ may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to submit positive feedback on helpful fellow players
-may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PositiveHighQualityUserGeneratedContent">
@@ -383,10 +336,7 @@ may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to submit positive feedback on shared user generated content
-may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PositiveSkilledPlayer">
@@ -402,10 +352,7 @@ may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to vote on a most valuable player at the end of a multiplayer session
-may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserContentGamerpic">
@@ -421,9 +368,7 @@ may send this feedback.
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report inappropriate gamer picture may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserContentPersonalinfo">
@@ -439,9 +384,7 @@ Titles that allow users to report inappropriate gamer picture may send this feed
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Titles that allow users to report inappropriate biography and other personal information may send this feedback.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

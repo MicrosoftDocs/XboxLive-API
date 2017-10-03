@@ -22,10 +22,61 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Provides access methods for the reputation service.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="SubmitBatchReputationFeedbackAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SubmitBatchReputationFeedbackAsync (Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.ReputationFeedbackItem&gt; feedbackItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SubmitBatchReputationFeedbackAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Social.ReputationFeedbackItem&gt; feedbackItems) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.ReputationService.SubmitBatchReputationFeedbackAsync(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Social.ReputationFeedbackItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feedbackItems" Type="Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.ReputationFeedbackItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="feedbackItems">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubmitReputationFeedbackAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SubmitReputationFeedbackAsync (string xboxUserId, Microsoft.Xbox.Services.Social.ReputationFeedbackType reputationFeedbackType, string sessionName, string reasonMessage, string evidenceResourceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SubmitReputationFeedbackAsync([in]string xboxUserId, [in]valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType reputationFeedbackType, [in]string sessionName, [in]string reasonMessage, [in]string evidenceResourceId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.ReputationService.SubmitReputationFeedbackAsync(System.String,Microsoft.Xbox.Services.Social.ReputationFeedbackType,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="reputationFeedbackType" Type="Microsoft.Xbox.Services.Social.ReputationFeedbackType" />
+        <Parameter Name="sessionName" Type="System.String" />
+        <Parameter Name="reasonMessage" Type="System.String" />
+        <Parameter Name="evidenceResourceId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">To be added.</param>
+        <param name="reputationFeedbackType">To be added.</param>
+        <param name="sessionName">To be added.</param>
+        <param name="reasonMessage">To be added.</param>
+        <param name="evidenceResourceId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

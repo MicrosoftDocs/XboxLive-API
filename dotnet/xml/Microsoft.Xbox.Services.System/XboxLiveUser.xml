@@ -31,9 +31,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents a player that is associated with a device or a controller.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,15 +51,13 @@ Represents a player that is associated with a device or a controller.
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>
-Creates a new instance of XboxLiveUser for Single User Application.
-</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XboxLiveUser (Windows.System.User systemUser);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.System.User systemUser) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]class Windows.System.User systemUser) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.XboxLiveUser.#ctor(Windows.System.User)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -78,9 +74,215 @@ Creates a new instance of XboxLiveUser for Single User Application.
       </Parameters>
       <Docs>
         <param name="systemUser">To be added.</param>
-        <summary>
-Creates a new instance of XboxLiveUser for Multi-User Application.
-</summary>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgeGroup">
+      <MemberSignature Language="C#" Value="public string AgeGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AgeGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.XboxLiveUser.AgeGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gamertag">
+      <MemberSignature Language="C#" Value="public string Gamertag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Gamertag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.XboxLiveUser.Gamertag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenAndSignatureArrayAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.GetTokenAndSignatureResult&gt; GetTokenAndSignatureArrayAsync (string httpMethod, string url, string headers, byte[] requestBodyArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.System.GetTokenAndSignatureResult&gt; GetTokenAndSignatureArrayAsync([in]string httpMethod, [in]string url, [in]string headers, [in]unsigned int8[] requestBodyArray) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.XboxLiveUser.GetTokenAndSignatureArrayAsync(System.String,System.String,System.String,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.GetTokenAndSignatureResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpMethod" Type="System.String" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="headers" Type="System.String" />
+        <Parameter Name="requestBodyArray" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="httpMethod">To be added.</param>
+        <param name="url">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="requestBodyArray">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenAndSignatureAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.GetTokenAndSignatureResult&gt; GetTokenAndSignatureAsync (string httpMethod, string url, string headers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.System.GetTokenAndSignatureResult&gt; GetTokenAndSignatureAsync([in]string httpMethod, [in]string url, [in]string headers) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.XboxLiveUser.GetTokenAndSignatureAsync(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetTokenAndSignatureAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.GetTokenAndSignatureResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpMethod" Type="System.String" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="headers" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="httpMethod">To be added.</param>
+        <param name="url">To be added.</param>
+        <param name="headers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenAndSignatureAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.GetTokenAndSignatureResult&gt; GetTokenAndSignatureAsync (string httpMethod, string url, string headers, string body);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.System.GetTokenAndSignatureResult&gt; GetTokenAndSignatureAsync([in]string httpMethod, [in]string url, [in]string headers, [in]string body) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.XboxLiveUser.GetTokenAndSignatureAsync(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetTokenAndSignatureAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.GetTokenAndSignatureResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpMethod" Type="System.String" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="headers" Type="System.String" />
+        <Parameter Name="body" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="httpMethod">To be added.</param>
+        <param name="url">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSignedIn">
+      <MemberSignature Language="C#" Value="public bool IsSignedIn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSignedIn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.XboxLiveUser.IsSignedIn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Privileges">
+      <MemberSignature Language="C#" Value="public string Privileges { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Privileges" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.XboxLiveUser.Privileges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.SignInResult&gt; SignInAsync (object coreDispatcher);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.System.SignInResult&gt; SignInAsync([in]object coreDispatcher) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.XboxLiveUser.SignInAsync(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.SignInResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="coreDispatcher" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="coreDispatcher">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInSilentlyAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.SignInResult&gt; SignInSilentlyAsync (object coreDispatcher);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.System.SignInResult&gt; SignInSilentlyAsync([in]object coreDispatcher) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.XboxLiveUser.SignInSilentlyAsync(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.SignInResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="coreDispatcher" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="coreDispatcher">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +299,61 @@ Creates a new instance of XboxLiveUser for Multi-User Application.
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.System.SignOutCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Event signaling that sign out has completed for a user. 
-</summary>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebAccountId">
+      <MemberSignature Language="C#" Value="public string WebAccountId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WebAccountId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.XboxLiveUser.WebAccountId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsSystemUser">
+      <MemberSignature Language="C#" Value="public Windows.System.User WindowsSystemUser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.System.User WindowsSystemUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.XboxLiveUser.WindowsSystemUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.System.User</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxUserId">
+      <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.XboxLiveUser.XboxUserId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate status for member of a session. 
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate status for member of a session.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The member is active in the current title.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inactive">
@@ -52,11 +48,7 @@ The member is active in the current title.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The member is inactive in the current title.  
-The member may be active in another title as specified by ActiveTitleId,
-If a inactive member doesn't mark themselves as Active within the MemberInactiveTimeout they will be removed from the session.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ready">
@@ -72,10 +64,7 @@ If a inactive member doesn't mark themselves as Active within the MemberInactive
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-When the shell launches the title to start a multiplayer game, the member is marked as ready.
-If a ready member doesn't mark themselves as Active within the MemberReadyTimeout they will be marked as inactive.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reserved">
@@ -91,11 +80,7 @@ If a ready member doesn't mark themselves as Active within the MemberReadyTimeou
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The member slot is reserved for a specific Xbox User ID.  
-This specific member must join the session to fill the reservation before
-the JoinTimeout or they will be removed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enumeration values that indicate the result code from string verification.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.System.VerifyStringResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The string contains offensive content.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.System.VerifyStringResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No issues were found with the string.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TooLong">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.System.VerifyStringResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The string is too long to verify.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownError">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.System.VerifyStringResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unknown error was encountered during string verification.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

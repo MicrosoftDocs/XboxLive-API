@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Possible relationship types to filter by
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +32,7 @@ Possible relationship types to filter by
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.RelationshipFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Favorites of the user</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Friends">
@@ -50,7 +48,7 @@ Possible relationship types to filter by
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.RelationshipFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Friends of the user (user is following)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

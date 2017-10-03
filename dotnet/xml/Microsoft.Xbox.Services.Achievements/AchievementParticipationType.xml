@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enumeration values that indicate the participation type for an achievement.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementParticipationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An achievement that can be earned as a group participant.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Individual">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementParticipationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An achievement that can be earned as an individual participant.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementParticipationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The participation type is unknown.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

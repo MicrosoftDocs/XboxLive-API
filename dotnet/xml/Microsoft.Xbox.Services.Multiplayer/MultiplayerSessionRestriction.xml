@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate restrictions on the users who can join a session. 
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate restrictions on the users who can join a session
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-If "followed", only local users (as defined above) and users who are followed by an existing (not reserved) member of the session can join without a reservation.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Local">
@@ -52,15 +48,7 @@ If "followed", only local users (as defined above) and users who are followed by
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Only the following users can read/join the session: 
-* members of the session
-* Users that have been invited to the session
-* Users that are signed in to the same console as a someone already in the session
-
-This means that only users whose token's DeviceId matches someone else already in the session and have "active" set to true
-can access the session.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -76,9 +64,7 @@ can access the session.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Default value, no restriction.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -94,9 +80,7 @@ Default value, no restriction.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The unrecognized restriction type. This value should never be used because it causes an exception to be thrown.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

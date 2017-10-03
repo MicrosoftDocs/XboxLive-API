@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate points of measurement failure during the metric stage.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate points of measurement failure during the metric 
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-This player failed because bandwidth down measurement test failed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BandwidthUp">
@@ -52,9 +48,7 @@ This player failed because bandwidth down measurement test failed.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-This player failed because bandwidth up measurement test failed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Episode">
@@ -70,9 +64,7 @@ This player failed because bandwidth up measurement test failed.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-This player failed because your episode failed.  This likely happened because there weren't enough users in the session.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -88,9 +80,7 @@ This player failed because your episode failed.  This likely happened because th
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-This player failed because another player in their group failed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Latency">
@@ -106,9 +96,7 @@ This player failed because another player in their group failed.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-This player failed because latency measurement test failed. 
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Network">
@@ -124,9 +112,7 @@ This player failed because latency measurement test failed.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-This player failed due to a network error, such as the member was unable to reach another member.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -142,9 +128,7 @@ This player failed due to a network error, such as the member was unable to reac
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-This player has no measurement failure.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -160,9 +144,7 @@ This player has no measurement failure.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-This player failed because timeout measurement test failed. 
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -178,9 +160,7 @@ This player failed because timeout measurement test failed.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMeasurementFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Unknown measurement failure.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

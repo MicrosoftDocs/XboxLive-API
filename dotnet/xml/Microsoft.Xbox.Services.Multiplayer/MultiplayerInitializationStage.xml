@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values that indicate the current status during the initialization stage.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +32,7 @@ Defines values that indicate the current status during the initialization stage.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The evaluating initialization stage is active.
-If auto evaluate is true, then this stage is skipped; otherwise, the title will do its own evaluation.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Failed">
@@ -53,10 +48,7 @@ If auto evaluate is true, then this stage is skipped; otherwise, the title will 
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Failed initialization stage.
-If episode 1 didn't succeed, then it indicates failed permanently. 
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Joining">
@@ -72,10 +64,7 @@ If episode 1 didn't succeed, then it indicates failed permanently.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Players are joining the initialization stage.  Typically matchmaking creates the session and adds users to it.
-Players have up to the joining timeout to join the session during this phase.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Measuring">
@@ -91,10 +80,7 @@ Players have up to the joining timeout to join the session during this phase.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The measuring initialization stage for QoS measurement is active. This is the stage where QoS measurement happens.  
-The title must manually manage QoS during this stage.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -110,9 +96,7 @@ The title must manually manage QoS during this stage.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The initialization stage not set.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -128,9 +112,7 @@ The initialization stage not set.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Unknown. 
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

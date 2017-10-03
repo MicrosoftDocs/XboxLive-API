@@ -22,10 +22,63 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents a server response to a hopper statistics request.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="EstimatedWaitTime">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan EstimatedWaitTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan EstimatedWaitTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse.EstimatedWaitTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HopperName">
+      <MemberSignature Language="C#" Value="public string HopperName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HopperName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse.HopperName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayersWaitingToMatch">
+      <MemberSignature Language="C#" Value="public uint PlayersWaitingToMatch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 PlayersWaitingToMatch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse.PlayersWaitingToMatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

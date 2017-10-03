@@ -25,12 +25,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents settings for an HTTP call.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="DiagnosticsTraceLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel DiagnosticsTraceLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel DiagnosticsTraceLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.XboxLiveServicesSettings.DiagnosticsTraceLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="LogCallRouted">
       <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveLogCallEventArgs&gt; LogCallRouted;" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.XboxLiveLogCallEventArgs&gt; LogCallRouted" />
@@ -44,9 +60,7 @@ Represents settings for an HTTP call.
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveLogCallEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Registers for log calls.  Event handlers will receive an XboxLiveLogCallEventArgs object.
-</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,9 +77,7 @@ Registers for log calls.  Event handlers will receive an XboxLiveLogCallEventArg
         <ReturnType>Microsoft.Xbox.Services.System.XboxLiveServicesSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Gets the XboxLiveServicesSettings singleton instance
-</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,9 +95,7 @@ Gets the XboxLiveServicesSettings singleton instance
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveWnsEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Registers for WNS notification.  Event handlers will receive an XboxLiveWNSEventArgs object.
-</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -22,10 +22,117 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents a service for matchmaking. 
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="CreateMatchTicketAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse&gt; CreateMatchTicketAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference ticketSessionReference, string matchmakingServiceConfigurationId, string hopperName, Windows.Foundation.TimeSpan ticketTimeout, Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode preserveSession, string ticketAttributesJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse&gt; CreateMatchTicketAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference ticketSessionReference, [in]string matchmakingServiceConfigurationId, [in]string hopperName, [in]valuetype Windows.Foundation.TimeSpan ticketTimeout, [in]valuetype Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode preserveSession, [in]string ticketAttributesJson) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Matchmaking.MatchmakingService.CreateMatchTicketAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,System.String,Windows.Foundation.TimeSpan,Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ticketSessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+        <Parameter Name="matchmakingServiceConfigurationId" Type="System.String" />
+        <Parameter Name="hopperName" Type="System.String" />
+        <Parameter Name="ticketTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="preserveSession" Type="Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode" />
+        <Parameter Name="ticketAttributesJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ticketSessionReference">To be added.</param>
+        <param name="matchmakingServiceConfigurationId">To be added.</param>
+        <param name="hopperName">To be added.</param>
+        <param name="ticketTimeout">To be added.</param>
+        <param name="preserveSession">To be added.</param>
+        <param name="ticketAttributesJson">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteMatchTicketAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction DeleteMatchTicketAsync (string serviceConfigurationId, string hopperName, string ticketId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction DeleteMatchTicketAsync([in]string serviceConfigurationId, [in]string hopperName, [in]string ticketId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Matchmaking.MatchmakingService.DeleteMatchTicketAsync(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="hopperName" Type="System.String" />
+        <Parameter Name="ticketId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="hopperName">To be added.</param>
+        <param name="ticketId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHopperStatisticsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse&gt; GetHopperStatisticsAsync (string serviceConfigurationId, string hopperName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse&gt; GetHopperStatisticsAsync([in]string serviceConfigurationId, [in]string hopperName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Matchmaking.MatchmakingService.GetHopperStatisticsAsync(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="hopperName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="hopperName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMatchTicketDetailsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse&gt; GetMatchTicketDetailsAsync (string serviceConfigurationId, string hopperName, string ticketId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse&gt; GetMatchTicketDetailsAsync([in]string serviceConfigurationId, [in]string hopperName, [in]string ticketId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Matchmaking.MatchmakingService.GetMatchTicketDetailsAsync(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="hopperName" Type="System.String" />
+        <Parameter Name="ticketId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="hopperName">To be added.</param>
+        <param name="ticketId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

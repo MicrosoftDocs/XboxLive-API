@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary />
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentOrderBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-end_time is only set on completed tournaments so it is only valid to sort by end_time when 
-the state query parameter is set to tournament_state::completed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -51,9 +48,7 @@ the state query parameter is set to tournament_state::completed.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentOrderBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-No order by provided.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StartTime">
@@ -69,10 +64,7 @@ No order by provided.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentOrderBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The only valid sort order for playing_start is tournament_sort_order::ascending. 
-TODO: clarify what this is used for
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

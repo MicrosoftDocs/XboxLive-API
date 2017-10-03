@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines values that indicate the host state.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the cluster request was aborted. This will only be returned if "abortIfQueued" is set to true.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Active">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the cluster request is active.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the cluster request had an error.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Queued">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the cluster request is queued.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.Xbox.Services.GameServerPlatform.GameServerHostStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The fulfillment state is unknown.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

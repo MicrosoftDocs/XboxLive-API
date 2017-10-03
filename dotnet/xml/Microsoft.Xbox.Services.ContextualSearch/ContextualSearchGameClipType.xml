@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes the type of game clip</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Game clip is an achievement type</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeveloperInitiated">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Game clip is initiated by a developer / title</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Game clip type is unknown or not set. (not valid for upload or queries)</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserGenerated">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Game clip is a user-generated type</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

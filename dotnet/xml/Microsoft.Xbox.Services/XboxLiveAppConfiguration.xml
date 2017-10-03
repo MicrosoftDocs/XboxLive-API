@@ -25,12 +25,64 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents the configuration of an Xbox Live application.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="Environment">
+      <MemberSignature Language="C#" Value="public string Environment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Environment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.Environment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sandbox">
+      <MemberSignature Language="C#" Value="public string Sandbox { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Sandbox" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.Sandbox" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceConfigurationId">
+      <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.ServiceConfigurationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SingletonInstance">
       <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.XboxLiveAppConfiguration SingletonInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.XboxLiveAppConfiguration SingletonInstance" />
@@ -44,9 +96,25 @@ Represents the configuration of an Xbox Live application.
         <ReturnType>Microsoft.Xbox.Services.XboxLiveAppConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Returns the global instance of XboxLiveAppConfiguration
-</summary>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleId">
+      <MemberSignature Language="C#" Value="public uint TitleId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TitleId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.TitleId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

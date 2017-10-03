@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Enumeration values that indicate the result status of sign in.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Enumeration values that indicate the result status of sign in.
         <ReturnType>Microsoft.Xbox.Services.System.SignInStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Signed in successfully.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserCancel">
@@ -52,10 +48,7 @@ Signed in successfully.
         <ReturnType>Microsoft.Xbox.Services.System.SignInStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The user decided to cancel the sign-in operation.
-Can only be returned from SigninAsync().
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserInteractionRequired">
@@ -71,10 +64,7 @@ Can only be returned from SigninAsync().
         <ReturnType>Microsoft.Xbox.Services.System.SignInStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Need to invoke the SignInAsync API (w/ UX) to let the user take necessary actions for the sign-in operation to continue.
-Can only be returned from SigninSilentlyAsync().
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

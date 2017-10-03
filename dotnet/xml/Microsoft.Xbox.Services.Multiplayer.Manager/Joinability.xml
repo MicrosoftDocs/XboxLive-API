@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate join in progress state on who can join your game.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate join in progress state on who can join your game
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-This option will close the lobby immediately.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DisableWhileGameInProgress">
@@ -52,10 +48,7 @@ This option will close the lobby immediately.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-This option will close the lobby only when a game is in progress. All other times,
-it will keep the lobby open for invite_only so invitees can join when no game is in progress.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InviteOnly">
@@ -71,9 +64,7 @@ it will keep the lobby open for invite_only so invitees can join when no game is
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The lobby is joinable only via an invite.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JoinableByFriends">
@@ -89,9 +80,7 @@ The lobby is joinable only via an invite.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Default value. The lobby is joinable by users who are followed by an existing member of the session.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -107,9 +96,7 @@ Default value. The lobby is joinable by users who are followed by an existing me
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Joinability not set or no lobby exists yet.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary> Defines values for the {view} field</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.SocialRelationship</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All the people on the user's people list</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Favorite">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.SocialRelationship</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Filters to only the people on the user's people list that have the attribute "Favorite" associated with them.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LegacyXboxLiveFriends">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.SocialRelationship</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Filters to only the people on the user's people list that are also legacy Xbox Live friends</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

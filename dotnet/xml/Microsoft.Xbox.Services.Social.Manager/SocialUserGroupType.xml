@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialUserGroupType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Social user group based off of filters</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserListType">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialUserGroupType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Social user group based off of list of users</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

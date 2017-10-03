@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enumerates the display type of a contextual search statistic.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatDisplayType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This stat should be displayed as a defined range.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatDisplayType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This stat should be displayed using the value_to_display_name_map.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UndefinedRange">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatDisplayType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This stat should be displayed as a undefined range.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatDisplayType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unknown type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

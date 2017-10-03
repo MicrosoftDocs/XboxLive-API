@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate the team session registration state for a tournament.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate the team session registration state for a tourna
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The team has completed its participation in the Tournament.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pending">
@@ -52,9 +48,7 @@ The team has completed its participation in the Tournament.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Registration was successfully received by the Tournament service and will be eventually processed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Registered">
@@ -70,9 +64,7 @@ Registration was successfully received by the Tournament service and will be eve
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Registration has been confirmed by the Tournament service.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rejected">
@@ -88,9 +80,7 @@ Registration has been confirmed by the Tournament service.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Registration could not be performed for the team.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -106,9 +96,7 @@ Registration could not be performed for the team.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The team registration state is unknown.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Withdrawn">
@@ -124,9 +112,7 @@ The team registration state is unknown.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Registration for the team was withdrawn.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

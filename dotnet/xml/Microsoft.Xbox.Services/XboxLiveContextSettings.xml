@@ -25,9 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents settings for an HTTP call.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,6 +49,161 @@ Represents settings for an HTTP call.
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DiagnosticsTraceLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel DiagnosticsTraceLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel DiagnosticsTraceLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.DiagnosticsTraceLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Call XboxLiveServicesSettings::SingletonInstance-&gt;DiagnosticsTraceLevel instead", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableAssertsForMaximumNumberOfWebsocketsActivated">
+      <MemberSignature Language="C#" Value="public void DisableAssertsForMaximumNumberOfWebsocketsActivated (Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting setting);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisableAssertsForMaximumNumberOfWebsocketsActivated([in]valuetype Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting setting) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveContextSettings.DisableAssertsForMaximumNumberOfWebsocketsActivated(Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="setting" Type="Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting" />
+      </Parameters>
+      <Docs>
+        <param name="setting">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableAssertsForXboxLiveThrottlingInDevSandboxes">
+      <MemberSignature Language="C#" Value="public void DisableAssertsForXboxLiveThrottlingInDevSandboxes (Microsoft.Xbox.Services.XboxLiveContextThrottleSetting setting);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisableAssertsForXboxLiveThrottlingInDevSandboxes([in]valuetype Microsoft.Xbox.Services.XboxLiveContextThrottleSetting setting) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveContextSettings.DisableAssertsForXboxLiveThrottlingInDevSandboxes(Microsoft.Xbox.Services.XboxLiveContextThrottleSetting)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="setting" Type="Microsoft.Xbox.Services.XboxLiveContextThrottleSetting" />
+      </Parameters>
+      <Docs>
+        <param name="setting">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableServiceCallRoutedEvents">
+      <MemberSignature Language="C#" Value="public bool EnableServiceCallRoutedEvents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableServiceCallRoutedEvents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.EnableServiceCallRoutedEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpRetryDelay">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan HttpRetryDelay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan HttpRetryDelay" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.HttpRetryDelay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan HttpTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan HttpTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.HttpTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpTimeoutWindow">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan HttpTimeoutWindow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan HttpTimeoutWindow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.HttpTimeoutWindow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LongHttpTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan LongHttpTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan LongHttpTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.LongHttpTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ServiceCallRouted">
       <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs&gt; ServiceCallRouted;" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs&gt; ServiceCallRouted" />
@@ -64,9 +217,43 @@ Represents settings for an HTTP call.
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Registers for all service call notifications.  Event handlers will receive an XboxServiceCallRoutedEventArgs object.
-</summary>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseCoreDispatcherForEventRouting">
+      <MemberSignature Language="C#" Value="public bool UseCoreDispatcherForEventRouting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseCoreDispatcherForEventRouting" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.UseCoreDispatcherForEventRouting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebsocketTimeoutWindow">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan WebsocketTimeoutWindow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan WebsocketTimeoutWindow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.WebsocketTimeoutWindow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

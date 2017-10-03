@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Enumeration values that indicate the message type of an HTTP request.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Enumeration values that indicate the message type of an HTTP request.
         <ReturnType>Microsoft.Xbox.Services.HttpRequestMessageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The message is empty.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StringMessage">
@@ -52,9 +48,7 @@ The message is empty.
         <ReturnType>Microsoft.Xbox.Services.HttpRequestMessageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The message is of type string.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VectorMessage">
@@ -70,9 +64,7 @@ The message is of type string.
         <ReturnType>Microsoft.Xbox.Services.HttpRequestMessageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The message is of type vector, and acts as a memory buffer.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

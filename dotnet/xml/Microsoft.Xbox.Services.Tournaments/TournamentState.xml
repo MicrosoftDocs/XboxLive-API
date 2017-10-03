@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate the state for a tournament.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate the state for a tournament.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Default. The Tournament is currently active.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Canceled">
@@ -52,9 +48,7 @@ Default. The Tournament is currently active.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The Tournament was canceled.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -70,9 +64,7 @@ The Tournament was canceled.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
- The Tournament has been completed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -88,9 +80,7 @@ The Tournament was canceled.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The Tournament state is unknown.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

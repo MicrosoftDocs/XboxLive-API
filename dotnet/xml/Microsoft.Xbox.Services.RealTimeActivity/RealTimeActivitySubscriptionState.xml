@@ -15,10 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Enumeration for the possible states of a statistic subscription request
-to the real-time activity service.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,9 +32,7 @@ to the real-time activity service.
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Unsubscribe confirmed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PendingSubscribe">
@@ -53,9 +48,7 @@ Unsubscribe confirmed.
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Waiting for the server to respond to the subscription request.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PendingUnsubscribe">
@@ -71,9 +64,7 @@ Waiting for the server to respond to the subscription request.
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Waiting for the server to respond to the unsubscribe request.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Subscribed">
@@ -89,9 +80,7 @@ Waiting for the server to respond to the unsubscribe request.
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Subscription confirmed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -107,9 +96,7 @@ Subscription confirmed.
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The subscription state is unknown.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

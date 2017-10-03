@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Enum used with DisableAsserts APIs
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +32,7 @@ Enum used with DisableAsserts APIs
         <ReturnType>Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Passed to xboxLiveContext-&gt;Settings-&gt;DisableAsserts APIs
-to warn code reviewers that there's an outstanding calling pattern issue that needs to be addressed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

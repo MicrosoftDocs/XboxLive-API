@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values that indicate the current status of the matchmaking operation.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values that indicate the current status of the matchmaking operation.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the matchmaking search has been canceled.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -52,9 +48,7 @@ Indicates that the matchmaking search has been canceled.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the matchmaking search has expired.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Found">
@@ -70,9 +64,7 @@ Indicates that the matchmaking search has expired.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the matchmaking search has found a session.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -88,9 +80,7 @@ Indicates that the matchmaking search has found a session.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the matchmaking search is not specified.  This status is optional and requires the clientMatchmaking capability.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Searching">
@@ -106,9 +96,7 @@ Indicates that the matchmaking search is not specified.  This status is optional
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates that the matchmaking search is still searching.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -124,9 +112,7 @@ Indicates that the matchmaking search is still searching.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The server returned an unrecognized response.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

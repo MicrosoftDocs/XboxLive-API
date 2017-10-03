@@ -22,10 +22,253 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents an endpoint that provides methods that you can use to access the Title Storage service.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="DeleteBlobAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction DeleteBlobAsync (Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, bool deleteOnlyIfETagMatches);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction DeleteBlobAsync([in]class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, [in]bool deleteOnlyIfETagMatches) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.DeleteBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobMetadata" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" />
+        <Parameter Name="deleteOnlyIfETagMatches" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="blobMetadata">To be added.</param>
+        <param name="deleteOnlyIfETagMatches">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadBlobAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt; DownloadBlobAsync (Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, Windows.Storage.Streams.IBuffer blobBuffer, Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, string selectQuery);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt; DownloadBlobAsync([in]class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, [in]class Windows.Storage.Streams.IBuffer blobBuffer, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, [in]string selectQuery) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.DownloadBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,Windows.Storage.Streams.IBuffer,Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("DownloadBlobAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobMetadata" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" />
+        <Parameter Name="blobBuffer" Type="Windows.Storage.Streams.IBuffer" />
+        <Parameter Name="etagMatchCondition" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition" />
+        <Parameter Name="selectQuery" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="blobMetadata">To be added.</param>
+        <param name="blobBuffer">To be added.</param>
+        <param name="etagMatchCondition">To be added.</param>
+        <param name="selectQuery">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadBlobAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt; DownloadBlobAsync (Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, Windows.Storage.Streams.IBuffer blobBuffer, Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, string selectQuery, uint preferredDownloadBlockSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt; DownloadBlobAsync([in]class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, [in]class Windows.Storage.Streams.IBuffer blobBuffer, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, [in]string selectQuery, [in]unsigned int32 preferredDownloadBlockSize) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.DownloadBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,Windows.Storage.Streams.IBuffer,Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition,System.String,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("DownloadBlobAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobMetadata" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" />
+        <Parameter Name="blobBuffer" Type="Windows.Storage.Streams.IBuffer" />
+        <Parameter Name="etagMatchCondition" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition" />
+        <Parameter Name="selectQuery" Type="System.String" />
+        <Parameter Name="preferredDownloadBlockSize" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="blobMetadata">To be added.</param>
+        <param name="blobBuffer">To be added.</param>
+        <param name="etagMatchCondition">To be added.</param>
+        <param name="selectQuery">To be added.</param>
+        <param name="preferredDownloadBlockSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBlobMetadataAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt; GetBlobMetadataAsync (string serviceConfigurationId, Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, string xboxUserId, uint skipItems, uint maxItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt; GetBlobMetadataAsync([in]string serviceConfigurationId, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, [in]string blobPath, [in]string xboxUserId, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.GetBlobMetadataAsync(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,System.String,System.UInt32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="storageType" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageType" />
+        <Parameter Name="blobPath" Type="System.String" />
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="skipItems" Type="System.UInt32" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="storageType">To be added.</param>
+        <param name="blobPath">To be added.</param>
+        <param name="xboxUserId">To be added.</param>
+        <param name="skipItems">To be added.</param>
+        <param name="maxItems">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBlobMetadataForSessionStorageAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt; GetBlobMetadataForSessionStorageAsync (string serviceConfigurationId, string blobPath, string multiplayerSessionTemplateName, string multiplayerSessionName, uint skipItems, uint maxItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt; GetBlobMetadataForSessionStorageAsync([in]string serviceConfigurationId, [in]string blobPath, [in]string multiplayerSessionTemplateName, [in]string multiplayerSessionName, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.GetBlobMetadataForSessionStorageAsync(System.String,System.String,System.String,System.String,System.UInt32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Title Storage for sessions has been deprecated. Use universal instead.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="blobPath" Type="System.String" />
+        <Parameter Name="multiplayerSessionTemplateName" Type="System.String" />
+        <Parameter Name="multiplayerSessionName" Type="System.String" />
+        <Parameter Name="skipItems" Type="System.UInt32" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="blobPath">To be added.</param>
+        <param name="multiplayerSessionTemplateName">To be added.</param>
+        <param name="multiplayerSessionName">To be added.</param>
+        <param name="skipItems">To be added.</param>
+        <param name="maxItems">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQuotaAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt; GetQuotaAsync (string serviceConfigurationId, Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt; GetQuotaAsync([in]string serviceConfigurationId, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.GetQuotaAsync(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="storageType" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageType" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="storageType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQuotaForSessionStorageAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt; GetQuotaForSessionStorageAsync (string serviceConfigurationId, string multiplayerSessionTemplateName, string multiplayerSessionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt; GetQuotaForSessionStorageAsync([in]string serviceConfigurationId, [in]string multiplayerSessionTemplateName, [in]string multiplayerSessionName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.GetQuotaForSessionStorageAsync(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Title Storage for sessions has been deprecated. Use universal instead.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="multiplayerSessionTemplateName" Type="System.String" />
+        <Parameter Name="multiplayerSessionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="multiplayerSessionTemplateName">To be added.</param>
+        <param name="multiplayerSessionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadBlobAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt; UploadBlobAsync (Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, Windows.Storage.Streams.IBuffer blobBuffer, Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, uint preferredUploadBlockSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt; UploadBlobAsync([in]class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, [in]class Windows.Storage.Streams.IBuffer blobBuffer, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, [in]unsigned int32 preferredUploadBlockSize) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.UploadBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,Windows.Storage.Streams.IBuffer,Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobMetadata" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" />
+        <Parameter Name="blobBuffer" Type="Windows.Storage.Streams.IBuffer" />
+        <Parameter Name="etagMatchCondition" Type="Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition" />
+        <Parameter Name="preferredUploadBlockSize" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="blobMetadata">To be added.</param>
+        <param name="blobBuffer">To be added.</param>
+        <param name="etagMatchCondition">To be added.</param>
+        <param name="preferredUploadBlockSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

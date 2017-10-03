@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enumeration values that indicate the achievement type.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used as a request input parameter.
-All means to get all achievements regardless of type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Challenge">
@@ -49,8 +48,7 @@ All means to get all achievements regardless of type.</summary>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A challenge achievement that can only be unlocked within a certain time period.
-Challenge achievements can't give Gamerscore as a reward.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Persistent">
@@ -66,8 +64,7 @@ Challenge achievements can't give Gamerscore as a reward.</summary>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A persistent achievement that may be unlocked at any time.
-Persistent achievements can give Gamerscore as a reward.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -83,7 +80,7 @@ Persistent achievements can give Gamerscore as a reward.</summary>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The achievement type is unknown.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

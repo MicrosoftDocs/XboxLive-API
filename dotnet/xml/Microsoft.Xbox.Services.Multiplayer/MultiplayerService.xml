@@ -22,12 +22,366 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Handles interactions with an Xbox Live service endpoint on a server.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="ClearActivityAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction ClearActivityAsync (string serviceConfigurationId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction ClearActivityAsync([in]string serviceConfigurationId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.ClearActivityAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearSearchHandleAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction ClearSearchHandleAsync (string handleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction ClearSearchHandleAsync([in]string handleId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.ClearSearchHandleAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="handleId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableMultiplayerSubscriptions">
+      <MemberSignature Language="C#" Value="public void DisableMultiplayerSubscriptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisableMultiplayerSubscriptions() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.DisableMultiplayerSubscriptions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableMultiplayerSubscriptions">
+      <MemberSignature Language="C#" Value="public void EnableMultiplayerSubscriptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnableMultiplayerSubscriptions() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.EnableMultiplayerSubscriptions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActivitiesForSocialGroupAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt; GetActivitiesForSocialGroupAsync (string serviceConfigurationId, string socialGroupOwnerXboxUserId, string socialGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt; GetActivitiesForSocialGroupAsync([in]string serviceConfigurationId, [in]string socialGroupOwnerXboxUserId, [in]string socialGroup) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetActivitiesForSocialGroupAsync(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="socialGroupOwnerXboxUserId" Type="System.String" />
+        <Parameter Name="socialGroup" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="socialGroupOwnerXboxUserId">To be added.</param>
+        <param name="socialGroup">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActivitiesForUsersAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt; GetActivitiesForUsersAsync (string serviceConfigurationId, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt; GetActivitiesForUsersAsync([in]string serviceConfigurationId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetActivitiesForUsersAsync(System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="xboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="xboxUserIds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentSessionAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; GetCurrentSessionAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; GetCurrentSessionAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetCurrentSessionAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+      </Parameters>
+      <Docs>
+        <param name="sessionReference">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentSessionByHandleAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; GetCurrentSessionByHandleAsync (string handleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; GetCurrentSessionByHandleAsync([in]string handleId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetCurrentSessionByHandleAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="handleId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSearchHandlesAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt; GetSearchHandlesAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest searchHandleRequest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt; GetSearchHandlesAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest searchHandleRequest) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetSearchHandlesAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetSearchHandlesAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchHandleRequest" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest" />
+      </Parameters>
+      <Docs>
+        <param name="searchHandleRequest">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSearchHandlesAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt; GetSearchHandlesAsync (string serviceConfigurationId, string sessionTemplateName, string orderBy, bool orderAscending, string searchFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt; GetSearchHandlesAsync([in]string serviceConfigurationId, [in]string sessionTemplateName, [in]string orderBy, [in]bool orderAscending, [in]string searchFilter) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetSearchHandlesAsync(System.String,System.String,System.String,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetSearchHandlesAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sessionTemplateName" Type="System.String" />
+        <Parameter Name="orderBy" Type="System.String" />
+        <Parameter Name="orderAscending" Type="System.Boolean" />
+        <Parameter Name="searchFilter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="sessionTemplateName">To be added.</param>
+        <param name="orderBy">To be added.</param>
+        <param name="orderAscending">To be added.</param>
+        <param name="searchFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSessionsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest getSessionsRequest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest getSessionsRequest) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetSessionsAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetSessionsAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="getSessionsRequest" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest" />
+      </Parameters>
+      <Docs>
+        <param name="getSessionsRequest">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSessionsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsAsync (string serviceConfigurationId, string sessionTemplateNameFilter, string xboxUserIdFilter, string keywordFilter, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibilityFilter, uint contractVersionFilter, bool includePrivateSessions, bool includeReservations, bool includeInactiveSessions, uint maxItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsAsync([in]string serviceConfigurationId, [in]string sessionTemplateNameFilter, [in]string xboxUserIdFilter, [in]string keywordFilter, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibilityFilter, [in]unsigned int32 contractVersionFilter, [in]bool includePrivateSessions, [in]bool includeReservations, [in]bool includeInactiveSessions, [in]unsigned int32 maxItems) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetSessionsAsync(System.String,System.String,System.String,System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,System.UInt32,System.Boolean,System.Boolean,System.Boolean,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Call GetSessionsAsync(MultiplayerGetSessionsRequest^) instead", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetSessionsAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sessionTemplateNameFilter" Type="System.String" />
+        <Parameter Name="xboxUserIdFilter" Type="System.String" />
+        <Parameter Name="keywordFilter" Type="System.String" />
+        <Parameter Name="visibilityFilter" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility" />
+        <Parameter Name="contractVersionFilter" Type="System.UInt32" />
+        <Parameter Name="includePrivateSessions" Type="System.Boolean" />
+        <Parameter Name="includeReservations" Type="System.Boolean" />
+        <Parameter Name="includeInactiveSessions" Type="System.Boolean" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="sessionTemplateNameFilter">To be added.</param>
+        <param name="xboxUserIdFilter">To be added.</param>
+        <param name="keywordFilter">To be added.</param>
+        <param name="visibilityFilter">To be added.</param>
+        <param name="contractVersionFilter">To be added.</param>
+        <param name="includePrivateSessions">To be added.</param>
+        <param name="includeReservations">To be added.</param>
+        <param name="includeInactiveSessions">To be added.</param>
+        <param name="maxItems">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSessionsForUsersFilterAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsForUsersFilterAsync (string serviceConfigurationId, string sessionTemplateNameFilter, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIdsFilter, string keywordFilter, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibilityFilter, uint contractVersionFilter, bool includePrivateSessions, bool includeReservations, bool includeInactiveSessions, uint maxItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsForUsersFilterAsync([in]string serviceConfigurationId, [in]string sessionTemplateNameFilter, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIdsFilter, [in]string keywordFilter, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibilityFilter, [in]unsigned int32 contractVersionFilter, [in]bool includePrivateSessions, [in]bool includeReservations, [in]bool includeInactiveSessions, [in]unsigned int32 maxItems) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetSessionsForUsersFilterAsync(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,System.UInt32,System.Boolean,System.Boolean,System.Boolean,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Call GetSessionsAsync(MultiplayerGetSessionsRequest^) instead", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sessionTemplateNameFilter" Type="System.String" />
+        <Parameter Name="xboxUserIdsFilter" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="keywordFilter" Type="System.String" />
+        <Parameter Name="visibilityFilter" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility" />
+        <Parameter Name="contractVersionFilter" Type="System.UInt32" />
+        <Parameter Name="includePrivateSessions" Type="System.Boolean" />
+        <Parameter Name="includeReservations" Type="System.Boolean" />
+        <Parameter Name="includeInactiveSessions" Type="System.Boolean" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="sessionTemplateNameFilter">To be added.</param>
+        <param name="xboxUserIdsFilter">To be added.</param>
+        <param name="keywordFilter">To be added.</param>
+        <param name="visibilityFilter">To be added.</param>
+        <param name="contractVersionFilter">To be added.</param>
+        <param name="includePrivateSessions">To be added.</param>
+        <param name="includeReservations">To be added.</param>
+        <param name="includeInactiveSessions">To be added.</param>
+        <param name="maxItems">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MultiplayerSessionChanged">
       <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt; MultiplayerSessionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt; MultiplayerSessionChanged" />
@@ -41,9 +395,7 @@ Handles interactions with an Xbox Live service endpoint on a server.
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Registers for multiplayer session change notifications.  Event handlers receive MultiplayerSessionChangeEventArgs^.
-</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,10 +412,259 @@ Registers for multiplayer session change notifications.  Event handlers receive 
         <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Notification sent when a multiplayer connectivity via RTA is lost or stopped.
-Event handlers receive Windows::Networking::Sockets::RealTimeActivityMultiplayerSubscriptionsLostEventArgs^.
-</summary>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplayerSubscriptionsEnabled">
+      <MemberSignature Language="C#" Value="public bool MultiplayerSubscriptionsEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MultiplayerSubscriptionsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.MultiplayerSubscriptionsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendInvitesAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt; SendInvitesAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, uint titleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;string&gt;&gt; SendInvitesAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]unsigned int32 titleId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.SendInvitesAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("SendInvitesAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+        <Parameter Name="xboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="titleId" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="sessionReference">To be added.</param>
+        <param name="xboxUserIds">To be added.</param>
+        <param name="titleId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendInvitesAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt; SendInvitesAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, uint titleId, string contextStringId, string activationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;string&gt;&gt; SendInvitesAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]unsigned int32 titleId, [in]string contextStringId, [in]string activationContext) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.SendInvitesAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("SendInvitesAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+        <Parameter Name="xboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="titleId" Type="System.UInt32" />
+        <Parameter Name="contextStringId" Type="System.String" />
+        <Parameter Name="activationContext" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sessionReference">To be added.</param>
+        <param name="xboxUserIds">To be added.</param>
+        <param name="titleId">To be added.</param>
+        <param name="contextStringId">To be added.</param>
+        <param name="activationContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetActivityAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SetActivityAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SetActivityAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.SetActivityAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+      </Parameters>
+      <Docs>
+        <param name="sessionReference">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSearchHandleAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SetSearchHandleAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest searchHandleRequest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SetSearchHandleAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest searchHandleRequest) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.SetSearchHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchHandleRequest" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest" />
+      </Parameters>
+      <Docs>
+        <param name="searchHandleRequest">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTransferHandleAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;string&gt; SetTransferHandleAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference targetSessionReference, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference originSessionReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;string&gt; SetTransferHandleAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference targetSessionReference, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference originSessionReference) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.SetTransferHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetSessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+        <Parameter Name="originSessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+      </Parameters>
+      <Docs>
+        <param name="targetSessionReference">To be added.</param>
+        <param name="originSessionReference">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryWriteSessionAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt; TryWriteSessionAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt; TryWriteSessionAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.TryWriteSessionAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiplayerSession" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+        <Parameter Name="multiplayerSessionWriteMode" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode" />
+      </Parameters>
+      <Docs>
+        <param name="multiplayerSession">To be added.</param>
+        <param name="multiplayerSessionWriteMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryWriteSessionByHandleAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt; TryWriteSessionByHandleAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode, string handleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt; TryWriteSessionByHandleAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode, [in]string handleId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.TryWriteSessionByHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiplayerSession" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+        <Parameter Name="multiplayerSessionWriteMode" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode" />
+        <Parameter Name="handleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="multiplayerSession">To be added.</param>
+        <param name="multiplayerSessionWriteMode">To be added.</param>
+        <param name="handleId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSessionAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; WriteSessionAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; WriteSessionAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.WriteSessionAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiplayerSession" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+        <Parameter Name="multiplayerSessionWriteMode" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode" />
+      </Parameters>
+      <Docs>
+        <param name="multiplayerSession">To be added.</param>
+        <param name="multiplayerSessionWriteMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSessionByHandleAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; WriteSessionByHandleAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode, string handleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; WriteSessionByHandleAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode, [in]string handleId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.WriteSessionByHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiplayerSession" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+        <Parameter Name="multiplayerSessionWriteMode" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode" />
+        <Parameter Name="handleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="multiplayerSession">To be added.</param>
+        <param name="multiplayerSessionWriteMode">To be added.</param>
+        <param name="handleId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

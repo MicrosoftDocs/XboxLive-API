@@ -25,26 +25,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents matchmaking quality of service (QoS) measurements for the network used by a session member.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <example>
-The following example shows the format of the JSON object that represents
-this class:
-<code>
-"measurement=": {
-    "latency": 5953,
-    "bandwidthDown" : 19342,
-    "bandwidthUp" : 944,
-    "custom" : {}
-}
-</code></example>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MultiplayerQualityOfServiceMeasurements (string memberDeviceToken, Windows.Foundation.TimeSpan latency, ulong bandwidthDownInKilobitsPerSecond, ulong bandwidthUpInKilobitsPerSecond, string customJson);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string memberDeviceToken, valuetype Windows.Foundation.TimeSpan latency, unsigned int64 bandwidthDownInKilobitsPerSecond, unsigned int64 bandwidthUpInKilobitsPerSecond, string customJson) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]string memberDeviceToken, [in]valuetype Windows.Foundation.TimeSpan latency, [in]unsigned int64 bandwidthDownInKilobitsPerSecond, [in]unsigned int64 bandwidthUpInKilobitsPerSecond, [in]string customJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.#ctor(System.String,Windows.Foundation.TimeSpan,System.UInt64,System.UInt64,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -64,14 +51,102 @@ this class:
         <Parameter Name="customJson" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="memberDeviceToken">The device token of the session member that this measurement is for.</param>
-        <param name="latency">The measured latency, in milliseconds, for the session member.</param>
-        <param name="bandwidthDownInKilobitsPerSecond">The minimum bandwidth down, in kilobits per second, for downloading data from the host to the session member.</param>
-        <param name="bandwidthUpInKilobitsPerSecond">The minimum bandwidth up, in kilobits per second, for uploading data from the session member to the host.</param>
-        <param name="customJson">A JSON string that specifies the custom QoS properties.</param>
-        <summary>
-Creates a new MultiplayerQualityOfServiceMeasurements object for a session member.
-</summary>
+        <param name="memberDeviceToken">To be added.</param>
+        <param name="latency">To be added.</param>
+        <param name="bandwidthDownInKilobitsPerSecond">To be added.</param>
+        <param name="bandwidthUpInKilobitsPerSecond">To be added.</param>
+        <param name="customJson">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BandwidthDownInKilobitsPerSecond">
+      <MemberSignature Language="C#" Value="public ulong BandwidthDownInKilobitsPerSecond { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 BandwidthDownInKilobitsPerSecond" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.BandwidthDownInKilobitsPerSecond" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BandwidthUpInKilobitsPerSecond">
+      <MemberSignature Language="C#" Value="public ulong BandwidthUpInKilobitsPerSecond { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 BandwidthUpInKilobitsPerSecond" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.BandwidthUpInKilobitsPerSecond" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomJson">
+      <MemberSignature Language="C#" Value="public string CustomJson { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CustomJson" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.CustomJson" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Latency">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan Latency { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan Latency" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.Latency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberDeviceToken">
+      <MemberSignature Language="C#" Value="public string MemberDeviceToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MemberDeviceToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.MemberDeviceToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

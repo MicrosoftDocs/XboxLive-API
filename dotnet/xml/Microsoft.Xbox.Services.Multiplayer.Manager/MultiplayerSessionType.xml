@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate change types for a multiplayer game.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate change types for a multiplayer game.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates multiplayer game session.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LobbySession">
@@ -52,9 +48,7 @@ Indicates multiplayer game session.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-Indicates multiplayer lobby session.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -70,9 +64,7 @@ Indicates multiplayer lobby session.
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The session type is unknown.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

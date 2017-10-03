@@ -15,9 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Defines values used to indicate the reason why the team in under selected tournament registration state.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +32,7 @@ Defines values used to indicate the reason why the team in under selected tourna
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-One of the team members have already been registered for this tournament.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegistrationClosed">
@@ -52,9 +48,7 @@ One of the team members have already been registered for this tournament.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The registration for this tournament has been closed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TeamEliminated">
@@ -70,9 +64,7 @@ The registration for this tournament has been closed.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The team has been eliminated from the tournament.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TournamentCompleted">
@@ -88,9 +80,7 @@ The team has been eliminated from the tournament.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The tournament has been completed.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TournamentFull">
@@ -106,9 +96,7 @@ The tournament has been completed.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The tournament has reached its max team registration limit and is now full.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -124,9 +112,7 @@ The tournament has reached its max team registration limit and is now full.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The team registration reason is unknown.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

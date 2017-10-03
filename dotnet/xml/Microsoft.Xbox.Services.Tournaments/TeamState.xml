@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary />
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Playing">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Registered">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StandBy">
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -112,9 +112,7 @@
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-The team state is unknown.
-</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Waitlisted">
@@ -130,7 +128,7 @@ The team state is unknown.
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

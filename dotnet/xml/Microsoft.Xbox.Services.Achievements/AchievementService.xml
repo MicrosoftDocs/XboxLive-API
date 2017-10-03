@@ -22,10 +22,135 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Represents an endpoint that you can use to access the Achievement service.
-</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="GetAchievementAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Achievements.Achievement&gt; GetAchievementAsync (string xboxUserId, string serviceConfigurationId, string achievementId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Achievements.Achievement&gt; GetAchievementAsync([in]string xboxUserId, [in]string serviceConfigurationId, [in]string achievementId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Achievements.AchievementService.GetAchievementAsync(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Achievements.Achievement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="achievementId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">To be added.</param>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="achievementId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAchievementsForTitleIdAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Achievements.AchievementsResult&gt; GetAchievementsForTitleIdAsync (string xboxUserId, uint titleId, Microsoft.Xbox.Services.Achievements.AchievementType type, bool unlockedOnly, Microsoft.Xbox.Services.Achievements.AchievementOrderBy orderBy, uint skipItems, uint maxItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Achievements.AchievementsResult&gt; GetAchievementsForTitleIdAsync([in]string xboxUserId, [in]unsigned int32 titleId, [in]valuetype Microsoft.Xbox.Services.Achievements.AchievementType type, [in]bool unlockedOnly, [in]valuetype Microsoft.Xbox.Services.Achievements.AchievementOrderBy orderBy, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Achievements.AchievementService.GetAchievementsForTitleIdAsync(System.String,System.UInt32,Microsoft.Xbox.Services.Achievements.AchievementType,System.Boolean,Microsoft.Xbox.Services.Achievements.AchievementOrderBy,System.UInt32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Achievements.AchievementsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="titleId" Type="System.UInt32" />
+        <Parameter Name="type" Type="Microsoft.Xbox.Services.Achievements.AchievementType" />
+        <Parameter Name="unlockedOnly" Type="System.Boolean" />
+        <Parameter Name="orderBy" Type="Microsoft.Xbox.Services.Achievements.AchievementOrderBy" />
+        <Parameter Name="skipItems" Type="System.UInt32" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">To be added.</param>
+        <param name="titleId">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="unlockedOnly">To be added.</param>
+        <param name="orderBy">To be added.</param>
+        <param name="skipItems">To be added.</param>
+        <param name="maxItems">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAchievementAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction UpdateAchievementAsync (string xboxUserId, string achievementId, uint percentComplete);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction UpdateAchievementAsync([in]string xboxUserId, [in]string achievementId, [in]unsigned int32 percentComplete) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Achievements.AchievementService.UpdateAchievementAsync(System.String,System.String,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("UpdateAchievementAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="achievementId" Type="System.String" />
+        <Parameter Name="percentComplete" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">To be added.</param>
+        <param name="achievementId">To be added.</param>
+        <param name="percentComplete">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAchievementAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction UpdateAchievementAsync (string xboxUserId, uint titleId, string serviceConfigurationId, string achievementId, uint percentComplete);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction UpdateAchievementAsync([in]string xboxUserId, [in]unsigned int32 titleId, [in]string serviceConfigurationId, [in]string achievementId, [in]unsigned int32 percentComplete) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Achievements.AchievementService.UpdateAchievementAsync(System.String,System.UInt32,System.String,System.String,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("UpdateAchievementAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="titleId" Type="System.UInt32" />
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="achievementId" Type="System.String" />
+        <Parameter Name="percentComplete" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">To be added.</param>
+        <param name="titleId">To be added.</param>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="achievementId">To be added.</param>
+        <param name="percentComplete">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>
