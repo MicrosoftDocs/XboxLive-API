@@ -80,5 +80,5 @@
   "DiffFolder": [
     "dotnet/api"
   ],
-  "toc_path_need_to_split": "dotnet/api/toc.yml"
+  "SplitTOC": "dotnet/api/toc.yml"
 }
