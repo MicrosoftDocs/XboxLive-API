@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Framework Name="xboxlive">
+<Framework Name="xboxlive-dotnet-1.0.171023001">
   <Namespace Name="Microsoft.Xbox.Services.Achievements">
     <Type Name="Microsoft.Xbox.Services.Achievements.Achievement" Id="T:Microsoft.Xbox.Services.Achievements.Achievement">
       <Member Id="P:Microsoft.Xbox.Services.Achievements.Achievement.AchievementType" />
