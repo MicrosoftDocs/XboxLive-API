@@ -1,0 +1,84 @@
+<Type Name="ClubUserPresenceRecord" FullName="Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord">
+  <TypeSignature Language="C#" Value="public sealed class ClubUserPresenceRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubUserPresenceRecord extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LastSeen">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime LastSeen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime LastSeen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord.LastSeen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Time when the user was last present within the club.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSeenState">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubUserPresence LastSeenState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence LastSeenState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord.LastSeenState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Users state when they were last seen.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xuid">
+      <MemberSignature Language="C#" Value="public string Xuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Xuid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord.Xuid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Xuid of the user who was present at the club.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,71 @@
+<Type Name="AchievementOrderBy" FullName="Microsoft.Xbox.Services.Achievements.AchievementOrderBy">
+  <TypeSignature Language="C#" Value="public enum AchievementOrderBy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AchievementOrderBy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Achievements.AchievementOrderBy" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enumeration values that indicate the achievement sort order.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementOrderBy Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementOrderBy.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementOrderBy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default order does not guarantee sort order.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleId">
+      <MemberSignature Language="C#" Value="TitleId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementOrderBy TitleId = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementOrderBy.TitleId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementOrderBy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sort by title id.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnlockTime">
+      <MemberSignature Language="C#" Value="UnlockTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementOrderBy UnlockTime = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementOrderBy.UnlockTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementOrderBy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sort by achievement unlock time.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

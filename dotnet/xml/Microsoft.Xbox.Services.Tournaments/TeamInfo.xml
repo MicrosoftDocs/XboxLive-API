@@ -1,0 +1,253 @@
+<Type Name="TeamInfo" FullName="Microsoft.Xbox.Services.Tournaments.TeamInfo">
+  <TypeSignature Language="C#" Value="public sealed class TeamInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TeamInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TeamInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents details of the team participating in the tournament.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompletedReason">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TeamCompletedReason CompletedReason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TeamCompletedReason CompletedReason" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.CompletedReason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamCompletedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The reason the team is in the Completed state.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinuationUri">
+      <MemberSignature Language="C#" Value="public string ContinuationUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContinuationUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.ContinuationUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A protocol activation URI the title can follow after the match is done to take the user back 
+to the Xbox App's Tournament Details Page.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentMatchMetadata">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata CurrentMatchMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata CurrentMatchMetadata" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.CurrentMatchMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Information about the team's current or upcoming match. Absent if the team does not have an current or upcoming match.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The ID of the team. It is an opaque string specified by the tournament organizer.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberXboxUserIds">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; MemberXboxUserIds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; MemberXboxUserIds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.MemberXboxUserIds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Member xbox_user_ids for this team.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The display name of the team
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousMatchMetadata">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata PreviousMatchMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata PreviousMatchMetadata" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.PreviousMatchMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Information about the previously played match. Absent if the player has not played any matches.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ranking">
+      <MemberSignature Language="C#" Value="public ulong Ranking { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 Ranking" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.Ranking" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The team's final rank within the tournament, if it is available. If missing, the rank is not available.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegistrationDate">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime RegistrationDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime RegistrationDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.RegistrationDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The timestamp at which the team was registered. Used to determine ordering if team is waitlisted. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Standing">
+      <MemberSignature Language="C#" Value="public string Standing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Standing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.Standing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A formatted string that describes the team's standing in the tournament. For example '1W - 0L'.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TeamState">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TeamState TeamState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TeamState TeamState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.TeamState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The state of the team.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

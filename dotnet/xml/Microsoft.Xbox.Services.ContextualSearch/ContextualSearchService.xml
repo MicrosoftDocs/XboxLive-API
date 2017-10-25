@@ -1,0 +1,288 @@
+<Type Name="ContextualSearchService" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService">
+  <TypeSignature Language="C#" Value="public sealed class ContextualSearchService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Provides methods to perform Xbox Live contextual search.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetBroadcastsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync (uint titleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync([in]unsigned int32 titleId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetBroadcastsAsync(System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetBroadcastsAsync3")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="titleId" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="titleId">The title ID.</param>
+        <summary>
+Get information to hydrate a UI for the end user to choose what data from a game they want to use 
+to filter or sort the broadcast.  Defaults to the top 100 broadcasts ordered by viewers descending with no filter
+</summary>
+        <returns>
+The result is a contextual_search_broadcasts_result object which contains information about broadcasts.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleId}/broadcasts</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBroadcastsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync (uint titleId, uint skipItems, uint maxItems, string orderByStatName, bool orderAscending, string searchQuery);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync([in]unsigned int32 titleId, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems, [in]string orderByStatName, [in]bool orderAscending, [in]string searchQuery) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetBroadcastsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetBroadcastsAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="titleId" Type="System.UInt32" />
+        <Parameter Name="skipItems" Type="System.UInt32" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+        <Parameter Name="orderByStatName" Type="System.String" />
+        <Parameter Name="orderAscending" Type="System.Boolean" />
+        <Parameter Name="searchQuery" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="titleId">The title ID.</param>
+        <param name="skipItems">The number of broadcasts to skip.</param>
+        <param name="maxItems">The maximum number of broadcasts the result can contain.  Pass 0 to attempt to retrieve the top 100 items.</param>
+        <param name="orderByStatName">This specifies a stat to sort the broadcasts by.  Pass empty string to default to ordering by viewers descending</param>
+        <param name="orderAscending">Pass true to order ascending, false to order descending</param>
+        <param name="searchQuery">This specifies a OData Filter Expressions string that specifies the stats to filter on.
+For example "stats:maptype eq 1" means filtering by the stat "maptype" to the value 1.</param>
+        <summary>
+Get information to hydrate a UI for the end user to choose what data from a game they want to use 
+to filter or sort the broadcast
+</summary>
+        <returns>
+The result is a contextual_search_broadcasts_result object which contains information about broadcasts.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleId}/broadcasts</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBroadcastsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync (uint titleId, uint skipItems, uint maxItems, string orderByStatName, bool orderAscending, string filterStatName, Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator filterOperator, string filterStatValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync([in]unsigned int32 titleId, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems, [in]string orderByStatName, [in]bool orderAscending, [in]string filterStatName, [in]valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator filterOperator, [in]string filterStatValue) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetBroadcastsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String,Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetBroadcastsAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="titleId" Type="System.UInt32" />
+        <Parameter Name="skipItems" Type="System.UInt32" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+        <Parameter Name="orderByStatName" Type="System.String" />
+        <Parameter Name="orderAscending" Type="System.Boolean" />
+        <Parameter Name="filterStatName" Type="System.String" />
+        <Parameter Name="filterOperator" Type="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator" />
+        <Parameter Name="filterStatValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="titleId">The title ID.</param>
+        <param name="skipItems">The number of broadcasts to skip.</param>
+        <param name="maxItems">The maximum number of broadcasts the result can contain.  Pass 0 to attempt to retrieve the top 100 items.</param>
+        <param name="orderByStatName">This specifies a stat to sort the broadcasts by.  Pass empty string to default to ordering by viewers descending</param>
+        <param name="orderAscending">Pass true to order ascending, false to order descending</param>
+        <param name="filterStatName">This specifies the stat to filter on. Pass empty string for no filter</param>
+        <param name="filterOperator">This specifies operator to apply for the filter.</param>
+        <param name="filterStatValue">This specifies the value to filter on. Pass empty string for no filter</param>
+        <summary>
+Get information to hydrate a UI for the end user to choose what data from a game they want to use 
+to filter or sort the broadcast
+</summary>
+        <returns>
+The result is a contextual_search_broadcasts_result object which contains information about broadcasts.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleId}/broadcasts</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConfigurationAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat&gt;&gt; GetConfigurationAsync (uint titleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat&gt;&gt; GetConfigurationAsync([in]unsigned int32 titleId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetConfigurationAsync(System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="titleId" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="titleId">The title ID.</param>
+        <summary>
+Get information to hydrate a UI for the end user to choose what data from a game they want to use 
+to filter or sort the broadcast
+</summary>
+        <returns>
+The result contains information to hydrate a UI.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleid}/configuration</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGameClipsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt; GetGameClipsAsync (uint titleId, uint skipItems, uint maxItems, string orderByStatName, bool orderAscending, string searchQuery);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt; GetGameClipsAsync([in]unsigned int32 titleId, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems, [in]string orderByStatName, [in]bool orderAscending, [in]string searchQuery) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetGameClipsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetGameClipsAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="titleId" Type="System.UInt32" />
+        <Parameter Name="skipItems" Type="System.UInt32" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+        <Parameter Name="orderByStatName" Type="System.String" />
+        <Parameter Name="orderAscending" Type="System.Boolean" />
+        <Parameter Name="searchQuery" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="titleId">The title ID.</param>
+        <param name="skipItems">The number of game clips to skip.</param>
+        <param name="maxItems">The maximum number of game clips the result can contain.  Pass 0 to attempt to retrieve the top 100 items.</param>
+        <param name="orderByStatName">This specifies a stat to sort the game clips by.  Pass empty string to default to ordering by viewers descending</param>
+        <param name="orderAscending">Pass true to order ascending, false to order descending</param>
+        <param name="searchQuery">
+The search query.
+The query syntax is an OData like syntax with only the following operators supported EQ, NE, GE, GT, LE and LT along with the logical operators of AND and OR. You can also use grouping operator '()'. The stat properties that can be used to search with are "value", "min", "max", and "delta".
+
+Example 1:
+To search for game clips during which the "gametype" stat had a value of 1 use
+    "stats:gametype.value eq 1"
+
+Example 2:
+To search for game clips during which the "rank" stat jumped more than 2.
+    "stats:rank.value gt 2"
+
+Example 3:
+To search for game clips during which the "rank" stat jumped more than 2 and the "gametype" stat had a value of 1 use
+    "stats:rank.value gt 2 and stat:gametype.value eq 1"
+
+Note:
+- The "value" property is only available for string stats and integer stats that are used with a Set.
+- The "min", "max" and "delta" properties are only available for double stats and integer stats that are not used with a Set.
+</param>
+        <summary>
+Get information to hydrate a UI that allows end users to filter or sort game clips
+</summary>
+        <returns>
+The result is an object which contains information about game clips.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleId}/gameclips</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGameClipsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt; GetGameClipsAsync (uint titleId, uint skipItems, uint maxItems, string orderByStatName, bool orderAscending, string filterStatName, Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator filterOperator, string filterStatValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt; GetGameClipsAsync([in]unsigned int32 titleId, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems, [in]string orderByStatName, [in]bool orderAscending, [in]string filterStatName, [in]valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator filterOperator, [in]string filterStatValue) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetGameClipsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String,Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetGameClipsAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="titleId" Type="System.UInt32" />
+        <Parameter Name="skipItems" Type="System.UInt32" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+        <Parameter Name="orderByStatName" Type="System.String" />
+        <Parameter Name="orderAscending" Type="System.Boolean" />
+        <Parameter Name="filterStatName" Type="System.String" />
+        <Parameter Name="filterOperator" Type="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator" />
+        <Parameter Name="filterStatValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="titleId">The title ID.</param>
+        <param name="skipItems">The number of game clips to skip.</param>
+        <param name="maxItems">The maximum number of game clips the result can contain.  Pass 0 to attempt to retrieve the top 100 items.</param>
+        <param name="orderByStatName">This specifies a stat to sort the game clips by.  Pass empty string to default to ordering by viewers descending</param>
+        <param name="orderAscending">Pass true to order ascending, false to order descending</param>
+        <param name="filterStatName">This specifies the stat to filter on. Pass empty string for no filter. For example, "gametype.value".
+The "value" property is only available for string stats and integer stats. 
+The "min", "max" and "delta" properties are only available for double stats and integer stats.
+</param>
+        <param name="filterOperator">This specifies operator to apply for the filter.</param>
+        <param name="filterStatValue">This specifies the value to filter on. The stat properties that can be used to search with are 'value', 'min', 'max', and 'delta'. Pass empty string for no filter</param>
+        <summary>
+Get information to hydrate a UI that allows end users to filter or sort game clips
+</summary>
+        <returns>
+The result is an object which contains information about game clips.
+</returns>
+        <remarks>Calls V1 GET /titles/{titleId}/gameclips</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

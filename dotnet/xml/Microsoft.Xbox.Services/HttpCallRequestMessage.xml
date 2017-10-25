@@ -1,0 +1,92 @@
+<Type Name="HttpCallRequestMessage" FullName="Microsoft.Xbox.Services.HttpCallRequestMessage">
+  <TypeSignature Language="C#" Value="public sealed class HttpCallRequestMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpCallRequestMessage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.HttpCallRequestMessage" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents the message of an HTTP call request.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHttpRequestMessageType">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.HttpRequestMessageType GetHttpRequestMessageType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.HttpRequestMessageType GetHttpRequestMessageType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.HttpCallRequestMessage.GetHttpRequestMessageType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.HttpRequestMessageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The message type.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestMessageString">
+      <MemberSignature Language="C#" Value="public string RequestMessageString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestMessageString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.HttpCallRequestMessage.RequestMessageString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The http request message if the message is a string type.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestMessageVector">
+      <MemberSignature Language="C#" Value="public byte[] RequestMessageVector { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] RequestMessageVector" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.HttpCallRequestMessage.RequestMessageVector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The http request message if the message is a buffer.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,81 @@
+<Type Name="MultiplayerPeerToPeerRequirements" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerPeerToPeerRequirements" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerPeerToPeerRequirements extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Sets thresholds requirements that apply to each pairwise connection for all members in a session.
+</summary>
+    <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"peerToPeerRequirements": {
+    "latencyMaximum": 250,
+    "bandwidthMinimum" : 10000
+},
+</code></example>
+  </Docs>
+  <Members>
+    <Member MemberName="BandwidthMinimumInKilobitsPerSecond">
+      <MemberSignature Language="C#" Value="public ulong BandwidthMinimumInKilobitsPerSecond { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 BandwidthMinimumInKilobitsPerSecond" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements.BandwidthMinimumInKilobitsPerSecond" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The minimum bandwidth in kilobits per second for the peer to peer connection.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LatencyMaximum">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan LatencyMaximum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan LatencyMaximum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements.LatencyMaximum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The maximum latency for the peer to peer connection.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

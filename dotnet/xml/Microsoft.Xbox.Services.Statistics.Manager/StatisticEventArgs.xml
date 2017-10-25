@@ -1,0 +1,23 @@
+<Type Name="StatisticEventArgs" FullName="Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs">
+  <TypeSignature Language="C#" Value="public interface StatisticEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StatisticEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Guid(1077507012, 37960, 14923, 154, 150, 21, 134, 36, 22, 181, 20)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

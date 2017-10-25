@@ -1,0 +1,1985 @@
+<Type Name="MultiplayerSession" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerSession" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSession extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a multiplayer session. 
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiplayerSession (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance3")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="xboxLiveContext" Type="Microsoft.Xbox.Services.XboxLiveContext" />
+      </Parameters>
+      <Docs>
+        <param name="xboxLiveContext">The XboxLiveContext containing the user who is creating this session.</param>
+        <summary>
+Creates a new MultiplayerSession Class object from the supplied Xbox Live context, without any constants or session reference. 
+</summary>
+        <remarks>
+This override is intended to be used when the session serviceconfigid, template, and name are not known.  A MultiplayerSession created
+using this constructor must be retrieved or written to by using the "ByHandle" overrides.  
+(e.g. WriteSessionByHandleAsync and GetCurrentSessionByHandleAsync)
+
+After calling this constructor, the client must use the MultiplayerService::WriteSessionAsync method to write batched local changes to the service. 
+If this constructor is called without calling MultiplayerService::WriteSessionAsync, it only changes the local session 
+object but does not commit it to the service.
+
+This constructor is intended for use with template contract 104/105 or later.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiplayerSession (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="xboxLiveContext" Type="Microsoft.Xbox.Services.XboxLiveContext" />
+        <Parameter Name="multiplayerSessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+      </Parameters>
+      <Docs>
+        <param name="xboxLiveContext">The XboxLiveContext containing the user who is creating this session.</param>
+        <param name="multiplayerSessionReference">A reference that uniquely identifies the session.</param>
+        <summary>
+Creates a new MultiplayerSession without any constants, which allows the request to simply use whatever constants
+are already specified in the session template on the service.  Those constants are returned in the response session data.
+</summary>
+        <remarks>
+After calling this constructor, the client must use the MultiplayerService::WriteSessionAsync method to write batched local changes to the service. 
+If this constructor is called without calling MultiplayerService::WriteSessionAsync, it only changes the local session 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiplayerSession (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference, uint maxMembersInSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility multiplayerSessionVisibility, Windows.Foundation.Collections.IVectorView&lt;string&gt; initiatorXboxUserIds, string sessionCustomConstantsJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference, [in]unsigned int32 maxMembersInSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility multiplayerSessionVisibility, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; initiatorXboxUserIds, [in]string sessionCustomConstantsJson) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.UInt32,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,Windows.Foundation.Collections.IVectorView{System.String},System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="xboxLiveContext" Type="Microsoft.Xbox.Services.XboxLiveContext" />
+        <Parameter Name="multiplayerSessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+        <Parameter Name="maxMembersInSession" Type="System.UInt32" />
+        <Parameter Name="multiplayerSessionVisibility" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility" />
+        <Parameter Name="initiatorXboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="sessionCustomConstantsJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxLiveContext">To be added.</param>
+        <param name="multiplayerSessionReference">To be added.</param>
+        <param name="maxMembersInSession">To be added.</param>
+        <param name="multiplayerSessionVisibility">To be added.</param>
+        <param name="initiatorXboxUserIds">To be added.</param>
+        <param name="sessionCustomConstantsJson">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Init">
+      <MemberSignature Language="C#" Value="public void _Init (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference, uint maxMembersInSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility multiplayerSessionVisibility, Windows.Foundation.Collections.IVectorView&lt;string&gt; initiatorXboxUserIds, string sessionCustomConstantsJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Init([in]class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference, [in]unsigned int32 maxMembersInSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility multiplayerSessionVisibility, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; initiatorXboxUserIds, [in]string sessionCustomConstantsJson) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession._Init(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.UInt32,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,Windows.Foundation.Collections.IVectorView{System.String},System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxLiveContext" Type="Microsoft.Xbox.Services.XboxLiveContext" />
+        <Parameter Name="multiplayerSessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+        <Parameter Name="maxMembersInSession" Type="System.UInt32" />
+        <Parameter Name="multiplayerSessionVisibility" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility" />
+        <Parameter Name="initiatorXboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="sessionCustomConstantsJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxLiveContext">To be added.</param>
+        <param name="multiplayerSessionReference">To be added.</param>
+        <param name="maxMembersInSession">To be added.</param>
+        <param name="multiplayerSessionVisibility">To be added.</param>
+        <param name="initiatorXboxUserIds">To be added.</param>
+        <param name="sessionCustomConstantsJson">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMemberReservation">
+      <MemberSignature Language="C#" Value="public void AddMemberReservation (string xboxUserId, string memberCustomConstantsJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddMemberReservation([in]string xboxUserId, [in]string memberCustomConstantsJson) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.AddMemberReservation(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("AddMemberReservation2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="memberCustomConstantsJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">The Xbox User ID of the member to add a reservation for.</param>
+        <param name="memberCustomConstantsJson">(Optional) A JSON string with custom constants to set for the session member. This is the only time the member's constants can be set.</param>
+        <summary>
+Adds a new member reservation on the session for the specified Xbox user ID and member constants.
+</summary>
+        <remarks>
+After calling AddMemberReservation, the Xbox system or title must call MultiplayerService.WriteSessionAsync
+to write batched local changes to the service. If AddMemberReservation is called without calling WriteSessionAsync,
+it only changes the local session object but does not commit it to the service. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMemberReservation">
+      <MemberSignature Language="C#" Value="public void AddMemberReservation (string xboxUserId, string memberCustomConstantsJson, bool initializeRequested);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddMemberReservation([in]string xboxUserId, [in]string memberCustomConstantsJson, [in]bool initializeRequested) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.AddMemberReservation(System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("AddMemberReservation1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="memberCustomConstantsJson" Type="System.String" />
+        <Parameter Name="initializeRequested" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">The Xbox User ID of the member to add a reservation for.</param>
+        <param name="memberCustomConstantsJson">(Optional) A JSON string with custom constants to set for the session member. This is the only time the member's constants can be set.</param>
+        <param name="initializeRequested">True if the system should perform managed initialization, and false otherwise.</param>
+        <summary>
+Adds a new member reservation on the session for the specified Xbox user ID, member constants, and initialization request.
+</summary>
+        <remarks>
+After calling AddMemberReservation, the system or title must call MultiplayerService.WriteSessionAsync
+to write batched local changes to the service. If AddMemberReservation is called without calling WriteSessionAsync,
+it only changes the local session object but does not commit it to the service. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArbitrationServer">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer ArbitrationServer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer ArbitrationServer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ArbitrationServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+An arbitration server that contains properties associated with a tournament games results.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArbitrationStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus ArbitrationStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus ArbitrationStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ArbitrationStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Arbitration Status of a tournament
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Branch">
+      <MemberSignature Language="C#" Value="public string Branch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Branch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Branch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The branch of the session, used to scope change numbers. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeNumber">
+      <MemberSignature Language="C#" Value="public ulong ChangeNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 ChangeNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ChangeNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The change number of the session.
+</summary>
+        <value>To be added.</value>
+        <remarks>
+Branch indicates if two change numbers are from the same series and therefore can be compared. If a session is deleted and
+then recreated with the same session name, it receives a different branch. The branch also changes if the session is
+reverted due to a service issue that forced a restore from backup or other data synchronization operation. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareMultiplayerSessions">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes CompareMultiplayerSessions (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession currentSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSession oldSession);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes CompareMultiplayerSessions([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession currentSession, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession oldSession) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.CompareMultiplayerSessions(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSession)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="currentSession" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+        <Parameter Name="oldSession" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+      </Parameters>
+      <Docs>
+        <param name="currentSession">The current session to compare to an older session.</param>
+        <param name="oldSession">The older session to compare to the current session.</param>
+        <summary>
+Static compare method that compares two sessions and returns an Or'ed MultiplayerSessionChangeType.
+</summary>
+        <returns>An OR'ed MultiplayerSessionChangeType that contains all of the differences.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertHttpStatusToWriteSessionStatus">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus ConvertHttpStatusToWriteSessionStatus (int httpStatusCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus ConvertHttpStatusToWriteSessionStatus([in]int32 httpStatusCode) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ConvertHttpStatusToWriteSessionStatus(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpStatusCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="httpStatusCode">Status code of a http result</param>
+        <summary>
+Static method that converts an HTTP Status code to a WriteSessionStatus.
+</summary>
+        <returns>A WriteSessionStatus which gives more specific information about the status code in regards to the Write Session call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentUser">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember CurrentUser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember CurrentUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.CurrentUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The current user in the session.  A nullptr is returned if there is no current user in the session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateOfNextTimer">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime DateOfNextTimer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime DateOfNextTimer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.DateOfNextTimer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+If any timeouts are in progress, this is the date and time when the the next timer fires.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateOfSession">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime DateOfSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime DateOfSession" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.DateOfSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The date and time when the server returned the session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteCurrentUserMemberCustomPropertyJson">
+      <MemberSignature Language="C#" Value="public void DeleteCurrentUserMemberCustomPropertyJson (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteCurrentUserMemberCustomPropertyJson([in]string name) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.DeleteCurrentUserMemberCustomPropertyJson(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property to delete.</param>
+        <summary>
+Delete a custom property on the current session member.
+</summary>
+        <remarks>
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteSessionCustomPropertyJson">
+      <MemberSignature Language="C#" Value="public void DeleteSessionCustomPropertyJson (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteSessionCustomPropertyJson([in]string name) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.DeleteSessionCustomPropertyJson(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property to set.</param>
+        <summary>
+Deletes a session custom property.
+</summary>
+        <remarks>
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ETag">
+      <MemberSignature Language="C#" Value="public string ETag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ETag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ETag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The ETag returned with this session, used to determine if the session has been updated since it was last retrieved from the server.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostCandidates">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; HostCandidates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; HostCandidates" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.HostCandidates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+An ordered list of device tokens for host names that can be used for the session,
+ordered by the preference specified by MultiplayerSessionConstants::PeerToHostRequirements::HostSelectionMetric.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializationStage">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage InitializationStage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage InitializationStage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.InitializationStage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates the managed initialization stage, if the session is using managed initialization.
+The "stage" goes from "joining" to "measuring" to "evaluating".
+If episode 1 fails, then "stage" is set to "failed" and the session cannot be initialized.
+Otherwise, when an initialization episode completes, the "initialization" object is removed.
+If "externalEvaluation" is not set, "evaluating" is skipped. If "metrics" isn't set, "measuring" is skipped.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializingEpisode">
+      <MemberSignature Language="C#" Value="public uint InitializingEpisode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 InitializingEpisode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.InitializingEpisode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The episode number associated with a set of session members requiring QoS metrics to be applied
+during managed initialization.
+</summary>
+        <value>To be added.</value>
+        <remarks>
+If MemberInitialization is set and Initialize is true on the member, then the member is assigned to an InitializingEpisode.  
+An episode is a set of users that need to have QoS metrics applied to them.
+This value is only useful when manually managing QoS.
+This value is 0 when the InitializingEpisode is not set.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializingStageStartTime">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime InitializingStageStartTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime InitializingStageStartTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.InitializingStageStartTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The date and time when the initialization stage started during managed initialization.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Join" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("Join4")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+Joins the user that either created or got the session to the session.  
+It does not set an initialization request and does not set specified member constants
+</summary>
+        <returns>The MultiplayerSessionMember object that represents the user.</returns>
+        <remarks>
+After calling Join, the system or title must call MultiplayerService.WriteSessionAsync to write batched local changes
+to the service. If Join is called without calling WriteSessionAsync, it only changes the local session object but does not
+commit it to the service. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join (string memberCustomConstantsJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join([in]string memberCustomConstantsJson) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Join(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("Join3")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memberCustomConstantsJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="memberCustomConstantsJson">(Optional) A JSON string with custom constants for the new session member. This is the only time the member's constants can be set.</param>
+        <summary>
+Joins the user that either created or got the session to the session, using the specified member constants.
+It does not set an initialization request 
+</summary>
+        <returns>The MultiplayerSessionMember object that represents the user.</returns>
+        <remarks>
+After calling Join, the Xbox system or title must call MultiplayerService.WriteSessionAsync to write batched local changes
+to the service. If Join is called without calling WriteSessionAsync, it only changes the local session object but does not
+commit it to the service. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join (string memberCustomConstantsJson, bool initializeRequested);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join([in]string memberCustomConstantsJson, [in]bool initializeRequested) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Join(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Call Join(String^) or Join(String^, bool, bool) instead", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("Join2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memberCustomConstantsJson" Type="System.String" />
+        <Parameter Name="initializeRequested" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="memberCustomConstantsJson">(Optional) A JSON string with custom constants for the new session member. This is the only time the member's constants can be set.</param>
+        <param name="initializeRequested">True if the caller would like to enroll in automatic member initialization, and false otherwise.  Usually used for QoS.</param>
+        <summary>
+Joins the user that either created or got the session to the session, using the specified member constants and an initialization request.
+</summary>
+        <returns>The MultiplayerSessionMember object that represents the user.</returns>
+        <remarks>
+After calling Join, the system or title must call MultiplayerService.WriteSessionAsync to write batched local changes
+to the service. If Join is called without calling WriteSessionAsync, it only changes the local session object but does not
+commit it to the service. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join (string memberCustomConstantsJson, bool initializeRequested, bool joinWithActiveStatus);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join([in]string memberCustomConstantsJson, [in]bool initializeRequested, [in]bool joinWithActiveStatus) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Join(System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("Join1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memberCustomConstantsJson" Type="System.String" />
+        <Parameter Name="initializeRequested" Type="System.Boolean" />
+        <Parameter Name="joinWithActiveStatus" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="memberCustomConstantsJson">(Optional) A JSON string with custom constants for the new session member. This is the only time the member's constants can be set.</param>
+        <param name="initializeRequested">True if the caller would like to enroll in automatic member initialization, and false otherwise.  Usually used for QoS.</param>
+        <param name="joinWithActiveStatus">True if the player should join with an active status.</param>
+        <summary>
+Joins the user that either created or got the session to the session, using the specified member constants, an initialization request,
+and a join condition.
+</summary>
+        <returns>The MultiplayerSessionMember object that represents the user.</returns>
+        <remarks>
+After calling Join, the system or title must call MultiplayerService.WriteSessionAsync to write batched local changes
+to the service. If Join is called without calling WriteSessionAsync, it only changes the local session object but does not
+commit it to the service. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Leave">
+      <MemberSignature Language="C#" Value="public void Leave ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Leave() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Leave" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+Removes the current member from a session.
+</summary>
+        <remarks>
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchmakingServer">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer MatchmakingServer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer MatchmakingServer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.MatchmakingServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A multiplayer session server that contains properties associated with a target session reference.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Members">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; Members { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; Members" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Members" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A list of all session members, including those who have been accepted and those who are waiting to join the session.
+</summary>
+        <value>To be added.</value>
+        <remarks>
+Call MultiplayerSession::Join or MultiplayerSession::Leave to add or remove yourself from this list.  
+Call MultiplayerSession::AddMemberReservation to add a reservation for another user on this list.
+Call MultiplayerService::WriteSessionAsync to write these changes to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MembersAccepted">
+      <MemberSignature Language="C#" Value="public uint MembersAccepted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MembersAccepted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.MembersAccepted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplayerCorrelationId">
+      <MemberSignature Language="C#" Value="public string MultiplayerCorrelationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MultiplayerCorrelationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.MultiplayerCorrelationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A unique ID to the session used to query trace logs for entries that relate to the session.  
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchHandleId">
+      <MemberSignature Language="C#" Value="public string SearchHandleId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SearchHandleId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SearchHandleId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A unique search handle ID to the session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServersJson">
+      <MemberSignature Language="C#" Value="public string ServersJson { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServersJson" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ServersJson" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A JSON string containing a collection of servers for this multiplayer session.
+</summary>
+        <value>To be added.</value>
+        <remarks>
+The most common server involved in the session is used when the session is submitted to matchmaking using the
+MatchmakingService.CreateMatchTicketAsync Method. Once the title has made this call, the JSON object for ServersJson
+has one server object child, named "matchmaking". The server object contains information about the matchmaking for the session.
+
+After setting ServersJson, the title must call MultiplayerService.WriteSessionAsync to write batched local changes to the service.
+If the method is called without calling WriteSessionAsync, the method only changes the local session object but does not commit it to the server. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionConstants">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants SessionConstants { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants SessionConstants" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionConstants" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A set of constants associated with this session.  These can only be set when creating the session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionProperties">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties SessionProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties SessionProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A set of properties associated with this session.  Any player can modify these.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionReference">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference SessionReference { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference SessionReference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionReference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The unique identifying information for the session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionRoleTypes">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRoleTypes SessionRoleTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRoleTypes SessionRoleTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionRoleTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRoleTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A set of role types associated with this session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAllocateCloudCompute">
+      <MemberSignature Language="C#" Value="public void SetAllocateCloudCompute (bool allocateCloudCompute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAllocateCloudCompute([in]bool allocateCloudCompute) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetAllocateCloudCompute(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allocateCloudCompute" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="allocateCloudCompute">To be added.</param>
+        <summary>
+Sets the session properties/system/allocateCloudCompute field
+</summary>
+        <remarks>
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetArbitrationTimeouts">
+      <MemberSignature Language="C#" Value="public void SetArbitrationTimeouts (Windows.Foundation.TimeSpan arbitrationTimeout, Windows.Foundation.TimeSpan forfeitTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetArbitrationTimeouts([in]valuetype Windows.Foundation.TimeSpan arbitrationTimeout, [in]valuetype Windows.Foundation.TimeSpan forfeitTimeout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetArbitrationTimeouts(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arbitrationTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="forfeitTimeout" Type="Windows.Foundation.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="arbitrationTimeout">The timeout for arbitration, in milliseconds representing the point at which results are finalized.</param>
+        <param name="forfeitTimeout">The timeout for forfeit, in milliseconds representing the point at which, if the session has no active users, the match is canceled.</param>
+        <summary>
+Sets the arbitration timeouts for the session.
+</summary>
+        <remarks>
+This can only be set when creating a new session.
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetClosed">
+      <MemberSignature Language="C#" Value="public void SetClosed (bool closed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetClosed([in]bool closed) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetClosed(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="closed" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="closed">Whether new users will not be able to join the session unless they already have a reservation</param>
+        <summary>
+Sets the session status to closed, meaning that new users will not be able to join the session
+unless they already have a reservation. 
+</summary>
+        <remarks>
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCloudComputePackageJson">
+      <MemberSignature Language="C#" Value="public void SetCloudComputePackageJson (string sessionCloudComputePackageConstantsJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCloudComputePackageJson([in]string sessionCloudComputePackageConstantsJson) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCloudComputePackageJson(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionCloudComputePackageConstantsJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sessionCloudComputePackageConstantsJson">Cloud compute instance be allocated on behalf of the session.</param>
+        <summary>
+Call multiplayer_service::write_session after this to write batched local changes to the service. 
+This can only be set when creating a new session.
+Can only be specified if the 'cloudCompute' capability is set. Enables clients to request that a cloud compute instance be allocated on behalf of the session.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentUserArbitrationResults">
+      <MemberSignature Language="C#" Value="public void SetCurrentUserArbitrationResults (Windows.Foundation.Collections.IMapView&lt;string,Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt; results);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserArbitrationResults([in]class Windows.Foundation.Collections.IMapView`2&lt;string, class Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt; results) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserArbitrationResults(Windows.Foundation.Collections.IMapView{System.String,Microsoft.Xbox.Services.Tournaments.TournamentTeamResult})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="Windows.Foundation.Collections.IMapView&lt;System.String,Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="results">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentUserMemberCustomPropertyJson">
+      <MemberSignature Language="C#" Value="public void SetCurrentUserMemberCustomPropertyJson (string name, string valueJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserMemberCustomPropertyJson([in]string name, [in]string valueJson) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserMemberCustomPropertyJson(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="valueJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property to set.</param>
+        <param name="valueJson">(Optional) The JSON string value to assign to the property.</param>
+        <summary>
+Set a custom property on the current user to the specified JSON string
+The member must first be joined to the session.
+</summary>
+        <remarks>
+This method is used to store per-member attributes, for example, during creation of a match ticket session.
+The client calls the method for each session member. For a match ticket session, the method copies attributes
+from the /members/{index}/properties/custom/matchAttrs field to 
+the /members/{index}/constants/custom/matchmakingResult/playerAttrs field. They are later combined and processed
+by the matchmaking service when the session is passed to matchmaking in the call to the
+MatchmakingService.CreateMatchTicketAsync Method during match ticket creation. 
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentUserMembersInGroup">
+      <MemberSignature Language="C#" Value="public void SetCurrentUserMembersInGroup (Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; membersInGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserMembersInGroup([in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; membersInGroup) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserMembersInGroup(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="membersInGroup" Type="Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="membersInGroup">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentUserQualityOfServiceMeasurements">
+      <MemberSignature Language="C#" Value="public void SetCurrentUserQualityOfServiceMeasurements (Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt; measurements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserQualityOfServiceMeasurements([in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt; measurements) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserQualityOfServiceMeasurements(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="measurements" Type="Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="measurements">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentUserQualityOfServiceServerMeasurementsJson">
+      <MemberSignature Language="C#" Value="public void SetCurrentUserQualityOfServiceServerMeasurementsJson (string valueJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserQualityOfServiceServerMeasurementsJson([in]string valueJson) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserQualityOfServiceServerMeasurementsJson(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="valueJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="valueJson">The JSON string representing the server measurements.</param>
+        <summary>
+Sets a JSON string with QoS measurements for the current session member.
+</summary>
+        <remarks>
+This method is only useful when the title manually manages QoS. If the platform is automatically performing QoS,
+the title does not need to call this method. 
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentUserRoleInfo">
+      <MemberSignature Language="C#" Value="public void SetCurrentUserRoleInfo (Windows.Foundation.Collections.IMapView&lt;string,string&gt; roles);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserRoleInfo([in]class Windows.Foundation.Collections.IMapView`2&lt;string, string&gt; roles) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserRoleInfo(Windows.Foundation.Collections.IMapView{System.String,System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="roles" Type="Windows.Foundation.Collections.IMapView&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="roles">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentUserSecureDeviceAddressBase64">
+      <MemberSignature Language="C#" Value="public void SetCurrentUserSecureDeviceAddressBase64 (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserSecureDeviceAddressBase64([in]string value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserSecureDeviceAddressBase64(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">Indicates the value of the current user's secure device address encoded in base64.</param>
+        <summary>
+Sets the base64 encoded secure device address of the member.
+</summary>
+        <remarks>
+The member must first be joined to the session before the system or the title can set the secure device address.
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentUserStatus">
+      <MemberSignature Language="C#" Value="public void SetCurrentUserStatus (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus status);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserStatus([in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus status) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserStatus(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus" />
+      </Parameters>
+      <Docs>
+        <param name="status">Indicates the current user status</param>
+        <summary>
+Set the multiplayer status of the current user to active or inactive.  
+</summary>
+        <remarks>
+The member must first be joined to the session before the system or the title can set the status.
+Use AddMemberReservation() to add a member reservation.
+You cannot set the the user's status to reserved or ready by using this method.
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHostDeviceToken">
+      <MemberSignature Language="C#" Value="public void SetHostDeviceToken (string hostDeviceToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHostDeviceToken([in]string hostDeviceToken) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetHostDeviceToken(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hostDeviceToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hostDeviceToken">The host device token.</param>
+        <summary>
+Sets the device token of the host to use in multiplayer transactions.
+</summary>
+        <remarks>
+The host device token is set in the local cache of the session and written to the multiplayer session directory.
+
+If the system or title calls SetHostDeviceToken and sets peer to host requirements with a call to
+MultiplayerSession.SetPeerToHostRequirements, the measuring stage of managed initialization assumes that the
+specified host is the correct host and only measures metrics to that host.
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInitializationStatus">
+      <MemberSignature Language="C#" Value="public void SetInitializationStatus (bool initializationSucceeded);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInitializationStatus([in]bool initializationSucceeded) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetInitializationStatus(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="initializationSucceeded" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="initializationSucceeded">True if initialization succeeded, and false otherwise.</param>
+        <summary>
+Sets a flag that indicates if the session initialization succeeded,
+</summary>
+        <remarks>
+This can only be set when creating a new session.
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLocked">
+      <MemberSignature Language="C#" Value="public void SetLocked (bool locked);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLocked([in]bool locked) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetLocked(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locked" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="locked">To be added.</param>
+        <summary>
+Call multiplayer_service::write_session after this to write batched local changes to the service. 
+If this is called without multiplayer_service::write_session, this will only change the local session object but does not commit it to the service.
+If set to true, it would allow the members of the session to be locked, such that if a user leaves they are able to come back into the session but
+no other user could take that spot. If the session is locked, it must also be set to closed.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetManagedInitialization">
+      <MemberSignature Language="C#" Value="public void SetManagedInitialization (Windows.Foundation.TimeSpan joinTimeout, Windows.Foundation.TimeSpan measurementTimeout, Windows.Foundation.TimeSpan evaluationTimeout, bool autoEvalute, uint membersNeededToStart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetManagedInitialization([in]valuetype Windows.Foundation.TimeSpan joinTimeout, [in]valuetype Windows.Foundation.TimeSpan measurementTimeout, [in]valuetype Windows.Foundation.TimeSpan evaluationTimeout, [in]bool autoEvalute, [in]unsigned int32 membersNeededToStart) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetManagedInitialization(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,System.Boolean,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Call SetMemberInitialization instead", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="joinTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="measurementTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="evaluationTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="autoEvalute" Type="System.Boolean" />
+        <Parameter Name="membersNeededToStart" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="joinTimeout">The period of time, in milliseconds, that the system waits for a member to join the session.
+This value overrides the value of the memberReservedTimeout parameter for the MultiplayerSession.SetTimeouts Method
+for the initial session members.</param>
+        <param name="measurementTimeout">The period of time, in milliseconds, that the system waits for a measuring operation
+during managed initialization.
+Note: During matchmaking, a 45-second timeout for QoS measurements is enforced. Therefore we recommend the use of a
+measurement timeout that is less than or equal to 30 seconds during matchmaking. </param>
+        <param name="evaluationTimeout">The period of time, in milliseconds, that the system waits for an evaluation.</param>
+        <param name="autoEvalute">True if the system should auto-evaluate the session service, and false if the title performs the evaluation.</param>
+        <param name="membersNeededToStart">The number of members needed to start the session, for initialization episode zero only.</param>
+        <summary>
+Configures managed initialization parameters for a session.
+</summary>
+        <remarks>
+This can only be set when creating a new session.
+
+If a 'managedInitialization' object is set, the session expects the client system or title to perform 
+initialization following session creation and/or as new members join the session.
+
+The timeouts and initialization stages are automatically tracked by the session, including QoS 
+measurements if any metrics are set. These timeouts override the session's reservation and ready 
+timeouts for members that have 'initializationEpisode' set.
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMatchmakingResubmit">
+      <MemberSignature Language="C#" Value="public void SetMatchmakingResubmit (bool matchResubmit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMatchmakingResubmit([in]bool matchResubmit) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMatchmakingResubmit(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matchResubmit" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="matchResubmit">To be added.</param>
+        <summary>
+Sets a flag that indicates if a match is not successful and needs to be resubmitted, or if the match is successful
+and the matchmaking service can release the session.
+</summary>
+        <remarks>
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMatchmakingServerConnectionPath">
+      <MemberSignature Language="C#" Value="public void SetMatchmakingServerConnectionPath (string serverConnectionPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMatchmakingServerConnectionPath([in]string serverConnectionPath) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMatchmakingServerConnectionPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serverConnectionPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serverConnectionPath">The server connection path. Setting this path can be useful when the session is preserved.</param>
+        <summary>
+Forces a specific server connection string to be used. This is useful in preserveSession=always cases.
+</summary>
+        <remarks>
+After calling SetMatchmakingServerConnectionPath, the system or title must call
+MultiplayerService.WriteSessionAsync to write batched local changes to the service.
+If SetMatchmakingServerConnectionPath is called without calling WriteSessionAsync,
+it only changes the local session object but does not commit it to the service. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMatchmakingTargetSessionConstantsJson">
+      <MemberSignature Language="C#" Value="public void SetMatchmakingTargetSessionConstantsJson (string matchmakingTargetSessionConstants);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMatchmakingTargetSessionConstantsJson([in]string matchmakingTargetSessionConstants) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMatchmakingTargetSessionConstantsJson(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matchmakingTargetSessionConstants" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="matchmakingTargetSessionConstants">A JSON string representing the target session constants</param>
+        <summary>
+Sets matchmaking constants for the session.
+</summary>
+        <remarks>
+This method is optional. Only a client acting as a matchmaking service should call it. Its use
+requires the MultiplayerSessionCapabilities.ClientMatchmaking Property to be set. 
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMaxMembersInSession">
+      <MemberSignature Language="C#" Value="public void SetMaxMembersInSession (uint maxMembersInSession);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMaxMembersInSession([in]unsigned int32 maxMembersInSession) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMaxMembersInSession(System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxMembersInSession" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="maxMembersInSession">The maximum number of members.</param>
+        <summary>
+Sets the maximum number of members allowed in the session.
+</summary>
+        <remarks>
+This can only be set when creating a new session.
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMeasurementServerAddresses">
+      <MemberSignature Language="C#" Value="public void SetMeasurementServerAddresses (Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt; measurementServerAddresses);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMeasurementServerAddresses([in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt; measurementServerAddresses) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMeasurementServerAddresses(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="measurementServerAddresses" Type="Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="measurementServerAddresses">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMemberInitialization">
+      <MemberSignature Language="C#" Value="public void SetMemberInitialization (Windows.Foundation.TimeSpan joinTimeout, Windows.Foundation.TimeSpan measurementTimeout, Windows.Foundation.TimeSpan evaluationTimeout, bool autoEvalute, uint membersNeededToStart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMemberInitialization([in]valuetype Windows.Foundation.TimeSpan joinTimeout, [in]valuetype Windows.Foundation.TimeSpan measurementTimeout, [in]valuetype Windows.Foundation.TimeSpan evaluationTimeout, [in]bool autoEvalute, [in]unsigned int32 membersNeededToStart) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMemberInitialization(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,System.Boolean,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="joinTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="measurementTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="evaluationTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="autoEvalute" Type="System.Boolean" />
+        <Parameter Name="membersNeededToStart" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="joinTimeout">The period of time, in milliseconds, that the system waits for a member to join the session.
+This value overrides the value of the memberReservedTimeout parameter for the MultiplayerSession.SetTimeouts Method
+for the initial session members.</param>
+        <param name="measurementTimeout">The period of time, in milliseconds, that the system waits for a measuring operation
+during managed initialization.
+Note: During matchmaking, a 45-second timeout for QoS measurements is enforced. Therefore we recommend the use of a
+measurement timeout that is less than or equal to 30 seconds during matchmaking. </param>
+        <param name="evaluationTimeout">The period of time, in milliseconds, that the system waits for an evaluation.</param>
+        <param name="autoEvalute">True if the system should auto-evaluate the session service, and false if the title performs the evaluation.</param>
+        <param name="membersNeededToStart">The number of members needed to start the session, for initialization episode zero only.</param>
+        <summary>
+Configures managed initialization parameters for a session.
+</summary>
+        <remarks>
+This can only be set when creating a new session.
+
+If a 'managedInitialization' object is set, the session expects the client system or title to perform 
+initialization following session creation and/or as new members join the session.
+
+The timeouts and initialization stages are automatically tracked by the session, including QoS 
+measurements if any metrics are set. These timeouts override the session's reservation and ready 
+timeouts for members that have 'initializationEpisode' set.
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMutableRoleSettings">
+      <MemberSignature Language="C#" Value="public void SetMutableRoleSettings (Windows.Foundation.Collections.IMapView&lt;string,Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType&gt; roleTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMutableRoleSettings([in]class Windows.Foundation.Collections.IMapView`2&lt;string, class Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType&gt; roleTypes) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMutableRoleSettings(Windows.Foundation.Collections.IMapView{System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="roleTypes" Type="Windows.Foundation.Collections.IMapView&lt;System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="roleTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPeerToHostRequirements">
+      <MemberSignature Language="C#" Value="public void SetPeerToHostRequirements (Windows.Foundation.TimeSpan latencyMaximum, uint bandwidthDownMinimumInKilobitsPerSecond, uint bandwidthUpMinimumInKilobitsPerSecond, Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics hostSelectionMetric);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPeerToHostRequirements([in]valuetype Windows.Foundation.TimeSpan latencyMaximum, [in]unsigned int32 bandwidthDownMinimumInKilobitsPerSecond, [in]unsigned int32 bandwidthUpMinimumInKilobitsPerSecond, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics hostSelectionMetric) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetPeerToHostRequirements(Windows.Foundation.TimeSpan,System.UInt32,System.UInt32,Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="latencyMaximum" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="bandwidthDownMinimumInKilobitsPerSecond" Type="System.UInt32" />
+        <Parameter Name="bandwidthUpMinimumInKilobitsPerSecond" Type="System.UInt32" />
+        <Parameter Name="hostSelectionMetric" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics" />
+      </Parameters>
+      <Docs>
+        <param name="latencyMaximum">The maximum latency time, in milliseconds.</param>
+        <param name="bandwidthDownMinimumInKilobitsPerSecond">The minimum bandwidth, in kilobits per second, for information sent from the host to the session member.</param>
+        <param name="bandwidthUpMinimumInKilobitsPerSecond">The minimum bandwidth, in kilobits per second, for information sent from the session member to the host.</param>
+        <param name="hostSelectionMetric">An enumeration value indicating the metric for the Xbox system to use in selecting a host.</param>
+        <summary>
+Sets thresholds that apply to each connection between a host candidate and a session member.
+</summary>
+        <remarks>
+The system or title calls SetPeerToHostRequirements only when creating a new session. It accesses the
+MultiplayerPeerToHostRequirements Class. 
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPeerToPeerRequirements">
+      <MemberSignature Language="C#" Value="public void SetPeerToPeerRequirements (Windows.Foundation.TimeSpan latencyMaximum, uint bandwidthMinimumInKilobitsPerSecond);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPeerToPeerRequirements([in]valuetype Windows.Foundation.TimeSpan latencyMaximum, [in]unsigned int32 bandwidthMinimumInKilobitsPerSecond) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetPeerToPeerRequirements(Windows.Foundation.TimeSpan,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="latencyMaximum" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="bandwidthMinimumInKilobitsPerSecond" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="latencyMaximum">The maximum latency, in milliseconds, between session members.</param>
+        <param name="bandwidthMinimumInKilobitsPerSecond">The minimum bandwidth, in kilobits per second, between members.</param>
+        <summary>
+Sets thresholds that apply to each pairwise connection for all members in a session.
+</summary>
+        <remarks>
+The system or title calls SetPeerToPeerRequirements only when creating a new session. It accesses the
+MultiplayerPeerToPeerRequirements Class. 
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetQualityOfServiceConnectivityMetrics">
+      <MemberSignature Language="C#" Value="public void SetQualityOfServiceConnectivityMetrics (bool enableLatencyMetric, bool enableBandwidthDownMetric, bool enableBandwidthUpMetric, bool enableCustomMetric);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetQualityOfServiceConnectivityMetrics([in]bool enableLatencyMetric, [in]bool enableBandwidthDownMetric, [in]bool enableBandwidthUpMetric, [in]bool enableCustomMetric) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetQualityOfServiceConnectivityMetrics(System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enableLatencyMetric" Type="System.Boolean" />
+        <Parameter Name="enableBandwidthDownMetric" Type="System.Boolean" />
+        <Parameter Name="enableBandwidthUpMetric" Type="System.Boolean" />
+        <Parameter Name="enableCustomMetric" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="enableLatencyMetric">True to enable the measuring of latency, and false to disable latency measurement.</param>
+        <param name="enableBandwidthDownMetric">True to enable the measuring of bandwidth down, and false to disable bandwidth down measurement.</param>
+        <param name="enableBandwidthUpMetric">True to enable the measuring of bandwidth up, and false to disable bandwidth up measurement.</param>
+        <param name="enableCustomMetric">True to enable custom metrics, and false to disable them.</param>
+        <summary>
+Enables or disables the connectivity metrics used to satisfy QoS requirements on the network for the session.
+</summary>
+        <remarks>
+This can only be set when creating a new session.
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetServerConnectionStringCandidates">
+      <MemberSignature Language="C#" Value="public void SetServerConnectionStringCandidates (Windows.Foundation.Collections.IVectorView&lt;string&gt; serverConnectionStringCandidates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetServerConnectionStringCandidates([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; serverConnectionStringCandidates) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetServerConnectionStringCandidates(Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serverConnectionStringCandidates" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="serverConnectionStringCandidates">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSessionCapabilities">
+      <MemberSignature Language="C#" Value="public void SetSessionCapabilities (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities capabilities);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSessionCapabilities([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities capabilities) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetSessionCapabilities(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="capabilities" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="capabilities">A collection of MultiplayerSessionCapabilities flags that apply to
+the MultiplayerSessionConstant's capabilities JSON object.</param>
+        <summary>
+Sets the capabilities of the session.
+</summary>
+        <remarks>
+This can only be set when creating a new session.    
+
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write
+batched local changes to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSessionChangeSubscription">
+      <MemberSignature Language="C#" Value="public void SetSessionChangeSubscription (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes changeTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSessionChangeSubscription([in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes changeTypes) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetSessionChangeSubscription(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="changeTypes" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes" />
+      </Parameters>
+      <Docs>
+        <param name="changeTypes">An Or'd set of MultiplayerSessionChangeType enum values representing the change types to subscribe to.</param>
+        <summary>
+Sets the set of session changes that this client will be subscribed to.
+Set to "MultiplayerSessionChangeTypes::None" to clear the subscription.
+</summary>
+        <remarks>
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSessionCustomPropertyJson">
+      <MemberSignature Language="C#" Value="public void SetSessionCustomPropertyJson (string name, string valueJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSessionCustomPropertyJson([in]string name, [in]string valueJson) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetSessionCustomPropertyJson(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="valueJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property to set.</param>
+        <param name="valueJson">(Optional) The JSON string value to assign to the property.</param>
+        <summary>
+Set a session custom property to the specified JSON string.
+</summary>
+        <remarks>
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.If SetHostDeviceToken is called without calling WriteSessionAsync, it only changes the local session
+object but does not commit it to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTimeouts">
+      <MemberSignature Language="C#" Value="public void SetTimeouts (Windows.Foundation.TimeSpan memberReservedTimeout, Windows.Foundation.TimeSpan memberInactiveTimeout, Windows.Foundation.TimeSpan memberReadyTimeout, Windows.Foundation.TimeSpan sessionEmptyTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetTimeouts([in]valuetype Windows.Foundation.TimeSpan memberReservedTimeout, [in]valuetype Windows.Foundation.TimeSpan memberInactiveTimeout, [in]valuetype Windows.Foundation.TimeSpan memberReadyTimeout, [in]valuetype Windows.Foundation.TimeSpan sessionEmptyTimeout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetTimeouts(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memberReservedTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="memberInactiveTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="memberReadyTimeout" Type="Windows.Foundation.TimeSpan" />
+        <Parameter Name="sessionEmptyTimeout" Type="Windows.Foundation.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="memberReservedTimeout">The timeout for a member reservation, in milliseconds. A value of 0 is allowed and
+indicates an immediate timeout. If the timeout is not specified, it is considered infinite.</param>
+        <param name="memberInactiveTimeout">The timeout for a member to be considered inactive, in milliseconds. A value of 0
+is allowed and indicates an immediate timeout. If the timeout is not specified, it is considered infinite.</param>
+        <param name="memberReadyTimeout">The timeout for a member to be considered ready, in milliseconds. A value of 0 is
+allowed and indicates an immediate timeout. If the timeout is not specified, it is considered infinite.</param>
+        <param name="sessionEmptyTimeout">The timeout for an empty session, in milliseconds. A value of 0 is allowed and
+indicates an immediate timeout. If the timeout is not specified, it is considered infinite.</param>
+        <summary>
+Sets the timeout values for the session.
+</summary>
+        <remarks>
+This can only be set when creating a new session.
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetVisibility">
+      <MemberSignature Language="C#" Value="public void SetVisibility (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibility);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetVisibility([in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibility) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetVisibility(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visibility" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility" />
+      </Parameters>
+      <Docs>
+        <param name="visibility">An enumeration value indicating the visibility for the session.</param>
+        <summary>
+Sets the visibility of the session.
+</summary>
+        <remarks>
+This can only be set when creating a new session.
+After calling this method, the caller must use MultiplayerService.WriteSessionAsync to write batched local changes
+to the service.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTime">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime StartTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime StartTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.StartTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The date and time that the session began.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribedChangeTypes">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes SubscribedChangeTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes SubscribedChangeTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SubscribedChangeTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns an OR'd set of MultiplayerSessionChangeTypes values representing the aspects of 
+the session that the current xboxlivecontext is subscribed to, of None if there is none.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TournamentsServer">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer TournamentsServer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer TournamentsServer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.TournamentsServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A multiplayer tournaments server that contains properties associated with a tournament reference.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus WriteStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus WriteStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.WriteStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The status of a write operation when writing a session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

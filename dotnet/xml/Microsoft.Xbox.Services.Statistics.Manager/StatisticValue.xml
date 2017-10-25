@@ -1,0 +1,130 @@
+<Type Name="StatisticValue" FullName="Microsoft.Xbox.Services.Statistics.Manager.StatisticValue">
+  <TypeSignature Language="C#" Value="public sealed class StatisticValue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatisticValue extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticValue" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsInteger">
+      <MemberSignature Language="C#" Value="public long AsInteger { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 AsInteger" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticValue.AsInteger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> 
+Return data as integer type
+</summary>
+        <value>Integer data for statistic</value>
+        <remarks>Will debug assert if data is not type requested</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsNumber">
+      <MemberSignature Language="C#" Value="public double AsNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 AsNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticValue.AsNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> 
+Return data as numerical type
+</summary>
+        <value>Float data for statistic</value>
+        <remarks>Will debug assert if data is not type requested</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsString">
+      <MemberSignature Language="C#" Value="public string AsString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AsString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticValue.AsString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> 
+Return data as string type
+</summary>
+        <value>data as char_t*</value>
+        <remarks>Will debug assert if data is not type requested</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataType">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Statistics.Manager.StatisticDataType DataType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Statistics.Manager.StatisticDataType DataType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticValue.DataType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Statistics.Manager.StatisticDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> 
+Return type of data the data object is
+</summary>
+        <value>Stat data type</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticValue.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> 
+Name of the statistic
+</summary>
+        <value>A stat container that has the stat name string</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

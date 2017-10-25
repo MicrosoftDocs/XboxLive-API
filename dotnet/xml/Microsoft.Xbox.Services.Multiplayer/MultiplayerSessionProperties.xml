@@ -1,0 +1,363 @@
+<Type Name="MultiplayerSessionProperties" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents multiplayer session properties.
+</summary>
+    <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"properties": {
+       "system": {
+           "keywords": [
+               "hello"
+           ],
+           "turn": [
+               0
+           ],
+           "host": "99e4c701",
+           "initializationSucceeded": true,
+           "joinRestriction": "None",
+           "readRestriction": "None",
+           "serverConnectionStringCandidates": [
+               "west.azure.com",
+               "east.azure.com"
+           ],
+           "matchmaking": {
+               "clientResult": {
+                   "status": "Searching",
+                   "statusDetails": "Description",
+                   "typicalWait": 30,
+                   "targetSessionRef": {
+                       "scid": "1ECFDB89-36EB-4E59-8901-11F7393689AE",
+                       "templateName": "capture-the-flag",
+                       "name": "2D58F65F-0E3C-4F1F-8277-2BC9873FDB23"
+                   }
+               },
+               "targetSessionConstants": {},
+               "serverConnectionString": "west.azure.com"
+           },
+           "matchmakingResubmit": true
+       },
+       "custom": {}
+   },
+</code></example>
+  </Docs>
+  <Members>
+    <Member MemberName="AllocateCloudCompute">
+      <MemberSignature Language="C#" Value="public bool AllocateCloudCompute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllocateCloudCompute" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.AllocateCloudCompute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A value that indicates if there is an outstanding request to allocate.
+Set to true to indicate that the client would like an allocation. Set to false to cancel the allocation request.
+MPSD will remove this property entirely if the allocation has failed.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Closed">
+      <MemberSignature Language="C#" Value="public bool Closed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Closed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.Closed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A value that indicates if the session is closed. 
+Thsi value controls whether a session is joinable, independent of visibility, joinrestriction, and available space in the session.
+Does not affect reservations.  Defaults to false.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostDeviceToken">
+      <MemberSignature Language="C#" Value="public string HostDeviceToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HostDeviceToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.HostDeviceToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A token representing the host device. 
+Must match the "deviceToken" of at least one member, otherwise this field is deleted.
+If "peerToHostRequirements" is set and "host" is set, the measurement stage assumes that 
+the given host is the correct host and only measures metrics to that host.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JoinRestriction">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction JoinRestriction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction JoinRestriction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.JoinRestriction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Gets or sets the restriction that is applied to members when joining an open session.
+Defaults to "none".
+</summary>
+        <value>To be added.</value>
+        <remarks>
+The join restriction has no effect on reservations, which means that it has no impact on "private" and "visible" sessions.
+
+If "local", only users whose token's DeviceId matches someone else already in the session and "active": true.
+If "followed", only local users (as defined above) and users who are followed by an existing (not reserved) member of the session can join without a reservation.
+
+The join restriction must be at least as closed as the ReadRestriction restriction.
+For example, ReadRestriction cannot be set to MultiplayerSessionReadRestriction.Local without also setting
+JoinRestriction to MultiplayerSessionJoinRestriction.Local. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keywords">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; Keywords { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; Keywords" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.Keywords" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+(Optional) A collection of case-insensitive keywords associated with the session. This value can be empty.
+When changing keywords, call MultiplayerService::WriteSessionAsync to write the changes to the service.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public bool Locked { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.Locked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+If true, it would allow the members of the session to be locked, such that if a user leaves they are able to 
+come back into the session but no other user could take that spot. Defaults to false.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchmakingServerConnectionString">
+      <MemberSignature Language="C#" Value="public string MatchmakingServerConnectionString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MatchmakingServerConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.MatchmakingServerConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Force a specific connection string to be used, which is useful for join in progress scenarios.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchmakingTargetSessionConstantsJson">
+      <MemberSignature Language="C#" Value="public string MatchmakingTargetSessionConstantsJson { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MatchmakingTargetSessionConstantsJson" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.MatchmakingTargetSessionConstantsJson" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A JSON string of title-defined constants for the target session to use in matchmaking. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadRestriction">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction ReadRestriction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction ReadRestriction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.ReadRestriction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Gets or sets the restriction that is applied to members when reading an open session. 
+Defaults to "none".
+</summary>
+        <value>To be added.</value>
+        <remarks>
+The read restriction has no effect on reservations, which means that it has no impact on "private" and "visible" sessions.
+
+If "local", only users whose token's DeviceId matches someone else already in the session and "active": true.
+If "followed", only local users (as defined above) and users who are followed by an existing (not reserved) member of the session can read without a reservation.
+
+The read restriction must be at least as open as the JoinRestriction restriction.
+For example, JoinRestriction cannot be set to MultiplayerSessionJoinRestriction.Followed without also setting
+ReadRestriction to MultiplayerSessionReadRestriction.Followed. 
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerConnectionStringCandidates">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; ServerConnectionStringCandidates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; ServerConnectionStringCandidates" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.ServerConnectionStringCandidates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The ordered list of connection strings that the session can use to connect to a game server. Generally titles should use the first on
+the list, but sophisticated titles could use a custom mechanism for choosing one of the others (e.g. based on load).
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionCustomPropertiesJson">
+      <MemberSignature Language="C#" Value="public string SessionCustomPropertiesJson { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SessionCustomPropertiesJson" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.SessionCustomPropertiesJson" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A JSON string that specifies the custom properties for the session.  These can be changed anytime.
+When changing, call MultiplayerService::WriteSessionAsync to write the changes to the service.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionOwnerIndices">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;uint&gt; SessionOwnerIndices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;unsigned int32&gt; SessionOwnerIndices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.SessionOwnerIndices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Member index of owners of the session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TurnCollection">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; TurnCollection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; TurnCollection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.TurnCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A collection of MultiplayerSessionMember objects indicating who has played turns in the sessions.
+When changing, call MultiplayerService::WriteSessionAsync to write the changes to the service.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

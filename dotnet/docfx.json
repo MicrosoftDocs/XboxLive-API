@@ -1,0 +1,60 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "api/overwrites/**",
+          "**/toc.yml",
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/toc.yml"
+        ],
+        "src": ".",
+        "dest": "xboxlive_dotnet_toc"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": {
+      "files": [
+        "api/overwrites/**/*.md"
+      ]
+    },
+    "xref": [
+    ],
+    "externalReference": [],
+    "globalMetadata": {
+      "apiPlatform": "dotnet",
+      "author": "KevinAsgari",
+      "ms.author": "kevinasg",
+      "ms.prod": "windows",
+      "ms.technology": "winrt-reference"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "xboxlive-dotnet-api",
+    "lruSize": 0
+  }
+}

@@ -1,0 +1,134 @@
+<Type Name="TournamentArbitrationStatus" FullName="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus">
+  <TypeSignature Language="C#" Value="public enum TournamentArbitrationStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentArbitrationStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines values used to indicate the state of a tournament game.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Complete">
+      <MemberSignature Language="C#" Value="Complete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus Complete = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Complete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The user has reported results and his role in the arbitration process is now done.
+Occurs either after (arbitrationForfeitTime and no players have joined), (arbitration succeeded), or (arbitrationFinishTime).
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InComplete">
+      <MemberSignature Language="C#" Value="InComplete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus InComplete = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.InComplete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The user was not able to upload results before the arbitrationTimeout deadline.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InProgress">
+      <MemberSignature Language="C#" Value="InProgress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus InProgress = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.InProgress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Occurs after arbitrationStartTime and at least one user has gone active.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Joining">
+      <MemberSignature Language="C#" Value="Joining" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus Joining = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Joining" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The status is "joining" until both the TournamentArbitrationStatus is "InProgress" and the member is active.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Playing">
+      <MemberSignature Language="C#" Value="Playing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus Playing = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Playing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The user has gone active at least once and is now participating in the match.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Waiting">
+      <MemberSignature Language="C#" Value="Waiting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus Waiting = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Waiting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Occurs before arbitrationStartTime.
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

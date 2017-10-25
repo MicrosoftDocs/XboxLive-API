@@ -1,0 +1,282 @@
+<Type Name="ClubsService" FullName="Microsoft.Xbox.Services.Clubs.ClubsService">
+  <TypeSignature Language="C#" Value="public sealed class ClubsService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubsService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubsService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents the leaderboard service.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateClubAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.Club&gt; CreateClubAsync (string name, Microsoft.Xbox.Services.Clubs.ClubType type, string titleFamilyId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Clubs.Club&gt; CreateClubAsync([in]string name, [in]valuetype Microsoft.Xbox.Services.Clubs.ClubType type, [in]string titleFamilyId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.ClubsService.CreateClubAsync(System.String,Microsoft.Xbox.Services.Clubs.ClubType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.Club&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="Microsoft.Xbox.Services.Clubs.ClubType" />
+        <Parameter Name="titleFamilyId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name of the club to be created</param>
+        <param name="type">Type of the club to be created</param>
+        <param name="titleFamilyId">Information about the title the club is associated with</param>
+        <summary>Creates a club.</summary>
+        <returns>A Club object describing the club.</returns>
+        <remarks>
+Calls V1 POST clubaccounts.xboxlive.com/clubs/create
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteClubAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction DeleteClubAsync (string clubId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction DeleteClubAsync([in]string clubId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.ClubsService.DeleteClubAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clubId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="clubId">Club Id of the club to delete</param>
+        <summary>Deletes a club.</summary>
+        <returns>A Club object describing the deleted club.</returns>
+        <remarks>
+Calls V1 DELETE clubaccounts.xboxlive.com/clubs/{clubId}
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClubAssociationsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.Club&gt;&gt; GetClubAssociationsAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.Club&gt;&gt; GetClubAssociationsAsync() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.ClubsService.GetClubAssociationsAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetClubAssociationsAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.Club&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns details about all the clubs the caller is associated with.</summary>
+        <returns>An IVectorView of all clubs the caller is associated with in any way.</returns>
+        <remarks>
+Calls V4 GET clubhub.xboxlive.com/clubs/Xuid{xuid}
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClubAssociationsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.Club&gt;&gt; GetClubAssociationsAsync (string xuid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.Club&gt;&gt; GetClubAssociationsAsync([in]string xuid) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.ClubsService.GetClubAssociationsAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetClubAssociationsAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.Club&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xuid" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xuid">Xuid of the user</param>
+        <summary>Returns details about all the clubs a particular user is associated with.</summary>
+        <returns>An IVectorView of all clubs the user is associated with in any way.</returns>
+        <remarks>
+Calls V4 GET clubhub.xboxlive.com/clubs/Xuid{xuid}
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClubAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.Club&gt; GetClubAsync (string clubId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Clubs.Club&gt; GetClubAsync([in]string clubId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.ClubsService.GetClubAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.Club&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clubId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="clubId">The club ID of the club.</param>
+        <summary>Get information about a club.</summary>
+        <returns>A club object describing the club.</returns>
+        <remarks>
+Calls V4 GET clubhub.xboxlive.com/clubs/Ids({clubId})/decoration/settings
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClubRecommendationsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRecommendation&gt;&gt; GetClubRecommendationsAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.ClubRecommendation&gt;&gt; GetClubRecommendationsAsync() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.ClubsService.GetClubRecommendationsAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRecommendation&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Get recommended clubs for the caller.</summary>
+        <returns>
+An IVectorView of ClubRecommendation. A ClubRecommendation contains the recommended club and an IVectorView
+of localized "reason" strings describing why the club was recommended.
+</returns>
+        <remarks>
+Calls V4 POST clubhub.xboxlive.com/clubs/recommendations
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClubsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.Club&gt;&gt; GetClubsAsync (Windows.Foundation.Collections.IVectorView&lt;string&gt; clubIds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.Club&gt;&gt; GetClubsAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; clubIds) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.ClubsService.GetClubsAsync(Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.Club&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clubIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="clubIds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClubsOwnedAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.ClubsOwnedResult&gt; GetClubsOwnedAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Clubs.ClubsOwnedResult&gt; GetClubsOwnedAsync() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.ClubsService.GetClubsOwnedAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.ClubsOwnedResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Get information about the clubs the caller owns.</summary>
+        <returns>A ClubsOwnedResult containing info about the clubs owned</returns>
+        <remarks>
+Calls V1 GET clubaccounts.xboxlive.com/users/{userId}/clubsowned
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchClubsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.ClubsSearchResult&gt; SearchClubsAsync (string queryString, Windows.Foundation.Collections.IVectorView&lt;string&gt; titleIds, Windows.Foundation.Collections.IVectorView&lt;string&gt; tags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Clubs.ClubsSearchResult&gt; SearchClubsAsync([in]string queryString, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; titleIds, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; tags) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.ClubsService.SearchClubsAsync(System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.ClubsSearchResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryString" Type="System.String" />
+        <Parameter Name="titleIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="tags" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="queryString">To be added.</param>
+        <param name="titleIds">To be added.</param>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestClubsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubSearchAutoComplete&gt;&gt; SuggestClubsAsync (string queryString, Windows.Foundation.Collections.IVectorView&lt;string&gt; titleIds, Windows.Foundation.Collections.IVectorView&lt;string&gt; tags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.ClubSearchAutoComplete&gt;&gt; SuggestClubsAsync([in]string queryString, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; titleIds, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; tags) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.ClubsService.SuggestClubsAsync(System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubSearchAutoComplete&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryString" Type="System.String" />
+        <Parameter Name="titleIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="tags" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="queryString">To be added.</param>
+        <param name="titleIds">To be added.</param>
+        <param name="tags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

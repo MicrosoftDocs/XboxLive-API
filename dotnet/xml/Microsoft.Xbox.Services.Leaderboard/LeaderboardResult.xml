@@ -1,0 +1,189 @@
+<Type Name="LeaderboardResult" FullName="Microsoft.Xbox.Services.Leaderboard.LeaderboardResult">
+  <TypeSignature Language="C#" Value="public sealed class LeaderboardResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LeaderboardResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents the results of a leaderboard request.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn&gt; Columns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn&gt; Columns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.Columns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The collection of columns in the leaderboard results.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+DEPRECATED
+The display name of the leaderboard results.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetNextAsync (uint maxItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetNextAsync([in]unsigned int32 maxItems) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.GetNextAsync(System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="maxItems">The maximum number of items to return.</param>
+        <summary>
+Get the next page of a previous leaderboard call using the same service config Id and leaderboard name.
+</summary>
+        <returns>A LeaderboardResults object that contains the next set of results.</returns>
+        <remarks>
+Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
+Completion of the asynchronous operation is signaled by using a handler that is passed to the
+IAsyncOperation&lt;TResult&gt;.Completed property. When the asynchronous operation is complete, the result of the
+operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
+
+Calls V1 GET 
+ /scids/{scid}/leaderboards/{leaderboardname}?
+ [maxItems={maxItems}]
+ [continuationToken={token}]
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextQuery">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery GetNextQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery GetNextQuery() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.GetNextQuery" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+Gets a query to be used to retrieve more data about a leaderboard. 
+This query is only to be used to retrieve a leaderboard with stats 2017.
+</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasNext">
+      <MemberSignature Language="C#" Value="public bool HasNext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasNext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.HasNext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates whether there is a next page of results.
+</summary>
+        <value>True if there is another page of results; otherwise false.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rows">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardRow&gt; Rows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardRow&gt; Rows" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.Rows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardRow&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The collection of rows in the leaderboard results.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalRowCount">
+      <MemberSignature Language="C#" Value="public uint TotalRowCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TotalRowCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.TotalRowCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The total number of rows in the leaderboard results.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,72 @@
+<Type Name="CreateMatchTicketResponse" FullName="Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse">
+  <TypeSignature Language="C#" Value="public sealed class CreateMatchTicketResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CreateMatchTicketResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a server response to a create match ticket request.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EstimatedWaitTime">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan EstimatedWaitTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan EstimatedWaitTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse.EstimatedWaitTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Estimated wait time for a match request to be matched with other players.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchTicketId">
+      <MemberSignature Language="C#" Value="public string MatchTicketId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MatchTicketId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse.MatchTicketId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Ticket ID of a match request.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

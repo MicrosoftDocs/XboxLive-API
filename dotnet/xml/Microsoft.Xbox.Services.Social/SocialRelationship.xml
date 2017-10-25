@@ -1,0 +1,71 @@
+<Type Name="SocialRelationship" FullName="Microsoft.Xbox.Services.Social.SocialRelationship">
+  <TypeSignature Language="C#" Value="public enum SocialRelationship" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialRelationship extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.SocialRelationship" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary> Defines values for the {view} field</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.SocialRelationship All = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.SocialRelationship.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.SocialRelationship</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All the people on the user's people list</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Favorite">
+      <MemberSignature Language="C#" Value="Favorite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.SocialRelationship Favorite = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.SocialRelationship.Favorite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.SocialRelationship</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Filters to only the people on the user's people list that have the attribute "Favorite" associated with them.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LegacyXboxLiveFriends">
+      <MemberSignature Language="C#" Value="LegacyXboxLiveFriends" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.SocialRelationship LegacyXboxLiveFriends = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.SocialRelationship.LegacyXboxLiveFriends" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.SocialRelationship</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Filters to only the people on the user's people list that are also legacy Xbox Live friends</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

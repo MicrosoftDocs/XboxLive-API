@@ -4,11 +4,13 @@
   "docsets_to_publish": [
     {
       "docset_name": "XboxLive-API",
-      "build_source_folder": "buildfiles",
-      "build_output_subfolder": "XboxLive-API",
+      "build_source_folder": "dotnet",
+      "build_output_subfolder": "xboxlive-dotnet-api",
       "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
+      "monikers": [
+        "xboxlive-dotnet-1.0.171023001"
+      ],
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -16,7 +18,19 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
-      "version": 0
+      "customized_template_paths": [
+        "_dependentPackages/memberpage.plugins/content"
+      ],
+     "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
+          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
+          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
+        ],
+        "docset_postbuild": [
+          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
+        ]
+      }
     }
   ],
   "notification_subscribers": [
@@ -35,5 +49,37 @@
       "branch_mapping": {}
     }
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+    "dependent_packages": [
+    {
+      "id": "Microsoft.DocAsCode.ECMA2Yaml",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
+      "path_to_root": "_dependentPackages/ECMA2Yaml",
+      "target_framework": "net45",
+      "version": "latest"
+    },
+    {
+      "id": "memberpage.plugins",
+      "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
+      "path_to_root": "_dependentPackages/memberpage.plugins",
+      "target_framework": "net45",
+      "version": "latest"
+    },
+    {
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
+      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
+      "path_to_root": "_dependentPackages/CommonPlugins",
+      "target_framework": "net45",
+      "version": "latest-prerelease"
+    }
+  ],
+  "ECMA2Yaml": {
+    "SourceXmlFolder": "dotnet/xml",
+    "OutputYamlFolder": "dotnet/api",
+    "Flatten": true
+  },
+  "DiffFolder": [
+    "dotnet/api"
+  ],
+  "SplitTOC": "dotnet/api/toc.yml"
 }

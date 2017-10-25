@@ -1,0 +1,135 @@
+<Type Name="ClubUserPresence" FullName="Microsoft.Xbox.Services.Clubs.ClubUserPresence">
+  <TypeSignature Language="C#" Value="public enum ClubUserPresence" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubUserPresence extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubUserPresence" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Chat">
+      <MemberSignature Language="C#" Value="Chat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence Chat = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Chat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>User is on the chat page.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Feed">
+      <MemberSignature Language="C#" Value="Feed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence Feed = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Feed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>User is viewing the club feed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InClub">
+      <MemberSignature Language="C#" Value="InClub" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence InClub = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.InClub" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>User is viewing the club, but not on any specific page.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InGame">
+      <MemberSignature Language="C#" Value="InGame" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence InGame = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.InGame" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>User is playing the associated game.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotInClub">
+      <MemberSignature Language="C#" Value="NotInClub" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence NotInClub = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.NotInClub" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>User is no longer on a club page.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="Play" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence Play = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Play" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>User is on the play tab in the club (not actually playing anything).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roster">
+      <MemberSignature Language="C#" Value="Roster" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence Roster = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Roster" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>User is viewing the club roster/presence.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

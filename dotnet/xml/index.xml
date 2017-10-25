@@ -1,0 +1,318 @@
+<Overview>
+  <Assemblies>
+    <Assembly Name="Microsoft.Xbox.Services" Version="255.255.255.255" />
+  </Assemblies>
+  <Remarks>To be added.</Remarks>
+  <Copyright>To be added.</Copyright>
+  <Types>
+    <Namespace Name="Microsoft.Xbox.Services">
+      <Type Name="HttpCallRequestMessage" Kind="Class" />
+      <Type Name="HttpCallResponseBodyType" Kind="Enumeration" />
+      <Type Name="HttpRequestMessageType" Kind="Enumeration" />
+      <Type Name="ServiceCallLoggingConfig" Kind="Class" />
+      <Type Name="XboxLiveAppConfiguration" Kind="Class" />
+      <Type Name="XboxLiveContext" Kind="Class" />
+      <Type Name="XboxLiveContextRecommendedSetting" Kind="Enumeration" />
+      <Type Name="XboxLiveContextSettings" Kind="Class" />
+      <Type Name="XboxLiveContextThrottleSetting" Kind="Enumeration" />
+      <Type Name="XboxLiveHttpCall" Kind="Class" />
+      <Type Name="XboxLiveHttpCallResponse" Kind="Class" />
+      <Type Name="XboxLiveLogCallEventArgs" Kind="Class" />
+      <Type Name="XboxLiveWnsEventArgs" Kind="Class" />
+      <Type Name="XboxServiceCallRoutedEventArgs" Kind="Class" />
+      <Type Name="XboxServicesDiagnosticsTraceLevel" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Achievements">
+      <Type Name="Achievement" Kind="Class" />
+      <Type Name="AchievementMediaAsset" Kind="Class" />
+      <Type Name="AchievementMediaAssetType" Kind="Enumeration" />
+      <Type Name="AchievementOrderBy" Kind="Enumeration" />
+      <Type Name="AchievementParticipationType" Kind="Enumeration" />
+      <Type Name="AchievementProgression" Kind="Class" />
+      <Type Name="AchievementProgressState" Kind="Enumeration" />
+      <Type Name="AchievementRequirement" Kind="Class" />
+      <Type Name="AchievementReward" Kind="Class" />
+      <Type Name="AchievementRewardType" Kind="Enumeration" />
+      <Type Name="AchievementService" Kind="Class" />
+      <Type Name="AchievementsResult" Kind="Class" />
+      <Type Name="AchievementTimeWindow" Kind="Class" />
+      <Type Name="AchievementTitleAssociation" Kind="Class" />
+      <Type Name="AchievementType" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Clubs">
+      <Type Name="Club" Kind="Class" />
+      <Type Name="ClubActionSetting" Kind="Class" />
+      <Type Name="ClubActionSettings" Kind="Class" />
+      <Type Name="ClubBooleanSetting" Kind="Class" />
+      <Type Name="ClubPresenceCounts" Kind="Class" />
+      <Type Name="ClubProfile" Kind="Class" />
+      <Type Name="ClubRecommendation" Kind="Class" />
+      <Type Name="ClubRole" Kind="Enumeration" />
+      <Type Name="ClubRoleRecord" Kind="Class" />
+      <Type Name="ClubRoster" Kind="Class" />
+      <Type Name="ClubSearchAutoComplete" Kind="Class" />
+      <Type Name="ClubSearchFacetResult" Kind="Class" />
+      <Type Name="ClubsOwnedResult" Kind="Class" />
+      <Type Name="ClubsSearchResult" Kind="Class" />
+      <Type Name="ClubsService" Kind="Class" />
+      <Type Name="ClubStringMultiSetting" Kind="Class" />
+      <Type Name="ClubStringSetting" Kind="Class" />
+      <Type Name="ClubType" Kind="Enumeration" />
+      <Type Name="ClubUserPresence" Kind="Enumeration" />
+      <Type Name="ClubUserPresenceRecord" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.ContextualSearch">
+      <Type Name="ContextualSearchBroadcast" Kind="Class" />
+      <Type Name="ContextualSearchConfiguredStat" Kind="Class" />
+      <Type Name="ContextualSearchFilterOperator" Kind="Enumeration" />
+      <Type Name="ContextualSearchGameClip" Kind="Class" />
+      <Type Name="ContextualSearchGameClipsResult" Kind="Class" />
+      <Type Name="ContextualSearchGameClipStat" Kind="Class" />
+      <Type Name="ContextualSearchGameClipThumbnail" Kind="Class" />
+      <Type Name="ContextualSearchGameClipThumbnailType" Kind="Enumeration" />
+      <Type Name="ContextualSearchGameClipType" Kind="Enumeration" />
+      <Type Name="ContextualSearchGameClipUriInfo" Kind="Class" />
+      <Type Name="ContextualSearchGameClipUriType" Kind="Enumeration" />
+      <Type Name="ContextualSearchService" Kind="Class" />
+      <Type Name="ContextualSearchStatDisplayType" Kind="Enumeration" />
+      <Type Name="ContextualSearchStatVisibility" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Events">
+      <Type Name="EventsService" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.GameServerPlatform">
+      <Type Name="AllocationResult" Kind="Class" />
+      <Type Name="ClusterResult" Kind="Class" />
+      <Type Name="GameServerFulfillmentState" Kind="Enumeration" />
+      <Type Name="GameServerHostStatus" Kind="Enumeration" />
+      <Type Name="GameServerImageSet" Kind="Class" />
+      <Type Name="GameServerMetadataResult" Kind="Class" />
+      <Type Name="GameServerPlatformService" Kind="Class" />
+      <Type Name="GameServerPortMapping" Kind="Class" />
+      <Type Name="GameServerTicketStatus" Kind="Class" />
+      <Type Name="GameVariant" Kind="Class" />
+      <Type Name="QualityOfServiceServer" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Leaderboard">
+      <Type Name="LeaderboardColumn" Kind="Class" />
+      <Type Name="LeaderboardQuery" Kind="Class" />
+      <Type Name="LeaderboardResult" Kind="Class" />
+      <Type Name="LeaderboardRow" Kind="Class" />
+      <Type Name="LeaderboardService" Kind="Class" />
+      <Type Name="SortOrder" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Matchmaking">
+      <Type Name="CreateMatchTicketResponse" Kind="Class" />
+      <Type Name="HopperStatisticsResponse" Kind="Class" />
+      <Type Name="MatchmakingService" Kind="Class" />
+      <Type Name="MatchTicketDetailsResponse" Kind="Class" />
+      <Type Name="PreserveSessionMode" Kind="Enumeration" />
+      <Type Name="TicketStatus" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Multiplayer">
+      <Type Name="MatchmakingStatus" Kind="Enumeration" />
+      <Type Name="MultiplayerActivityDetails" Kind="Class" />
+      <Type Name="MultiplayerGetSessionsRequest" Kind="Class" />
+      <Type Name="MultiplayerInitializationStage" Kind="Enumeration" />
+      <Type Name="MultiplayerManagedInitialization" Kind="Class" />
+      <Type Name="MultiplayerMeasurementFailure" Kind="Enumeration" />
+      <Type Name="MultiplayerMemberInitialization" Kind="Class" />
+      <Type Name="MultiplayerPeerToHostRequirements" Kind="Class" />
+      <Type Name="MultiplayerPeerToPeerRequirements" Kind="Class" />
+      <Type Name="MultiplayerQualityOfServiceMeasurements" Kind="Class" />
+      <Type Name="MultiplayerQuerySearchHandleRequest" Kind="Class" />
+      <Type Name="MultiplayerRoleInfo" Kind="Class" />
+      <Type Name="MultiplayerRoleType" Kind="Class" />
+      <Type Name="MultiplayerSearchHandleDetails" Kind="Class" />
+      <Type Name="MultiplayerSearchHandleRequest" Kind="Class" />
+      <Type Name="MultiplayerService" Kind="Class" />
+      <Type Name="MultiplayerSession" Kind="Class" />
+      <Type Name="MultiplayerSessionArbitrationServer" Kind="Class" />
+      <Type Name="MultiplayerSessionCapabilities" Kind="Class" />
+      <Type Name="MultiplayerSessionChangeEventArgs" Kind="Class" />
+      <Type Name="MultiplayerSessionChangeTypes" Kind="Enumeration" />
+      <Type Name="MultiplayerSessionConstants" Kind="Class" />
+      <Type Name="MultiplayerSessionMatchmakingServer" Kind="Class" />
+      <Type Name="MultiplayerSessionMember" Kind="Class" />
+      <Type Name="MultiplayerSessionMemberStatus" Kind="Enumeration" />
+      <Type Name="MultiplayerSessionProperties" Kind="Class" />
+      <Type Name="MultiplayerSessionReference" Kind="Class" />
+      <Type Name="MultiplayerSessionRestriction" Kind="Enumeration" />
+      <Type Name="MultiplayerSessionRoleTypes" Kind="Class" />
+      <Type Name="MultiplayerSessionStates" Kind="Class" />
+      <Type Name="MultiplayerSessionStatus" Kind="Enumeration" />
+      <Type Name="MultiplayerSessionTournamentsServer" Kind="Class" />
+      <Type Name="MultiplayerSessionVisibility" Kind="Enumeration" />
+      <Type Name="MultiplayerSessionWriteMode" Kind="Enumeration" />
+      <Type Name="MultiplayerSubscriptionLostEventArgs" Kind="Class" />
+      <Type Name="MultiplayMetrics" Kind="Enumeration" />
+      <Type Name="MutableRoleSetting" Kind="Enumeration" />
+      <Type Name="NetworkAddressTranslationSetting" Kind="Enumeration" />
+      <Type Name="WriteSessionResult" Kind="Class" />
+      <Type Name="WriteSessionStatus" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Multiplayer.Manager">
+      <Type Name="FindMatchCompletedEventArgs" Kind="Class" />
+      <Type Name="HostChangedEventArgs" Kind="Class" />
+      <Type Name="Joinability" Kind="Enumeration" />
+      <Type Name="JoinLobbyCompletedEventArgs" Kind="Class" />
+      <Type Name="MatchStatus" Kind="Enumeration" />
+      <Type Name="MemberJoinedEventArgs" Kind="Class" />
+      <Type Name="MemberLeftEventArgs" Kind="Class" />
+      <Type Name="MemberPropertyChangedEventArgs" Kind="Class" />
+      <Type Name="MultiplayerEvent" Kind="Class" />
+      <Type Name="MultiplayerEventArgs" Kind="Interface" />
+      <Type Name="MultiplayerEventType" Kind="Enumeration" />
+      <Type Name="MultiplayerGameSession" Kind="Class" />
+      <Type Name="MultiplayerLobbySession" Kind="Class" />
+      <Type Name="MultiplayerManager" Kind="Class" />
+      <Type Name="MultiplayerMember" Kind="Class" />
+      <Type Name="MultiplayerSessionType" Kind="Enumeration" />
+      <Type Name="PerformQosMeasurementsEventArgs" Kind="Class" />
+      <Type Name="SessionPropertyChangedEventArgs" Kind="Class" />
+      <Type Name="TournamentGameSessionReadyEventArgs" Kind="Class" />
+      <Type Name="TournamentRegistrationStateChangedEventArgs" Kind="Class" />
+      <Type Name="UserAddedEventArgs" Kind="Class" />
+      <Type Name="UserRemovedEventArgs" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Presence">
+      <Type Name="DevicePresenceChangeEventArgs" Kind="Class" />
+      <Type Name="DevicePresenceChangeSubscription" Kind="Class" />
+      <Type Name="PresenceBroadcastRecord" Kind="Class" />
+      <Type Name="PresenceData" Kind="Class" />
+      <Type Name="PresenceDetailLevel" Kind="Enumeration" />
+      <Type Name="PresenceDeviceRecord" Kind="Class" />
+      <Type Name="PresenceDeviceType" Kind="Enumeration" />
+      <Type Name="PresenceMediaIdType" Kind="Enumeration" />
+      <Type Name="PresenceMediaRecord" Kind="Class" />
+      <Type Name="PresenceRecord" Kind="Class" />
+      <Type Name="PresenceService" Kind="Class" />
+      <Type Name="PresenceTitleRecord" Kind="Class" />
+      <Type Name="PresenceTitleViewState" Kind="Enumeration" />
+      <Type Name="TitlePresenceChangeEventArgs" Kind="Class" />
+      <Type Name="TitlePresenceChangeSubscription" Kind="Class" />
+      <Type Name="TitlePresenceState" Kind="Enumeration" />
+      <Type Name="UserPresenceState" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Privacy">
+      <Type Name="MultiplePermissionsCheckResult" Kind="Class" />
+      <Type Name="PermissionCheckResult" Kind="Class" />
+      <Type Name="PermissionDenyReason" Kind="Class" />
+      <Type Name="PermissionIdConstants" Kind="Class" />
+      <Type Name="PrivacyService" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.RealTimeActivity">
+      <Type Name="RealTimeActivityConnectionState" Kind="Enumeration" />
+      <Type Name="RealTimeActivityResyncEventArgs" Kind="Class" />
+      <Type Name="RealTimeActivityService" Kind="Class" />
+      <Type Name="RealTimeActivitySubscriptionError" Kind="Enumeration" />
+      <Type Name="RealTimeActivitySubscriptionErrorEventArgs" Kind="Class" />
+      <Type Name="RealTimeActivitySubscriptionState" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Social">
+      <Type Name="ProfileService" Kind="Class" />
+      <Type Name="ReputationFeedbackItem" Kind="Class" />
+      <Type Name="ReputationFeedbackType" Kind="Enumeration" />
+      <Type Name="ReputationService" Kind="Class" />
+      <Type Name="SocialGroupConstants" Kind="Class" />
+      <Type Name="SocialNotificationType" Kind="Enumeration" />
+      <Type Name="SocialRelationship" Kind="Enumeration" />
+      <Type Name="SocialRelationshipChangeEventArgs" Kind="Class" />
+      <Type Name="SocialRelationshipChangeSubscription" Kind="Class" />
+      <Type Name="SocialService" Kind="Class" />
+      <Type Name="XboxSocialRelationship" Kind="Class" />
+      <Type Name="XboxSocialRelationshipResult" Kind="Class" />
+      <Type Name="XboxUserProfile" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Social.Manager">
+      <Type Name="PreferredColor" Kind="Class" />
+      <Type Name="PresenceFilter" Kind="Enumeration" />
+      <Type Name="RelationshipFilter" Kind="Enumeration" />
+      <Type Name="SocialEvent" Kind="Class" />
+      <Type Name="SocialEventArgs" Kind="Interface" />
+      <Type Name="SocialEventType" Kind="Enumeration" />
+      <Type Name="SocialManager" Kind="Class" />
+      <Type Name="SocialManagerExtraDetailLevel" Kind="Enumeration" />
+      <Type Name="SocialManagerPresenceRecord" Kind="Class" />
+      <Type Name="SocialManagerPresenceTitleRecord" Kind="Class" />
+      <Type Name="SocialUserGroupLoadedEventArgs" Kind="Class" />
+      <Type Name="SocialUserGroupType" Kind="Enumeration" />
+      <Type Name="TitleHistory" Kind="Class" />
+      <Type Name="XboxSocialUser" Kind="Class" />
+      <Type Name="XboxSocialUserGroup" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Statistics.Manager">
+      <Type Name="LeaderboardResultEventArgs" Kind="Class" />
+      <Type Name="StatisticDataType" Kind="Enumeration" />
+      <Type Name="StatisticEvent" Kind="Class" />
+      <Type Name="StatisticEventArgs" Kind="Interface" />
+      <Type Name="StatisticEventType" Kind="Enumeration" />
+      <Type Name="StatisticManager" Kind="Class" />
+      <Type Name="StatisticValue" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.System">
+      <Type Name="GamingPrivilege" Kind="Enumeration" />
+      <Type Name="GetTokenAndSignatureResult" Kind="Class" />
+      <Type Name="SignInResult" Kind="Class" />
+      <Type Name="SignInStatus" Kind="Enumeration" />
+      <Type Name="SignOutCompletedEventArgs" Kind="Class" />
+      <Type Name="StringService" Kind="Class" />
+      <Type Name="TitleCallableUI" Kind="Class" />
+      <Type Name="VerifyStringResult" Kind="Class" />
+      <Type Name="VerifyStringResultCode" Kind="Enumeration" />
+      <Type Name="XboxLiveServicesSettings" Kind="Class" />
+      <Type Name="XboxLiveUser" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.TitleStorage">
+      <Type Name="TitleStorageBlobMetadata" Kind="Class" />
+      <Type Name="TitleStorageBlobMetadataResult" Kind="Class" />
+      <Type Name="TitleStorageBlobResult" Kind="Class" />
+      <Type Name="TitleStorageBlobType" Kind="Enumeration" />
+      <Type Name="TitleStorageETagMatchCondition" Kind="Enumeration" />
+      <Type Name="TitleStorageQuota" Kind="Class" />
+      <Type Name="TitleStorageService" Kind="Class" />
+      <Type Name="TitleStorageType" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.Tournaments">
+      <Type Name="CurrentMatchMetadata" Kind="Class" />
+      <Type Name="MatchMetadata" Kind="Class" />
+      <Type Name="PreviousMatchMetadata" Kind="Class" />
+      <Type Name="TeamChangeEventArgs" Kind="Class" />
+      <Type Name="TeamChangeSubscription" Kind="Class" />
+      <Type Name="TeamCompletedReason" Kind="Enumeration" />
+      <Type Name="TeamInfo" Kind="Class" />
+      <Type Name="TeamOrderBy" Kind="Enumeration" />
+      <Type Name="TeamRequest" Kind="Class" />
+      <Type Name="TeamRequestResult" Kind="Class" />
+      <Type Name="TeamState" Kind="Enumeration" />
+      <Type Name="TeamSummary" Kind="Class" />
+      <Type Name="Tournament" Kind="Class" />
+      <Type Name="TournamentArbitrationState" Kind="Enumeration" />
+      <Type Name="TournamentArbitrationStatus" Kind="Enumeration" />
+      <Type Name="TournamentChangeEventArgs" Kind="Class" />
+      <Type Name="TournamentChangeSubscription" Kind="Class" />
+      <Type Name="TournamentGameResultSource" Kind="Enumeration" />
+      <Type Name="TournamentGameResultState" Kind="Enumeration" />
+      <Type Name="TournamentOrderBy" Kind="Enumeration" />
+      <Type Name="TournamentReference" Kind="Class" />
+      <Type Name="TournamentRegistrationReason" Kind="Enumeration" />
+      <Type Name="TournamentRegistrationState" Kind="Enumeration" />
+      <Type Name="TournamentRequest" Kind="Class" />
+      <Type Name="TournamentRequestResult" Kind="Class" />
+      <Type Name="TournamentService" Kind="Class" />
+      <Type Name="TournamentSortOrder" Kind="Enumeration" />
+      <Type Name="TournamentState" Kind="Enumeration" />
+      <Type Name="TournamentTeamResult" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Xbox.Services.UserStatistics">
+      <Type Name="RequestedStatistics" Kind="Class" />
+      <Type Name="ServiceConfigurationStatistic" Kind="Class" />
+      <Type Name="Statistic" Kind="Class" />
+      <Type Name="StatisticChangeEventArgs" Kind="Class" />
+      <Type Name="StatisticChangeSubscription" Kind="Class" />
+      <Type Name="UserStatisticsResult" Kind="Class" />
+      <Type Name="UserStatisticsService" Kind="Class" />
+    </Namespace>
+  </Types>
+  <Title>Microsoft.Xbox.Services</Title>
+</Overview>
