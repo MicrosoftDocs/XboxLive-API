@@ -1,6 +1,4 @@
 {
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "XboxLive-API",
@@ -10,6 +8,7 @@
       "monikers": [
         "xboxlive-dotnet-1.0.171023001"
       ],
+      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -21,7 +20,7 @@
       "customized_template_paths": [
         "_dependentPackages/memberpage.plugins/content"
       ],
-     "customized_tasks": {
+      "customized_tasks": {
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
           "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
@@ -50,7 +49,9 @@
     }
   ],
   "need_generate_pdf_url_template": false,
-    "dependent_packages": [
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "dependent_packages": [
     {
       "id": "Microsoft.DocAsCode.ECMA2Yaml",
       "nuget_feed": "https://www.myget.org/F/op/api/v2",
