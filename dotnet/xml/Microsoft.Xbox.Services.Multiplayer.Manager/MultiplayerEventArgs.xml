@@ -1,0 +1,27 @@
+﻿<Type Name="MultiplayerEventArgs" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs">
+  <TypeSignature Language="C#" Value="public interface MultiplayerEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MultiplayerEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Interface MultiplayerEventArgs" />
+  <TypeSignature Language="F#" Value="type MultiplayerEventArgs = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Guid(582716661, 55024, 13622, 177, 134, 135, 184, 147, 111, 34, 23)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+This is the base class for all multiplayer event arg classes.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

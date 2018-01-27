@@ -1,0 +1,453 @@
+﻿<Type Name="PresenceService" FullName="Microsoft.Xbox.Services.Presence.PresenceService">
+  <TypeSignature Language="C#" Value="public sealed class PresenceService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.PresenceService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PresenceService" />
+  <TypeSignature Language="F#" Value="type PresenceService = class&#xA;    interface __IPresenceServicePublicNonVirtuals&#xA;    interface __IPresenceServiceProtectedNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a service for Rich Presence features.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DevicePresenceChanged">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs&gt; DevicePresenceChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs&gt; DevicePresenceChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.Presence.PresenceService.DevicePresenceChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DevicePresenceChanged As EventHandler(Of DevicePresenceChangeEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.DevicePresenceChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs&gt; " Usage="member this.DevicePresenceChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.DevicePresenceChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Registers for device presence change notifications.  Event handlers will receive DevicePresenceChangeEventArgs^.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPresenceAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt; GetPresenceAsync (string xboxUserId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Presence.PresenceRecord&gt; GetPresenceAsync([in]string xboxUserId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.GetPresenceAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPresenceAsync (xboxUserId As String) As IAsyncOperation(Of PresenceRecord)" />
+      <MemberSignature Language="F#" Value="abstract member GetPresenceAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&#xA;override this.GetPresenceAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;" Usage="presenceService.GetPresenceAsync xboxUserId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.GetPresenceAsync(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">The Xbox User ID of the user to get presence for</param>
+        <summary>
+Gets presence info for a specific Xbox User Id.
+</summary>
+        <returns>To be added.</returns>
+        <remarks>Calls V3 GET /users/xuid({xuid})</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPresenceForMultipleUsersAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt; GetPresenceForMultipleUsersAsync (Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt; GetPresenceForMultipleUsersAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.GetPresenceForMultipleUsersAsync(Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPresenceForMultipleUsersAsync (xboxUserIds As IVectorView(Of String)) As IAsyncOperation(Of IVectorView(Of PresenceRecord))" />
+      <MemberSignature Language="F#" Value="abstract member GetPresenceForMultipleUsersAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;&#xA;override this.GetPresenceForMultipleUsersAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;" Usage="presenceService.GetPresenceForMultipleUsersAsync xboxUserIds" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.GetPresenceForMultipleUsersAsync(Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetPresenceForMultipleUsersAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserIds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPresenceForMultipleUsersAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt; GetPresenceForMultipleUsersAsync (Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceDeviceType&gt; deviceTypes, Windows.Foundation.Collections.IVectorView&lt;uint&gt; titleIds, Microsoft.Xbox.Services.Presence.PresenceDetailLevel detailLevel, bool onlineOnly, bool broadcastingOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt; GetPresenceForMultipleUsersAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType&gt; deviceTypes, [in]class Windows.Foundation.Collections.IVectorView`1&lt;unsigned int32&gt; titleIds, [in]valuetype Microsoft.Xbox.Services.Presence.PresenceDetailLevel detailLevel, [in]bool onlineOnly, [in]bool broadcastingOnly) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.GetPresenceForMultipleUsersAsync(Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Presence.PresenceDeviceType},Windows.Foundation.Collections.IVectorView{System.UInt32},Microsoft.Xbox.Services.Presence.PresenceDetailLevel,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPresenceForMultipleUsersAsync (xboxUserIds As IVectorView(Of String), deviceTypes As IVectorView(Of PresenceDeviceType), titleIds As IVectorView(Of UInteger), detailLevel As PresenceDetailLevel, onlineOnly As Boolean, broadcastingOnly As Boolean) As IAsyncOperation(Of IVectorView(Of PresenceRecord))" />
+      <MemberSignature Language="F#" Value="abstract member GetPresenceForMultipleUsersAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; * Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceDeviceType&gt; * Windows.Foundation.Collections.IVectorView&lt;uint32&gt; * Microsoft.Xbox.Services.Presence.PresenceDetailLevel * bool * bool -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;&#xA;override this.GetPresenceForMultipleUsersAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; * Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceDeviceType&gt; * Windows.Foundation.Collections.IVectorView&lt;uint32&gt; * Microsoft.Xbox.Services.Presence.PresenceDetailLevel * bool * bool -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;" Usage="presenceService.GetPresenceForMultipleUsersAsync (xboxUserIds, deviceTypes, titleIds, detailLevel, onlineOnly, broadcastingOnly)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.GetPresenceForMultipleUsersAsync(Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Presence.PresenceDeviceType},Windows.Foundation.Collections.IVectorView{System.UInt32},Microsoft.Xbox.Services.Presence.PresenceDetailLevel,System.Boolean,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetPresenceForMultipleUsersAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+        <Parameter Name="deviceTypes" Type="Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceDeviceType&gt;" />
+        <Parameter Name="titleIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.UInt32&gt;" />
+        <Parameter Name="detailLevel" Type="Microsoft.Xbox.Services.Presence.PresenceDetailLevel" />
+        <Parameter Name="onlineOnly" Type="System.Boolean" />
+        <Parameter Name="broadcastingOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserIds">To be added.</param>
+        <param name="deviceTypes">To be added.</param>
+        <param name="titleIds">To be added.</param>
+        <param name="detailLevel">To be added.</param>
+        <param name="onlineOnly">To be added.</param>
+        <param name="broadcastingOnly">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPresenceForSocialGroupAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt; GetPresenceForSocialGroupAsync (string socialGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt; GetPresenceForSocialGroupAsync([in]string socialGroup) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.GetPresenceForSocialGroupAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPresenceForSocialGroupAsync (socialGroup As String) As IAsyncOperation(Of IVectorView(Of PresenceRecord))" />
+      <MemberSignature Language="F#" Value="abstract member GetPresenceForSocialGroupAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;&#xA;override this.GetPresenceForSocialGroupAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;" Usage="presenceService.GetPresenceForSocialGroupAsync socialGroup" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.GetPresenceForSocialGroupAsync(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetPresenceForSocialGroupAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socialGroup" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="socialGroup">The name of the group of users to get presence for.
+See Microsoft::Xbox::Services::Social::SocialGroupConstants for the latest options.</param>
+        <summary>
+Gets presence info for a specific group of users.
+</summary>
+        <returns>To be added.</returns>
+        <remarks>Calls V3 GET /users/xuid({xuid})/groups/{socialGroup}</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPresenceForSocialGroupAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt; GetPresenceForSocialGroupAsync (string socialGroup, string socialGroupOwnerXboxuserId, Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceDeviceType&gt; deviceTypes, Windows.Foundation.Collections.IVectorView&lt;uint&gt; titleIds, Microsoft.Xbox.Services.Presence.PresenceDetailLevel detailLevel, bool onlineOnly, bool broadcastingOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt; GetPresenceForSocialGroupAsync([in]string socialGroup, [in]string socialGroupOwnerXboxuserId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType&gt; deviceTypes, [in]class Windows.Foundation.Collections.IVectorView`1&lt;unsigned int32&gt; titleIds, [in]valuetype Microsoft.Xbox.Services.Presence.PresenceDetailLevel detailLevel, [in]bool onlineOnly, [in]bool broadcastingOnly) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.GetPresenceForSocialGroupAsync(System.String,System.String,Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Presence.PresenceDeviceType},Windows.Foundation.Collections.IVectorView{System.UInt32},Microsoft.Xbox.Services.Presence.PresenceDetailLevel,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPresenceForSocialGroupAsync (socialGroup As String, socialGroupOwnerXboxuserId As String, deviceTypes As IVectorView(Of PresenceDeviceType), titleIds As IVectorView(Of UInteger), detailLevel As PresenceDetailLevel, onlineOnly As Boolean, broadcastingOnly As Boolean) As IAsyncOperation(Of IVectorView(Of PresenceRecord))" />
+      <MemberSignature Language="F#" Value="abstract member GetPresenceForSocialGroupAsync : string * string * Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceDeviceType&gt; * Windows.Foundation.Collections.IVectorView&lt;uint32&gt; * Microsoft.Xbox.Services.Presence.PresenceDetailLevel * bool * bool -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;&#xA;override this.GetPresenceForSocialGroupAsync : string * string * Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceDeviceType&gt; * Windows.Foundation.Collections.IVectorView&lt;uint32&gt; * Microsoft.Xbox.Services.Presence.PresenceDetailLevel * bool * bool -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;" Usage="presenceService.GetPresenceForSocialGroupAsync (socialGroup, socialGroupOwnerXboxuserId, deviceTypes, titleIds, detailLevel, onlineOnly, broadcastingOnly)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.GetPresenceForSocialGroupAsync(System.String,System.String,Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Presence.PresenceDeviceType},Windows.Foundation.Collections.IVectorView{System.UInt32},Microsoft.Xbox.Services.Presence.PresenceDetailLevel,System.Boolean,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetPresenceForSocialGroupAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceRecord&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socialGroup" Type="System.String" />
+        <Parameter Name="socialGroupOwnerXboxuserId" Type="System.String" />
+        <Parameter Name="deviceTypes" Type="Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceDeviceType&gt;" />
+        <Parameter Name="titleIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.UInt32&gt;" />
+        <Parameter Name="detailLevel" Type="Microsoft.Xbox.Services.Presence.PresenceDetailLevel" />
+        <Parameter Name="onlineOnly" Type="System.Boolean" />
+        <Parameter Name="broadcastingOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="socialGroup">To be added.</param>
+        <param name="socialGroupOwnerXboxuserId">To be added.</param>
+        <param name="deviceTypes">To be added.</param>
+        <param name="titleIds">To be added.</param>
+        <param name="detailLevel">To be added.</param>
+        <param name="onlineOnly">To be added.</param>
+        <param name="broadcastingOnly">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPresenceAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SetPresenceAsync (bool isUserActiveInTitle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SetPresenceAsync([in]bool isUserActiveInTitle) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.SetPresenceAsync(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetPresenceAsync (isUserActiveInTitle As Boolean) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member SetPresenceAsync : bool -&gt; Windows.Foundation.IAsyncAction&#xA;override this.SetPresenceAsync : bool -&gt; Windows.Foundation.IAsyncAction" Usage="presenceService.SetPresenceAsync isUserActiveInTitle" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.SetPresenceAsync(System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("SetPresenceAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isUserActiveInTitle" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isUserActiveInTitle">Indicates if the current user context is currently active or inactive in the title.
+The application can choose to set this based on an amount of inactivity.</param>
+        <summary>
+Sets presence info for the current user context.
+</summary>
+        <returns>To be added.</returns>
+        <remarks>Calls V1 POST /users/xuid({xuid})/devices/current/titles/current</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPresenceAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SetPresenceAsync (bool isUserActiveInTitle, Microsoft.Xbox.Services.Presence.PresenceData presenceData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SetPresenceAsync([in]bool isUserActiveInTitle, [in]class Microsoft.Xbox.Services.Presence.PresenceData presenceData) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.SetPresenceAsync(System.Boolean,Microsoft.Xbox.Services.Presence.PresenceData)" />
+      <MemberSignature Language="F#" Value="abstract member SetPresenceAsync : bool * Microsoft.Xbox.Services.Presence.PresenceData -&gt; Windows.Foundation.IAsyncAction&#xA;override this.SetPresenceAsync : bool * Microsoft.Xbox.Services.Presence.PresenceData -&gt; Windows.Foundation.IAsyncAction" Usage="presenceService.SetPresenceAsync (isUserActiveInTitle, presenceData)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.SetPresenceAsync(System.Boolean,Microsoft.Xbox.Services.Presence.PresenceData)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("SetPresenceAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isUserActiveInTitle" Type="System.Boolean" />
+        <Parameter Name="presenceData" Type="Microsoft.Xbox.Services.Presence.PresenceData" />
+      </Parameters>
+      <Docs>
+        <param name="isUserActiveInTitle">Indicates if the current user context is currently active or inactive in the title.
+The application can choose to set this based on an amount of inactivity.</param>
+        <param name="presenceData">Current user's presence data. (Optional)</param>
+        <summary>
+Sets presence info for the current user context.
+</summary>
+        <returns>To be added.</returns>
+        <remarks>Calls V1 POST /users/xuid({xuid})/devices/current/titles/current</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToDevicePresenceChange">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription SubscribeToDevicePresenceChange (string xboxUserId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription SubscribeToDevicePresenceChange([in]string xboxUserId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.SubscribeToDevicePresenceChange(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SubscribeToDevicePresenceChange (xboxUserId As String) As DevicePresenceChangeSubscription" />
+      <MemberSignature Language="F#" Value="abstract member SubscribeToDevicePresenceChange : string -&gt; Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription&#xA;override this.SubscribeToDevicePresenceChange : string -&gt; Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription" Usage="presenceService.SubscribeToDevicePresenceChange xboxUserId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.SubscribeToDevicePresenceChange(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">The Xbox User ID of the person of the subscription</param>
+        <summary>
+Subscribes to device presence change notifications via the DevicePresenceChanged event
+</summary>
+        <returns>RealTimeActivityDevicePresenceChangeSubscription containing the initial value of the PresenceDeviceRecord
+Register for device presence changes via the DevicePresenceChanged event</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToTitlePresenceChange">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription SubscribeToTitlePresenceChange (string xboxUserId, uint titleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription SubscribeToTitlePresenceChange([in]string xboxUserId, [in]unsigned int32 titleId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.SubscribeToTitlePresenceChange(System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SubscribeToTitlePresenceChange (xboxUserId As String, titleId As UInteger) As TitlePresenceChangeSubscription" />
+      <MemberSignature Language="F#" Value="abstract member SubscribeToTitlePresenceChange : string * uint32 -&gt; Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription&#xA;override this.SubscribeToTitlePresenceChange : string * uint32 -&gt; Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription" Usage="presenceService.SubscribeToTitlePresenceChange (xboxUserId, titleId)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.SubscribeToTitlePresenceChange(System.String,System.UInt32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+        <Parameter Name="titleId" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">The Xbox User ID of the person of the subscription</param>
+        <param name="titleId">The title ID of the subscription</param>
+        <summary>
+Subscribes to title presence change notifications via the TitlePresenceChanged event
+</summary>
+        <returns>RealTimeActivityDevicePresenceChangeSubscription containing the initial value of the PresenceDeviceRecord
+Register for device presence changes via the DevicePresenceChanged event</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitlePresenceChanged">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs&gt; TitlePresenceChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs&gt; TitlePresenceChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.Presence.PresenceService.TitlePresenceChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TitlePresenceChanged As EventHandler(Of TitlePresenceChangeEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.TitlePresenceChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs&gt; " Usage="member this.TitlePresenceChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.TitlePresenceChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Registers for title presence change notifications.  Event handlers will receive TitlePresenceChangeEventArgs^.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeFromDevicePresenceChange">
+      <MemberSignature Language="C#" Value="public void UnsubscribeFromDevicePresenceChange (Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription subscription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnsubscribeFromDevicePresenceChange([in]class Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription subscription) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.UnsubscribeFromDevicePresenceChange(Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnsubscribeFromDevicePresenceChange (subscription As DevicePresenceChangeSubscription)" />
+      <MemberSignature Language="F#" Value="abstract member UnsubscribeFromDevicePresenceChange : Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription -&gt; unit&#xA;override this.UnsubscribeFromDevicePresenceChange : Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription -&gt; unit" Usage="presenceService.UnsubscribeFromDevicePresenceChange subscription" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.UnsubscribeFromDevicePresenceChange(Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Microsoft.Xbox.Services.Presence.DevicePresenceChangeSubscription" />
+      </Parameters>
+      <Docs>
+        <param name="subscription">The subscription object to unsubscribe</param>
+        <summary>
+Unsubscribes a previously created device presence change subscription
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeFromTitlePresenceChange">
+      <MemberSignature Language="C#" Value="public void UnsubscribeFromTitlePresenceChange (Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription subscription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnsubscribeFromTitlePresenceChange([in]class Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription subscription) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceService.UnsubscribeFromTitlePresenceChange(Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnsubscribeFromTitlePresenceChange (subscription As TitlePresenceChangeSubscription)" />
+      <MemberSignature Language="F#" Value="abstract member UnsubscribeFromTitlePresenceChange : Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription -&gt; unit&#xA;override this.UnsubscribeFromTitlePresenceChange : Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription -&gt; unit" Usage="presenceService.UnsubscribeFromTitlePresenceChange subscription" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceServicePublicNonVirtuals.UnsubscribeFromTitlePresenceChange(Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription" />
+      </Parameters>
+      <Docs>
+        <param name="subscription">The subscription object to unsubscribe</param>
+        <summary>
+Unsubscribes a previously created title presence change subscription
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,434 @@
+﻿<Type Name="XboxServiceCallRoutedEventArgs" FullName="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class XboxServiceCallRoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxServiceCallRoutedEventArgs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxServiceCallRoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type XboxServiceCallRoutedEventArgs = class&#xA;    interface __IXboxServiceCallRoutedEventArgsPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Contains information about a service call.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ElapsedCallTime">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan ElapsedCallTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan ElapsedCallTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ElapsedCallTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElapsedCallTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.ElapsedCallTime : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ElapsedCallTime" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.ElapsedCallTime</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the elapsed time span between sending a request and receiving a response through the IXHR layer.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ETag">
+      <MemberSignature Language="C#" Value="public string ETag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ETag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As String" />
+      <MemberSignature Language="F#" Value="member this.ETag : string" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ETag" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.ETag</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the ETag returned by the service.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullResponseToString">
+      <MemberSignature Language="C#" Value="public string FullResponseToString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FullResponseToString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.FullResponseToString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullResponseToString As String" />
+      <MemberSignature Language="F#" Value="member this.FullResponseToString : string" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.FullResponseToString" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.FullResponseToString</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the a full response log formatted message of all the properties in XboxServiceCallRoutedEventArgs.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpMethod">
+      <MemberSignature Language="C#" Value="public string HttpMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HttpMethod" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.HttpMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpMethod As String" />
+      <MemberSignature Language="F#" Value="member this.HttpMethod : string" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.HttpMethod" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.HttpMethod</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the HTTP method used to contact the service.  For example, "GET".
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpStatus">
+      <MemberSignature Language="C#" Value="public uint HttpStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 HttpStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.HttpStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpStatus As UInteger" />
+      <MemberSignature Language="F#" Value="member this.HttpStatus : uint32" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.HttpStatus" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.HttpStatus</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the HTTP status code. For example, 200.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestBody">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.HttpCallRequestMessage RequestBody { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.HttpCallRequestMessage RequestBody" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.RequestBody" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestBody As HttpCallRequestMessage" />
+      <MemberSignature Language="F#" Value="member this.RequestBody : Microsoft.Xbox.Services.HttpCallRequestMessage" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.RequestBody" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.RequestBody</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.HttpCallRequestMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the request body that was sent to the service.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestHeaders">
+      <MemberSignature Language="C#" Value="public string RequestHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestHeaders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.RequestHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestHeaders As String" />
+      <MemberSignature Language="F#" Value="member this.RequestHeaders : string" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.RequestHeaders" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.RequestHeaders</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the request headers that were sent to the service.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestTimeUTC">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime RequestTimeUTC { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime RequestTimeUTC" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.RequestTimeUTC" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestTimeUTC As DateTime" />
+      <MemberSignature Language="F#" Value="member this.RequestTimeUTC : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.RequestTimeUTC" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.RequestTimeUTC</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the UTC time when the request was sent through the IXHR layer.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseBody">
+      <MemberSignature Language="C#" Value="public string ResponseBody { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseBody" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ResponseBody" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseBody As String" />
+      <MemberSignature Language="F#" Value="member this.ResponseBody : string" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ResponseBody" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.ResponseBody</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the response body returned by the service.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseCount">
+      <MemberSignature Language="C#" Value="public uint ResponseCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ResponseCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ResponseCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.ResponseCount : uint32" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ResponseCount" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.ResponseCount</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the number of responses in this session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseHeaders">
+      <MemberSignature Language="C#" Value="public string ResponseHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseHeaders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ResponseHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseHeaders As String" />
+      <MemberSignature Language="F#" Value="member this.ResponseHeaders : string" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ResponseHeaders" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.ResponseHeaders</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the response headers returned by the service.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseTimeUTC">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime ResponseTimeUTC { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime ResponseTimeUTC" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ResponseTimeUTC" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseTimeUTC As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ResponseTimeUTC : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.ResponseTimeUTC" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.ResponseTimeUTC</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the UTC time when the response was received through the IXHR layer.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Signature">
+      <MemberSignature Language="C#" Value="public string Signature { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Signature" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.Signature" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As String" />
+      <MemberSignature Language="F#" Value="member this.Signature : string" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.Signature" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.Signature</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the authentication signature returned by GetTokenAndSignatureAsync.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Token">
+      <MemberSignature Language="C#" Value="public string Token { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Token" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.Token" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Token As String" />
+      <MemberSignature Language="F#" Value="member this.Token : string" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.Token" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.Token</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the authentication token returned by GetTokenAndSignatureAsync.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Uri Url { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Uri Url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.Url" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As Uri" />
+      <MemberSignature Language="F#" Value="member this.Url : Windows.Foundation.Uri" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.Url" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.Url</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the URI used to contact the service.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxUserId">
+      <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs.XboxUserId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxServiceCallRoutedEventArgsPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the Xbox User Id in XboxServiceCallRoutedEventArgs.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

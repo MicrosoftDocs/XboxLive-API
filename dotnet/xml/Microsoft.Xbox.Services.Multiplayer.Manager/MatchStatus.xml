@@ -1,0 +1,373 @@
+﻿<Type Name="MatchStatus" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus">
+  <TypeSignature Language="C#" Value="public enum MatchStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MatchStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MatchStatus" />
+  <TypeSignature Language="F#" Value="type MatchStatus = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines values used to indicate status for the matchmaking stages.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Canceled">
+      <MemberSignature Language="C#" Value="Canceled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Canceled = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Canceled" />
+      <MemberSignature Language="VB.NET" Value="Canceled" />
+      <MemberSignature Language="F#" Value="Canceled = 14" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Canceled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>
+Indicates the matchmaking search has been canceled.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Canceling">
+      <MemberSignature Language="C#" Value="Canceling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Canceling = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Canceling" />
+      <MemberSignature Language="VB.NET" Value="Canceling" />
+      <MemberSignature Language="F#" Value="Canceling = 13" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Canceling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>
+Indicates that matchmaking is in the process of canceling the search.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="Completed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Completed = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Completed" />
+      <MemberSignature Language="VB.NET" Value="Completed" />
+      <MemberSignature Language="F#" Value="Completed = 10" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Completed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>
+Match was found and QoS measurement was successful.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluating">
+      <MemberSignature Language="C#" Value="Evaluating" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Evaluating = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Evaluating" />
+      <MemberSignature Language="VB.NET" Value="Evaluating" />
+      <MemberSignature Language="F#" Value="Evaluating = 9" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Evaluating" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>
+Evaluating initialization stage.
+If auto evaluate is true, then this stage is skipped.
+Otherwise the title will do its own evaluation.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Expired">
+      <MemberSignature Language="C#" Value="Expired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Expired = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Expired" />
+      <MemberSignature Language="VB.NET" Value="Expired" />
+      <MemberSignature Language="F#" Value="Expired = 12" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Expired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>
+Indicates the matchmaking search has expired.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Failed">
+      <MemberSignature Language="C#" Value="Failed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Failed = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Failed" />
+      <MemberSignature Language="VB.NET" Value="Failed" />
+      <MemberSignature Language="F#" Value="Failed = 15" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Failed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>
+Failed initialization stage.
+The initialization failed.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Found">
+      <MemberSignature Language="C#" Value="Found" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Found = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Found" />
+      <MemberSignature Language="VB.NET" Value="Found" />
+      <MemberSignature Language="F#" Value="Found = 3" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Found" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+Indicates the matchmaking search has found a match.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Joining">
+      <MemberSignature Language="C#" Value="Joining" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Joining = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Joining" />
+      <MemberSignature Language="VB.NET" Value="Joining" />
+      <MemberSignature Language="F#" Value="Joining = 4" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Joining" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+Joining initialization stage.
+Matchmaking creates the game session and adds users to it.
+The client has until the joining timeout to join the session during this phase.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Measuring">
+      <MemberSignature Language="C#" Value="Measuring" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Measuring = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Measuring" />
+      <MemberSignature Language="VB.NET" Value="Measuring" />
+      <MemberSignature Language="F#" Value="Measuring = 6" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Measuring" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+Measuring initialization stage.
+Stage where QoS measurement happens.
+The client has until the measurement timeout to upload qos measurements to the service during this phase.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+Indicates no matchmaking search has been started.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Resubmitting">
+      <MemberSignature Language="C#" Value="Resubmitting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Resubmitting = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Resubmitting" />
+      <MemberSignature Language="VB.NET" Value="Resubmitting" />
+      <MemberSignature Language="F#" Value="Resubmitting = 11" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Resubmitting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>
+If the match that was found was not successful and is resubmitting.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Searching">
+      <MemberSignature Language="C#" Value="Searching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus Searching = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Searching" />
+      <MemberSignature Language="VB.NET" Value="Searching" />
+      <MemberSignature Language="F#" Value="Searching = 2" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.Searching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+Indicates the matchmaking is still searching.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SubmittingMatchTicket">
+      <MemberSignature Language="C#" Value="SubmittingMatchTicket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus SubmittingMatchTicket = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.SubmittingMatchTicket" />
+      <MemberSignature Language="VB.NET" Value="SubmittingMatchTicket" />
+      <MemberSignature Language="F#" Value="SubmittingMatchTicket = 1" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.SubmittingMatchTicket" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+Indicates that a match ticket was submitted for matchmaking.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadingQosMeasurements">
+      <MemberSignature Language="C#" Value="UploadingQosMeasurements" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus UploadingQosMeasurements = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.UploadingQosMeasurements" />
+      <MemberSignature Language="VB.NET" Value="UploadingQosMeasurements" />
+      <MemberSignature Language="F#" Value="UploadingQosMeasurements = 7" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.UploadingQosMeasurements" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+Uploading QoS measurement results to the service.
+The client has until the measurement timeout to upload qos measurements to the service during this phase.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitingForRemoteClientsToJoin">
+      <MemberSignature Language="C#" Value="WaitingForRemoteClientsToJoin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus WaitingForRemoteClientsToJoin = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.WaitingForRemoteClientsToJoin" />
+      <MemberSignature Language="VB.NET" Value="WaitingForRemoteClientsToJoin" />
+      <MemberSignature Language="F#" Value="WaitingForRemoteClientsToJoin = 5" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.WaitingForRemoteClientsToJoin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+Waiting for remote clients to join the game session.
+The client has until the joining timeout to join the session during this phase.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitingForRemoteClientsToUploadQos">
+      <MemberSignature Language="C#" Value="WaitingForRemoteClientsToUploadQos" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus WaitingForRemoteClientsToUploadQos = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.WaitingForRemoteClientsToUploadQos" />
+      <MemberSignature Language="VB.NET" Value="WaitingForRemoteClientsToUploadQos" />
+      <MemberSignature Language="F#" Value="WaitingForRemoteClientsToUploadQos = 8" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus.WaitingForRemoteClientsToUploadQos" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+Waiting for remote clients to upload QoS measurement results to the service.
+The client has until the measurement timeout to upload qos measurements to the service during this phase.
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

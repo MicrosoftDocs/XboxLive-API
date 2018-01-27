@@ -1,0 +1,114 @@
+﻿<Type Name="LeaderboardColumn" FullName="Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn">
+  <TypeSignature Language="C#" Value="public sealed class LeaderboardColumn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LeaderboardColumn extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LeaderboardColumn" />
+  <TypeSignature Language="F#" Value="type LeaderboardColumn = class&#xA;    interface __ILeaderboardColumnPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a column in a collection of leaderboard items.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn.DisplayName" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardColumnPublicNonVirtuals.DisplayName</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+DEPRECATED
+The display name of the column.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatisticName">
+      <MemberSignature Language="C#" Value="public string StatisticName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StatisticName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn.StatisticName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatisticName As String" />
+      <MemberSignature Language="F#" Value="member this.StatisticName : string" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn.StatisticName" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardColumnPublicNonVirtuals.StatisticName</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The name the statistic displayed in the column.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatisticType">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.PropertyType StatisticType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.PropertyType StatisticType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn.StatisticType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatisticType As PropertyType" />
+      <MemberSignature Language="F#" Value="member this.StatisticType : Windows.Foundation.PropertyType" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn.StatisticType" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardColumnPublicNonVirtuals.StatisticType</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.PropertyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The property type of the statistic in the column.
+The type can be one of the following:
+PropertyType.Uint64, PropertyType.Double, 
+PropertyType.String, PropertyType.DateTime, 
+or PropertyType.OtherType if unknown.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

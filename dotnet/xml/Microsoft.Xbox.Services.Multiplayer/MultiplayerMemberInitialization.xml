@@ -1,0 +1,213 @@
+﻿<Type Name="MultiplayerMemberInitialization" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerMemberInitialization" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerMemberInitialization extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerMemberInitialization" />
+  <TypeSignature Language="F#" Value="type MultiplayerMemberInitialization = class&#xA;    interface __IMultiplayerMemberInitializationPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents managed initialization for a session.
+</summary>
+    <remarks>
+If using managed initialization, the session expects the system or the title to perform initialization
+following the session creation and/or as new members join the session. The session automatically tracks
+the timeouts and initialization stages, including QoS measurements if any metrics are set.
+These timeouts override the session's reservation and ready timeouts for members that have the
+MultiplayerSessionMember.InitializationEpisode Property set. 
+
+In managed initialization, the initialization stage goes from "joining" to "measuring" to "evaluating". 
+If the MultiplayerMemberInitialization.AutoEvaluate Property is set to true, the evaluating stage is skipped.
+If metrics are not set for the session, the measuring stage is skipped. 
+If the stage is set to "failed", the session cannot be initialized. 
+</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"memberInitialization": {
+    "joinTimeout": 4000,
+    "measurementTimeout" : 5000,
+    "evaluationTimeout" : 5000,
+    "externalEvaluation" : true,
+    "membersNeededToStart" : 2
+},
+</code></example>
+  </Docs>
+  <Members>
+    <Member MemberName="EvaluationTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan EvaluationTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan EvaluationTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.EvaluationTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluationTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.EvaluationTimeout : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.EvaluationTimeout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerMemberInitializationPublicNonVirtuals.EvaluationTimeout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The period of time that the Xbox system waits for evaluation to occur during managed initialization. 
+Returns the timeout for the evaluation stage of the QoS process. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalEvaluation">
+      <MemberSignature Language="C#" Value="public bool ExternalEvaluation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExternalEvaluation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.ExternalEvaluation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExternalEvaluation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExternalEvaluation : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.ExternalEvaluation" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerMemberInitializationPublicNonVirtuals.ExternalEvaluation</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A value that indicates if the system should auto-evaluate during managed initialization. 
+This is an optional evaluate stage for a title. The title can do evaluation when set to false.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JoinTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan JoinTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan JoinTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.JoinTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JoinTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.JoinTimeout : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.JoinTimeout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerMemberInitializationPublicNonVirtuals.JoinTimeout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The period of time that the system waits for a member to join a session during the joining stage 
+of managed initialization. This stage is the first stage of the QoS process.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasurementTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan MeasurementTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan MeasurementTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.MeasurementTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeasurementTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MeasurementTimeout : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.MeasurementTimeout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerMemberInitializationPublicNonVirtuals.MeasurementTimeout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The period of time that the system waits for a measuring operation to occur during managed initialization.
+This stage is the measurement stage of the QoS process. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberInitializationSet">
+      <MemberSignature Language="C#" Value="public bool MemberInitializationSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MemberInitializationSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.MemberInitializationSet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberInitializationSet As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MemberInitializationSet : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.MemberInitializationSet" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerMemberInitializationPublicNonVirtuals.MemberInitializationSet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates if the ManagedInitializion object is set, which means that the session is using
+managed initialization.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MembersNeededToStart">
+      <MemberSignature Language="C#" Value="public uint MembersNeededToStart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MembersNeededToStart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.MembersNeededToStart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MembersNeededToStart As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MembersNeededToStart : uint32" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization.MembersNeededToStart" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerMemberInitializationPublicNonVirtuals.MembersNeededToStart</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The number of session members needed to start a session, during managed initialization episode 0 only. 
+Defaults to 2. This number must be between 1 and maxMemberCount.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

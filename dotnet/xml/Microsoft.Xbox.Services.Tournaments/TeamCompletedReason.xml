@@ -1,0 +1,109 @@
+﻿<Type Name="TeamCompletedReason" FullName="Microsoft.Xbox.Services.Tournaments.TeamCompletedReason">
+  <TypeSignature Language="C#" Value="public enum TeamCompletedReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TeamCompletedReason extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TeamCompletedReason" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TeamCompletedReason" />
+  <TypeSignature Language="F#" Value="type TeamCompletedReason = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary />
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="Completed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamCompletedReason Completed = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Completed" />
+      <MemberSignature Language="VB.NET" Value="Completed" />
+      <MemberSignature Language="F#" Value="Completed = 4" Usage="Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Completed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamCompletedReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+The team has successfully completed the tournament.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Eliminated">
+      <MemberSignature Language="C#" Value="Eliminated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamCompletedReason Eliminated = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Eliminated" />
+      <MemberSignature Language="VB.NET" Value="Eliminated" />
+      <MemberSignature Language="F#" Value="Eliminated = 2" Usage="Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Eliminated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamCompletedReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+The team was eliminated.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Evicted">
+      <MemberSignature Language="C#" Value="Evicted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamCompletedReason Evicted = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Evicted" />
+      <MemberSignature Language="VB.NET" Value="Evicted" />
+      <MemberSignature Language="F#" Value="Evicted = 3" Usage="Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Evicted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamCompletedReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+The team was evicted.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rejected">
+      <MemberSignature Language="C#" Value="Rejected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamCompletedReason Rejected = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Rejected" />
+      <MemberSignature Language="VB.NET" Value="Rejected" />
+      <MemberSignature Language="F#" Value="Rejected = 1" Usage="Microsoft.Xbox.Services.Tournaments.TeamCompletedReason.Rejected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamCompletedReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+The team was rejected.
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,111 @@
+﻿<Type Name="AchievementRequirement" FullName="Microsoft.Xbox.Services.Achievements.AchievementRequirement">
+  <TypeSignature Language="C#" Value="public sealed class AchievementRequirement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AchievementRequirement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Achievements.AchievementRequirement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AchievementRequirement" />
+  <TypeSignature Language="F#" Value="type AchievementRequirement = class&#xA;    interface __IAchievementRequirementPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents requirements for unlocking the achievement.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CurrentProgressValue">
+      <MemberSignature Language="C#" Value="public string CurrentProgressValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrentProgressValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.AchievementRequirement.CurrentProgressValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentProgressValue As String" />
+      <MemberSignature Language="F#" Value="member this.CurrentProgressValue : string" Usage="Microsoft.Xbox.Services.Achievements.AchievementRequirement.CurrentProgressValue" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementRequirementPublicNonVirtuals.CurrentProgressValue</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A value that indicates the current progress of the player towards meeting
+the requirement.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.AchievementRequirement.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Xbox.Services.Achievements.AchievementRequirement.Id" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementRequirementPublicNonVirtuals.Id</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The achievement requirement ID.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetProgressValue">
+      <MemberSignature Language="C#" Value="public string TargetProgressValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetProgressValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.AchievementRequirement.TargetProgressValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetProgressValue As String" />
+      <MemberSignature Language="F#" Value="member this.TargetProgressValue : string" Usage="Microsoft.Xbox.Services.Achievements.AchievementRequirement.TargetProgressValue" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementRequirementPublicNonVirtuals.TargetProgressValue</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The target progress value that the player must reach in order to meet
+the requirement.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

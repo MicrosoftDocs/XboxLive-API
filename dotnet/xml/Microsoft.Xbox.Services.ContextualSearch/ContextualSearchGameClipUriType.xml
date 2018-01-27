@@ -1,0 +1,120 @@
+﻿<Type Name="ContextualSearchGameClipUriType" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType">
+  <TypeSignature Language="C#" Value="public enum ContextualSearchGameClipUriType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchGameClipUriType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ContextualSearchGameClipUriType" />
+  <TypeSignature Language="F#" Value="type ContextualSearchGameClipUriType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the type of game clip URI.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Download">
+      <MemberSignature Language="C#" Value="Download" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType Download = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.Download" />
+      <MemberSignature Language="VB.NET" Value="Download" />
+      <MemberSignature Language="F#" Value="Download = 2" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.Download" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Game clip URI is the location of the clip available for download.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpLiveStreaming">
+      <MemberSignature Language="C#" Value="HttpLiveStreaming" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType HttpLiveStreaming = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.HttpLiveStreaming" />
+      <MemberSignature Language="VB.NET" Value="HttpLiveStreaming" />
+      <MemberSignature Language="F#" Value="HttpLiveStreaming = 4" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.HttpLiveStreaming" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>Game clip URI is the Apple HTTP Live Streaming URL.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Game clip URI type is not known or not set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Original">
+      <MemberSignature Language="C#" Value="Original" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType Original = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.Original" />
+      <MemberSignature Language="VB.NET" Value="Original" />
+      <MemberSignature Language="F#" Value="Original = 1" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.Original" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Game clip URI is the location of the original game clip in unprocessed form.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SmoothStreaming">
+      <MemberSignature Language="C#" Value="SmoothStreaming" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType SmoothStreaming = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.SmoothStreaming" />
+      <MemberSignature Language="VB.NET" Value="SmoothStreaming" />
+      <MemberSignature Language="F#" Value="SmoothStreaming = 3" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType.SmoothStreaming" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>Game clip URI is the IIS Smooth Streaming URL(manifest pointer).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,132 @@
+﻿<Type Name="XboxLiveServicesSettings" FullName="Microsoft.Xbox.Services.System.XboxLiveServicesSettings">
+  <TypeSignature Language="C#" Value="public sealed class XboxLiveServicesSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveServicesSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.XboxLiveServicesSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxLiveServicesSettings" />
+  <TypeSignature Language="F#" Value="type XboxLiveServicesSettings = class&#xA;    interface __IXboxLiveServicesSettingsPublicNonVirtuals&#xA;    interface __IXboxLiveServicesSettingsProtectedNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.System.__IXboxLiveServicesSettingsStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents settings for an HTTP call.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DiagnosticsTraceLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel DiagnosticsTraceLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel DiagnosticsTraceLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.XboxLiveServicesSettings.DiagnosticsTraceLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiagnosticsTraceLevel As XboxServicesDiagnosticsTraceLevel" />
+      <MemberSignature Language="F#" Value="member this.DiagnosticsTraceLevel : Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel with get, set" Usage="Microsoft.Xbox.Services.System.XboxLiveServicesSettings.DiagnosticsTraceLevel" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IXboxLiveServicesSettingsPublicNonVirtuals.DiagnosticsTraceLevel</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates the level of debug messages to send to the debugger's Output window.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogCallRouted">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveLogCallEventArgs&gt; LogCallRouted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.XboxLiveLogCallEventArgs&gt; LogCallRouted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.System.XboxLiveServicesSettings.LogCallRouted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LogCallRouted As EventHandler(Of XboxLiveLogCallEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.LogCallRouted : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveLogCallEventArgs&gt; " Usage="member this.LogCallRouted : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveLogCallEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Xbox.Services.System.__IXboxLiveServicesSettingsPublicNonVirtuals.LogCallRouted</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveLogCallEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Registers for log calls.  Event handlers will receive an XboxLiveLogCallEventArgs object.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SingletonInstance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.System.XboxLiveServicesSettings SingletonInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.System.XboxLiveServicesSettings SingletonInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.XboxLiveServicesSettings.SingletonInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SingletonInstance As XboxLiveServicesSettings" />
+      <MemberSignature Language="F#" Value="member this.SingletonInstance : Microsoft.Xbox.Services.System.XboxLiveServicesSettings" Usage="Microsoft.Xbox.Services.System.XboxLiveServicesSettings.SingletonInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.System.XboxLiveServicesSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Gets the XboxLiveServicesSettings singleton instance
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WnsEventRecevied">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveWnsEventArgs&gt; WnsEventRecevied;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.XboxLiveWnsEventArgs&gt; WnsEventRecevied" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.System.XboxLiveServicesSettings.WnsEventRecevied" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event WnsEventRecevied As EventHandler(Of XboxLiveWnsEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WnsEventRecevied : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveWnsEventArgs&gt; " Usage="member this.WnsEventRecevied : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveWnsEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Xbox.Services.System.__IXboxLiveServicesSettingsPublicNonVirtuals.WnsEventRecevied</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxLiveWnsEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Registers for WNS notification.  Event handlers will receive an XboxLiveWNSEventArgs object.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

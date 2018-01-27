@@ -1,0 +1,63 @@
+﻿<Type Name="LeaderboardResultEventArgs" FullName="Microsoft.Xbox.Services.Statistics.Manager.LeaderboardResultEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class LeaderboardResultEventArgs : Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LeaderboardResultEventArgs extends System.Object implements class Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Statistics.Manager.LeaderboardResultEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LeaderboardResultEventArgs&#xA;Implements StatisticEventArgs" />
+  <TypeSignature Language="F#" Value="type LeaderboardResultEventArgs = class&#xA;    interface StatisticEventArgs&#xA;    interface __ILeaderboardResultEventArgsPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents the results of a leaderboard request.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Leaderboard.LeaderboardResult Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult Result" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.LeaderboardResultEventArgs.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As LeaderboardResult" />
+      <MemberSignature Language="F#" Value="member this.Result : Microsoft.Xbox.Services.Leaderboard.LeaderboardResult" Usage="Microsoft.Xbox.Services.Statistics.Manager.LeaderboardResultEventArgs.Result" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Statistics.Manager.__ILeaderboardResultEventArgsPublicNonVirtuals.Result</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Leaderboard.LeaderboardResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> 
+Gets the leaderboard result from a leaderboard request
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

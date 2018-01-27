@@ -1,0 +1,84 @@
+﻿<Type Name="MultiplePermissionsCheckResult" FullName="Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult">
+  <TypeSignature Language="C#" Value="public sealed class MultiplePermissionsCheckResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplePermissionsCheckResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplePermissionsCheckResult" />
+  <TypeSignature Language="F#" Value="type MultiplePermissionsCheckResult = class&#xA;    interface __IMultiplePermissionsCheckResultPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Contains the results of multiple permission checks.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Privacy.PermissionCheckResult&gt; Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Privacy.PermissionCheckResult&gt; Items" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IVectorView(Of PermissionCheckResult)" />
+      <MemberSignature Language="F#" Value="member this.Items : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Privacy.PermissionCheckResult&gt;" Usage="Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult.Items" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Privacy.__IMultiplePermissionsCheckResultPublicNonVirtuals.Items</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Privacy.PermissionCheckResult&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Contains a collection of results returned when checking multiple permissions for a user.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxUserId">
+      <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult.XboxUserId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Privacy.__IMultiplePermissionsCheckResultPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Xbox User Id for the target user of the permission request.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

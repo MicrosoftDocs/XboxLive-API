@@ -1,0 +1,84 @@
+﻿<Type Name="CurrentMatchMetadata" FullName="Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata">
+  <TypeSignature Language="C#" Value="public sealed class CurrentMatchMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CurrentMatchMetadata extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CurrentMatchMetadata" />
+  <TypeSignature Language="F#" Value="type CurrentMatchMetadata = class&#xA;    interface __ICurrentMatchMetadataPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a reference to a multiplayer session.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GameSessionReference">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference GameSessionReference { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference GameSessionReference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata.GameSessionReference" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameSessionReference As MultiplayerSessionReference" />
+      <MemberSignature Language="F#" Value="member this.GameSessionReference : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata.GameSessionReference" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ICurrentMatchMetadataPublicNonVirtuals.GameSessionReference</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The uniquely identifying information for the game session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchDetails">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.MatchMetadata MatchDetails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.MatchMetadata MatchDetails" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata.MatchDetails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchDetails As MatchMetadata" />
+      <MemberSignature Language="F#" Value="member this.MatchDetails : Microsoft.Xbox.Services.Tournaments.MatchMetadata" Usage="Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata.MatchDetails" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ICurrentMatchMetadataPublicNonVirtuals.MatchDetails</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.MatchMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Metadata associated with the team's current or upcoming match.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

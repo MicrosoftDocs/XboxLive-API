@@ -1,0 +1,859 @@
+﻿<Type Name="MultiplayerSessionConstants" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerSessionConstants" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionConstants = class&#xA;    interface __IMultiplayerSessionConstantsPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents constant values for a multiplayer session.
+</summary>
+    <remarks>To be added.</remarks>
+    <example>
+The following example shows the format of the JSON object that represents
+this class:
+<code>
+"constants": {
+    "system": {
+        "capabilities": {
+            "clientMatchmaking": true,
+            "connectivity": true,
+            "suppressPresenceActivityCheck": true,
+            "gameplay": true,
+            "large": false
+        },
+        "version": 1,
+        "maxMembersCount": 100,
+        "visibility": "Open",
+        "initiators": [
+            "3456"
+        ],
+        "inviteProtocol": "party",
+        "reservedRemovalTimeout": 30000,
+        "inactiveRemovalTimeout": 7200000,
+        "readyRemovalTimeout": 180000,
+        "sessionEmptyTimeout": 0,
+        "metrics": {
+            "latency": true,
+            "bandwidthDown": true,
+            "bandwidthUp": true,
+            "custom": true
+        },
+        "memberInitialization": {
+            "joinTimeout": 4000,
+            "measurementTimeout": 5000,
+            "evaluationTimeout": 5000,
+            "externalEvaluation": false,
+            "membersNeededToStart": 2
+        },
+        "peerToPeerRequirements": {
+            "latencyMaximum": 250,
+            "bandwidthMinimum": 10000
+        },
+        "peerToHostRequirements": {
+            "latencyMaximum": 250,
+            "bandwidthDownMinimum": 100000,
+            "bandwidthUpMinimum": 1000,
+            "hostSelectionMetric": "bandwidthUp"
+        },
+        "measurementServerAddresses": {
+            "east.azure.com": {
+                "secureDeviceAddress": "r5Y="
+            },
+            "west.azure.com": {
+                "secureDeviceAddress": "rwY="
+            }
+        }
+    },
+    "custom": {}
+}
+</code></example>
+  </Docs>
+  <Members>
+    <Member MemberName="ArbitrationTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan ArbitrationTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan ArbitrationTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.ArbitrationTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArbitrationTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.ArbitrationTimeout : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.ArbitrationTimeout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.ArbitrationTimeout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Delta from start time representing the point at which results are finalized. 
+If no one has reported (client or server) at this point, we declare the match results incomplete.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapabilitiesArbitration">
+      <MemberSignature Language="C#" Value="public bool CapabilitiesArbitration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapabilitiesArbitration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesArbitration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapabilitiesArbitration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapabilitiesArbitration : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesArbitration" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CapabilitiesArbitration</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+True if arbitration capability is set on the session for a tournament.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapabilitiesConnectionRequiredForActiveMember">
+      <MemberSignature Language="C#" Value="public bool CapabilitiesConnectionRequiredForActiveMember { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapabilitiesConnectionRequiredForActiveMember" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesConnectionRequiredForActiveMember" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapabilitiesConnectionRequiredForActiveMember As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapabilitiesConnectionRequiredForActiveMember : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesConnectionRequiredForActiveMember" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CapabilitiesConnectionRequiredForActiveMember</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A Boolean value that indicates whether a connection is required for active members in a multiplayer session.
+If true, this connection is required to have a member be active.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapabilitiesConnectivity">
+      <MemberSignature Language="C#" Value="public bool CapabilitiesConnectivity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapabilitiesConnectivity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesConnectivity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapabilitiesConnectivity As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapabilitiesConnectivity : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesConnectivity" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CapabilitiesConnectivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A value that indicates if the session has connectivity capabilities.
+True if the session has connectivity capabilities, and false otherwise.
+If false, the session can't enable any metrics and the session members can not set their SecureDeviceAddress.  
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapabilitiesCrossplay">
+      <MemberSignature Language="C#" Value="public bool CapabilitiesCrossplay { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapabilitiesCrossplay" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesCrossplay" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapabilitiesCrossplay As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapabilitiesCrossplay : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesCrossplay" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CapabilitiesCrossplay</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A Boolean value that indicates whether a multiplayer session supports crossplay between Xbox One and Windows 10. 
+True if the multiplayer session supports crossplay.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapabilitiesGameplay">
+      <MemberSignature Language="C#" Value="public bool CapabilitiesGameplay { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapabilitiesGameplay" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesGameplay" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapabilitiesGameplay As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapabilitiesGameplay : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesGameplay" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CapabilitiesGameplay</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A value that indicates whether the session represents actual gameplay, as opposed to setup/menu time
+such as a lobby or matchmaking.
+If true, then the session is in gameplay mode.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapabilitiesLarge">
+      <MemberSignature Language="C#" Value="public bool CapabilitiesLarge { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapabilitiesLarge" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesLarge" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapabilitiesLarge As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapabilitiesLarge : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesLarge" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CapabilitiesLarge</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A value that indicates if the session can host a large number of users, which has impact on other session properties.
+If true, this session can host a large number of users.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapabilitiesSearchable">
+      <MemberSignature Language="C#" Value="public bool CapabilitiesSearchable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapabilitiesSearchable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesSearchable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapabilitiesSearchable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapabilitiesSearchable : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesSearchable" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CapabilitiesSearchable</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+True, if the session can be linked to a search handle for searching.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapabilitiesSuppressPresenceActivityCheck">
+      <MemberSignature Language="C#" Value="public bool CapabilitiesSuppressPresenceActivityCheck { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapabilitiesSuppressPresenceActivityCheck" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesSuppressPresenceActivityCheck" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapabilitiesSuppressPresenceActivityCheck As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapabilitiesSuppressPresenceActivityCheck : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesSuppressPresenceActivityCheck" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CapabilitiesSuppressPresenceActivityCheck</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A value that indicates if active users of the session are demoted to inactive status. 
+By default (if false), active users are required to remain online playing the title, otherwise they get demoted to 
+inactive status. Setting this flag to true disables this check so that members stay active indefinitely.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapabilitiesTeam">
+      <MemberSignature Language="C#" Value="public bool CapabilitiesTeam { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapabilitiesTeam" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesTeam" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapabilitiesTeam As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapabilitiesTeam : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesTeam" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CapabilitiesTeam</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+True if team capability is set on the session for a tournament.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapabilitiesUserAuthorizationStyle">
+      <MemberSignature Language="C#" Value="public bool CapabilitiesUserAuthorizationStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapabilitiesUserAuthorizationStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesUserAuthorizationStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapabilitiesUserAuthorizationStyle As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapabilitiesUserAuthorizationStyle : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CapabilitiesUserAuthorizationStyle" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CapabilitiesUserAuthorizationStyle</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Aa Boolean value that indicates whether a multiplayer session uses user authorization style, which indicates
+that the session supports calls from platforms without strong title identity. This capability can't be set on large sessions.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomConstantsJson">
+      <MemberSignature Language="C#" Value="public string CustomConstantsJson { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CustomConstantsJson" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CustomConstantsJson" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomConstantsJson As String" />
+      <MemberSignature Language="F#" Value="member this.CustomConstantsJson : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.CustomConstantsJson" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.CustomConstantsJson</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A JSON string that specifies the custom constants for the session.  These can not be changed after the session is created (Optional).
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableMetricsBandwidthDown">
+      <MemberSignature Language="C#" Value="public bool EnableMetricsBandwidthDown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableMetricsBandwidthDown" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.EnableMetricsBandwidthDown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnableMetricsBandwidthDown As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableMetricsBandwidthDown : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.EnableMetricsBandwidthDown" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.EnableMetricsBandwidthDown</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates if the title wants bandwidth down (host to session members) measured for determining connectivity.
+Requires CapabilitiesConnectivity capability.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableMetricsBandwidthUp">
+      <MemberSignature Language="C#" Value="public bool EnableMetricsBandwidthUp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableMetricsBandwidthUp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.EnableMetricsBandwidthUp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnableMetricsBandwidthUp As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableMetricsBandwidthUp : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.EnableMetricsBandwidthUp" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.EnableMetricsBandwidthUp</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates if the title wants bandwidth up (session members to host) measured for determining connectivity.
+Requires CapabilitiesConnectivity capability.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableMetricsCustom">
+      <MemberSignature Language="C#" Value="public bool EnableMetricsCustom { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableMetricsCustom" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.EnableMetricsCustom" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnableMetricsCustom As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableMetricsCustom : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.EnableMetricsCustom" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.EnableMetricsCustom</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates if the title wants a custom measurement measured for determining connectivity.
+Requires CapabilitiesConnectivity capability.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableMetricsLatency">
+      <MemberSignature Language="C#" Value="public bool EnableMetricsLatency { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableMetricsLatency" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.EnableMetricsLatency" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnableMetricsLatency As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableMetricsLatency : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.EnableMetricsLatency" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.EnableMetricsLatency</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates if the title wants latency measured for determining connectivity.
+Requires CapabilitiesConnectivity capability.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForfeitTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan ForfeitTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan ForfeitTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.ForfeitTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForfeitTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.ForfeitTimeout : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.ForfeitTimeout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.ForfeitTimeout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Delta from start time representing the point at which, if the session has no active users, the match is canceled.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitiatorXboxUserIds">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; InitiatorXboxUserIds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; InitiatorXboxUserIds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.InitiatorXboxUserIds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitiatorXboxUserIds As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.InitiatorXboxUserIds : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.InitiatorXboxUserIds" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.InitiatorXboxUserIds</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A collection of Xbox User IDs indicating who initiated the session (Optional).
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInitialization">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization ManagedInitialization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization ManagedInitialization" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.ManagedInitialization" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManagedInitialization As MultiplayerManagedInitialization" />
+      <MemberSignature Language="F#" Value="member this.ManagedInitialization : Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.ManagedInitialization" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.ManagedInitialization</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Call MemberInitialization instead", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerManagedInitialization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Information about managed initialization for the session.
+If a ManagedInitialization object is set, the session expects the client system or title to perform
+initialization following session creation. The timeouts and initialization stages are automatically tracked by
+the session, including initial QoS if any metrics are set.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxMembersInSession">
+      <MemberSignature Language="C#" Value="public uint MaxMembersInSession { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MaxMembersInSession" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MaxMembersInSession" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxMembersInSession As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MaxMembersInSession : uint32 with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MaxMembersInSession" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.MaxMembersInSession</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The maximum number of members in this session.
+</summary>
+        <value>To be added.</value>
+        <remarks>
+To accommodate a maximum number of members that is over 100, the session must be considered large
+and have the MultiplayerSessionConstants.CapabilitiesLarge Property set to true.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasurementServerAddressesJson">
+      <MemberSignature Language="C#" Value="public string MeasurementServerAddressesJson { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MeasurementServerAddressesJson" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MeasurementServerAddressesJson" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeasurementServerAddressesJson As String" />
+      <MemberSignature Language="F#" Value="member this.MeasurementServerAddressesJson : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MeasurementServerAddressesJson" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.MeasurementServerAddressesJson</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A JSON string specifying the servers that can be used for QoS measurements.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberInactiveTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan MemberInactiveTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan MemberInactiveTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MemberInactiveTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberInactiveTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MemberInactiveTimeout : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MemberInactiveTimeout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.MemberInactiveTimeout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The period of time, in milliseconds, that the session waits for an inactive member reservation
+to become active, after which the session removes the member.
+The default value is 2 hours. A value of 0 is allowed and indicates an immediate timeout.
+If the timeout is not specified, it is considered infinite.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberInitialization">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization MemberInitialization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization MemberInitialization" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MemberInitialization" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberInitialization As MultiplayerMemberInitialization" />
+      <MemberSignature Language="F#" Value="member this.MemberInitialization : Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MemberInitialization" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.MemberInitialization</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerMemberInitialization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Information about managed initialization for the session.
+If a MemberInitialization object is set, the session expects the client system or title to perform
+initialization following session creation. The timeouts and initialization stages are automatically tracked by
+the session, including initial QoS if any metrics are set.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberReadyTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan MemberReadyTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan MemberReadyTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MemberReadyTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberReadyTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MemberReadyTimeout : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MemberReadyTimeout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.MemberReadyTimeout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The period of time, in milliseconds, that the session waits for a member marked as ready by the
+shell to be set as active. 
+When the shell launches the title to start a multiplayer game, the member is marked as ready.
+The default value is 1 minute. A value of 0 is allowed and indicates an immediate timeout.
+If the timeout is not specified, it is considered infinite.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberReservationTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan MemberReservationTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan MemberReservationTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MemberReservationTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberReservationTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MemberReservationTimeout : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MemberReservationTimeout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.MemberReservationTimeout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The period of time, in milliseconds, that the session holds a member reservation, after which the member is removed.
+The default value is 10 seconds. A value of 0 is allowed and indicates an immediate timeout.
+If the timeout is not specified, it is considered infinite.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplayerSessionVisibility">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility MultiplayerSessionVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility MultiplayerSessionVisibility" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MultiplayerSessionVisibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property MultiplayerSessionVisibility As MultiplayerSessionVisibility" />
+      <MemberSignature Language="F#" Value="member this.MultiplayerSessionVisibility : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.MultiplayerSessionVisibility" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.MultiplayerSessionVisibility</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The visibility of this session.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerToHostRequirements">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements PeerToHostRequirements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements PeerToHostRequirements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.PeerToHostRequirements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerToHostRequirements As MultiplayerPeerToHostRequirements" />
+      <MemberSignature Language="F#" Value="member this.PeerToHostRequirements : Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.PeerToHostRequirements" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.PeerToHostRequirements</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+An object that contains QoS requirements for the connection between the host and session members. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerToPeerRequirements">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements PeerToPeerRequirements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements PeerToPeerRequirements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.PeerToPeerRequirements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerToPeerRequirements As MultiplayerPeerToPeerRequirements" />
+      <MemberSignature Language="F#" Value="member this.PeerToPeerRequirements : Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.PeerToPeerRequirements" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.PeerToPeerRequirements</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToPeerRequirements</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+An object that contains QoS requirements for the connection between session members. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionEmptyTimeout">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan SessionEmptyTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan SessionEmptyTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.SessionEmptyTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionEmptyTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.SessionEmptyTimeout : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants.SessionEmptyTimeout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionConstantsPublicNonVirtuals.SessionEmptyTimeout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The period of time, in milliseconds, that the session is empty before the session is deleted.
+If the session is empty for this timeout, then the session is deleted.
+The default value is 0, which indicates an immediate timeout.
+If the timeout is not specified, it is considered infinite.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

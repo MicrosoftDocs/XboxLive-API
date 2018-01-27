@@ -1,0 +1,344 @@
+﻿<Type Name="MultiplayerGetSessionsRequest" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerGetSessionsRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerGetSessionsRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerGetSessionsRequest" />
+  <TypeSignature Language="F#" Value="type MultiplayerGetSessionsRequest = class&#xA;    interface __IMultiplayerGetSessionsRequestPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines the search filters for retrieveing a collection of discoverable sessions. Used in MultiplayerService::GetSessionsAsync().
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiplayerGetSessionsRequest (string serviceConfigurationId, uint maxItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]string serviceConfigurationId, [in]unsigned int32 maxItems) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.#ctor(System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceConfigurationId As String, maxItems As UInteger)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest : string * uint32 -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest" Usage="new Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest (serviceConfigurationId, maxItems)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration id associated with the sessions.</param>
+        <param name="maxItems">The maximum number of sessions to return.</param>
+        <summary>
+Constructs a new MultiplayerGetSessionsRequest object.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContractVersionFilter">
+      <MemberSignature Language="C#" Value="public uint ContractVersionFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ContractVersionFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.ContractVersionFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContractVersionFilter As UInteger" />
+      <MemberSignature Language="F#" Value="member this.ContractVersionFilter : uint32 with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.ContractVersionFilter" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.ContractVersionFilter</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Filter results to just sessions with this major version, or less, of the contract. Set to 0 to ignore the contract version.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeInactiveSessions">
+      <MemberSignature Language="C#" Value="public bool IncludeInactiveSessions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeInactiveSessions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.IncludeInactiveSessions" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeInactiveSessions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeInactiveSessions : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.IncludeInactiveSessions" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.IncludeInactiveSessions</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates if inactive sessions are included in the results.  You must specify xboxUserIdFilter if this value is set to true.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludePrivateSessions">
+      <MemberSignature Language="C#" Value="public bool IncludePrivateSessions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludePrivateSessions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.IncludePrivateSessions" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludePrivateSessions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludePrivateSessions : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.IncludePrivateSessions" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.IncludePrivateSessions</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates if private sessions are included in the results.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeReservations">
+      <MemberSignature Language="C#" Value="public bool IncludeReservations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeReservations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.IncludeReservations" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeReservations As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeReservations : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.IncludeReservations" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.IncludeReservations</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates if sessions that the user hasn't accepted are included in the results.  You must specify xboxUserIdFilter if this value is set to true.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeywordFilter">
+      <MemberSignature Language="C#" Value="public string KeywordFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeywordFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.KeywordFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeywordFilter As String" />
+      <MemberSignature Language="F#" Value="member this.KeywordFilter : string with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.KeywordFilter" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.KeywordFilter</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Optional. Filter results to just sessions with this keyword.
+You must specify one of XboxUserIdFilter, XboxUserIdsFilter, or KeywordFilter. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxItems">
+      <MemberSignature Language="C#" Value="public uint MaxItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MaxItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.MaxItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxItems As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MaxItems : uint32" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.MaxItems" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.MaxItems</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The maximum number of sessions to return.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceConfigurationId">
+      <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.ServiceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationId : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.ServiceConfigurationId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.ServiceConfigurationId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The service configuration id that the sessions are part of.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionTemplateNameFilter">
+      <MemberSignature Language="C#" Value="public string SessionTemplateNameFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SessionTemplateNameFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.SessionTemplateNameFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionTemplateNameFilter As String" />
+      <MemberSignature Language="F#" Value="member this.SessionTemplateNameFilter : string with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.SessionTemplateNameFilter" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.SessionTemplateNameFilter</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Optional. The name of the template for the multiplayer session to filter on.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibilityFilter">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility VisibilityFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility VisibilityFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.VisibilityFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisibilityFilter As MultiplayerSessionVisibility" />
+      <MemberSignature Language="F#" Value="member this.VisibilityFilter : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.VisibilityFilter" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.VisibilityFilter</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Filter results to just sessions with the specified visibility.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxUserIdFilter">
+      <MemberSignature Language="C#" Value="public string XboxUserIdFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XboxUserIdFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.XboxUserIdFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property XboxUserIdFilter As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserIdFilter : string with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.XboxUserIdFilter" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.XboxUserIdFilter</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Optional. Filter results to just sessions that contain this Xbox User ID.
+You must specify one of XboxUserIdFilter, XboxUserIdsFilter, or KeywordFilter. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxUserIdsFilter">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; XboxUserIdsFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; XboxUserIdsFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.XboxUserIdsFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property XboxUserIdsFilter As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.XboxUserIdsFilter : Windows.Foundation.Collections.IVectorView&lt;string&gt; with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest.XboxUserIdsFilter" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerGetSessionsRequestPublicNonVirtuals.XboxUserIdsFilter</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Optional. Filter results to just sessions that contains these Xbox User IDs.
+You must specify one of XboxUserIdFilter, XboxUserIdsFilter, or KeywordFilter. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

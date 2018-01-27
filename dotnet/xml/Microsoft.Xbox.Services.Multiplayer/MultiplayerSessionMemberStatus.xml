@@ -1,0 +1,116 @@
+﻿<Type Name="MultiplayerSessionMemberStatus" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus">
+  <TypeSignature Language="C#" Value="public enum MultiplayerSessionMemberStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionMemberStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MultiplayerSessionMemberStatus" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionMemberStatus = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines values used to indicate status for member of a session. 
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus Active = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Active" />
+      <MemberSignature Language="VB.NET" Value="Active" />
+      <MemberSignature Language="F#" Value="Active = 3" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+The member is active in the current title.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inactive">
+      <MemberSignature Language="C#" Value="Inactive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus Inactive = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Inactive" />
+      <MemberSignature Language="VB.NET" Value="Inactive" />
+      <MemberSignature Language="F#" Value="Inactive = 1" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Inactive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+The member is inactive in the current title.  
+The member may be active in another title as specified by ActiveTitleId,
+If a inactive member doesn't mark themselves as Active within the MemberInactiveTimeout they will be removed from the session.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ready">
+      <MemberSignature Language="C#" Value="Ready" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus Ready = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Ready" />
+      <MemberSignature Language="VB.NET" Value="Ready" />
+      <MemberSignature Language="F#" Value="Ready = 2" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Ready" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+When the shell launches the title to start a multiplayer game, the member is marked as ready.
+If a ready member doesn't mark themselves as Active within the MemberReadyTimeout they will be marked as inactive.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved">
+      <MemberSignature Language="C#" Value="Reserved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus Reserved = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Reserved" />
+      <MemberSignature Language="VB.NET" Value="Reserved" />
+      <MemberSignature Language="F#" Value="Reserved = 0" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus.Reserved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+The member slot is reserved for a specific Xbox User ID.  
+This specific member must join the session to fill the reservation before
+the JoinTimeout or they will be removed.
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

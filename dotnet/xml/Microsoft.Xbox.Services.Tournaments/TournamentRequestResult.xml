@@ -1,0 +1,112 @@
+﻿<Type Name="TournamentRequestResult" FullName="Microsoft.Xbox.Services.Tournaments.TournamentRequestResult">
+  <TypeSignature Language="C#" Value="public sealed class TournamentRequestResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentRequestResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentRequestResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TournamentRequestResult" />
+  <TypeSignature Language="F#" Value="type TournamentRequestResult = class&#xA;    interface __ITournamentRequestResultPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a collection of Tournament class objects returned by a request.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetNextAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt; GetNextAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt; GetNextAsync() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentRequestResult.GetNextAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextAsync () As IAsyncOperation(Of TournamentRequestResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetNextAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt;&#xA;override this.GetNextAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt;" Usage="tournamentRequestResult.GetNextAsync " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Tournaments.__ITournamentRequestResultPublicNonVirtuals.GetNextAsync</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+Returns an TournamentRequestResult object that contains the next page of Tournament.
+</summary>
+        <returns>An TournamentRequestResult object that contains a list of tournament objects.</returns>
+        <remarks>
+Returns a concurrency::task{T} object that represents the state of the asynchronous operation.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasNext">
+      <MemberSignature Language="C#" Value="public bool HasNext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasNext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentRequestResult.HasNext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasNext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasNext : bool" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRequestResult.HasNext" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentRequestResultPublicNonVirtuals.HasNext</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns a boolean value that indicates if there are more pages of Tournaments to retrieve.
+</summary>
+        <value>True if there are more pages, otherwise false.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tournaments">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Tournaments.Tournament&gt; Tournaments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Tournaments.Tournament&gt; Tournaments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentRequestResult.Tournaments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tournaments As IVectorView(Of Tournament)" />
+      <MemberSignature Language="F#" Value="member this.Tournaments : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Tournaments.Tournament&gt;" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRequestResult.Tournaments" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentRequestResultPublicNonVirtuals.Tournaments</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Tournaments.Tournament&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The collection of tournament objects returned by a request.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

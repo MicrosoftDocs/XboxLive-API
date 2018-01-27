@@ -1,0 +1,124 @@
+﻿<Type Name="ClubRoleRecord" FullName="Microsoft.Xbox.Services.Clubs.ClubRoleRecord">
+  <TypeSignature Language="C#" Value="public sealed class ClubRoleRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubRoleRecord extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubRoleRecord" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClubRoleRecord" />
+  <TypeSignature Language="F#" Value="type ClubRoleRecord = class&#xA;    interface __IClubRoleRecordPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActorXuid">
+      <MemberSignature Language="C#" Value="public string ActorXuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ActorXuid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoleRecord.ActorXuid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActorXuid As String" />
+      <MemberSignature Language="F#" Value="member this.ActorXuid : string" Usage="Microsoft.Xbox.Services.Clubs.ClubRoleRecord.ActorXuid" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRoleRecordPublicNonVirtuals.ActorXuid</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Actor Xuid that was responsible for user belonging to the role.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedDate">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime CreatedDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime CreatedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoleRecord.CreatedDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CreatedDate : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Clubs.ClubRoleRecord.CreatedDate" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRoleRecordPublicNonVirtuals.CreatedDate</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When the user was added to the role.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubRole Role { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Clubs.ClubRole Role" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoleRecord.Role" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role As ClubRole" />
+      <MemberSignature Language="F#" Value="member this.Role : Microsoft.Xbox.Services.Clubs.ClubRole" Usage="Microsoft.Xbox.Services.Clubs.ClubRoleRecord.Role" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRoleRecordPublicNonVirtuals.Role</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Role of the user.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xuid">
+      <MemberSignature Language="C#" Value="public string Xuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Xuid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoleRecord.Xuid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Xuid As String" />
+      <MemberSignature Language="F#" Value="member this.Xuid : string" Usage="Microsoft.Xbox.Services.Clubs.ClubRoleRecord.Xuid" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRoleRecordPublicNonVirtuals.Xuid</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Xuid that belongs to the role.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

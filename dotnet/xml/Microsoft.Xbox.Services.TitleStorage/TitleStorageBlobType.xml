@@ -1,0 +1,101 @@
+﻿<Type Name="TitleStorageBlobType" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType">
+  <TypeSignature Language="C#" Value="public enum TitleStorageBlobType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleStorageBlobType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TitleStorageBlobType" />
+  <TypeSignature Language="F#" Value="type TitleStorageBlobType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines values that indicate title storage blob type.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Binary">
+      <MemberSignature Language="C#" Value="Binary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType Binary = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Binary" />
+      <MemberSignature Language="VB.NET" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 1" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Binary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Binary blob type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Config">
+      <MemberSignature Language="C#" Value="Config" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType Config = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Config" />
+      <MemberSignature Language="VB.NET" Value="Config" />
+      <MemberSignature Language="F#" Value="Config = 3" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Config" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>Configuration information blob type. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Json">
+      <MemberSignature Language="C#" Value="Json" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType Json = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Json" />
+      <MemberSignature Language="VB.NET" Value="Json" />
+      <MemberSignature Language="F#" Value="Json = 2" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Json" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>JSON blob type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Unknown blob type.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

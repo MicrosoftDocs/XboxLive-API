@@ -1,0 +1,256 @@
+﻿<Type Name="SocialService" FullName="Microsoft.Xbox.Services.Social.SocialService">
+  <TypeSignature Language="C#" Value="public sealed class SocialService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.SocialService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocialService" />
+  <TypeSignature Language="F#" Value="type SocialService = class&#xA;    interface __ISocialServicePublicNonVirtuals&#xA;    interface __ISocialServiceProtectedNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines access methods that return social relationship information between the user and one or more other Xbox Live users.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSocialRelationshipsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt; GetSocialRelationshipsAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt; GetSocialRelationshipsAsync() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.SocialService.GetSocialRelationshipsAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSocialRelationshipsAsync () As IAsyncOperation(Of XboxSocialRelationshipResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetSocialRelationshipsAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;&#xA;override this.GetSocialRelationshipsAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;" Usage="socialService.GetSocialRelationshipsAsync " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__ISocialServicePublicNonVirtuals.GetSocialRelationshipsAsync</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetSocialRelationshipsAsync4")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+Returns a XboxSocialRelationshipResult containing a the list of people that the user is connected to.
+Defaults to filtering to PersonView.All
+Defaults to startIndex and maxItems of 0 to return entire list if possible
+</summary>
+        <returns>An XboxSocialRelationshipResult object.</returns>
+        <remarks>Calls V1 GET /users/{ownerId}/people?view={view}&amp;startIndex={startIndex}&amp;maxItems={maxItems}</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSocialRelationshipsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt; GetSocialRelationshipsAsync (Microsoft.Xbox.Services.Social.SocialRelationship socialRelationshipFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt; GetSocialRelationshipsAsync([in]valuetype Microsoft.Xbox.Services.Social.SocialRelationship socialRelationshipFilter) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.SocialService.GetSocialRelationshipsAsync(Microsoft.Xbox.Services.Social.SocialRelationship)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSocialRelationshipsAsync (socialRelationshipFilter As SocialRelationship) As IAsyncOperation(Of XboxSocialRelationshipResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetSocialRelationshipsAsync : Microsoft.Xbox.Services.Social.SocialRelationship -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;&#xA;override this.GetSocialRelationshipsAsync : Microsoft.Xbox.Services.Social.SocialRelationship -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;" Usage="socialService.GetSocialRelationshipsAsync socialRelationshipFilter" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__ISocialServicePublicNonVirtuals.GetSocialRelationshipsAsync(Microsoft.Xbox.Services.Social.SocialRelationship)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.DefaultOverload</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetSocialRelationshipsAsync3")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socialRelationshipFilter" Type="Microsoft.Xbox.Services.Social.SocialRelationship" />
+      </Parameters>
+      <Docs>
+        <param name="socialRelationshipFilter">Controls how the list is filtered</param>
+        <summary>
+Returns a XboxSocialRelationshipResult containing a the list of people that the user is connected to.
+</summary>
+        <returns>An XboxSocialRelationshipResult object.</returns>
+        <remarks>Calls V1 GET /users/{ownerId}/people?view={view}&amp;startIndex={startIndex}&amp;maxItems={maxItems}</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSocialRelationshipsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt; GetSocialRelationshipsAsync (string xboxUserId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt; GetSocialRelationshipsAsync([in]string xboxUserId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.SocialService.GetSocialRelationshipsAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSocialRelationshipsAsync (xboxUserId As String) As IAsyncOperation(Of XboxSocialRelationshipResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetSocialRelationshipsAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;&#xA;override this.GetSocialRelationshipsAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;" Usage="socialService.GetSocialRelationshipsAsync xboxUserId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__ISocialServicePublicNonVirtuals.GetSocialRelationshipsAsync(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetSocialRelationshipsAsync2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSocialRelationshipsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt; GetSocialRelationshipsAsync (Microsoft.Xbox.Services.Social.SocialRelationship socialRelationshipFilter, uint startIndex, uint maxItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt; GetSocialRelationshipsAsync([in]valuetype Microsoft.Xbox.Services.Social.SocialRelationship socialRelationshipFilter, [in]unsigned int32 startIndex, [in]unsigned int32 maxItems) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.SocialService.GetSocialRelationshipsAsync(Microsoft.Xbox.Services.Social.SocialRelationship,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSocialRelationshipsAsync (socialRelationshipFilter As SocialRelationship, startIndex As UInteger, maxItems As UInteger) As IAsyncOperation(Of XboxSocialRelationshipResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetSocialRelationshipsAsync : Microsoft.Xbox.Services.Social.SocialRelationship * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;&#xA;override this.GetSocialRelationshipsAsync : Microsoft.Xbox.Services.Social.SocialRelationship * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;" Usage="socialService.GetSocialRelationshipsAsync (socialRelationshipFilter, startIndex, maxItems)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__ISocialServicePublicNonVirtuals.GetSocialRelationshipsAsync(Microsoft.Xbox.Services.Social.SocialRelationship,System.UInt32,System.UInt32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("GetSocialRelationshipsAsync1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxSocialRelationshipResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socialRelationshipFilter" Type="Microsoft.Xbox.Services.Social.SocialRelationship" />
+        <Parameter Name="startIndex" Type="System.UInt32" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="socialRelationshipFilter">Controls how the list is filtered</param>
+        <param name="startIndex">Controls the starting index to return</param>
+        <param name="maxItems">Controls the number of XboxSocialRelationship objects to get.  0 will return as many as possible</param>
+        <summary>
+Returns a XboxSocialRelationshipResult containing a the list of people that the user is connected to.
+</summary>
+        <returns>An XboxSocialRelationshipResult object.</returns>
+        <remarks>Calls V1 GET /users/{ownerId}/people?view={view}&amp;startIndex={startIndex}&amp;maxItems={maxItems}</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SocialRelationshipChanged">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs&gt; SocialRelationshipChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs&gt; SocialRelationshipChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.Social.SocialService.SocialRelationshipChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SocialRelationshipChanged As EventHandler(Of SocialRelationshipChangeEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SocialRelationshipChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs&gt; " Usage="member this.SocialRelationshipChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Xbox.Services.Social.__ISocialServicePublicNonVirtuals.SocialRelationshipChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Social.SocialRelationshipChangeEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Registers for social relationship change notifications.  Event handlers will receive SocialRelationshipChangeEventArgs^.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToSocialRelationshipChange">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription SubscribeToSocialRelationshipChange (string xboxUserId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription SubscribeToSocialRelationshipChange([in]string xboxUserId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.SocialService.SubscribeToSocialRelationshipChange(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SubscribeToSocialRelationshipChange (xboxUserId As String) As SocialRelationshipChangeSubscription" />
+      <MemberSignature Language="F#" Value="abstract member SubscribeToSocialRelationshipChange : string -&gt; Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription&#xA;override this.SubscribeToSocialRelationshipChange : string -&gt; Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription" Usage="socialService.SubscribeToSocialRelationshipChange xboxUserId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__ISocialServicePublicNonVirtuals.SubscribeToSocialRelationshipChange(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxUserId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xboxUserId">The Xbox User ID of the person of the subscription</param>
+        <summary>
+Subscribes to social relationship change notifications via the SocialRelationshipChanged event
+</summary>
+        <returns>SocialRelationshipChangeSubscription containing the initial value of the Xbox User Id
+Register for social relationship changes via the SocialRelationshipChanged event</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeFromSocialRelationshipChange">
+      <MemberSignature Language="C#" Value="public void UnsubscribeFromSocialRelationshipChange (Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription subscription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnsubscribeFromSocialRelationshipChange([in]class Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription subscription) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.SocialService.UnsubscribeFromSocialRelationshipChange(Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnsubscribeFromSocialRelationshipChange (subscription As SocialRelationshipChangeSubscription)" />
+      <MemberSignature Language="F#" Value="abstract member UnsubscribeFromSocialRelationshipChange : Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription -&gt; unit&#xA;override this.UnsubscribeFromSocialRelationshipChange : Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription -&gt; unit" Usage="socialService.UnsubscribeFromSocialRelationshipChange subscription" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__ISocialServicePublicNonVirtuals.UnsubscribeFromSocialRelationshipChange(Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription" />
+      </Parameters>
+      <Docs>
+        <param name="subscription">The subscription object to unsubscribe</param>
+        <summary>
+Unsubscribes a previously created social relationship change subscription
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

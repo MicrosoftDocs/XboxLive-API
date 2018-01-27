@@ -1,0 +1,109 @@
+﻿<Type Name="PreferredColor" FullName="Microsoft.Xbox.Services.Social.Manager.PreferredColor">
+  <TypeSignature Language="C#" Value="public sealed class PreferredColor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PreferredColor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.PreferredColor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PreferredColor" />
+  <TypeSignature Language="F#" Value="type PreferredColor = class&#xA;    interface __IPreferredColorPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+The users preferred color scheme
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PrimaryColor">
+      <MemberSignature Language="C#" Value="public string PrimaryColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PrimaryColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.PreferredColor.PrimaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryColor As String" />
+      <MemberSignature Language="F#" Value="member this.PrimaryColor : string" Usage="Microsoft.Xbox.Services.Social.Manager.PreferredColor.PrimaryColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IPreferredColorPublicNonVirtuals.PrimaryColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The user's primary preferred color
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondaryColor">
+      <MemberSignature Language="C#" Value="public string SecondaryColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SecondaryColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.PreferredColor.SecondaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecondaryColor As String" />
+      <MemberSignature Language="F#" Value="member this.SecondaryColor : string" Usage="Microsoft.Xbox.Services.Social.Manager.PreferredColor.SecondaryColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IPreferredColorPublicNonVirtuals.SecondaryColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The user's secondary preferred color
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TertiaryColor">
+      <MemberSignature Language="C#" Value="public string TertiaryColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TertiaryColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.PreferredColor.TertiaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TertiaryColor As String" />
+      <MemberSignature Language="F#" Value="member this.TertiaryColor : string" Usage="Microsoft.Xbox.Services.Social.Manager.PreferredColor.TertiaryColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IPreferredColorPublicNonVirtuals.TertiaryColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The user's tertiary preferred color
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

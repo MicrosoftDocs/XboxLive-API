@@ -1,0 +1,109 @@
+﻿<Type Name="PreviousMatchMetadata" FullName="Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata">
+  <TypeSignature Language="C#" Value="public sealed class PreviousMatchMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PreviousMatchMetadata extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PreviousMatchMetadata" />
+  <TypeSignature Language="F#" Value="type PreviousMatchMetadata = class&#xA;    interface __IPreviousMatchMetadataPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a reference to a multiplayer session.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EndTime">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime EndTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime EndTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata.EndTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.EndTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata.EndTime" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__IPreviousMatchMetadataPublicNonVirtuals.EndTime</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The timestamp when the match ended.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchDetails">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.MatchMetadata MatchDetails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.MatchMetadata MatchDetails" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata.MatchDetails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchDetails As MatchMetadata" />
+      <MemberSignature Language="F#" Value="member this.MatchDetails : Microsoft.Xbox.Services.Tournaments.MatchMetadata" Usage="Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata.MatchDetails" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__IPreviousMatchMetadataPublicNonVirtuals.MatchDetails</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.MatchMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Metadata associated with the team's previously played match.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentTeamResult Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.TournamentTeamResult Result" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As TournamentTeamResult" />
+      <MemberSignature Language="F#" Value="member this.Result : Microsoft.Xbox.Services.Tournaments.TournamentTeamResult" Usage="Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata.Result" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__IPreviousMatchMetadataPublicNonVirtuals.Result</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentTeamResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Previous game's result for the tournament.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,314 @@
+﻿<Type Name="SocialManager" FullName="Microsoft.Xbox.Services.Social.Manager.SocialManager">
+  <TypeSignature Language="C#" Value="public sealed class SocialManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.SocialManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocialManager" />
+  <TypeSignature Language="F#" Value="type SocialManager = class&#xA;    interface __ISocialManagerPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.Social.Manager.__ISocialManagerStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddLocalUser">
+      <MemberSignature Language="C#" Value="public void AddLocalUser (Microsoft.Xbox.Services.System.XboxLiveUser user, Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel extraDetailLevel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddLocalUser([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]valuetype Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel extraDetailLevel) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.Manager.SocialManager.AddLocalUser(Microsoft.Xbox.Services.System.XboxLiveUser,Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddLocalUser (user As XboxLiveUser, extraDetailLevel As SocialManagerExtraDetailLevel)" />
+      <MemberSignature Language="F#" Value="abstract member AddLocalUser : Microsoft.Xbox.Services.System.XboxLiveUser * Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel -&gt; unit&#xA;override this.AddLocalUser : Microsoft.Xbox.Services.System.XboxLiveUser * Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel -&gt; unit" Usage="socialManager.AddLocalUser (user, extraDetailLevel)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPublicNonVirtuals.AddLocalUser(Microsoft.Xbox.Services.System.XboxLiveUser,Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="extraDetailLevel" Type="Microsoft.Xbox.Services.Social.Manager.SocialManagerExtraDetailLevel" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="extraDetailLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSocialUserGroupFromFilters">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup CreateSocialUserGroupFromFilters (Microsoft.Xbox.Services.System.XboxLiveUser user, Microsoft.Xbox.Services.Social.Manager.PresenceFilter presenceFilter, Microsoft.Xbox.Services.Social.Manager.RelationshipFilter relationshipFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup CreateSocialUserGroupFromFilters([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]valuetype Microsoft.Xbox.Services.Social.Manager.PresenceFilter presenceFilter, [in]valuetype Microsoft.Xbox.Services.Social.Manager.RelationshipFilter relationshipFilter) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.Manager.SocialManager.CreateSocialUserGroupFromFilters(Microsoft.Xbox.Services.System.XboxLiveUser,Microsoft.Xbox.Services.Social.Manager.PresenceFilter,Microsoft.Xbox.Services.Social.Manager.RelationshipFilter)" />
+      <MemberSignature Language="F#" Value="abstract member CreateSocialUserGroupFromFilters : Microsoft.Xbox.Services.System.XboxLiveUser * Microsoft.Xbox.Services.Social.Manager.PresenceFilter * Microsoft.Xbox.Services.Social.Manager.RelationshipFilter -&gt; Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup&#xA;override this.CreateSocialUserGroupFromFilters : Microsoft.Xbox.Services.System.XboxLiveUser * Microsoft.Xbox.Services.Social.Manager.PresenceFilter * Microsoft.Xbox.Services.Social.Manager.RelationshipFilter -&gt; Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup" Usage="socialManager.CreateSocialUserGroupFromFilters (user, presenceFilter, relationshipFilter)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPublicNonVirtuals.CreateSocialUserGroupFromFilters(Microsoft.Xbox.Services.System.XboxLiveUser,Microsoft.Xbox.Services.Social.Manager.PresenceFilter,Microsoft.Xbox.Services.Social.Manager.RelationshipFilter)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="presenceFilter" Type="Microsoft.Xbox.Services.Social.Manager.PresenceFilter" />
+        <Parameter Name="relationshipFilter" Type="Microsoft.Xbox.Services.Social.Manager.RelationshipFilter" />
+      </Parameters>
+      <Docs>
+        <param name="user">Xbox Live User</param>
+        <param name="presenceFilter">The restriction of users based on their presence and title activity</param>
+        <param name="relationshipFilter">The restriction of users based on their relationship to the calling user</param>
+        <summary>
+Constructs a social social user group, which is a collection of users with social information
+</summary>
+        <returns>The created view</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSocialUserGroupFromList">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup CreateSocialUserGroupFromList (Microsoft.Xbox.Services.System.XboxLiveUser user, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIdList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup CreateSocialUserGroupFromList([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIdList) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.Manager.SocialManager.CreateSocialUserGroupFromList(Microsoft.Xbox.Services.System.XboxLiveUser,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSocialUserGroupFromList (user As XboxLiveUser, xboxUserIdList As IVectorView(Of String)) As XboxSocialUserGroup" />
+      <MemberSignature Language="F#" Value="abstract member CreateSocialUserGroupFromList : Microsoft.Xbox.Services.System.XboxLiveUser * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup&#xA;override this.CreateSocialUserGroupFromList : Microsoft.Xbox.Services.System.XboxLiveUser * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup" Usage="socialManager.CreateSocialUserGroupFromList (user, xboxUserIdList)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPublicNonVirtuals.CreateSocialUserGroupFromList(Microsoft.Xbox.Services.System.XboxLiveUser,Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="xboxUserIdList" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="xboxUserIdList">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestroySocialUserGroup">
+      <MemberSignature Language="C#" Value="public void DestroySocialUserGroup (Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup xboxSocialUserGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DestroySocialUserGroup([in]class Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup xboxSocialUserGroup) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.Manager.SocialManager.DestroySocialUserGroup(Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup)" />
+      <MemberSignature Language="F#" Value="abstract member DestroySocialUserGroup : Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup -&gt; unit&#xA;override this.DestroySocialUserGroup : Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup -&gt; unit" Usage="socialManager.DestroySocialUserGroup xboxSocialUserGroup" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPublicNonVirtuals.DestroySocialUserGroup(Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xboxSocialUserGroup" Type="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup" />
+      </Parameters>
+      <Docs>
+        <param name="xboxSocialUserGroup">The social social user group to destroy and stop tracking</param>
+        <summary>
+Destroys a created social social user group
+This will stop updating the social user group and remove tracking for any users the social user group holds
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoWork">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.SocialEvent&gt; DoWork ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Social.Manager.SocialEvent&gt; DoWork() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.Manager.SocialManager.DoWork" />
+      <MemberSignature Language="VB.NET" Value="Public Function DoWork () As IVectorView(Of SocialEvent)" />
+      <MemberSignature Language="F#" Value="abstract member DoWork : unit -&gt; Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.SocialEvent&gt;&#xA;override this.DoWork : unit -&gt; Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.SocialEvent&gt;" Usage="socialManager.DoWork " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPublicNonVirtuals.DoWork</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.SocialEvent&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+Called whenever the title wants to update the social graph and get list of change events
+Events that are returned will only be for the page that is is currently selected
+Must be called every frame for data to be up to date
+</summary>
+        <returns> The list of what has changed in between social graph updates</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalUsers">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.System.XboxLiveUser&gt; LocalUsers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.System.XboxLiveUser&gt; LocalUsers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialManager.LocalUsers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalUsers As IVectorView(Of XboxLiveUser)" />
+      <MemberSignature Language="F#" Value="member this.LocalUsers : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.System.XboxLiveUser&gt;" Usage="Microsoft.Xbox.Services.Social.Manager.SocialManager.LocalUsers" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPublicNonVirtuals.LocalUsers</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.System.XboxLiveUser&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns all local users who have been added to the social manager
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveLocalUser">
+      <MemberSignature Language="C#" Value="public void RemoveLocalUser (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveLocalUser([in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.Manager.SocialManager.RemoveLocalUser(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveLocalUser (user As XboxLiveUser)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveLocalUser : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit&#xA;override this.RemoveLocalUser : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit" Usage="socialManager.RemoveLocalUser user" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPublicNonVirtuals.RemoveLocalUser(Microsoft.Xbox.Services.System.XboxLiveUser)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+      </Parameters>
+      <Docs>
+        <param name="user">Xbox Live User</param>
+        <summary>
+Removes a social graph for the specified local user
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRichPresencePollingState">
+      <MemberSignature Language="C#" Value="public void SetRichPresencePollingState (Microsoft.Xbox.Services.System.XboxLiveUser user, bool shouldEnablePolling);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetRichPresencePollingState([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]bool shouldEnablePolling) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.Manager.SocialManager.SetRichPresencePollingState(Microsoft.Xbox.Services.System.XboxLiveUser,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRichPresencePollingState (user As XboxLiveUser, shouldEnablePolling As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetRichPresencePollingState : Microsoft.Xbox.Services.System.XboxLiveUser * bool -&gt; unit&#xA;override this.SetRichPresencePollingState : Microsoft.Xbox.Services.System.XboxLiveUser * bool -&gt; unit" Usage="socialManager.SetRichPresencePollingState (user, shouldEnablePolling)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPublicNonVirtuals.SetRichPresencePollingState(Microsoft.Xbox.Services.System.XboxLiveUser,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="shouldEnablePolling" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="user">Xbox Live User</param>
+        <param name="shouldEnablePolling">Whether or not polling should enabled</param>
+        <summary>
+Whether to enable social manager to poll every 30 seconds from the presence service 
+</summary>
+        <returns>An xbox_live_result representing the success enabling polling</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SingletonInstance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Social.Manager.SocialManager SingletonInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.Social.Manager.SocialManager SingletonInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialManager.SingletonInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SingletonInstance As SocialManager" />
+      <MemberSignature Language="F#" Value="member this.SingletonInstance : Microsoft.Xbox.Services.Social.Manager.SocialManager" Usage="Microsoft.Xbox.Services.Social.Manager.SocialManager.SingletonInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Gets the social_manager singleton instance
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSocialUserGroup">
+      <MemberSignature Language="C#" Value="public void UpdateSocialUserGroup (Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup socialGroup, Windows.Foundation.Collections.IVectorView&lt;string&gt; users);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateSocialUserGroup([in]class Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup socialGroup, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; users) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.Manager.SocialManager.UpdateSocialUserGroup(Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateSocialUserGroup (socialGroup As XboxSocialUserGroup, users As IVectorView(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateSocialUserGroup : Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; unit&#xA;override this.UpdateSocialUserGroup : Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; unit" Usage="socialManager.UpdateSocialUserGroup (socialGroup, users)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPublicNonVirtuals.UpdateSocialUserGroup(Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup,Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socialGroup" Type="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup" />
+        <Parameter Name="users" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="socialGroup">To be added.</param>
+        <param name="users">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

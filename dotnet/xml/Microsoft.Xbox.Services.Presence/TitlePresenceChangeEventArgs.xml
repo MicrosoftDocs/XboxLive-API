@@ -1,0 +1,109 @@
+﻿<Type Name="TitlePresenceChangeEventArgs" FullName="Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class TitlePresenceChangeEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitlePresenceChangeEventArgs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitlePresenceChangeEventArgs" />
+  <TypeSignature Language="F#" Value="type TitlePresenceChangeEventArgs = class&#xA;    interface __ITitlePresenceChangeEventArgsPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Contains information about a title presence change event.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TitleId">
+      <MemberSignature Language="C#" Value="public uint TitleId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TitleId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs.TitleId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.TitleId : uint32" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs.TitleId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__ITitlePresenceChangeEventArgsPublicNonVirtuals.TitleId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The ID for the title that uses the subscription.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleState">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.TitlePresenceState TitleState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Presence.TitlePresenceState TitleState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs.TitleState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleState As TitlePresenceState" />
+      <MemberSignature Language="F#" Value="member this.TitleState : Microsoft.Xbox.Services.Presence.TitlePresenceState" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs.TitleState" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__ITitlePresenceChangeEventArgsPublicNonVirtuals.TitleState</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.TitlePresenceState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The new title presence state.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxUserId">
+      <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceChangeEventArgs.XboxUserId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__ITitlePresenceChangeEventArgsPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The Xbox user ID for the user present on the device.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

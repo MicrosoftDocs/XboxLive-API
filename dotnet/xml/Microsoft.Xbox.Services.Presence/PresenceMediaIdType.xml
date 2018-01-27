@@ -1,0 +1,82 @@
+﻿<Type Name="PresenceMediaIdType" FullName="Microsoft.Xbox.Services.Presence.PresenceMediaIdType">
+  <TypeSignature Language="C#" Value="public enum PresenceMediaIdType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceMediaIdType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.PresenceMediaIdType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PresenceMediaIdType" />
+  <TypeSignature Language="F#" Value="type PresenceMediaIdType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary> Defines values that indicate the media id types for media presence data.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bing">
+      <MemberSignature Language="C#" Value="Bing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceMediaIdType Bing = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceMediaIdType.Bing" />
+      <MemberSignature Language="VB.NET" Value="Bing" />
+      <MemberSignature Language="F#" Value="Bing = 1" Usage="Microsoft.Xbox.Services.Presence.PresenceMediaIdType.Bing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceMediaIdType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Bing media Id.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaProvider">
+      <MemberSignature Language="C#" Value="MediaProvider" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceMediaIdType MediaProvider = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceMediaIdType.MediaProvider" />
+      <MemberSignature Language="VB.NET" Value="MediaProvider" />
+      <MemberSignature Language="F#" Value="MediaProvider = 2" Usage="Microsoft.Xbox.Services.Presence.PresenceMediaIdType.MediaProvider" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceMediaIdType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>MediaProvider media Id.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceMediaIdType Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceMediaIdType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Presence.PresenceMediaIdType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceMediaIdType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Unknown media Id.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

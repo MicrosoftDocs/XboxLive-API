@@ -1,0 +1,120 @@
+﻿<Type Name="PresenceTitleViewState" FullName="Microsoft.Xbox.Services.Presence.PresenceTitleViewState">
+  <TypeSignature Language="C#" Value="public enum PresenceTitleViewState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceTitleViewState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.PresenceTitleViewState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PresenceTitleViewState" />
+  <TypeSignature Language="F#" Value="type PresenceTitleViewState = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines values that indicate the title's view state as last reported to the Presence Service.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Background">
+      <MemberSignature Language="C#" Value="Background" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceTitleViewState Background = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Background" />
+      <MemberSignature Language="VB.NET" Value="Background" />
+      <MemberSignature Language="F#" Value="Background = 4" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Background" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>The title's running in the background and is not visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Filled">
+      <MemberSignature Language="C#" Value="Filled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceTitleViewState Filled = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Filled" />
+      <MemberSignature Language="VB.NET" Value="Filled" />
+      <MemberSignature Language="F#" Value="Filled = 2" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Filled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>The title's view is using part of the screen with another application snapped.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullScreen">
+      <MemberSignature Language="C#" Value="FullScreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceTitleViewState FullScreen = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceTitleViewState.FullScreen" />
+      <MemberSignature Language="VB.NET" Value="FullScreen" />
+      <MemberSignature Language="F#" Value="FullScreen = 1" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleViewState.FullScreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>The title's view is using the full screen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Snapped">
+      <MemberSignature Language="C#" Value="Snapped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceTitleViewState Snapped = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Snapped" />
+      <MemberSignature Language="VB.NET" Value="Snapped" />
+      <MemberSignature Language="F#" Value="Snapped = 3" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Snapped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>The title's view is snapped with another application using a part of the screen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceTitleViewState Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleViewState.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Unknown view state.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,132 @@
+﻿<Type Name="MultiplayMetrics" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics">
+  <TypeSignature Language="C#" Value="public enum MultiplayMetrics" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayMetrics extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MultiplayMetrics" />
+  <TypeSignature Language="F#" Value="type MultiplayMetrics = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines values used to indicate the host selection metrics for measuring matchmaking QoS for a session.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bandwidth">
+      <MemberSignature Language="C#" Value="Bandwidth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics Bandwidth = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.Bandwidth" />
+      <MemberSignature Language="VB.NET" Value="Bandwidth" />
+      <MemberSignature Language="F#" Value="Bandwidth = 3" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.Bandwidth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+Bandwidth host selection metric.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BandwidthDown">
+      <MemberSignature Language="C#" Value="BandwidthDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics BandwidthDown = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.BandwidthDown" />
+      <MemberSignature Language="VB.NET" Value="BandwidthDown" />
+      <MemberSignature Language="F#" Value="BandwidthDown = 2" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.BandwidthDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+Bandwidth down host selection metric.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BandwidthUp">
+      <MemberSignature Language="C#" Value="BandwidthUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics BandwidthUp = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.BandwidthUp" />
+      <MemberSignature Language="VB.NET" Value="BandwidthUp" />
+      <MemberSignature Language="F#" Value="BandwidthUp = 1" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.BandwidthUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+Bandwidth up host selection metric.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Latency">
+      <MemberSignature Language="C#" Value="Latency" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics Latency = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.Latency" />
+      <MemberSignature Language="VB.NET" Value="Latency" />
+      <MemberSignature Language="F#" Value="Latency = 4" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.Latency" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+Latency host selection metric.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+Unknown metric.
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,109 @@
+﻿<Type Name="StatisticChangeEventArgs" FullName="Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class StatisticChangeEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatisticChangeEventArgs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StatisticChangeEventArgs" />
+  <TypeSignature Language="F#" Value="type StatisticChangeEventArgs = class&#xA;    interface __IStatisticChangeEventArgsPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Contains information about a change to a subscribed statistic.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LatestStatistic">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.UserStatistics.Statistic LatestStatistic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.UserStatistics.Statistic LatestStatistic" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs.LatestStatistic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LatestStatistic As Statistic" />
+      <MemberSignature Language="F#" Value="member this.LatestStatistic : Microsoft.Xbox.Services.UserStatistics.Statistic" Usage="Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs.LatestStatistic" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IStatisticChangeEventArgsPublicNonVirtuals.LatestStatistic</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.UserStatistics.Statistic</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The statistic with an updated value.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceConfigurationId">
+      <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs.ServiceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationId : string" Usage="Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs.ServiceConfigurationId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IStatisticChangeEventArgsPublicNonVirtuals.ServiceConfigurationId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The service configuration ID used to create the subscription.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxUserId">
+      <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs.XboxUserId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IStatisticChangeEventArgsPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The Xbox user ID used to create the subscription.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

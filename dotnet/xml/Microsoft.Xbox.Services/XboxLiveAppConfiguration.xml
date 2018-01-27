@@ -1,0 +1,159 @@
+﻿<Type Name="XboxLiveAppConfiguration" FullName="Microsoft.Xbox.Services.XboxLiveAppConfiguration">
+  <TypeSignature Language="C#" Value="public sealed class XboxLiveAppConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveAppConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveAppConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxLiveAppConfiguration" />
+  <TypeSignature Language="F#" Value="type XboxLiveAppConfiguration = class&#xA;    interface __IXboxLiveAppConfigurationPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.__IXboxLiveAppConfigurationStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents the configuration of an Xbox Live application.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Environment">
+      <MemberSignature Language="C#" Value="public string Environment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Environment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.Environment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Environment As String" />
+      <MemberSignature Language="F#" Value="member this.Environment : string" Usage="Microsoft.Xbox.Services.XboxLiveAppConfiguration.Environment" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveAppConfigurationPublicNonVirtuals.Environment</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the Xbox Live environment being used.  This is typically blank.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sandbox">
+      <MemberSignature Language="C#" Value="public string Sandbox { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Sandbox" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.Sandbox" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sandbox As String" />
+      <MemberSignature Language="F#" Value="member this.Sandbox : string" Usage="Microsoft.Xbox.Services.XboxLiveAppConfiguration.Sandbox" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveAppConfigurationPublicNonVirtuals.Sandbox</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the sandbox such as "XDKS.1".
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceConfigurationId">
+      <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.ServiceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationId : string" Usage="Microsoft.Xbox.Services.XboxLiveAppConfiguration.ServiceConfigurationId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveAppConfigurationPublicNonVirtuals.ServiceConfigurationId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the service config id of the app.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SingletonInstance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.XboxLiveAppConfiguration SingletonInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.XboxLiveAppConfiguration SingletonInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.SingletonInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SingletonInstance As XboxLiveAppConfiguration" />
+      <MemberSignature Language="F#" Value="member this.SingletonInstance : Microsoft.Xbox.Services.XboxLiveAppConfiguration" Usage="Microsoft.Xbox.Services.XboxLiveAppConfiguration.SingletonInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.XboxLiveAppConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the global instance of XboxLiveAppConfiguration
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleId">
+      <MemberSignature Language="C#" Value="public uint TitleId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TitleId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveAppConfiguration.TitleId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.TitleId : uint32" Usage="Microsoft.Xbox.Services.XboxLiveAppConfiguration.TitleId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveAppConfigurationPublicNonVirtuals.TitleId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Returns the title id of the app.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

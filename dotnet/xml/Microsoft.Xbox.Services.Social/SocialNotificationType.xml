@@ -1,0 +1,109 @@
+﻿<Type Name="SocialNotificationType" FullName="Microsoft.Xbox.Services.Social.SocialNotificationType">
+  <TypeSignature Language="C#" Value="public enum SocialNotificationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialNotificationType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.SocialNotificationType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SocialNotificationType" />
+  <TypeSignature Language="F#" Value="type SocialNotificationType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="added">
+      <MemberSignature Language="C#" Value="added" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.SocialNotificationType added = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.SocialNotificationType.added" />
+      <MemberSignature Language="VB.NET" Value="added" />
+      <MemberSignature Language="F#" Value="added = 1" Usage="Microsoft.Xbox.Services.Social.SocialNotificationType.added" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.SocialNotificationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+User(s) were added.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="changed">
+      <MemberSignature Language="C#" Value="changed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.SocialNotificationType changed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.SocialNotificationType.changed" />
+      <MemberSignature Language="VB.NET" Value="changed" />
+      <MemberSignature Language="F#" Value="changed = 2" Usage="Microsoft.Xbox.Services.Social.SocialNotificationType.changed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.SocialNotificationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+User(s) data changed.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="removed">
+      <MemberSignature Language="C#" Value="removed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.SocialNotificationType removed = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.SocialNotificationType.removed" />
+      <MemberSignature Language="VB.NET" Value="removed" />
+      <MemberSignature Language="F#" Value="removed = 3" Usage="Microsoft.Xbox.Services.Social.SocialNotificationType.removed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.SocialNotificationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+User(s) were removed.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.SocialNotificationType Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.SocialNotificationType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Social.SocialNotificationType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.SocialNotificationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+unknown
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,69 @@
+﻿<Type Name="MutableRoleSetting" FullName="Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting">
+  <TypeSignature Language="C#" Value="public enum MutableRoleSetting" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MutableRoleSetting extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MutableRoleSetting" />
+  <TypeSignature Language="F#" Value="type MutableRoleSetting = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Enumeration for the types of statuses that may result from a WriteSessionAsync.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Max">
+      <MemberSignature Language="C#" Value="Max" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting Max = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting.Max" />
+      <MemberSignature Language="VB.NET" Value="Max" />
+      <MemberSignature Language="F#" Value="Max = 0" Usage="Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting.Max" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+Allows you to set a max count for the multiplayer role
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="Target" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting Target = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting.Target" />
+      <MemberSignature Language="VB.NET" Value="Target" />
+      <MemberSignature Language="F#" Value="Target = 1" Usage="Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting.Target" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MutableRoleSetting</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+Allows you to set a target count for the multiplayer role
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,164 @@
+﻿<Type Name="MultiplayerSearchHandleRequest" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerSearchHandleRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSearchHandleRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerSearchHandleRequest" />
+  <TypeSignature Language="F#" Value="type MultiplayerSearchHandleRequest = class&#xA;    interface __IMultiplayerSearchHandleRequestPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSearchHandleRequestFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Sets the search handle based on the configuration of this request.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiplayerSearchHandleRequest (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest.#ctor(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sessionReference As MultiplayerSessionReference)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest" Usage="new Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest sessionReference" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="sessionReference" Type="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+      </Parameters>
+      <Docs>
+        <param name="sessionReference">To be added.</param>
+        <summary>
+Creates a MultiplayerSearchHandleRequest object.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumbersMetadata">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IMapView&lt;string,double&gt; NumbersMetadata { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IMapView`2&lt;string, float64&gt; NumbersMetadata" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest.NumbersMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumbersMetadata As IMapView(Of String, Double)" />
+      <MemberSignature Language="F#" Value="member this.NumbersMetadata : Windows.Foundation.Collections.IMapView&lt;string, double&gt; with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest.NumbersMetadata" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSearchHandleRequestPublicNonVirtuals.NumbersMetadata</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IMapView&lt;System.String,System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Filter result to just sessions with the numbers metadata.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionReference">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference SessionReference { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference SessionReference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest.SessionReference" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionReference As MultiplayerSessionReference" />
+      <MemberSignature Language="F#" Value="member this.SessionReference : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest.SessionReference" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSearchHandleRequestPublicNonVirtuals.SessionReference</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The session reference that the sessions part of.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringsMetadata">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IMapView&lt;string,string&gt; StringsMetadata { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IMapView`2&lt;string, string&gt; StringsMetadata" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest.StringsMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Property StringsMetadata As IMapView(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.StringsMetadata : Windows.Foundation.Collections.IMapView&lt;string, string&gt; with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest.StringsMetadata" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSearchHandleRequestPublicNonVirtuals.StringsMetadata</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IMapView&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Filter result to just sessions with the strings metadata.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tags">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; Tags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; Tags" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest.Tags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tags As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Tags : Windows.Foundation.Collections.IVectorView&lt;string&gt; with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest.Tags" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSearchHandleRequestPublicNonVirtuals.Tags</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Filter result to just sessions with the tags set.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

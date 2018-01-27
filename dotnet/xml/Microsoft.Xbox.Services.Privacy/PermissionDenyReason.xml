@@ -1,0 +1,84 @@
+﻿<Type Name="PermissionDenyReason" FullName="Microsoft.Xbox.Services.Privacy.PermissionDenyReason">
+  <TypeSignature Language="C#" Value="public sealed class PermissionDenyReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PermissionDenyReason extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Privacy.PermissionDenyReason" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PermissionDenyReason" />
+  <TypeSignature Language="F#" Value="type PermissionDenyReason = class&#xA;    interface __IPermissionDenyReasonPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Contains the reason why permission was denied. 
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Reason">
+      <MemberSignature Language="C#" Value="public string Reason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Reason" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Privacy.PermissionDenyReason.Reason" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As String" />
+      <MemberSignature Language="F#" Value="member this.Reason : string" Usage="Microsoft.Xbox.Services.Privacy.PermissionDenyReason.Reason" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Privacy.__IPermissionDenyReasonPublicNonVirtuals.Reason</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The reason why permission was denied.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestrictedSetting">
+      <MemberSignature Language="C#" Value="public string RestrictedSetting { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RestrictedSetting" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Privacy.PermissionDenyReason.RestrictedSetting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RestrictedSetting As String" />
+      <MemberSignature Language="F#" Value="member this.RestrictedSetting : string" Usage="Microsoft.Xbox.Services.Privacy.PermissionDenyReason.RestrictedSetting" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Privacy.__IPermissionDenyReasonPublicNonVirtuals.RestrictedSetting</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+If the deny reason is previlege check, this indicates which privilege failed.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,114 @@
+﻿<Type Name="RequestedStatistics" FullName="Microsoft.Xbox.Services.UserStatistics.RequestedStatistics">
+  <TypeSignature Language="C#" Value="public sealed class RequestedStatistics" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RequestedStatistics extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.UserStatistics.RequestedStatistics" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RequestedStatistics" />
+  <TypeSignature Language="F#" Value="type RequestedStatistics = class&#xA;    interface __IRequestedStatisticsPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Xbox.Services.UserStatistics.__IRequestedStatisticsFactory), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Contains requested statistics.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestedStatistics (string serviceConfigurationId, Windows.Foundation.Collections.IVectorView&lt;string&gt; statistics);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]string serviceConfigurationId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; statistics) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.RequestedStatistics.#ctor(System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceConfigurationId As String, statistics As IVectorView(Of String))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.UserStatistics.RequestedStatistics : string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Microsoft.Xbox.Services.UserStatistics.RequestedStatistics" Usage="new Microsoft.Xbox.Services.UserStatistics.RequestedStatistics (serviceConfigurationId, statistics)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("CreateInstance1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="statistics" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">To be added.</param>
+        <param name="statistics">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceConfigurationId">
+      <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.RequestedStatistics.ServiceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationId : string" Usage="Microsoft.Xbox.Services.UserStatistics.RequestedStatistics.ServiceConfigurationId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IRequestedStatisticsPublicNonVirtuals.ServiceConfigurationId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The service configuration ID in use.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Statistics">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; Statistics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; Statistics" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.RequestedStatistics.Statistics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Statistics As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Statistics : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.UserStatistics.RequestedStatistics.Statistics" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IRequestedStatisticsPublicNonVirtuals.Statistics</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A collection of statistics.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,124 @@
+﻿<Type Name="ClubPresenceCounts" FullName="Microsoft.Xbox.Services.Clubs.ClubPresenceCounts">
+  <TypeSignature Language="C#" Value="public sealed class ClubPresenceCounts" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubPresenceCounts extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubPresenceCounts" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClubPresenceCounts" />
+  <TypeSignature Language="F#" Value="type ClubPresenceCounts = class&#xA;    interface __IClubPresenceCountsPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HereNow">
+      <MemberSignature Language="C#" Value="public uint HereNow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 HereNow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubPresenceCounts.HereNow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HereNow As UInteger" />
+      <MemberSignature Language="F#" Value="member this.HereNow : uint32" Usage="Microsoft.Xbox.Services.Clubs.ClubPresenceCounts.HereNow" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPresenceCountsPublicNonVirtuals.HereNow</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The number of members who are active within the club</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HereToday">
+      <MemberSignature Language="C#" Value="public uint HereToday { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 HereToday" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubPresenceCounts.HereToday" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HereToday As UInteger" />
+      <MemberSignature Language="F#" Value="member this.HereToday : uint32" Usage="Microsoft.Xbox.Services.Clubs.ClubPresenceCounts.HereToday" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPresenceCountsPublicNonVirtuals.HereToday</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The number of member who have been active within the last 24 hours</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InGameNow">
+      <MemberSignature Language="C#" Value="public uint InGameNow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 InGameNow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubPresenceCounts.InGameNow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InGameNow As UInteger" />
+      <MemberSignature Language="F#" Value="member this.InGameNow : uint32" Usage="Microsoft.Xbox.Services.Clubs.ClubPresenceCounts.InGameNow" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPresenceCountsPublicNonVirtuals.InGameNow</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The number of members who are currently in game</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalCount">
+      <MemberSignature Language="C#" Value="public uint TotalCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TotalCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubPresenceCounts.TotalCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.TotalCount : uint32" Usage="Microsoft.Xbox.Services.Clubs.ClubPresenceCounts.TotalCount" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPresenceCountsPublicNonVirtuals.TotalCount</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The total number of club members that been tracked by club presence</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

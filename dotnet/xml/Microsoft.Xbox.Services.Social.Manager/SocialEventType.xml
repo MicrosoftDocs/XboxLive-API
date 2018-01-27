@@ -1,0 +1,196 @@
+﻿<Type Name="SocialEventType" FullName="Microsoft.Xbox.Services.Social.Manager.SocialEventType">
+  <TypeSignature Language="C#" Value="public enum SocialEventType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialEventType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.SocialEventType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SocialEventType" />
+  <TypeSignature Language="F#" Value="type SocialEventType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LocalUserAdded">
+      <MemberSignature Language="C#" Value="LocalUserAdded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.SocialEventType LocalUserAdded = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.LocalUserAdded" />
+      <MemberSignature Language="VB.NET" Value="LocalUserAdded" />
+      <MemberSignature Language="F#" Value="LocalUserAdded = 5" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEventType.LocalUserAdded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>Social graph load complete from adding a local user</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalUserRemoved">
+      <MemberSignature Language="C#" Value="LocalUserRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.SocialEventType LocalUserRemoved = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.LocalUserRemoved" />
+      <MemberSignature Language="VB.NET" Value="LocalUserRemoved" />
+      <MemberSignature Language="F#" Value="LocalUserRemoved = 6" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEventType.LocalUserRemoved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>Social graph removal complete</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PresenceChanged">
+      <MemberSignature Language="C#" Value="PresenceChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.SocialEventType PresenceChanged = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.PresenceChanged" />
+      <MemberSignature Language="VB.NET" Value="PresenceChanged" />
+      <MemberSignature Language="F#" Value="PresenceChanged = 2" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEventType.PresenceChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Users presence record has changed</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfilesChanged">
+      <MemberSignature Language="C#" Value="ProfilesChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.SocialEventType ProfilesChanged = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.ProfilesChanged" />
+      <MemberSignature Language="VB.NET" Value="ProfilesChanged" />
+      <MemberSignature Language="F#" Value="ProfilesChanged = 3" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEventType.ProfilesChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>Users profile information has changed</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SocialRelationshipsChanged">
+      <MemberSignature Language="C#" Value="SocialRelationshipsChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.SocialEventType SocialRelationshipsChanged = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.SocialRelationshipsChanged" />
+      <MemberSignature Language="VB.NET" Value="SocialRelationshipsChanged" />
+      <MemberSignature Language="F#" Value="SocialRelationshipsChanged = 4" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEventType.SocialRelationshipsChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>Relationship to users has changed</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SocialUserGroupLoaded">
+      <MemberSignature Language="C#" Value="SocialUserGroupLoaded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.SocialEventType SocialUserGroupLoaded = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.SocialUserGroupLoaded" />
+      <MemberSignature Language="VB.NET" Value="SocialUserGroupLoaded" />
+      <MemberSignature Language="F#" Value="SocialUserGroupLoaded = 7" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEventType.SocialUserGroupLoaded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>Xbox Social User Group load complete (will only trigger for views that take a list of users)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SocialUserGroupUpdated">
+      <MemberSignature Language="C#" Value="SocialUserGroupUpdated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.SocialEventType SocialUserGroupUpdated = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.SocialUserGroupUpdated" />
+      <MemberSignature Language="VB.NET" Value="SocialUserGroupUpdated" />
+      <MemberSignature Language="F#" Value="SocialUserGroupUpdated = 8" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEventType.SocialUserGroupUpdated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>Social user group updated</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UsersAddedToSocialGraph">
+      <MemberSignature Language="C#" Value="UsersAddedToSocialGraph" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.SocialEventType UsersAddedToSocialGraph = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.UsersAddedToSocialGraph" />
+      <MemberSignature Language="VB.NET" Value="UsersAddedToSocialGraph" />
+      <MemberSignature Language="F#" Value="UsersAddedToSocialGraph = 0" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEventType.UsersAddedToSocialGraph" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Users added to social graph</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UsersRemovedFromSocialGraph">
+      <MemberSignature Language="C#" Value="UsersRemovedFromSocialGraph" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.SocialEventType UsersRemovedFromSocialGraph = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.SocialEventType.UsersRemovedFromSocialGraph" />
+      <MemberSignature Language="VB.NET" Value="UsersRemovedFromSocialGraph" />
+      <MemberSignature Language="F#" Value="UsersRemovedFromSocialGraph = 1" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEventType.UsersRemovedFromSocialGraph" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.SocialEventType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Users removed from</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

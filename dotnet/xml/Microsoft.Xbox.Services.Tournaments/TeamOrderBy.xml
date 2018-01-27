@@ -1,0 +1,90 @@
+﻿<Type Name="TeamOrderBy" FullName="Microsoft.Xbox.Services.Tournaments.TeamOrderBy">
+  <TypeSignature Language="C#" Value="public enum TeamOrderBy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TeamOrderBy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TeamOrderBy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TeamOrderBy" />
+  <TypeSignature Language="F#" Value="type TeamOrderBy = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+The property used to order results by for retrieving a list of teams.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamOrderBy Name = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamOrderBy.Name" />
+      <MemberSignature Language="VB.NET" Value="Name" />
+      <MemberSignature Language="F#" Value="Name = 1" Usage="Microsoft.Xbox.Services.Tournaments.TeamOrderBy.Name" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamOrderBy</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+Order by name.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamOrderBy None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamOrderBy.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Xbox.Services.Tournaments.TeamOrderBy.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamOrderBy</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+No order provided.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ranking">
+      <MemberSignature Language="C#" Value="Ranking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamOrderBy Ranking = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamOrderBy.Ranking" />
+      <MemberSignature Language="VB.NET" Value="Ranking" />
+      <MemberSignature Language="F#" Value="Ranking = 2" Usage="Microsoft.Xbox.Services.Tournaments.TeamOrderBy.Ranking" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamOrderBy</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+Order by ranking.
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

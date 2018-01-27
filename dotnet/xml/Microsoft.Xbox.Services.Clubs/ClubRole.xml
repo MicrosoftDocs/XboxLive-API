@@ -1,0 +1,199 @@
+﻿<Type Name="ClubRole" FullName="Microsoft.Xbox.Services.Clubs.ClubRole">
+  <TypeSignature Language="C#" Value="public enum ClubRole" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubRole extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubRole" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ClubRole" />
+  <TypeSignature Language="F#" Value="type ClubRole = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Banned">
+      <MemberSignature Language="C#" Value="Banned" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubRole Banned = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubRole.Banned" />
+      <MemberSignature Language="VB.NET" Value="Banned" />
+      <MemberSignature Language="F#" Value="Banned = 7" Usage="Microsoft.Xbox.Services.Clubs.ClubRole.Banned" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+User has been banned from all interaction with a club. A user cannot have any other role
+with a club if they are banned from it
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Follower">
+      <MemberSignature Language="C#" Value="Follower" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubRole Follower = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubRole.Follower" />
+      <MemberSignature Language="VB.NET" Value="Follower" />
+      <MemberSignature Language="F#" Value="Follower = 8" Usage="Microsoft.Xbox.Services.Clubs.ClubRole.Follower" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>Follower of a club</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invited">
+      <MemberSignature Language="C#" Value="Invited" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubRole Invited = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubRole.Invited" />
+      <MemberSignature Language="VB.NET" Value="Invited" />
+      <MemberSignature Language="F#" Value="Invited = 6" Usage="Microsoft.Xbox.Services.Clubs.ClubRole.Invited" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>User has been invited to a club</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Member">
+      <MemberSignature Language="C#" Value="Member" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubRole Member = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubRole.Member" />
+      <MemberSignature Language="VB.NET" Value="Member" />
+      <MemberSignature Language="F#" Value="Member = 1" Usage="Microsoft.Xbox.Services.Clubs.ClubRole.Member" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Member of a club</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Moderator">
+      <MemberSignature Language="C#" Value="Moderator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubRole Moderator = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubRole.Moderator" />
+      <MemberSignature Language="VB.NET" Value="Moderator" />
+      <MemberSignature Language="F#" Value="Moderator = 2" Usage="Microsoft.Xbox.Services.Clubs.ClubRole.Moderator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Moderator of a club</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nonmember">
+      <MemberSignature Language="C#" Value="Nonmember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubRole Nonmember = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubRole.Nonmember" />
+      <MemberSignature Language="VB.NET" Value="Nonmember" />
+      <MemberSignature Language="F#" Value="Nonmember = 0" Usage="Microsoft.Xbox.Services.Clubs.ClubRole.Nonmember" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Not a member of the club. Used exclusively for permissions/settings</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="Owner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubRole Owner = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubRole.Owner" />
+      <MemberSignature Language="VB.NET" Value="Owner" />
+      <MemberSignature Language="F#" Value="Owner = 3" Usage="Microsoft.Xbox.Services.Clubs.ClubRole.Owner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>Owner of a club</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Recommended">
+      <MemberSignature Language="C#" Value="Recommended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubRole Recommended = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubRole.Recommended" />
+      <MemberSignature Language="VB.NET" Value="Recommended" />
+      <MemberSignature Language="F#" Value="Recommended = 5" Usage="Microsoft.Xbox.Services.Clubs.ClubRole.Recommended" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>User has been recommended for a club</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestedToJoin">
+      <MemberSignature Language="C#" Value="RequestedToJoin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubRole RequestedToJoin = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubRole.RequestedToJoin" />
+      <MemberSignature Language="VB.NET" Value="RequestedToJoin" />
+      <MemberSignature Language="F#" Value="RequestedToJoin = 4" Usage="Microsoft.Xbox.Services.Clubs.ClubRole.RequestedToJoin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Clubs.ClubRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>User has requested to join a club</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

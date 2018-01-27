@@ -1,0 +1,615 @@
+﻿<Type Name="MultiplayerManager" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager">
+  <TypeSignature Language="C#" Value="public sealed class MultiplayerManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerManager" />
+  <TypeSignature Language="F#" Value="type MultiplayerManager = class&#xA;    interface __IMultiplayerManagerPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+This class contains APIs for matchmaking, player roster, and multiplayer session management.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AutoFillMembersDuringMatchmaking">
+      <MemberSignature Language="C#" Value="public bool AutoFillMembersDuringMatchmaking { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoFillMembersDuringMatchmaking" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.AutoFillMembersDuringMatchmaking" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoFillMembersDuringMatchmaking As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoFillMembersDuringMatchmaking : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.AutoFillMembersDuringMatchmaking" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.AutoFillMembersDuringMatchmaking</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates whether the game should auto fill open slots during gameplay.
+If set to true, it finds members via matchmaking to fill open slots during gameplay.
+This can be changed anytime.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelMatch">
+      <MemberSignature Language="C#" Value="public void CancelMatch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelMatch() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.CancelMatch" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelMatch ()" />
+      <MemberSignature Language="F#" Value="abstract member CancelMatch : unit -&gt; unit&#xA;override this.CancelMatch : unit -&gt; unit" Usage="multiplayerManager.CancelMatch " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.CancelMatch</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+Cancels the match request on the server, if one exists.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoWork">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent&gt; DoWork ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent&gt; DoWork() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.DoWork" />
+      <MemberSignature Language="VB.NET" Value="Public Function DoWork () As IVectorView(Of MultiplayerEvent)" />
+      <MemberSignature Language="F#" Value="abstract member DoWork : unit -&gt; Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent&gt;&#xA;override this.DoWork : unit -&gt; Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent&gt;" Usage="multiplayerManager.DoWork " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.DoWork</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+Ensures proper game state updates are maintained between the title and the Xbox Live Multiplayer Service.
+</summary>
+        <returns>A list of all callback events for the game to handle. Empty if no events are triggered during this update.</returns>
+        <remarks>
+To ensure the best performance, DoWork() must be called frequently, at least once per frame.
+The title needs to be thread safe when calling DoWork() since this is when the state will change.
+For example, if you looping through the list of game session members, the list may change when DoWork() is called.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EstimatedMatchWaitTime">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan EstimatedMatchWaitTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan EstimatedMatchWaitTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.EstimatedMatchWaitTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EstimatedMatchWaitTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.EstimatedMatchWaitTime : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.EstimatedMatchWaitTime" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.EstimatedMatchWaitTime</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Estimated wait time for a match request to be matched with other members.
+Only applies after find_match() has been called.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindMatch">
+      <MemberSignature Language="C#" Value="public void FindMatch (string hopperName, string attributes, Windows.Foundation.TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FindMatch([in]string hopperName, [in]string attributes, [in]valuetype Windows.Foundation.TimeSpan timeout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.FindMatch(System.String,System.String,Windows.Foundation.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FindMatch (hopperName As String, attributes As String, timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member FindMatch : string * string * Windows.Foundation.TimeSpan -&gt; unit&#xA;override this.FindMatch : string * string * Windows.Foundation.TimeSpan -&gt; unit" Usage="multiplayerManager.FindMatch (hopperName, attributes, timeout)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.FindMatch(System.String,System.String,Windows.Foundation.TimeSpan)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hopperName" Type="System.String" />
+        <Parameter Name="attributes" Type="System.String" />
+        <Parameter Name="timeout" Type="Windows.Foundation.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="hopperName">The name of the hopper.</param>
+        <param name="attributes">The ticket attributes for the match. (Optional)</param>
+        <param name="timeout">The maximum time to wait for members to join the match. (Optional)</param>
+        <summary>
+Sends a matchmaking request to the server.  When a match is found, the manager will join
+the game and notify the title via the FindMatchCompleted event.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GameSession">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession GameSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession GameSession" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.GameSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameSession As MultiplayerGameSession" />
+      <MemberSignature Language="F#" Value="member this.GameSession : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.GameSession" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.GameSession</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A collection of members that are part of your game session. When a member accepts a game invite,
+they will be added to the lobby and the game session (if there is room).
+You can call leave_game() to leave the game.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (string lobbySessionTemplateName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize([in]string lobbySessionTemplateName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.Initialize(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (lobbySessionTemplateName As String)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : string -&gt; unit&#xA;override this.Initialize : string -&gt; unit" Usage="multiplayerManager.Initialize lobbySessionTemplateName" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.Initialize(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lobbySessionTemplateName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="lobbySessionTemplateName">The name of the template for the lobby session to be based on.</param>
+        <summary>
+Initializes the object.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Joinability">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.Manager.Joinability Joinability { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.Manager.Joinability Joinability" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.Joinability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Joinability As Joinability" />
+      <MemberSignature Language="F#" Value="member this.Joinability : Microsoft.Xbox.Services.Multiplayer.Manager.Joinability" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.Joinability" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.Joinability</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates JoinInProgressState on who can join your game.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JoinGame">
+      <MemberSignature Language="C#" Value="public void JoinGame (string sessionName, string sessionTemplateName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void JoinGame([in]string sessionName, [in]string sessionTemplateName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.JoinGame(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub JoinGame (sessionName As String, sessionTemplateName As String)" />
+      <MemberSignature Language="F#" Value="abstract member JoinGame : string * string -&gt; unit&#xA;override this.JoinGame : string * string -&gt; unit" Usage="multiplayerManager.JoinGame (sessionName, sessionTemplateName)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.JoinGame(System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Call JoinGame(String^, String^, IVectorView&lt;&gt;^) instead", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("JoinGame2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionName" Type="System.String" />
+        <Parameter Name="sessionTemplateName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sessionName">A unique name for the session.</param>
+        <param name="sessionTemplateName">The name of the template for the game session to be based on.</param>
+        <summary>
+Joins a game given a globally unique session name. Callers can get the unique session name
+as a result of the title's third party matchmaking.
+</summary>
+        <remarks>
+The result is delivered via MultiplayerEvent callback of type JoinGameCompleted through DoWork().
+After joining, you can set the properties or the host via GameSession()::SetSynchronized APIs.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JoinGame">
+      <MemberSignature Language="C#" Value="public void JoinGame (string sessionName, string sessionTemplateName, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void JoinGame([in]string sessionName, [in]string sessionTemplateName, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.JoinGame(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub JoinGame (sessionName As String, sessionTemplateName As String, xboxUserIds As IVectorView(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member JoinGame : string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; unit&#xA;override this.JoinGame : string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; unit" Usage="multiplayerManager.JoinGame (sessionName, sessionTemplateName, xboxUserIds)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.JoinGame(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("JoinGame1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionName" Type="System.String" />
+        <Parameter Name="sessionTemplateName" Type="System.String" />
+        <Parameter Name="xboxUserIds" Type="Windows.Foundation.Collections.IVectorView&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="sessionName">To be added.</param>
+        <param name="sessionTemplateName">To be added.</param>
+        <param name="xboxUserIds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JoinGameFromLobby">
+      <MemberSignature Language="C#" Value="public void JoinGameFromLobby (string sessionTemplateName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void JoinGameFromLobby([in]string sessionTemplateName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.JoinGameFromLobby(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub JoinGameFromLobby (sessionTemplateName As String)" />
+      <MemberSignature Language="F#" Value="abstract member JoinGameFromLobby : string -&gt; unit&#xA;override this.JoinGameFromLobby : string -&gt; unit" Usage="multiplayerManager.JoinGameFromLobby sessionTemplateName" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.JoinGameFromLobby(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionTemplateName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sessionTemplateName">The name of the template for the game session to be based on.</param>
+        <summary>
+Join the lobby's game session if one exists and if there is room. If the session doesn't exist, it creates a new game session
+with the existing lobby members.
+</summary>
+        <remarks>
+The result is delivered via MultiplayerEvent callback of type JoinGameCompleted through DoWork().
+This does not migrate existing lobby session properties over to the game session.
+After joining, you can set the properties or the host via GameSession()::SetSynchronized APIs.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JoinLobby">
+      <MemberSignature Language="C#" Value="public void JoinLobby (string handleId, Microsoft.Xbox.Services.System.XboxLiveUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void JoinLobby([in]string handleId, [in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.JoinLobby(System.String,Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub JoinLobby (handleId As String, user As XboxLiveUser)" />
+      <MemberSignature Language="F#" Value="abstract member JoinLobby : string * Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit&#xA;override this.JoinLobby : string * Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit" Usage="multiplayerManager.JoinLobby (handleId, user)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.JoinLobby(System.String,Microsoft.Xbox.Services.System.XboxLiveUser)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.DefaultOverload</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("JoinLobby2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handleId" Type="System.String" />
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+      </Parameters>
+      <Docs>
+        <param name="handleId">A multiplayer handle id, which uniquely identifies the lobby session you want to join.</param>
+        <param name="user">The Xbox Live user joining the lobby.</param>
+        <summary>
+Joins an Xbox Live user to the lobby identified by a session handle id.
+</summary>
+        <remarks>
+A handle is a service-side pointer to a game session.
+The handleId is a GUID identifier of the handle.  Callers will usually get the handleId from
+another member's MultiplayerActivityDetails. Optionally, if you haven't added the local users through
+lobbySession()::AddlocalUser(), you can pass in the list of users via the Joinlobby() API.
+The result is delivered via MultiplayerEvent callback of type JoinGameCompleted through DoWork().
+After joining, you can set the host via MultiplayerGameSession::SetSynchronizedHost() if one doesn't exist.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JoinLobby">
+      <MemberSignature Language="C#" Value="public void JoinLobby (Windows.ApplicationModel.Activation.IProtocolActivatedEventArgs eventArgs, Microsoft.Xbox.Services.System.XboxLiveUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void JoinLobby([in]class Windows.ApplicationModel.Activation.IProtocolActivatedEventArgs eventArgs, [in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.JoinLobby(Windows.ApplicationModel.Activation.IProtocolActivatedEventArgs,Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub JoinLobby (eventArgs As IProtocolActivatedEventArgs, user As XboxLiveUser)" />
+      <MemberSignature Language="F#" Value="abstract member JoinLobby : Windows.ApplicationModel.Activation.IProtocolActivatedEventArgs * Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit&#xA;override this.JoinLobby : Windows.ApplicationModel.Activation.IProtocolActivatedEventArgs * Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit" Usage="multiplayerManager.JoinLobby (eventArgs, user)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.JoinLobby(Windows.ApplicationModel.Activation.IProtocolActivatedEventArgs,Microsoft.Xbox.Services.System.XboxLiveUser)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Overload("JoinLobby1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="Windows.ApplicationModel.Activation.IProtocolActivatedEventArgs" />
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">The IProtocolActivatedEventArgs when the title is protocol activated.</param>
+        <param name="user">The system User joining the lobby.</param>
+        <summary>
+Joins an Xbox Live user to a lobby via the specified IProtocolActivatedEventArgs.
+</summary>
+        <remarks>
+The IProtocolActivatedEventArgs provides arguments for protocol activation. If the user accepts an invite or
+joined a friends game via a shell UI, the title will get a protocol activation. The result is delivered via
+JoinLobbyCompletedEventArgs() callback through DoWork().
+
+Optionally, if you haven't added the local users through LobbySession()::AddLocalUser(), you can pass in
+the list of users via the JoinLobby() API. If the invited user is not added either via
+LobbySession()::AddLocalUser() or through JoinLobby(), then JoinLobby() will fail and provide the
+InvitedXboxUserId that the invite was sent for as part of the JoinLobbyCompletedEventArgs()
+After joining, you can set the host via GameSession::SetSynchronizedHost() if one doesn't exist.
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeaveGame">
+      <MemberSignature Language="C#" Value="public void LeaveGame ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LeaveGame() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.LeaveGame" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LeaveGame ()" />
+      <MemberSignature Language="F#" Value="abstract member LeaveGame : unit -&gt; unit&#xA;override this.LeaveGame : unit -&gt; unit" Usage="multiplayerManager.LeaveGame " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.LeaveGame</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+Leaves the current game session and returns the users back into the lobby. This removes all local users from the game.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LobbySession">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerLobbySession LobbySession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerLobbySession LobbySession" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.LobbySession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LobbySession As MultiplayerLobbySession" />
+      <MemberSignature Language="F#" Value="member this.LobbySession : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerLobbySession" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.LobbySession" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.LobbySession</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerLobbySession</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A collection of members that you have invited to your lobby. When a member accepts a game invite,
+they will be added to the lobby and the game session. Users found via matchmaking will not be
+added in the lobby.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus MatchStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus MatchStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.MatchStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchStatus As MatchStatus" />
+      <MemberSignature Language="F#" Value="member this.MatchStatus : Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.MatchStatus" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.MatchStatus</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MatchStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Provides the current state of matchmaking. 'None' if no matchmaking is in progress.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetJoinInProgress">
+      <MemberSignature Language="C#" Value="public void SetJoinInProgress (Microsoft.Xbox.Services.Multiplayer.Manager.Joinability value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetJoinInProgress([in]valuetype Microsoft.Xbox.Services.Multiplayer.Manager.Joinability value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.SetJoinInProgress(Microsoft.Xbox.Services.Multiplayer.Manager.Joinability)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetJoinInProgress (value As Joinability)" />
+      <MemberSignature Language="F#" Value="abstract member SetJoinInProgress : Microsoft.Xbox.Services.Multiplayer.Manager.Joinability -&gt; unit&#xA;override this.SetJoinInProgress : Microsoft.Xbox.Services.Multiplayer.Manager.Joinability -&gt; unit" Usage="multiplayerManager.SetJoinInProgress value" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.SetJoinInProgress(Microsoft.Xbox.Services.Multiplayer.Manager.Joinability)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Microsoft.Xbox.Services.Multiplayer.Manager.Joinability" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+Restricts who can join the game. Defaults to "enabled", meaning only local users and users who are followed
+by an existing member of the lobby can join without an invite.
+</summary>
+        <remarks>
+Changes are batched and written to the service on the next DoWork(). All session properties and members
+contain updated response returned from the server upon calling DoWork().
+</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetQualityOfServiceMeasurements">
+      <MemberSignature Language="C#" Value="public void SetQualityOfServiceMeasurements (Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt; measurements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetQualityOfServiceMeasurements([in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt; measurements) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.SetQualityOfServiceMeasurements(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetQualityOfServiceMeasurements (measurements As IVectorView(Of MultiplayerQualityOfServiceMeasurements))" />
+      <MemberSignature Language="F#" Value="abstract member SetQualityOfServiceMeasurements : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt; -&gt; unit&#xA;override this.SetQualityOfServiceMeasurements : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt; -&gt; unit" Usage="multiplayerManager.SetQualityOfServiceMeasurements measurements" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerManagerPublicNonVirtuals.SetQualityOfServiceMeasurements(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="measurements" Type="Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="measurements">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SingletonInstance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager SingletonInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager SingletonInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.SingletonInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SingletonInstance As MultiplayerManager" />
+      <MemberSignature Language="F#" Value="member this.SingletonInstance : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager.SingletonInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Gets the multiplayer_manager singleton instance.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

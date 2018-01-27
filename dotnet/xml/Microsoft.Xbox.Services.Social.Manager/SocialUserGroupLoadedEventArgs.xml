@@ -1,0 +1,61 @@
+﻿<Type Name="SocialUserGroupLoadedEventArgs" FullName="Microsoft.Xbox.Services.Social.Manager.SocialUserGroupLoadedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class SocialUserGroupLoadedEventArgs : Microsoft.Xbox.Services.Social.Manager.SocialEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialUserGroupLoadedEventArgs extends System.Object implements class Microsoft.Xbox.Services.Social.Manager.SocialEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.SocialUserGroupLoadedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocialUserGroupLoadedEventArgs&#xA;Implements SocialEventArgs" />
+  <TypeSignature Language="F#" Value="type SocialUserGroupLoadedEventArgs = class&#xA;    interface SocialEventArgs&#xA;    interface __ISocialUserGroupLoadedEventArgsPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Xbox.Services.Social.Manager.SocialEventArgs</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SocialUserGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup SocialUserGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup SocialUserGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialUserGroupLoadedEventArgs.SocialUserGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SocialUserGroup As XboxSocialUserGroup" />
+      <MemberSignature Language="F#" Value="member this.SocialUserGroup : Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup" Usage="Microsoft.Xbox.Services.Social.Manager.SocialUserGroupLoadedEventArgs.SocialUserGroup" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ISocialUserGroupLoadedEventArgsPublicNonVirtuals.SocialUserGroup</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The loaded social user group
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

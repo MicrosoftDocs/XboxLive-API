@@ -1,0 +1,184 @@
+﻿<Type Name="StatisticChangeSubscription" FullName="Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription">
+  <TypeSignature Language="C#" Value="public sealed class StatisticChangeSubscription" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatisticChangeSubscription extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StatisticChangeSubscription" />
+  <TypeSignature Language="F#" Value="type StatisticChangeSubscription = class&#xA;    interface __IStatisticChangeSubscriptionPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Handles notification when the state of a statistic subscription changes.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ResourceUri">
+      <MemberSignature Language="C#" Value="public string ResourceUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResourceUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.ResourceUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceUri As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceUri : string" Usage="Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.ResourceUri" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IStatisticChangeSubscriptionPublicNonVirtuals.ResourceUri</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The resource uri for the request.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceConfigurationId">
+      <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.ServiceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationId : string" Usage="Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.ServiceConfigurationId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IStatisticChangeSubscriptionPublicNonVirtuals.ServiceConfigurationId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The service configuration id the subscription is under
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As RealTimeActivitySubscriptionState" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState" Usage="Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.State" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IStatisticChangeSubscriptionPublicNonVirtuals.State</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Indicates the state of the subscription.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatisticName">
+      <MemberSignature Language="C#" Value="public string StatisticName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StatisticName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.StatisticName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatisticName As String" />
+      <MemberSignature Language="F#" Value="member this.StatisticName : string" Usage="Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.StatisticName" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IStatisticChangeSubscriptionPublicNonVirtuals.StatisticName</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The Statistic name the subscription is for
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscriptionId">
+      <MemberSignature Language="C#" Value="public uint SubscriptionId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 SubscriptionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.SubscriptionId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubscriptionId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionId : uint32" Usage="Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.SubscriptionId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IStatisticChangeSubscriptionPublicNonVirtuals.SubscriptionId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The unique subscription id for the request.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxUserId">
+      <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription.XboxUserId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IStatisticChangeSubscriptionPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The xbox user id the subscription is for
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

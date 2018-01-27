@@ -1,0 +1,133 @@
+﻿<Type Name="ContextualSearchGameClipUriInfo" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo">
+  <TypeSignature Language="C#" Value="public sealed class ContextualSearchGameClipUriInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchGameClipUriInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextualSearchGameClipUriInfo" />
+  <TypeSignature Language="F#" Value="type ContextualSearchGameClipUriInfo = class&#xA;    interface __IContextualSearchGameClipUriInfoPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains information about a contextual search game clips uri info.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Expiration">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime Expiration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime Expiration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo.Expiration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expiration As DateTime" />
+      <MemberSignature Language="F#" Value="member this.Expiration : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo.Expiration" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipUriInfoPublicNonVirtuals.Expiration</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The expiration time of the URI that is included in this response.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileSize">
+      <MemberSignature Language="C#" Value="public ulong FileSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 FileSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo.FileSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSize As ULong" />
+      <MemberSignature Language="F#" Value="member this.FileSize : uint64" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo.FileSize" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipUriInfoPublicNonVirtuals.FileSize</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The file size at the location of the URL for formats that are downloaded
+This is 0 for streaming formats
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriType">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType UriType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType UriType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo.UriType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UriType As ContextualSearchGameClipUriType" />
+      <MemberSignature Language="F#" Value="member this.UriType : Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo.UriType" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipUriInfoPublicNonVirtuals.UriType</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Specifies the type of the URI.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Uri Url { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Uri Url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo.Url" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As Uri" />
+      <MemberSignature Language="F#" Value="member this.Url : Windows.Foundation.Uri" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo.Url" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipUriInfoPublicNonVirtuals.Url</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The URI to the location of the video asset.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

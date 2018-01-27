@@ -1,0 +1,279 @@
+﻿<Type Name="MultiplayerSessionChangeTypes" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes">
+  <TypeSignature Language="C#" Value="public enum MultiplayerSessionChangeTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionChangeTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MultiplayerSessionChangeTypes" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionChangeTypes = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines enumberation values that indicate the types of changes to a session that can be subscribed to.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ArbitrationPropertyChange">
+      <MemberSignature Language="C#" Value="ArbitrationPropertyChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes ArbitrationPropertyChange = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.ArbitrationPropertyChange" />
+      <MemberSignature Language="VB.NET" Value="ArbitrationPropertyChange" />
+      <MemberSignature Language="F#" Value="ArbitrationPropertyChange = 1024" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.ArbitrationPropertyChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>1024</MemberValue>
+      <Docs>
+        <summary>
+Changes within tournament server properties. Such as next game, last game, or registration.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomPropertyChange">
+      <MemberSignature Language="C#" Value="CustomPropertyChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes CustomPropertyChange = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.CustomPropertyChange" />
+      <MemberSignature Language="VB.NET" Value="CustomPropertyChange" />
+      <MemberSignature Language="F#" Value="CustomPropertyChange = 128" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.CustomPropertyChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>128</MemberValue>
+      <Docs>
+        <summary>
+Changes within the /properties/custom object.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Everything">
+      <MemberSignature Language="C#" Value="Everything" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes Everything = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.Everything" />
+      <MemberSignature Language="VB.NET" Value="Everything" />
+      <MemberSignature Language="F#" Value="Everything = 1" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.Everything" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+Changes to anything in the session.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HostDeviceTokenChange">
+      <MemberSignature Language="C#" Value="HostDeviceTokenChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes HostDeviceTokenChange = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.HostDeviceTokenChange" />
+      <MemberSignature Language="VB.NET" Value="HostDeviceTokenChange" />
+      <MemberSignature Language="F#" Value="HostDeviceTokenChange = 2" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.HostDeviceTokenChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+Changes to the host device token.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializationStateChange">
+      <MemberSignature Language="C#" Value="InitializationStateChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes InitializationStateChange = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.InitializationStateChange" />
+      <MemberSignature Language="VB.NET" Value="InitializationStateChange" />
+      <MemberSignature Language="F#" Value="InitializationStateChange = 4" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.InitializationStateChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+Changes to the stage of initialization has changed.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchmakingStatusChange">
+      <MemberSignature Language="C#" Value="MatchmakingStatusChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes MatchmakingStatusChange = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MatchmakingStatusChange" />
+      <MemberSignature Language="VB.NET" Value="MatchmakingStatusChange" />
+      <MemberSignature Language="F#" Value="MatchmakingStatusChange = 8" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MatchmakingStatusChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+Changes to the matchmaking status (e.g. match found or expired) occured.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberCustomPropertyChange">
+      <MemberSignature Language="C#" Value="MemberCustomPropertyChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes MemberCustomPropertyChange = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MemberCustomPropertyChange" />
+      <MemberSignature Language="VB.NET" Value="MemberCustomPropertyChange" />
+      <MemberSignature Language="F#" Value="MemberCustomPropertyChange = 256" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MemberCustomPropertyChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>256</MemberValue>
+      <Docs>
+        <summary>
+Changed within the /member/properties/custom object, for any of the members.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberListChange">
+      <MemberSignature Language="C#" Value="MemberListChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes MemberListChange = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MemberListChange" />
+      <MemberSignature Language="VB.NET" Value="MemberListChange" />
+      <MemberSignature Language="F#" Value="MemberListChange = 16" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MemberListChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>
+A member joined or left the session.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberStatusChange">
+      <MemberSignature Language="C#" Value="MemberStatusChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes MemberStatusChange = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MemberStatusChange" />
+      <MemberSignature Language="VB.NET" Value="MemberStatusChange" />
+      <MemberSignature Language="F#" Value="MemberStatusChange = 32" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.MemberStatusChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>
+Changes to the status of a member.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+None.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionJoinabilityChange">
+      <MemberSignature Language="C#" Value="SessionJoinabilityChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes SessionJoinabilityChange = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.SessionJoinabilityChange" />
+      <MemberSignature Language="VB.NET" Value="SessionJoinabilityChange" />
+      <MemberSignature Language="F#" Value="SessionJoinabilityChange = 64" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.SessionJoinabilityChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>64</MemberValue>
+      <Docs>
+        <summary>
+Changes to the joinability of the session.
+</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TournamentPropertyChange">
+      <MemberSignature Language="C#" Value="TournamentPropertyChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes TournamentPropertyChange = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.TournamentPropertyChange" />
+      <MemberSignature Language="VB.NET" Value="TournamentPropertyChange" />
+      <MemberSignature Language="F#" Value="TournamentPropertyChange = 512" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes.TournamentPropertyChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>512</MemberValue>
+      <Docs>
+        <summary>
+Changes within tournament server properties. Such as next game, last game, or registration.
+</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

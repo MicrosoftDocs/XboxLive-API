@@ -1,0 +1,284 @@
+﻿<Type Name="ContextualSearchGameClip" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip">
+  <TypeSignature Language="C#" Value="public sealed class ContextualSearchGameClip" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchGameClip extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextualSearchGameClip" />
+  <TypeSignature Language="F#" Value="type ContextualSearchGameClip = class&#xA;    interface __IContextualSearchGameClipPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains information about a contextual search game clip.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClipName">
+      <MemberSignature Language="C#" Value="public string ClipName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClipName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.ClipName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClipName As String" />
+      <MemberSignature Language="F#" Value="member this.ClipName : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.ClipName" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipPublicNonVirtuals.ClipName</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The localized version of the clip's name based on the input locale of the request as looked up from the title management system.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DurationInSeconds">
+      <MemberSignature Language="C#" Value="public ulong DurationInSeconds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 DurationInSeconds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.DurationInSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DurationInSeconds As ULong" />
+      <MemberSignature Language="F#" Value="member this.DurationInSeconds : uint64" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.DurationInSeconds" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipPublicNonVirtuals.DurationInSeconds</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Specifies the duration of the game clip in seconds.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GameClipId">
+      <MemberSignature Language="C#" Value="public string GameClipId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GameClipId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.GameClipId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameClipId As String" />
+      <MemberSignature Language="F#" Value="member this.GameClipId : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.GameClipId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipPublicNonVirtuals.GameClipId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The ID assigned to the game clip.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GameClipLocale">
+      <MemberSignature Language="C#" Value="public string GameClipLocale { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GameClipLocale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.GameClipLocale" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameClipLocale As String" />
+      <MemberSignature Language="F#" Value="member this.GameClipLocale : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.GameClipLocale" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipPublicNonVirtuals.GameClipLocale</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+the locale the game clip was created under.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GameClipType">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType GameClipType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType GameClipType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.GameClipType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameClipType As ContextualSearchGameClipType" />
+      <MemberSignature Language="F#" Value="member this.GameClipType : Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.GameClipType" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipPublicNonVirtuals.GameClipType</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The type of clip. Can be multiple values and if so will be comma delimited.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GameClipUris">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo&gt; GameClipUris { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo&gt; GameClipUris" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.GameClipUris" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameClipUris As IVectorView(Of ContextualSearchGameClipUriInfo)" />
+      <MemberSignature Language="F#" Value="member this.GameClipUris : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo&gt;" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.GameClipUris" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipPublicNonVirtuals.GameClipUris</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipUriInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Array of playback options for this clip.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stats">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat&gt; Stats { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat&gt; Stats" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.Stats" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stats As IVectorView(Of ContextualSearchGameClipStat)" />
+      <MemberSignature Language="F#" Value="member this.Stats : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat&gt;" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.Stats" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipPublicNonVirtuals.Stats</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Stats associated with the game clip. 
+This contains the initial values of stats at the start of the game clip and any new value a stat had during the recording of the game clip. 
+Note that these are only the stats configured for intermedia in the title configuration.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thumbnails">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnail&gt; Thumbnails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnail&gt; Thumbnails" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.Thumbnails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Thumbnails As IVectorView(Of ContextualSearchGameClipThumbnail)" />
+      <MemberSignature Language="F#" Value="member this.Thumbnails : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnail&gt;" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.Thumbnails" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipPublicNonVirtuals.Thumbnails</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipThumbnail&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Array of thumbnails for this clip.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Views">
+      <MemberSignature Language="C#" Value="public ulong Views { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 Views" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.Views" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Views As ULong" />
+      <MemberSignature Language="F#" Value="member this.Views : uint64" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.Views" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipPublicNonVirtuals.Views</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The number of views associated with a game clip.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxUserId">
+      <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip.XboxUserId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The XUID of the owner of the game clip
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,86 @@
+﻿<Type Name="ContextualSearchGameClipsResult" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult">
+  <TypeSignature Language="C#" Value="public sealed class ContextualSearchGameClipsResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchGameClipsResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextualSearchGameClipsResult" />
+  <TypeSignature Language="F#" Value="type ContextualSearchGameClipsResult = class&#xA;    interface __IContextualSearchGameClipsResultPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains information about a contextual search game clips result.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetNextAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt; GetNextAsync (uint maxItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt; GetNextAsync([in]unsigned int32 maxItems) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult.GetNextAsync(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextAsync (maxItems As UInteger) As IAsyncOperation(Of ContextualSearchGameClipsResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetNextAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt;&#xA;override this.GetNextAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt;" Usage="contextualSearchGameClipsResult.GetNextAsync maxItems" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipsResultPublicNonVirtuals.GetNextAsync(System.UInt32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="maxItems">The maximum number of game clips the result can contain.  Pass 0 to attempt to retrieve the top 100 items.</param>
+        <summary>
+Returns the next page of game clips.
+</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip&gt; Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip&gt; Items" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IVectorView(Of ContextualSearchGameClip)" />
+      <MemberSignature Language="F#" Value="member this.Items : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip&gt;" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult.Items" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipsResultPublicNonVirtuals.Items</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClip&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Array of game clips returned.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

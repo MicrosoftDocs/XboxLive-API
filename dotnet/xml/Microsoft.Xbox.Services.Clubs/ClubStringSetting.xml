@@ -1,0 +1,101 @@
+﻿<Type Name="ClubStringSetting" FullName="Microsoft.Xbox.Services.Clubs.ClubStringSetting">
+  <TypeSignature Language="C#" Value="public sealed class ClubStringSetting" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubStringSetting extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubStringSetting" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClubStringSetting" />
+  <TypeSignature Language="F#" Value="type ClubStringSetting = class&#xA;    interface __IClubStringSettingPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowedValues">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; AllowedValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; AllowedValues" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubStringSetting.AllowedValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedValues As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.AllowedValues : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Clubs.ClubStringSetting.AllowedValues" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubStringSettingPublicNonVirtuals.AllowedValues</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>List of possible values for the setting. Will be nullptr if the allowed values have not been configured.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanViewerChangeSetting">
+      <MemberSignature Language="C#" Value="public bool CanViewerChangeSetting { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanViewerChangeSetting" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubStringSetting.CanViewerChangeSetting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanViewerChangeSetting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanViewerChangeSetting : bool" Usage="Microsoft.Xbox.Services.Clubs.ClubStringSetting.CanViewerChangeSetting" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubStringSettingPublicNonVirtuals.CanViewerChangeSetting</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Can the user viewing the setting change it</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubStringSetting.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="Microsoft.Xbox.Services.Clubs.ClubStringSetting.Value" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubStringSettingPublicNonVirtuals.Value</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Current value of the setting</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

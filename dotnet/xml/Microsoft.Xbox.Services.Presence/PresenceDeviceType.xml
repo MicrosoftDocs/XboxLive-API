@@ -1,0 +1,215 @@
+﻿<Type Name="PresenceDeviceType" FullName="Microsoft.Xbox.Services.Presence.PresenceDeviceType">
+  <TypeSignature Language="C#" Value="public enum PresenceDeviceType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceDeviceType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.PresenceDeviceType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PresenceDeviceType" />
+  <TypeSignature Language="F#" Value="type PresenceDeviceType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary> Defines values that indicate the device type associate with a PresenceTitleRecord.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PC">
+      <MemberSignature Language="C#" Value="PC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType PC = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.PC" />
+      <MemberSignature Language="VB.NET" Value="PC" />
+      <MemberSignature Language="F#" Value="PC = 5" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceType.PC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>Games for Windows LIVE device</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Unknown device</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Web">
+      <MemberSignature Language="C#" Value="Web" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType Web = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.Web" />
+      <MemberSignature Language="VB.NET" Value="Web" />
+      <MemberSignature Language="F#" Value="Web = 3" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceType.Web" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>Web device (like Xbox.com)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows8">
+      <MemberSignature Language="C#" Value="Windows8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType Windows8 = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.Windows8" />
+      <MemberSignature Language="VB.NET" Value="Windows8" />
+      <MemberSignature Language="F#" Value="Windows8 = 6" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceType.Windows8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>Xbox LIVE for Windows device</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsOneCore">
+      <MemberSignature Language="C#" Value="WindowsOneCore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType WindowsOneCore = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsOneCore" />
+      <MemberSignature Language="VB.NET" Value="WindowsOneCore" />
+      <MemberSignature Language="F#" Value="WindowsOneCore = 8" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsOneCore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>Windows One Core device</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsOneCoreMobile">
+      <MemberSignature Language="C#" Value="WindowsOneCoreMobile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType WindowsOneCoreMobile = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsOneCoreMobile" />
+      <MemberSignature Language="VB.NET" Value="WindowsOneCoreMobile" />
+      <MemberSignature Language="F#" Value="WindowsOneCoreMobile = 9" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsOneCoreMobile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>Windows One Core Mobile device</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsPhone">
+      <MemberSignature Language="C#" Value="WindowsPhone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType WindowsPhone = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsPhone" />
+      <MemberSignature Language="VB.NET" Value="WindowsPhone" />
+      <MemberSignature Language="F#" Value="WindowsPhone = 1" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsPhone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Windows Phone device</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsPhone7">
+      <MemberSignature Language="C#" Value="WindowsPhone7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType WindowsPhone7 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsPhone7" />
+      <MemberSignature Language="VB.NET" Value="WindowsPhone7" />
+      <MemberSignature Language="F#" Value="WindowsPhone7 = 2" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceType.WindowsPhone7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Windows Phone 7 device</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Xbox360">
+      <MemberSignature Language="C#" Value="Xbox360" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType Xbox360 = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.Xbox360" />
+      <MemberSignature Language="VB.NET" Value="Xbox360" />
+      <MemberSignature Language="F#" Value="Xbox360 = 4" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceType.Xbox360" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>Xbox360 device</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxOne">
+      <MemberSignature Language="C#" Value="XboxOne" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType XboxOne = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.PresenceDeviceType.XboxOne" />
+      <MemberSignature Language="VB.NET" Value="XboxOne" />
+      <MemberSignature Language="F#" Value="XboxOne = 7" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceType.XboxOne" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceDeviceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>Xbox One device</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

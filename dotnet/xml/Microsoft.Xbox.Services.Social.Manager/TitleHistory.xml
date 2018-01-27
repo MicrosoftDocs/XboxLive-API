@@ -1,0 +1,84 @@
+﻿<Type Name="TitleHistory" FullName="Microsoft.Xbox.Services.Social.Manager.TitleHistory">
+  <TypeSignature Language="C#" Value="public sealed class TitleHistory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleHistory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.TitleHistory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitleHistory" />
+  <TypeSignature Language="F#" Value="type TitleHistory = class&#xA;    interface __ITitleHistoryPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Data about whether the user has played the title
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HasUserPlayed">
+      <MemberSignature Language="C#" Value="public bool HasUserPlayed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasUserPlayed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.TitleHistory.HasUserPlayed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasUserPlayed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasUserPlayed : bool" Usage="Microsoft.Xbox.Services.Social.Manager.TitleHistory.HasUserPlayed" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ITitleHistoryPublicNonVirtuals.HasUserPlayed</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Whether the user has played this title
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastTimeUserPlayed">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime LastTimeUserPlayed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime LastTimeUserPlayed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.TitleHistory.LastTimeUserPlayed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastTimeUserPlayed As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastTimeUserPlayed : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Social.Manager.TitleHistory.LastTimeUserPlayed" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ITitleHistoryPublicNonVirtuals.LastTimeUserPlayed</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The last time the user had played
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

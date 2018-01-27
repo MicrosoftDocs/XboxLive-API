@@ -1,0 +1,209 @@
+﻿<Type Name="PresenceTitleRecord" FullName="Microsoft.Xbox.Services.Presence.PresenceTitleRecord">
+  <TypeSignature Language="C#" Value="public sealed class PresenceTitleRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceTitleRecord extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.PresenceTitleRecord" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PresenceTitleRecord" />
+  <TypeSignature Language="F#" Value="type PresenceTitleRecord = class&#xA;    interface __IPresenceTitleRecordPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents a record containing data about title presence.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BroadcastRecord">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord BroadcastRecord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord BroadcastRecord" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceTitleRecord.BroadcastRecord" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BroadcastRecord As PresenceBroadcastRecord" />
+      <MemberSignature Language="F#" Value="member this.BroadcastRecord : Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleRecord.BroadcastRecord" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceTitleRecordPublicNonVirtuals.BroadcastRecord</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The broadcast information of what the user is broadcasting. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTitleActive">
+      <MemberSignature Language="C#" Value="public bool IsTitleActive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTitleActive" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceTitleRecord.IsTitleActive" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTitleActive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTitleActive : bool" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleRecord.IsTitleActive" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceTitleRecordPublicNonVirtuals.IsTitleActive</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The active state for the title.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedDate">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime LastModifiedDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime LastModifiedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceTitleRecord.LastModifiedDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModifiedDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedDate : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleRecord.LastModifiedDate" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceTitleRecordPublicNonVirtuals.LastModifiedDate</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The UTC timestamp when the record was last updated.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Presence">
+      <MemberSignature Language="C#" Value="public string Presence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Presence" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceTitleRecord.Presence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Presence As String" />
+      <MemberSignature Language="F#" Value="member this.Presence : string" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleRecord.Presence" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceTitleRecordPublicNonVirtuals.Presence</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The formatted and localized presence string.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleId">
+      <MemberSignature Language="C#" Value="public uint TitleId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TitleId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceTitleRecord.TitleId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.TitleId : uint32" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleRecord.TitleId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceTitleRecordPublicNonVirtuals.TitleId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The title ID.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleName">
+      <MemberSignature Language="C#" Value="public string TitleName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TitleName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceTitleRecord.TitleName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleName As String" />
+      <MemberSignature Language="F#" Value="member this.TitleName : string" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleRecord.TitleName" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceTitleRecordPublicNonVirtuals.TitleName</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The title name.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleViewState">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.PresenceTitleViewState TitleViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Presence.PresenceTitleViewState TitleViewState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceTitleRecord.TitleViewState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleViewState As PresenceTitleViewState" />
+      <MemberSignature Language="F#" Value="member this.TitleViewState : Microsoft.Xbox.Services.Presence.PresenceTitleViewState" Usage="Microsoft.Xbox.Services.Presence.PresenceTitleRecord.TitleViewState" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceTitleRecordPublicNonVirtuals.TitleViewState</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Presence.PresenceTitleViewState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The title view state.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

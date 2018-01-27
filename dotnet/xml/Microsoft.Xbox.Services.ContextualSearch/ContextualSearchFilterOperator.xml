@@ -1,0 +1,139 @@
+﻿<Type Name="ContextualSearchFilterOperator" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator">
+  <TypeSignature Language="C#" Value="public enum ContextualSearchFilterOperator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchFilterOperator extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ContextualSearchFilterOperator" />
+  <TypeSignature Language="F#" Value="type ContextualSearchFilterOperator = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enumerates the operators of a contextual search filter.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Equal">
+      <MemberSignature Language="C#" Value="Equal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator Equal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.Equal" />
+      <MemberSignature Language="VB.NET" Value="Equal" />
+      <MemberSignature Language="F#" Value="Equal = 0" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.Equal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Matches if filter name is equals to filter value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThan">
+      <MemberSignature Language="C#" Value="GreaterThan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator GreaterThan = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.GreaterThan" />
+      <MemberSignature Language="VB.NET" Value="GreaterThan" />
+      <MemberSignature Language="F#" Value="GreaterThan = 2" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.GreaterThan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Matches if filter name is greater than filter value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="GreaterThanOrEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator GreaterThanOrEqual = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.GreaterThanOrEqual" />
+      <MemberSignature Language="VB.NET" Value="GreaterThanOrEqual" />
+      <MemberSignature Language="F#" Value="GreaterThanOrEqual = 3" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.GreaterThanOrEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>Matches if filter name is greater than or equal to filter value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThan">
+      <MemberSignature Language="C#" Value="LessThan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator LessThan = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.LessThan" />
+      <MemberSignature Language="VB.NET" Value="LessThan" />
+      <MemberSignature Language="F#" Value="LessThan = 4" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.LessThan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>Matches if filter name is less than filter value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanOrEqual">
+      <MemberSignature Language="C#" Value="LessThanOrEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator LessThanOrEqual = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.LessThanOrEqual" />
+      <MemberSignature Language="VB.NET" Value="LessThanOrEqual" />
+      <MemberSignature Language="F#" Value="LessThanOrEqual = 5" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.LessThanOrEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>Matches if filter name is less than or equal to filter value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEqual">
+      <MemberSignature Language="C#" Value="NotEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator NotEqual = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.NotEqual" />
+      <MemberSignature Language="VB.NET" Value="NotEqual" />
+      <MemberSignature Language="F#" Value="NotEqual = 1" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator.NotEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Matches if filter name is not equal to filter value.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

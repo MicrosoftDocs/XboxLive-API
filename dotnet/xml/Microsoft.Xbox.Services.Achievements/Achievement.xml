@@ -1,0 +1,513 @@
+﻿<Type Name="Achievement" FullName="Microsoft.Xbox.Services.Achievements.Achievement">
+  <TypeSignature Language="C#" Value="public sealed class Achievement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Achievement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Achievements.Achievement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Achievement" />
+  <TypeSignature Language="F#" Value="type Achievement = class&#xA;    interface __IAchievementPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Represents an achievement, a system-wide mechanism for directing and
+rewarding users' in-game actions consistently across all games.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AchievementType">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Achievements.AchievementType AchievementType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Achievements.AchievementType AchievementType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.AchievementType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AchievementType As AchievementType" />
+      <MemberSignature Language="F#" Value="member this.AchievementType : Microsoft.Xbox.Services.Achievements.AchievementType" Usage="Microsoft.Xbox.Services.Achievements.Achievement.AchievementType" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.AchievementType</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The type of achievement, such as a challenge achievement.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Available">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Achievements.AchievementTimeWindow Available { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Achievements.AchievementTimeWindow Available" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.Available" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Available As AchievementTimeWindow" />
+      <MemberSignature Language="F#" Value="member this.Available : Microsoft.Xbox.Services.Achievements.AchievementTimeWindow" Usage="Microsoft.Xbox.Services.Achievements.Achievement.Available" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.Available</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementTimeWindow</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The time window during which the achievement is available. Applies to Challenges.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepLink">
+      <MemberSignature Language="C#" Value="public string DeepLink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeepLink" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.DeepLink" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeepLink As String" />
+      <MemberSignature Language="F#" Value="member this.DeepLink : string" Usage="Microsoft.Xbox.Services.Achievements.Achievement.DeepLink" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.DeepLink</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A deeplink for clients that enables the title to launch at a desired starting point
+for the achievement.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EstimatedUnlockTime">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan EstimatedUnlockTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan EstimatedUnlockTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.EstimatedUnlockTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EstimatedUnlockTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.EstimatedUnlockTime : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Achievements.Achievement.EstimatedUnlockTime" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.EstimatedUnlockTime</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The estimated time that the achievement takes to be earned.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Xbox.Services.Achievements.Achievement.Id" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.Id</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The achievement ID. Can be a uint or a guid.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRevoked">
+      <MemberSignature Language="C#" Value="public bool IsRevoked { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRevoked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.IsRevoked" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRevoked As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRevoked : bool" Usage="Microsoft.Xbox.Services.Achievements.Achievement.IsRevoked" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.IsRevoked</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+A value that indicates whether or not the achievement is revoked by enforcement.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSecret">
+      <MemberSignature Language="C#" Value="public bool IsSecret { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSecret" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.IsSecret" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSecret As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSecret : bool" Usage="Microsoft.Xbox.Services.Achievements.Achievement.IsSecret" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.IsSecret</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Whether or not the achievement is secret.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockedDescription">
+      <MemberSignature Language="C#" Value="public string LockedDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LockedDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.LockedDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LockedDescription As String" />
+      <MemberSignature Language="F#" Value="member this.LockedDescription : string" Usage="Microsoft.Xbox.Services.Achievements.Achievement.LockedDescription" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.LockedDescription</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The description of the locked achievement.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaAssets">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Achievements.AchievementMediaAsset&gt; MediaAssets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Achievements.AchievementMediaAsset&gt; MediaAssets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.MediaAssets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaAssets As IVectorView(Of AchievementMediaAsset)" />
+      <MemberSignature Language="F#" Value="member this.MediaAssets : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Achievements.AchievementMediaAsset&gt;" Usage="Microsoft.Xbox.Services.Achievements.Achievement.MediaAssets" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.MediaAssets</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Achievements.AchievementMediaAsset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The media assets associated with the achievement, such as image IDs.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Xbox.Services.Achievements.Achievement.Name" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.Name</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The localized achievement name.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParticipationType">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Achievements.AchievementParticipationType ParticipationType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Achievements.AchievementParticipationType ParticipationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.ParticipationType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParticipationType As AchievementParticipationType" />
+      <MemberSignature Language="F#" Value="member this.ParticipationType : Microsoft.Xbox.Services.Achievements.AchievementParticipationType" Usage="Microsoft.Xbox.Services.Achievements.Achievement.ParticipationType" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.ParticipationType</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementParticipationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The participation type for the achievement, such as group or individual.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformsAvailableOn">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; PlatformsAvailableOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; PlatformsAvailableOn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.PlatformsAvailableOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlatformsAvailableOn As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.PlatformsAvailableOn : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Achievements.Achievement.PlatformsAvailableOn" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.PlatformsAvailableOn</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The collection of platforms that the achievement is available on.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProductId">
+      <MemberSignature Language="C#" Value="public string ProductId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProductId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.ProductId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductId As String" />
+      <MemberSignature Language="F#" Value="member this.ProductId : string" Usage="Microsoft.Xbox.Services.Achievements.Achievement.ProductId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.ProductId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The ProductId the achievement was released with. This is a globally unique identifier that
+may correspond to an application, downloadable content, etc.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Progression">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Achievements.AchievementProgression Progression { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Achievements.AchievementProgression Progression" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.Progression" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Progression As AchievementProgression" />
+      <MemberSignature Language="F#" Value="member this.Progression : Microsoft.Xbox.Services.Achievements.AchievementProgression" Usage="Microsoft.Xbox.Services.Achievements.Achievement.Progression" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.Progression</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementProgression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The progression object containing progress details about the achievement,
+including requirements.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgressState">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Achievements.AchievementProgressState ProgressState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Achievements.AchievementProgressState ProgressState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.ProgressState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProgressState As AchievementProgressState" />
+      <MemberSignature Language="F#" Value="member this.ProgressState : Microsoft.Xbox.Services.Achievements.AchievementProgressState" Usage="Microsoft.Xbox.Services.Achievements.Achievement.ProgressState" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.ProgressState</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementProgressState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The state of a user's progress towards the earning of the achievement.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rewards">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Achievements.AchievementReward&gt; Rewards { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Achievements.AchievementReward&gt; Rewards" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.Rewards" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rewards As IVectorView(Of AchievementReward)" />
+      <MemberSignature Language="F#" Value="member this.Rewards : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Achievements.AchievementReward&gt;" Usage="Microsoft.Xbox.Services.Achievements.Achievement.Rewards" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.Rewards</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Achievements.AchievementReward&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The collection of rewards that the player earns when the achievement is unlocked.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceConfigurationId">
+      <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.ServiceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationId : string" Usage="Microsoft.Xbox.Services.Achievements.Achievement.ServiceConfigurationId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.ServiceConfigurationId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The ID of the service configuration set associated with the achievement.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleAssociations">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Achievements.AchievementTitleAssociation&gt; TitleAssociations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Achievements.AchievementTitleAssociation&gt; TitleAssociations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.TitleAssociations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleAssociations As IVectorView(Of AchievementTitleAssociation)" />
+      <MemberSignature Language="F#" Value="member this.TitleAssociations : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Achievements.AchievementTitleAssociation&gt;" Usage="Microsoft.Xbox.Services.Achievements.Achievement.TitleAssociations" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.TitleAssociations</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Achievements.AchievementTitleAssociation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The game/app titles associated with the achievement.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnlockedDescription">
+      <MemberSignature Language="C#" Value="public string UnlockedDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UnlockedDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Achievements.Achievement.UnlockedDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnlockedDescription As String" />
+      <MemberSignature Language="F#" Value="member this.UnlockedDescription : string" Usage="Microsoft.Xbox.Services.Achievements.Achievement.UnlockedDescription" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Achievements.__IAchievementPublicNonVirtuals.UnlockedDescription</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The description of the unlocked achievement.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

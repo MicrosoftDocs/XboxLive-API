@@ -1,0 +1,361 @@
+﻿<Type Name="XboxLiveHttpCall" FullName="Microsoft.Xbox.Services.XboxLiveHttpCall">
+  <TypeSignature Language="C#" Value="public sealed class XboxLiveHttpCall" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveHttpCall extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveHttpCall" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxLiveHttpCall" />
+  <TypeSignature Language="F#" Value="type XboxLiveHttpCall = class&#xA;    interface __IXboxLiveHttpCallPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Static(typeof(Microsoft.Xbox.Services.__IXboxLiveHttpCallStatics), 1)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Defines methods used to retrieve objects that in turn provide access to different Xbox Live service components.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContentTypeHeaderValue">
+      <MemberSignature Language="C#" Value="public string ContentTypeHeaderValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentTypeHeaderValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveHttpCall.ContentTypeHeaderValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentTypeHeaderValue As String" />
+      <MemberSignature Language="F#" Value="member this.ContentTypeHeaderValue : string with get, set" Usage="Microsoft.Xbox.Services.XboxLiveHttpCall.ContentTypeHeaderValue" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.ContentTypeHeaderValue</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Get if retry is allowed during this call.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContractVersionHeaderValue">
+      <MemberSignature Language="C#" Value="public string ContractVersionHeaderValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContractVersionHeaderValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveHttpCall.ContractVersionHeaderValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContractVersionHeaderValue As String" />
+      <MemberSignature Language="F#" Value="member this.ContractVersionHeaderValue : string with get, set" Usage="Microsoft.Xbox.Services.XboxLiveHttpCall.ContractVersionHeaderValue" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.ContractVersionHeaderValue</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Sets the content type header value for this call.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateXboxLiveHttpCall">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.XboxLiveHttpCall CreateXboxLiveHttpCall (Microsoft.Xbox.Services.XboxLiveContextSettings settings, string httpMethod, string serverName, string pathQueryFragment);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Xbox.Services.XboxLiveHttpCall CreateXboxLiveHttpCall([in]class Microsoft.Xbox.Services.XboxLiveContextSettings settings, [in]string httpMethod, [in]string serverName, [in]string pathQueryFragment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveHttpCall.CreateXboxLiveHttpCall(Microsoft.Xbox.Services.XboxLiveContextSettings,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateXboxLiveHttpCall (settings As XboxLiveContextSettings, httpMethod As String, serverName As String, pathQueryFragment As String) As XboxLiveHttpCall" />
+      <MemberSignature Language="F#" Value="static member CreateXboxLiveHttpCall : Microsoft.Xbox.Services.XboxLiveContextSettings * string * string * string -&gt; Microsoft.Xbox.Services.XboxLiveHttpCall" Usage="Microsoft.Xbox.Services.XboxLiveHttpCall.CreateXboxLiveHttpCall (settings, httpMethod, serverName, pathQueryFragment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.XboxLiveHttpCall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Xbox.Services.XboxLiveContextSettings" />
+        <Parameter Name="httpMethod" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="pathQueryFragment" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="settings">To be added.</param>
+        <param name="httpMethod">To be added.</param>
+        <param name="serverName">To be added.</param>
+        <param name="pathQueryFragment">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResponseWithAuth">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.XboxLiveHttpCallResponse&gt; GetResponseWithAuth (Microsoft.Xbox.Services.System.XboxLiveUser user, Microsoft.Xbox.Services.HttpCallResponseBodyType httpCallResponseBodyType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.XboxLiveHttpCallResponse&gt; GetResponseWithAuth([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]valuetype Microsoft.Xbox.Services.HttpCallResponseBodyType httpCallResponseBodyType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveHttpCall.GetResponseWithAuth(Microsoft.Xbox.Services.System.XboxLiveUser,Microsoft.Xbox.Services.HttpCallResponseBodyType)" />
+      <MemberSignature Language="F#" Value="abstract member GetResponseWithAuth : Microsoft.Xbox.Services.System.XboxLiveUser * Microsoft.Xbox.Services.HttpCallResponseBodyType -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.XboxLiveHttpCallResponse&gt;&#xA;override this.GetResponseWithAuth : Microsoft.Xbox.Services.System.XboxLiveUser * Microsoft.Xbox.Services.HttpCallResponseBodyType -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.XboxLiveHttpCallResponse&gt;" Usage="xboxLiveHttpCall.GetResponseWithAuth (user, httpCallResponseBodyType)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.GetResponseWithAuth(Microsoft.Xbox.Services.System.XboxLiveUser,Microsoft.Xbox.Services.HttpCallResponseBodyType)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.XboxLiveHttpCallResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Xbox.Services.System.XboxLiveUser" />
+        <Parameter Name="httpCallResponseBodyType" Type="Microsoft.Xbox.Services.HttpCallResponseBodyType" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="httpCallResponseBodyType">To be added.</param>
+        <summary>
+Attach the Xbox Live token, sign the request, send the request to the service, and return the response.
+</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResponseWithoutAuth">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.XboxLiveHttpCallResponse&gt; GetResponseWithoutAuth (Microsoft.Xbox.Services.HttpCallResponseBodyType httpCallResponseBodyType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.XboxLiveHttpCallResponse&gt; GetResponseWithoutAuth([in]valuetype Microsoft.Xbox.Services.HttpCallResponseBodyType httpCallResponseBodyType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveHttpCall.GetResponseWithoutAuth(Microsoft.Xbox.Services.HttpCallResponseBodyType)" />
+      <MemberSignature Language="F#" Value="abstract member GetResponseWithoutAuth : Microsoft.Xbox.Services.HttpCallResponseBodyType -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.XboxLiveHttpCallResponse&gt;&#xA;override this.GetResponseWithoutAuth : Microsoft.Xbox.Services.HttpCallResponseBodyType -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.XboxLiveHttpCallResponse&gt;" Usage="xboxLiveHttpCall.GetResponseWithoutAuth httpCallResponseBodyType" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.GetResponseWithoutAuth(Microsoft.Xbox.Services.HttpCallResponseBodyType)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.XboxLiveHttpCallResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpCallResponseBodyType" Type="Microsoft.Xbox.Services.HttpCallResponseBodyType" />
+      </Parameters>
+      <Docs>
+        <param name="httpCallResponseBodyType">To be added.</param>
+        <summary>
+Send the request to the service, and return the response without an Xbox Live token
+</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpMethod">
+      <MemberSignature Language="C#" Value="public string HttpMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HttpMethod" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveHttpCall.HttpMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpMethod As String" />
+      <MemberSignature Language="F#" Value="member this.HttpMethod : string" Usage="Microsoft.Xbox.Services.XboxLiveHttpCall.HttpMethod" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.HttpMethod</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Gets the http method for this call.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathQueryFragment">
+      <MemberSignature Language="C#" Value="public string PathQueryFragment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PathQueryFragment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveHttpCall.PathQueryFragment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathQueryFragment As String" />
+      <MemberSignature Language="F#" Value="member this.PathQueryFragment : string" Usage="Microsoft.Xbox.Services.XboxLiveHttpCall.PathQueryFragment" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.PathQueryFragment</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Gets the path for this call.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetryAllowed">
+      <MemberSignature Language="C#" Value="public bool RetryAllowed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RetryAllowed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveHttpCall.RetryAllowed" />
+      <MemberSignature Language="VB.NET" Value="Public Property RetryAllowed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RetryAllowed : bool with get, set" Usage="Microsoft.Xbox.Services.XboxLiveHttpCall.RetryAllowed" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.RetryAllowed</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Sets if retry is allowed during this call.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerName">
+      <MemberSignature Language="C#" Value="public string ServerName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveHttpCall.ServerName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerName As String" />
+      <MemberSignature Language="F#" Value="member this.ServerName : string" Usage="Microsoft.Xbox.Services.XboxLiveHttpCall.ServerName" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.ServerName</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+Gets the server name for this call.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCustomHeader">
+      <MemberSignature Language="C#" Value="public void SetCustomHeader (string headerName, string headerValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCustomHeader([in]string headerName, [in]string headerValue) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveHttpCall.SetCustomHeader(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCustomHeader (headerName As String, headerValue As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetCustomHeader : string * string -&gt; unit&#xA;override this.SetCustomHeader : string * string -&gt; unit" Usage="xboxLiveHttpCall.SetCustomHeader (headerName, headerValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.SetCustomHeader(System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headerName" Type="System.String" />
+        <Parameter Name="headerValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="headerName">To be added.</param>
+        <param name="headerValue">To be added.</param>
+        <summary>
+Sets a custom header.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRequestBody">
+      <MemberSignature Language="C#" Value="public void SetRequestBody (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetRequestBody([in]string value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveHttpCall.SetRequestBody(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRequestBody (value As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetRequestBody : string -&gt; unit&#xA;override this.SetRequestBody : string -&gt; unit" Usage="xboxLiveHttpCall.SetRequestBody value" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.SetRequestBody(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+Sets the request body using a string.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRequestBodyArray">
+      <MemberSignature Language="C#" Value="public void SetRequestBodyArray (byte[] requestBodyArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetRequestBodyArray([in]unsigned int8[] requestBodyArray) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveHttpCall.SetRequestBodyArray(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRequestBodyArray (requestBodyArray As Byte())" />
+      <MemberSignature Language="F#" Value="abstract member SetRequestBodyArray : byte[] -&gt; unit&#xA;override this.SetRequestBodyArray : byte[] -&gt; unit" Usage="xboxLiveHttpCall.SetRequestBodyArray requestBodyArray" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.__IXboxLiveHttpCallPublicNonVirtuals.SetRequestBodyArray(System.Byte[])</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestBodyArray" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="requestBodyArray">To be added.</param>
+        <summary>
+Sets the request body using a byte array value.
+</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

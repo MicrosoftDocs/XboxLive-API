@@ -1,0 +1,220 @@
+﻿<Type Name="TitleStorageQuota" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota">
+  <TypeSignature Language="C#" Value="public sealed class TitleStorageQuota" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleStorageQuota extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitleStorageQuota" />
+  <TypeSignature Language="F#" Value="type TitleStorageQuota = class&#xA;    interface __ITitleStorageQuotaPublicNonVirtuals" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+    <AssemblyVersion>255.255.255.255</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Version(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+Returns the amount of storage space allocated and used.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MultiplayerSessionName">
+      <MemberSignature Language="C#" Value="public string MultiplayerSessionName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MultiplayerSessionName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.MultiplayerSessionName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MultiplayerSessionName As String" />
+      <MemberSignature Language="F#" Value="member this.MultiplayerSessionName : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.MultiplayerSessionName" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageQuotaPublicNonVirtuals.MultiplayerSessionName</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Title Storage for sessions has been deprecated. Use universal instead.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The multiplayer session name associated with the quota if StorageType is SessionStorage, otherwise null.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplayerSessionTemplateName">
+      <MemberSignature Language="C#" Value="public string MultiplayerSessionTemplateName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MultiplayerSessionTemplateName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.MultiplayerSessionTemplateName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MultiplayerSessionTemplateName As String" />
+      <MemberSignature Language="F#" Value="member this.MultiplayerSessionTemplateName : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.MultiplayerSessionTemplateName" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageQuotaPublicNonVirtuals.MultiplayerSessionTemplateName</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Windows.Foundation.Metadata.Deprecated("Title Storage for sessions has been deprecated. Use universal instead.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The multiplayer session template name associated with the quota if StorageType is SessionStorage, otherwise null.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotaBytes">
+      <MemberSignature Language="C#" Value="public ulong QuotaBytes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 QuotaBytes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.QuotaBytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QuotaBytes As ULong" />
+      <MemberSignature Language="F#" Value="member this.QuotaBytes : uint64" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.QuotaBytes" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageQuotaPublicNonVirtuals.QuotaBytes</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The maximum number of bytes that can be used in title storage of type StorageType.
+Note that this is a soft limit and the used bytes can actually exceed this value.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceConfigurationId">
+      <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.ServiceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationId : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.ServiceConfigurationId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageQuotaPublicNonVirtuals.ServiceConfigurationId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The service configuration ID associated with the quota.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageType">
+      <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.TitleStorage.TitleStorageType StorageType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType StorageType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.StorageType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StorageType As TitleStorageType" />
+      <MemberSignature Language="F#" Value="member this.StorageType : Microsoft.Xbox.Services.TitleStorage.TitleStorageType" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.StorageType" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageQuotaPublicNonVirtuals.StorageType</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The type of storage counted in the quota.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsedBytes">
+      <MemberSignature Language="C#" Value="public ulong UsedBytes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 UsedBytes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.UsedBytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsedBytes As ULong" />
+      <MemberSignature Language="F#" Value="member this.UsedBytes : uint64" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.UsedBytes" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageQuotaPublicNonVirtuals.UsedBytes</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The number of bytes used in title storage of type StorageType.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XboxUserId">
+      <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota.XboxUserId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageQuotaPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
+        <AssemblyVersion>255.255.255.255</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+The Xbox User ID associated with the quota if StorageType is TrustedPlatformStorage or JsonStorage, otherwise null.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
