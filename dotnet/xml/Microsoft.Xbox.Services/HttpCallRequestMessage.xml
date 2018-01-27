@@ -1,7 +1,9 @@
-<Type Name="HttpCallRequestMessage" FullName="Microsoft.Xbox.Services.HttpCallRequestMessage">
+﻿<Type Name="HttpCallRequestMessage" FullName="Microsoft.Xbox.Services.HttpCallRequestMessage">
   <TypeSignature Language="C#" Value="public sealed class HttpCallRequestMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpCallRequestMessage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.HttpCallRequestMessage" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCallRequestMessage" />
+  <TypeSignature Language="F#" Value="type HttpCallRequestMessage = class&#xA;    interface __IHttpCallRequestMessagePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents the message of an HTTP call request.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.HttpRequestMessageType GetHttpRequestMessageType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.HttpRequestMessageType GetHttpRequestMessageType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.HttpCallRequestMessage.GetHttpRequestMessageType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GetHttpRequestMessageType As HttpRequestMessageType" />
+      <MemberSignature Language="F#" Value="member this.GetHttpRequestMessageType : Microsoft.Xbox.Services.HttpRequestMessageType" Usage="Microsoft.Xbox.Services.HttpCallRequestMessage.GetHttpRequestMessageType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IHttpCallRequestMessagePublicNonVirtuals.GetHttpRequestMessageType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The message type.
       <MemberSignature Language="C#" Value="public string RequestMessageString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestMessageString" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.HttpCallRequestMessage.RequestMessageString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestMessageString As String" />
+      <MemberSignature Language="F#" Value="member this.RequestMessageString : string" Usage="Microsoft.Xbox.Services.HttpCallRequestMessage.RequestMessageString" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IHttpCallRequestMessagePublicNonVirtuals.RequestMessageString</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The http request message if the message is a string type.
       <MemberSignature Language="C#" Value="public byte[] RequestMessageVector { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] RequestMessageVector" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.HttpCallRequestMessage.RequestMessageVector" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestMessageVector As Byte()" />
+      <MemberSignature Language="F#" Value="member this.RequestMessageVector : byte[]" Usage="Microsoft.Xbox.Services.HttpCallRequestMessage.RequestMessageVector" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IHttpCallRequestMessagePublicNonVirtuals.RequestMessageVector</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

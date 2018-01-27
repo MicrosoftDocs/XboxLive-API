@@ -1,7 +1,9 @@
-<Type Name="PermissionCheckResult" FullName="Microsoft.Xbox.Services.Privacy.PermissionCheckResult">
+﻿<Type Name="PermissionCheckResult" FullName="Microsoft.Xbox.Services.Privacy.PermissionCheckResult">
   <TypeSignature Language="C#" Value="public sealed class PermissionCheckResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PermissionCheckResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Privacy.PermissionCheckResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PermissionCheckResult" />
+  <TypeSignature Language="F#" Value="type PermissionCheckResult = class&#xA;    interface __IPermissionCheckResultPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,9 +27,6 @@
     <summary>
 Contains the results of a permission check.
 </summary>
-    <summary>
-Contains the result of a permission check.
-</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +34,12 @@ Contains the result of a permission check.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Privacy.PermissionDenyReason&gt; DenyReasons { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Privacy.PermissionDenyReason&gt; DenyReasons" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Privacy.PermissionCheckResult.DenyReasons" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DenyReasons As IVectorView(Of PermissionDenyReason)" />
+      <MemberSignature Language="F#" Value="member this.DenyReasons : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Privacy.PermissionDenyReason&gt;" Usage="Microsoft.Xbox.Services.Privacy.PermissionCheckResult.DenyReasons" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Privacy.__IPermissionCheckResultPublicNonVirtuals.DenyReasons</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -55,7 +59,12 @@ If IsAllowed is false, contains the reasons why the permissions were denied.
       <MemberSignature Language="C#" Value="public bool IsAllowed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAllowed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Privacy.PermissionCheckResult.IsAllowed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAllowed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAllowed : bool" Usage="Microsoft.Xbox.Services.Privacy.PermissionCheckResult.IsAllowed" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Privacy.__IPermissionCheckResultPublicNonVirtuals.IsAllowed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -75,7 +84,12 @@ Indicates if the user is allowed the requested access.
       <MemberSignature Language="C#" Value="public string PermissionRequested { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PermissionRequested" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Privacy.PermissionCheckResult.PermissionRequested" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionRequested As String" />
+      <MemberSignature Language="F#" Value="member this.PermissionRequested : string" Usage="Microsoft.Xbox.Services.Privacy.PermissionCheckResult.PermissionRequested" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Privacy.__IPermissionCheckResultPublicNonVirtuals.PermissionRequested</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

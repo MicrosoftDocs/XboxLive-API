@@ -1,7 +1,9 @@
-<Type Name="MultiplayerMember" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember">
+﻿<Type Name="MultiplayerMember" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerMember" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerMember extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerMember" />
+  <TypeSignature Language="F#" Value="type MultiplayerMember = class&#xA;    interface __IMultiplayerMemberPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -22,7 +24,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+Represents a reference to a member in a multiplayer game.
+</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +34,12 @@
       <MemberSignature Language="C#" Value="public string _DeviceToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string _DeviceToken" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember._DeviceToken" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property _DeviceToken As String" />
+      <MemberSignature Language="F#" Value="member this._DeviceToken : string" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember._DeviceToken" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals._DeviceToken</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -50,7 +59,12 @@ Internal function
       <MemberSignature Language="C#" Value="public string ConnectionAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionAddress" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.ConnectionAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionAddress As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionAddress : string" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.ConnectionAddress" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.ConnectionAddress</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -71,7 +85,12 @@ This can be used for secure socket connection.
       <MemberSignature Language="C#" Value="public string DebugGamertag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DebugGamertag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.DebugGamertag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DebugGamertag As String" />
+      <MemberSignature Language="F#" Value="member this.DebugGamertag : string" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.DebugGamertag" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.DebugGamertag</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -81,7 +100,9 @@ This can be used for secure socket connection.
       </ReturnValue>
       <Docs>
         <summary>
-The Gamertag of the member. This is only to be used for debugging purposes.
+The Gamertag of the member. This is only to be used for debugging purposes
+as this gamertag may be out of date. It is recommended you use social manager
+or the profile service to get this information.
 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -91,7 +112,12 @@ The Gamertag of the member. This is only to be used for debugging purposes.
       <MemberSignature Language="C#" Value="public bool IsInGame { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInGame" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.IsInGame" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInGame As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInGame : bool" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.IsInGame" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.IsInGame</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -111,7 +137,12 @@ Indicates if this member is part of the game.
       <MemberSignature Language="C#" Value="public bool IsInLobby { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInLobby" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.IsInLobby" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInLobby As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInLobby : bool" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.IsInLobby" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.IsInLobby</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -131,7 +162,12 @@ Indicates if this member is part of the lobby.
       <MemberSignature Language="C#" Value="public bool IsLocal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLocal" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.IsLocal" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLocal As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLocal : bool" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.IsLocal" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.IsLocal</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -151,7 +187,12 @@ Indicates if this member is playing on the local device.
       <MemberSignature Language="C#" Value="public bool IsMemberOnSameDevice (Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember member);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsMemberOnSameDevice([in]class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember member) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.IsMemberOnSameDevice(Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsMemberOnSameDevice (member As MultiplayerMember) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsMemberOnSameDevice : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember -&gt; bool&#xA;override this.IsMemberOnSameDevice : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember -&gt; bool" Usage="multiplayerMember.IsMemberOnSameDevice member" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.IsMemberOnSameDevice(Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -175,7 +216,12 @@ Determines whether the member is on the same device.
       <MemberSignature Language="C#" Value="public uint MemberId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MemberId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.MemberId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MemberId : uint32" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.MemberId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.MemberId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -195,7 +241,12 @@ Id for the member.
       <MemberSignature Language="C#" Value="public string Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Properties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As String" />
+      <MemberSignature Language="F#" Value="member this.Properties : string" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.Properties" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.Properties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -215,7 +266,12 @@ JSON value that specify the custom properties of the member.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus Status { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus Status" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As MultiplayerSessionMemberStatus" />
+      <MemberSignature Language="F#" Value="member this.Status : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.Status" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.Status</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -235,7 +291,12 @@ The status of this member.
       <MemberSignature Language="C#" Value="public string TeamId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TeamId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.TeamId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TeamId As String" />
+      <MemberSignature Language="F#" Value="member this.TeamId : string" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.TeamId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.TeamId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -256,7 +317,12 @@ Id of this members' team in a tournament.
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerMemberPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

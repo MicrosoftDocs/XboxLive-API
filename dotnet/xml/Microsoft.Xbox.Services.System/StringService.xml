@@ -1,7 +1,9 @@
-<Type Name="StringService" FullName="Microsoft.Xbox.Services.System.StringService">
+﻿<Type Name="StringService" FullName="Microsoft.Xbox.Services.System.StringService">
   <TypeSignature Language="C#" Value="public sealed class StringService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StringService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.StringService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringService" />
+  <TypeSignature Language="F#" Value="type StringService = class&#xA;    interface __IStringServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Provides methods to validate a string for use with Xbox Live.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.VerifyStringResult&gt; VerifyStringAsync (string stringToVerify);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.System.VerifyStringResult&gt; VerifyStringAsync([in]string stringToVerify) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.StringService.VerifyStringAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifyStringAsync (stringToVerify As String) As IAsyncOperation(Of VerifyStringResult)" />
+      <MemberSignature Language="F#" Value="abstract member VerifyStringAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.VerifyStringResult&gt;&#xA;override this.VerifyStringAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.System.VerifyStringResult&gt;" Usage="stringService.VerifyStringAsync stringToVerify" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.System.__IStringServicePublicNonVirtuals.VerifyStringAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -59,7 +66,12 @@ The result is a VerifyStringResult object which indicates if the string contains
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.System.VerifyStringResult&gt;&gt; VerifyStringsAsync (Windows.Foundation.Collections.IVectorView&lt;string&gt; stringsToVerify);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.System.VerifyStringResult&gt;&gt; VerifyStringsAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; stringsToVerify) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.StringService.VerifyStringsAsync(Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifyStringsAsync (stringsToVerify As IVectorView(Of String)) As IAsyncOperation(Of IVectorView(Of VerifyStringResult))" />
+      <MemberSignature Language="F#" Value="abstract member VerifyStringsAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.System.VerifyStringResult&gt;&gt;&#xA;override this.VerifyStringsAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.System.VerifyStringResult&gt;&gt;" Usage="stringService.VerifyStringsAsync stringsToVerify" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.System.__IStringServicePublicNonVirtuals.VerifyStringsAsync(Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

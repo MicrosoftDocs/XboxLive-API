@@ -1,7 +1,9 @@
-<Type Name="XboxSocialRelationship" FullName="Microsoft.Xbox.Services.Social.XboxSocialRelationship">
+﻿<Type Name="XboxSocialRelationship" FullName="Microsoft.Xbox.Services.Social.XboxSocialRelationship">
   <TypeSignature Language="C#" Value="public sealed class XboxSocialRelationship" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxSocialRelationship extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.XboxSocialRelationship" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxSocialRelationship" />
+  <TypeSignature Language="F#" Value="type XboxSocialRelationship = class&#xA;    interface __IXboxSocialRelationshipPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents the relationship the user has with another Xbox Live user.
       <MemberSignature Language="C#" Value="public bool IsFavorite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFavorite" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxSocialRelationship.IsFavorite" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFavorite As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFavorite : bool" Usage="Microsoft.Xbox.Services.Social.XboxSocialRelationship.IsFavorite" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxSocialRelationshipPublicNonVirtuals.IsFavorite</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -54,7 +61,12 @@ favorite people should be prioritized first in experiences and shown before othe
       <MemberSignature Language="C#" Value="public bool IsFollowingCaller { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFollowingCaller" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxSocialRelationship.IsFollowingCaller" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFollowingCaller As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFollowingCaller : bool" Usage="Microsoft.Xbox.Services.Social.XboxSocialRelationship.IsFollowingCaller" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxSocialRelationshipPublicNonVirtuals.IsFollowingCaller</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -74,7 +86,12 @@ Indicates whether the person is following the person that requested the informat
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; SocialNetworks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; SocialNetworks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxSocialRelationship.SocialNetworks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SocialNetworks As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SocialNetworks : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Social.XboxSocialRelationship.SocialNetworks" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxSocialRelationshipPublicNonVirtuals.SocialNetworks</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -94,7 +111,12 @@ A collection of strings indicating which social networks this person has a relat
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxSocialRelationship.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Social.XboxSocialRelationship.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxSocialRelationshipPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

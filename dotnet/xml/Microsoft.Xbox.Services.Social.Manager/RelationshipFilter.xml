@@ -1,7 +1,9 @@
-<Type Name="RelationshipFilter" FullName="Microsoft.Xbox.Services.Social.Manager.RelationshipFilter">
+﻿<Type Name="RelationshipFilter" FullName="Microsoft.Xbox.Services.Social.Manager.RelationshipFilter">
   <TypeSignature Language="C#" Value="public enum RelationshipFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RelationshipFilter extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.RelationshipFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RelationshipFilter" />
+  <TypeSignature Language="F#" Value="type RelationshipFilter = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Possible relationship types to filter by
       <MemberSignature Language="C#" Value="Favorite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.RelationshipFilter Favorite = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.RelationshipFilter.Favorite" />
+      <MemberSignature Language="VB.NET" Value="Favorite" />
+      <MemberSignature Language="F#" Value="Favorite = 1" Usage="Microsoft.Xbox.Services.Social.Manager.RelationshipFilter.Favorite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Possible relationship types to filter by
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.RelationshipFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Favorites of the user</summary>
       </Docs>
@@ -41,6 +46,8 @@ Possible relationship types to filter by
       <MemberSignature Language="C#" Value="Friends" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.RelationshipFilter Friends = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.RelationshipFilter.Friends" />
+      <MemberSignature Language="VB.NET" Value="Friends" />
+      <MemberSignature Language="F#" Value="Friends = 0" Usage="Microsoft.Xbox.Services.Social.Manager.RelationshipFilter.Friends" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -49,6 +56,7 @@ Possible relationship types to filter by
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.RelationshipFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Friends of the user (user is following)</summary>
       </Docs>

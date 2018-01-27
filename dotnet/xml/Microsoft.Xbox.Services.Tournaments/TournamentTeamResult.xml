@@ -1,7 +1,9 @@
-<Type Name="TournamentTeamResult" FullName="Microsoft.Xbox.Services.Tournaments.TournamentTeamResult">
+﻿<Type Name="TournamentTeamResult" FullName="Microsoft.Xbox.Services.Tournaments.TournamentTeamResult">
   <TypeSignature Language="C#" Value="public sealed class TournamentTeamResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentTeamResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentTeamResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TournamentTeamResult" />
+  <TypeSignature Language="F#" Value="type TournamentTeamResult = class&#xA;    interface __ITournamentTeamResultPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -35,6 +37,7 @@ Represents a teams result in a tournament
       <MemberSignature Language="C#" Value="public TournamentTeamResult ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentTeamResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -55,7 +58,12 @@ Represents a teams result in a tournament
       <MemberSignature Language="C#" Value="public ulong Ranking { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 Ranking" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentTeamResult.Ranking" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ranking As ULong" />
+      <MemberSignature Language="F#" Value="member this.Ranking : uint64 with get, set" Usage="Microsoft.Xbox.Services.Tournaments.TournamentTeamResult.Ranking" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentTeamResultPublicNonVirtuals.Ranking</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -75,7 +83,12 @@ The ranking for the current tournament game's state for a team.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentGameResultState State { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultState State" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentTeamResult.State" />
+      <MemberSignature Language="VB.NET" Value="Public Property State As TournamentGameResultState" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.Xbox.Services.Tournaments.TournamentGameResultState with get, set" Usage="Microsoft.Xbox.Services.Tournaments.TournamentTeamResult.State" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentTeamResultPublicNonVirtuals.State</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

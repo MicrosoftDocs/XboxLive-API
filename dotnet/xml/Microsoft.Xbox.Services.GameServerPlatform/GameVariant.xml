@@ -1,7 +1,9 @@
-<Type Name="GameVariant" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameVariant">
+﻿<Type Name="GameVariant" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameVariant">
   <TypeSignature Language="C#" Value="public sealed class GameVariant" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GameVariant extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.GameServerPlatform.GameVariant" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GameVariant" />
+  <TypeSignature Language="F#" Value="type GameVariant = class&#xA;    interface __IGameVariantPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a game variant.
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameVariant.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameVariant.Id" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameVariantPublicNonVirtuals.Id</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ ID of a variant.
       <MemberSignature Language="C#" Value="public bool IsPublisher { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPublisher" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameVariant.IsPublisher" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPublisher As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPublisher : bool" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameVariant.IsPublisher" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameVariantPublicNonVirtuals.IsPublisher</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ A boolean field to indicate whether the variant was user-created or publisher-cr
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameVariant.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameVariant.Name" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameVariantPublicNonVirtuals.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ Name of variant.
       <MemberSignature Language="C#" Value="public ulong Rank { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 Rank" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameVariant.Rank" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rank As ULong" />
+      <MemberSignature Language="F#" Value="member this.Rank : uint64" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameVariant.Rank" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameVariantPublicNonVirtuals.Rank</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ A boolean field to indicate whether the variant was user-created or publisher-cr
       <MemberSignature Language="C#" Value="public string SchemaContent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SchemaContent" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameVariant.SchemaContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaContent As String" />
+      <MemberSignature Language="F#" Value="member this.SchemaContent : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameVariant.SchemaContent" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameVariantPublicNonVirtuals.SchemaContent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -132,7 +159,12 @@ Content of the variant's schema.
       <MemberSignature Language="C#" Value="public string SchemaId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SchemaId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameVariant.SchemaId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaId As String" />
+      <MemberSignature Language="F#" Value="member this.SchemaId : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameVariant.SchemaId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameVariantPublicNonVirtuals.SchemaId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -152,7 +184,12 @@ ID of the variant's schema.
       <MemberSignature Language="C#" Value="public string SchemaName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SchemaName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameVariant.SchemaName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaName As String" />
+      <MemberSignature Language="F#" Value="member this.SchemaName : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameVariant.SchemaName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameVariantPublicNonVirtuals.SchemaName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="NetworkAddressTranslationSetting" FullName="Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting">
+﻿<Type Name="NetworkAddressTranslationSetting" FullName="Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting">
   <TypeSignature Language="C#" Value="public enum NetworkAddressTranslationSetting" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NetworkAddressTranslationSetting extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NetworkAddressTranslationSetting" />
+  <TypeSignature Language="F#" Value="type NetworkAddressTranslationSetting = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Defines values that indicate the current NAT setting for a device connecting to 
       <MemberSignature Language="C#" Value="Moderate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting Moderate = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Moderate" />
+      <MemberSignature Language="VB.NET" Value="Moderate" />
+      <MemberSignature Language="F#" Value="Moderate = 2" Usage="Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Moderate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values that indicate the current NAT setting for a device connecting to 
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 Devices using moderate NAT settings can only connect with other devices using moderate or open settings.
@@ -43,6 +48,8 @@ Devices using moderate NAT settings can only connect with other devices using mo
       <MemberSignature Language="C#" Value="Open" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting Open = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Open" />
+      <MemberSignature Language="VB.NET" Value="Open" />
+      <MemberSignature Language="F#" Value="Open = 1" Usage="Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -51,6 +58,7 @@ Devices using moderate NAT settings can only connect with other devices using mo
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Can connect with any other devices regardless of their NAT setting.
@@ -61,6 +69,8 @@ Can connect with any other devices regardless of their NAT setting.
       <MemberSignature Language="C#" Value="Strict" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting Strict = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Strict" />
+      <MemberSignature Language="VB.NET" Value="Strict" />
+      <MemberSignature Language="F#" Value="Strict = 3" Usage="Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Strict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -69,6 +79,7 @@ Can connect with any other devices regardless of their NAT setting.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 Devices using strict NAT settings can only connect with other devices using open NAT settings.
@@ -79,6 +90,8 @@ Devices using strict NAT settings can only connect with other devices using open
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -87,6 +100,7 @@ Devices using strict NAT settings can only connect with other devices using open
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.NetworkAddressTranslationSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 The server returned an unrecognized response.

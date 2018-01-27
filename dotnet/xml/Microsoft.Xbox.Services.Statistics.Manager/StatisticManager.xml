@@ -1,7 +1,9 @@
-<Type Name="StatisticManager" FullName="Microsoft.Xbox.Services.Statistics.Manager.StatisticManager">
+﻿<Type Name="StatisticManager" FullName="Microsoft.Xbox.Services.Statistics.Manager.StatisticManager">
   <TypeSignature Language="C#" Value="public sealed class StatisticManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatisticManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StatisticManager" />
+  <TypeSignature Language="F#" Value="type StatisticManager = class&#xA;    interface __IStatisticManagerPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -33,7 +35,12 @@
       <MemberSignature Language="C#" Value="public void AddLocalUser (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddLocalUser([in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.AddLocalUser(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddLocalUser (user As XboxLiveUser)" />
+      <MemberSignature Language="F#" Value="abstract member AddLocalUser : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit&#xA;override this.AddLocalUser : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit" Usage="statisticManager.AddLocalUser user" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.AddLocalUser(Microsoft.Xbox.Services.System.XboxLiveUser)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -57,7 +64,12 @@ Returns a local_user_added event from do_work
       <MemberSignature Language="C#" Value="public void DeleteStatistic (Microsoft.Xbox.Services.System.XboxLiveUser user, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteStatistic([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string name) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.DeleteStatistic(Microsoft.Xbox.Services.System.XboxLiveUser,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteStatistic (user As XboxLiveUser, name As String)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteStatistic : Microsoft.Xbox.Services.System.XboxLiveUser * string -&gt; unit&#xA;override this.DeleteStatistic : Microsoft.Xbox.Services.System.XboxLiveUser * string -&gt; unit" Usage="statisticManager.DeleteStatistic (user, name)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.DeleteStatistic(Microsoft.Xbox.Services.System.XboxLiveUser,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -82,7 +94,12 @@ Deletes a stat value
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent&gt; DoWork ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent&gt; DoWork() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.DoWork" />
+      <MemberSignature Language="VB.NET" Value="Public Function DoWork () As IVectorView(Of StatisticEvent)" />
+      <MemberSignature Language="F#" Value="abstract member DoWork : unit -&gt; Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent&gt;&#xA;override this.DoWork : unit -&gt; Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent&gt;" Usage="statisticManager.DoWork " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.DoWork</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -104,7 +121,12 @@ Returns any events that have been processed
       <MemberSignature Language="C#" Value="public void GetLeaderboard (Microsoft.Xbox.Services.System.XboxLiveUser user, string statName, Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetLeaderboard([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string statName, [in]class Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery query) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.GetLeaderboard(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetLeaderboard (user As XboxLiveUser, statName As String, query As LeaderboardQuery)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboard : Microsoft.Xbox.Services.System.XboxLiveUser * string * Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery -&gt; unit&#xA;override this.GetLeaderboard : Microsoft.Xbox.Services.System.XboxLiveUser * string * Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery -&gt; unit" Usage="statisticManager.GetLeaderboard (user, statName, query)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.GetLeaderboard(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -133,7 +155,12 @@ the events returned from do_work for an event of type get_leaderboard_complete
       <MemberSignature Language="C#" Value="public void GetSocialLeaderboard (Microsoft.Xbox.Services.System.XboxLiveUser user, string statName, string socialGroup, Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSocialLeaderboard([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string statName, [in]string socialGroup, [in]class Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery query) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.GetSocialLeaderboard(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.String,Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetSocialLeaderboard (user As XboxLiveUser, statName As String, socialGroup As String, query As LeaderboardQuery)" />
+      <MemberSignature Language="F#" Value="abstract member GetSocialLeaderboard : Microsoft.Xbox.Services.System.XboxLiveUser * string * string * Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery -&gt; unit&#xA;override this.GetSocialLeaderboard : Microsoft.Xbox.Services.System.XboxLiveUser * string * string * Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery -&gt; unit" Usage="statisticManager.GetSocialLeaderboard (user, statName, socialGroup, query)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.GetSocialLeaderboard(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.String,Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -164,7 +191,12 @@ the events returned from do_work for an event of type get_leaderboard_complete
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Statistics.Manager.StatisticValue GetStatistic (Microsoft.Xbox.Services.System.XboxLiveUser user, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Statistics.Manager.StatisticValue GetStatistic([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string name) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.GetStatistic(Microsoft.Xbox.Services.System.XboxLiveUser,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStatistic (user As XboxLiveUser, name As String) As StatisticValue" />
+      <MemberSignature Language="F#" Value="abstract member GetStatistic : Microsoft.Xbox.Services.System.XboxLiveUser * string -&gt; Microsoft.Xbox.Services.Statistics.Manager.StatisticValue&#xA;override this.GetStatistic : Microsoft.Xbox.Services.System.XboxLiveUser * string -&gt; Microsoft.Xbox.Services.Statistics.Manager.StatisticValue" Usage="statisticManager.GetStatistic (user, name)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.GetStatistic(Microsoft.Xbox.Services.System.XboxLiveUser,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -191,7 +223,12 @@ Gets a stat value
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; GetStatisticNames (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; GetStatisticNames([in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.GetStatisticNames(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStatisticNames (user As XboxLiveUser) As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member GetStatisticNames : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; Windows.Foundation.Collections.IVectorView&lt;string&gt;&#xA;override this.GetStatisticNames : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="statisticManager.GetStatisticNames user" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.GetStatisticNames(Microsoft.Xbox.Services.System.XboxLiveUser)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -216,7 +253,12 @@ Gets all stat names in the stat document.
       <MemberSignature Language="C#" Value="public void RemoveLocalUser (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveLocalUser([in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.RemoveLocalUser(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveLocalUser (user As XboxLiveUser)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveLocalUser : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit&#xA;override this.RemoveLocalUser : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit" Usage="statisticManager.RemoveLocalUser user" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.RemoveLocalUser(Microsoft.Xbox.Services.System.XboxLiveUser)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -240,7 +282,12 @@ Returns a local_user_removed event from do_work
       <MemberSignature Language="C#" Value="public void RequestFlushToService (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestFlushToService([in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.RequestFlushToService(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RequestFlushToService (user As XboxLiveUser)" />
+      <MemberSignature Language="F#" Value="abstract member RequestFlushToService : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit&#xA;override this.RequestFlushToService : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; unit" Usage="statisticManager.RequestFlushToService user" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.RequestFlushToService(Microsoft.Xbox.Services.System.XboxLiveUser)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -269,7 +316,12 @@ This will send immediately instead of automatically during a 30 second window
       <MemberSignature Language="C#" Value="public void RequestFlushToService (Microsoft.Xbox.Services.System.XboxLiveUser user, bool isHighPriority);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestFlushToService([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]bool isHighPriority) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.RequestFlushToService(Microsoft.Xbox.Services.System.XboxLiveUser,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RequestFlushToService (user As XboxLiveUser, isHighPriority As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member RequestFlushToService : Microsoft.Xbox.Services.System.XboxLiveUser * bool -&gt; unit&#xA;override this.RequestFlushToService : Microsoft.Xbox.Services.System.XboxLiveUser * bool -&gt; unit" Usage="statisticManager.RequestFlushToService (user, isHighPriority)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.RequestFlushToService(Microsoft.Xbox.Services.System.XboxLiveUser,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -300,7 +352,12 @@ This will send immediately instead of automatically during a 30 second window
       <MemberSignature Language="C#" Value="public void SetStatisticIntegerData (Microsoft.Xbox.Services.System.XboxLiveUser user, string name, long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStatisticIntegerData([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string name, [in]int64 value) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.SetStatisticIntegerData(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetStatisticIntegerData (user As XboxLiveUser, name As String, value As Long)" />
+      <MemberSignature Language="F#" Value="abstract member SetStatisticIntegerData : Microsoft.Xbox.Services.System.XboxLiveUser * string * int64 -&gt; unit&#xA;override this.SetStatisticIntegerData : Microsoft.Xbox.Services.System.XboxLiveUser * string * int64 -&gt; unit" Usage="statisticManager.SetStatisticIntegerData (user, name, value)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.SetStatisticIntegerData(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.Int64)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -328,7 +385,12 @@ Replaces the numerical stat by the value. Can be positive or negative
       <MemberSignature Language="C#" Value="public void SetStatisticNumberData (Microsoft.Xbox.Services.System.XboxLiveUser user, string name, double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStatisticNumberData([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string name, [in]float64 value) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.SetStatisticNumberData(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetStatisticNumberData (user As XboxLiveUser, name As String, value As Double)" />
+      <MemberSignature Language="F#" Value="abstract member SetStatisticNumberData : Microsoft.Xbox.Services.System.XboxLiveUser * string * double -&gt; unit&#xA;override this.SetStatisticNumberData : Microsoft.Xbox.Services.System.XboxLiveUser * string * double -&gt; unit" Usage="statisticManager.SetStatisticNumberData (user, name, value)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.SetStatisticNumberData(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.Double)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -356,7 +418,12 @@ Replaces the numerical stat by the value. Can be positive or negative
       <MemberSignature Language="C#" Value="public void SetStatisticStringData (Microsoft.Xbox.Services.System.XboxLiveUser user, string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStatisticStringData([in]class Microsoft.Xbox.Services.System.XboxLiveUser user, [in]string name, [in]string value) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.SetStatisticStringData(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetStatisticStringData (user As XboxLiveUser, name As String, value As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetStatisticStringData : Microsoft.Xbox.Services.System.XboxLiveUser * string * string -&gt; unit&#xA;override this.SetStatisticStringData : Microsoft.Xbox.Services.System.XboxLiveUser * string * string -&gt; unit" Usage="statisticManager.SetStatisticStringData (user, name, value)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticManagerPublicNonVirtuals.SetStatisticStringData(Microsoft.Xbox.Services.System.XboxLiveUser,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -384,6 +451,8 @@ Replaces the string stat by the value.
       <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Statistics.Manager.StatisticManager SingletonInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.Statistics.Manager.StatisticManager SingletonInstance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.SingletonInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SingletonInstance As StatisticManager" />
+      <MemberSignature Language="F#" Value="member this.SingletonInstance : Microsoft.Xbox.Services.Statistics.Manager.StatisticManager" Usage="Microsoft.Xbox.Services.Statistics.Manager.StatisticManager.SingletonInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>

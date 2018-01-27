@@ -1,7 +1,9 @@
-<Type Name="MultiplayerGameSession" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession">
+﻿<Type Name="MultiplayerGameSession" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerGameSession" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerGameSession extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerGameSession" />
+  <TypeSignature Language="F#" Value="type MultiplayerGameSession = class&#xA;    interface __IMultiplayerGameSessionPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,7 +25,9 @@
   </Attributes>
   <Docs>
     <summary>
-Manager for managing members that are local to this device.
+Represents a multiplayer game. There are two game objects when using a multiplayer manager.
+One represents the LobbySession() which is where friends you invite will join.
+Another is the GameSession() which contains people that your lobby has been matched with.
 </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -32,7 +36,12 @@ Manager for managing members that are local to this device.
       <MemberSignature Language="C#" Value="public string CorrelationId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CorrelationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.CorrelationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorrelationId As String" />
+      <MemberSignature Language="F#" Value="member this.CorrelationId : string" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.CorrelationId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.CorrelationId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +61,12 @@ A unique ID to the session used to query trace logs for entries that relate to t
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember Host { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember Host" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.Host" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Host As MultiplayerMember" />
+      <MemberSignature Language="F#" Value="member this.Host : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.Host" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.Host</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -63,8 +77,8 @@ A unique ID to the session used to query trace logs for entries that relate to t
       <Docs>
         <summary>
 Returns the host member for the game.
-There could be multiple hosts if there are multiple users on the same host device.
-This returns user with the lowest index for that host device.
+There can be multiple hosts if there are multiple users on the same host device.
+This returns the user with the lowest index on the host device.
 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -74,7 +88,12 @@ This returns user with the lowest index for that host device.
       <MemberSignature Language="C#" Value="public bool IsHost (string xboxUserId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsHost([in]string xboxUserId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.IsHost(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsHost (xboxUserId As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsHost : string -&gt; bool&#xA;override this.IsHost : string -&gt; bool" Usage="multiplayerGameSession.IsHost xboxUserId" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.IsHost(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -86,9 +105,9 @@ This returns user with the lowest index for that host device.
         <Parameter Name="xboxUserId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xboxUserId">The Xbox User ID of the user</param>
+        <param name="xboxUserId">The Xbox User ID of the user.</param>
         <summary>
-Whether or not the Xbox User ID is the host.
+Indicates if the Xbox User ID is the host.
 </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -98,7 +117,12 @@ Whether or not the Xbox User ID is the host.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember&gt; Members { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember&gt; Members" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.Members" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Members As IVectorView(Of MultiplayerMember)" />
+      <MemberSignature Language="F#" Value="member this.Members : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.Members" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.Members</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -108,8 +132,8 @@ Whether or not the Xbox User ID is the host.
       </ReturnValue>
       <Docs>
         <summary>
-A collection of members that are in the lobby. When a friend accepts a game invite, 
-members will be added to the lobby.
+A collection of members that are in the game. When a friend accepts a game invite,
+members will be added to the lobby and the game session members list.
 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -119,7 +143,12 @@ members will be added to the lobby.
       <MemberSignature Language="C#" Value="public string Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Properties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As String" />
+      <MemberSignature Language="F#" Value="member this.Properties : string" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.Properties" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.Properties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -139,7 +168,12 @@ JSON string that specify the custom properties for the game.  These can be chang
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants SessionConstants { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants SessionConstants" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.SessionConstants" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionConstants As MultiplayerSessionConstants" />
+      <MemberSignature Language="F#" Value="member this.SessionConstants : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.SessionConstants" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.SessionConstants</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -159,7 +193,12 @@ A set of constants associated with this session. These can only be set through t
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference SessionReference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference SessionReference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.SessionReference" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionReference As MultiplayerSessionReference" />
+      <MemberSignature Language="F#" Value="member this.SessionReference : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.SessionReference" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.SessionReference</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -179,7 +218,12 @@ Object containing identifying information for the session.
       <MemberSignature Language="C#" Value="public void SetProperties (string name, string valueJson, object context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetProperties([in]string name, [in]string valueJson, [in]object context) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.SetProperties(System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperties (name As String, valueJson As String, context As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetProperties : string * string * obj -&gt; unit&#xA;override this.SetProperties : string * string * obj -&gt; unit" Usage="multiplayerGameSession.SetProperties (name, valueJson, context)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.SetProperties(System.String,System.String,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -195,20 +239,26 @@ Object containing identifying information for the session.
       <Docs>
         <param name="name">The name of the property to set.</param>
         <param name="valueJson">The JSON value to assign to the property. (Optional)</param>
-        <param name="context">To be added.</param>
+        <param name="context">The application-defined data to correlate the MultiplayerEvent to the initiating call. (Optional)</param>
         <summary>
 Set a custom game property to the specified JSON string.
-Changes are batched and written to the service on the next do_work(). All session properties and members
-contain updated response returned from the server upon calling do_work().
 </summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+Changes are batched and written to the service on the next DoWork(). All session properties and members
+contain updated response returned from the server upon calling DoWork().
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSynchronizedHost">
       <MemberSignature Language="C#" Value="public void SetSynchronizedHost (Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember gameHost, object context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSynchronizedHost([in]class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember gameHost, [in]object context) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.SetSynchronizedHost(Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSynchronizedHost (gameHost As MultiplayerMember, context As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetSynchronizedHost : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember * obj -&gt; unit&#xA;override this.SetSynchronizedHost : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember * obj -&gt; unit" Usage="multiplayerGameSession.SetSynchronizedHost (gameHost, context)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.SetSynchronizedHost(Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -222,22 +272,31 @@ contain updated response returned from the server upon calling do_work().
       </Parameters>
       <Docs>
         <param name="gameHost">The host member.</param>
-        <param name="context">To be added.</param>
+        <param name="context">The application-defined data to correlate the MultiplayerEvent to the initiating call. (Optional)</param>
         <summary>
-Sets the host for the game using multiplayer_session_write_mode::synchronized_update. Use this method to resolve
-any conflicts between devices trying to set the host at the same time. It ensures that updates to the session are atomic. 
-The service may reject your request if a race condition occurred(due to a conflict) resulting in error_code
-http_status_412_precondition_failed (HTTP status 412). To resolve this, evaluate the need to write again and re-submit if needed.
-The result is delivered via multiplayer_event callback of type write_synchronized_host_completed through do_work().
+Sets the host for the game using MultiplayerSessionWriteMode::SynchronizedUpdate.
 </summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+Use this method to resolve any conflicts between devices trying to set the host at the same time.
+It ensures that updates to the session are atomic.
+
+The service may reject your request if a race condition occurred(due to a conflict) resulting in ErrorCode
+http_status_412_precondition_failed (HTTP status 412). To resolve this, evaluate the need to write again and re-submit if needed.
+
+The result is delivered via MultiplayerEvent callback of type WriteSynchronizedHostCompleted through DoWork().
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSynchronizedProperties">
       <MemberSignature Language="C#" Value="public void SetSynchronizedProperties (string name, string valueJson, object context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSynchronizedProperties([in]string name, [in]string valueJson, [in]object context) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.SetSynchronizedProperties(System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSynchronizedProperties (name As String, valueJson As String, context As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetSynchronizedProperties : string * string * obj -&gt; unit&#xA;override this.SetSynchronizedProperties : string * string * obj -&gt; unit" Usage="multiplayerGameSession.SetSynchronizedProperties (name, valueJson, context)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.SetSynchronizedProperties(System.String,System.String,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -253,23 +312,31 @@ The result is delivered via multiplayer_event callback of type write_synchronize
       <Docs>
         <param name="name">The name of the property to set.</param>
         <param name="valueJson">The JSON value to assign to the property. (Optional)</param>
-        <param name="context">To be added.</param>
+        <param name="context">The application-defined data to correlate the MultiplayerEvent to the initiating call. (Optional)</param>
         <summary>
-Sets a custom property to the specified JSON string using multiplayer_session_write_mode::synchronized_update.
-Use this method to resolve any conflicts between devices while trying to set properties to a shared portion that other 
-devices can also modify. It ensures that updates to the session are atomic. If writing to non-sharable properties, use set_properties() instead.
-The service may reject your request if a race condition occurred (due to a conflict) resulting in error_code 
-http_status_412_precondition_failed (HTTP status 412). To resolve this, evaluate the need to write again and re-submit if needed.
-The result is delivered via multiplayer_event callback of type write_synchronized_properties_completed through do_work().
+Sets a custom property to the specified JSON string using MultiplayerSessionWriteMode::SynchronizedUpdate.
 </summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+Use this method to resolve any conflicts between devices while trying to set properties to a shared portion that other
+devices can also modify. It ensures that updates to the session are atomic. If writing to non-sharable properties, use SetProperties() instead.
+
+The service may reject your request if a race condition occurred (due to a conflict) resulting in ErrorCode
+http_status_412_precondition_failed (HTTP status 412). To resolve this, evaluate the need to write again and re-submit if needed.
+
+The result is delivered via MultiplayerEvent callback of type WriteSynchronizedPropertiesCompleted through DoWork().
+</remarks>
       </Docs>
     </Member>
     <Member MemberName="TournamentTeamResults">
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IMapView&lt;string,Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt; TournamentTeamResults { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IMapView`2&lt;string, class Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt; TournamentTeamResults" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.TournamentTeamResults" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TournamentTeamResults As IMapView(Of String, TournamentTeamResult)" />
+      <MemberSignature Language="F#" Value="member this.TournamentTeamResults : Windows.Foundation.Collections.IMapView&lt;string, Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.TournamentTeamResults" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.TournamentTeamResults</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -290,7 +357,12 @@ Tournament team results for the game.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IMapView&lt;string,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference&gt; TournamentTeams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IMapView`2&lt;string, class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference&gt; TournamentTeams" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.TournamentTeams" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TournamentTeams As IMapView(Of String, MultiplayerSessionReference)" />
+      <MemberSignature Language="F#" Value="member this.TournamentTeams : Windows.Foundation.Collections.IMapView&lt;string, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerGameSession.TournamentTeams" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerGameSessionPublicNonVirtuals.TournamentTeams</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

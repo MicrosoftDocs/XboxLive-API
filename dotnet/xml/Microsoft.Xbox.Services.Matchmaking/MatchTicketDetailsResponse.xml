@@ -1,7 +1,9 @@
-<Type Name="MatchTicketDetailsResponse" FullName="Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse">
+﻿<Type Name="MatchTicketDetailsResponse" FullName="Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse">
   <TypeSignature Language="C#" Value="public sealed class MatchTicketDetailsResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MatchTicketDetailsResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MatchTicketDetailsResponse" />
+  <TypeSignature Language="F#" Value="type MatchTicketDetailsResponse = class&#xA;    interface __IMatchTicketDetailsResponsePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a server response to a request for match ticket details.
       <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan EstimatedWaitTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan EstimatedWaitTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.EstimatedWaitTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EstimatedWaitTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.EstimatedWaitTime : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.EstimatedWaitTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Matchmaking.__IMatchTicketDetailsResponsePublicNonVirtuals.EstimatedWaitTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ Estimated wait time for a match request to be matched with other players.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Matchmaking.TicketStatus MatchStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Matchmaking.TicketStatus MatchStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.MatchStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchStatus As TicketStatus" />
+      <MemberSignature Language="F#" Value="member this.MatchStatus : Microsoft.Xbox.Services.Matchmaking.TicketStatus" Usage="Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.MatchStatus" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Matchmaking.__IMatchTicketDetailsResponsePublicNonVirtuals.MatchStatus</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ Status of a match request.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode PreserveSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode PreserveSession" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.PreserveSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreserveSession As PreserveSessionMode" />
+      <MemberSignature Language="F#" Value="member this.PreserveSession : Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode" Usage="Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.PreserveSession" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Matchmaking.__IMatchTicketDetailsResponsePublicNonVirtuals.PreserveSession</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ An enum value to specify whether the match should preserve the session on which 
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference TargetSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference TargetSession" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.TargetSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetSession As MultiplayerSessionReference" />
+      <MemberSignature Language="F#" Value="member this.TargetSession : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.TargetSession" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Matchmaking.__IMatchTicketDetailsResponsePublicNonVirtuals.TargetSession</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ The session on which a match request has been found.
       <MemberSignature Language="C#" Value="public string TicketAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TicketAttributes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.TicketAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TicketAttributes As String" />
+      <MemberSignature Language="F#" Value="member this.TicketAttributes : string" Usage="Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.TicketAttributes" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Matchmaking.__IMatchTicketDetailsResponsePublicNonVirtuals.TicketAttributes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -132,7 +159,12 @@ The attributes of a match request.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference TicketSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference TicketSession" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.TicketSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TicketSession As MultiplayerSessionReference" />
+      <MemberSignature Language="F#" Value="member this.TicketSession : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse.TicketSession" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Matchmaking.__IMatchTicketDetailsResponsePublicNonVirtuals.TicketSession</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

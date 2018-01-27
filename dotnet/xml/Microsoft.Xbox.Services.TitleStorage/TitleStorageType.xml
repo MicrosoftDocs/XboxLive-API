@@ -1,7 +1,9 @@
-<Type Name="TitleStorageType" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageType">
+﻿<Type Name="TitleStorageType" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageType">
   <TypeSignature Language="C#" Value="public enum TitleStorageType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleStorageType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TitleStorageType" />
+  <TypeSignature Language="F#" Value="type TitleStorageType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="GlobalStorage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType GlobalStorage = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.GlobalStorage" />
+      <MemberSignature Language="VB.NET" Value="GlobalStorage" />
+      <MemberSignature Language="F#" Value="GlobalStorage = 2" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageType.GlobalStorage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 Global data storage.  This storage type is only writable by the Windows Developer Dashboard or the Xbox Developer Portal (XDP).
@@ -42,6 +47,8 @@ Any platform may read from this storage type. Data can be rosters, maps, challen
       <MemberSignature Language="C#" Value="JsonStorage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType JsonStorage = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.JsonStorage" />
+      <MemberSignature Language="VB.NET" Value="JsonStorage" />
+      <MemberSignature Language="F#" Value="JsonStorage = 1" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageType.JsonStorage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -50,6 +57,7 @@ Any platform may read from this storage type. Data can be rosters, maps, challen
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 JSON storage has been deprecated.  Use universal instead.
@@ -64,6 +72,8 @@ The service configuration for the game specifies if the storage is public or res
       <MemberSignature Language="C#" Value="SessionStorage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType SessionStorage = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.SessionStorage" />
+      <MemberSignature Language="VB.NET" Value="SessionStorage" />
+      <MemberSignature Language="F#" Value="SessionStorage = 3" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageType.SessionStorage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -72,6 +82,7 @@ The service configuration for the game specifies if the storage is public or res
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 DEPRECATED
@@ -86,6 +97,8 @@ to the session.  Read access is configurable to public or session-joined only in
       <MemberSignature Language="C#" Value="TrustedPlatformStorage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType TrustedPlatformStorage = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.TrustedPlatformStorage" />
+      <MemberSignature Language="VB.NET" Value="TrustedPlatformStorage" />
+      <MemberSignature Language="F#" Value="TrustedPlatformStorage = 0" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageType.TrustedPlatformStorage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -94,6 +107,7 @@ to the session.  Read access is configurable to public or session-joined only in
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Per-user data storage such as game state or game settings for trusted platforms including Xbox One.
@@ -105,6 +119,8 @@ The service configuration for the game specifies if the storage is public or res
       <MemberSignature Language="C#" Value="Universal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType Universal = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.Universal" />
+      <MemberSignature Language="VB.NET" Value="Universal" />
+      <MemberSignature Language="F#" Value="Universal = 5" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageType.Universal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -113,6 +129,7 @@ The service configuration for the game specifies if the storage is public or res
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>
 Per-user data storage such as game state or game settings for universal platforms
@@ -124,6 +141,8 @@ User restrictions can be configured to public or owner only in the service confi
       <MemberSignature Language="C#" Value="UntrustedPlatformStorage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType UntrustedPlatformStorage = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageType.UntrustedPlatformStorage" />
+      <MemberSignature Language="VB.NET" Value="UntrustedPlatformStorage" />
+      <MemberSignature Language="F#" Value="UntrustedPlatformStorage = 4" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageType.UntrustedPlatformStorage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -132,6 +151,7 @@ User restrictions can be configured to public or owner only in the service confi
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
 Per-user data storage such as game state or game settings for untrusted platforms.

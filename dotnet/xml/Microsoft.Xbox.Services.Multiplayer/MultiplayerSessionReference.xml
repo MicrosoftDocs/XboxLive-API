@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSessionReference" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference">
+﻿<Type Name="MultiplayerSessionReference" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionReference extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerSessionReference" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionReference = class&#xA;    interface __IMultiplayerSessionReferencePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -48,6 +50,8 @@ this class:
       <MemberSignature Language="C#" Value="public MultiplayerSessionReference (string serviceConfigurationId, string sessionTemplateName, string sessionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]string serviceConfigurationId, [in]string sessionTemplateName, [in]string sessionName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceConfigurationId As String, sessionTemplateName As String, sessionName As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference : string * string * string -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="new Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference (serviceConfigurationId, sessionTemplateName, sessionName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -77,6 +81,8 @@ Constructs the MultiplayerSession object with data about the session.
       <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference ParseFromUriPath (string uriPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference ParseFromUriPath([in]string uriPath) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.ParseFromUriPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseFromUriPath (uriPath As String) As MultiplayerSessionReference" />
+      <MemberSignature Language="F#" Value="static member ParseFromUriPath : string -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.ParseFromUriPath uriPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -103,7 +109,12 @@ An object representing the multiplayer session reference.
       <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.ServiceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationId : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.ServiceConfigurationId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionReferencePublicNonVirtuals.ServiceConfigurationId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -123,7 +134,12 @@ The service configuration ID specific to the title.
       <MemberSignature Language="C#" Value="public string SessionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SessionName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.SessionName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionName As String" />
+      <MemberSignature Language="F#" Value="member this.SessionName : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.SessionName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionReferencePublicNonVirtuals.SessionName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -143,7 +159,12 @@ The unique name of the session.
       <MemberSignature Language="C#" Value="public string SessionTemplateName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SessionTemplateName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.SessionTemplateName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionTemplateName As String" />
+      <MemberSignature Language="F#" Value="member this.SessionTemplateName : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.SessionTemplateName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionReferencePublicNonVirtuals.SessionTemplateName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -163,7 +184,12 @@ The name of the template for the session.
       <MemberSignature Language="C#" Value="public string ToUriPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToUriPath() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference.ToUriPath" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToUriPath () As String" />
+      <MemberSignature Language="F#" Value="abstract member ToUriPath : unit -&gt; string&#xA;override this.ToUriPath : unit -&gt; string" Usage="multiplayerSessionReference.ToUriPath " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionReferencePublicNonVirtuals.ToUriPath</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

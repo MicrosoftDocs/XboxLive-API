@@ -1,7 +1,9 @@
-<Type Name="ClubProfile" FullName="Microsoft.Xbox.Services.Clubs.ClubProfile">
+﻿<Type Name="ClubProfile" FullName="Microsoft.Xbox.Services.Clubs.ClubProfile">
   <TypeSignature Language="C#" Value="public sealed class ClubProfile" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubProfile extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubProfile" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClubProfile" />
+  <TypeSignature Language="F#" Value="type ClubProfile = class&#xA;    interface __IClubProfilePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting AssociatedTitles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting AssociatedTitles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.AssociatedTitles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssociatedTitles As ClubStringMultiSetting" />
+      <MemberSignature Language="F#" Value="member this.AssociatedTitles : Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.AssociatedTitles" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.AssociatedTitles</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -48,7 +55,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubStringSetting BackgroundImageUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubStringSetting BackgroundImageUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.BackgroundImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackgroundImageUrl As ClubStringSetting" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageUrl : Microsoft.Xbox.Services.Clubs.ClubStringSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.BackgroundImageUrl" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.BackgroundImageUrl</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -66,7 +78,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubStringSetting Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubStringSetting Description" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As ClubStringSetting" />
+      <MemberSignature Language="F#" Value="member this.Description : Microsoft.Xbox.Services.Clubs.ClubStringSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.Description" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.Description</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -84,7 +101,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubStringSetting DisplayImageUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubStringSetting DisplayImageUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.DisplayImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayImageUrl As ClubStringSetting" />
+      <MemberSignature Language="F#" Value="member this.DisplayImageUrl : Microsoft.Xbox.Services.Clubs.ClubStringSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.DisplayImageUrl" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.DisplayImageUrl</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -102,7 +124,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubBooleanSetting IsRecommendable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubBooleanSetting IsRecommendable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.IsRecommendable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRecommendable As ClubBooleanSetting" />
+      <MemberSignature Language="F#" Value="member this.IsRecommendable : Microsoft.Xbox.Services.Clubs.ClubBooleanSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.IsRecommendable" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.IsRecommendable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -120,7 +147,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubBooleanSetting IsSearchable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubBooleanSetting IsSearchable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.IsSearchable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSearchable As ClubBooleanSetting" />
+      <MemberSignature Language="F#" Value="member this.IsSearchable : Microsoft.Xbox.Services.Clubs.ClubBooleanSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.IsSearchable" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.IsSearchable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -138,7 +170,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubBooleanSetting LeaveEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubBooleanSetting LeaveEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.LeaveEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LeaveEnabled As ClubBooleanSetting" />
+      <MemberSignature Language="F#" Value="member this.LeaveEnabled : Microsoft.Xbox.Services.Clubs.ClubBooleanSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.LeaveEnabled" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.LeaveEnabled</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -156,7 +193,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubBooleanSetting MatureContentEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubBooleanSetting MatureContentEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.MatureContentEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatureContentEnabled As ClubBooleanSetting" />
+      <MemberSignature Language="F#" Value="member this.MatureContentEnabled : Microsoft.Xbox.Services.Clubs.ClubBooleanSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.MatureContentEnabled" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.MatureContentEnabled</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -174,7 +216,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubStringSetting Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubStringSetting Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As ClubStringSetting" />
+      <MemberSignature Language="F#" Value="member this.Name : Microsoft.Xbox.Services.Clubs.ClubStringSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.Name" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -192,7 +239,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubStringSetting PreferredLocale { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubStringSetting PreferredLocale" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.PreferredLocale" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreferredLocale As ClubStringSetting" />
+      <MemberSignature Language="F#" Value="member this.PreferredLocale : Microsoft.Xbox.Services.Clubs.ClubStringSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.PreferredLocale" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.PreferredLocale</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -210,7 +262,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubStringSetting PrimaryColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubStringSetting PrimaryColor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.PrimaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryColor As ClubStringSetting" />
+      <MemberSignature Language="F#" Value="member this.PrimaryColor : Microsoft.Xbox.Services.Clubs.ClubStringSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.PrimaryColor" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.PrimaryColor</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -228,7 +285,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubBooleanSetting RequestToJoinEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubBooleanSetting RequestToJoinEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.RequestToJoinEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestToJoinEnabled As ClubBooleanSetting" />
+      <MemberSignature Language="F#" Value="member this.RequestToJoinEnabled : Microsoft.Xbox.Services.Clubs.ClubBooleanSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.RequestToJoinEnabled" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.RequestToJoinEnabled</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -246,7 +308,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubStringSetting SecondayColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubStringSetting SecondayColor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.SecondayColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecondayColor As ClubStringSetting" />
+      <MemberSignature Language="F#" Value="member this.SecondayColor : Microsoft.Xbox.Services.Clubs.ClubStringSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.SecondayColor" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.SecondayColor</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -264,7 +331,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting Tags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting Tags" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.Tags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tags As ClubStringMultiSetting" />
+      <MemberSignature Language="F#" Value="member this.Tags : Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.Tags" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.Tags</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -282,7 +354,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubStringSetting TertiaryColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubStringSetting TertiaryColor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.TertiaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TertiaryColor As ClubStringSetting" />
+      <MemberSignature Language="F#" Value="member this.TertiaryColor : Microsoft.Xbox.Services.Clubs.ClubStringSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.TertiaryColor" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.TertiaryColor</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -300,7 +377,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubBooleanSetting TransferOwnershipEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubBooleanSetting TransferOwnershipEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.TransferOwnershipEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransferOwnershipEnabled As ClubBooleanSetting" />
+      <MemberSignature Language="F#" Value="member this.TransferOwnershipEnabled : Microsoft.Xbox.Services.Clubs.ClubBooleanSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.TransferOwnershipEnabled" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.TransferOwnershipEnabled</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -318,7 +400,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubBooleanSetting WatchClubTitlesOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubBooleanSetting WatchClubTitlesOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubProfile.WatchClubTitlesOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WatchClubTitlesOnly As ClubBooleanSetting" />
+      <MemberSignature Language="F#" Value="member this.WatchClubTitlesOnly : Microsoft.Xbox.Services.Clubs.ClubBooleanSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubProfile.WatchClubTitlesOnly" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubProfilePublicNonVirtuals.WatchClubTitlesOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

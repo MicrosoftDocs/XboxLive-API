@@ -1,7 +1,9 @@
-<Type Name="PresenceBroadcastRecord" FullName="Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord">
+﻿<Type Name="PresenceBroadcastRecord" FullName="Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord">
   <TypeSignature Language="C#" Value="public sealed class PresenceBroadcastRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceBroadcastRecord extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PresenceBroadcastRecord" />
+  <TypeSignature Language="F#" Value="type PresenceBroadcastRecord = class&#xA;    interface __IPresenceBroadcastRecordPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,9 +27,6 @@
     <summary>
 Represents a record of data about the broadcast. 
 </summary>
-    <summary>
-The record is only returned if the client specifies an Entertainment Discovery Services(EDS) service version(x - xbl - contract - version) of 3 or later.
-</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +34,12 @@ The record is only returned if the client specifies an Entertainment Discovery S
       <MemberSignature Language="C#" Value="public string BroadcastId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BroadcastId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord.BroadcastId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BroadcastId As String" />
+      <MemberSignature Language="F#" Value="member this.BroadcastId : string" Usage="Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord.BroadcastId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceBroadcastRecordPublicNonVirtuals.BroadcastId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -55,7 +59,12 @@ Id for this broadcast as defined by the broadcasting service.
       <MemberSignature Language="C#" Value="public string Provider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Provider" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As String" />
+      <MemberSignature Language="F#" Value="member this.Provider : string" Usage="Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord.Provider" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceBroadcastRecordPublicNonVirtuals.Provider</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -75,7 +84,12 @@ Name of the streaming provider.
       <MemberSignature Language="C#" Value="public string Session { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Session" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As String" />
+      <MemberSignature Language="F#" Value="member this.Session : string" Usage="Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord.Session" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceBroadcastRecordPublicNonVirtuals.Session</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -95,7 +109,12 @@ The GUID uniquely identifying the broadcasting session.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime StartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord.StartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.StartTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord.StartTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceBroadcastRecordPublicNonVirtuals.StartTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -115,7 +134,12 @@ UTC timestamp when the broadcast was started.
       <MemberSignature Language="C#" Value="public uint ViewerCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ViewerCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord.ViewerCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewerCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.ViewerCount : uint32" Usage="Microsoft.Xbox.Services.Presence.PresenceBroadcastRecord.ViewerCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceBroadcastRecordPublicNonVirtuals.ViewerCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="SocialRelationshipChangeSubscription" FullName="Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription">
+﻿<Type Name="SocialRelationshipChangeSubscription" FullName="Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription">
   <TypeSignature Language="C#" Value="public sealed class SocialRelationshipChangeSubscription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialRelationshipChangeSubscription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocialRelationshipChangeSubscription" />
+  <TypeSignature Language="F#" Value="type SocialRelationshipChangeSubscription = class&#xA;    interface __ISocialRelationshipChangeSubscriptionPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public string ResourceUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResourceUri" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription.ResourceUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceUri As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceUri : string" Usage="Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription.ResourceUri" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__ISocialRelationshipChangeSubscriptionPublicNonVirtuals.ResourceUri</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -50,7 +57,12 @@ The resource uri for the request.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState State" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As RealTimeActivitySubscriptionState" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState" Usage="Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription.State" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__ISocialRelationshipChangeSubscriptionPublicNonVirtuals.State</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -70,7 +82,12 @@ The current state of the subscription.
       <MemberSignature Language="C#" Value="public uint SubscriptionId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 SubscriptionId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription.SubscriptionId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubscriptionId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionId : uint32" Usage="Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription.SubscriptionId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__ISocialRelationshipChangeSubscriptionPublicNonVirtuals.SubscriptionId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -90,7 +107,12 @@ The unique subscription id for the request.
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Social.SocialRelationshipChangeSubscription.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__ISocialRelationshipChangeSubscriptionPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="ContextualSearchGameClipStat" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat">
+﻿<Type Name="ContextualSearchGameClipStat" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat">
   <TypeSignature Language="C#" Value="public sealed class ContextualSearchGameClipStat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchGameClipStat extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextualSearchGameClipStat" />
+  <TypeSignature Language="F#" Value="type ContextualSearchGameClipStat = class&#xA;    interface __IContextualSearchGameClipStatPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public string DeltaValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DeltaValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat.DeltaValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeltaValue As String" />
+      <MemberSignature Language="F#" Value="member this.DeltaValue : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat.DeltaValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipStatPublicNonVirtuals.DeltaValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -50,7 +57,12 @@
       <MemberSignature Language="C#" Value="public string MaxValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MaxValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat.MaxValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxValue As String" />
+      <MemberSignature Language="F#" Value="member this.MaxValue : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat.MaxValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipStatPublicNonVirtuals.MaxValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -71,7 +83,12 @@ If the "max" field is present, the "value" field will not be present.
       <MemberSignature Language="C#" Value="public string MinValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MinValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat.MinValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinValue As String" />
+      <MemberSignature Language="F#" Value="member this.MinValue : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat.MinValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipStatPublicNonVirtuals.MinValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ If the "min" field is present, the "value" field will not be present.
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat.Name" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipStatPublicNonVirtuals.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ Name of the stat
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipStat.Value" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchGameClipStatPublicNonVirtuals.Value</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

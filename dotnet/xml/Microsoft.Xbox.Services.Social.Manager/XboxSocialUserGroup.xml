@@ -1,7 +1,9 @@
-<Type Name="XboxSocialUserGroup" FullName="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup">
+﻿<Type Name="XboxSocialUserGroup" FullName="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup">
   <TypeSignature Language="C#" Value="public sealed class XboxSocialUserGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxSocialUserGroup extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxSocialUserGroup" />
+  <TypeSignature Language="F#" Value="type XboxSocialUserGroup = class&#xA;    interface __IXboxSocialUserGroupPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ A subset snapshot of the users social graph
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.XboxSocialUser&gt; GetUsersFromXboxUserIds (Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Social.Manager.XboxSocialUser&gt; GetUsersFromXboxUserIds([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.GetUsersFromXboxUserIds(Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUsersFromXboxUserIds (xboxUserIds As IVectorView(Of String)) As IVectorView(Of XboxSocialUser)" />
+      <MemberSignature Language="F#" Value="abstract member GetUsersFromXboxUserIds : Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.XboxSocialUser&gt;&#xA;override this.GetUsersFromXboxUserIds : Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.XboxSocialUser&gt;" Usage="xboxSocialUserGroup.GetUsersFromXboxUserIds xboxUserIds" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserGroupPublicNonVirtuals.GetUsersFromXboxUserIds(Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -54,7 +61,12 @@ A subset snapshot of the users social graph
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.System.XboxLiveUser LocalUser { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.System.XboxLiveUser LocalUser" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.LocalUser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalUser As XboxLiveUser" />
+      <MemberSignature Language="F#" Value="member this.LocalUser : Microsoft.Xbox.Services.System.XboxLiveUser" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.LocalUser" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserGroupPublicNonVirtuals.LocalUser</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -74,7 +86,12 @@ The local user who the user group is related to
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.PresenceFilter PresenceFilterOfGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Social.Manager.PresenceFilter PresenceFilterOfGroup" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.PresenceFilterOfGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresenceFilterOfGroup As PresenceFilter" />
+      <MemberSignature Language="F#" Value="member this.PresenceFilterOfGroup : Microsoft.Xbox.Services.Social.Manager.PresenceFilter" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.PresenceFilterOfGroup" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserGroupPublicNonVirtuals.PresenceFilterOfGroup</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -94,7 +111,12 @@ Returns the presence filter used if group type is filter type
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.RelationshipFilter RelationshipFilterOfGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Social.Manager.RelationshipFilter RelationshipFilterOfGroup" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.RelationshipFilterOfGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipFilterOfGroup As RelationshipFilter" />
+      <MemberSignature Language="F#" Value="member this.RelationshipFilterOfGroup : Microsoft.Xbox.Services.Social.Manager.RelationshipFilter" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.RelationshipFilterOfGroup" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserGroupPublicNonVirtuals.RelationshipFilterOfGroup</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -114,7 +136,12 @@ Returns the relationship filter used if group type is filter type
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.SocialUserGroupType SocialUserGroupType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Social.Manager.SocialUserGroupType SocialUserGroupType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.SocialUserGroupType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SocialUserGroupType As SocialUserGroupType" />
+      <MemberSignature Language="F#" Value="member this.SocialUserGroupType : Microsoft.Xbox.Services.Social.Manager.SocialUserGroupType" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.SocialUserGroupType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserGroupPublicNonVirtuals.SocialUserGroupType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -134,7 +161,12 @@ The type of social user group
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.XboxSocialUser&gt; Users { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Social.Manager.XboxSocialUser&gt; Users" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.Users" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Users As IVectorView(Of XboxSocialUser)" />
+      <MemberSignature Language="F#" Value="member this.Users : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.XboxSocialUser&gt;" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.Users" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserGroupPublicNonVirtuals.Users</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -154,7 +186,12 @@ Gets an up to date list of users from the social graph
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; UsersTrackedBySocialUserGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; UsersTrackedBySocialUserGroup" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.UsersTrackedBySocialUserGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsersTrackedBySocialUserGroup As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.UsersTrackedBySocialUserGroup : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUserGroup.UsersTrackedBySocialUserGroup" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserGroupPublicNonVirtuals.UsersTrackedBySocialUserGroup</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

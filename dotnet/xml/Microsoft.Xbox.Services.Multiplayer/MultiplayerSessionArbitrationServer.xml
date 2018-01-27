@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSessionArbitrationServer" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer">
+﻿<Type Name="MultiplayerSessionArbitrationServer" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionArbitrationServer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionArbitrationServer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerSessionArbitrationServer" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionArbitrationServer = class&#xA;    interface __IMultiplayerSessionArbitrationServerPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents the server that holds info about a tournament games result.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime ArbitrationStartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime ArbitrationStartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer.ArbitrationStartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArbitrationStartTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ArbitrationStartTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer.ArbitrationStartTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionArbitrationServerPublicNonVirtuals.ArbitrationStartTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The start time for the match. This is also when the arbitration time starts.
       <MemberSignature Language="C#" Value="public uint ResultConfidenceLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ResultConfidenceLevel" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer.ResultConfidenceLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultConfidenceLevel As UInteger" />
+      <MemberSignature Language="F#" Value="member this.ResultConfidenceLevel : uint32" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer.ResultConfidenceLevel" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionArbitrationServerPublicNonVirtuals.ResultConfidenceLevel</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ A value from 0-100 that indicates the confidence level of this result
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IMapView&lt;string,Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt; Results { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IMapView`2&lt;string, class Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt; Results" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer.Results" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Results As IMapView(Of String, TournamentTeamResult)" />
+      <MemberSignature Language="F#" Value="member this.Results : Windows.Foundation.Collections.IMapView&lt;string, Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer.Results" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionArbitrationServerPublicNonVirtuals.Results</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ The results of the game
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource ResultSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource ResultSource" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer.ResultSource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultSource As TournamentGameResultSource" />
+      <MemberSignature Language="F#" Value="member this.ResultSource : Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer.ResultSource" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionArbitrationServerPublicNonVirtuals.ResultSource</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ The source of the result
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState ResultState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState ResultState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer.ResultState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultState As TournamentArbitrationState" />
+      <MemberSignature Language="F#" Value="member this.ResultState : Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer.ResultState" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionArbitrationServerPublicNonVirtuals.ResultState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

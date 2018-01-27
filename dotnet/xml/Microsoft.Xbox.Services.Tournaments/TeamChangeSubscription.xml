@@ -1,7 +1,9 @@
-<Type Name="TeamChangeSubscription" FullName="Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription">
+﻿<Type Name="TeamChangeSubscription" FullName="Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription">
   <TypeSignature Language="C#" Value="public sealed class TeamChangeSubscription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TeamChangeSubscription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TeamChangeSubscription" />
+  <TypeSignature Language="F#" Value="type TeamChangeSubscription = class&#xA;    interface __ITeamChangeSubscriptionPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Handles notification when the state of a team subscription changes.
       <MemberSignature Language="C#" Value="public string OrganizerId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OrganizerId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription.OrganizerId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrganizerId As String" />
+      <MemberSignature Language="F#" Value="member this.OrganizerId : string" Usage="Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription.OrganizerId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamChangeSubscriptionPublicNonVirtuals.OrganizerId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The organizer ID the subscription is for.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState State" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As RealTimeActivitySubscriptionState" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState" Usage="Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription.State" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamChangeSubscriptionPublicNonVirtuals.State</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ Indicates the state of the subscription.
       <MemberSignature Language="C#" Value="public string TeamId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TeamId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription.TeamId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TeamId As String" />
+      <MemberSignature Language="F#" Value="member this.TeamId : string" Usage="Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription.TeamId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamChangeSubscriptionPublicNonVirtuals.TeamId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ The team ID the subscription is for.
       <MemberSignature Language="C#" Value="public string TournamentId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TournamentId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription.TournamentId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TournamentId As String" />
+      <MemberSignature Language="F#" Value="member this.TournamentId : string" Usage="Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription.TournamentId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamChangeSubscriptionPublicNonVirtuals.TournamentId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

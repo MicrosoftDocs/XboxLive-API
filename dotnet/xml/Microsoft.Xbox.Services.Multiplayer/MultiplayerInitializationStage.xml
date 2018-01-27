@@ -1,7 +1,9 @@
-<Type Name="MultiplayerInitializationStage" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage">
+﻿<Type Name="MultiplayerInitializationStage" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage">
   <TypeSignature Language="C#" Value="public enum MultiplayerInitializationStage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerInitializationStage extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MultiplayerInitializationStage" />
+  <TypeSignature Language="F#" Value="type MultiplayerInitializationStage = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Defines values that indicate the current status during the initialization stage.
       <MemberSignature Language="C#" Value="Evaluating" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage Evaluating = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Evaluating" />
+      <MemberSignature Language="VB.NET" Value="Evaluating" />
+      <MemberSignature Language="F#" Value="Evaluating = 4" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Evaluating" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values that indicate the current status during the initialization stage.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
 The evaluating initialization stage is active.
@@ -44,6 +49,8 @@ If auto evaluate is true, then this stage is skipped; otherwise, the title will 
       <MemberSignature Language="C#" Value="Failed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage Failed = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Failed" />
+      <MemberSignature Language="VB.NET" Value="Failed" />
+      <MemberSignature Language="F#" Value="Failed = 5" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Failed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -52,6 +59,7 @@ If auto evaluate is true, then this stage is skipped; otherwise, the title will 
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>
 Failed initialization stage.
@@ -63,6 +71,8 @@ If episode 1 didn't succeed, then it indicates failed permanently.
       <MemberSignature Language="C#" Value="Joining" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage Joining = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Joining" />
+      <MemberSignature Language="VB.NET" Value="Joining" />
+      <MemberSignature Language="F#" Value="Joining = 2" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Joining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -71,6 +81,7 @@ If episode 1 didn't succeed, then it indicates failed permanently.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 Players are joining the initialization stage.  Typically matchmaking creates the session and adds users to it.
@@ -82,6 +93,8 @@ Players have up to the joining timeout to join the session during this phase.
       <MemberSignature Language="C#" Value="Measuring" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage Measuring = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Measuring" />
+      <MemberSignature Language="VB.NET" Value="Measuring" />
+      <MemberSignature Language="F#" Value="Measuring = 3" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Measuring" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -90,6 +103,7 @@ Players have up to the joining timeout to join the session during this phase.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 The measuring initialization stage for QoS measurement is active. This is the stage where QoS measurement happens.  
@@ -101,6 +115,8 @@ The title must manually manage QoS during this stage.
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -109,6 +125,7 @@ The title must manually manage QoS during this stage.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 The initialization stage not set.
@@ -119,6 +136,8 @@ The initialization stage not set.
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -127,6 +146,7 @@ The initialization stage not set.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Unknown. 

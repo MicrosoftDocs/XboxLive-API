@@ -1,7 +1,9 @@
-<Type Name="RealTimeActivitySubscriptionError" FullName="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError">
+﻿<Type Name="RealTimeActivitySubscriptionError" FullName="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError">
   <TypeSignature Language="C#" Value="public enum RealTimeActivitySubscriptionError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RealTimeActivitySubscriptionError extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RealTimeActivitySubscriptionError" />
+  <TypeSignature Language="F#" Value="type RealTimeActivitySubscriptionError = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="JsonError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError JsonError = int32(1008)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.JsonError" />
+      <MemberSignature Language="VB.NET" Value="JsonError" />
+      <MemberSignature Language="F#" Value="JsonError = 1008" Usage="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.JsonError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError</ReturnType>
       </ReturnValue>
+      <MemberValue>1008</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="NoError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError NoError = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.NoError" />
+      <MemberSignature Language="VB.NET" Value="NoError" />
+      <MemberSignature Language="F#" Value="NoError = 0" Usage="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.NoError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="RTAAccessDenied" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError RTAAccessDenied = int32(1502)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.RTAAccessDenied" />
+      <MemberSignature Language="VB.NET" Value="RTAAccessDenied" />
+      <MemberSignature Language="F#" Value="RTAAccessDenied = 1502" Usage="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.RTAAccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError</ReturnType>
       </ReturnValue>
+      <MemberValue>1502</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="RTAGenericError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError RTAGenericError = int32(1500)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.RTAGenericError" />
+      <MemberSignature Language="VB.NET" Value="RTAGenericError" />
+      <MemberSignature Language="F#" Value="RTAGenericError = 1500" Usage="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.RTAGenericError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -79,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError</ReturnType>
       </ReturnValue>
+      <MemberValue>1500</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -87,6 +101,8 @@
       <MemberSignature Language="C#" Value="RTASubscriptionLimit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError RTASubscriptionLimit = int32(1501)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.RTASubscriptionLimit" />
+      <MemberSignature Language="VB.NET" Value="RTASubscriptionLimit" />
+      <MemberSignature Language="F#" Value="RTASubscriptionLimit = 1501" Usage="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError.RTASubscriptionLimit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -95,6 +111,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionError</ReturnType>
       </ReturnValue>
+      <MemberValue>1501</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSessionProperties" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties">
+﻿<Type Name="MultiplayerSessionProperties" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerSessionProperties" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionProperties = class&#xA;    interface __IMultiplayerSessionPropertiesPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -71,7 +73,12 @@ this class:
       <MemberSignature Language="C#" Value="public bool AllocateCloudCompute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllocateCloudCompute" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.AllocateCloudCompute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllocateCloudCompute As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllocateCloudCompute : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.AllocateCloudCompute" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.AllocateCloudCompute</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -93,7 +100,12 @@ MPSD will remove this property entirely if the allocation has failed.
       <MemberSignature Language="C#" Value="public bool Closed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Closed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.Closed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Closed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Closed : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.Closed" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.Closed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -115,7 +127,12 @@ Does not affect reservations.  Defaults to false.
       <MemberSignature Language="C#" Value="public string HostDeviceToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HostDeviceToken" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.HostDeviceToken" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostDeviceToken As String" />
+      <MemberSignature Language="F#" Value="member this.HostDeviceToken : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.HostDeviceToken" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.HostDeviceToken</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -138,7 +155,12 @@ the given host is the correct host and only measures metrics to that host.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction JoinRestriction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction JoinRestriction" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.JoinRestriction" />
+      <MemberSignature Language="VB.NET" Value="Public Property JoinRestriction As MultiplayerSessionRestriction" />
+      <MemberSignature Language="F#" Value="member this.JoinRestriction : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.JoinRestriction" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.JoinRestriction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -168,7 +190,12 @@ JoinRestriction to MultiplayerSessionJoinRestriction.Local.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; Keywords { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; Keywords" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.Keywords" />
+      <MemberSignature Language="VB.NET" Value="Public Property Keywords As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Keywords : Windows.Foundation.Collections.IVectorView&lt;string&gt; with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.Keywords" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.Keywords</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -189,7 +216,12 @@ When changing keywords, call MultiplayerService::WriteSessionAsync to write the 
       <MemberSignature Language="C#" Value="public bool Locked { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.Locked" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Locked As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Locked : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.Locked" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.Locked</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -210,7 +242,12 @@ come back into the session but no other user could take that spot. Defaults to f
       <MemberSignature Language="C#" Value="public string MatchmakingServerConnectionString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MatchmakingServerConnectionString" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.MatchmakingServerConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchmakingServerConnectionString As String" />
+      <MemberSignature Language="F#" Value="member this.MatchmakingServerConnectionString : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.MatchmakingServerConnectionString" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.MatchmakingServerConnectionString</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -230,7 +267,12 @@ Force a specific connection string to be used, which is useful for join in progr
       <MemberSignature Language="C#" Value="public string MatchmakingTargetSessionConstantsJson { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MatchmakingTargetSessionConstantsJson" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.MatchmakingTargetSessionConstantsJson" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchmakingTargetSessionConstantsJson As String" />
+      <MemberSignature Language="F#" Value="member this.MatchmakingTargetSessionConstantsJson : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.MatchmakingTargetSessionConstantsJson" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.MatchmakingTargetSessionConstantsJson</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -250,7 +292,12 @@ A JSON string of title-defined constants for the target session to use in matchm
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction ReadRestriction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction ReadRestriction" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.ReadRestriction" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadRestriction As MultiplayerSessionRestriction" />
+      <MemberSignature Language="F#" Value="member this.ReadRestriction : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.ReadRestriction" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.ReadRestriction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -280,7 +327,12 @@ ReadRestriction to MultiplayerSessionReadRestriction.Followed.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; ServerConnectionStringCandidates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; ServerConnectionStringCandidates" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.ServerConnectionStringCandidates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerConnectionStringCandidates As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ServerConnectionStringCandidates : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.ServerConnectionStringCandidates" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.ServerConnectionStringCandidates</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -301,7 +353,12 @@ the list, but sophisticated titles could use a custom mechanism for choosing one
       <MemberSignature Language="C#" Value="public string SessionCustomPropertiesJson { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SessionCustomPropertiesJson" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.SessionCustomPropertiesJson" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionCustomPropertiesJson As String" />
+      <MemberSignature Language="F#" Value="member this.SessionCustomPropertiesJson : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.SessionCustomPropertiesJson" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.SessionCustomPropertiesJson</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -322,7 +379,12 @@ When changing, call MultiplayerService::WriteSessionAsync to write the changes t
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;uint&gt; SessionOwnerIndices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;unsigned int32&gt; SessionOwnerIndices" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.SessionOwnerIndices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionOwnerIndices As IVectorView(Of UInteger)" />
+      <MemberSignature Language="F#" Value="member this.SessionOwnerIndices : Windows.Foundation.Collections.IVectorView&lt;uint32&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.SessionOwnerIndices" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.SessionOwnerIndices</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -342,7 +404,12 @@ Member index of owners of the session.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; TurnCollection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; TurnCollection" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.TurnCollection" />
+      <MemberSignature Language="VB.NET" Value="Public Property TurnCollection As IVectorView(Of MultiplayerSessionMember)" />
+      <MemberSignature Language="F#" Value="member this.TurnCollection : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties.TurnCollection" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPropertiesPublicNonVirtuals.TurnCollection</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSessionTournamentsServer" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer">
+﻿<Type Name="MultiplayerSessionTournamentsServer" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionTournamentsServer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionTournamentsServer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerSessionTournamentsServer" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionTournamentsServer = class&#xA;    interface __IMultiplayerSessionTournamentsServerPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents the server that allows multiplayer session discovery to collaborate i
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime LastGameEndTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime LastGameEndTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.LastGameEndTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastGameEndTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastGameEndTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.LastGameEndTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionTournamentsServerPublicNonVirtuals.LastGameEndTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The last tournament game end time.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource LastGameResultSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource LastGameResultSource" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.LastGameResultSource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastGameResultSource As TournamentGameResultSource" />
+      <MemberSignature Language="F#" Value="member this.LastGameResultSource : Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.LastGameResultSource" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionTournamentsServerPublicNonVirtuals.LastGameResultSource</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The source for the last game's state of the tournament.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentTeamResult LastTeamResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.TournamentTeamResult LastTeamResult" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.LastTeamResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastTeamResult As TournamentTeamResult" />
+      <MemberSignature Language="F#" Value="member this.LastTeamResult : Microsoft.Xbox.Services.Tournaments.TournamentTeamResult" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.LastTeamResult" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionTournamentsServerPublicNonVirtuals.LastTeamResult</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ The last game's state for the tournament.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference NextGameSessionRef { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference NextGameSessionRef" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.NextGameSessionRef" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextGameSessionRef As MultiplayerSessionReference" />
+      <MemberSignature Language="F#" Value="member this.NextGameSessionRef : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.NextGameSessionRef" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionTournamentsServerPublicNonVirtuals.NextGameSessionRef</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ The next tournament game session reference.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime NextGameStartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime NextGameStartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.NextGameStartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextGameStartTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.NextGameStartTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.NextGameStartTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionTournamentsServerPublicNonVirtuals.NextGameStartTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -132,7 +159,12 @@ The next tournament game start time.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason RegistrationReason { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason RegistrationReason" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.RegistrationReason" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegistrationReason As TournamentRegistrationReason" />
+      <MemberSignature Language="F#" Value="member this.RegistrationReason : Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.RegistrationReason" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionTournamentsServerPublicNonVirtuals.RegistrationReason</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -152,7 +184,12 @@ The tournament registration reason for the certain state.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState RegistrationState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState RegistrationState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.RegistrationState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegistrationState As TournamentRegistrationState" />
+      <MemberSignature Language="F#" Value="member this.RegistrationState : Microsoft.Xbox.Services.Tournaments.TournamentRegistrationState" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.RegistrationState" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionTournamentsServerPublicNonVirtuals.RegistrationState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -172,7 +209,12 @@ The tournament registration state of the team.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IMapView&lt;string,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference&gt; Teams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IMapView`2&lt;string, class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference&gt; Teams" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.Teams" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Teams As IMapView(Of String, MultiplayerSessionReference)" />
+      <MemberSignature Language="F#" Value="member this.Teams : Windows.Foundation.Collections.IMapView&lt;string, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.Teams" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionTournamentsServerPublicNonVirtuals.Teams</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -192,7 +234,12 @@ The teams in the tournament
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentReference TournamentReference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.TournamentReference TournamentReference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.TournamentReference" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TournamentReference As TournamentReference" />
+      <MemberSignature Language="F#" Value="member this.TournamentReference : Microsoft.Xbox.Services.Tournaments.TournamentReference" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer.TournamentReference" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionTournamentsServerPublicNonVirtuals.TournamentReference</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

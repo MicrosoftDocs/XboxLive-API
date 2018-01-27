@@ -1,7 +1,9 @@
-<Type Name="LeaderboardQuery" FullName="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery">
+﻿<Type Name="LeaderboardQuery" FullName="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery">
   <TypeSignature Language="C#" Value="public sealed class LeaderboardQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LeaderboardQuery extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LeaderboardQuery" />
+  <TypeSignature Language="F#" Value="type LeaderboardQuery = class&#xA;    interface __ILeaderboardQueryPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -35,6 +37,7 @@ Represents the results of a leaderboard request.
       <MemberSignature Language="C#" Value="public LeaderboardQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -57,7 +60,12 @@ Constructs a new LeaderboardQuery object.
       <MemberSignature Language="C#" Value="public bool HasNext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasNext" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.HasNext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasNext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasNext : bool" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.HasNext" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardQueryPublicNonVirtuals.HasNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -78,7 +86,12 @@ If this is true then you can pass this object into the GetLeaderboard call
       <MemberSignature Language="C#" Value="public uint MaxItems { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MaxItems" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.MaxItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxItems As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MaxItems : uint32 with get, set" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.MaxItems" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardQueryPublicNonVirtuals.MaxItems</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -98,7 +111,12 @@ Gets/Sets maximum items that the resulting leaderboard will contain
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Leaderboard.SortOrder Order { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Leaderboard.SortOrder Order" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.Order" />
+      <MemberSignature Language="VB.NET" Value="Public Property Order As SortOrder" />
+      <MemberSignature Language="F#" Value="member this.Order : Microsoft.Xbox.Services.Leaderboard.SortOrder with get, set" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.Order" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardQueryPublicNonVirtuals.Order</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -118,7 +136,12 @@ Gets/Sets sort order for the resulting leaderboard
       <MemberSignature Language="C#" Value="public bool SkipResultToMe { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SkipResultToMe" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.SkipResultToMe" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipResultToMe As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SkipResultToMe : bool with get, set" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.SkipResultToMe" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardQueryPublicNonVirtuals.SkipResultToMe</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -139,7 +162,12 @@ user that requested the leaderboard.
       <MemberSignature Language="C#" Value="public uint SkipResultToRank { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 SkipResultToRank" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.SkipResultToRank" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipResultToRank As UInteger" />
+      <MemberSignature Language="F#" Value="member this.SkipResultToRank : uint32 with get, set" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.SkipResultToRank" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardQueryPublicNonVirtuals.SkipResultToRank</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -159,7 +187,12 @@ Gets/Sets Which rank the resulting leaderboard will start at
       <MemberSignature Language="C#" Value="public string SocialGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SocialGroup" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.SocialGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SocialGroup As String" />
+      <MemberSignature Language="F#" Value="member this.SocialGroup : string" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.SocialGroup" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardQueryPublicNonVirtuals.SocialGroup</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -180,7 +213,12 @@ gotten from get_next_query and the previous query was a social query
       <MemberSignature Language="C#" Value="public string StatName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StatName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.StatName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatName As String" />
+      <MemberSignature Language="F#" Value="member this.StatName : string" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery.StatName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardQueryPublicNonVirtuals.StatName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

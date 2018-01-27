@@ -1,7 +1,9 @@
-<Type Name="MultiplayerPeerToHostRequirements" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements">
+﻿<Type Name="MultiplayerPeerToHostRequirements" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerPeerToHostRequirements" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerPeerToHostRequirements extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerPeerToHostRequirements" />
+  <TypeSignature Language="F#" Value="type MultiplayerPeerToHostRequirements = class&#xA;    interface __IMultiplayerPeerToHostRequirementsPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -43,7 +45,12 @@ this class:
       <MemberSignature Language="C#" Value="public ulong BandwidthDownMinimumInKilobitsPerSecond { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 BandwidthDownMinimumInKilobitsPerSecond" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements.BandwidthDownMinimumInKilobitsPerSecond" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BandwidthDownMinimumInKilobitsPerSecond As ULong" />
+      <MemberSignature Language="F#" Value="member this.BandwidthDownMinimumInKilobitsPerSecond : uint64" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements.BandwidthDownMinimumInKilobitsPerSecond" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerPeerToHostRequirementsPublicNonVirtuals.BandwidthDownMinimumInKilobitsPerSecond</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -63,7 +70,12 @@ The minimum bandwidth in kilobits per second for information sent from the host 
       <MemberSignature Language="C#" Value="public ulong BandwidthUpMinimumInKilobitsPerSecond { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 BandwidthUpMinimumInKilobitsPerSecond" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements.BandwidthUpMinimumInKilobitsPerSecond" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BandwidthUpMinimumInKilobitsPerSecond As ULong" />
+      <MemberSignature Language="F#" Value="member this.BandwidthUpMinimumInKilobitsPerSecond : uint64" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements.BandwidthUpMinimumInKilobitsPerSecond" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerPeerToHostRequirementsPublicNonVirtuals.BandwidthUpMinimumInKilobitsPerSecond</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -83,7 +95,12 @@ The minimum bandwidth in kilobits per second for information sent from the peer 
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics HostSelectionMetric { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics HostSelectionMetric" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements.HostSelectionMetric" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostSelectionMetric As MultiplayMetrics" />
+      <MemberSignature Language="F#" Value="member this.HostSelectionMetric : Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements.HostSelectionMetric" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerPeerToHostRequirementsPublicNonVirtuals.HostSelectionMetric</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -103,7 +120,12 @@ Indicates which metric was used to select the host.
       <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan LatencyMaximum { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan LatencyMaximum" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements.LatencyMaximum" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LatencyMaximum As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.LatencyMaximum : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerPeerToHostRequirements.LatencyMaximum" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerPeerToHostRequirementsPublicNonVirtuals.LatencyMaximum</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

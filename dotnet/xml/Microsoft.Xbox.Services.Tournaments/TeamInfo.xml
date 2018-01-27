@@ -1,7 +1,9 @@
-<Type Name="TeamInfo" FullName="Microsoft.Xbox.Services.Tournaments.TeamInfo">
+﻿<Type Name="TeamInfo" FullName="Microsoft.Xbox.Services.Tournaments.TeamInfo">
   <TypeSignature Language="C#" Value="public sealed class TeamInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TeamInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TeamInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TeamInfo" />
+  <TypeSignature Language="F#" Value="type TeamInfo = class&#xA;    interface __ITeamInfoPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents details of the team participating in the tournament.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TeamCompletedReason CompletedReason { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TeamCompletedReason CompletedReason" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.CompletedReason" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompletedReason As TeamCompletedReason" />
+      <MemberSignature Language="F#" Value="member this.CompletedReason : Microsoft.Xbox.Services.Tournaments.TeamCompletedReason" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.CompletedReason" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.CompletedReason</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The reason the team is in the Completed state.
       <MemberSignature Language="C#" Value="public string ContinuationUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContinuationUri" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.ContinuationUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinuationUri As String" />
+      <MemberSignature Language="F#" Value="member this.ContinuationUri : string" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.ContinuationUri" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.ContinuationUri</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -73,7 +85,12 @@ to the Xbox App's Tournament Details Page.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata CurrentMatchMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata CurrentMatchMetadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.CurrentMatchMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentMatchMetadata As CurrentMatchMetadata" />
+      <MemberSignature Language="F#" Value="member this.CurrentMatchMetadata : Microsoft.Xbox.Services.Tournaments.CurrentMatchMetadata" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.CurrentMatchMetadata" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.CurrentMatchMetadata</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -93,7 +110,12 @@ Information about the team's current or upcoming match. Absent if the team does 
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.Id" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.Id</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -113,7 +135,12 @@ The ID of the team. It is an opaque string specified by the tournament organizer
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; MemberXboxUserIds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; MemberXboxUserIds" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.MemberXboxUserIds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberXboxUserIds As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.MemberXboxUserIds : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.MemberXboxUserIds" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.MemberXboxUserIds</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -133,7 +160,12 @@ Member xbox_user_ids for this team.
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.Name" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -153,7 +185,12 @@ The display name of the team
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata PreviousMatchMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata PreviousMatchMetadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.PreviousMatchMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousMatchMetadata As PreviousMatchMetadata" />
+      <MemberSignature Language="F#" Value="member this.PreviousMatchMetadata : Microsoft.Xbox.Services.Tournaments.PreviousMatchMetadata" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.PreviousMatchMetadata" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.PreviousMatchMetadata</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -173,7 +210,12 @@ Information about the previously played match. Absent if the player has not play
       <MemberSignature Language="C#" Value="public ulong Ranking { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 Ranking" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.Ranking" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ranking As ULong" />
+      <MemberSignature Language="F#" Value="member this.Ranking : uint64" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.Ranking" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.Ranking</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -193,7 +235,12 @@ The team's final rank within the tournament, if it is available. If missing, the
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime RegistrationDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime RegistrationDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.RegistrationDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegistrationDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.RegistrationDate : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.RegistrationDate" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.RegistrationDate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -213,7 +260,12 @@ The timestamp at which the team was registered. Used to determine ordering if te
       <MemberSignature Language="C#" Value="public string Standing { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Standing" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.Standing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Standing As String" />
+      <MemberSignature Language="F#" Value="member this.Standing : string" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.Standing" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.Standing</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -233,7 +285,12 @@ A formatted string that describes the team's standing in the tournament. For exa
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TeamState TeamState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TeamState TeamState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TeamInfo.TeamState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TeamState As TeamState" />
+      <MemberSignature Language="F#" Value="member this.TeamState : Microsoft.Xbox.Services.Tournaments.TeamState" Usage="Microsoft.Xbox.Services.Tournaments.TeamInfo.TeamState" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITeamInfoPublicNonVirtuals.TeamState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

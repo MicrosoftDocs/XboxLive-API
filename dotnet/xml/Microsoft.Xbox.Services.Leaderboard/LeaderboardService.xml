@@ -1,7 +1,9 @@
-<Type Name="LeaderboardService" FullName="Microsoft.Xbox.Services.Leaderboard.LeaderboardService">
+﻿<Type Name="LeaderboardService" FullName="Microsoft.Xbox.Services.Leaderboard.LeaderboardService">
   <TypeSignature Language="C#" Value="public sealed class LeaderboardService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LeaderboardService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LeaderboardService" />
+  <TypeSignature Language="F#" Value="type LeaderboardService = class&#xA;    interface __ILeaderboardServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents the leaderboard service.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardAsync (string serviceConfigurationId, string leaderboardName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardAsync([in]string serviceConfigurationId, [in]string leaderboardName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardAsync (serviceConfigurationId As String, leaderboardName As String) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardAsync : string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardAsync : string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardAsync (serviceConfigurationId, leaderboardName)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardAsync(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -73,7 +80,12 @@ Calls V3 GET /scids/{scid}/leaderboards/{leaderboardname}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardAsync (string serviceConfigurationId, string leaderboardName, uint skipToRank, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]unsigned int32 skipToRank, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardAsync(System.String,System.String,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardAsync (serviceConfigurationId As String, leaderboardName As String, skipToRank As UInteger, maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardAsync : string * string * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardAsync : string * string * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardAsync (serviceConfigurationId, leaderboardName, skipToRank, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardAsync(System.String,System.String,System.UInt32,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -120,7 +132,12 @@ Calls V3 GET
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardAsync (string serviceConfigurationId, string leaderboardName, string xuid, string socialGroup, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]string xuid, [in]string socialGroup, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardAsync(System.String,System.String,System.String,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardAsync (serviceConfigurationId As String, leaderboardName As String, xuid As String, socialGroup As String, maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardAsync : string * string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardAsync : string * string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardAsync (serviceConfigurationId, leaderboardName, xuid, socialGroup, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardAsync(System.String,System.String,System.String,System.String,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -168,7 +185,12 @@ Calls V3 GET /scids/{scid}/leaderboards/{leaderboardname}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardAsync (string serviceConfigurationId, string leaderboardName, string xuid, string socialGroup, uint skipToRank, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]string xuid, [in]string socialGroup, [in]unsigned int32 skipToRank, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardAsync(System.String,System.String,System.String,System.String,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardAsync (serviceConfigurationId As String, leaderboardName As String, xuid As String, socialGroup As String, skipToRank As UInteger, maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardAsync : string * string * string * string * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardAsync : string * string * string * string * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardAsync (serviceConfigurationId, leaderboardName, xuid, socialGroup, skipToRank, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardAsync(System.String,System.String,System.String,System.String,System.UInt32,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -218,7 +240,12 @@ Calls V3 GET /scids/{scid}/leaderboards/{leaderboardname}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardForSocialGroupAsync (string xboxUserId, string serviceConfigurationId, string statisticName, string socialGroup, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardForSocialGroupAsync([in]string xboxUserId, [in]string serviceConfigurationId, [in]string statisticName, [in]string socialGroup, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardForSocialGroupAsync(System.String,System.String,System.String,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardForSocialGroupAsync (xboxUserId As String, serviceConfigurationId As String, statisticName As String, socialGroup As String, maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardForSocialGroupAsync : string * string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardForSocialGroupAsync : string * string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardForSocialGroupAsync (xboxUserId, serviceConfigurationId, statisticName, socialGroup, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardForSocialGroupAsync(System.String,System.String,System.String,System.String,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -266,7 +293,12 @@ https://leaderboards.xboxlive.com/users/xuid({xuid})/scids/{scid}/stats/{statnam
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardForSocialGroupAsync (string xboxUserId, string serviceConfigurationId, string statisticName, string socialGroup, string sortOrder, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardForSocialGroupAsync([in]string xboxUserId, [in]string serviceConfigurationId, [in]string statisticName, [in]string socialGroup, [in]string sortOrder, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardForSocialGroupAsync(System.String,System.String,System.String,System.String,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardForSocialGroupAsync (xboxUserId As String, serviceConfigurationId As String, statisticName As String, socialGroup As String, sortOrder As String, maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardForSocialGroupAsync : string * string * string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardForSocialGroupAsync : string * string * string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardForSocialGroupAsync (xboxUserId, serviceConfigurationId, statisticName, socialGroup, sortOrder, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardForSocialGroupAsync(System.String,System.String,System.String,System.String,System.String,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -317,7 +349,12 @@ https://leaderboards.xboxlive.com/users/xuid({xuid})/scids/{scid}/stats/{statnam
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardForSocialGroupWithSkipToRankAsync (string xboxUserId, string serviceConfigurationId, string statisticName, string socialGroup, uint skipToRank, string sortOrder, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardForSocialGroupWithSkipToRankAsync([in]string xboxUserId, [in]string serviceConfigurationId, [in]string statisticName, [in]string socialGroup, [in]unsigned int32 skipToRank, [in]string sortOrder, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardForSocialGroupWithSkipToRankAsync(System.String,System.String,System.String,System.String,System.UInt32,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardForSocialGroupWithSkipToRankAsync (xboxUserId As String, serviceConfigurationId As String, statisticName As String, socialGroup As String, skipToRank As UInteger, sortOrder As String, maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardForSocialGroupWithSkipToRankAsync : string * string * string * string * uint32 * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardForSocialGroupWithSkipToRankAsync : string * string * string * string * uint32 * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardForSocialGroupWithSkipToRankAsync (xboxUserId, serviceConfigurationId, statisticName, socialGroup, skipToRank, sortOrder, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardForSocialGroupWithSkipToRankAsync(System.String,System.String,System.String,System.String,System.UInt32,System.String,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -365,7 +402,12 @@ https://leaderboards.xboxlive.com/users/xuid({xuid})/scids/{scid}/stats/{statnam
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardForSocialGroupWithSkipToUserAsync (string xboxUserId, string serviceConfigurationId, string statisticName, string socialGroup, string skipToXboxUserId, string sortOrder, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardForSocialGroupWithSkipToUserAsync([in]string xboxUserId, [in]string serviceConfigurationId, [in]string statisticName, [in]string socialGroup, [in]string skipToXboxUserId, [in]string sortOrder, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardForSocialGroupWithSkipToUserAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardForSocialGroupWithSkipToUserAsync (xboxUserId As String, serviceConfigurationId As String, statisticName As String, socialGroup As String, skipToXboxUserId As String, sortOrder As String, maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardForSocialGroupWithSkipToUserAsync : string * string * string * string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardForSocialGroupWithSkipToUserAsync : string * string * string * string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardForSocialGroupWithSkipToUserAsync (xboxUserId, serviceConfigurationId, statisticName, socialGroup, skipToXboxUserId, sortOrder, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardForSocialGroupWithSkipToUserAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -413,7 +455,12 @@ https://leaderboards.xboxlive.com/users/xuid({xuid})/scids/{scid}/stats/{statnam
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithAdditionalColumnsAsync (string serviceConfigurationId, string leaderboardName, Windows.Foundation.Collections.IVectorView&lt;string&gt; additionalColumns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithAdditionalColumnsAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; additionalColumns) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardWithAdditionalColumnsAsync(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardWithAdditionalColumnsAsync (serviceConfigurationId As String, leaderboardName As String, additionalColumns As IVectorView(Of String)) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardWithAdditionalColumnsAsync : string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardWithAdditionalColumnsAsync : string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardWithAdditionalColumnsAsync (serviceConfigurationId, leaderboardName, additionalColumns)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardWithAdditionalColumnsAsync(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -444,7 +491,12 @@ https://leaderboards.xboxlive.com/users/xuid({xuid})/scids/{scid}/stats/{statnam
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithAdditionalColumnsAsync (string serviceConfigurationId, string leaderboardName, uint skipToRank, Windows.Foundation.Collections.IVectorView&lt;string&gt; additionalColumns, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithAdditionalColumnsAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]unsigned int32 skipToRank, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; additionalColumns, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardWithAdditionalColumnsAsync(System.String,System.String,System.UInt32,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardWithAdditionalColumnsAsync (serviceConfigurationId As String, leaderboardName As String, skipToRank As UInteger, additionalColumns As IVectorView(Of String), maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardWithAdditionalColumnsAsync : string * string * uint32 * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardWithAdditionalColumnsAsync : string * string * uint32 * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardWithAdditionalColumnsAsync (serviceConfigurationId, leaderboardName, skipToRank, additionalColumns, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardWithAdditionalColumnsAsync(System.String,System.String,System.UInt32,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -479,7 +531,12 @@ https://leaderboards.xboxlive.com/users/xuid({xuid})/scids/{scid}/stats/{statnam
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithAdditionalColumnsAsync (string serviceConfigurationId, string leaderboardName, string xuid, string socialGroup, Windows.Foundation.Collections.IVectorView&lt;string&gt; additionalColumns, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithAdditionalColumnsAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]string xuid, [in]string socialGroup, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; additionalColumns, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardWithAdditionalColumnsAsync(System.String,System.String,System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardWithAdditionalColumnsAsync (serviceConfigurationId As String, leaderboardName As String, xuid As String, socialGroup As String, additionalColumns As IVectorView(Of String), maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardWithAdditionalColumnsAsync : string * string * string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardWithAdditionalColumnsAsync : string * string * string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardWithAdditionalColumnsAsync (serviceConfigurationId, leaderboardName, xuid, socialGroup, additionalColumns, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardWithAdditionalColumnsAsync(System.String,System.String,System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -516,7 +573,12 @@ https://leaderboards.xboxlive.com/users/xuid({xuid})/scids/{scid}/stats/{statnam
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithAdditionalColumnsAsync (string serviceConfigurationId, string leaderboardName, string xuid, string socialGroup, uint skipToRank, Windows.Foundation.Collections.IVectorView&lt;string&gt; additionalColumns, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithAdditionalColumnsAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]string xuid, [in]string socialGroup, [in]unsigned int32 skipToRank, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; additionalColumns, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardWithAdditionalColumnsAsync(System.String,System.String,System.String,System.String,System.UInt32,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardWithAdditionalColumnsAsync (serviceConfigurationId As String, leaderboardName As String, xuid As String, socialGroup As String, skipToRank As UInteger, additionalColumns As IVectorView(Of String), maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardWithAdditionalColumnsAsync : string * string * string * string * uint32 * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardWithAdditionalColumnsAsync : string * string * string * string * uint32 * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardWithAdditionalColumnsAsync (serviceConfigurationId, leaderboardName, xuid, socialGroup, skipToRank, additionalColumns, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardWithAdditionalColumnsAsync(System.String,System.String,System.String,System.String,System.UInt32,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -555,7 +617,12 @@ https://leaderboards.xboxlive.com/users/xuid({xuid})/scids/{scid}/stats/{statnam
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithSkipToUserAsync (string serviceConfigurationId, string leaderboardName, string skipToXboxUserId, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithSkipToUserAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]string skipToXboxUserId, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardWithSkipToUserAsync(System.String,System.String,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardWithSkipToUserAsync (serviceConfigurationId As String, leaderboardName As String, skipToXboxUserId As String, maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardWithSkipToUserAsync : string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardWithSkipToUserAsync : string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardWithSkipToUserAsync (serviceConfigurationId, leaderboardName, skipToXboxUserId, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardWithSkipToUserAsync(System.String,System.String,System.String,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -605,7 +672,12 @@ Calls V3 GET
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithSkipToUserAsync (string serviceConfigurationId, string leaderboardName, string xuid, string socialGroup, string skipToXboxUserId, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithSkipToUserAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]string xuid, [in]string socialGroup, [in]string skipToXboxUserId, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardWithSkipToUserAsync(System.String,System.String,System.String,System.String,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardWithSkipToUserAsync (serviceConfigurationId As String, leaderboardName As String, xuid As String, socialGroup As String, skipToXboxUserId As String, maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardWithSkipToUserAsync : string * string * string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardWithSkipToUserAsync : string * string * string * string * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardWithSkipToUserAsync (serviceConfigurationId, leaderboardName, xuid, socialGroup, skipToXboxUserId, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardWithSkipToUserAsync(System.String,System.String,System.String,System.String,System.String,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -660,7 +732,12 @@ Calls V3 GET
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync (string serviceConfigurationId, string leaderboardName, string skipToXboxUserId, Windows.Foundation.Collections.IVectorView&lt;string&gt; additionalColumns, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]string skipToXboxUserId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; additionalColumns, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync(System.String,System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync (serviceConfigurationId As String, leaderboardName As String, skipToXboxUserId As String, additionalColumns As IVectorView(Of String), maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync : string * string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync : string * string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync (serviceConfigurationId, leaderboardName, skipToXboxUserId, additionalColumns, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync(System.String,System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -695,7 +772,12 @@ Calls V3 GET
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync (string serviceConfigurationId, string leaderboardName, string xuid, string socialGroup, string skipToXboxUserId, Windows.Foundation.Collections.IVectorView&lt;string&gt; additionalColumns, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync([in]string serviceConfigurationId, [in]string leaderboardName, [in]string xuid, [in]string socialGroup, [in]string skipToXboxUserId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; additionalColumns, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardService.GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync(System.String,System.String,System.String,System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync (serviceConfigurationId As String, leaderboardName As String, xuid As String, socialGroup As String, skipToXboxUserId As String, additionalColumns As IVectorView(Of String), maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync : string * string * string * string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync : string * string * string * string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardService.GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync (serviceConfigurationId, leaderboardName, xuid, socialGroup, skipToXboxUserId, additionalColumns, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardServicePublicNonVirtuals.GetLeaderboardWithSkipToUserWithAdditionalColumnsAsync(System.String,System.String,System.String,System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

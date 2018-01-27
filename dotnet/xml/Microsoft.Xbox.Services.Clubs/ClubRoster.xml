@@ -1,7 +1,9 @@
-<Type Name="ClubRoster" FullName="Microsoft.Xbox.Services.Clubs.ClubRoster">
+﻿<Type Name="ClubRoster" FullName="Microsoft.Xbox.Services.Clubs.ClubRoster">
   <TypeSignature Language="C#" Value="public sealed class ClubRoster" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubRoster extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubRoster" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClubRoster" />
+  <TypeSignature Language="F#" Value="type ClubRoster = class&#xA;    interface __IClubRosterPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt; Banned { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt; Banned" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoster.Banned" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Banned As IVectorView(Of ClubRoleRecord)" />
+      <MemberSignature Language="F#" Value="member this.Banned : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;" Usage="Microsoft.Xbox.Services.Clubs.ClubRoster.Banned" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRosterPublicNonVirtuals.Banned</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -48,7 +55,12 @@
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt; Moderators { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt; Moderators" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoster.Moderators" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Moderators As IVectorView(Of ClubRoleRecord)" />
+      <MemberSignature Language="F#" Value="member this.Moderators : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;" Usage="Microsoft.Xbox.Services.Clubs.ClubRoster.Moderators" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRosterPublicNonVirtuals.Moderators</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -66,7 +78,12 @@
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt; Recommended { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt; Recommended" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoster.Recommended" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recommended As IVectorView(Of ClubRoleRecord)" />
+      <MemberSignature Language="F#" Value="member this.Recommended : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;" Usage="Microsoft.Xbox.Services.Clubs.ClubRoster.Recommended" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRosterPublicNonVirtuals.Recommended</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -84,7 +101,12 @@
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt; RequestedToJoin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt; RequestedToJoin" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoster.RequestedToJoin" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestedToJoin As IVectorView(Of ClubRoleRecord)" />
+      <MemberSignature Language="F#" Value="member this.RequestedToJoin : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;" Usage="Microsoft.Xbox.Services.Clubs.ClubRoster.RequestedToJoin" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRosterPublicNonVirtuals.RequestedToJoin</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

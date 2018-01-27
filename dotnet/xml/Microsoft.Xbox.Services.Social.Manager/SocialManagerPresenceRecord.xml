@@ -1,7 +1,9 @@
-<Type Name="SocialManagerPresenceRecord" FullName="Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord">
+﻿<Type Name="SocialManagerPresenceRecord" FullName="Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord">
   <TypeSignature Language="C#" Value="public sealed class SocialManagerPresenceRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialManagerPresenceRecord extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocialManagerPresenceRecord" />
+  <TypeSignature Language="F#" Value="type SocialManagerPresenceRecord = class&#xA;    interface __ISocialManagerPresenceRecordPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public bool IsUserPlayingTitle (uint titleId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUserPlayingTitle([in]unsigned int32 titleId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord.IsUserPlayingTitle(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUserPlayingTitle (titleId As UInteger) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsUserPlayingTitle : uint32 -&gt; bool&#xA;override this.IsUserPlayingTitle : uint32 -&gt; bool" Usage="socialManagerPresenceRecord.IsUserPlayingTitle titleId" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPresenceRecordPublicNonVirtuals.IsUserPlayingTitle(System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -54,7 +61,12 @@ Returns whether the user is playing this title id
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceTitleRecord&gt; PresenceTitleRecords { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceTitleRecord&gt; PresenceTitleRecords" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord.PresenceTitleRecords" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresenceTitleRecords As IVectorView(Of SocialManagerPresenceTitleRecord)" />
+      <MemberSignature Language="F#" Value="member this.PresenceTitleRecords : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceTitleRecord&gt;" Usage="Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord.PresenceTitleRecords" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPresenceRecordPublicNonVirtuals.PresenceTitleRecords</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -74,7 +86,12 @@ Collection of presence title record objects returned by a request.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.UserPresenceState UserState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Presence.UserPresenceState UserState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord.UserState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserState As UserPresenceState" />
+      <MemberSignature Language="F#" Value="member this.UserState : Microsoft.Xbox.Services.Presence.UserPresenceState" Usage="Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord.UserState" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ISocialManagerPresenceRecordPublicNonVirtuals.UserState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

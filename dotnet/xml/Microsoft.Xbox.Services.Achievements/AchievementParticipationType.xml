@@ -1,7 +1,9 @@
-<Type Name="AchievementParticipationType" FullName="Microsoft.Xbox.Services.Achievements.AchievementParticipationType">
+﻿<Type Name="AchievementParticipationType" FullName="Microsoft.Xbox.Services.Achievements.AchievementParticipationType">
   <TypeSignature Language="C#" Value="public enum AchievementParticipationType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AchievementParticipationType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Achievements.AchievementParticipationType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AchievementParticipationType" />
+  <TypeSignature Language="F#" Value="type AchievementParticipationType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="Group" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementParticipationType Group = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementParticipationType.Group" />
+      <MemberSignature Language="VB.NET" Value="Group" />
+      <MemberSignature Language="F#" Value="Group = 2" Usage="Microsoft.Xbox.Services.Achievements.AchievementParticipationType.Group" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementParticipationType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An achievement that can be earned as a group participant.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="Individual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementParticipationType Individual = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementParticipationType.Individual" />
+      <MemberSignature Language="VB.NET" Value="Individual" />
+      <MemberSignature Language="F#" Value="Individual = 1" Usage="Microsoft.Xbox.Services.Achievements.AchievementParticipationType.Individual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementParticipationType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An achievement that can be earned as an individual participant.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementParticipationType Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementParticipationType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Achievements.AchievementParticipationType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementParticipationType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The participation type is unknown.</summary>
       </Docs>

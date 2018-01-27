@@ -1,7 +1,9 @@
-<Type Name="MatchmakingService" FullName="Microsoft.Xbox.Services.Matchmaking.MatchmakingService">
+﻿<Type Name="MatchmakingService" FullName="Microsoft.Xbox.Services.Matchmaking.MatchmakingService">
   <TypeSignature Language="C#" Value="public sealed class MatchmakingService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MatchmakingService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Matchmaking.MatchmakingService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MatchmakingService" />
+  <TypeSignature Language="F#" Value="type MatchmakingService = class&#xA;    interface __IMatchmakingServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a service for matchmaking.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse&gt; CreateMatchTicketAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference ticketSessionReference, string matchmakingServiceConfigurationId, string hopperName, Windows.Foundation.TimeSpan ticketTimeout, Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode preserveSession, string ticketAttributesJson);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse&gt; CreateMatchTicketAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference ticketSessionReference, [in]string matchmakingServiceConfigurationId, [in]string hopperName, [in]valuetype Windows.Foundation.TimeSpan ticketTimeout, [in]valuetype Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode preserveSession, [in]string ticketAttributesJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Matchmaking.MatchmakingService.CreateMatchTicketAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,System.String,Windows.Foundation.TimeSpan,Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateMatchTicketAsync (ticketSessionReference As MultiplayerSessionReference, matchmakingServiceConfigurationId As String, hopperName As String, ticketTimeout As TimeSpan, preserveSession As PreserveSessionMode, ticketAttributesJson As String) As IAsyncOperation(Of CreateMatchTicketResponse)" />
+      <MemberSignature Language="F#" Value="abstract member CreateMatchTicketAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * string * string * Windows.Foundation.TimeSpan * Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse&gt;&#xA;override this.CreateMatchTicketAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * string * string * Windows.Foundation.TimeSpan * Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.CreateMatchTicketResponse&gt;" Usage="matchmakingService.CreateMatchTicketAsync (ticketSessionReference, matchmakingServiceConfigurationId, hopperName, ticketTimeout, preserveSession, ticketAttributesJson)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Matchmaking.__IMatchmakingServicePublicNonVirtuals.CreateMatchTicketAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,System.String,Windows.Foundation.TimeSpan,Microsoft.Xbox.Services.Matchmaking.PreserveSessionMode,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -68,7 +75,12 @@ time, and also contains copies of the title specified data from the ticket data 
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction DeleteMatchTicketAsync (string serviceConfigurationId, string hopperName, string ticketId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction DeleteMatchTicketAsync([in]string serviceConfigurationId, [in]string hopperName, [in]string ticketId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Matchmaking.MatchmakingService.DeleteMatchTicketAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteMatchTicketAsync (serviceConfigurationId As String, hopperName As String, ticketId As String) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member DeleteMatchTicketAsync : string * string * string -&gt; Windows.Foundation.IAsyncAction&#xA;override this.DeleteMatchTicketAsync : string * string * string -&gt; Windows.Foundation.IAsyncAction" Usage="matchmakingService.DeleteMatchTicketAsync (serviceConfigurationId, hopperName, ticketId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Matchmaking.__IMatchmakingServicePublicNonVirtuals.DeleteMatchTicketAsync(System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -96,7 +108,12 @@ Deletes a the match ticket on the server.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse&gt; GetHopperStatisticsAsync (string serviceConfigurationId, string hopperName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse&gt; GetHopperStatisticsAsync([in]string serviceConfigurationId, [in]string hopperName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Matchmaking.MatchmakingService.GetHopperStatisticsAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHopperStatisticsAsync (serviceConfigurationId As String, hopperName As String) As IAsyncOperation(Of HopperStatisticsResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetHopperStatisticsAsync : string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse&gt;&#xA;override this.GetHopperStatisticsAsync : string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse&gt;" Usage="matchmakingService.GetHopperStatisticsAsync (serviceConfigurationId, hopperName)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Matchmaking.__IMatchmakingServicePublicNonVirtuals.GetHopperStatisticsAsync(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -123,7 +140,12 @@ containing statistics about the hopper is returned.</returns>
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse&gt; GetMatchTicketDetailsAsync (string serviceConfigurationId, string hopperName, string ticketId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse&gt; GetMatchTicketDetailsAsync([in]string serviceConfigurationId, [in]string hopperName, [in]string ticketId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Matchmaking.MatchmakingService.GetMatchTicketDetailsAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMatchTicketDetailsAsync (serviceConfigurationId As String, hopperName As String, ticketId As String) As IAsyncOperation(Of MatchTicketDetailsResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetMatchTicketDetailsAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse&gt;&#xA;override this.GetMatchTicketDetailsAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Matchmaking.MatchTicketDetailsResponse&gt;" Usage="matchmakingService.GetMatchTicketDetailsAsync (serviceConfigurationId, hopperName, ticketId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Matchmaking.__IMatchmakingServicePublicNonVirtuals.GetMatchTicketDetailsAsync(System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

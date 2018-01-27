@@ -1,7 +1,9 @@
-<Type Name="MultiplayerEventType" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType">
+﻿<Type Name="MultiplayerEventType" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType">
   <TypeSignature Language="C#" Value="public enum MultiplayerEventType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerEventType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MultiplayerEventType" />
+  <TypeSignature Language="F#" Value="type MultiplayerEventType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -16,7 +18,7 @@
   </Attributes>
   <Docs>
     <summary>
-Defines values used to indicate change types for a multiplayer game.
+Defines values used to indicate event types for a multiplayer lobby or game.
 </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -25,6 +27,8 @@ Defines values used to indicate change types for a multiplayer game.
       <MemberSignature Language="C#" Value="ArbitrationComplete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType ArbitrationComplete = int32(22)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.ArbitrationComplete" />
+      <MemberSignature Language="VB.NET" Value="ArbitrationComplete" />
+      <MemberSignature Language="F#" Value="ArbitrationComplete = 22" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.ArbitrationComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values used to indicate change types for a multiplayer game.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>
 Only applicable if you are using Xbox Live Tournaments.
@@ -44,6 +49,8 @@ Triggered when arbitration is complete and game results have been written to the
       <MemberSignature Language="C#" Value="ClientDisconnectedFromMultiplayerService" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType ClientDisconnectedFromMultiplayerService = int32(18)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.ClientDisconnectedFromMultiplayerService" />
+      <MemberSignature Language="VB.NET" Value="ClientDisconnectedFromMultiplayerService" />
+      <MemberSignature Language="F#" Value="ClientDisconnectedFromMultiplayerService = 18" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.ClientDisconnectedFromMultiplayerService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -52,9 +59,10 @@ Triggered when arbitration is complete and game results have been written to the
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>
-Fired when the title's connection to MPSD using the real-time activity service is lost. 
+Fired when the title's connection to MPSD using the real-time activity service is lost.
 When this event occurs, the title should shut down the multiplayer.
 </summary>
       </Docs>
@@ -63,6 +71,8 @@ When this event occurs, the title should shut down the multiplayer.
       <MemberSignature Language="C#" Value="FindMatchCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType FindMatchCompleted = int32(14)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.FindMatchCompleted" />
+      <MemberSignature Language="VB.NET" Value="FindMatchCompleted" />
+      <MemberSignature Language="F#" Value="FindMatchCompleted = 14" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.FindMatchCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -71,9 +81,11 @@ When this event occurs, the title should shut down the multiplayer.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>
-Indicates the find_match() operation has completed.
+Indicates the FindMatch() operation has completed. The EventArgs object should be cast
+to a FindMatchCompletedEventArgs object for more information.
 </summary>
       </Docs>
     </Member>
@@ -81,6 +93,8 @@ Indicates the find_match() operation has completed.
       <MemberSignature Language="C#" Value="HostChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType HostChanged = int32(10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.HostChanged" />
+      <MemberSignature Language="VB.NET" Value="HostChanged" />
+      <MemberSignature Language="F#" Value="HostChanged = 10" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.HostChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -89,9 +103,11 @@ Indicates the find_match() operation has completed.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>
-Indicates host has changed.
+Indicates host has changed. The EventArgs object should be cast
+to a HostChangedEventArgs object for more information.
 </summary>
       </Docs>
     </Member>
@@ -99,6 +115,8 @@ Indicates host has changed.
       <MemberSignature Language="C#" Value="InviteSent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType InviteSent = int32(19)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.InviteSent" />
+      <MemberSignature Language="VB.NET" Value="InviteSent" />
+      <MemberSignature Language="F#" Value="InviteSent = 19" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.InviteSent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -107,6 +125,7 @@ Indicates host has changed.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>
 Indicates that the invite API operation has been completed.
@@ -117,6 +136,8 @@ Indicates that the invite API operation has been completed.
       <MemberSignature Language="C#" Value="JoinabilityStateChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType JoinabilityStateChanged = int32(12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.JoinabilityStateChanged" />
+      <MemberSignature Language="VB.NET" Value="JoinabilityStateChanged" />
+      <MemberSignature Language="F#" Value="JoinabilityStateChanged = 12" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.JoinabilityStateChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -125,10 +146,11 @@ Indicates that the invite API operation has been completed.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>
 Indicates that the joinability value has changed.
-A game can be change the state by calling the set_joinability() operation.
+A game can change the state by calling the SetJoinability() operation.
 </summary>
       </Docs>
     </Member>
@@ -136,6 +158,8 @@ A game can be change the state by calling the set_joinability() operation.
       <MemberSignature Language="C#" Value="JoinGameCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType JoinGameCompleted = int32(15)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.JoinGameCompleted" />
+      <MemberSignature Language="VB.NET" Value="JoinGameCompleted" />
+      <MemberSignature Language="F#" Value="JoinGameCompleted = 15" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.JoinGameCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -144,11 +168,12 @@ A game can be change the state by calling the set_joinability() operation.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>
-Indicates that the join_game() operation has completed. Once the join succeeds, 
-the member is now part of the game session, and can use data in the session 
-A game can be joined by calling the join_game() operation.
+Indicates that the JoinGame() operation has completed. Once the join succeeds,
+the member is now part of the game session, and can use data in the session
+A game can be joined by calling the JoinGame() operation.
 </summary>
       </Docs>
     </Member>
@@ -156,6 +181,8 @@ A game can be joined by calling the join_game() operation.
       <MemberSignature Language="C#" Value="JoinLobbyCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType JoinLobbyCompleted = int32(17)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.JoinLobbyCompleted" />
+      <MemberSignature Language="VB.NET" Value="JoinLobbyCompleted" />
+      <MemberSignature Language="F#" Value="JoinLobbyCompleted = 17" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.JoinLobbyCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -164,10 +191,12 @@ A game can be joined by calling the join_game() operation.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>
-Indicates that the join_lobby() operation has completed. Once the join succeeds, 
-the member is now part of the lobby session, and can use data in the session 
+Indicates that the JoinLobby() operation has completed. Once the join succeeds,
+the member is now part of the lobby session, and can use data in the session
+The EventArgs object should be cast to a JoinLobbyCompletedEventArgs object for more information.
 </summary>
       </Docs>
     </Member>
@@ -175,6 +204,8 @@ the member is now part of the lobby session, and can use data in the session
       <MemberSignature Language="C#" Value="LeaveGameCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType LeaveGameCompleted = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.LeaveGameCompleted" />
+      <MemberSignature Language="VB.NET" Value="LeaveGameCompleted" />
+      <MemberSignature Language="F#" Value="LeaveGameCompleted = 16" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.LeaveGameCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -183,11 +214,12 @@ the member is now part of the lobby session, and can use data in the session
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>
-Indicates that the leave_game() operation has completed. After recieving this event,
-the game session object will be set to null. You can join another game by calling 
-join_game() or join_game_from_lobby().
+Indicates that the LeaveGame() operation has completed. After recieving this event,
+the game session object will be set to null. You can join another game by calling
+JoinGame() or JoinGameFromLobby().
 </summary>
       </Docs>
     </Member>
@@ -195,6 +227,8 @@ join_game() or join_game_from_lobby().
       <MemberSignature Language="C#" Value="LocalMemberConnectionAddressWriteCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType LocalMemberConnectionAddressWriteCompleted = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.LocalMemberConnectionAddressWriteCompleted" />
+      <MemberSignature Language="VB.NET" Value="LocalMemberConnectionAddressWriteCompleted" />
+      <MemberSignature Language="F#" Value="LocalMemberConnectionAddressWriteCompleted = 6" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.LocalMemberConnectionAddressWriteCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -203,11 +237,12 @@ join_game() or join_game_from_lobby().
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>
-Indicates that the set_local_member_connection_address() operation has completed.
+Indicates that the SetLocalMemberConnectionAddress() operation has completed.
 Upon completion, the game can view the err() to see if the write succeeded.
-A game can be write local member properties by calling the set_local_member_connection_address() operation.
+A game can write the local member connect address by calling the SetLocalMemberConnectionAddress() operation.
 </summary>
       </Docs>
     </Member>
@@ -215,6 +250,8 @@ A game can be write local member properties by calling the set_local_member_conn
       <MemberSignature Language="C#" Value="LocalMemberPropertyWriteCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType LocalMemberPropertyWriteCompleted = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.LocalMemberPropertyWriteCompleted" />
+      <MemberSignature Language="VB.NET" Value="LocalMemberPropertyWriteCompleted" />
+      <MemberSignature Language="F#" Value="LocalMemberPropertyWriteCompleted = 5" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.LocalMemberPropertyWriteCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -223,11 +260,12 @@ A game can be write local member properties by calling the set_local_member_conn
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>
-Indicates that the set_local_member_properties() or delete_local_member_properties() operation has completed.
+Indicates that the SetLocalMemberProperties() or DeleteLocalMemberProperties() operation has completed.
 Upon completion, the game can view the err() to see if the write succeeded.
-A game can be write local member properties by calling the set_local_member_properties() operation.
+A game can write local member properties by calling the SetLocalMemberProperties() operation.
 </summary>
       </Docs>
     </Member>
@@ -235,6 +273,8 @@ A game can be write local member properties by calling the set_local_member_prop
       <MemberSignature Language="C#" Value="MemberJoined" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType MemberJoined = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.MemberJoined" />
+      <MemberSignature Language="VB.NET" Value="MemberJoined" />
+      <MemberSignature Language="F#" Value="MemberJoined = 2" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.MemberJoined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -243,9 +283,11 @@ A game can be write local member properties by calling the set_local_member_prop
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
-Indicates a new member has joined.
+Indicates a new member has joined the session. The EventArgs object should be cast
+to a MemberJoinedEventArgs object for more information.
 </summary>
       </Docs>
     </Member>
@@ -253,6 +295,8 @@ Indicates a new member has joined.
       <MemberSignature Language="C#" Value="MemberLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType MemberLeft = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.MemberLeft" />
+      <MemberSignature Language="VB.NET" Value="MemberLeft" />
+      <MemberSignature Language="F#" Value="MemberLeft = 3" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.MemberLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -261,9 +305,11 @@ Indicates a new member has joined.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
-Indicates a member has left.
+Indicates a member has left the session. The EventArgs object should be cast
+to a MemberLeftEventArgs object for more information.
 </summary>
       </Docs>
     </Member>
@@ -271,6 +317,8 @@ Indicates a member has left.
       <MemberSignature Language="C#" Value="MemberPropertyChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType MemberPropertyChanged = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.MemberPropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="MemberPropertyChanged" />
+      <MemberSignature Language="F#" Value="MemberPropertyChanged = 4" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.MemberPropertyChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -279,9 +327,11 @@ Indicates a member has left.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
-Indicates a member property has changed.
+Indicates a member property has changed. The EventArgs object should be cast
+to a MemberPropertyChangedEventArgs object for more information.
 </summary>
       </Docs>
     </Member>
@@ -289,6 +339,8 @@ Indicates a member property has changed.
       <MemberSignature Language="C#" Value="PerformQosMeasurements" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType PerformQosMeasurements = int32(13)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.PerformQosMeasurements" />
+      <MemberSignature Language="VB.NET" Value="PerformQosMeasurements" />
+      <MemberSignature Language="F#" Value="PerformQosMeasurements = 13" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.PerformQosMeasurements" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -297,10 +349,12 @@ Indicates a member property has changed.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>
 Fired when a match has been found, and the client has joined the target game session.
-When this event occurs, title should provide qos measurement results between itself and a list of remote clients.
+When this event occurs, the title should provide qos measurement results (via SetQualityOfServiceMeasurements)
+between itself and a list of remote clients.
 Note: If your title does not require QoS (based on the session template), this event will not be triggered.
 </summary>
       </Docs>
@@ -309,6 +363,8 @@ Note: If your title does not require QoS (based on the session template), this e
       <MemberSignature Language="C#" Value="SessionPropertyChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType SessionPropertyChanged = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SessionPropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="SessionPropertyChanged" />
+      <MemberSignature Language="F#" Value="SessionPropertyChanged = 7" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SessionPropertyChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -317,9 +373,11 @@ Note: If your title does not require QoS (based on the session template), this e
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>
-Indicates a game property has changed.
+Indicates a session (lobby or game) property has changed. The EventArgs object should be cast
+to a SessionPropertyChangedEventArgs object for more information.
 </summary>
       </Docs>
     </Member>
@@ -327,6 +385,8 @@ Indicates a game property has changed.
       <MemberSignature Language="C#" Value="SessionPropertyWriteCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType SessionPropertyWriteCompleted = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SessionPropertyWriteCompleted" />
+      <MemberSignature Language="VB.NET" Value="SessionPropertyWriteCompleted" />
+      <MemberSignature Language="F#" Value="SessionPropertyWriteCompleted = 8" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SessionPropertyWriteCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -335,11 +395,12 @@ Indicates a game property has changed.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>
-Indicates that the set_synchronized_properties() operation has completed.
+Indicates that the SetProperties() operation has completed.
 Upon completion, the game can view the err() to see if the write succeeded.
-A game can be write synchronized properties by calling the set_properties() operation.
+A game can write session properties by calling the SetProperties() operation.
 </summary>
       </Docs>
     </Member>
@@ -347,6 +408,8 @@ A game can be write synchronized properties by calling the set_properties() oper
       <MemberSignature Language="C#" Value="SessionSynchronizedPropertyWriteCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType SessionSynchronizedPropertyWriteCompleted = int32(9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SessionSynchronizedPropertyWriteCompleted" />
+      <MemberSignature Language="VB.NET" Value="SessionSynchronizedPropertyWriteCompleted" />
+      <MemberSignature Language="F#" Value="SessionSynchronizedPropertyWriteCompleted = 9" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SessionSynchronizedPropertyWriteCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -355,11 +418,12 @@ A game can be write synchronized properties by calling the set_properties() oper
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>
-Indicates that the set_synchronized_properties() operation has completed.
+Indicates that the SetSynchronizedProperties() operation has completed.
 Upon completion, the game can view the err() to see if the write succeeded.
-A game can be write synchronized properties by calling the set_synchronized_properties() operation.
+A game can write synchronized session properties by calling the SetSynchronizedProperties() operation.
 </summary>
       </Docs>
     </Member>
@@ -367,6 +431,8 @@ A game can be write synchronized properties by calling the set_synchronized_prop
       <MemberSignature Language="C#" Value="SynchronizedHostWriteCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType SynchronizedHostWriteCompleted = int32(11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SynchronizedHostWriteCompleted" />
+      <MemberSignature Language="VB.NET" Value="SynchronizedHostWriteCompleted" />
+      <MemberSignature Language="F#" Value="SynchronizedHostWriteCompleted = 11" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.SynchronizedHostWriteCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -375,11 +441,12 @@ A game can be write synchronized properties by calling the set_synchronized_prop
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>
-Indicates that the set_synchronized_host() operation has completed.
+Indicates that the SetSynchronizedHost() operation has completed.
 Upon completion, the game can view the err() to see if the write succeeded.
-A game can be write synchronized host by calling the set_synchronized_host() operation.
+A game can set the synchronized host by calling the SetSynchronizedHost() operation.
 </summary>
       </Docs>
     </Member>
@@ -387,6 +454,8 @@ A game can be write synchronized host by calling the set_synchronized_host() ope
       <MemberSignature Language="C#" Value="TournamentGameSessionReady" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType TournamentGameSessionReady = int32(21)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.TournamentGameSessionReady" />
+      <MemberSignature Language="VB.NET" Value="TournamentGameSessionReady" />
+      <MemberSignature Language="F#" Value="TournamentGameSessionReady = 21" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.TournamentGameSessionReady" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -395,11 +464,12 @@ A game can be write synchronized host by calling the set_synchronized_host() ope
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>
 Only applicable if you are using Xbox Live Tournaments.
-Triggered when a new game has been scheduled. The event_args object 
-should be cast to a tournament_game_session_ready_event_args object for more information.
+Triggered when a new game has been scheduled. The EventArgs object
+should be cast to a TournamentGameSessionReadyEventArgs object for more information.
 </summary>
       </Docs>
     </Member>
@@ -407,6 +477,8 @@ should be cast to a tournament_game_session_ready_event_args object for more inf
       <MemberSignature Language="C#" Value="TournamentRegistrationStateChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType TournamentRegistrationStateChanged = int32(20)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.TournamentRegistrationStateChanged" />
+      <MemberSignature Language="VB.NET" Value="TournamentRegistrationStateChanged" />
+      <MemberSignature Language="F#" Value="TournamentRegistrationStateChanged = 20" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.TournamentRegistrationStateChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -415,11 +487,12 @@ should be cast to a tournament_game_session_ready_event_args object for more inf
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>
 Only applicable if you are using Xbox Live Tournaments.
-Triggered when the tournament's team registration state changes. The event_args object 
-should be cast to a tournament_registration_state_changed_event_args object for more information.
+Triggered when the tournament's team registration state changes. The EventArgs object
+should be cast to a TournamentRegistrationStateChangedEventArgs object for more information.
 </summary>
       </Docs>
     </Member>
@@ -427,6 +500,8 @@ should be cast to a tournament_registration_state_changed_event_args object for 
       <MemberSignature Language="C#" Value="UserAdded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType UserAdded = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.UserAdded" />
+      <MemberSignature Language="VB.NET" Value="UserAdded" />
+      <MemberSignature Language="F#" Value="UserAdded = 0" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.UserAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -435,6 +510,7 @@ should be cast to a tournament_registration_state_changed_event_args object for 
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Indicates the user was added.
@@ -445,6 +521,8 @@ Indicates the user was added.
       <MemberSignature Language="C#" Value="UserRemoved" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType UserRemoved = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.UserRemoved" />
+      <MemberSignature Language="VB.NET" Value="UserRemoved" />
+      <MemberSignature Language="F#" Value="UserRemoved = 1" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType.UserRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -453,6 +531,7 @@ Indicates the user was added.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Indicates the user was removed.

@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSessionCapabilities" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities">
+﻿<Type Name="MultiplayerSessionCapabilities" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionCapabilities" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionCapabilities extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerSessionCapabilities" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionCapabilities = class&#xA;    interface __IMultiplayerSessionCapabilitiesPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -47,6 +49,7 @@ this class:
       <MemberSignature Language="C#" Value="public MultiplayerSessionCapabilities ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -69,7 +72,12 @@ Creates a MultiplayerSessionCapabilities object.
       <MemberSignature Language="C#" Value="public bool Arbitration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Arbitration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Arbitration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Arbitration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Arbitration : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Arbitration" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.Arbitration</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -89,7 +97,12 @@ True if the session supports arbitration used for a tournament.
       <MemberSignature Language="C#" Value="public bool ConnectionRequiredForActiveMembers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ConnectionRequiredForActiveMembers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.ConnectionRequiredForActiveMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionRequiredForActiveMembers As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ConnectionRequiredForActiveMembers : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.ConnectionRequiredForActiveMembers" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.ConnectionRequiredForActiveMembers</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -110,7 +123,12 @@ If true, a connection is required for active members in the multiplayer session;
       <MemberSignature Language="C#" Value="public bool Connectivity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Connectivity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Connectivity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Connectivity As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Connectivity : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Connectivity" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.Connectivity</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -132,7 +150,12 @@ This value can't be set for large sessions.
       <MemberSignature Language="C#" Value="public bool Crossplay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Crossplay" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Crossplay" />
+      <MemberSignature Language="VB.NET" Value="Public Property Crossplay As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Crossplay : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Crossplay" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.Crossplay</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -153,7 +176,12 @@ True indicates that crossplay is supported.
       <MemberSignature Language="C#" Value="public bool Gameplay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Gameplay" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Gameplay" />
+      <MemberSignature Language="VB.NET" Value="Public Property Gameplay As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Gameplay : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Gameplay" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.Gameplay</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -175,7 +203,12 @@ If true, then the session is in gameplay mode.
       <MemberSignature Language="C#" Value="public bool HasOwners { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasOwners" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.HasOwners" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasOwners As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasOwners : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.HasOwners" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.HasOwners</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -195,7 +228,12 @@ True, if the session has owners. If you have user_authorization_style set, then 
       <MemberSignature Language="C#" Value="public bool Large { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Large" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Large" />
+      <MemberSignature Language="VB.NET" Value="Public Property Large As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Large : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Large" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.Large</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -216,7 +254,12 @@ If true, this session can host a large number of users.
       <MemberSignature Language="C#" Value="public bool Searchable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Searchable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Searchable" />
+      <MemberSignature Language="VB.NET" Value="Public Property Searchable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Searchable : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Searchable" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.Searchable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -236,7 +279,12 @@ True, if the session can be linked to a search handle for searching.
       <MemberSignature Language="C#" Value="public bool SuppressPresenceActivityCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SuppressPresenceActivityCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.SuppressPresenceActivityCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuppressPresenceActivityCheck As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SuppressPresenceActivityCheck : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.SuppressPresenceActivityCheck" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.SuppressPresenceActivityCheck</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -258,7 +306,12 @@ inactive status. Setting this flag to true disables this check so that members s
       <MemberSignature Language="C#" Value="public bool Team { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Team" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Team" />
+      <MemberSignature Language="VB.NET" Value="Public Property Team As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Team : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.Team" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.Team</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -278,7 +331,12 @@ True if the session supports team capability used for a tournament.
       <MemberSignature Language="C#" Value="public bool UserAuthorizationStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UserAuthorizationStyle" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.UserAuthorizationStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserAuthorizationStyle As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UserAuthorizationStyle : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities.UserAuthorizationStyle" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionCapabilitiesPublicNonVirtuals.UserAuthorizationStyle</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

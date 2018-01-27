@@ -1,7 +1,9 @@
-<Type Name="LeaderboardRow" FullName="Microsoft.Xbox.Services.Leaderboard.LeaderboardRow">
+﻿<Type Name="LeaderboardRow" FullName="Microsoft.Xbox.Services.Leaderboard.LeaderboardRow">
   <TypeSignature Language="C#" Value="public sealed class LeaderboardRow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LeaderboardRow extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardRow" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LeaderboardRow" />
+  <TypeSignature Language="F#" Value="type LeaderboardRow = class&#xA;    interface __ILeaderboardRowPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a row in a collection of leaderboard items.
       <MemberSignature Language="C#" Value="public string Gamertag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Gamertag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardRow.Gamertag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Gamertag As String" />
+      <MemberSignature Language="F#" Value="member this.Gamertag : string" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardRow.Gamertag" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardRowPublicNonVirtuals.Gamertag</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The Gamertag of the player.
       <MemberSignature Language="C#" Value="public double Percentile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Percentile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardRow.Percentile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Percentile As Double" />
+      <MemberSignature Language="F#" Value="member this.Percentile : double" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardRow.Percentile" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardRowPublicNonVirtuals.Percentile</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The percentile rank of the player.
       <MemberSignature Language="C#" Value="public uint Rank { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 Rank" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardRow.Rank" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rank As UInteger" />
+      <MemberSignature Language="F#" Value="member this.Rank : uint32" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardRow.Rank" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardRowPublicNonVirtuals.Rank</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ The rank of the player.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; Values" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardRow.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Values : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardRow.Values" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardRowPublicNonVirtuals.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ Values for each column in the leaderboard row for the player.
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardRow.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardRow.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardRowPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

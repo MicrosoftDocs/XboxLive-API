@@ -1,7 +1,9 @@
-<Type Name="PresenceFilter" FullName="Microsoft.Xbox.Services.Social.Manager.PresenceFilter">
+﻿<Type Name="PresenceFilter" FullName="Microsoft.Xbox.Services.Social.Manager.PresenceFilter">
   <TypeSignature Language="C#" Value="public enum PresenceFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceFilter extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.PresenceFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PresenceFilter" />
+  <TypeSignature Language="F#" Value="type PresenceFilter = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -26,6 +28,8 @@ Title will only show users associated with a particular title
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.PresenceFilter All = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 6" Usage="Microsoft.Xbox.Services.Social.Manager.PresenceFilter.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -34,6 +38,7 @@ Title will only show users associated with a particular title
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Everyone</summary>
       </Docs>
@@ -42,6 +47,8 @@ Title will only show users associated with a particular title
       <MemberSignature Language="C#" Value="AllOffline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.PresenceFilter AllOffline = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.AllOffline" />
+      <MemberSignature Language="VB.NET" Value="AllOffline" />
+      <MemberSignature Language="F#" Value="AllOffline = 4" Usage="Microsoft.Xbox.Services.Social.Manager.PresenceFilter.AllOffline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -50,6 +57,7 @@ Title will only show users associated with a particular title
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Everyone currently offline</summary>
       </Docs>
@@ -58,6 +66,8 @@ Title will only show users associated with a particular title
       <MemberSignature Language="C#" Value="AllOnline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.PresenceFilter AllOnline = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.AllOnline" />
+      <MemberSignature Language="VB.NET" Value="AllOnline" />
+      <MemberSignature Language="F#" Value="AllOnline = 3" Usage="Microsoft.Xbox.Services.Social.Manager.PresenceFilter.AllOnline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -66,6 +76,7 @@ Title will only show users associated with a particular title
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Everyone currently online</summary>
       </Docs>
@@ -74,6 +85,8 @@ Title will only show users associated with a particular title
       <MemberSignature Language="C#" Value="AllTitle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.PresenceFilter AllTitle = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.AllTitle" />
+      <MemberSignature Language="VB.NET" Value="AllTitle" />
+      <MemberSignature Language="F#" Value="AllTitle = 5" Usage="Microsoft.Xbox.Services.Social.Manager.PresenceFilter.AllTitle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -82,6 +95,7 @@ Title will only show users associated with a particular title
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Everyone who has played or is playing the title</summary>
       </Docs>
@@ -90,6 +104,8 @@ Title will only show users associated with a particular title
       <MemberSignature Language="C#" Value="TitleOffline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.PresenceFilter TitleOffline = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.TitleOffline" />
+      <MemberSignature Language="VB.NET" Value="TitleOffline" />
+      <MemberSignature Language="F#" Value="TitleOffline = 2" Usage="Microsoft.Xbox.Services.Social.Manager.PresenceFilter.TitleOffline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -98,6 +114,7 @@ Title will only show users associated with a particular title
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Has played this title and is offline</summary>
       </Docs>
@@ -106,6 +123,8 @@ Title will only show users associated with a particular title
       <MemberSignature Language="C#" Value="TitleOnline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.PresenceFilter TitleOnline = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.TitleOnline" />
+      <MemberSignature Language="VB.NET" Value="TitleOnline" />
+      <MemberSignature Language="F#" Value="TitleOnline = 1" Usage="Microsoft.Xbox.Services.Social.Manager.PresenceFilter.TitleOnline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -114,6 +133,7 @@ Title will only show users associated with a particular title
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Is currently playing current title and is online</summary>
       </Docs>
@@ -122,6 +142,8 @@ Title will only show users associated with a particular title
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.Manager.PresenceFilter Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.Manager.PresenceFilter.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Social.Manager.PresenceFilter.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -130,6 +152,7 @@ Title will only show users associated with a particular title
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.Manager.PresenceFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Unknown</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="JoinLobbyCompletedEventArgs" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.JoinLobbyCompletedEventArgs">
+﻿<Type Name="JoinLobbyCompletedEventArgs" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.JoinLobbyCompletedEventArgs">
   <TypeSignature Language="C#" Value="public sealed class JoinLobbyCompletedEventArgs : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JoinLobbyCompletedEventArgs extends System.Object implements class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.JoinLobbyCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JoinLobbyCompletedEventArgs&#xA;Implements MultiplayerEventArgs" />
+  <TypeSignature Language="F#" Value="type JoinLobbyCompletedEventArgs = class&#xA;    interface MultiplayerEventArgs&#xA;    interface __IJoinLobbyCompletedEventArgsPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -27,22 +29,30 @@
   </Attributes>
   <Docs>
     <summary>
-Notifies the title when the client joins a lobby. Once join succeeds, the member is now 
+Notifies the title when the client joins a lobby. Once join succeeds, the member becomes
 part of the lobby session, and can use data in the session to connect to other lobby members.
-To join a friend lobby, call join_lobby() operation using the handleId you back get from
-multiplayer_service::get_activities_for_social_group. If the user accepts an invite or joined a friends game via a shell UI, 
-the title will get a protocol activation. If the invited user is not added 
-via local_member_manager::add_local_user(), then join_lobby() will fail and provide the invited_xbox_user_id()
-that the invite was sent for as part of the join_lobby_completed_event_args()
 </summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+To join a friend's lobby, call the the JoinLobby(handleId) operation using the handleId you back get from
+MultiplayerService::GetActivitiesForSocialGroupAsync(). If the user accepts an invite or joined a friend's game via the shell,
+the title will get a protocol activated, in which case you should call JoinLobby(IProtocolActivatedEventArgs^).
+
+For scenarios where the local user has not been added, you can pass the local user object part of the join_lobby API.
+If the invited user is not added via MultiplayerLobbySession::AddLocalUser() or through JoinLobby(), then JoinLobby() will fail
+and provide the InvitedXboxUserId that the invite was sent for as part of the JoinLobbyCompletedEventArgs.
+</remarks>
   </Docs>
   <Members>
     <Member MemberName="InvitedXboxUserId">
       <MemberSignature Language="C#" Value="public string InvitedXboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InvitedXboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.JoinLobbyCompletedEventArgs.InvitedXboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InvitedXboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.InvitedXboxUserId : string" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.JoinLobbyCompletedEventArgs.InvitedXboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IJoinLobbyCompletedEventArgsPublicNonVirtuals.InvitedXboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +62,7 @@ that the invite was sent for as part of the join_lobby_completed_event_args()
       </ReturnValue>
       <Docs>
         <summary>
-Invited Xbox User ID of the member that.
+Invited Xbox User ID of the member that the invite was sent for.
 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

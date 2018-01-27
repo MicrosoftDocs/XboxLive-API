@@ -1,7 +1,9 @@
-<Type Name="TournamentOrderBy" FullName="Microsoft.Xbox.Services.Tournaments.TournamentOrderBy">
+﻿<Type Name="TournamentOrderBy" FullName="Microsoft.Xbox.Services.Tournaments.TournamentOrderBy">
   <TypeSignature Language="C#" Value="public enum TournamentOrderBy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentOrderBy extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TournamentOrderBy" />
+  <TypeSignature Language="F#" Value="type TournamentOrderBy = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="EndTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentOrderBy EndTime = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.EndTime" />
+      <MemberSignature Language="VB.NET" Value="EndTime" />
+      <MemberSignature Language="F#" Value="EndTime = 2" Usage="Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.EndTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentOrderBy</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 end_time is only set on completed tournaments so it is only valid to sort by end_time when 
@@ -42,6 +47,8 @@ the state query parameter is set to tournament_state::completed.
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentOrderBy None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -50,6 +57,7 @@ the state query parameter is set to tournament_state::completed.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentOrderBy</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 No order by provided.
@@ -60,6 +68,8 @@ No order by provided.
       <MemberSignature Language="C#" Value="StartTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentOrderBy StartTime = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.StartTime" />
+      <MemberSignature Language="VB.NET" Value="StartTime" />
+      <MemberSignature Language="F#" Value="StartTime = 1" Usage="Microsoft.Xbox.Services.Tournaments.TournamentOrderBy.StartTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -68,6 +78,7 @@ No order by provided.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentOrderBy</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 The only valid sort order for playing_start is tournament_sort_order::ascending. 

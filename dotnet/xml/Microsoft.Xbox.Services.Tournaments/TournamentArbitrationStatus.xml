@@ -1,7 +1,9 @@
-<Type Name="TournamentArbitrationStatus" FullName="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus">
+﻿<Type Name="TournamentArbitrationStatus" FullName="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus">
   <TypeSignature Language="C#" Value="public enum TournamentArbitrationStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentArbitrationStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TournamentArbitrationStatus" />
+  <TypeSignature Language="F#" Value="type TournamentArbitrationStatus = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Defines values used to indicate the state of a tournament game.
       <MemberSignature Language="C#" Value="Complete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus Complete = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Complete" />
+      <MemberSignature Language="VB.NET" Value="Complete" />
+      <MemberSignature Language="F#" Value="Complete = 2" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Complete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values used to indicate the state of a tournament game.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 The user has reported results and his role in the arbitration process is now done.
@@ -44,6 +49,8 @@ Occurs either after (arbitrationForfeitTime and no players have joined), (arbitr
       <MemberSignature Language="C#" Value="InComplete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus InComplete = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.InComplete" />
+      <MemberSignature Language="VB.NET" Value="InComplete" />
+      <MemberSignature Language="F#" Value="InComplete = 4" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.InComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -52,6 +59,7 @@ Occurs either after (arbitrationForfeitTime and no players have joined), (arbitr
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
 The user was not able to upload results before the arbitrationTimeout deadline.
@@ -62,6 +70,8 @@ The user was not able to upload results before the arbitrationTimeout deadline.
       <MemberSignature Language="C#" Value="InProgress" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus InProgress = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.InProgress" />
+      <MemberSignature Language="VB.NET" Value="InProgress" />
+      <MemberSignature Language="F#" Value="InProgress = 1" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.InProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -70,6 +80,7 @@ The user was not able to upload results before the arbitrationTimeout deadline.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Occurs after arbitrationStartTime and at least one user has gone active.
@@ -80,6 +91,8 @@ Occurs after arbitrationStartTime and at least one user has gone active.
       <MemberSignature Language="C#" Value="Joining" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus Joining = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Joining" />
+      <MemberSignature Language="VB.NET" Value="Joining" />
+      <MemberSignature Language="F#" Value="Joining = 5" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Joining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -88,6 +101,7 @@ Occurs after arbitrationStartTime and at least one user has gone active.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>
 The status is "joining" until both the TournamentArbitrationStatus is "InProgress" and the member is active.
@@ -98,6 +112,8 @@ The status is "joining" until both the TournamentArbitrationStatus is "InProgres
       <MemberSignature Language="C#" Value="Playing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus Playing = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Playing" />
+      <MemberSignature Language="VB.NET" Value="Playing" />
+      <MemberSignature Language="F#" Value="Playing = 3" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Playing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -106,6 +122,7 @@ The status is "joining" until both the TournamentArbitrationStatus is "InProgres
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 The user has gone active at least once and is now participating in the match.
@@ -116,6 +133,8 @@ The user has gone active at least once and is now participating in the match.
       <MemberSignature Language="C#" Value="Waiting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus Waiting = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Waiting" />
+      <MemberSignature Language="VB.NET" Value="Waiting" />
+      <MemberSignature Language="F#" Value="Waiting = 0" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus.Waiting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -124,6 +143,7 @@ The user has gone active at least once and is now participating in the match.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Occurs before arbitrationStartTime.

@@ -1,7 +1,9 @@
-<Type Name="XboxLiveWnsEventArgs" FullName="Microsoft.Xbox.Services.XboxLiveWnsEventArgs">
+﻿<Type Name="XboxLiveWnsEventArgs" FullName="Microsoft.Xbox.Services.XboxLiveWnsEventArgs">
   <TypeSignature Language="C#" Value="public sealed class XboxLiveWnsEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveWnsEventArgs extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveWnsEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxLiveWnsEventArgs" />
+  <TypeSignature Language="F#" Value="type XboxLiveWnsEventArgs = class&#xA;    interface __IXboxLiveWnsEventArgsPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public string NotificationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NotificationType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveWnsEventArgs.NotificationType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotificationType As String" />
+      <MemberSignature Language="F#" Value="member this.NotificationType : string" Usage="Microsoft.Xbox.Services.XboxLiveWnsEventArgs.NotificationType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveWnsEventArgsPublicNonVirtuals.NotificationType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -50,7 +57,12 @@ Returns the notification type
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveWnsEventArgs.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.XboxLiveWnsEventArgs.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveWnsEventArgsPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

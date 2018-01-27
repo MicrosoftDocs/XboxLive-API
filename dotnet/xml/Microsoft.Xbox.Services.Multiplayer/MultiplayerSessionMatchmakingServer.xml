@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSessionMatchmakingServer" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer">
+﻿<Type Name="MultiplayerSessionMatchmakingServer" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerSessionMatchmakingServer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionMatchmakingServer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerSessionMatchmakingServer" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionMatchmakingServer = class&#xA;    interface __IMultiplayerSessionMatchmakingServerPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents the server that allows multiplayer session discovery to collaborate i
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus Status { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus Status" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As MatchmakingStatus" />
+      <MemberSignature Language="F#" Value="member this.Status : Microsoft.Xbox.Services.Multiplayer.MatchmakingStatus" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer.Status" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionMatchmakingServerPublicNonVirtuals.Status</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The matchmaking status of the multiplayer session server.
       <MemberSignature Language="C#" Value="public string StatusDetails { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StatusDetails" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer.StatusDetails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusDetails As String" />
+      <MemberSignature Language="F#" Value="member this.StatusDetails : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer.StatusDetails" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionMatchmakingServerPublicNonVirtuals.StatusDetails</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The matchmaking status details of the multiplayer session server.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference TargetSessionRef { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference TargetSessionRef" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer.TargetSessionRef" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetSessionRef As MultiplayerSessionReference" />
+      <MemberSignature Language="F#" Value="member this.TargetSessionRef : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer.TargetSessionRef" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionMatchmakingServerPublicNonVirtuals.TargetSessionRef</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ The target session reference of the multiplayer session server.
       <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan TypicalWait { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan TypicalWait" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer.TypicalWait" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypicalWait As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.TypicalWait : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer.TypicalWait" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionMatchmakingServerPublicNonVirtuals.TypicalWait</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="MultiplayerQualityOfServiceMeasurements" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements">
+﻿<Type Name="MultiplayerQualityOfServiceMeasurements" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerQualityOfServiceMeasurements" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerQualityOfServiceMeasurements extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerQualityOfServiceMeasurements" />
+  <TypeSignature Language="F#" Value="type MultiplayerQualityOfServiceMeasurements = class&#xA;    interface __IMultiplayerQualityOfServiceMeasurementsPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -46,6 +48,8 @@ this class:
       <MemberSignature Language="C#" Value="public MultiplayerQualityOfServiceMeasurements (string memberDeviceToken, Windows.Foundation.TimeSpan latency, ulong bandwidthDownInKilobitsPerSecond, ulong bandwidthUpInKilobitsPerSecond, string customJson);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]string memberDeviceToken, [in]valuetype Windows.Foundation.TimeSpan latency, [in]unsigned int64 bandwidthDownInKilobitsPerSecond, [in]unsigned int64 bandwidthUpInKilobitsPerSecond, [in]string customJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.#ctor(System.String,Windows.Foundation.TimeSpan,System.UInt64,System.UInt64,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memberDeviceToken As String, latency As TimeSpan, bandwidthDownInKilobitsPerSecond As ULong, bandwidthUpInKilobitsPerSecond As ULong, customJson As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements : string * Windows.Foundation.TimeSpan * uint64 * uint64 * string -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements" Usage="new Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements (memberDeviceToken, latency, bandwidthDownInKilobitsPerSecond, bandwidthUpInKilobitsPerSecond, customJson)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -79,7 +83,12 @@ Creates a new MultiplayerQualityOfServiceMeasurements object for a session membe
       <MemberSignature Language="C#" Value="public ulong BandwidthDownInKilobitsPerSecond { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 BandwidthDownInKilobitsPerSecond" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.BandwidthDownInKilobitsPerSecond" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BandwidthDownInKilobitsPerSecond As ULong" />
+      <MemberSignature Language="F#" Value="member this.BandwidthDownInKilobitsPerSecond : uint64" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.BandwidthDownInKilobitsPerSecond" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQualityOfServiceMeasurementsPublicNonVirtuals.BandwidthDownInKilobitsPerSecond</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -99,7 +108,12 @@ The minimum bandwidth down, in kilobits per second, for downloading data from th
       <MemberSignature Language="C#" Value="public ulong BandwidthUpInKilobitsPerSecond { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 BandwidthUpInKilobitsPerSecond" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.BandwidthUpInKilobitsPerSecond" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BandwidthUpInKilobitsPerSecond As ULong" />
+      <MemberSignature Language="F#" Value="member this.BandwidthUpInKilobitsPerSecond : uint64" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.BandwidthUpInKilobitsPerSecond" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQualityOfServiceMeasurementsPublicNonVirtuals.BandwidthUpInKilobitsPerSecond</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -119,7 +133,12 @@ The minimum bandwidth up, in kilobits per second, for uploading data from the se
       <MemberSignature Language="C#" Value="public string CustomJson { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomJson" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.CustomJson" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomJson As String" />
+      <MemberSignature Language="F#" Value="member this.CustomJson : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.CustomJson" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQualityOfServiceMeasurementsPublicNonVirtuals.CustomJson</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -139,7 +158,12 @@ A JSON string that specifies the custom QoS properties.
       <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan Latency { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan Latency" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.Latency" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Latency As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Latency : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.Latency" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQualityOfServiceMeasurementsPublicNonVirtuals.Latency</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -159,7 +183,12 @@ The measured latency, in milliseconds, for the session member.
       <MemberSignature Language="C#" Value="public string MemberDeviceToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MemberDeviceToken" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.MemberDeviceToken" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberDeviceToken As String" />
+      <MemberSignature Language="F#" Value="member this.MemberDeviceToken : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements.MemberDeviceToken" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQualityOfServiceMeasurementsPublicNonVirtuals.MemberDeviceToken</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

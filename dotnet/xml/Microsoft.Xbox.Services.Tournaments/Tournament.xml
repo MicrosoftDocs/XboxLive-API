@@ -1,7 +1,9 @@
-<Type Name="Tournament" FullName="Microsoft.Xbox.Services.Tournaments.Tournament">
+﻿<Type Name="Tournament" FullName="Microsoft.Xbox.Services.Tournaments.Tournament">
   <TypeSignature Language="C#" Value="public sealed class Tournament" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Tournament extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.Tournament" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Tournament" />
+  <TypeSignature Language="F#" Value="type Tournament = class&#xA;    interface __ITournamentPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents tournament details.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime CheckinEndTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime CheckinEndTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.CheckinEndTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckinEndTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CheckinEndTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.CheckinEndTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.CheckinEndTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The end time of checkin. Must be before playingStart.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime CheckinStartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime CheckinStartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.CheckinStartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckinStartTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CheckinStartTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.CheckinStartTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.CheckinStartTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The start time of checkin. Must be before playingStart.
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.Description" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.Description</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ An additional, longer description of the tournament, intended for display.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime EndTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime EndTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.EndTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.EndTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.EndTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.EndTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -113,7 +135,12 @@ This is set automatically when a tournament is updated to be Canceled or Complet
       <MemberSignature Language="C#" Value="public string GameMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GameMode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.GameMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameMode As String" />
+      <MemberSignature Language="F#" Value="member this.GameMode : string" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.GameMode" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.GameMode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -133,7 +160,12 @@ A string representing the friendly name of the game mode
       <MemberSignature Language="C#" Value="public bool HasPrize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasPrize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.HasPrize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasPrize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasPrize : bool" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.HasPrize" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.HasPrize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -153,7 +185,12 @@ True if the tournament has a prize. False otherwise.
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.Id" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.Id</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -173,7 +210,12 @@ The ID of the tournament. It is an opaque string specified by the tournament org
       <MemberSignature Language="C#" Value="public bool IsCheckinOpen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCheckinOpen" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.IsCheckinOpen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCheckinOpen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCheckinOpen : bool" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.IsCheckinOpen" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.IsCheckinOpen</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -193,7 +235,12 @@ True when check-in is open.
       <MemberSignature Language="C#" Value="public bool IsPaused { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPaused" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.IsPaused" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPaused As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPaused : bool" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.IsPaused" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.IsPaused</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -213,7 +260,12 @@ A flag indicating whether the tournament is currently paused.
       <MemberSignature Language="C#" Value="public bool IsPlayingOpen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPlayingOpen" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.IsPlayingOpen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPlayingOpen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPlayingOpen : bool" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.IsPlayingOpen" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.IsPlayingOpen</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -233,7 +285,12 @@ True when play is open.
       <MemberSignature Language="C#" Value="public bool IsRegistrationOpen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRegistrationOpen" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.IsRegistrationOpen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRegistrationOpen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRegistrationOpen : bool" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.IsRegistrationOpen" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.IsRegistrationOpen</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -253,7 +310,12 @@ True when registration is open.
       <MemberSignature Language="C#" Value="public uint MaxTeamSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MaxTeamSize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.MaxTeamSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxTeamSize As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MaxTeamSize : uint32" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.MaxTeamSize" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.MaxTeamSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -273,7 +335,12 @@ The max number of players that can play on a team.
       <MemberSignature Language="C#" Value="public uint MaxTeamsRegistered { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MaxTeamsRegistered" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.MaxTeamsRegistered" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxTeamsRegistered As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MaxTeamsRegistered : uint32" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.MaxTeamsRegistered" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.MaxTeamsRegistered</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -293,7 +360,12 @@ This is the maximum number of registered teams. This does not include waitlisted
       <MemberSignature Language="C#" Value="public uint MinTeamSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MinTeamSize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.MinTeamSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinTeamSize As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MinTeamSize : uint32" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.MinTeamSize" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.MinTeamSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -313,7 +385,12 @@ The min number of players required in a team.
       <MemberSignature Language="C#" Value="public uint MinTeamsRegistered { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MinTeamsRegistered" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.MinTeamsRegistered" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinTeamsRegistered As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MinTeamsRegistered : uint32" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.MinTeamsRegistered" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.MinTeamsRegistered</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -333,7 +410,12 @@ This is the minimum number of registered teams. This does not include waitlisted
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.Name" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -353,7 +435,12 @@ A friendly name for the tournament, intended for display.
       <MemberSignature Language="C#" Value="public string OrganizerId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OrganizerId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.OrganizerId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrganizerId As String" />
+      <MemberSignature Language="F#" Value="member this.OrganizerId : string" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.OrganizerId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.OrganizerId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -373,7 +460,12 @@ The organizer of this tournament.
       <MemberSignature Language="C#" Value="public string OrganizerName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OrganizerName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.OrganizerName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrganizerName As String" />
+      <MemberSignature Language="F#" Value="member this.OrganizerName : string" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.OrganizerName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.OrganizerName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -393,7 +485,12 @@ A string representing the friendly name of the organizer
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime PlayingEndTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime PlayingEndTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.PlayingEndTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlayingEndTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.PlayingEndTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.PlayingEndTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.PlayingEndTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -413,7 +510,12 @@ The time the tournament ends.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime PlayingStartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime PlayingStartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.PlayingStartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlayingStartTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.PlayingStartTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.PlayingStartTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.PlayingStartTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -433,7 +535,12 @@ The time the tournament begins.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime RegistrationEndTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime RegistrationEndTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.RegistrationEndTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegistrationEndTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.RegistrationEndTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.RegistrationEndTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.RegistrationEndTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -453,7 +560,12 @@ The end time of registration. Must be before checkinStart.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime RegistrationStartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime RegistrationStartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.RegistrationStartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegistrationStartTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.RegistrationStartTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.RegistrationStartTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.RegistrationStartTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -473,7 +585,12 @@ The start time of registration. Must be before checkinStart.
       <MemberSignature Language="C#" Value="public uint TeamsRegisteredCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TeamsRegisteredCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.TeamsRegisteredCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TeamsRegisteredCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.TeamsRegisteredCount : uint32" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.TeamsRegisteredCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.TeamsRegisteredCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -493,7 +610,12 @@ The number of teams registered for the tournament, not including waitlisted team
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TeamSummary TeamSummary { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.TeamSummary TeamSummary" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.TeamSummary" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TeamSummary As TeamSummary" />
+      <MemberSignature Language="F#" Value="member this.TeamSummary : Microsoft.Xbox.Services.Tournaments.TeamSummary" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.TeamSummary" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.TeamSummary</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -514,7 +636,12 @@ Only applies for those tournaments where the user has already registered.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentState TournamentState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentState TournamentState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.TournamentState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TournamentState As TournamentState" />
+      <MemberSignature Language="F#" Value="member this.TournamentState : Microsoft.Xbox.Services.Tournaments.TournamentState" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.TournamentState" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.TournamentState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -535,7 +662,12 @@ Organizers can set the tournament to Canceled or Completed by explicitly updatin
       <MemberSignature Language="C#" Value="public string TournamentStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TournamentStyle" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.Tournament.TournamentStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TournamentStyle As String" />
+      <MemberSignature Language="F#" Value="member this.TournamentStyle : string" Usage="Microsoft.Xbox.Services.Tournaments.Tournament.TournamentStyle" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentPublicNonVirtuals.TournamentStyle</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

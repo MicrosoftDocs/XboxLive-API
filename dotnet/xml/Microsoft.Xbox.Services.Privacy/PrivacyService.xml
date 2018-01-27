@@ -1,7 +1,9 @@
-<Type Name="PrivacyService" FullName="Microsoft.Xbox.Services.Privacy.PrivacyService">
+﻿<Type Name="PrivacyService" FullName="Microsoft.Xbox.Services.Privacy.PrivacyService">
   <TypeSignature Language="C#" Value="public sealed class PrivacyService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PrivacyService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Privacy.PrivacyService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrivacyService" />
+  <TypeSignature Language="F#" Value="type PrivacyService = class&#xA;    interface __IPrivacyServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Provides an endpoint for managing privacy settings.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult&gt;&gt; CheckMultiplePermissionsWithMultipleTargetUsersAsync (Windows.Foundation.Collections.IVectorView&lt;string&gt; permissionIds, Windows.Foundation.Collections.IVectorView&lt;string&gt; targetXboxUserIds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult&gt;&gt; CheckMultiplePermissionsWithMultipleTargetUsersAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; permissionIds, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; targetXboxUserIds) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Privacy.PrivacyService.CheckMultiplePermissionsWithMultipleTargetUsersAsync(Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckMultiplePermissionsWithMultipleTargetUsersAsync (permissionIds As IVectorView(Of String), targetXboxUserIds As IVectorView(Of String)) As IAsyncOperation(Of IVectorView(Of MultiplePermissionsCheckResult))" />
+      <MemberSignature Language="F#" Value="abstract member CheckMultiplePermissionsWithMultipleTargetUsersAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult&gt;&gt;&#xA;override this.CheckMultiplePermissionsWithMultipleTargetUsersAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Privacy.MultiplePermissionsCheckResult&gt;&gt;" Usage="privacyService.CheckMultiplePermissionsWithMultipleTargetUsersAsync (permissionIds, targetXboxUserIds)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Privacy.__IPrivacyServicePublicNonVirtuals.CheckMultiplePermissionsWithMultipleTargetUsersAsync(Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -56,7 +63,12 @@ Provides an endpoint for managing privacy settings.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Privacy.PermissionCheckResult&gt; CheckPermissionWithTargetUserAsync (string permissionId, string targetXboxUserId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Privacy.PermissionCheckResult&gt; CheckPermissionWithTargetUserAsync([in]string permissionId, [in]string targetXboxUserId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Privacy.PrivacyService.CheckPermissionWithTargetUserAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckPermissionWithTargetUserAsync (permissionId As String, targetXboxUserId As String) As IAsyncOperation(Of PermissionCheckResult)" />
+      <MemberSignature Language="F#" Value="abstract member CheckPermissionWithTargetUserAsync : string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Privacy.PermissionCheckResult&gt;&#xA;override this.CheckPermissionWithTargetUserAsync : string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Privacy.PermissionCheckResult&gt;" Usage="privacyService.CheckPermissionWithTargetUserAsync (permissionId, targetXboxUserId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Privacy.__IPrivacyServicePublicNonVirtuals.CheckPermissionWithTargetUserAsync(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -87,7 +99,12 @@ Calls V1 GET /users/{requestorId}/permission/validate
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt; GetAvoidListAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;string&gt;&gt; GetAvoidListAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Privacy.PrivacyService.GetAvoidListAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAvoidListAsync () As IAsyncOperation(Of IVectorView(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member GetAvoidListAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt;&#xA;override this.GetAvoidListAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt;" Usage="privacyService.GetAvoidListAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Privacy.__IPrivacyServicePublicNonVirtuals.GetAvoidListAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -111,7 +128,12 @@ Calls V1 GET /users/xuid({xuid})/people/avoid</remarks>
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt; GetMuteListAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;string&gt;&gt; GetMuteListAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Privacy.PrivacyService.GetMuteListAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMuteListAsync () As IAsyncOperation(Of IVectorView(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member GetMuteListAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt;&#xA;override this.GetMuteListAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt;" Usage="privacyService.GetMuteListAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Privacy.__IPrivacyServicePublicNonVirtuals.GetMuteListAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

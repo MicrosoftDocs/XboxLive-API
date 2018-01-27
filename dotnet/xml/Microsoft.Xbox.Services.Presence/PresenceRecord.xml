@@ -1,7 +1,9 @@
-<Type Name="PresenceRecord" FullName="Microsoft.Xbox.Services.Presence.PresenceRecord">
+﻿<Type Name="PresenceRecord" FullName="Microsoft.Xbox.Services.Presence.PresenceRecord">
   <TypeSignature Language="C#" Value="public sealed class PresenceRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceRecord extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.PresenceRecord" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PresenceRecord" />
+  <TypeSignature Language="F#" Value="type PresenceRecord = class&#xA;    interface __IPresenceRecordPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a record for Rich Presence.
       <MemberSignature Language="C#" Value="public bool IsUserPlayingTitle (uint titleId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUserPlayingTitle([in]unsigned int32 titleId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Presence.PresenceRecord.IsUserPlayingTitle(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUserPlayingTitle (titleId As UInteger) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsUserPlayingTitle : uint32 -&gt; bool&#xA;override this.IsUserPlayingTitle : uint32 -&gt; bool" Usage="presenceRecord.IsUserPlayingTitle titleId" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Presence.__IPresenceRecordPublicNonVirtuals.IsUserPlayingTitle(System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -56,7 +63,12 @@ Returns whether the user is playing this title id
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceDeviceRecord&gt; PresenceDeviceRecords { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Presence.PresenceDeviceRecord&gt; PresenceDeviceRecords" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceRecord.PresenceDeviceRecords" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresenceDeviceRecords As IVectorView(Of PresenceDeviceRecord)" />
+      <MemberSignature Language="F#" Value="member this.PresenceDeviceRecords : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceDeviceRecord&gt;" Usage="Microsoft.Xbox.Services.Presence.PresenceRecord.PresenceDeviceRecords" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceRecordPublicNonVirtuals.PresenceDeviceRecords</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -76,7 +88,12 @@ Collection of PresenceTitleRecord objects returned by a request.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.UserPresenceState UserState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Presence.UserPresenceState UserState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceRecord.UserState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserState As UserPresenceState" />
+      <MemberSignature Language="F#" Value="member this.UserState : Microsoft.Xbox.Services.Presence.UserPresenceState" Usage="Microsoft.Xbox.Services.Presence.PresenceRecord.UserState" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceRecordPublicNonVirtuals.UserState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -96,7 +113,12 @@ The user's presence state.
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceRecord.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Presence.PresenceRecord.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceRecordPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

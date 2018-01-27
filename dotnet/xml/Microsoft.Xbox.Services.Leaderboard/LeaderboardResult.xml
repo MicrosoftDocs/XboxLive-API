@@ -1,7 +1,9 @@
-<Type Name="LeaderboardResult" FullName="Microsoft.Xbox.Services.Leaderboard.LeaderboardResult">
+﻿<Type Name="LeaderboardResult" FullName="Microsoft.Xbox.Services.Leaderboard.LeaderboardResult">
   <TypeSignature Language="C#" Value="public sealed class LeaderboardResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LeaderboardResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LeaderboardResult" />
+  <TypeSignature Language="F#" Value="type LeaderboardResult = class&#xA;    interface __ILeaderboardResultPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents the results of a leaderboard request.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn&gt; Columns { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn&gt; Columns" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Columns As IVectorView(Of LeaderboardColumn)" />
+      <MemberSignature Language="F#" Value="member this.Columns : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardColumn&gt;" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.Columns" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardResultPublicNonVirtuals.Columns</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The collection of columns in the leaderboard results.
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.DisplayName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardResultPublicNonVirtuals.DisplayName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -73,7 +85,12 @@ The display name of the leaderboard results.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetNextAsync (uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt; GetNextAsync([in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.GetNextAsync(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextAsync (maxItems As UInteger) As IAsyncOperation(Of LeaderboardResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetNextAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;&#xA;override this.GetNextAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardResult&gt;" Usage="leaderboardResult.GetNextAsync maxItems" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardResultPublicNonVirtuals.GetNextAsync(System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -107,7 +124,12 @@ Calls V1 GET
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery GetNextQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery GetNextQuery() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.GetNextQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextQuery () As LeaderboardQuery" />
+      <MemberSignature Language="F#" Value="abstract member GetNextQuery : unit -&gt; Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery&#xA;override this.GetNextQuery : unit -&gt; Microsoft.Xbox.Services.Leaderboard.LeaderboardQuery" Usage="leaderboardResult.GetNextQuery " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardResultPublicNonVirtuals.GetNextQuery</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -129,7 +151,12 @@ This query is only to be used to retrieve a leaderboard with stats 2017.
       <MemberSignature Language="C#" Value="public bool HasNext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasNext" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.HasNext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasNext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasNext : bool" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.HasNext" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardResultPublicNonVirtuals.HasNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -149,7 +176,12 @@ Indicates whether there is a next page of results.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardRow&gt; Rows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Leaderboard.LeaderboardRow&gt; Rows" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.Rows" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rows As IVectorView(Of LeaderboardRow)" />
+      <MemberSignature Language="F#" Value="member this.Rows : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Leaderboard.LeaderboardRow&gt;" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.Rows" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardResultPublicNonVirtuals.Rows</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -169,7 +201,12 @@ The collection of rows in the leaderboard results.
       <MemberSignature Language="C#" Value="public uint TotalRowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TotalRowCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.TotalRowCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalRowCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.TotalRowCount : uint32" Usage="Microsoft.Xbox.Services.Leaderboard.LeaderboardResult.TotalRowCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Leaderboard.__ILeaderboardResultPublicNonVirtuals.TotalRowCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

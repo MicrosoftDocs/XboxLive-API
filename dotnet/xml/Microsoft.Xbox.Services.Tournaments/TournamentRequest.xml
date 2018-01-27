@@ -1,7 +1,9 @@
-<Type Name="TournamentRequest" FullName="Microsoft.Xbox.Services.Tournaments.TournamentRequest">
+﻿<Type Name="TournamentRequest" FullName="Microsoft.Xbox.Services.Tournaments.TournamentRequest">
   <TypeSignature Language="C#" Value="public sealed class TournamentRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentRequest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TournamentRequest" />
+  <TypeSignature Language="F#" Value="type TournamentRequest = class&#xA;    interface __ITournamentRequestPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -35,6 +37,8 @@ Gets tournaments based on the configuration of this request.
       <MemberSignature Language="C#" Value="public TournamentRequest (bool filterResultsForUser);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]bool filterResultsForUser) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentRequest.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filterResultsForUser As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.Tournaments.TournamentRequest : bool -&gt; Microsoft.Xbox.Services.Tournaments.TournamentRequest" Usage="new Microsoft.Xbox.Services.Tournaments.TournamentRequest filterResultsForUser" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -58,7 +62,12 @@ Gets tournaments based on the configuration of this request.
       <MemberSignature Language="C#" Value="public uint MaxItems { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MaxItems" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentRequest.MaxItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxItems As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MaxItems : uint32 with get, set" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRequest.MaxItems" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentRequestPublicNonVirtuals.MaxItems</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -78,7 +87,12 @@ The maximum number of items to return.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentOrderBy OrderBy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentOrderBy OrderBy" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentRequest.OrderBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrderBy As TournamentOrderBy" />
+      <MemberSignature Language="F#" Value="member this.OrderBy : Microsoft.Xbox.Services.Tournaments.TournamentOrderBy with get, set" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRequest.OrderBy" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentRequestPublicNonVirtuals.OrderBy</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -98,7 +112,12 @@ The property used to order results.
       <MemberSignature Language="C#" Value="public string OrganizerId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OrganizerId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentRequest.OrganizerId" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrganizerId As String" />
+      <MemberSignature Language="F#" Value="member this.OrganizerId : string with get, set" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRequest.OrganizerId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentRequestPublicNonVirtuals.OrganizerId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -118,7 +137,12 @@ The organizer of the tournament.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentSortOrder SortOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentSortOrder SortOrder" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentRequest.SortOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property SortOrder As TournamentSortOrder" />
+      <MemberSignature Language="F#" Value="member this.SortOrder : Microsoft.Xbox.Services.Tournaments.TournamentSortOrder with get, set" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRequest.SortOrder" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentRequestPublicNonVirtuals.SortOrder</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -138,7 +162,12 @@ The order in which to sort the results.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Tournaments.TournamentState&gt; StateFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Tournaments.TournamentState&gt; StateFilter" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Tournaments.TournamentRequest.StateFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property StateFilter As IVectorView(Of TournamentState)" />
+      <MemberSignature Language="F#" Value="member this.StateFilter : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Tournaments.TournamentState&gt; with get, set" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRequest.StateFilter" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Tournaments.__ITournamentRequestPublicNonVirtuals.StateFilter</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

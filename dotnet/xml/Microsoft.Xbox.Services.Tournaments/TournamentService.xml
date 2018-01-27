@@ -1,7 +1,9 @@
-<Type Name="TournamentService" FullName="Microsoft.Xbox.Services.Tournaments.TournamentService">
+﻿<Type Name="TournamentService" FullName="Microsoft.Xbox.Services.Tournaments.TournamentService">
   <TypeSignature Language="C#" Value="public sealed class TournamentService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TournamentService" />
+  <TypeSignature Language="F#" Value="type TournamentService = class&#xA;    interface __ITournamentServicePublicNonVirtuals&#xA;    interface __ITournamentServiceProtectedNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents an endpoint that you can use to access the Tournament service.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TeamInfo&gt; GetTeamDetailsAsync (string organizerId, string tournamentId, string teamId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Tournaments.TeamInfo&gt; GetTeamDetailsAsync([in]string organizerId, [in]string tournamentId, [in]string teamId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.GetTeamDetailsAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTeamDetailsAsync (organizerId As String, tournamentId As String, teamId As String) As IAsyncOperation(Of TeamInfo)" />
+      <MemberSignature Language="F#" Value="abstract member GetTeamDetailsAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TeamInfo&gt;&#xA;override this.GetTeamDetailsAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TeamInfo&gt;" Usage="tournamentService.GetTeamDetailsAsync (organizerId, tournamentId, teamId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Tournaments.__ITournamentServicePublicNonVirtuals.GetTeamDetailsAsync(System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -64,7 +71,12 @@ This method calls GET /tournaments/{organizer}/{id}/teams/{teamId}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TeamRequestResult&gt; GetTeamsAsync (Microsoft.Xbox.Services.Tournaments.TeamRequest request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Tournaments.TeamRequestResult&gt; GetTeamsAsync([in]class Microsoft.Xbox.Services.Tournaments.TeamRequest request) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.GetTeamsAsync(Microsoft.Xbox.Services.Tournaments.TeamRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTeamsAsync (request As TeamRequest) As IAsyncOperation(Of TeamRequestResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetTeamsAsync : Microsoft.Xbox.Services.Tournaments.TeamRequest -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TeamRequestResult&gt;&#xA;override this.GetTeamsAsync : Microsoft.Xbox.Services.Tournaments.TeamRequest -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TeamRequestResult&gt;" Usage="tournamentService.GetTeamsAsync request" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Tournaments.__ITournamentServicePublicNonVirtuals.GetTeamsAsync(Microsoft.Xbox.Services.Tournaments.TeamRequest)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -91,7 +103,12 @@ This method calls GET /tournaments/{organizer}/{id}/teams
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.Tournament&gt; GetTournamentDetailsAsync (string organizerId, string tournamentId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Tournaments.Tournament&gt; GetTournamentDetailsAsync([in]string organizerId, [in]string tournamentId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.GetTournamentDetailsAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTournamentDetailsAsync (organizerId As String, tournamentId As String) As IAsyncOperation(Of Tournament)" />
+      <MemberSignature Language="F#" Value="abstract member GetTournamentDetailsAsync : string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.Tournament&gt;&#xA;override this.GetTournamentDetailsAsync : string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.Tournament&gt;" Usage="tournamentService.GetTournamentDetailsAsync (organizerId, tournamentId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Tournaments.__ITournamentServicePublicNonVirtuals.GetTournamentDetailsAsync(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -121,7 +138,12 @@ This method calls GET /tournaments/{organizer}/{id}.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt; GetTournamentsAsync (Microsoft.Xbox.Services.Tournaments.TournamentRequest request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt; GetTournamentsAsync([in]class Microsoft.Xbox.Services.Tournaments.TournamentRequest request) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.GetTournamentsAsync(Microsoft.Xbox.Services.Tournaments.TournamentRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTournamentsAsync (request As TournamentRequest) As IAsyncOperation(Of TournamentRequestResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetTournamentsAsync : Microsoft.Xbox.Services.Tournaments.TournamentRequest -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt;&#xA;override this.GetTournamentsAsync : Microsoft.Xbox.Services.Tournaments.TournamentRequest -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Tournaments.TournamentRequestResult&gt;" Usage="tournamentService.GetTournamentsAsync request" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Tournaments.__ITournamentServicePublicNonVirtuals.GetTournamentsAsync(Microsoft.Xbox.Services.Tournaments.TournamentRequest)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -148,7 +170,12 @@ This method calls GET /tournaments
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription SubscribeToTeamChange (string organizerId, string tournamentId, string teamId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription SubscribeToTeamChange([in]string organizerId, [in]string tournamentId, [in]string teamId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.SubscribeToTeamChange(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SubscribeToTeamChange (organizerId As String, tournamentId As String, teamId As String) As TeamChangeSubscription" />
+      <MemberSignature Language="F#" Value="abstract member SubscribeToTeamChange : string * string * string -&gt; Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription&#xA;override this.SubscribeToTeamChange : string * string * string -&gt; Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription" Usage="tournamentService.SubscribeToTeamChange (organizerId, tournamentId, teamId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Tournaments.__ITournamentServicePublicNonVirtuals.SubscribeToTeamChange(System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -177,7 +204,12 @@ You can register an event handler for team changes by using the TeamChanged even
       <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Tournaments.TeamChangeEventArgs&gt; TeamChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Tournaments.TeamChangeEventArgs&gt; TeamChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.Tournaments.TournamentService.TeamChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TeamChanged As EventHandler(Of TeamChangeEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.TeamChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Tournaments.TeamChangeEventArgs&gt; " Usage="member this.TeamChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Tournaments.TeamChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Xbox.Services.Tournaments.__ITournamentServicePublicNonVirtuals.TeamChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -196,7 +228,12 @@ Registers for team change notifications.  Event handlers receive a TeamChangeEve
       <MemberSignature Language="C#" Value="public void UnsubscribeFromTeamChange (Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription subscription);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnsubscribeFromTeamChange([in]class Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription subscription) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Tournaments.TournamentService.UnsubscribeFromTeamChange(Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnsubscribeFromTeamChange (subscription As TeamChangeSubscription)" />
+      <MemberSignature Language="F#" Value="abstract member UnsubscribeFromTeamChange : Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription -&gt; unit&#xA;override this.UnsubscribeFromTeamChange : Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription -&gt; unit" Usage="tournamentService.UnsubscribeFromTeamChange subscription" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Tournaments.__ITournamentServicePublicNonVirtuals.UnsubscribeFromTeamChange(Microsoft.Xbox.Services.Tournaments.TeamChangeSubscription)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

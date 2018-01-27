@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSessionType" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType">
+﻿<Type Name="MultiplayerSessionType" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType">
   <TypeSignature Language="C#" Value="public enum MultiplayerSessionType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MultiplayerSessionType" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -16,7 +18,7 @@
   </Attributes>
   <Docs>
     <summary>
-Defines values used to indicate change types for a multiplayer game.
+Defines values used to indicate types for multiplayer sessions.
 </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -25,6 +27,8 @@ Defines values used to indicate change types for a multiplayer game.
       <MemberSignature Language="C#" Value="GameSession" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType GameSession = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType.GameSession" />
+      <MemberSignature Language="VB.NET" Value="GameSession" />
+      <MemberSignature Language="F#" Value="GameSession = 2" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType.GameSession" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values used to indicate change types for a multiplayer game.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 Indicates multiplayer game session.
@@ -43,6 +48,8 @@ Indicates multiplayer game session.
       <MemberSignature Language="C#" Value="LobbySession" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType LobbySession = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType.LobbySession" />
+      <MemberSignature Language="VB.NET" Value="LobbySession" />
+      <MemberSignature Language="F#" Value="LobbySession = 1" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType.LobbySession" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -51,6 +58,7 @@ Indicates multiplayer game session.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Indicates multiplayer lobby session.
@@ -61,6 +69,8 @@ Indicates multiplayer lobby session.
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -69,6 +79,7 @@ Indicates multiplayer lobby session.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 The session type is unknown.

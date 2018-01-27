@@ -1,7 +1,9 @@
-<Type Name="TicketStatus" FullName="Microsoft.Xbox.Services.Matchmaking.TicketStatus">
+﻿<Type Name="TicketStatus" FullName="Microsoft.Xbox.Services.Matchmaking.TicketStatus">
   <TypeSignature Language="C#" Value="public enum TicketStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TicketStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Matchmaking.TicketStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TicketStatus" />
+  <TypeSignature Language="F#" Value="type TicketStatus = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -26,6 +28,8 @@ request.
       <MemberSignature Language="C#" Value="Canceled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Matchmaking.TicketStatus Canceled = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Matchmaking.TicketStatus.Canceled" />
+      <MemberSignature Language="VB.NET" Value="Canceled" />
+      <MemberSignature Language="F#" Value="Canceled = 4" Usage="Microsoft.Xbox.Services.Matchmaking.TicketStatus.Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -34,6 +38,7 @@ request.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
 Matchmaking has been canceled for this ticket.
@@ -44,6 +49,8 @@ Matchmaking has been canceled for this ticket.
       <MemberSignature Language="C#" Value="Expired" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Matchmaking.TicketStatus Expired = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Matchmaking.TicketStatus.Expired" />
+      <MemberSignature Language="VB.NET" Value="Expired" />
+      <MemberSignature Language="F#" Value="Expired = 1" Usage="Microsoft.Xbox.Services.Matchmaking.TicketStatus.Expired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -52,6 +59,7 @@ Matchmaking has been canceled for this ticket.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Matchmaking has not found a match and the search
@@ -63,6 +71,8 @@ request has expired according to its give up duration.
       <MemberSignature Language="C#" Value="Found" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Matchmaking.TicketStatus Found = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Matchmaking.TicketStatus.Found" />
+      <MemberSignature Language="VB.NET" Value="Found" />
+      <MemberSignature Language="F#" Value="Found = 3" Usage="Microsoft.Xbox.Services.Matchmaking.TicketStatus.Found" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -71,6 +81,7 @@ request has expired according to its give up duration.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 Matchmaking has found a match and the ticket contains a
@@ -82,6 +93,8 @@ reference to the session that is to be created.
       <MemberSignature Language="C#" Value="Searching" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Matchmaking.TicketStatus Searching = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Matchmaking.TicketStatus.Searching" />
+      <MemberSignature Language="VB.NET" Value="Searching" />
+      <MemberSignature Language="F#" Value="Searching = 2" Usage="Microsoft.Xbox.Services.Matchmaking.TicketStatus.Searching" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -90,6 +103,7 @@ reference to the session that is to be created.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 Matchmaking has not found a match yet and it is
@@ -101,6 +115,8 @@ still searching.
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Matchmaking.TicketStatus Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Matchmaking.TicketStatus.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Matchmaking.TicketStatus.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -109,6 +125,7 @@ still searching.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Matchmaking.TicketStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 The status of the match request has not been returned by the server yet

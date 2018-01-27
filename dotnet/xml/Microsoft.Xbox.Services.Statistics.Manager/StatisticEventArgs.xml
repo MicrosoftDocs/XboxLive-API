@@ -1,7 +1,9 @@
-<Type Name="StatisticEventArgs" FullName="Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs">
+﻿<Type Name="StatisticEventArgs" FullName="Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs">
   <TypeSignature Language="C#" Value="public interface StatisticEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StatisticEventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Interface StatisticEventArgs" />
+  <TypeSignature Language="F#" Value="type StatisticEventArgs = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>

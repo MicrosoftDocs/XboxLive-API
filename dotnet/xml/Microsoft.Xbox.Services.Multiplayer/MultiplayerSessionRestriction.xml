@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSessionRestriction" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction">
+﻿<Type Name="MultiplayerSessionRestriction" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction">
   <TypeSignature Language="C#" Value="public enum MultiplayerSessionRestriction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionRestriction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MultiplayerSessionRestriction" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionRestriction = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Defines values used to indicate restrictions on the users who can join a session
       <MemberSignature Language="C#" Value="Followed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction Followed = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.Followed" />
+      <MemberSignature Language="VB.NET" Value="Followed" />
+      <MemberSignature Language="F#" Value="Followed = 3" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.Followed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values used to indicate restrictions on the users who can join a session
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 If "followed", only local users (as defined above) and users who are followed by an existing (not reserved) member of the session can join without a reservation.
@@ -43,6 +48,8 @@ If "followed", only local users (as defined above) and users who are followed by
       <MemberSignature Language="C#" Value="Local" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction Local = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.Local" />
+      <MemberSignature Language="VB.NET" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 2" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -51,6 +58,7 @@ If "followed", only local users (as defined above) and users who are followed by
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 Only the following users can read/join the session: 
@@ -67,6 +75,8 @@ can access the session.
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -75,6 +85,7 @@ can access the session.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Default value, no restriction.
@@ -85,6 +96,8 @@ Default value, no restriction.
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -93,6 +106,7 @@ Default value, no restriction.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRestriction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 The unrecognized restriction type. This value should never be used because it causes an exception to be thrown.

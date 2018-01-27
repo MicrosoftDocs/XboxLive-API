@@ -1,7 +1,9 @@
-<Type Name="GameServerPlatformService" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService">
+﻿<Type Name="GameServerPlatformService" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService">
   <TypeSignature Language="C#" Value="public sealed class GameServerPlatformService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GameServerPlatformService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GameServerPlatformService" />
+  <TypeSignature Language="F#" Value="type GameServerPlatformService = class&#xA;    interface __IGameServerPlatformServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents the game server platform service for allocating game server clusters 
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.ClusterResult&gt; AllocateClusterAsync (uint gameServerTitleId, string serviceConfigurationId, string sessionTemplateName, string sessionName, bool abortIfQueued);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.ClusterResult&gt; AllocateClusterAsync([in]unsigned int32 gameServerTitleId, [in]string serviceConfigurationId, [in]string sessionTemplateName, [in]string sessionName, [in]bool abortIfQueued) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService.AllocateClusterAsync(System.UInt32,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AllocateClusterAsync (gameServerTitleId As UInteger, serviceConfigurationId As String, sessionTemplateName As String, sessionName As String, abortIfQueued As Boolean) As IAsyncOperation(Of ClusterResult)" />
+      <MemberSignature Language="F#" Value="abstract member AllocateClusterAsync : uint32 * string * string * string * bool -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.ClusterResult&gt;&#xA;override this.AllocateClusterAsync : uint32 * string * string * string * bool -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.ClusterResult&gt;" Usage="gameServerPlatformService.AllocateClusterAsync (gameServerTitleId, serviceConfigurationId, sessionTemplateName, sessionName, abortIfQueued)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPlatformServicePublicNonVirtuals.AllocateClusterAsync(System.UInt32,System.String,System.String,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -64,7 +71,12 @@ Allocates a new Game Server Cluster using an existing Game Server Image.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.ClusterResult&gt; AllocateClusterInlineAsync (uint gameServerTitleId, string serviceConfigurationId, string sandboxId, string ticketId, string gsiSetId, string gameVariantId, ulong maxAllowedPlayers, string location, bool abortIfQueued);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.ClusterResult&gt; AllocateClusterInlineAsync([in]unsigned int32 gameServerTitleId, [in]string serviceConfigurationId, [in]string sandboxId, [in]string ticketId, [in]string gsiSetId, [in]string gameVariantId, [in]unsigned int64 maxAllowedPlayers, [in]string location, [in]bool abortIfQueued) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService.AllocateClusterInlineAsync(System.UInt32,System.String,System.String,System.String,System.String,System.String,System.UInt64,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AllocateClusterInlineAsync (gameServerTitleId As UInteger, serviceConfigurationId As String, sandboxId As String, ticketId As String, gsiSetId As String, gameVariantId As String, maxAllowedPlayers As ULong, location As String, abortIfQueued As Boolean) As IAsyncOperation(Of ClusterResult)" />
+      <MemberSignature Language="F#" Value="abstract member AllocateClusterInlineAsync : uint32 * string * string * string * string * string * uint64 * string * bool -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.ClusterResult&gt;&#xA;override this.AllocateClusterInlineAsync : uint32 * string * string * string * string * string * uint64 * string * bool -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.ClusterResult&gt;" Usage="gameServerPlatformService.AllocateClusterInlineAsync (gameServerTitleId, serviceConfigurationId, sandboxId, ticketId, gsiSetId, gameVariantId, maxAllowedPlayers, location, abortIfQueued)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPlatformServicePublicNonVirtuals.AllocateClusterInlineAsync(System.UInt32,System.String,System.String,System.String,System.String,System.String,System.UInt64,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -104,7 +116,12 @@ Allocates a new Game Server Cluster using an existing Game Server Image, without
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.AllocationResult&gt; AllocateSessionHost (uint gameServerTitleId, Windows.Foundation.Collections.IVectorView&lt;string&gt; locations, string sessionId, string cloudGameId, string gameModeId, string sessionCookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.AllocationResult&gt; AllocateSessionHost([in]unsigned int32 gameServerTitleId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; locations, [in]string sessionId, [in]string cloudGameId, [in]string gameModeId, [in]string sessionCookie) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService.AllocateSessionHost(System.UInt32,Windows.Foundation.Collections.IVectorView{System.String},System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AllocateSessionHost (gameServerTitleId As UInteger, locations As IVectorView(Of String), sessionId As String, cloudGameId As String, gameModeId As String, sessionCookie As String) As IAsyncOperation(Of AllocationResult)" />
+      <MemberSignature Language="F#" Value="abstract member AllocateSessionHost : uint32 * Windows.Foundation.Collections.IVectorView&lt;string&gt; * string * string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.AllocationResult&gt;&#xA;override this.AllocateSessionHost : uint32 * Windows.Foundation.Collections.IVectorView&lt;string&gt; * string * string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.AllocationResult&gt;" Usage="gameServerPlatformService.AllocateSessionHost (gameServerTitleId, locations, sessionId, cloudGameId, gameModeId, sessionCookie)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPlatformServicePublicNonVirtuals.AllocateSessionHost(System.UInt32,Windows.Foundation.Collections.IVectorView{System.String},System.String,System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -136,7 +153,12 @@ Allocates a new Game Server Cluster using an existing Game Server Image, without
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult&gt; GetGameServerMetadataAsync (uint titleId, uint maxAllowedPlayers, bool publisherOnly, uint maxVariants, string locale);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult&gt; GetGameServerMetadataAsync([in]unsigned int32 titleId, [in]unsigned int32 maxAllowedPlayers, [in]bool publisherOnly, [in]unsigned int32 maxVariants, [in]string locale) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService.GetGameServerMetadataAsync(System.UInt32,System.UInt32,System.Boolean,System.UInt32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGameServerMetadataAsync (titleId As UInteger, maxAllowedPlayers As UInteger, publisherOnly As Boolean, maxVariants As UInteger, locale As String) As IAsyncOperation(Of GameServerMetadataResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetGameServerMetadataAsync : uint32 * uint32 * bool * uint32 * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult&gt;&#xA;override this.GetGameServerMetadataAsync : uint32 * uint32 * bool * uint32 * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult&gt;" Usage="gameServerPlatformService.GetGameServerMetadataAsync (titleId, maxAllowedPlayers, publisherOnly, maxVariants, locale)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPlatformServicePublicNonVirtuals.GetGameServerMetadataAsync(System.UInt32,System.UInt32,System.Boolean,System.UInt32,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -173,7 +195,12 @@ Retrieves a list of game variants for the specified title Id.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult&gt; GetGameServerMetadataAsync (uint titleId, uint maxAllowedPlayers, bool publisherOnly, uint maxVariants, string locale, Windows.Foundation.Collections.IMapView&lt;string,string&gt; filterTags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult&gt; GetGameServerMetadataAsync([in]unsigned int32 titleId, [in]unsigned int32 maxAllowedPlayers, [in]bool publisherOnly, [in]unsigned int32 maxVariants, [in]string locale, [in]class Windows.Foundation.Collections.IMapView`2&lt;string, string&gt; filterTags) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService.GetGameServerMetadataAsync(System.UInt32,System.UInt32,System.Boolean,System.UInt32,System.String,Windows.Foundation.Collections.IMapView{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGameServerMetadataAsync (titleId As UInteger, maxAllowedPlayers As UInteger, publisherOnly As Boolean, maxVariants As UInteger, locale As String, filterTags As IMapView(Of String, String)) As IAsyncOperation(Of GameServerMetadataResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetGameServerMetadataAsync : uint32 * uint32 * bool * uint32 * string * Windows.Foundation.Collections.IMapView&lt;string, string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult&gt;&#xA;override this.GetGameServerMetadataAsync : uint32 * uint32 * bool * uint32 * string * Windows.Foundation.Collections.IMapView&lt;string, string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult&gt;" Usage="gameServerPlatformService.GetGameServerMetadataAsync (titleId, maxAllowedPlayers, publisherOnly, maxVariants, locale, filterTags)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPlatformServicePublicNonVirtuals.GetGameServerMetadataAsync(System.UInt32,System.UInt32,System.Boolean,System.UInt32,System.String,Windows.Foundation.Collections.IMapView{System.String,System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -210,7 +237,12 @@ Retrieves a list of game variants for the specified title Id.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt;&gt; GetQualityOfServiceServersAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt;&gt; GetQualityOfServiceServersAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService.GetQualityOfServiceServersAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetQualityOfServiceServersAsync () As IAsyncOperation(Of IVectorView(Of QualityOfServiceServer))" />
+      <MemberSignature Language="F#" Value="abstract member GetQualityOfServiceServersAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt;&gt;&#xA;override this.GetQualityOfServiceServersAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt;&gt;" Usage="gameServerPlatformService.GetQualityOfServiceServersAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPlatformServicePublicNonVirtuals.GetQualityOfServiceServersAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -231,7 +263,12 @@ Retrieves a collection of Quality of Service (QoS) servers.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.AllocationResult&gt; GetSessionHostAllocationStatus (uint gameServerTitleId, string sessionId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.AllocationResult&gt; GetSessionHostAllocationStatus([in]unsigned int32 gameServerTitleId, [in]string sessionId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService.GetSessionHostAllocationStatus(System.UInt32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSessionHostAllocationStatus (gameServerTitleId As UInteger, sessionId As String) As IAsyncOperation(Of AllocationResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetSessionHostAllocationStatus : uint32 * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.AllocationResult&gt;&#xA;override this.GetSessionHostAllocationStatus : uint32 * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.AllocationResult&gt;" Usage="gameServerPlatformService.GetSessionHostAllocationStatus (gameServerTitleId, sessionId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPlatformServicePublicNonVirtuals.GetSessionHostAllocationStatus(System.UInt32,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -257,7 +294,12 @@ Get allocation status for a previous allocate session host request
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerTicketStatus&gt; GetTicketStatusAsync (uint gameServerTitleId, string ticketId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.GameServerTicketStatus&gt; GetTicketStatusAsync([in]unsigned int32 gameServerTitleId, [in]string ticketId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService.GetTicketStatusAsync(System.UInt32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTicketStatusAsync (gameServerTitleId As UInteger, ticketId As String) As IAsyncOperation(Of GameServerTicketStatus)" />
+      <MemberSignature Language="F#" Value="abstract member GetTicketStatusAsync : uint32 * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerTicketStatus&gt;&#xA;override this.GetTicketStatusAsync : uint32 * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerTicketStatus&gt;" Usage="gameServerPlatformService.GetTicketStatusAsync (gameServerTitleId, ticketId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPlatformServicePublicNonVirtuals.GetTicketStatusAsync(System.UInt32,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

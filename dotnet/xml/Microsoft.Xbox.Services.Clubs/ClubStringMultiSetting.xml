@@ -1,7 +1,9 @@
-<Type Name="ClubStringMultiSetting" FullName="Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting">
+﻿<Type Name="ClubStringMultiSetting" FullName="Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting">
   <TypeSignature Language="C#" Value="public sealed class ClubStringMultiSetting" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubStringMultiSetting extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClubStringMultiSetting" />
+  <TypeSignature Language="F#" Value="type ClubStringMultiSetting = class&#xA;    interface __IClubStringMultiSettingPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; AllowedValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; AllowedValues" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting.AllowedValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedValues As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.AllowedValues : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting.AllowedValues" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubStringMultiSettingPublicNonVirtuals.AllowedValues</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -48,7 +55,12 @@
       <MemberSignature Language="C#" Value="public bool CanViewerChangeSetting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanViewerChangeSetting" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting.CanViewerChangeSetting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanViewerChangeSetting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanViewerChangeSetting : bool" Usage="Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting.CanViewerChangeSetting" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubStringMultiSettingPublicNonVirtuals.CanViewerChangeSetting</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -66,7 +78,12 @@
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; Values" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Values : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Clubs.ClubStringMultiSetting.Values" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubStringMultiSettingPublicNonVirtuals.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

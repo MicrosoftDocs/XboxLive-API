@@ -1,7 +1,9 @@
-<Type Name="UserStatisticsResult" FullName="Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult">
+﻿<Type Name="UserStatisticsResult" FullName="Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult">
   <TypeSignature Language="C#" Value="public sealed class UserStatisticsResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UserStatisticsResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UserStatisticsResult" />
+  <TypeSignature Language="F#" Value="type UserStatisticsResult = class&#xA;    interface __IUserStatisticsResultPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents the results of a user statistic query.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.ServiceConfigurationStatistic&gt; ServiceConfigurationStatistics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.UserStatistics.ServiceConfigurationStatistic&gt; ServiceConfigurationStatistics" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult.ServiceConfigurationStatistics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationStatistics As IVectorView(Of ServiceConfigurationStatistic)" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationStatistics : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.ServiceConfigurationStatistic&gt;" Usage="Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult.ServiceConfigurationStatistics" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IUserStatisticsResultPublicNonVirtuals.ServiceConfigurationStatistics</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ A collection of statistics from a service configuration.
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.UserStatistics.__IUserStatisticsResultPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

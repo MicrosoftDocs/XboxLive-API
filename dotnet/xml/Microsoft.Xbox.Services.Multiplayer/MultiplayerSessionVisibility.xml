@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSessionVisibility" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility">
+﻿<Type Name="MultiplayerSessionVisibility" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility">
   <TypeSignature Language="C#" Value="public enum MultiplayerSessionVisibility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionVisibility extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MultiplayerSessionVisibility" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionVisibility = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Defines values that indicate how visible a session is.
       <MemberSignature Language="C#" Value="Any" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility Any = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Any" />
+      <MemberSignature Language="VB.NET" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 1" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values that indicate how visible a session is.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Ignore the SessionVisibility filter. 
@@ -43,6 +48,8 @@ Ignore the SessionVisibility filter.
       <MemberSignature Language="C#" Value="Full" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility Full = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Full" />
+      <MemberSignature Language="VB.NET" Value="Full" />
+      <MemberSignature Language="F#" Value="Full = 4" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Full" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -51,6 +58,7 @@ Ignore the SessionVisibility filter.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
 The session is full and cannot be joined by anyone.  
@@ -62,6 +70,8 @@ Joining an open but full session causes the service to return HTTP_E_STATUS_BAD_
       <MemberSignature Language="C#" Value="Open" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility Open = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Open" />
+      <MemberSignature Language="VB.NET" Value="Open" />
+      <MemberSignature Language="F#" Value="Open = 5" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -70,6 +80,7 @@ Joining an open but full session causes the service to return HTTP_E_STATUS_BAD_
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>
 The session is open and can be joined by anyone.
@@ -80,6 +91,8 @@ The session is open and can be joined by anyone.
       <MemberSignature Language="C#" Value="Private" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility Private = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Private" />
+      <MemberSignature Language="VB.NET" Value="Private" />
+      <MemberSignature Language="F#" Value="Private = 2" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -88,6 +101,7 @@ The session is open and can be joined by anyone.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 The session is private and it's not visible to other users who
@@ -99,6 +113,8 @@ aren't in the session. Attempting to join a private session causes the server to
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -107,6 +123,7 @@ aren't in the session. Attempting to join a private session causes the server to
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Unknown.
@@ -117,6 +134,8 @@ Unknown.
       <MemberSignature Language="C#" Value="Visible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility Visible = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Visible" />
+      <MemberSignature Language="VB.NET" Value="Visible" />
+      <MemberSignature Language="F#" Value="Visible = 3" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility.Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -125,6 +144,7 @@ Unknown.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 The session is visible to other users who aren't in the session, but the session is read-only to them and they can't join.

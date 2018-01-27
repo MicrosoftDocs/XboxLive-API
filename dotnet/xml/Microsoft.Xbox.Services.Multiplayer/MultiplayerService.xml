@@ -1,7 +1,9 @@
-<Type Name="MultiplayerService" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerService">
+﻿<Type Name="MultiplayerService" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerService">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerService" />
+  <TypeSignature Language="F#" Value="type MultiplayerService = class&#xA;    interface __IMultiplayerServicePublicNonVirtuals&#xA;    interface __IMultiplayerServiceProtectedNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Handles interactions with an Xbox Live service endpoint on a server.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction ClearActivityAsync (string serviceConfigurationId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction ClearActivityAsync([in]string serviceConfigurationId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.ClearActivityAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ClearActivityAsync (serviceConfigurationId As String) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member ClearActivityAsync : string -&gt; Windows.Foundation.IAsyncAction&#xA;override this.ClearActivityAsync : string -&gt; Windows.Foundation.IAsyncAction" Usage="multiplayerService.ClearActivityAsync serviceConfigurationId" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.ClearActivityAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -57,7 +64,12 @@ Completion of the asynchronous operation is signaled by using a handler that is 
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction ClearSearchHandleAsync (string handleId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction ClearSearchHandleAsync([in]string handleId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.ClearSearchHandleAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ClearSearchHandleAsync (handleId As String) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member ClearSearchHandleAsync : string -&gt; Windows.Foundation.IAsyncAction&#xA;override this.ClearSearchHandleAsync : string -&gt; Windows.Foundation.IAsyncAction" Usage="multiplayerService.ClearSearchHandleAsync handleId" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.ClearSearchHandleAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -81,7 +93,12 @@ Clears the search handle that is associated with the session.
       <MemberSignature Language="C#" Value="public void DisableMultiplayerSubscriptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisableMultiplayerSubscriptions() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.DisableMultiplayerSubscriptions" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisableMultiplayerSubscriptions ()" />
+      <MemberSignature Language="F#" Value="abstract member DisableMultiplayerSubscriptions : unit -&gt; unit&#xA;override this.DisableMultiplayerSubscriptions : unit -&gt; unit" Usage="multiplayerService.DisableMultiplayerSubscriptions " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.DisableMultiplayerSubscriptions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -105,7 +122,12 @@ in which case you must wait for the stop to complete.
       <MemberSignature Language="C#" Value="public void EnableMultiplayerSubscriptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnableMultiplayerSubscriptions() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.EnableMultiplayerSubscriptions" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnableMultiplayerSubscriptions ()" />
+      <MemberSignature Language="F#" Value="abstract member EnableMultiplayerSubscriptions : unit -&gt; unit&#xA;override this.EnableMultiplayerSubscriptions : unit -&gt; unit" Usage="multiplayerService.EnableMultiplayerSubscriptions " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.EnableMultiplayerSubscriptions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -132,7 +154,12 @@ This can be detected by listening for the MultiplayerSubscriptionsLost event.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt; GetActivitiesForSocialGroupAsync (string serviceConfigurationId, string socialGroupOwnerXboxUserId, string socialGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt; GetActivitiesForSocialGroupAsync([in]string serviceConfigurationId, [in]string socialGroupOwnerXboxUserId, [in]string socialGroup) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetActivitiesForSocialGroupAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetActivitiesForSocialGroupAsync (serviceConfigurationId As String, socialGroupOwnerXboxUserId As String, socialGroup As String) As IAsyncOperation(Of IVectorView(Of MultiplayerActivityDetails))" />
+      <MemberSignature Language="F#" Value="abstract member GetActivitiesForSocialGroupAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt;&#xA;override this.GetActivitiesForSocialGroupAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt;" Usage="multiplayerService.GetActivitiesForSocialGroupAsync (serviceConfigurationId, socialGroupOwnerXboxUserId, socialGroup)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.GetActivitiesForSocialGroupAsync(System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -155,12 +182,6 @@ the owner of the session.
 </summary>
         <returns>The async object for notifying when the operation is completed.  
 This contains a vectorview of MultiplayerActivityDetails objects, containing the details of the activities of the targeted users.</returns>
-        <returns>
-Returns an IAsyncOperation&lt;TResult&gt; object that represents the state of the asynchronous operation.
-Completion of the asynchronous operation is signaled by using a handler that is passed to the IAsyncOperation&lt;TResult&gt;.Completed property.
-When the asynchronous operation is complete, the result of the operation can be retrieved by using the IAsyncOperation&lt;TResult&gt;.GetResults method.
-
-The result is a vectorview of MultiplayerActivityDetails objects, containing the details of the activities for the social group of users.</returns>
         <remarks>
 There is no paging or continuation, and the multiplayer service limit the number of items returned to 100.
 </remarks>
@@ -170,7 +191,12 @@ There is no paging or continuation, and the multiplayer service limit the number
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt; GetActivitiesForUsersAsync (string serviceConfigurationId, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt; GetActivitiesForUsersAsync([in]string serviceConfigurationId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetActivitiesForUsersAsync(System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetActivitiesForUsersAsync (serviceConfigurationId As String, xboxUserIds As IVectorView(Of String)) As IAsyncOperation(Of IVectorView(Of MultiplayerActivityDetails))" />
+      <MemberSignature Language="F#" Value="abstract member GetActivitiesForUsersAsync : string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt;&#xA;override this.GetActivitiesForUsersAsync : string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerActivityDetails&gt;&gt;" Usage="multiplayerService.GetActivitiesForUsersAsync (serviceConfigurationId, xboxUserIds)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.GetActivitiesForUsersAsync(System.String,Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -194,7 +220,12 @@ There is no paging or continuation, and the multiplayer service limit the number
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; GetCurrentSessionAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; GetCurrentSessionAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetCurrentSessionAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentSessionAsync (sessionReference As MultiplayerSessionReference) As IAsyncOperation(Of MultiplayerSession)" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentSessionAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;&#xA;override this.GetCurrentSessionAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;" Usage="multiplayerService.GetCurrentSessionAsync sessionReference" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.GetCurrentSessionAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -228,7 +259,12 @@ Calls V102 GET /serviceconfigs/{serviceConfigurationId}/sessionTemplates/{sessio
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; GetCurrentSessionByHandleAsync (string handleId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; GetCurrentSessionByHandleAsync([in]string handleId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetCurrentSessionByHandleAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentSessionByHandleAsync (handleId As String) As IAsyncOperation(Of MultiplayerSession)" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentSessionByHandleAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;&#xA;override this.GetCurrentSessionByHandleAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;" Usage="multiplayerService.GetCurrentSessionByHandleAsync handleId" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.GetCurrentSessionByHandleAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -264,7 +300,12 @@ Calls GET /handles/{handleId}/session</remarks>
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt; GetSearchHandlesAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest searchHandleRequest);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt; GetSearchHandlesAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest searchHandleRequest) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetSearchHandlesAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSearchHandlesAsync (searchHandleRequest As MultiplayerQuerySearchHandleRequest) As IAsyncOperation(Of IVectorView(Of MultiplayerSearchHandleDetails))" />
+      <MemberSignature Language="F#" Value="abstract member GetSearchHandlesAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt;&#xA;override this.GetSearchHandlesAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt;" Usage="multiplayerService.GetSearchHandlesAsync searchHandleRequest" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.GetSearchHandlesAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -294,7 +335,12 @@ There is no paging or continuation, and the multiplayer service will limit the n
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt; GetSearchHandlesAsync (string serviceConfigurationId, string sessionTemplateName, string orderBy, bool orderAscending, string searchFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt; GetSearchHandlesAsync([in]string serviceConfigurationId, [in]string sessionTemplateName, [in]string orderBy, [in]bool orderAscending, [in]string searchFilter) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetSearchHandlesAsync(System.String,System.String,System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSearchHandlesAsync (serviceConfigurationId As String, sessionTemplateName As String, orderBy As String, orderAscending As Boolean, searchFilter As String) As IAsyncOperation(Of IVectorView(Of MultiplayerSearchHandleDetails))" />
+      <MemberSignature Language="F#" Value="abstract member GetSearchHandlesAsync : string * string * string * bool * string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt;&#xA;override this.GetSearchHandlesAsync : string * string * string * bool * string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleDetails&gt;&gt;" Usage="multiplayerService.GetSearchHandlesAsync (serviceConfigurationId, sessionTemplateName, orderBy, orderAscending, searchFilter)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.GetSearchHandlesAsync(System.String,System.String,System.String,System.Boolean,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -348,7 +394,12 @@ Call GetSearchHandlesAsync(MultiplayerQuerySearchHandleRequest^ ) instead.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest getSessionsRequest);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest getSessionsRequest) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetSessionsAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSessionsAsync (getSessionsRequest As MultiplayerGetSessionsRequest) As IAsyncOperation(Of IVectorView(Of MultiplayerSessionStates))" />
+      <MemberSignature Language="F#" Value="abstract member GetSessionsAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt;&#xA;override this.GetSessionsAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt;" Usage="multiplayerService.GetSessionsAsync getSessionsRequest" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.GetSessionsAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerGetSessionsRequest)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -388,7 +439,12 @@ Calls V102 GET /serviceconfigs/{scid}/sessions or /serviceconfigs/{scid}/session
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsAsync (string serviceConfigurationId, string sessionTemplateNameFilter, string xboxUserIdFilter, string keywordFilter, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibilityFilter, uint contractVersionFilter, bool includePrivateSessions, bool includeReservations, bool includeInactiveSessions, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsAsync([in]string serviceConfigurationId, [in]string sessionTemplateNameFilter, [in]string xboxUserIdFilter, [in]string keywordFilter, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibilityFilter, [in]unsigned int32 contractVersionFilter, [in]bool includePrivateSessions, [in]bool includeReservations, [in]bool includeInactiveSessions, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetSessionsAsync(System.String,System.String,System.String,System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,System.UInt32,System.Boolean,System.Boolean,System.Boolean,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSessionsAsync (serviceConfigurationId As String, sessionTemplateNameFilter As String, xboxUserIdFilter As String, keywordFilter As String, visibilityFilter As MultiplayerSessionVisibility, contractVersionFilter As UInteger, includePrivateSessions As Boolean, includeReservations As Boolean, includeInactiveSessions As Boolean, maxItems As UInteger) As IAsyncOperation(Of IVectorView(Of MultiplayerSessionStates))" />
+      <MemberSignature Language="F#" Value="abstract member GetSessionsAsync : string * string * string * string * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility * uint32 * bool * bool * bool * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt;&#xA;override this.GetSessionsAsync : string * string * string * string * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility * uint32 * bool * bool * bool * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt;" Usage="multiplayerService.GetSessionsAsync (serviceConfigurationId, sessionTemplateNameFilter, xboxUserIdFilter, keywordFilter, visibilityFilter, contractVersionFilter, includePrivateSessions, includeReservations, includeInactiveSessions, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.GetSessionsAsync(System.String,System.String,System.String,System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,System.UInt32,System.Boolean,System.Boolean,System.Boolean,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -449,7 +505,12 @@ The result is a collection of SessionStates objects where each object contains m
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsForUsersFilterAsync (string serviceConfigurationId, string sessionTemplateNameFilter, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIdsFilter, string keywordFilter, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibilityFilter, uint contractVersionFilter, bool includePrivateSessions, bool includeReservations, bool includeInactiveSessions, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt; GetSessionsForUsersFilterAsync([in]string serviceConfigurationId, [in]string sessionTemplateNameFilter, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIdsFilter, [in]string keywordFilter, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibilityFilter, [in]unsigned int32 contractVersionFilter, [in]bool includePrivateSessions, [in]bool includeReservations, [in]bool includeInactiveSessions, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.GetSessionsForUsersFilterAsync(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,System.UInt32,System.Boolean,System.Boolean,System.Boolean,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSessionsForUsersFilterAsync (serviceConfigurationId As String, sessionTemplateNameFilter As String, xboxUserIdsFilter As IVectorView(Of String), keywordFilter As String, visibilityFilter As MultiplayerSessionVisibility, contractVersionFilter As UInteger, includePrivateSessions As Boolean, includeReservations As Boolean, includeInactiveSessions As Boolean, maxItems As UInteger) As IAsyncOperation(Of IVectorView(Of MultiplayerSessionStates))" />
+      <MemberSignature Language="F#" Value="abstract member GetSessionsForUsersFilterAsync : string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; * string * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility * uint32 * bool * bool * bool * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt;&#xA;override this.GetSessionsForUsersFilterAsync : string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; * string * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility * uint32 * bool * bool * bool * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionStates&gt;&gt;" Usage="multiplayerService.GetSessionsForUsersFilterAsync (serviceConfigurationId, sessionTemplateNameFilter, xboxUserIdsFilter, keywordFilter, visibilityFilter, contractVersionFilter, includePrivateSessions, includeReservations, includeInactiveSessions, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.GetSessionsForUsersFilterAsync(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,System.UInt32,System.Boolean,System.Boolean,System.Boolean,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -494,7 +555,12 @@ The result is a collection of SessionStates objects where each object contains m
       <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt; MultiplayerSessionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt; MultiplayerSessionChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.MultiplayerSessionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MultiplayerSessionChanged As EventHandler(Of MultiplayerSessionChangeEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.MultiplayerSessionChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt; " Usage="member this.MultiplayerSessionChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.MultiplayerSessionChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -513,7 +579,12 @@ Registers for multiplayer session change notifications.  Event handlers receive 
       <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs&gt; MultiplayerSubscriptionLost;" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs&gt; MultiplayerSubscriptionLost" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.MultiplayerSubscriptionLost" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MultiplayerSubscriptionLost As EventHandler(Of MultiplayerSubscriptionLostEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.MultiplayerSubscriptionLost : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs&gt; " Usage="member this.MultiplayerSubscriptionLost : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.MultiplayerSubscriptionLost</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -533,7 +604,12 @@ Event handlers receive Windows::Networking::Sockets::RealTimeActivityMultiplayer
       <MemberSignature Language="C#" Value="public bool MultiplayerSubscriptionsEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MultiplayerSubscriptionsEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.MultiplayerSubscriptionsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MultiplayerSubscriptionsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MultiplayerSubscriptionsEnabled : bool" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerService.MultiplayerSubscriptionsEnabled" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.MultiplayerSubscriptionsEnabled</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -553,7 +629,12 @@ Indicates whether multiplayer subscriptions are currently enabled.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt; SendInvitesAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, uint titleId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;string&gt;&gt; SendInvitesAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]unsigned int32 titleId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.SendInvitesAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendInvitesAsync (sessionReference As MultiplayerSessionReference, xboxUserIds As IVectorView(Of String), titleId As UInteger) As IAsyncOperation(Of IVectorView(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member SendInvitesAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt;&#xA;override this.SendInvitesAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt;" Usage="multiplayerService.SendInvitesAsync (sessionReference, xboxUserIds, titleId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.SendInvitesAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -584,7 +665,12 @@ Indicates whether multiplayer subscriptions are currently enabled.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt; SendInvitesAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, uint titleId, string contextStringId, string activationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;string&gt;&gt; SendInvitesAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]unsigned int32 titleId, [in]string contextStringId, [in]string activationContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.SendInvitesAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendInvitesAsync (sessionReference As MultiplayerSessionReference, xboxUserIds As IVectorView(Of String), titleId As UInteger, contextStringId As String, activationContext As String) As IAsyncOperation(Of IVectorView(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member SendInvitesAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt;&#xA;override this.SendInvitesAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt;" Usage="multiplayerService.SendInvitesAsync (sessionReference, xboxUserIds, titleId, contextStringId, activationContext)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.SendInvitesAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,Windows.Foundation.Collections.IVectorView{System.String},System.UInt32,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -619,7 +705,12 @@ Indicates whether multiplayer subscriptions are currently enabled.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SetActivityAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SetActivityAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.SetActivityAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetActivityAsync (sessionReference As MultiplayerSessionReference) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member SetActivityAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference -&gt; Windows.Foundation.IAsyncAction&#xA;override this.SetActivityAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference -&gt; Windows.Foundation.IAsyncAction" Usage="multiplayerService.SetActivityAsync sessionReference" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.SetActivityAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -647,7 +738,12 @@ Completion of the asynchronous operation is signaled by using a handler that is 
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SetSearchHandleAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest searchHandleRequest);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SetSearchHandleAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest searchHandleRequest) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.SetSearchHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetSearchHandleAsync (searchHandleRequest As MultiplayerSearchHandleRequest) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member SetSearchHandleAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest -&gt; Windows.Foundation.IAsyncAction&#xA;override this.SetSearchHandleAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest -&gt; Windows.Foundation.IAsyncAction" Usage="multiplayerService.SetSearchHandleAsync searchHandleRequest" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.SetSearchHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSearchHandleRequest)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -672,7 +768,12 @@ While you can create an searchable session, it is not queryable and visible to o
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;string&gt; SetTransferHandleAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference targetSessionReference, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference originSessionReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;string&gt; SetTransferHandleAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference targetSessionReference, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference originSessionReference) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.SetTransferHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetTransferHandleAsync (targetSessionReference As MultiplayerSessionReference, originSessionReference As MultiplayerSessionReference) As IAsyncOperation(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member SetTransferHandleAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference -&gt; Windows.Foundation.IAsyncOperation&lt;string&gt;&#xA;override this.SetTransferHandleAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference -&gt; Windows.Foundation.IAsyncOperation&lt;string&gt;" Usage="multiplayerService.SetTransferHandleAsync (targetSessionReference, originSessionReference)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.SetTransferHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -706,7 +807,11 @@ The result is a string that contains the transfer handle ID.</returns>
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt; TryWriteSessionAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt; TryWriteSessionAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.TryWriteSessionAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode)" />
+      <MemberSignature Language="F#" Value="abstract member TryWriteSessionAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSession * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt;&#xA;override this.TryWriteSessionAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSession * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt;" Usage="multiplayerService.TryWriteSessionAsync (multiplayerSession, multiplayerSessionWriteMode)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.TryWriteSessionAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -747,7 +852,11 @@ Calls V105 PUT /serviceconfigs/{serviceConfigurationId}/sessionTemplates/{sessio
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt; TryWriteSessionByHandleAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode, string handleId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt; TryWriteSessionByHandleAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode, [in]string handleId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.TryWriteSessionByHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member TryWriteSessionByHandleAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSession * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt;&#xA;override this.TryWriteSessionByHandleAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSession * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.WriteSessionResult&gt;" Usage="multiplayerService.TryWriteSessionByHandleAsync (multiplayerSession, multiplayerSessionWriteMode, handleId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.TryWriteSessionByHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -795,7 +904,11 @@ Calls V105 PUT /serviceconfigs/{serviceConfigurationId}/sessionTemplates/{sessio
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; WriteSessionAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; WriteSessionAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.WriteSessionAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode)" />
+      <MemberSignature Language="F#" Value="abstract member WriteSessionAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSession * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;&#xA;override this.WriteSessionAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSession * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;" Usage="multiplayerService.WriteSessionAsync (multiplayerSession, multiplayerSessionWriteMode)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.WriteSessionAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -834,7 +947,11 @@ since the session has been deleted.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; WriteSessionByHandleAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode, string handleId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt; WriteSessionByHandleAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession multiplayerSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode multiplayerSessionWriteMode, [in]string handleId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerService.WriteSessionByHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteSessionByHandleAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSession * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;&#xA;override this.WriteSessionByHandleAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSession * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSession&gt;" Usage="multiplayerService.WriteSessionByHandleAsync (multiplayerSession, multiplayerSessionWriteMode, handleId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerServicePublicNonVirtuals.WriteSessionByHandleAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
