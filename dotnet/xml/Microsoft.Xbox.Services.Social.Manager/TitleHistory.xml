@@ -1,7 +1,9 @@
-<Type Name="TitleHistory" FullName="Microsoft.Xbox.Services.Social.Manager.TitleHistory">
+﻿<Type Name="TitleHistory" FullName="Microsoft.Xbox.Services.Social.Manager.TitleHistory">
   <TypeSignature Language="C#" Value="public sealed class TitleHistory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleHistory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.TitleHistory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitleHistory" />
+  <TypeSignature Language="F#" Value="type TitleHistory = class&#xA;    interface __ITitleHistoryPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Data about whether the user has played the title
       <MemberSignature Language="C#" Value="public bool HasUserPlayed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasUserPlayed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.TitleHistory.HasUserPlayed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasUserPlayed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasUserPlayed : bool" Usage="Microsoft.Xbox.Services.Social.Manager.TitleHistory.HasUserPlayed" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ITitleHistoryPublicNonVirtuals.HasUserPlayed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ Whether the user has played this title
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime LastTimeUserPlayed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime LastTimeUserPlayed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.TitleHistory.LastTimeUserPlayed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastTimeUserPlayed As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastTimeUserPlayed : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Social.Manager.TitleHistory.LastTimeUserPlayed" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ITitleHistoryPublicNonVirtuals.LastTimeUserPlayed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

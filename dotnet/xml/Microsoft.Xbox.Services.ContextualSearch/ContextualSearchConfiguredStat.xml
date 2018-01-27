@@ -1,7 +1,9 @@
-<Type Name="ContextualSearchConfiguredStat" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat">
+﻿<Type Name="ContextualSearchConfiguredStat" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat">
   <TypeSignature Language="C#" Value="public sealed class ContextualSearchConfiguredStat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchConfiguredStat extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextualSearchConfiguredStat" />
+  <TypeSignature Language="F#" Value="type ContextualSearchConfiguredStat = class&#xA;    interface __IContextualSearchConfiguredStatPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public bool CanBeFiltered { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanBeFiltered" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.CanBeFiltered" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanBeFiltered As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanBeFiltered : bool" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.CanBeFiltered" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchConfiguredStatPublicNonVirtuals.CanBeFiltered</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -50,7 +57,12 @@ Boolean on whether you can use this stat in a filter
       <MemberSignature Language="C#" Value="public bool CanBeSorted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanBeSorted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.CanBeSorted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanBeSorted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanBeSorted : bool" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.CanBeSorted" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchConfiguredStatPublicNonVirtuals.CanBeSorted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -70,7 +82,12 @@ Boolean on whether you can make sort queries
       <MemberSignature Language="C#" Value="public string DataType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.DataType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataType As String" />
+      <MemberSignature Language="F#" Value="member this.DataType : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.DataType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchConfiguredStatPublicNonVirtuals.DataType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -90,7 +107,12 @@ The data type of the stat.  It should align with the values you are passing for 
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.DisplayName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchConfiguredStatPublicNonVirtuals.DisplayName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -111,7 +133,12 @@ pass up in the header, you will get a localized version of this string.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility DisplayType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility DisplayType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.DisplayType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayType As ContextualSearchStatVisibility" />
+      <MemberSignature Language="F#" Value="member this.DisplayType : Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.DisplayType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchConfiguredStatPublicNonVirtuals.DisplayType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -131,7 +158,12 @@ How this Stat should be represented, as either a Set, Defined Range, or Undefine
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.Name" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchConfiguredStatPublicNonVirtuals.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -151,7 +183,12 @@ The actual name of the configured stat.  This is what you will use as a paramete
       <MemberSignature Language="C#" Value="public ulong RangeMax { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 RangeMax" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.RangeMax" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RangeMax As ULong" />
+      <MemberSignature Language="F#" Value="member this.RangeMax : uint64" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.RangeMax" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchConfiguredStatPublicNonVirtuals.RangeMax</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -171,7 +208,12 @@ If the representation type is defined range, this is the max range
       <MemberSignature Language="C#" Value="public ulong RangeMin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 RangeMin" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.RangeMin" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RangeMin As ULong" />
+      <MemberSignature Language="F#" Value="member this.RangeMin : uint64" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.RangeMin" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchConfiguredStatPublicNonVirtuals.RangeMin</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -191,7 +233,12 @@ If the representation type is defined range, this is the min range
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IMapView&lt;string,string&gt; ValueToDisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IMapView`2&lt;string, string&gt; ValueToDisplayName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.ValueToDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueToDisplayName As IMapView(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.ValueToDisplayName : Windows.Foundation.Collections.IMapView&lt;string, string&gt;" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.ValueToDisplayName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchConfiguredStatPublicNonVirtuals.ValueToDisplayName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -211,7 +258,12 @@ If the representation type is set, this contains a map to convert values to disp
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility Visibility { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility Visibility" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.Visibility" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Visibility As ContextualSearchStatVisibility" />
+      <MemberSignature Language="F#" Value="member this.Visibility : Microsoft.Xbox.Services.ContextualSearch.ContextualSearchStatVisibility" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat.Visibility" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchConfiguredStatPublicNonVirtuals.Visibility</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

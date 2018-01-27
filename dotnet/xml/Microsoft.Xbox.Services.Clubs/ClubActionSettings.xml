@@ -1,7 +1,9 @@
-<Type Name="ClubActionSettings" FullName="Microsoft.Xbox.Services.Clubs.ClubActionSettings">
+﻿<Type Name="ClubActionSettings" FullName="Microsoft.Xbox.Services.Clubs.ClubActionSettings">
   <TypeSignature Language="C#" Value="public sealed class ClubActionSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubActionSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubActionSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClubActionSettings" />
+  <TypeSignature Language="F#" Value="type ClubActionSettings = class&#xA;    interface __IClubActionSettingsPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting CreateLookingForGame { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting CreateLookingForGame" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.CreateLookingForGame" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreateLookingForGame As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.CreateLookingForGame : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.CreateLookingForGame" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.CreateLookingForGame</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -48,7 +55,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting DeleteProfile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting DeleteProfile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.DeleteProfile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeleteProfile As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.DeleteProfile : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.DeleteProfile" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.DeleteProfile</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -66,7 +78,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting InviteOrAcceptJoinRequests { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting InviteOrAcceptJoinRequests" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.InviteOrAcceptJoinRequests" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InviteOrAcceptJoinRequests As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.InviteOrAcceptJoinRequests : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.InviteOrAcceptJoinRequests" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.InviteOrAcceptJoinRequests</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -84,7 +101,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting JoinLookingForGame { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting JoinLookingForGame" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.JoinLookingForGame" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JoinLookingForGame As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.JoinLookingForGame : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.JoinLookingForGame" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.JoinLookingForGame</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -102,7 +124,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting KickOrBan { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting KickOrBan" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.KickOrBan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KickOrBan As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.KickOrBan : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.KickOrBan" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.KickOrBan</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -120,7 +147,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting PostToFeed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting PostToFeed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.PostToFeed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PostToFeed As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.PostToFeed : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.PostToFeed" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.PostToFeed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -138,7 +170,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting SetChatTopic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting SetChatTopic" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.SetChatTopic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SetChatTopic As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.SetChatTopic : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.SetChatTopic" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.SetChatTopic</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -156,7 +193,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting UpdateProfile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting UpdateProfile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.UpdateProfile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdateProfile As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.UpdateProfile : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.UpdateProfile" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.UpdateProfile</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -174,7 +216,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting ViewChat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting ViewChat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.ViewChat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewChat As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.ViewChat : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.ViewChat" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.ViewChat</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -192,7 +239,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting ViewFeed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting ViewFeed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.ViewFeed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewFeed As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.ViewFeed : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.ViewFeed" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.ViewFeed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -210,7 +262,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting ViewLookingForGame { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting ViewLookingForGame" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.ViewLookingForGame" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewLookingForGame As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.ViewLookingForGame : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.ViewLookingForGame" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.ViewLookingForGame</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -228,7 +285,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting ViewProfile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting ViewProfile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.ViewProfile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewProfile As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.ViewProfile : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.ViewProfile" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.ViewProfile</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -246,7 +308,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting ViewRoster { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting ViewRoster" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.ViewRoster" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewRoster As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.ViewRoster : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.ViewRoster" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.ViewRoster</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -264,7 +331,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSetting WriteInChat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSetting WriteInChat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSettings.WriteInChat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WriteInChat As ClubActionSetting" />
+      <MemberSignature Language="F#" Value="member this.WriteInChat : Microsoft.Xbox.Services.Clubs.ClubActionSetting" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSettings.WriteInChat" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingsPublicNonVirtuals.WriteInChat</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

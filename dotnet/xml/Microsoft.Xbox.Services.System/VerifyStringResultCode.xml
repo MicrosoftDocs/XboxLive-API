@@ -1,7 +1,9 @@
-<Type Name="VerifyStringResultCode" FullName="Microsoft.Xbox.Services.System.VerifyStringResultCode">
+﻿<Type Name="VerifyStringResultCode" FullName="Microsoft.Xbox.Services.System.VerifyStringResultCode">
   <TypeSignature Language="C#" Value="public enum VerifyStringResultCode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VerifyStringResultCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.VerifyStringResultCode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VerifyStringResultCode" />
+  <TypeSignature Language="F#" Value="type VerifyStringResultCode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="Offensive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.VerifyStringResultCode Offensive = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.VerifyStringResultCode.Offensive" />
+      <MemberSignature Language="VB.NET" Value="Offensive" />
+      <MemberSignature Language="F#" Value="Offensive = 1" Usage="Microsoft.Xbox.Services.System.VerifyStringResultCode.Offensive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.VerifyStringResultCode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The string contains offensive content.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.VerifyStringResultCode Success = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.VerifyStringResultCode.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="Microsoft.Xbox.Services.System.VerifyStringResultCode.Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.VerifyStringResultCode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No issues were found with the string.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="TooLong" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.VerifyStringResultCode TooLong = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.VerifyStringResultCode.TooLong" />
+      <MemberSignature Language="VB.NET" Value="TooLong" />
+      <MemberSignature Language="F#" Value="TooLong = 2" Usage="Microsoft.Xbox.Services.System.VerifyStringResultCode.TooLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.VerifyStringResultCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The string is too long to verify.</summary>
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="UnknownError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.VerifyStringResultCode UnknownError = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.VerifyStringResultCode.UnknownError" />
+      <MemberSignature Language="VB.NET" Value="UnknownError" />
+      <MemberSignature Language="F#" Value="UnknownError = 3" Usage="Microsoft.Xbox.Services.System.VerifyStringResultCode.UnknownError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -79,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.VerifyStringResultCode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An unknown error was encountered during string verification.</summary>
       </Docs>

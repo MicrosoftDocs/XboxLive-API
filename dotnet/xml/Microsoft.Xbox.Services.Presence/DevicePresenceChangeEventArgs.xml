@@ -1,7 +1,9 @@
-<Type Name="DevicePresenceChangeEventArgs" FullName="Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs">
+﻿<Type Name="DevicePresenceChangeEventArgs" FullName="Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs">
   <TypeSignature Language="C#" Value="public sealed class DevicePresenceChangeEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DevicePresenceChangeEventArgs extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DevicePresenceChangeEventArgs" />
+  <TypeSignature Language="F#" Value="type DevicePresenceChangeEventArgs = class&#xA;    interface __IDevicePresenceChangeEventArgsPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Contains information about a device presence change event.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.PresenceDeviceType DeviceType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType DeviceType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs.DeviceType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceType As PresenceDeviceType" />
+      <MemberSignature Language="F#" Value="member this.DeviceType : Microsoft.Xbox.Services.Presence.PresenceDeviceType" Usage="Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs.DeviceType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IDevicePresenceChangeEventArgsPublicNonVirtuals.DeviceType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The type of device related to the presence information.
       <MemberSignature Language="C#" Value="public bool IsUserLoggedOnDevice { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUserLoggedOnDevice" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs.IsUserLoggedOnDevice" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUserLoggedOnDevice As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsUserLoggedOnDevice : bool" Usage="Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs.IsUserLoggedOnDevice" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IDevicePresenceChangeEventArgsPublicNonVirtuals.IsUserLoggedOnDevice</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ Indicates whether the user is logged on to the device.
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Presence.DevicePresenceChangeEventArgs.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IDevicePresenceChangeEventArgsPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

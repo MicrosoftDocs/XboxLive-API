@@ -1,7 +1,9 @@
-<Type Name="Club" FullName="Microsoft.Xbox.Services.Clubs.Club">
+﻿<Type Name="Club" FullName="Microsoft.Xbox.Services.Clubs.Club">
   <TypeSignature Language="C#" Value="public sealed class Club" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Club extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.Club" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Club" />
+  <TypeSignature Language="F#" Value="type Club = class&#xA;    interface __IClubPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubActionSettings ActionSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubActionSettings ActionSettings" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.ActionSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActionSettings As ClubActionSettings" />
+      <MemberSignature Language="F#" Value="member this.ActionSettings : Microsoft.Xbox.Services.Clubs.ClubActionSettings" Usage="Microsoft.Xbox.Services.Clubs.Club.ActionSettings" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.ActionSettings</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -50,7 +57,12 @@ Settings dictating what actions users can take within the club depending on thei
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; AddClubModeratorAsync (string xuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; AddClubModeratorAsync([in]string xuid) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.AddClubModeratorAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddClubModeratorAsync (xuid As String) As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member AddClubModeratorAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.AddClubModeratorAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.AddClubModeratorAsync xuid" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.AddClubModeratorAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -77,7 +89,12 @@ Calls V1 POST clubroster.xboxlive.com/clubs/{clubId}/users/{userId}/roles
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; AddUserToClubAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; AddUserToClubAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.AddUserToClubAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddUserToClubAsync () As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member AddUserToClubAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.AddUserToClubAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.AddUserToClubAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.AddUserToClubAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -106,7 +123,12 @@ Calls V1 PUT clubroster.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; AddUserToClubAsync (string xuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; AddUserToClubAsync([in]string xuid) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.AddUserToClubAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddUserToClubAsync (xuid As String) As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member AddUserToClubAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.AddUserToClubAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.AddUserToClubAsync xuid" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.AddUserToClubAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -146,7 +168,12 @@ Calls V1 PUT clubroster.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public string BannerImageUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BannerImageUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.BannerImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BannerImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.BannerImageUrl : string" Usage="Microsoft.Xbox.Services.Clubs.Club.BannerImageUrl" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.BannerImageUrl</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -164,7 +191,12 @@ Calls V1 PUT clubroster.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; BanUserFromClubAsync (string xuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; BanUserFromClubAsync([in]string xuid) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.BanUserFromClubAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BanUserFromClubAsync (xuid As String) As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member BanUserFromClubAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.BanUserFromClubAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.BanUserFromClubAsync xuid" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.BanUserFromClubAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -188,7 +220,12 @@ Calls V1 POST clubroster.xboxlive.com/clubs/{clubId}/users/{userId}/roles
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime Created { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime Created" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.Created" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Created As DateTime" />
+      <MemberSignature Language="F#" Value="member this.Created : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Clubs.Club.Created" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.Created</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -206,7 +243,12 @@ Calls V1 POST clubroster.xboxlive.com/clubs/{clubId}/users/{userId}/roles
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; FollowClubAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; FollowClubAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.FollowClubAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function FollowClubAsync () As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member FollowClubAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.FollowClubAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.FollowClubAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.FollowClubAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -227,7 +269,12 @@ Calls V1 POST clubroster.xboxlive.com/clubs/{clubId}/users/{userId}/roles
       <MemberSignature Language="C#" Value="public uint FollowersCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 FollowersCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.FollowersCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FollowersCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.FollowersCount : uint32" Usage="Microsoft.Xbox.Services.Clubs.Club.FollowersCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.FollowersCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -245,7 +292,12 @@ Calls V1 POST clubroster.xboxlive.com/clubs/{clubId}/users/{userId}/roles
       <MemberSignature Language="C#" Value="public string FounderXuid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FounderXuid" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.FounderXuid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FounderXuid As String" />
+      <MemberSignature Language="F#" Value="member this.FounderXuid : string" Usage="Microsoft.Xbox.Services.Clubs.Club.FounderXuid" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.FounderXuid</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -263,7 +315,12 @@ Calls V1 POST clubroster.xboxlive.com/clubs/{clubId}/users/{userId}/roles
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord&gt;&gt; GetClubUserPresenceRecordsAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord&gt;&gt; GetClubUserPresenceRecordsAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.GetClubUserPresenceRecordsAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClubUserPresenceRecordsAsync () As IAsyncOperation(Of IVectorView(Of ClubUserPresenceRecord))" />
+      <MemberSignature Language="F#" Value="abstract member GetClubUserPresenceRecordsAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord&gt;&gt;&#xA;override this.GetClubUserPresenceRecordsAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubUserPresenceRecord&gt;&gt;" Usage="club.GetClubUserPresenceRecordsAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.GetClubUserPresenceRecordsAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -284,7 +341,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/clubpresence
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.ClubPresenceCounts&gt; GetPresenceCountsAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Clubs.ClubPresenceCounts&gt; GetPresenceCountsAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.GetPresenceCountsAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPresenceCountsAsync () As IAsyncOperation(Of ClubPresenceCounts)" />
+      <MemberSignature Language="F#" Value="abstract member GetPresenceCountsAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.ClubPresenceCounts&gt;&#xA;override this.GetPresenceCountsAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.ClubPresenceCounts&gt;" Usage="club.GetPresenceCountsAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.GetPresenceCountsAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -305,7 +367,12 @@ Calls V1 GET clubpresence.xboxlive.com/clubs/{clubId}/users/count
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;&gt; GetRoleRecordsAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;&gt; GetRoleRecordsAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.GetRoleRecordsAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRoleRecordsAsync () As IAsyncOperation(Of IVectorView(Of ClubRoleRecord))" />
+      <MemberSignature Language="F#" Value="abstract member GetRoleRecordsAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;&gt;&#xA;override this.GetRoleRecordsAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;&gt;" Usage="club.GetRoleRecordsAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.GetRoleRecordsAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -334,7 +401,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Xuid{xuid}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;&gt; GetRoleRecordsAsync (string xuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;&gt; GetRoleRecordsAsync([in]string xuid) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.GetRoleRecordsAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRoleRecordsAsync (xuid As String) As IAsyncOperation(Of IVectorView(Of ClubRoleRecord))" />
+      <MemberSignature Language="F#" Value="abstract member GetRoleRecordsAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;&gt;&#xA;override this.GetRoleRecordsAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRoleRecord&gt;&gt;" Usage="club.GetRoleRecordsAsync xuid" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.GetRoleRecordsAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -366,7 +438,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Xuid{xuid}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; GetRolesAsync (string xuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; GetRolesAsync([in]string xuid) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.GetRolesAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRolesAsync (xuid As String) As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member GetRolesAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.GetRolesAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.GetRolesAsync xuid" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.GetRolesAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -393,7 +470,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Xuid{xuid}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.ClubRoster&gt; GetRosterAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Clubs.ClubRoster&gt; GetRosterAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.GetRosterAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRosterAsync () As IAsyncOperation(Of ClubRoster)" />
+      <MemberSignature Language="F#" Value="abstract member GetRosterAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.ClubRoster&gt;&#xA;override this.GetRosterAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Clubs.ClubRoster&gt;" Usage="club.GetRosterAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.GetRosterAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -419,7 +501,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public string GlyphImageUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GlyphImageUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.GlyphImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlyphImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.GlyphImageUrl : string" Usage="Microsoft.Xbox.Services.Clubs.Club.GlyphImageUrl" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.GlyphImageUrl</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -437,7 +524,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Xbox.Services.Clubs.Club.Id" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.Id</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -455,7 +547,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public bool IsClubSuspended { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClubSuspended" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.IsClubSuspended" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClubSuspended As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsClubSuspended : bool" Usage="Microsoft.Xbox.Services.Clubs.Club.IsClubSuspended" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.IsClubSuspended</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -473,7 +570,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public uint MembersCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MembersCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.MembersCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MembersCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MembersCount : uint32" Usage="Microsoft.Xbox.Services.Clubs.Club.MembersCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.MembersCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -491,7 +593,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public uint ModeratorsCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ModeratorsCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.ModeratorsCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModeratorsCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.ModeratorsCount : uint32" Usage="Microsoft.Xbox.Services.Clubs.Club.ModeratorsCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.ModeratorsCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -509,7 +616,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public string Owner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Owner" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As String" />
+      <MemberSignature Language="F#" Value="member this.Owner : string" Usage="Microsoft.Xbox.Services.Clubs.Club.Owner" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.Owner</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -527,7 +639,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public uint PresenceCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 PresenceCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.PresenceCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresenceCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.PresenceCount : uint32" Usage="Microsoft.Xbox.Services.Clubs.Club.PresenceCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.PresenceCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -545,7 +662,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public uint PresenceTodayCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 PresenceTodayCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.PresenceTodayCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresenceTodayCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.PresenceTodayCount : uint32" Usage="Microsoft.Xbox.Services.Clubs.Club.PresenceTodayCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.PresenceTodayCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -563,7 +685,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubProfile Profile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubProfile Profile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.Profile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Profile As ClubProfile" />
+      <MemberSignature Language="F#" Value="member this.Profile : Microsoft.Xbox.Services.Clubs.ClubProfile" Usage="Microsoft.Xbox.Services.Clubs.Club.Profile" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.Profile</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -581,7 +708,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public uint RecommendedCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 RecommendedCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.RecommendedCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecommendedCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.RecommendedCount : uint32" Usage="Microsoft.Xbox.Services.Clubs.Club.RecommendedCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.RecommendedCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -599,7 +731,12 @@ Calls V4 GET clubhub.xboxlive.com/clubs/Ids{clubId}/decoration/roster
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; RemoveClubModeratorAsync (string xuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; RemoveClubModeratorAsync([in]string xuid) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.RemoveClubModeratorAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveClubModeratorAsync (xuid As String) As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member RemoveClubModeratorAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.RemoveClubModeratorAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.RemoveClubModeratorAsync xuid" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.RemoveClubModeratorAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -626,7 +763,12 @@ Calls V1 DELETE clubroster.xboxlive.com/clubs/{clubId}/users/{userId}/roles/Mode
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; RemoveUserFromClubAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; RemoveUserFromClubAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.RemoveUserFromClubAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveUserFromClubAsync () As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member RemoveUserFromClubAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.RemoveUserFromClubAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.RemoveUserFromClubAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.RemoveUserFromClubAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -658,7 +800,12 @@ Calls V1 DELETE clubroster.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; RemoveUserFromClubAsync (string xuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; RemoveUserFromClubAsync([in]string xuid) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.RemoveUserFromClubAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveUserFromClubAsync (xuid As String) As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member RemoveUserFromClubAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.RemoveUserFromClubAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.RemoveUserFromClubAsync xuid" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.RemoveUserFromClubAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -691,7 +838,12 @@ Calls V1 DELETE clubroster.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction RenameClubAsync (string newName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction RenameClubAsync([in]string newName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.RenameClubAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RenameClubAsync (newName As String) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member RenameClubAsync : string -&gt; Windows.Foundation.IAsyncAction&#xA;override this.RenameClubAsync : string -&gt; Windows.Foundation.IAsyncAction" Usage="club.RenameClubAsync newName" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.RenameClubAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -720,7 +872,12 @@ Calls V1 POST clubaccounts.xboxlive.com/clubs/{clubId}
       <MemberSignature Language="C#" Value="public uint ReportCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ReportCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.ReportCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReportCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.ReportCount : uint32" Usage="Microsoft.Xbox.Services.Clubs.Club.ReportCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.ReportCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -738,7 +895,12 @@ Calls V1 POST clubaccounts.xboxlive.com/clubs/{clubId}
       <MemberSignature Language="C#" Value="public uint ReporteItemsCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ReporteItemsCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.ReporteItemsCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReporteItemsCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.ReporteItemsCount : uint32" Usage="Microsoft.Xbox.Services.Clubs.Club.ReporteItemsCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.ReporteItemsCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -756,7 +918,12 @@ Calls V1 POST clubaccounts.xboxlive.com/clubs/{clubId}
       <MemberSignature Language="C#" Value="public uint RequestedToJoinCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 RequestedToJoinCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.RequestedToJoinCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestedToJoinCount As UInteger" />
+      <MemberSignature Language="F#" Value="member this.RequestedToJoinCount : uint32" Usage="Microsoft.Xbox.Services.Clubs.Club.RequestedToJoinCount" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.RequestedToJoinCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -774,7 +941,12 @@ Calls V1 POST clubaccounts.xboxlive.com/clubs/{clubId}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SetPresenceWithinClubAsync (Microsoft.Xbox.Services.Clubs.ClubUserPresence presence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SetPresenceWithinClubAsync([in]valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence presence) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.SetPresenceWithinClubAsync(Microsoft.Xbox.Services.Clubs.ClubUserPresence)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetPresenceWithinClubAsync (presence As ClubUserPresence) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member SetPresenceWithinClubAsync : Microsoft.Xbox.Services.Clubs.ClubUserPresence -&gt; Windows.Foundation.IAsyncAction&#xA;override this.SetPresenceWithinClubAsync : Microsoft.Xbox.Services.Clubs.ClubUserPresence -&gt; Windows.Foundation.IAsyncAction" Usage="club.SetPresenceWithinClubAsync presence" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.SetPresenceWithinClubAsync(Microsoft.Xbox.Services.Clubs.ClubUserPresence)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -801,7 +973,12 @@ Calls V1 POST clubpresence.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public string ShortName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ShortName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.ShortName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShortName As String" />
+      <MemberSignature Language="F#" Value="member this.ShortName : string" Usage="Microsoft.Xbox.Services.Clubs.Club.ShortName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.ShortName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -819,7 +996,12 @@ Calls V1 POST clubpresence.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime SuspendedUntil { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime SuspendedUntil" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.SuspendedUntil" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SuspendedUntil As DateTime" />
+      <MemberSignature Language="F#" Value="member this.SuspendedUntil : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Clubs.Club.SuspendedUntil" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.SuspendedUntil</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -837,7 +1019,12 @@ Calls V1 POST clubpresence.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public string TitleFamilyId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TitleFamilyId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.TitleFamilyId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleFamilyId As String" />
+      <MemberSignature Language="F#" Value="member this.TitleFamilyId : string" Usage="Microsoft.Xbox.Services.Clubs.Club.TitleFamilyId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.TitleFamilyId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -855,7 +1042,12 @@ Calls V1 POST clubpresence.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public string TitleFamilyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TitleFamilyName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.TitleFamilyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleFamilyName As String" />
+      <MemberSignature Language="F#" Value="member this.TitleFamilyName : string" Usage="Microsoft.Xbox.Services.Clubs.Club.TitleFamilyName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.TitleFamilyName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -873,7 +1065,12 @@ Calls V1 POST clubpresence.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Clubs.ClubType Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As ClubType" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Xbox.Services.Clubs.ClubType" Usage="Microsoft.Xbox.Services.Clubs.Club.Type" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.Type</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -891,7 +1088,12 @@ Calls V1 POST clubpresence.xboxlive.com/clubs/{clubId}/users/{userId}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; UnbanUserFromClubAsync (string xuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; UnbanUserFromClubAsync([in]string xuid) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.UnbanUserFromClubAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UnbanUserFromClubAsync (xuid As String) As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member UnbanUserFromClubAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.UnbanUserFromClubAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.UnbanUserFromClubAsync xuid" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.UnbanUserFromClubAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -920,7 +1122,12 @@ Calls V1 DELETE clubroster.xboxlive.com/clubs/{clubId}/users/{userId}/roles/Bann
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; UnfollowClubAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt; UnfollowClubAsync() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Clubs.Club.UnfollowClubAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function UnfollowClubAsync () As IAsyncOperation(Of IVectorView(Of ClubRole))" />
+      <MemberSignature Language="F#" Value="abstract member UnfollowClubAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;&#xA;override this.UnfollowClubAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;&gt;" Usage="club.UnfollowClubAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.UnfollowClubAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -941,7 +1148,12 @@ Calls V1 DELETE clubroster.xboxlive.com/clubs/{clubId}/users/{userId}/roles/Foll
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt; ViewerRoles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt; ViewerRoles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.Club.ViewerRoles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewerRoles As IVectorView(Of ClubRole)" />
+      <MemberSignature Language="F#" Value="member this.ViewerRoles : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;" Usage="Microsoft.Xbox.Services.Clubs.Club.ViewerRoles" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubPublicNonVirtuals.ViewerRoles</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

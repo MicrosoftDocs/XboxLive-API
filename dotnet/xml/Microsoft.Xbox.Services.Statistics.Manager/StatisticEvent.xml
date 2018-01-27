@@ -1,7 +1,9 @@
-<Type Name="StatisticEvent" FullName="Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent">
+﻿<Type Name="StatisticEvent" FullName="Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent">
   <TypeSignature Language="C#" Value="public sealed class StatisticEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatisticEvent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StatisticEvent" />
+  <TypeSignature Language="F#" Value="type StatisticEvent = class&#xA;    interface __IStatisticEventPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public int ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ErrorCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent.ErrorCode" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticEventPublicNonVirtuals.ErrorCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -50,7 +57,12 @@ The error code indicating the result of the operation.
       <MemberSignature Language="C#" Value="public string ErrorMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorMessage As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string" Usage="Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent.ErrorMessage" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticEventPublicNonVirtuals.ErrorMessage</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -71,7 +83,12 @@ It is not localized, so only use for debugging purposes.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs EventArgs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs EventArgs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent.EventArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventArgs As StatisticEventArgs" />
+      <MemberSignature Language="F#" Value="member this.EventArgs : Microsoft.Xbox.Services.Statistics.Manager.StatisticEventArgs" Usage="Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent.EventArgs" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticEventPublicNonVirtuals.EventArgs</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -91,7 +108,12 @@ The data of event from stats manager
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType EventType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType EventType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent.EventType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventType As StatisticEventType" />
+      <MemberSignature Language="F#" Value="member this.EventType : Microsoft.Xbox.Services.Statistics.Manager.StatisticEventType" Usage="Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent.EventType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticEventPublicNonVirtuals.EventType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ The type of event the statistic is
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.System.XboxLiveUser User { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.System.XboxLiveUser User" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent.User" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As XboxLiveUser" />
+      <MemberSignature Language="F#" Value="member this.User : Microsoft.Xbox.Services.System.XboxLiveUser" Usage="Microsoft.Xbox.Services.Statistics.Manager.StatisticEvent.User" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Statistics.Manager.__IStatisticEventPublicNonVirtuals.User</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

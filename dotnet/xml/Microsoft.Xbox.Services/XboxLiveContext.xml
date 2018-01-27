@@ -1,7 +1,9 @@
-<Type Name="XboxLiveContext" FullName="Microsoft.Xbox.Services.XboxLiveContext">
+﻿<Type Name="XboxLiveContext" FullName="Microsoft.Xbox.Services.XboxLiveContext">
   <TypeSignature Language="C#" Value="public sealed class XboxLiveContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxLiveContext" />
+  <TypeSignature Language="F#" Value="type XboxLiveContext = class&#xA;    interface __IXboxLiveContextPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -37,6 +39,8 @@ Note: the XboxLiveContext is unique per instance. Changing state on one instance
       <MemberSignature Language="C#" Value="public XboxLiveContext (Microsoft.Xbox.Services.System.XboxLiveUser user);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]class Microsoft.Xbox.Services.System.XboxLiveUser user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveContext.#ctor(Microsoft.Xbox.Services.System.XboxLiveUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (user As XboxLiveUser)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.XboxLiveContext : Microsoft.Xbox.Services.System.XboxLiveUser -&gt; Microsoft.Xbox.Services.XboxLiveContext" Usage="new Microsoft.Xbox.Services.XboxLiveContext user" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -60,7 +64,12 @@ Note: the XboxLiveContext is unique per instance. Changing state on one instance
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Achievements.AchievementService AchievementService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Achievements.AchievementService AchievementService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.AchievementService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AchievementService As AchievementService" />
+      <MemberSignature Language="F#" Value="member this.AchievementService : Microsoft.Xbox.Services.Achievements.AchievementService" Usage="Microsoft.Xbox.Services.XboxLiveContext.AchievementService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.AchievementService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -80,7 +89,12 @@ Returns object containing access methods to the Xbox Achievement service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.XboxLiveAppConfiguration AppConfig { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.XboxLiveAppConfiguration AppConfig" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.AppConfig" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppConfig As XboxLiveAppConfiguration" />
+      <MemberSignature Language="F#" Value="member this.AppConfig : Microsoft.Xbox.Services.XboxLiveAppConfiguration" Usage="Microsoft.Xbox.Services.XboxLiveContext.AppConfig" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.AppConfig</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -100,7 +114,12 @@ Returns an object containing Xbox Live app config such as title ID
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubsService ClubsService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Clubs.ClubsService ClubsService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.ClubsService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClubsService As ClubsService" />
+      <MemberSignature Language="F#" Value="member this.ClubsService : Microsoft.Xbox.Services.Clubs.ClubsService" Usage="Microsoft.Xbox.Services.XboxLiveContext.ClubsService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.ClubsService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -120,7 +139,12 @@ Returns object containing access methods to the title clubs service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService ContextualSearchService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService ContextualSearchService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.ContextualSearchService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextualSearchService As ContextualSearchService" />
+      <MemberSignature Language="F#" Value="member this.ContextualSearchService : Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService" Usage="Microsoft.Xbox.Services.XboxLiveContext.ContextualSearchService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.ContextualSearchService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -140,7 +164,12 @@ Returns object containing access methods to the contextual search service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Events.EventsService EventsService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Events.EventsService EventsService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.EventsService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventsService As EventsService" />
+      <MemberSignature Language="F#" Value="member this.EventsService : Microsoft.Xbox.Services.Events.EventsService" Usage="Microsoft.Xbox.Services.XboxLiveContext.EventsService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.EventsService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -160,7 +189,12 @@ Returns object containing access methods to the events service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService GameServerPlatformService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService GameServerPlatformService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.GameServerPlatformService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameServerPlatformService As GameServerPlatformService" />
+      <MemberSignature Language="F#" Value="member this.GameServerPlatformService : Microsoft.Xbox.Services.GameServerPlatform.GameServerPlatformService" Usage="Microsoft.Xbox.Services.XboxLiveContext.GameServerPlatformService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.GameServerPlatformService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -180,7 +214,12 @@ Returns object containing access methods to the GameServerPlatform service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Leaderboard.LeaderboardService LeaderboardService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Leaderboard.LeaderboardService LeaderboardService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.LeaderboardService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LeaderboardService As LeaderboardService" />
+      <MemberSignature Language="F#" Value="member this.LeaderboardService : Microsoft.Xbox.Services.Leaderboard.LeaderboardService" Usage="Microsoft.Xbox.Services.XboxLiveContext.LeaderboardService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.LeaderboardService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -200,7 +239,12 @@ Returns object containing access methods to the Xbox Leaderboard service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Matchmaking.MatchmakingService MatchmakingService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Matchmaking.MatchmakingService MatchmakingService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.MatchmakingService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchmakingService As MatchmakingService" />
+      <MemberSignature Language="F#" Value="member this.MatchmakingService : Microsoft.Xbox.Services.Matchmaking.MatchmakingService" Usage="Microsoft.Xbox.Services.XboxLiveContext.MatchmakingService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.MatchmakingService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -220,7 +264,12 @@ Returns object containing access methods to the Xbox Matchmaking service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerService MultiplayerService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerService MultiplayerService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.MultiplayerService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MultiplayerService As MultiplayerService" />
+      <MemberSignature Language="F#" Value="member this.MultiplayerService : Microsoft.Xbox.Services.Multiplayer.MultiplayerService" Usage="Microsoft.Xbox.Services.XboxLiveContext.MultiplayerService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.MultiplayerService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -240,7 +289,12 @@ Returns object containing access methods to the Xbox Multiplayer service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.PresenceService PresenceService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Presence.PresenceService PresenceService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.PresenceService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresenceService As PresenceService" />
+      <MemberSignature Language="F#" Value="member this.PresenceService : Microsoft.Xbox.Services.Presence.PresenceService" Usage="Microsoft.Xbox.Services.XboxLiveContext.PresenceService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.PresenceService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -260,7 +314,12 @@ Returns object containing access methods to the Presence service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Privacy.PrivacyService PrivacyService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Privacy.PrivacyService PrivacyService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.PrivacyService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivacyService As PrivacyService" />
+      <MemberSignature Language="F#" Value="member this.PrivacyService : Microsoft.Xbox.Services.Privacy.PrivacyService" Usage="Microsoft.Xbox.Services.XboxLiveContext.PrivacyService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.PrivacyService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -280,7 +339,12 @@ Returns object containing access methods to the Privacy service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.ProfileService ProfileService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Social.ProfileService ProfileService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.ProfileService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProfileService As ProfileService" />
+      <MemberSignature Language="F#" Value="member this.ProfileService : Microsoft.Xbox.Services.Social.ProfileService" Usage="Microsoft.Xbox.Services.XboxLiveContext.ProfileService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.ProfileService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -300,7 +364,12 @@ Returns object containing access methods to the Xbox Profile service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityService RealTimeActivityService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityService RealTimeActivityService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.RealTimeActivityService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RealTimeActivityService As RealTimeActivityService" />
+      <MemberSignature Language="F#" Value="member this.RealTimeActivityService : Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityService" Usage="Microsoft.Xbox.Services.XboxLiveContext.RealTimeActivityService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.RealTimeActivityService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -320,7 +389,12 @@ Returns object containing access methods to the Xbox Real Time Activity service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.ReputationService ReputationService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Social.ReputationService ReputationService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.ReputationService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReputationService As ReputationService" />
+      <MemberSignature Language="F#" Value="member this.ReputationService : Microsoft.Xbox.Services.Social.ReputationService" Usage="Microsoft.Xbox.Services.XboxLiveContext.ReputationService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.ReputationService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -340,7 +414,12 @@ Returns object containing access methods to the Xbox Reputation service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.XboxLiveContextSettings Settings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.XboxLiveContextSettings Settings" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.Settings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Settings As XboxLiveContextSettings" />
+      <MemberSignature Language="F#" Value="member this.Settings : Microsoft.Xbox.Services.XboxLiveContextSettings" Usage="Microsoft.Xbox.Services.XboxLiveContext.Settings" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.Settings</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -360,7 +439,12 @@ Returns an object containing settings that apply to all REST calls made such as 
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.SocialService SocialService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Social.SocialService SocialService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.SocialService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SocialService As SocialService" />
+      <MemberSignature Language="F#" Value="member this.SocialService : Microsoft.Xbox.Services.Social.SocialService" Usage="Microsoft.Xbox.Services.XboxLiveContext.SocialService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.SocialService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -380,7 +464,12 @@ Returns object containing access methods to the Xbox Social service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.System.StringService StringService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.System.StringService StringService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.StringService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StringService As StringService" />
+      <MemberSignature Language="F#" Value="member this.StringService : Microsoft.Xbox.Services.System.StringService" Usage="Microsoft.Xbox.Services.XboxLiveContext.StringService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.StringService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -400,7 +489,12 @@ Returns object containing access methods to the Xbox String service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.TitleStorage.TitleStorageService TitleStorageService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.TitleStorage.TitleStorageService TitleStorageService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.TitleStorageService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleStorageService As TitleStorageService" />
+      <MemberSignature Language="F#" Value="member this.TitleStorageService : Microsoft.Xbox.Services.TitleStorage.TitleStorageService" Usage="Microsoft.Xbox.Services.XboxLiveContext.TitleStorageService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.TitleStorageService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -420,7 +514,12 @@ Returns object containing access methods to the TitleStorage service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentService TournamentService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Tournaments.TournamentService TournamentService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.TournamentService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TournamentService As TournamentService" />
+      <MemberSignature Language="F#" Value="member this.TournamentService : Microsoft.Xbox.Services.Tournaments.TournamentService" Usage="Microsoft.Xbox.Services.XboxLiveContext.TournamentService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.TournamentService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -440,7 +539,12 @@ Returns object containing access methods to the Xbox Tournament service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.System.XboxLiveUser User { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.System.XboxLiveUser User" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.User" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As XboxLiveUser" />
+      <MemberSignature Language="F#" Value="member this.User : Microsoft.Xbox.Services.System.XboxLiveUser" Usage="Microsoft.Xbox.Services.XboxLiveContext.User" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.User</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -460,7 +564,12 @@ Returns the associated system user.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.UserStatistics.UserStatisticsService UserStatisticsService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.UserStatistics.UserStatisticsService UserStatisticsService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContext.UserStatisticsService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserStatisticsService As UserStatisticsService" />
+      <MemberSignature Language="F#" Value="member this.UserStatisticsService : Microsoft.Xbox.Services.UserStatistics.UserStatisticsService" Usage="Microsoft.Xbox.Services.XboxLiveContext.UserStatisticsService" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextPublicNonVirtuals.UserStatisticsService</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

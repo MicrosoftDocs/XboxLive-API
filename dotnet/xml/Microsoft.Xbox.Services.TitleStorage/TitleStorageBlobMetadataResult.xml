@@ -1,7 +1,9 @@
-<Type Name="TitleStorageBlobMetadataResult" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult">
+﻿<Type Name="TitleStorageBlobMetadataResult" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult">
   <TypeSignature Language="C#" Value="public sealed class TitleStorageBlobMetadataResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleStorageBlobMetadataResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitleStorageBlobMetadataResult" />
+  <TypeSignature Language="F#" Value="type TitleStorageBlobMetadataResult = class&#xA;    interface __ITitleStorageBlobMetadataResultPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Metadata about blob data returned from the cloud.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt; GetNextAsync (uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt; GetNextAsync([in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult.GetNextAsync(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextAsync (maxItems As UInteger) As IAsyncOperation(Of TitleStorageBlobMetadataResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetNextAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt;&#xA;override this.GetNextAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt;" Usage="titleStorageBlobMetadataResult.GetNextAsync maxItems" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataResultPublicNonVirtuals.GetNextAsync(System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -56,7 +63,12 @@ Gets the next page of blob metadata results.
       <MemberSignature Language="C#" Value="public bool HasNext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasNext" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult.HasNext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasNext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasNext : bool" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult.HasNext" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataResultPublicNonVirtuals.HasNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -76,7 +88,12 @@ Indicates if there is additional data to retrieve from a GetNextAsync call
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt; Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt; Items" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IVectorView(Of TitleStorageBlobMetadata)" />
+      <MemberSignature Language="F#" Value="member this.Items : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt;" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult.Items" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataResultPublicNonVirtuals.Items</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

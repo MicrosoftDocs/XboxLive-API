@@ -1,7 +1,9 @@
-<Type Name="XboxLiveContextSettings" FullName="Microsoft.Xbox.Services.XboxLiveContextSettings">
+﻿<Type Name="XboxLiveContextSettings" FullName="Microsoft.Xbox.Services.XboxLiveContextSettings">
   <TypeSignature Language="C#" Value="public sealed class XboxLiveContextSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveContextSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveContextSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxLiveContextSettings" />
+  <TypeSignature Language="F#" Value="type XboxLiveContextSettings = class&#xA;    interface __IXboxLiveContextSettingsPublicNonVirtuals&#xA;    interface __IXboxLiveContextSettingsProtectedNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -35,6 +37,7 @@ Represents settings for an HTTP call.
       <MemberSignature Language="C#" Value="public XboxLiveContextSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveContextSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -55,7 +58,12 @@ Represents settings for an HTTP call.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel DiagnosticsTraceLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel DiagnosticsTraceLevel" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.DiagnosticsTraceLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiagnosticsTraceLevel As XboxServicesDiagnosticsTraceLevel" />
+      <MemberSignature Language="F#" Value="member this.DiagnosticsTraceLevel : Microsoft.Xbox.Services.XboxServicesDiagnosticsTraceLevel with get, set" Usage="Microsoft.Xbox.Services.XboxLiveContextSettings.DiagnosticsTraceLevel" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.DiagnosticsTraceLevel</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -80,7 +88,12 @@ Indicates the level of debug messages to send to the debugger's Output window.
       <MemberSignature Language="C#" Value="public void DisableAssertsForMaximumNumberOfWebsocketsActivated (Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting setting);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisableAssertsForMaximumNumberOfWebsocketsActivated([in]valuetype Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting setting) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveContextSettings.DisableAssertsForMaximumNumberOfWebsocketsActivated(Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisableAssertsForMaximumNumberOfWebsocketsActivated (setting As XboxLiveContextRecommendedSetting)" />
+      <MemberSignature Language="F#" Value="abstract member DisableAssertsForMaximumNumberOfWebsocketsActivated : Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting -&gt; unit&#xA;override this.DisableAssertsForMaximumNumberOfWebsocketsActivated : Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting -&gt; unit" Usage="xboxLiveContextSettings.DisableAssertsForMaximumNumberOfWebsocketsActivated setting" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.DisableAssertsForMaximumNumberOfWebsocketsActivated(Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -105,7 +118,12 @@ as a temporary way to get unblocked while in early stages of game development.
       <MemberSignature Language="C#" Value="public void DisableAssertsForXboxLiveThrottlingInDevSandboxes (Microsoft.Xbox.Services.XboxLiveContextThrottleSetting setting);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisableAssertsForXboxLiveThrottlingInDevSandboxes([in]valuetype Microsoft.Xbox.Services.XboxLiveContextThrottleSetting setting) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.XboxLiveContextSettings.DisableAssertsForXboxLiveThrottlingInDevSandboxes(Microsoft.Xbox.Services.XboxLiveContextThrottleSetting)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisableAssertsForXboxLiveThrottlingInDevSandboxes (setting As XboxLiveContextThrottleSetting)" />
+      <MemberSignature Language="F#" Value="abstract member DisableAssertsForXboxLiveThrottlingInDevSandboxes : Microsoft.Xbox.Services.XboxLiveContextThrottleSetting -&gt; unit&#xA;override this.DisableAssertsForXboxLiveThrottlingInDevSandboxes : Microsoft.Xbox.Services.XboxLiveContextThrottleSetting -&gt; unit" Usage="xboxLiveContextSettings.DisableAssertsForXboxLiveThrottlingInDevSandboxes setting" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.DisableAssertsForXboxLiveThrottlingInDevSandboxes(Microsoft.Xbox.Services.XboxLiveContextThrottleSetting)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -131,7 +149,12 @@ as a temporary way to get unblocked while in early stages of game development.
       <MemberSignature Language="C#" Value="public bool EnableServiceCallRoutedEvents { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableServiceCallRoutedEvents" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.EnableServiceCallRoutedEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableServiceCallRoutedEvents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableServiceCallRoutedEvents : bool with get, set" Usage="Microsoft.Xbox.Services.XboxLiveContextSettings.EnableServiceCallRoutedEvents" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.EnableServiceCallRoutedEvents</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -151,7 +174,12 @@ Indicates if events should be generated for ServiceCallRouted.
       <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan HttpRetryDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan HttpRetryDelay" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.HttpRetryDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpRetryDelay As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.HttpRetryDelay : Windows.Foundation.TimeSpan with get, set" Usage="Microsoft.Xbox.Services.XboxLiveContextSettings.HttpRetryDelay" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.HttpRetryDelay</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -189,7 +217,12 @@ Idempotent service calls are retried when a network error occurs or the server r
       <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan HttpTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan HttpTimeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.HttpTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.HttpTimeout : Windows.Foundation.TimeSpan with get, set" Usage="Microsoft.Xbox.Services.XboxLiveContextSettings.HttpTimeout" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.HttpTimeout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -210,7 +243,12 @@ This means that calls will be more deterministic about the time window they retu
       <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan HttpTimeoutWindow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan HttpTimeoutWindow" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.HttpTimeoutWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpTimeoutWindow As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.HttpTimeoutWindow : Windows.Foundation.TimeSpan with get, set" Usage="Microsoft.Xbox.Services.XboxLiveContextSettings.HttpTimeoutWindow" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.HttpTimeoutWindow</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -241,7 +279,12 @@ Idempotent service calls are retried when a network error occurs or the server r
       <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan LongHttpTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan LongHttpTimeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.LongHttpTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property LongHttpTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.LongHttpTimeout : Windows.Foundation.TimeSpan with get, set" Usage="Microsoft.Xbox.Services.XboxLiveContextSettings.LongHttpTimeout" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.LongHttpTimeout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -263,7 +306,12 @@ Take care when setting this to smaller values as some calls like Title Storage m
       <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs&gt; ServiceCallRouted;" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs&gt; ServiceCallRouted" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.XboxLiveContextSettings.ServiceCallRouted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ServiceCallRouted As EventHandler(Of XboxServiceCallRoutedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ServiceCallRouted : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs&gt; " Usage="member this.ServiceCallRouted : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.XboxServiceCallRoutedEventArgs&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.ServiceCallRouted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -282,7 +330,12 @@ Registers for all service call notifications.  Event handlers will receive an Xb
       <MemberSignature Language="C#" Value="public bool UseCoreDispatcherForEventRouting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseCoreDispatcherForEventRouting" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.UseCoreDispatcherForEventRouting" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseCoreDispatcherForEventRouting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseCoreDispatcherForEventRouting : bool with get, set" Usage="Microsoft.Xbox.Services.XboxLiveContextSettings.UseCoreDispatcherForEventRouting" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.UseCoreDispatcherForEventRouting</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -303,7 +356,12 @@ This is required to be false if using events with JavaScript.
       <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan WebsocketTimeoutWindow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan WebsocketTimeoutWindow" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.XboxLiveContextSettings.WebsocketTimeoutWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Property WebsocketTimeoutWindow As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.WebsocketTimeoutWindow : Windows.Foundation.TimeSpan with get, set" Usage="Microsoft.Xbox.Services.XboxLiveContextSettings.WebsocketTimeoutWindow" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.__IXboxLiveContextSettingsPublicNonVirtuals.WebsocketTimeoutWindow</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

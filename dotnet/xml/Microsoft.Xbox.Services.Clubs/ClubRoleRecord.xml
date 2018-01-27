@@ -1,7 +1,9 @@
-<Type Name="ClubRoleRecord" FullName="Microsoft.Xbox.Services.Clubs.ClubRoleRecord">
+﻿<Type Name="ClubRoleRecord" FullName="Microsoft.Xbox.Services.Clubs.ClubRoleRecord">
   <TypeSignature Language="C#" Value="public sealed class ClubRoleRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubRoleRecord extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubRoleRecord" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClubRoleRecord" />
+  <TypeSignature Language="F#" Value="type ClubRoleRecord = class&#xA;    interface __IClubRoleRecordPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public string ActorXuid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ActorXuid" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoleRecord.ActorXuid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActorXuid As String" />
+      <MemberSignature Language="F#" Value="member this.ActorXuid : string" Usage="Microsoft.Xbox.Services.Clubs.ClubRoleRecord.ActorXuid" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRoleRecordPublicNonVirtuals.ActorXuid</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -48,7 +55,12 @@
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime CreatedDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime CreatedDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoleRecord.CreatedDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CreatedDate : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Clubs.ClubRoleRecord.CreatedDate" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRoleRecordPublicNonVirtuals.CreatedDate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -66,7 +78,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubRole Role { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Clubs.ClubRole Role" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoleRecord.Role" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role As ClubRole" />
+      <MemberSignature Language="F#" Value="member this.Role : Microsoft.Xbox.Services.Clubs.ClubRole" Usage="Microsoft.Xbox.Services.Clubs.ClubRoleRecord.Role" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRoleRecordPublicNonVirtuals.Role</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -84,7 +101,12 @@
       <MemberSignature Language="C#" Value="public string Xuid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Xuid" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubRoleRecord.Xuid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Xuid As String" />
+      <MemberSignature Language="F#" Value="member this.Xuid : string" Usage="Microsoft.Xbox.Services.Clubs.ClubRoleRecord.Xuid" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubRoleRecordPublicNonVirtuals.Xuid</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

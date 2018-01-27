@@ -1,7 +1,9 @@
-<Type Name="TitleCallableUI" FullName="Microsoft.Xbox.Services.System.TitleCallableUI">
+﻿<Type Name="TitleCallableUI" FullName="Microsoft.Xbox.Services.System.TitleCallableUI">
   <TypeSignature Language="C#" Value="public sealed class TitleCallableUI" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleCallableUI extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.TitleCallableUI" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitleCallableUI" />
+  <TypeSignature Language="F#" Value="type TitleCallableUI = class&#xA;    interface __ITitleCallableUIPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -35,6 +37,8 @@ Represents a class that contains static functions used for displaying stock UI d
       <MemberSignature Language="C#" Value="public static bool CheckGamingPrivilegeSilently (Microsoft.Xbox.Services.System.GamingPrivilege privilege);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckGamingPrivilegeSilently([in]valuetype Microsoft.Xbox.Services.System.GamingPrivilege privilege) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeSilently(Microsoft.Xbox.Services.System.GamingPrivilege)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckGamingPrivilegeSilently (privilege As GamingPrivilege) As Boolean" />
+      <MemberSignature Language="F#" Value="static member CheckGamingPrivilegeSilently : Microsoft.Xbox.Services.System.GamingPrivilege -&gt; bool" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeSilently privilege" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -61,6 +65,7 @@ A boolean which is true if the current user has the privilege.
       <MemberSignature Language="C#" Value="public static bool CheckGamingPrivilegeSilentlyForUser (Microsoft.Xbox.Services.System.GamingPrivilege privilege, Windows.System.User user);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckGamingPrivilegeSilentlyForUser([in]valuetype Microsoft.Xbox.Services.System.GamingPrivilege privilege, [in]class Windows.System.User user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeSilentlyForUser(Microsoft.Xbox.Services.System.GamingPrivilege,Windows.System.User)" />
+      <MemberSignature Language="F#" Value="static member CheckGamingPrivilegeSilentlyForUser : Microsoft.Xbox.Services.System.GamingPrivilege * Windows.System.User -&gt; bool" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeSilentlyForUser (privilege, user)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -89,6 +94,8 @@ A boolean which is true if the current user has the privilege.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncOperation&lt;bool&gt; CheckGamingPrivilegeWithUI (Microsoft.Xbox.Services.System.GamingPrivilege privilege, string friendlyMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncOperation`1&lt;bool&gt; CheckGamingPrivilegeWithUI([in]valuetype Microsoft.Xbox.Services.System.GamingPrivilege privilege, [in]string friendlyMessage) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeWithUI(Microsoft.Xbox.Services.System.GamingPrivilege,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckGamingPrivilegeWithUI (privilege As GamingPrivilege, friendlyMessage As String) As IAsyncOperation(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member CheckGamingPrivilegeWithUI : Microsoft.Xbox.Services.System.GamingPrivilege * string -&gt; Windows.Foundation.IAsyncOperation&lt;bool&gt;" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeWithUI (privilege, friendlyMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -119,6 +126,7 @@ A boolean which is true if the current user has the privilege.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncOperation&lt;bool&gt; CheckGamingPrivilegeWithUIForUser (Microsoft.Xbox.Services.System.GamingPrivilege privilege, string friendlyMessage, Windows.System.User user);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncOperation`1&lt;bool&gt; CheckGamingPrivilegeWithUIForUser([in]valuetype Microsoft.Xbox.Services.System.GamingPrivilege privilege, [in]string friendlyMessage, [in]class Windows.System.User user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeWithUIForUser(Microsoft.Xbox.Services.System.GamingPrivilege,System.String,Windows.System.User)" />
+      <MemberSignature Language="F#" Value="static member CheckGamingPrivilegeWithUIForUser : Microsoft.Xbox.Services.System.GamingPrivilege * string * Windows.System.User -&gt; Windows.Foundation.IAsyncOperation&lt;bool&gt;" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.CheckGamingPrivilegeWithUIForUser (privilege, friendlyMessage, user)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -151,6 +159,8 @@ A boolean which is true if the current user has the privilege.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowChangeFriendRelationshipUIAsync (string targetXboxUserId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowChangeFriendRelationshipUIAsync([in]string targetXboxUserId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowChangeFriendRelationshipUIAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ShowChangeFriendRelationshipUIAsync (targetXboxUserId As String) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="static member ShowChangeFriendRelationshipUIAsync : string -&gt; Windows.Foundation.IAsyncAction" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowChangeFriendRelationshipUIAsync targetXboxUserId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -178,6 +188,7 @@ The operation completes when the UI is closed.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowChangeFriendRelationshipUIForUserAsync (string targetXboxUserId, Windows.System.User user);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowChangeFriendRelationshipUIForUserAsync([in]string targetXboxUserId, [in]class Windows.System.User user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowChangeFriendRelationshipUIForUserAsync(System.String,Windows.System.User)" />
+      <MemberSignature Language="F#" Value="static member ShowChangeFriendRelationshipUIForUserAsync : string * Windows.System.User -&gt; Windows.Foundation.IAsyncAction" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowChangeFriendRelationshipUIForUserAsync (targetXboxUserId, user)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -207,6 +218,8 @@ The operation completes when the UI is closed.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowGameInviteUIAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, string contextStringId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowGameInviteUIAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, [in]string contextStringId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ShowGameInviteUIAsync (sessionReference As MultiplayerSessionReference, contextStringId As String) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="static member ShowGameInviteUIAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * string -&gt; Windows.Foundation.IAsyncAction" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIAsync (sessionReference, contextStringId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -241,6 +254,7 @@ The operation completes when the UI is closed.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowGameInviteUIForUserAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, string invitationDisplayText, Windows.System.User user);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowGameInviteUIForUserAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, [in]string invitationDisplayText, [in]class Windows.System.User user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIForUserAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,Windows.System.User)" />
+      <MemberSignature Language="F#" Value="static member ShowGameInviteUIForUserAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * string * Windows.System.User -&gt; Windows.Foundation.IAsyncAction" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIForUserAsync (sessionReference, invitationDisplayText, user)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -285,6 +299,7 @@ The operation completes when the UI is closed.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowGameInviteUIForUserAsync (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, string invitationDisplayText, string contextStringId, Windows.System.User user);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowGameInviteUIForUserAsync([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, [in]string invitationDisplayText, [in]string contextStringId, [in]class Windows.System.User user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIForUserAsync(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,System.String,Windows.System.User)" />
+      <MemberSignature Language="F#" Value="static member ShowGameInviteUIForUserAsync : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * string * string * Windows.System.User -&gt; Windows.Foundation.IAsyncAction" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowGameInviteUIForUserAsync (sessionReference, invitationDisplayText, contextStringId, user)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -333,6 +348,8 @@ The operation completes when the UI is closed.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt; ShowPlayerPickerUI (string promptDisplayText, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, Windows.Foundation.Collections.IVectorView&lt;string&gt; preselectedXboxUserIds, uint minSelectionCount, uint maxSelectionCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;string&gt;&gt; ShowPlayerPickerUI([in]string promptDisplayText, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; preselectedXboxUserIds, [in]unsigned int32 minSelectionCount, [in]unsigned int32 maxSelectionCount) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowPlayerPickerUI(System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{System.String},System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ShowPlayerPickerUI (promptDisplayText As String, xboxUserIds As IVectorView(Of String), preselectedXboxUserIds As IVectorView(Of String), minSelectionCount As UInteger, maxSelectionCount As UInteger) As IAsyncOperation(Of IVectorView(Of String))" />
+      <MemberSignature Language="F#" Value="static member ShowPlayerPickerUI : string * Windows.Foundation.Collections.IVectorView&lt;string&gt; * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt;" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowPlayerPickerUI (promptDisplayText, xboxUserIds, preselectedXboxUserIds, minSelectionCount, maxSelectionCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -363,6 +380,7 @@ The operation completes when the UI is closed.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt; ShowPlayerPickerUIForUser (string promptDisplayText, Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, Windows.Foundation.Collections.IVectorView&lt;string&gt; preselectedXboxUserIds, uint minSelectionCount, uint maxSelectionCount, Windows.System.User user);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;string&gt;&gt; ShowPlayerPickerUIForUser([in]string promptDisplayText, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; preselectedXboxUserIds, [in]unsigned int32 minSelectionCount, [in]unsigned int32 maxSelectionCount, [in]class Windows.System.User user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowPlayerPickerUIForUser(System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{System.String},System.UInt32,System.UInt32,Windows.System.User)" />
+      <MemberSignature Language="F#" Value="static member ShowPlayerPickerUIForUser : string * Windows.Foundation.Collections.IVectorView&lt;string&gt; * Windows.Foundation.Collections.IVectorView&lt;string&gt; * uint32 * uint32 * Windows.System.User -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;string&gt;&gt;" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowPlayerPickerUIForUser (promptDisplayText, xboxUserIds, preselectedXboxUserIds, minSelectionCount, maxSelectionCount, user)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -395,6 +413,8 @@ The operation completes when the UI is closed.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowProfileCardUIAsync (string targetXboxUserId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowProfileCardUIAsync([in]string targetXboxUserId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowProfileCardUIAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ShowProfileCardUIAsync (targetXboxUserId As String) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="static member ShowProfileCardUIAsync : string -&gt; Windows.Foundation.IAsyncAction" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowProfileCardUIAsync targetXboxUserId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -422,6 +442,7 @@ The operation completes when the UI is closed.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowProfileCardUIForUserAsync (string targetXboxUserId, Windows.System.User user);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowProfileCardUIForUserAsync([in]string targetXboxUserId, [in]class Windows.System.User user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowProfileCardUIForUserAsync(System.String,Windows.System.User)" />
+      <MemberSignature Language="F#" Value="static member ShowProfileCardUIForUserAsync : string * Windows.System.User -&gt; Windows.Foundation.IAsyncAction" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowProfileCardUIForUserAsync (targetXboxUserId, user)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -451,6 +472,8 @@ The operation completes when the UI is closed.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowTitleAchievementsUIAsync (uint titleId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowTitleAchievementsUIAsync([in]unsigned int32 titleId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowTitleAchievementsUIAsync(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ShowTitleAchievementsUIAsync (titleId As UInteger) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="static member ShowTitleAchievementsUIAsync : uint32 -&gt; Windows.Foundation.IAsyncAction" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowTitleAchievementsUIAsync titleId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -478,6 +501,7 @@ The operation completes when the UI is closed.
       <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction ShowTitleAchievementsUIForUserAsync (uint titleId, Windows.System.User user);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction ShowTitleAchievementsUIForUserAsync([in]unsigned int32 titleId, [in]class Windows.System.User user) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.System.TitleCallableUI.ShowTitleAchievementsUIForUserAsync(System.UInt32,Windows.System.User)" />
+      <MemberSignature Language="F#" Value="static member ShowTitleAchievementsUIForUserAsync : uint32 * Windows.System.User -&gt; Windows.Foundation.IAsyncAction" Usage="Microsoft.Xbox.Services.System.TitleCallableUI.ShowTitleAchievementsUIForUserAsync (titleId, user)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>

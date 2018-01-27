@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSessionWriteMode" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode">
+﻿<Type Name="MultiplayerSessionWriteMode" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode">
   <TypeSignature Language="C#" Value="public enum MultiplayerSessionWriteMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSessionWriteMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MultiplayerSessionWriteMode" />
+  <TypeSignature Language="F#" Value="type MultiplayerSessionWriteMode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Defines values used to indicate modes in MultiplayerService.WriteSessionAsync ca
       <MemberSignature Language="C#" Value="CreateNew" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode CreateNew = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.CreateNew" />
+      <MemberSignature Language="VB.NET" Value="CreateNew" />
+      <MemberSignature Language="F#" Value="CreateNew = 0" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.CreateNew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values used to indicate modes in MultiplayerService.WriteSessionAsync ca
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Create a new multiplayer session.  Fails with HTTP_E_STATUS_PRECOND_FAILED if the session already exists.
@@ -43,6 +48,8 @@ Create a new multiplayer session.  Fails with HTTP_E_STATUS_PRECOND_FAILED if th
       <MemberSignature Language="C#" Value="SynchronizedUpdate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode SynchronizedUpdate = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.SynchronizedUpdate" />
+      <MemberSignature Language="VB.NET" Value="SynchronizedUpdate" />
+      <MemberSignature Language="F#" Value="SynchronizedUpdate = 3" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.SynchronizedUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -51,6 +58,7 @@ Create a new multiplayer session.  Fails with HTTP_E_STATUS_PRECOND_FAILED if th
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 Updates an existing multiplayer session to resolve any conflict between two devices trying to perform an operation
@@ -63,6 +71,8 @@ the eTag on the server. Fails with the same error code if the session does not e
       <MemberSignature Language="C#" Value="UpdateExisting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode UpdateExisting = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.UpdateExisting" />
+      <MemberSignature Language="VB.NET" Value="UpdateExisting" />
+      <MemberSignature Language="F#" Value="UpdateExisting = 2" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.UpdateExisting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -71,6 +81,7 @@ the eTag on the server. Fails with the same error code if the session does not e
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 Updates an existing multiplayer session.  Fails with HTTP_E_STATUS_PRECOND_FAILED if the session doesn't exist.
@@ -81,6 +92,8 @@ Updates an existing multiplayer session.  Fails with HTTP_E_STATUS_PRECOND_FAILE
       <MemberSignature Language="C#" Value="UpdateOrCreateNew" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode UpdateOrCreateNew = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.UpdateOrCreateNew" />
+      <MemberSignature Language="VB.NET" Value="UpdateOrCreateNew" />
+      <MemberSignature Language="F#" Value="UpdateOrCreateNew = 1" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode.UpdateOrCreateNew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -89,6 +102,7 @@ Updates an existing multiplayer session.  Fails with HTTP_E_STATUS_PRECOND_FAILE
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionWriteMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Either update or create a new session. It doesn't matter whether the session exists or not.

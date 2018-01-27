@@ -1,7 +1,9 @@
-<Type Name="TitleStorageBlobMetadata" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata">
+﻿<Type Name="TitleStorageBlobMetadata" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata">
   <TypeSignature Language="C#" Value="public sealed class TitleStorageBlobMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleStorageBlobMetadata extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitleStorageBlobMetadata" />
+  <TypeSignature Language="F#" Value="type TitleStorageBlobMetadata = class&#xA;    interface __ITitleStorageBlobMetadataPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -38,6 +40,8 @@ Metadata about a blob.
       <MemberSignature Language="C#" Value="public TitleStorageBlobMetadata (string serviceConfigurationId, Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string xboxUserId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]string serviceConfigurationId, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, [in]string blobPath, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, [in]string xboxUserId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.#ctor(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceConfigurationId As String, storageType As TitleStorageType, blobPath As String, blobType As TitleStorageBlobType, xboxUserId As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata : string * Microsoft.Xbox.Services.TitleStorage.TitleStorageType * string * Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType * string -&gt; Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" Usage="new Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata (serviceConfigurationId, storageType, blobPath, blobType, xboxUserId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -75,6 +79,8 @@ TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMet
       <MemberSignature Language="C#" Value="public TitleStorageBlobMetadata (string serviceConfigurationId, Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string xboxUserId, string displayName, string eTag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]string serviceConfigurationId, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, [in]string blobPath, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, [in]string xboxUserId, [in]string displayName, [in]string eTag) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.#ctor(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceConfigurationId As String, storageType As TitleStorageType, blobPath As String, blobType As TitleStorageBlobType, xboxUserId As String, displayName As String, eTag As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata : string * Microsoft.Xbox.Services.TitleStorage.TitleStorageType * string * Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType * string * string * string -&gt; Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" Usage="new Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata (serviceConfigurationId, storageType, blobPath, blobType, xboxUserId, displayName, eTag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -115,6 +121,8 @@ TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMet
       <MemberSignature Language="C#" Value="public TitleStorageBlobMetadata (string serviceConfigurationId, Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string xboxUserId, string displayName, string eTag, Windows.Foundation.DateTime clientTimestamp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]string serviceConfigurationId, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, [in]string blobPath, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, [in]string xboxUserId, [in]string displayName, [in]string eTag, [in]valuetype Windows.Foundation.DateTime clientTimestamp) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.#ctor(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String,System.String,System.String,Windows.Foundation.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceConfigurationId As String, storageType As TitleStorageType, blobPath As String, blobType As TitleStorageBlobType, xboxUserId As String, displayName As String, eTag As String, clientTimestamp As DateTime)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata : string * Microsoft.Xbox.Services.TitleStorage.TitleStorageType * string * Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType * string * string * string * Windows.Foundation.DateTime -&gt; Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" Usage="new Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata (serviceConfigurationId, storageType, blobPath, blobType, xboxUserId, displayName, eTag, clientTimestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -157,7 +165,12 @@ TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMet
       <MemberSignature Language="C#" Value="public string BlobPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BlobPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.BlobPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlobPath As String" />
+      <MemberSignature Language="F#" Value="member this.BlobPath : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.BlobPath" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.BlobPath</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -177,7 +190,12 @@ The blob path is a unique string that conforms to a SubPath\file format.  For ex
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType BlobType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType BlobType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.BlobType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlobType As TitleStorageBlobType" />
+      <MemberSignature Language="F#" Value="member this.BlobType : Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.BlobType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.BlobType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -197,7 +215,12 @@ The type of storage used by the blob. Possible values are: Binary, Json, and Con
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime ClientTimestamp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime ClientTimestamp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.ClientTimestamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientTimestamp As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ClientTimestamp : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.ClientTimestamp" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.ClientTimestamp</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -217,6 +240,8 @@ The type of storage used by the blob. Possible values are: Binary, Json, and Con
       <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata CreateTitleStorageBlobMetadataForSessionStorage (string serviceConfigurationId, string blobPath, Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, string multiplayerSessionTemplateName, string multiplayerSessionName, string displayName, string eTag);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata CreateTitleStorageBlobMetadataForSessionStorage([in]string serviceConfigurationId, [in]string blobPath, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType blobType, [in]string multiplayerSessionTemplateName, [in]string multiplayerSessionName, [in]string displayName, [in]string eTag) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.CreateTitleStorageBlobMetadataForSessionStorage(System.String,System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTitleStorageBlobMetadataForSessionStorage (serviceConfigurationId As String, blobPath As String, blobType As TitleStorageBlobType, multiplayerSessionTemplateName As String, multiplayerSessionName As String, displayName As String, eTag As String) As TitleStorageBlobMetadata" />
+      <MemberSignature Language="F#" Value="static member CreateTitleStorageBlobMetadataForSessionStorage : string * string * Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobType * string * string * string * string -&gt; Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.CreateTitleStorageBlobMetadataForSessionStorage (serviceConfigurationId, blobPath, blobType, multiplayerSessionTemplateName, multiplayerSessionName, displayName, eTag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -263,7 +288,12 @@ TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMet
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.DisplayName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.DisplayName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -283,7 +313,12 @@ TitleStorageBlobMetadata objects retrieved using TitleStorageService::GetBlobMet
       <MemberSignature Language="C#" Value="public string ETag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ETag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As String" />
+      <MemberSignature Language="F#" Value="member this.ETag : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.ETag" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.ETag</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -304,7 +339,12 @@ Etags are used to determine if a file have been updated. Each time the file is c
       <MemberSignature Language="C#" Value="public ulong Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 Length" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As ULong" />
+      <MemberSignature Language="F#" Value="member this.Length : uint64" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.Length" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.Length</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -324,7 +364,12 @@ Gets the number of bytes of the blob data.
       <MemberSignature Language="C#" Value="public string MultiplayerSessionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MultiplayerSessionName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.MultiplayerSessionName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MultiplayerSessionName As String" />
+      <MemberSignature Language="F#" Value="member this.MultiplayerSessionName : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.MultiplayerSessionName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.MultiplayerSessionName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -349,7 +394,12 @@ The multiplayer session name this file belongs to if the StorageType is SessionS
       <MemberSignature Language="C#" Value="public string MultiplayerSessionTemplateName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MultiplayerSessionTemplateName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.MultiplayerSessionTemplateName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MultiplayerSessionTemplateName As String" />
+      <MemberSignature Language="F#" Value="member this.MultiplayerSessionTemplateName : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.MultiplayerSessionTemplateName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.MultiplayerSessionTemplateName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -374,7 +424,12 @@ The multiplayer session template name this file belongs to if the StorageType is
       <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.ServiceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationId : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.ServiceConfigurationId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.ServiceConfigurationId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -394,7 +449,12 @@ The service configuration ID associated with this blob data.
       <MemberSignature Language="C#" Value="public void set (Windows.Foundation.DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void set([in]valuetype Windows.Foundation.DateTime value) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.set(Windows.Foundation.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub set (value As DateTime)" />
+      <MemberSignature Language="F#" Value="abstract member set : Windows.Foundation.DateTime -&gt; unit&#xA;override this.set : Windows.Foundation.DateTime -&gt; unit" Usage="titleStorageBlobMetadata.set value" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.set(Windows.Foundation.DateTime)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -415,7 +475,12 @@ The service configuration ID associated with this blob data.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.TitleStorage.TitleStorageType StorageType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType StorageType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.StorageType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StorageType As TitleStorageType" />
+      <MemberSignature Language="F#" Value="member this.StorageType : Microsoft.Xbox.Services.TitleStorage.TitleStorageType" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.StorageType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.StorageType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -435,7 +500,12 @@ The type of storage that contains the blob.
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageBlobMetadataPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

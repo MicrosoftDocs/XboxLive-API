@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSession" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession">
+﻿<Type Name="MultiplayerSession" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerSession" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSession extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerSession" />
+  <TypeSignature Language="F#" Value="type MultiplayerSession = class&#xA;    interface __IMultiplayerSessionPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -38,6 +40,7 @@ Represents a multiplayer session.
       <MemberSignature Language="C#" Value="public MultiplayerSession (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.Multiplayer.MultiplayerSession : Microsoft.Xbox.Services.XboxLiveContext -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" Usage="new Microsoft.Xbox.Services.Multiplayer.MultiplayerSession xboxLiveContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -73,6 +76,7 @@ This constructor is intended for use with template contract 104/105 or later.
       <MemberSignature Language="C#" Value="public MultiplayerSession (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.Multiplayer.MultiplayerSession : Microsoft.Xbox.Services.XboxLiveContext * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" Usage="new Microsoft.Xbox.Services.Multiplayer.MultiplayerSession (xboxLiveContext, multiplayerSessionReference)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -104,6 +108,7 @@ If this constructor is called without calling MultiplayerService::WriteSessionAs
       <MemberSignature Language="C#" Value="public MultiplayerSession (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference, uint maxMembersInSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility multiplayerSessionVisibility, Windows.Foundation.Collections.IVectorView&lt;string&gt; initiatorXboxUserIds, string sessionCustomConstantsJson);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference, [in]unsigned int32 maxMembersInSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility multiplayerSessionVisibility, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; initiatorXboxUserIds, [in]string sessionCustomConstantsJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.#ctor(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.UInt32,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,Windows.Foundation.Collections.IVectorView{System.String},System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.Multiplayer.MultiplayerSession : Microsoft.Xbox.Services.XboxLiveContext * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * uint32 * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility * Windows.Foundation.Collections.IVectorView&lt;string&gt; * string -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSession" Usage="new Microsoft.Xbox.Services.Multiplayer.MultiplayerSession (xboxLiveContext, multiplayerSessionReference, maxMembersInSession, multiplayerSessionVisibility, initiatorXboxUserIds, sessionCustomConstantsJson)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -137,7 +142,11 @@ If this constructor is called without calling MultiplayerService::WriteSessionAs
       <MemberSignature Language="C#" Value="public void _Init (Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference, uint maxMembersInSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility multiplayerSessionVisibility, Windows.Foundation.Collections.IVectorView&lt;string&gt; initiatorXboxUserIds, string sessionCustomConstantsJson);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Init([in]class Microsoft.Xbox.Services.XboxLiveContext xboxLiveContext, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference multiplayerSessionReference, [in]unsigned int32 maxMembersInSession, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility multiplayerSessionVisibility, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; initiatorXboxUserIds, [in]string sessionCustomConstantsJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession._Init(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.UInt32,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,Windows.Foundation.Collections.IVectorView{System.String},System.String)" />
+      <MemberSignature Language="F#" Value="abstract member _Init : Microsoft.Xbox.Services.XboxLiveContext * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * uint32 * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility * Windows.Foundation.Collections.IVectorView&lt;string&gt; * string -&gt; unit&#xA;override this._Init : Microsoft.Xbox.Services.XboxLiveContext * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * uint32 * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility * Windows.Foundation.Collections.IVectorView&lt;string&gt; * string -&gt; unit" Usage="multiplayerSession._Init (xboxLiveContext, multiplayerSessionReference, maxMembersInSession, multiplayerSessionVisibility, initiatorXboxUserIds, sessionCustomConstantsJson)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals._Init(Microsoft.Xbox.Services.XboxLiveContext,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.UInt32,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility,Windows.Foundation.Collections.IVectorView{System.String},System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -168,7 +177,12 @@ If this constructor is called without calling MultiplayerService::WriteSessionAs
       <MemberSignature Language="C#" Value="public void AddMemberReservation (string xboxUserId, string memberCustomConstantsJson);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddMemberReservation([in]string xboxUserId, [in]string memberCustomConstantsJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.AddMemberReservation(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMemberReservation (xboxUserId As String, memberCustomConstantsJson As String)" />
+      <MemberSignature Language="F#" Value="abstract member AddMemberReservation : string * string -&gt; unit&#xA;override this.AddMemberReservation : string * string -&gt; unit" Usage="multiplayerSession.AddMemberReservation (xboxUserId, memberCustomConstantsJson)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.AddMemberReservation(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -202,7 +216,12 @@ it only changes the local session object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void AddMemberReservation (string xboxUserId, string memberCustomConstantsJson, bool initializeRequested);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddMemberReservation([in]string xboxUserId, [in]string memberCustomConstantsJson, [in]bool initializeRequested) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.AddMemberReservation(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMemberReservation (xboxUserId As String, memberCustomConstantsJson As String, initializeRequested As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member AddMemberReservation : string * string * bool -&gt; unit&#xA;override this.AddMemberReservation : string * string * bool -&gt; unit" Usage="multiplayerSession.AddMemberReservation (xboxUserId, memberCustomConstantsJson, initializeRequested)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.AddMemberReservation(System.String,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -238,7 +257,12 @@ it only changes the local session object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer ArbitrationServer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer ArbitrationServer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ArbitrationServer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArbitrationServer As MultiplayerSessionArbitrationServer" />
+      <MemberSignature Language="F#" Value="member this.ArbitrationServer : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionArbitrationServer" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ArbitrationServer" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.ArbitrationServer</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -258,7 +282,12 @@ An arbitration server that contains properties associated with a tournament game
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus ArbitrationStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus ArbitrationStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ArbitrationStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArbitrationStatus As TournamentArbitrationStatus" />
+      <MemberSignature Language="F#" Value="member this.ArbitrationStatus : Microsoft.Xbox.Services.Tournaments.TournamentArbitrationStatus" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ArbitrationStatus" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.ArbitrationStatus</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -278,7 +307,12 @@ Arbitration Status of a tournament
       <MemberSignature Language="C#" Value="public string Branch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Branch" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Branch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Branch As String" />
+      <MemberSignature Language="F#" Value="member this.Branch : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Branch" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.Branch</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -298,7 +332,12 @@ The branch of the session, used to scope change numbers.
       <MemberSignature Language="C#" Value="public ulong ChangeNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 ChangeNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ChangeNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeNumber As ULong" />
+      <MemberSignature Language="F#" Value="member this.ChangeNumber : uint64" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ChangeNumber" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.ChangeNumber</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -322,6 +361,8 @@ reverted due to a service issue that forced a restore from backup or other data 
       <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes CompareMultiplayerSessions (Microsoft.Xbox.Services.Multiplayer.MultiplayerSession currentSession, Microsoft.Xbox.Services.Multiplayer.MultiplayerSession oldSession);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes CompareMultiplayerSessions([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession currentSession, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSession oldSession) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.CompareMultiplayerSessions(Microsoft.Xbox.Services.Multiplayer.MultiplayerSession,Microsoft.Xbox.Services.Multiplayer.MultiplayerSession)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareMultiplayerSessions (currentSession As MultiplayerSession, oldSession As MultiplayerSession) As MultiplayerSessionChangeTypes" />
+      <MemberSignature Language="F#" Value="static member CompareMultiplayerSessions : Microsoft.Xbox.Services.Multiplayer.MultiplayerSession * Microsoft.Xbox.Services.Multiplayer.MultiplayerSession -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.CompareMultiplayerSessions (currentSession, oldSession)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -348,6 +389,8 @@ Static compare method that compares two sessions and returns an Or'ed Multiplaye
       <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus ConvertHttpStatusToWriteSessionStatus (int httpStatusCode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus ConvertHttpStatusToWriteSessionStatus([in]int32 httpStatusCode) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ConvertHttpStatusToWriteSessionStatus(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertHttpStatusToWriteSessionStatus (httpStatusCode As Integer) As WriteSessionStatus" />
+      <MemberSignature Language="F#" Value="static member ConvertHttpStatusToWriteSessionStatus : int -&gt; Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ConvertHttpStatusToWriteSessionStatus httpStatusCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -372,7 +415,12 @@ Static method that converts an HTTP Status code to a WriteSessionStatus.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember CurrentUser { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember CurrentUser" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.CurrentUser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentUser As MultiplayerSessionMember" />
+      <MemberSignature Language="F#" Value="member this.CurrentUser : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.CurrentUser" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.CurrentUser</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -392,7 +440,12 @@ The current user in the session.  A nullptr is returned if there is no current u
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime DateOfNextTimer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime DateOfNextTimer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.DateOfNextTimer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DateOfNextTimer As DateTime" />
+      <MemberSignature Language="F#" Value="member this.DateOfNextTimer : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.DateOfNextTimer" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.DateOfNextTimer</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -412,7 +465,12 @@ If any timeouts are in progress, this is the date and time when the the next tim
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime DateOfSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime DateOfSession" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.DateOfSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DateOfSession As DateTime" />
+      <MemberSignature Language="F#" Value="member this.DateOfSession : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.DateOfSession" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.DateOfSession</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -432,7 +490,12 @@ The date and time when the server returned the session.
       <MemberSignature Language="C#" Value="public void DeleteCurrentUserMemberCustomPropertyJson (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteCurrentUserMemberCustomPropertyJson([in]string name) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.DeleteCurrentUserMemberCustomPropertyJson(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteCurrentUserMemberCustomPropertyJson (name As String)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteCurrentUserMemberCustomPropertyJson : string -&gt; unit&#xA;override this.DeleteCurrentUserMemberCustomPropertyJson : string -&gt; unit" Usage="multiplayerSession.DeleteCurrentUserMemberCustomPropertyJson name" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.DeleteCurrentUserMemberCustomPropertyJson(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -459,7 +522,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void DeleteSessionCustomPropertyJson (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteSessionCustomPropertyJson([in]string name) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.DeleteSessionCustomPropertyJson(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteSessionCustomPropertyJson (name As String)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteSessionCustomPropertyJson : string -&gt; unit&#xA;override this.DeleteSessionCustomPropertyJson : string -&gt; unit" Usage="multiplayerSession.DeleteSessionCustomPropertyJson name" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.DeleteSessionCustomPropertyJson(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -486,7 +554,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public string ETag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ETag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As String" />
+      <MemberSignature Language="F#" Value="member this.ETag : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ETag" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.ETag</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -506,7 +579,12 @@ The ETag returned with this session, used to determine if the session has been u
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; HostCandidates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; HostCandidates" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.HostCandidates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostCandidates As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.HostCandidates : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.HostCandidates" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.HostCandidates</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -527,7 +605,12 @@ ordered by the preference specified by MultiplayerSessionConstants::PeerToHostRe
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage InitializationStage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage InitializationStage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.InitializationStage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitializationStage As MultiplayerInitializationStage" />
+      <MemberSignature Language="F#" Value="member this.InitializationStage : Microsoft.Xbox.Services.Multiplayer.MultiplayerInitializationStage" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.InitializationStage" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.InitializationStage</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -551,7 +634,12 @@ If "externalEvaluation" is not set, "evaluating" is skipped. If "metrics" isn't 
       <MemberSignature Language="C#" Value="public uint InitializingEpisode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 InitializingEpisode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.InitializingEpisode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitializingEpisode As UInteger" />
+      <MemberSignature Language="F#" Value="member this.InitializingEpisode : uint32" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.InitializingEpisode" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.InitializingEpisode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -577,7 +665,12 @@ This value is 0 when the InitializingEpisode is not set.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime InitializingStageStartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime InitializingStageStartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.InitializingStageStartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitializingStageStartTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.InitializingStageStartTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.InitializingStageStartTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.InitializingStageStartTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -597,7 +690,12 @@ The date and time when the initialization stage started during managed initializ
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Join" />
+      <MemberSignature Language="VB.NET" Value="Public Function Join () As MultiplayerSessionMember" />
+      <MemberSignature Language="F#" Value="abstract member Join : unit -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&#xA;override this.Join : unit -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember" Usage="multiplayerSession.Join " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.Join</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -628,7 +726,12 @@ commit it to the service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join (string memberCustomConstantsJson);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join([in]string memberCustomConstantsJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Join(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Join (memberCustomConstantsJson As String) As MultiplayerSessionMember" />
+      <MemberSignature Language="F#" Value="abstract member Join : string -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&#xA;override this.Join : string -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember" Usage="multiplayerSession.Join memberCustomConstantsJson" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.Join(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -662,7 +765,12 @@ commit it to the service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join (string memberCustomConstantsJson, bool initializeRequested);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join([in]string memberCustomConstantsJson, [in]bool initializeRequested) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Join(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Join (memberCustomConstantsJson As String, initializeRequested As Boolean) As MultiplayerSessionMember" />
+      <MemberSignature Language="F#" Value="abstract member Join : string * bool -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&#xA;override this.Join : string * bool -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember" Usage="multiplayerSession.Join (memberCustomConstantsJson, initializeRequested)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.Join(System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -700,7 +808,12 @@ commit it to the service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join (string memberCustomConstantsJson, bool initializeRequested, bool joinWithActiveStatus);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember Join([in]string memberCustomConstantsJson, [in]bool initializeRequested, [in]bool joinWithActiveStatus) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Join(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Join (memberCustomConstantsJson As String, initializeRequested As Boolean, joinWithActiveStatus As Boolean) As MultiplayerSessionMember" />
+      <MemberSignature Language="F#" Value="abstract member Join : string * bool * bool -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&#xA;override this.Join : string * bool * bool -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember" Usage="multiplayerSession.Join (memberCustomConstantsJson, initializeRequested, joinWithActiveStatus)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.Join(System.String,System.Boolean,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -738,7 +851,12 @@ commit it to the service.
       <MemberSignature Language="C#" Value="public void Leave ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Leave() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Leave" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Leave ()" />
+      <MemberSignature Language="F#" Value="abstract member Leave : unit -&gt; unit&#xA;override this.Leave : unit -&gt; unit" Usage="multiplayerSession.Leave " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.Leave</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -762,7 +880,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer MatchmakingServer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer MatchmakingServer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.MatchmakingServer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchmakingServer As MultiplayerSessionMatchmakingServer" />
+      <MemberSignature Language="F#" Value="member this.MatchmakingServer : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMatchmakingServer" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.MatchmakingServer" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.MatchmakingServer</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -782,7 +905,12 @@ A multiplayer session server that contains properties associated with a target s
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; Members { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; Members" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Members" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Members As IVectorView(Of MultiplayerSessionMember)" />
+      <MemberSignature Language="F#" Value="member this.Members : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.Members" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.Members</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -806,7 +934,12 @@ Call MultiplayerService::WriteSessionAsync to write these changes to the service
       <MemberSignature Language="C#" Value="public uint MembersAccepted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MembersAccepted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.MembersAccepted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MembersAccepted As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MembersAccepted : uint32" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.MembersAccepted" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.MembersAccepted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -824,7 +957,12 @@ Call MultiplayerService::WriteSessionAsync to write these changes to the service
       <MemberSignature Language="C#" Value="public string MultiplayerCorrelationId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MultiplayerCorrelationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.MultiplayerCorrelationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MultiplayerCorrelationId As String" />
+      <MemberSignature Language="F#" Value="member this.MultiplayerCorrelationId : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.MultiplayerCorrelationId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.MultiplayerCorrelationId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -844,7 +982,12 @@ A unique ID to the session used to query trace logs for entries that relate to t
       <MemberSignature Language="C#" Value="public string SearchHandleId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SearchHandleId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SearchHandleId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchHandleId As String" />
+      <MemberSignature Language="F#" Value="member this.SearchHandleId : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SearchHandleId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SearchHandleId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -864,7 +1007,12 @@ A unique search handle ID to the session.
       <MemberSignature Language="C#" Value="public string ServersJson { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServersJson" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ServersJson" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServersJson As String" />
+      <MemberSignature Language="F#" Value="member this.ServersJson : string with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.ServersJson" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.ServersJson</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -891,7 +1039,12 @@ If the method is called without calling WriteSessionAsync, the method only chang
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants SessionConstants { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants SessionConstants" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionConstants" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionConstants As MultiplayerSessionConstants" />
+      <MemberSignature Language="F#" Value="member this.SessionConstants : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionConstants" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionConstants" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SessionConstants</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -911,7 +1064,12 @@ A set of constants associated with this session.  These can only be set when cre
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties SessionProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties SessionProperties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionProperties As MultiplayerSessionProperties" />
+      <MemberSignature Language="F#" Value="member this.SessionProperties : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionProperties" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionProperties" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SessionProperties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -931,7 +1089,12 @@ A set of properties associated with this session.  Any player can modify these.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference SessionReference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference SessionReference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionReference" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionReference As MultiplayerSessionReference" />
+      <MemberSignature Language="F#" Value="member this.SessionReference : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionReference" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SessionReference</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -951,7 +1114,12 @@ The unique identifying information for the session.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRoleTypes SessionRoleTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRoleTypes SessionRoleTypes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionRoleTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionRoleTypes As MultiplayerSessionRoleTypes" />
+      <MemberSignature Language="F#" Value="member this.SessionRoleTypes : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionRoleTypes" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SessionRoleTypes" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SessionRoleTypes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -971,7 +1139,12 @@ A set of role types associated with this session.
       <MemberSignature Language="C#" Value="public void SetAllocateCloudCompute (bool allocateCloudCompute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAllocateCloudCompute([in]bool allocateCloudCompute) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetAllocateCloudCompute(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAllocateCloudCompute (allocateCloudCompute As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetAllocateCloudCompute : bool -&gt; unit&#xA;override this.SetAllocateCloudCompute : bool -&gt; unit" Usage="multiplayerSession.SetAllocateCloudCompute allocateCloudCompute" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetAllocateCloudCompute(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -998,7 +1171,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetArbitrationTimeouts (Windows.Foundation.TimeSpan arbitrationTimeout, Windows.Foundation.TimeSpan forfeitTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetArbitrationTimeouts([in]valuetype Windows.Foundation.TimeSpan arbitrationTimeout, [in]valuetype Windows.Foundation.TimeSpan forfeitTimeout) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetArbitrationTimeouts(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetArbitrationTimeouts (arbitrationTimeout As TimeSpan, forfeitTimeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member SetArbitrationTimeouts : Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan -&gt; unit&#xA;override this.SetArbitrationTimeouts : Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan -&gt; unit" Usage="multiplayerSession.SetArbitrationTimeouts (arbitrationTimeout, forfeitTimeout)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetArbitrationTimeouts(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1027,7 +1205,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetClosed (bool closed);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetClosed([in]bool closed) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetClosed(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetClosed (closed As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetClosed : bool -&gt; unit&#xA;override this.SetClosed : bool -&gt; unit" Usage="multiplayerSession.SetClosed closed" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetClosed(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1055,7 +1238,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetCloudComputePackageJson (string sessionCloudComputePackageConstantsJson);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCloudComputePackageJson([in]string sessionCloudComputePackageConstantsJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCloudComputePackageJson(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCloudComputePackageJson (sessionCloudComputePackageConstantsJson As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetCloudComputePackageJson : string -&gt; unit&#xA;override this.SetCloudComputePackageJson : string -&gt; unit" Usage="multiplayerSession.SetCloudComputePackageJson sessionCloudComputePackageConstantsJson" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetCloudComputePackageJson(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1080,7 +1268,12 @@ Can only be specified if the 'cloudCompute' capability is set. Enables clients t
       <MemberSignature Language="C#" Value="public void SetCurrentUserArbitrationResults (Windows.Foundation.Collections.IMapView&lt;string,Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt; results);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserArbitrationResults([in]class Windows.Foundation.Collections.IMapView`2&lt;string, class Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt; results) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserArbitrationResults(Windows.Foundation.Collections.IMapView{System.String,Microsoft.Xbox.Services.Tournaments.TournamentTeamResult})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCurrentUserArbitrationResults (results As IMapView(Of String, TournamentTeamResult))" />
+      <MemberSignature Language="F#" Value="abstract member SetCurrentUserArbitrationResults : Windows.Foundation.Collections.IMapView&lt;string, Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt; -&gt; unit&#xA;override this.SetCurrentUserArbitrationResults : Windows.Foundation.Collections.IMapView&lt;string, Microsoft.Xbox.Services.Tournaments.TournamentTeamResult&gt; -&gt; unit" Usage="multiplayerSession.SetCurrentUserArbitrationResults results" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetCurrentUserArbitrationResults(Windows.Foundation.Collections.IMapView{System.String,Microsoft.Xbox.Services.Tournaments.TournamentTeamResult})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1101,7 +1294,12 @@ Can only be specified if the 'cloudCompute' capability is set. Enables clients t
       <MemberSignature Language="C#" Value="public void SetCurrentUserMemberCustomPropertyJson (string name, string valueJson);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserMemberCustomPropertyJson([in]string name, [in]string valueJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserMemberCustomPropertyJson(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCurrentUserMemberCustomPropertyJson (name As String, valueJson As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetCurrentUserMemberCustomPropertyJson : string * string -&gt; unit&#xA;override this.SetCurrentUserMemberCustomPropertyJson : string * string -&gt; unit" Usage="multiplayerSession.SetCurrentUserMemberCustomPropertyJson (name, valueJson)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetCurrentUserMemberCustomPropertyJson(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1138,7 +1336,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetCurrentUserMembersInGroup (Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; membersInGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserMembersInGroup([in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; membersInGroup) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserMembersInGroup(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCurrentUserMembersInGroup (membersInGroup As IVectorView(Of MultiplayerSessionMember))" />
+      <MemberSignature Language="F#" Value="abstract member SetCurrentUserMembersInGroup : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; -&gt; unit&#xA;override this.SetCurrentUserMembersInGroup : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember&gt; -&gt; unit" Usage="multiplayerSession.SetCurrentUserMembersInGroup membersInGroup" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetCurrentUserMembersInGroup(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMember})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1159,7 +1362,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetCurrentUserQualityOfServiceMeasurements (Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt; measurements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserQualityOfServiceMeasurements([in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt; measurements) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserQualityOfServiceMeasurements(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCurrentUserQualityOfServiceMeasurements (measurements As IVectorView(Of MultiplayerQualityOfServiceMeasurements))" />
+      <MemberSignature Language="F#" Value="abstract member SetCurrentUserQualityOfServiceMeasurements : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt; -&gt; unit&#xA;override this.SetCurrentUserQualityOfServiceMeasurements : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements&gt; -&gt; unit" Usage="multiplayerSession.SetCurrentUserQualityOfServiceMeasurements measurements" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetCurrentUserQualityOfServiceMeasurements(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Multiplayer.MultiplayerQualityOfServiceMeasurements})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1180,7 +1388,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetCurrentUserQualityOfServiceServerMeasurementsJson (string valueJson);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserQualityOfServiceServerMeasurementsJson([in]string valueJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserQualityOfServiceServerMeasurementsJson(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCurrentUserQualityOfServiceServerMeasurementsJson (valueJson As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetCurrentUserQualityOfServiceServerMeasurementsJson : string -&gt; unit&#xA;override this.SetCurrentUserQualityOfServiceServerMeasurementsJson : string -&gt; unit" Usage="multiplayerSession.SetCurrentUserQualityOfServiceServerMeasurementsJson valueJson" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetCurrentUserQualityOfServiceServerMeasurementsJson(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1210,7 +1423,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetCurrentUserRoleInfo (Windows.Foundation.Collections.IMapView&lt;string,string&gt; roles);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserRoleInfo([in]class Windows.Foundation.Collections.IMapView`2&lt;string, string&gt; roles) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserRoleInfo(Windows.Foundation.Collections.IMapView{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCurrentUserRoleInfo (roles As IMapView(Of String, String))" />
+      <MemberSignature Language="F#" Value="abstract member SetCurrentUserRoleInfo : Windows.Foundation.Collections.IMapView&lt;string, string&gt; -&gt; unit&#xA;override this.SetCurrentUserRoleInfo : Windows.Foundation.Collections.IMapView&lt;string, string&gt; -&gt; unit" Usage="multiplayerSession.SetCurrentUserRoleInfo roles" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetCurrentUserRoleInfo(Windows.Foundation.Collections.IMapView{System.String,System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1231,7 +1449,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetCurrentUserSecureDeviceAddressBase64 (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserSecureDeviceAddressBase64([in]string value) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserSecureDeviceAddressBase64(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCurrentUserSecureDeviceAddressBase64 (value As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetCurrentUserSecureDeviceAddressBase64 : string -&gt; unit&#xA;override this.SetCurrentUserSecureDeviceAddressBase64 : string -&gt; unit" Usage="multiplayerSession.SetCurrentUserSecureDeviceAddressBase64 value" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetCurrentUserSecureDeviceAddressBase64(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1260,7 +1483,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetCurrentUserStatus (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus status);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCurrentUserStatus([in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus status) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetCurrentUserStatus(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCurrentUserStatus (status As MultiplayerSessionMemberStatus)" />
+      <MemberSignature Language="F#" Value="abstract member SetCurrentUserStatus : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus -&gt; unit&#xA;override this.SetCurrentUserStatus : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus -&gt; unit" Usage="multiplayerSession.SetCurrentUserStatus status" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetCurrentUserStatus(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionMemberStatus)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1291,7 +1519,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetHostDeviceToken (string hostDeviceToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHostDeviceToken([in]string hostDeviceToken) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetHostDeviceToken(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetHostDeviceToken (hostDeviceToken As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetHostDeviceToken : string -&gt; unit&#xA;override this.SetHostDeviceToken : string -&gt; unit" Usage="multiplayerSession.SetHostDeviceToken hostDeviceToken" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetHostDeviceToken(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1324,7 +1557,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetInitializationStatus (bool initializationSucceeded);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInitializationStatus([in]bool initializationSucceeded) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetInitializationStatus(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInitializationStatus (initializationSucceeded As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetInitializationStatus : bool -&gt; unit&#xA;override this.SetInitializationStatus : bool -&gt; unit" Usage="multiplayerSession.SetInitializationStatus initializationSucceeded" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetInitializationStatus(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1352,7 +1590,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetLocked (bool locked);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLocked([in]bool locked) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetLocked(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLocked (locked As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetLocked : bool -&gt; unit&#xA;override this.SetLocked : bool -&gt; unit" Usage="multiplayerSession.SetLocked locked" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetLocked(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1378,7 +1621,12 @@ no other user could take that spot. If the session is locked, it must also be se
       <MemberSignature Language="C#" Value="public void SetManagedInitialization (Windows.Foundation.TimeSpan joinTimeout, Windows.Foundation.TimeSpan measurementTimeout, Windows.Foundation.TimeSpan evaluationTimeout, bool autoEvalute, uint membersNeededToStart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetManagedInitialization([in]valuetype Windows.Foundation.TimeSpan joinTimeout, [in]valuetype Windows.Foundation.TimeSpan measurementTimeout, [in]valuetype Windows.Foundation.TimeSpan evaluationTimeout, [in]bool autoEvalute, [in]unsigned int32 membersNeededToStart) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetManagedInitialization(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,System.Boolean,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetManagedInitialization (joinTimeout As TimeSpan, measurementTimeout As TimeSpan, evaluationTimeout As TimeSpan, autoEvalute As Boolean, membersNeededToStart As UInteger)" />
+      <MemberSignature Language="F#" Value="abstract member SetManagedInitialization : Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * bool * uint32 -&gt; unit&#xA;override this.SetManagedInitialization : Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * bool * uint32 -&gt; unit" Usage="multiplayerSession.SetManagedInitialization (joinTimeout, measurementTimeout, evaluationTimeout, autoEvalute, membersNeededToStart)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetManagedInitialization(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,System.Boolean,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1431,7 +1679,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetMatchmakingResubmit (bool matchResubmit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMatchmakingResubmit([in]bool matchResubmit) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMatchmakingResubmit(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMatchmakingResubmit (matchResubmit As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetMatchmakingResubmit : bool -&gt; unit&#xA;override this.SetMatchmakingResubmit : bool -&gt; unit" Usage="multiplayerSession.SetMatchmakingResubmit matchResubmit" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetMatchmakingResubmit(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1459,7 +1712,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetMatchmakingServerConnectionPath (string serverConnectionPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMatchmakingServerConnectionPath([in]string serverConnectionPath) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMatchmakingServerConnectionPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMatchmakingServerConnectionPath (serverConnectionPath As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetMatchmakingServerConnectionPath : string -&gt; unit&#xA;override this.SetMatchmakingServerConnectionPath : string -&gt; unit" Usage="multiplayerSession.SetMatchmakingServerConnectionPath serverConnectionPath" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetMatchmakingServerConnectionPath(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1487,7 +1745,12 @@ it only changes the local session object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetMatchmakingTargetSessionConstantsJson (string matchmakingTargetSessionConstants);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMatchmakingTargetSessionConstantsJson([in]string matchmakingTargetSessionConstants) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMatchmakingTargetSessionConstantsJson(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMatchmakingTargetSessionConstantsJson (matchmakingTargetSessionConstants As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetMatchmakingTargetSessionConstantsJson : string -&gt; unit&#xA;override this.SetMatchmakingTargetSessionConstantsJson : string -&gt; unit" Usage="multiplayerSession.SetMatchmakingTargetSessionConstantsJson matchmakingTargetSessionConstants" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetMatchmakingTargetSessionConstantsJson(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1517,7 +1780,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetMaxMembersInSession (uint maxMembersInSession);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMaxMembersInSession([in]unsigned int32 maxMembersInSession) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMaxMembersInSession(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMaxMembersInSession (maxMembersInSession As UInteger)" />
+      <MemberSignature Language="F#" Value="abstract member SetMaxMembersInSession : uint32 -&gt; unit&#xA;override this.SetMaxMembersInSession : uint32 -&gt; unit" Usage="multiplayerSession.SetMaxMembersInSession maxMembersInSession" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetMaxMembersInSession(System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1544,7 +1812,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetMeasurementServerAddresses (Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt; measurementServerAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMeasurementServerAddresses([in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt; measurementServerAddresses) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMeasurementServerAddresses(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMeasurementServerAddresses (measurementServerAddresses As IVectorView(Of QualityOfServiceServer))" />
+      <MemberSignature Language="F#" Value="abstract member SetMeasurementServerAddresses : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt; -&gt; unit&#xA;override this.SetMeasurementServerAddresses : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer&gt; -&gt; unit" Usage="multiplayerSession.SetMeasurementServerAddresses measurementServerAddresses" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetMeasurementServerAddresses(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1565,7 +1838,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetMemberInitialization (Windows.Foundation.TimeSpan joinTimeout, Windows.Foundation.TimeSpan measurementTimeout, Windows.Foundation.TimeSpan evaluationTimeout, bool autoEvalute, uint membersNeededToStart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMemberInitialization([in]valuetype Windows.Foundation.TimeSpan joinTimeout, [in]valuetype Windows.Foundation.TimeSpan measurementTimeout, [in]valuetype Windows.Foundation.TimeSpan evaluationTimeout, [in]bool autoEvalute, [in]unsigned int32 membersNeededToStart) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMemberInitialization(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,System.Boolean,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMemberInitialization (joinTimeout As TimeSpan, measurementTimeout As TimeSpan, evaluationTimeout As TimeSpan, autoEvalute As Boolean, membersNeededToStart As UInteger)" />
+      <MemberSignature Language="F#" Value="abstract member SetMemberInitialization : Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * bool * uint32 -&gt; unit&#xA;override this.SetMemberInitialization : Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * bool * uint32 -&gt; unit" Usage="multiplayerSession.SetMemberInitialization (joinTimeout, measurementTimeout, evaluationTimeout, autoEvalute, membersNeededToStart)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetMemberInitialization(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,System.Boolean,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1613,7 +1891,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetMutableRoleSettings (Windows.Foundation.Collections.IMapView&lt;string,Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType&gt; roleTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMutableRoleSettings([in]class Windows.Foundation.Collections.IMapView`2&lt;string, class Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType&gt; roleTypes) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetMutableRoleSettings(Windows.Foundation.Collections.IMapView{System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMutableRoleSettings (roleTypes As IMapView(Of String, MultiplayerRoleType))" />
+      <MemberSignature Language="F#" Value="abstract member SetMutableRoleSettings : Windows.Foundation.Collections.IMapView&lt;string, Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType&gt; -&gt; unit&#xA;override this.SetMutableRoleSettings : Windows.Foundation.Collections.IMapView&lt;string, Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType&gt; -&gt; unit" Usage="multiplayerSession.SetMutableRoleSettings roleTypes" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetMutableRoleSettings(Windows.Foundation.Collections.IMapView{System.String,Microsoft.Xbox.Services.Multiplayer.MultiplayerRoleType})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1634,7 +1917,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetPeerToHostRequirements (Windows.Foundation.TimeSpan latencyMaximum, uint bandwidthDownMinimumInKilobitsPerSecond, uint bandwidthUpMinimumInKilobitsPerSecond, Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics hostSelectionMetric);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPeerToHostRequirements([in]valuetype Windows.Foundation.TimeSpan latencyMaximum, [in]unsigned int32 bandwidthDownMinimumInKilobitsPerSecond, [in]unsigned int32 bandwidthUpMinimumInKilobitsPerSecond, [in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics hostSelectionMetric) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetPeerToHostRequirements(Windows.Foundation.TimeSpan,System.UInt32,System.UInt32,Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPeerToHostRequirements (latencyMaximum As TimeSpan, bandwidthDownMinimumInKilobitsPerSecond As UInteger, bandwidthUpMinimumInKilobitsPerSecond As UInteger, hostSelectionMetric As MultiplayMetrics)" />
+      <MemberSignature Language="F#" Value="abstract member SetPeerToHostRequirements : Windows.Foundation.TimeSpan * uint32 * uint32 * Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics -&gt; unit&#xA;override this.SetPeerToHostRequirements : Windows.Foundation.TimeSpan * uint32 * uint32 * Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics -&gt; unit" Usage="multiplayerSession.SetPeerToHostRequirements (latencyMaximum, bandwidthDownMinimumInKilobitsPerSecond, bandwidthUpMinimumInKilobitsPerSecond, hostSelectionMetric)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetPeerToHostRequirements(Windows.Foundation.TimeSpan,System.UInt32,System.UInt32,Microsoft.Xbox.Services.Multiplayer.MultiplayMetrics)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1669,7 +1957,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetPeerToPeerRequirements (Windows.Foundation.TimeSpan latencyMaximum, uint bandwidthMinimumInKilobitsPerSecond);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPeerToPeerRequirements([in]valuetype Windows.Foundation.TimeSpan latencyMaximum, [in]unsigned int32 bandwidthMinimumInKilobitsPerSecond) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetPeerToPeerRequirements(Windows.Foundation.TimeSpan,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPeerToPeerRequirements (latencyMaximum As TimeSpan, bandwidthMinimumInKilobitsPerSecond As UInteger)" />
+      <MemberSignature Language="F#" Value="abstract member SetPeerToPeerRequirements : Windows.Foundation.TimeSpan * uint32 -&gt; unit&#xA;override this.SetPeerToPeerRequirements : Windows.Foundation.TimeSpan * uint32 -&gt; unit" Usage="multiplayerSession.SetPeerToPeerRequirements (latencyMaximum, bandwidthMinimumInKilobitsPerSecond)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetPeerToPeerRequirements(Windows.Foundation.TimeSpan,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1700,7 +1993,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetQualityOfServiceConnectivityMetrics (bool enableLatencyMetric, bool enableBandwidthDownMetric, bool enableBandwidthUpMetric, bool enableCustomMetric);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetQualityOfServiceConnectivityMetrics([in]bool enableLatencyMetric, [in]bool enableBandwidthDownMetric, [in]bool enableBandwidthUpMetric, [in]bool enableCustomMetric) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetQualityOfServiceConnectivityMetrics(System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetQualityOfServiceConnectivityMetrics (enableLatencyMetric As Boolean, enableBandwidthDownMetric As Boolean, enableBandwidthUpMetric As Boolean, enableCustomMetric As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetQualityOfServiceConnectivityMetrics : bool * bool * bool * bool -&gt; unit&#xA;override this.SetQualityOfServiceConnectivityMetrics : bool * bool * bool * bool -&gt; unit" Usage="multiplayerSession.SetQualityOfServiceConnectivityMetrics (enableLatencyMetric, enableBandwidthDownMetric, enableBandwidthUpMetric, enableCustomMetric)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetQualityOfServiceConnectivityMetrics(System.Boolean,System.Boolean,System.Boolean,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1733,7 +2031,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetServerConnectionStringCandidates (Windows.Foundation.Collections.IVectorView&lt;string&gt; serverConnectionStringCandidates);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetServerConnectionStringCandidates([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; serverConnectionStringCandidates) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetServerConnectionStringCandidates(Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetServerConnectionStringCandidates (serverConnectionStringCandidates As IVectorView(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member SetServerConnectionStringCandidates : Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; unit&#xA;override this.SetServerConnectionStringCandidates : Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; unit" Usage="multiplayerSession.SetServerConnectionStringCandidates serverConnectionStringCandidates" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetServerConnectionStringCandidates(Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1754,7 +2057,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetSessionCapabilities (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities capabilities);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSessionCapabilities([in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities capabilities) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetSessionCapabilities(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSessionCapabilities (capabilities As MultiplayerSessionCapabilities)" />
+      <MemberSignature Language="F#" Value="abstract member SetSessionCapabilities : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities -&gt; unit&#xA;override this.SetSessionCapabilities : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities -&gt; unit" Usage="multiplayerSession.SetSessionCapabilities capabilities" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetSessionCapabilities(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionCapabilities)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1783,7 +2091,12 @@ batched local changes to the service.
       <MemberSignature Language="C#" Value="public void SetSessionChangeSubscription (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes changeTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSessionChangeSubscription([in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes changeTypes) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetSessionChangeSubscription(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSessionChangeSubscription (changeTypes As MultiplayerSessionChangeTypes)" />
+      <MemberSignature Language="F#" Value="abstract member SetSessionChangeSubscription : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes -&gt; unit&#xA;override this.SetSessionChangeSubscription : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes -&gt; unit" Usage="multiplayerSession.SetSessionChangeSubscription changeTypes" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetSessionChangeSubscription(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1811,7 +2124,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetSessionCustomPropertyJson (string name, string valueJson);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSessionCustomPropertyJson([in]string name, [in]string valueJson) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetSessionCustomPropertyJson(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSessionCustomPropertyJson (name As String, valueJson As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetSessionCustomPropertyJson : string * string -&gt; unit&#xA;override this.SetSessionCustomPropertyJson : string * string -&gt; unit" Usage="multiplayerSession.SetSessionCustomPropertyJson (name, valueJson)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetSessionCustomPropertyJson(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1840,7 +2158,12 @@ object but does not commit it to the service.
       <MemberSignature Language="C#" Value="public void SetTimeouts (Windows.Foundation.TimeSpan memberReservedTimeout, Windows.Foundation.TimeSpan memberInactiveTimeout, Windows.Foundation.TimeSpan memberReadyTimeout, Windows.Foundation.TimeSpan sessionEmptyTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetTimeouts([in]valuetype Windows.Foundation.TimeSpan memberReservedTimeout, [in]valuetype Windows.Foundation.TimeSpan memberInactiveTimeout, [in]valuetype Windows.Foundation.TimeSpan memberReadyTimeout, [in]valuetype Windows.Foundation.TimeSpan sessionEmptyTimeout) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetTimeouts(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetTimeouts (memberReservedTimeout As TimeSpan, memberInactiveTimeout As TimeSpan, memberReadyTimeout As TimeSpan, sessionEmptyTimeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member SetTimeouts : Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan -&gt; unit&#xA;override this.SetTimeouts : Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan * Windows.Foundation.TimeSpan -&gt; unit" Usage="multiplayerSession.SetTimeouts (memberReservedTimeout, memberInactiveTimeout, memberReadyTimeout, sessionEmptyTimeout)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetTimeouts(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1877,7 +2200,12 @@ to the service.
       <MemberSignature Language="C#" Value="public void SetVisibility (Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibility);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetVisibility([in]valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility visibility) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SetVisibility(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetVisibility (visibility As MultiplayerSessionVisibility)" />
+      <MemberSignature Language="F#" Value="abstract member SetVisibility : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility -&gt; unit&#xA;override this.SetVisibility : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility -&gt; unit" Usage="multiplayerSession.SetVisibility visibility" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SetVisibility(Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionVisibility)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1904,7 +2232,12 @@ to the service.
       <MemberSignature Language="C#" Value="public Windows.Foundation.DateTime StartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.DateTime StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.StartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.StartTime : Windows.Foundation.DateTime" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.StartTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.StartTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1924,7 +2257,12 @@ The date and time that the session began.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes SubscribedChangeTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes SubscribedChangeTypes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SubscribedChangeTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubscribedChangeTypes As MultiplayerSessionChangeTypes" />
+      <MemberSignature Language="F#" Value="member this.SubscribedChangeTypes : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionChangeTypes" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.SubscribedChangeTypes" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.SubscribedChangeTypes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1945,7 +2283,12 @@ the session that the current xboxlivecontext is subscribed to, of None if there 
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer TournamentsServer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer TournamentsServer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.TournamentsServer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TournamentsServer As MultiplayerSessionTournamentsServer" />
+      <MemberSignature Language="F#" Value="member this.TournamentsServer : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionTournamentsServer" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.TournamentsServer" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.TournamentsServer</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -1965,7 +2308,12 @@ A multiplayer tournaments server that contains properties associated with a tour
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus WriteStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus WriteStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.WriteStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WriteStatus As WriteSessionStatus" />
+      <MemberSignature Language="F#" Value="member this.WriteStatus : Microsoft.Xbox.Services.Multiplayer.WriteSessionStatus" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerSession.WriteStatus" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerSessionPublicNonVirtuals.WriteStatus</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

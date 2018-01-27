@@ -1,7 +1,9 @@
-<Type Name="VerifyStringResult" FullName="Microsoft.Xbox.Services.System.VerifyStringResult">
+﻿<Type Name="VerifyStringResult" FullName="Microsoft.Xbox.Services.System.VerifyStringResult">
   <TypeSignature Language="C#" Value="public sealed class VerifyStringResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VerifyStringResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.VerifyStringResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VerifyStringResult" />
+  <TypeSignature Language="F#" Value="type VerifyStringResult = class&#xA;    interface __IVerifyStringResultPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Contains information about the results of a string verification.
       <MemberSignature Language="C#" Value="public string FirstOffendingSubstring { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FirstOffendingSubstring" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.VerifyStringResult.FirstOffendingSubstring" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstOffendingSubstring As String" />
+      <MemberSignature Language="F#" Value="member this.FirstOffendingSubstring : string" Usage="Microsoft.Xbox.Services.System.VerifyStringResult.FirstOffendingSubstring" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IVerifyStringResultPublicNonVirtuals.FirstOffendingSubstring</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -53,7 +60,12 @@ result code is VerifyStringResultCode::Offensive.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.System.VerifyStringResultCode ResultCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.System.VerifyStringResultCode ResultCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.VerifyStringResult.ResultCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultCode As VerifyStringResultCode" />
+      <MemberSignature Language="F#" Value="member this.ResultCode : Microsoft.Xbox.Services.System.VerifyStringResultCode" Usage="Microsoft.Xbox.Services.System.VerifyStringResult.ResultCode" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IVerifyStringResultPublicNonVirtuals.ResultCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

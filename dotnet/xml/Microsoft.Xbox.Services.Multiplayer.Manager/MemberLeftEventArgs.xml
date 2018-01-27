@@ -1,7 +1,9 @@
-<Type Name="MemberLeftEventArgs" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MemberLeftEventArgs">
+﻿<Type Name="MemberLeftEventArgs" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MemberLeftEventArgs">
   <TypeSignature Language="C#" Value="public sealed class MemberLeftEventArgs : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MemberLeftEventArgs extends System.Object implements class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.MemberLeftEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemberLeftEventArgs&#xA;Implements MultiplayerEventArgs" />
+  <TypeSignature Language="F#" Value="type MemberLeftEventArgs = class&#xA;    interface MultiplayerEventArgs&#xA;    interface __IMemberLeftEventArgsPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -27,7 +29,7 @@
   </Attributes>
   <Docs>
     <summary>
-Notifies the title when a new game member leaves the game. 
+Notifies the title when an existing game member leaves the game.
 </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -36,7 +38,12 @@ Notifies the title when a new game member leaves the game.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember&gt; Members { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember&gt; Members" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MemberLeftEventArgs.Members" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Members As IVectorView(Of MultiplayerMember)" />
+      <MemberSignature Language="F#" Value="member this.Members : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerMember&gt;" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MemberLeftEventArgs.Members" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMemberLeftEventArgsPublicNonVirtuals.Members</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

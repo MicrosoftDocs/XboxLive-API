@@ -1,7 +1,9 @@
-<Type Name="TitlePresenceChangeSubscription" FullName="Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription">
+﻿<Type Name="TitlePresenceChangeSubscription" FullName="Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription">
   <TypeSignature Language="C#" Value="public sealed class TitlePresenceChangeSubscription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitlePresenceChangeSubscription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitlePresenceChangeSubscription" />
+  <TypeSignature Language="F#" Value="type TitlePresenceChangeSubscription = class&#xA;    interface __ITitlePresenceChangeSubscriptionPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Contains information about a title presence subscription.
       <MemberSignature Language="C#" Value="public string ResourceUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResourceUri" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription.ResourceUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceUri As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceUri : string" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription.ResourceUri" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__ITitlePresenceChangeSubscriptionPublicNonVirtuals.ResourceUri</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The resource uri for the request.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState State" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As RealTimeActivitySubscriptionState" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivitySubscriptionState" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription.State" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__ITitlePresenceChangeSubscriptionPublicNonVirtuals.State</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The current state of the subscription.
       <MemberSignature Language="C#" Value="public uint SubscriptionId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 SubscriptionId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription.SubscriptionId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubscriptionId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionId : uint32" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription.SubscriptionId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__ITitlePresenceChangeSubscriptionPublicNonVirtuals.SubscriptionId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ The unique subscription id for the request.
       <MemberSignature Language="C#" Value="public uint TitleId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TitleId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription.TitleId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.TitleId : uint32" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription.TitleId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__ITitlePresenceChangeSubscriptionPublicNonVirtuals.TitleId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ The title for the subscription
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceChangeSubscription.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__ITitlePresenceChangeSubscriptionPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

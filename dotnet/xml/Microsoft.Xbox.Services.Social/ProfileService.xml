@@ -1,7 +1,9 @@
-<Type Name="ProfileService" FullName="Microsoft.Xbox.Services.Social.ProfileService">
+﻿<Type Name="ProfileService" FullName="Microsoft.Xbox.Services.Social.ProfileService">
   <TypeSignature Language="C#" Value="public sealed class ProfileService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProfileService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.ProfileService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileService" />
+  <TypeSignature Language="F#" Value="type ProfileService = class&#xA;    interface __IProfileServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Services that manage user profile.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxUserProfile&gt; GetUserProfileAsync (string xboxUserId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Social.XboxUserProfile&gt; GetUserProfileAsync([in]string xboxUserId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.ProfileService.GetUserProfileAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserProfileAsync (xboxUserId As String) As IAsyncOperation(Of XboxUserProfile)" />
+      <MemberSignature Language="F#" Value="abstract member GetUserProfileAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxUserProfile&gt;&#xA;override this.GetUserProfileAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Social.XboxUserProfile&gt;" Usage="profileService.GetUserProfileAsync xboxUserId" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__IProfileServicePublicNonVirtuals.GetUserProfileAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -59,7 +66,12 @@ The result of the asynchronous operation is an XboxUserProfile object.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.XboxUserProfile&gt;&gt; GetUserProfilesAsync (Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Social.XboxUserProfile&gt;&gt; GetUserProfilesAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.ProfileService.GetUserProfilesAsync(Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserProfilesAsync (xboxUserIds As IVectorView(Of String)) As IAsyncOperation(Of IVectorView(Of XboxUserProfile))" />
+      <MemberSignature Language="F#" Value="abstract member GetUserProfilesAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.XboxUserProfile&gt;&gt;&#xA;override this.GetUserProfilesAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.XboxUserProfile&gt;&gt;" Usage="profileService.GetUserProfilesAsync xboxUserIds" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__IProfileServicePublicNonVirtuals.GetUserProfilesAsync(Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -81,7 +93,12 @@ The result of the asynchronous operation is an XboxUserProfile object.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.XboxUserProfile&gt;&gt; GetUserProfilesForSocialGroupAsync (string socialGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Social.XboxUserProfile&gt;&gt; GetUserProfilesForSocialGroupAsync([in]string socialGroup) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.ProfileService.GetUserProfilesForSocialGroupAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserProfilesForSocialGroupAsync (socialGroup As String) As IAsyncOperation(Of IVectorView(Of XboxUserProfile))" />
+      <MemberSignature Language="F#" Value="abstract member GetUserProfilesForSocialGroupAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.XboxUserProfile&gt;&gt;&#xA;override this.GetUserProfilesForSocialGroupAsync : string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.XboxUserProfile&gt;&gt;" Usage="profileService.GetUserProfilesForSocialGroupAsync socialGroup" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__IProfileServicePublicNonVirtuals.GetUserProfilesForSocialGroupAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

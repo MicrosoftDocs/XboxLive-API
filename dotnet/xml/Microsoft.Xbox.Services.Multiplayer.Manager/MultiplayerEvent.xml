@@ -1,7 +1,9 @@
-<Type Name="MultiplayerEvent" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent">
+﻿<Type Name="MultiplayerEvent" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerEvent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerEvent" />
+  <TypeSignature Language="F#" Value="type MultiplayerEvent = class&#xA;    interface __IMultiplayerEventPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,7 +25,8 @@
   </Attributes>
   <Docs>
     <summary>
-Represents a multiplayer event.
+Represents a multiplayer event. 
+Based on the MultiplayerEventType, you must cast the EventArgs to the appropriate class.
 </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -32,7 +35,12 @@ Represents a multiplayer event.
       <MemberSignature Language="C#" Value="public object Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Context" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As Object" />
+      <MemberSignature Language="F#" Value="member this.Context : obj" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.Context" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerEventPublicNonVirtuals.Context</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -42,7 +50,7 @@ Represents a multiplayer event.
       </ReturnValue>
       <Docs>
         <summary>
-A pointer to the application-defined data passed into the set_ methods.
+A pointer to the application-defined data passed into the initiating method.
 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -52,7 +60,12 @@ A pointer to the application-defined data passed into the set_ methods.
       <MemberSignature Language="C#" Value="public int ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ErrorCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.ErrorCode" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerEventPublicNonVirtuals.ErrorCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +85,12 @@ The error code indicating the result of the operation.
       <MemberSignature Language="C#" Value="public string ErrorMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorMessage As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.ErrorMessage" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerEventPublicNonVirtuals.ErrorMessage</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -82,8 +100,8 @@ The error code indicating the result of the operation.
       </ReturnValue>
       <Docs>
         <summary>
-Returns call specific debug information if join fails
-It is not localized, so only use for debugging purposes.
+Returns call specific debug information if join fails.
+This value is not localized, so only use for debugging purposes.
 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -93,7 +111,12 @@ It is not localized, so only use for debugging purposes.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs EventArgs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs EventArgs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.EventArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventArgs As MultiplayerEventArgs" />
+      <MemberSignature Language="F#" Value="member this.EventArgs : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventArgs" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.EventArgs" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerEventPublicNonVirtuals.EventArgs</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -103,7 +126,7 @@ It is not localized, so only use for debugging purposes.
       </ReturnValue>
       <Docs>
         <summary>
-You need to cast this to one of the event arg classes to retrieve the data for that particular event.
+You must cast this to one of the event arg classes to retrieve the data for that particular event.
 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -113,7 +136,12 @@ You need to cast this to one of the event arg classes to retrieve the data for t
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType EventType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType EventType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.EventType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventType As MultiplayerEventType" />
+      <MemberSignature Language="F#" Value="member this.EventType : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEventType" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.EventType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerEventPublicNonVirtuals.EventType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -133,7 +161,12 @@ Type of the event triggered.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType SessionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType SessionType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.SessionType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionType As MultiplayerSessionType" />
+      <MemberSignature Language="F#" Value="member this.SessionType : Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerSessionType" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.MultiplayerEvent.SessionType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.Manager.__IMultiplayerEventPublicNonVirtuals.SessionType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -144,7 +177,7 @@ Type of the event triggered.
       <Docs>
         <summary>
 The multiplayer session type this event was triggered for. Depending upon the session type,
-you can then retrieve the latest lobby or game session from the multiplayer_manager class.
+you can then retrieve the latest lobby or game session from the MultiplayerManager class.
 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

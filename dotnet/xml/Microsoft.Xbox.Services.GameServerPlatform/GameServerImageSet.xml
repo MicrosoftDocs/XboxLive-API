@@ -1,7 +1,9 @@
-<Type Name="GameServerImageSet" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet">
+﻿<Type Name="GameServerImageSet" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet">
   <TypeSignature Language="C#" Value="public sealed class GameServerImageSet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GameServerImageSet extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GameServerImageSet" />
+  <TypeSignature Language="F#" Value="type GameServerImageSet = class&#xA;    interface __IGameServerImageSetPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a set of game server images.
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.Id" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerImageSetPublicNonVirtuals.Id</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The set ID of the variant.
       <MemberSignature Language="C#" Value="public ulong MaxPlayers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 MaxPlayers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.MaxPlayers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxPlayers As ULong" />
+      <MemberSignature Language="F#" Value="member this.MaxPlayers : uint64" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.MaxPlayers" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerImageSetPublicNonVirtuals.MaxPlayers</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The maximum number of players for the variant.
       <MemberSignature Language="C#" Value="public ulong MinPlayers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 MinPlayers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.MinPlayers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinPlayers As ULong" />
+      <MemberSignature Language="F#" Value="member this.MinPlayers : uint64" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.MinPlayers" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerImageSetPublicNonVirtuals.MinPlayers</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ The minimum number of players for the variant.
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.Name" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerImageSetPublicNonVirtuals.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ The set Name of the variant.
       <MemberSignature Language="C#" Value="public string SchemaContent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SchemaContent" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.SchemaContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaContent As String" />
+      <MemberSignature Language="F#" Value="member this.SchemaContent : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.SchemaContent" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerImageSetPublicNonVirtuals.SchemaContent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -132,7 +159,12 @@ Content of this set's schema.
       <MemberSignature Language="C#" Value="public string SchemaId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SchemaId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.SchemaId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaId As String" />
+      <MemberSignature Language="F#" Value="member this.SchemaId : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.SchemaId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerImageSetPublicNonVirtuals.SchemaId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -152,7 +184,12 @@ ID of this set's schema.
       <MemberSignature Language="C#" Value="public string SchemaName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SchemaName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.SchemaName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaName As String" />
+      <MemberSignature Language="F#" Value="member this.SchemaName : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.SchemaName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerImageSetPublicNonVirtuals.SchemaName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -172,7 +209,12 @@ Name of this set's schema.
       <MemberSignature Language="C#" Value="public ulong SelectionOrder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 SelectionOrder" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.SelectionOrder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionOrder As ULong" />
+      <MemberSignature Language="F#" Value="member this.SelectionOrder : uint64" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.SelectionOrder" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerImageSetPublicNonVirtuals.SelectionOrder</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -192,7 +234,12 @@ Selection order for this set.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IMapView&lt;string,string&gt; Tags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IMapView`2&lt;string, string&gt; Tags" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.Tags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tags As IMapView(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Tags : Windows.Foundation.Collections.IMapView&lt;string, string&gt;" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet.Tags" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerImageSetPublicNonVirtuals.Tags</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

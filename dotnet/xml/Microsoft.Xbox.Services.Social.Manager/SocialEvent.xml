@@ -1,7 +1,9 @@
-<Type Name="SocialEvent" FullName="Microsoft.Xbox.Services.Social.Manager.SocialEvent">
+﻿<Type Name="SocialEvent" FullName="Microsoft.Xbox.Services.Social.Manager.SocialEvent">
   <TypeSignature Language="C#" Value="public sealed class SocialEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialEvent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.SocialEvent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocialEvent" />
+  <TypeSignature Language="F#" Value="type SocialEvent = class&#xA;    interface __ISocialEventPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ An event that something in the social graph has changed
       <MemberSignature Language="C#" Value="public int ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ErrorCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialEvent.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEvent.ErrorCode" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ISocialEventPublicNonVirtuals.ErrorCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The error code indicating the result of the operation.
       <MemberSignature Language="C#" Value="public string ErrorMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialEvent.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorMessage As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEvent.ErrorMessage" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ISocialEventPublicNonVirtuals.ErrorMessage</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -73,7 +85,12 @@ It is not localized, so only use for debugging purposes.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.SocialEventArgs EventArgs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Social.Manager.SocialEventArgs EventArgs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialEvent.EventArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventArgs As SocialEventArgs" />
+      <MemberSignature Language="F#" Value="member this.EventArgs : Microsoft.Xbox.Services.Social.Manager.SocialEventArgs" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEvent.EventArgs" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ISocialEventPublicNonVirtuals.EventArgs</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -91,7 +108,12 @@ It is not localized, so only use for debugging purposes.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.SocialEventType EventType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Social.Manager.SocialEventType EventType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialEvent.EventType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventType As SocialEventType" />
+      <MemberSignature Language="F#" Value="member this.EventType : Microsoft.Xbox.Services.Social.Manager.SocialEventType" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEvent.EventType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ISocialEventPublicNonVirtuals.EventType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ Tells the caller what to cast the event_args to
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.System.XboxLiveUser User { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.System.XboxLiveUser User" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialEvent.User" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As XboxLiveUser" />
+      <MemberSignature Language="F#" Value="member this.User : Microsoft.Xbox.Services.System.XboxLiveUser" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEvent.User" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ISocialEventPublicNonVirtuals.User</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -132,7 +159,12 @@ The Xbox Live user this event is for
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;string&gt; UsersAffected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; UsersAffected" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.SocialEvent.UsersAffected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsersAffected As IVectorView(Of String)" />
+      <MemberSignature Language="F#" Value="member this.UsersAffected : Windows.Foundation.Collections.IVectorView&lt;string&gt;" Usage="Microsoft.Xbox.Services.Social.Manager.SocialEvent.UsersAffected" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__ISocialEventPublicNonVirtuals.UsersAffected</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="TitleStorageService" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageService">
+﻿<Type Name="TitleStorageService" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageService">
   <TypeSignature Language="C#" Value="public sealed class TitleStorageService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleStorageService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitleStorageService" />
+  <TypeSignature Language="F#" Value="type TitleStorageService = class&#xA;    interface __ITitleStorageServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents an endpoint that provides methods that you can use to access the Titl
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction DeleteBlobAsync (Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, bool deleteOnlyIfETagMatches);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction DeleteBlobAsync([in]class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, [in]bool deleteOnlyIfETagMatches) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.DeleteBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteBlobAsync (blobMetadata As TitleStorageBlobMetadata, deleteOnlyIfETagMatches As Boolean) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member DeleteBlobAsync : Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata * bool -&gt; Windows.Foundation.IAsyncAction&#xA;override this.DeleteBlobAsync : Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata * bool -&gt; Windows.Foundation.IAsyncAction" Usage="titleStorageService.DeleteBlobAsync (blobMetadata, deleteOnlyIfETagMatches)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageServicePublicNonVirtuals.DeleteBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -64,7 +71,12 @@ V1 DELETE sessions/{sessionId}/scids/{scid}/data/{path},{type}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt; DownloadBlobAsync (Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, Windows.Storage.Streams.IBuffer blobBuffer, Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, string selectQuery);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt; DownloadBlobAsync([in]class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, [in]class Windows.Storage.Streams.IBuffer blobBuffer, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, [in]string selectQuery) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.DownloadBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,Windows.Storage.Streams.IBuffer,Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DownloadBlobAsync (blobMetadata As TitleStorageBlobMetadata, blobBuffer As IBuffer, etagMatchCondition As TitleStorageETagMatchCondition, selectQuery As String) As IAsyncOperation(Of TitleStorageBlobResult)" />
+      <MemberSignature Language="F#" Value="abstract member DownloadBlobAsync : Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata * Windows.Storage.Streams.IBuffer * Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt;&#xA;override this.DownloadBlobAsync : Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata * Windows.Storage.Streams.IBuffer * Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt;" Usage="titleStorageService.DownloadBlobAsync (blobMetadata, blobBuffer, etagMatchCondition, selectQuery)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageServicePublicNonVirtuals.DownloadBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,Windows.Storage.Streams.IBuffer,Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -111,7 +123,12 @@ V1 GET sessions/{sessionId}/scids/{scid}/data/{path},{type}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt; DownloadBlobAsync (Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, Windows.Storage.Streams.IBuffer blobBuffer, Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, string selectQuery, uint preferredDownloadBlockSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt; DownloadBlobAsync([in]class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, [in]class Windows.Storage.Streams.IBuffer blobBuffer, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, [in]string selectQuery, [in]unsigned int32 preferredDownloadBlockSize) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.DownloadBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,Windows.Storage.Streams.IBuffer,Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DownloadBlobAsync (blobMetadata As TitleStorageBlobMetadata, blobBuffer As IBuffer, etagMatchCondition As TitleStorageETagMatchCondition, selectQuery As String, preferredDownloadBlockSize As UInteger) As IAsyncOperation(Of TitleStorageBlobResult)" />
+      <MemberSignature Language="F#" Value="abstract member DownloadBlobAsync : Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata * Windows.Storage.Streams.IBuffer * Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt;&#xA;override this.DownloadBlobAsync : Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata * Windows.Storage.Streams.IBuffer * Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition * string * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobResult&gt;" Usage="titleStorageService.DownloadBlobAsync (blobMetadata, blobBuffer, etagMatchCondition, selectQuery, preferredDownloadBlockSize)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageServicePublicNonVirtuals.DownloadBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,Windows.Storage.Streams.IBuffer,Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition,System.String,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -158,7 +175,12 @@ V1 GET sessions/{sessionId}/scids/{scid}/data/{path},{type}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt; GetBlobMetadataAsync (string serviceConfigurationId, Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, string blobPath, string xboxUserId, uint skipItems, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt; GetBlobMetadataAsync([in]string serviceConfigurationId, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType, [in]string blobPath, [in]string xboxUserId, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.GetBlobMetadataAsync(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,System.String,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBlobMetadataAsync (serviceConfigurationId As String, storageType As TitleStorageType, blobPath As String, xboxUserId As String, skipItems As UInteger, maxItems As UInteger) As IAsyncOperation(Of TitleStorageBlobMetadataResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetBlobMetadataAsync : string * Microsoft.Xbox.Services.TitleStorage.TitleStorageType * string * string * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt;&#xA;override this.GetBlobMetadataAsync : string * Microsoft.Xbox.Services.TitleStorage.TitleStorageType * string * string * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt;" Usage="titleStorageService.GetBlobMetadataAsync (serviceConfigurationId, storageType, blobPath, xboxUserId, skipItems, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageServicePublicNonVirtuals.GetBlobMetadataAsync(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType,System.String,System.String,System.UInt32,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -199,7 +221,12 @@ V1 GET global/scids/{scid}/data/{path}?maxItems={maxItems}[skipItems={skipItems}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt; GetBlobMetadataForSessionStorageAsync (string serviceConfigurationId, string blobPath, string multiplayerSessionTemplateName, string multiplayerSessionName, uint skipItems, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt; GetBlobMetadataForSessionStorageAsync([in]string serviceConfigurationId, [in]string blobPath, [in]string multiplayerSessionTemplateName, [in]string multiplayerSessionName, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.GetBlobMetadataForSessionStorageAsync(System.String,System.String,System.String,System.String,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBlobMetadataForSessionStorageAsync (serviceConfigurationId As String, blobPath As String, multiplayerSessionTemplateName As String, multiplayerSessionName As String, skipItems As UInteger, maxItems As UInteger) As IAsyncOperation(Of TitleStorageBlobMetadataResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetBlobMetadataForSessionStorageAsync : string * string * string * string * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt;&#xA;override this.GetBlobMetadataForSessionStorageAsync : string * string * string * string * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadataResult&gt;" Usage="titleStorageService.GetBlobMetadataForSessionStorageAsync (serviceConfigurationId, blobPath, multiplayerSessionTemplateName, multiplayerSessionName, skipItems, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageServicePublicNonVirtuals.GetBlobMetadataForSessionStorageAsync(System.String,System.String,System.String,System.String,System.UInt32,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -243,7 +270,12 @@ V1 GET sessions/{sessionId}/scids/{scid}/data/{path}?maxItems={maxItems}[skipIte
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt; GetQuotaAsync (string serviceConfigurationId, Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt; GetQuotaAsync([in]string serviceConfigurationId, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageType storageType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.GetQuotaAsync(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetQuotaAsync (serviceConfigurationId As String, storageType As TitleStorageType) As IAsyncOperation(Of TitleStorageQuota)" />
+      <MemberSignature Language="F#" Value="abstract member GetQuotaAsync : string * Microsoft.Xbox.Services.TitleStorage.TitleStorageType -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt;&#xA;override this.GetQuotaAsync : string * Microsoft.Xbox.Services.TitleStorage.TitleStorageType -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt;" Usage="titleStorageService.GetQuotaAsync (serviceConfigurationId, storageType)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageServicePublicNonVirtuals.GetQuotaAsync(System.String,Microsoft.Xbox.Services.TitleStorage.TitleStorageType)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -278,7 +310,12 @@ V1 GET global/scids/{scid}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt; GetQuotaForSessionStorageAsync (string serviceConfigurationId, string multiplayerSessionTemplateName, string multiplayerSessionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt; GetQuotaForSessionStorageAsync([in]string serviceConfigurationId, [in]string multiplayerSessionTemplateName, [in]string multiplayerSessionName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.GetQuotaForSessionStorageAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetQuotaForSessionStorageAsync (serviceConfigurationId As String, multiplayerSessionTemplateName As String, multiplayerSessionName As String) As IAsyncOperation(Of TitleStorageQuota)" />
+      <MemberSignature Language="F#" Value="abstract member GetQuotaForSessionStorageAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt;&#xA;override this.GetQuotaForSessionStorageAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageQuota&gt;" Usage="titleStorageService.GetQuotaForSessionStorageAsync (serviceConfigurationId, multiplayerSessionTemplateName, multiplayerSessionName)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageServicePublicNonVirtuals.GetQuotaForSessionStorageAsync(System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -316,7 +353,12 @@ V1 GET sessions/{sessionId}/scids/{scid}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt; UploadBlobAsync (Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, Windows.Storage.Streams.IBuffer blobBuffer, Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, uint preferredUploadBlockSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt; UploadBlobAsync([in]class Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata blobMetadata, [in]class Windows.Storage.Streams.IBuffer blobBuffer, [in]valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition etagMatchCondition, [in]unsigned int32 preferredUploadBlockSize) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.TitleStorage.TitleStorageService.UploadBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,Windows.Storage.Streams.IBuffer,Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UploadBlobAsync (blobMetadata As TitleStorageBlobMetadata, blobBuffer As IBuffer, etagMatchCondition As TitleStorageETagMatchCondition, preferredUploadBlockSize As UInteger) As IAsyncOperation(Of TitleStorageBlobMetadata)" />
+      <MemberSignature Language="F#" Value="abstract member UploadBlobAsync : Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata * Windows.Storage.Streams.IBuffer * Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt;&#xA;override this.UploadBlobAsync : Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata * Windows.Storage.Streams.IBuffer * Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata&gt;" Usage="titleStorageService.UploadBlobAsync (blobMetadata, blobBuffer, etagMatchCondition, preferredUploadBlockSize)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.TitleStorage.__ITitleStorageServicePublicNonVirtuals.UploadBlobAsync(Microsoft.Xbox.Services.TitleStorage.TitleStorageBlobMetadata,Windows.Storage.Streams.IBuffer,Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

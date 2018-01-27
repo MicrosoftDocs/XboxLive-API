@@ -1,7 +1,9 @@
-<Type Name="GameServerPortMapping" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping">
+﻿<Type Name="GameServerPortMapping" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping">
   <TypeSignature Language="C#" Value="public sealed class GameServerPortMapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GameServerPortMapping extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GameServerPortMapping" />
+  <TypeSignature Language="F#" Value="type GameServerPortMapping = class&#xA;    interface __IGameServerPortMappingPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a mapping between the port numbers requested for the server to use, a
       <MemberSignature Language="C#" Value="public uint ExternalPortNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ExternalPortNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping.ExternalPortNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExternalPortNumber As UInteger" />
+      <MemberSignature Language="F#" Value="member this.ExternalPortNumber : uint32" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping.ExternalPortNumber" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPortMappingPublicNonVirtuals.ExternalPortNumber</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The external port number clients should use when connecting.  This port is mappe
       <MemberSignature Language="C#" Value="public uint InternalPortNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 InternalPortNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping.InternalPortNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InternalPortNumber As UInteger" />
+      <MemberSignature Language="F#" Value="member this.InternalPortNumber : uint32" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping.InternalPortNumber" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPortMappingPublicNonVirtuals.InternalPortNumber</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The internal port number for the named port.  This is the port that the server w
       <MemberSignature Language="C#" Value="public string PortName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PortName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping.PortName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PortName As String" />
+      <MemberSignature Language="F#" Value="member this.PortName : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerPortMapping.PortName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerPortMappingPublicNonVirtuals.PortName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

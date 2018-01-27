@@ -1,7 +1,9 @@
-<Type Name="TournamentRegistrationReason" FullName="Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason">
+﻿<Type Name="TournamentRegistrationReason" FullName="Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason">
   <TypeSignature Language="C#" Value="public enum TournamentRegistrationReason" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentRegistrationReason extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TournamentRegistrationReason" />
+  <TypeSignature Language="F#" Value="type TournamentRegistrationReason = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Defines values used to indicate the reason why the team in under selected tourna
       <MemberSignature Language="C#" Value="MemberAlreadyRegistered" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason MemberAlreadyRegistered = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.MemberAlreadyRegistered" />
+      <MemberSignature Language="VB.NET" Value="MemberAlreadyRegistered" />
+      <MemberSignature Language="F#" Value="MemberAlreadyRegistered = 2" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.MemberAlreadyRegistered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values used to indicate the reason why the team in under selected tourna
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 One of the team members have already been registered for this tournament.
@@ -43,6 +48,8 @@ One of the team members have already been registered for this tournament.
       <MemberSignature Language="C#" Value="RegistrationClosed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason RegistrationClosed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.RegistrationClosed" />
+      <MemberSignature Language="VB.NET" Value="RegistrationClosed" />
+      <MemberSignature Language="F#" Value="RegistrationClosed = 1" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.RegistrationClosed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -51,6 +58,7 @@ One of the team members have already been registered for this tournament.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 The registration for this tournament has been closed.
@@ -61,6 +69,8 @@ The registration for this tournament has been closed.
       <MemberSignature Language="C#" Value="TeamEliminated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason TeamEliminated = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.TeamEliminated" />
+      <MemberSignature Language="VB.NET" Value="TeamEliminated" />
+      <MemberSignature Language="F#" Value="TeamEliminated = 4" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.TeamEliminated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -69,6 +79,7 @@ The registration for this tournament has been closed.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
 The team has been eliminated from the tournament.
@@ -79,6 +90,8 @@ The team has been eliminated from the tournament.
       <MemberSignature Language="C#" Value="TournamentCompleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason TournamentCompleted = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.TournamentCompleted" />
+      <MemberSignature Language="VB.NET" Value="TournamentCompleted" />
+      <MemberSignature Language="F#" Value="TournamentCompleted = 5" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.TournamentCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -87,6 +100,7 @@ The team has been eliminated from the tournament.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>
 The tournament has been completed.
@@ -97,6 +111,8 @@ The tournament has been completed.
       <MemberSignature Language="C#" Value="TournamentFull" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason TournamentFull = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.TournamentFull" />
+      <MemberSignature Language="VB.NET" Value="TournamentFull" />
+      <MemberSignature Language="F#" Value="TournamentFull = 3" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.TournamentFull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -105,6 +121,7 @@ The tournament has been completed.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 The tournament has reached its max team registration limit and is now full.
@@ -115,6 +132,8 @@ The tournament has reached its max team registration limit and is now full.
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -123,6 +142,7 @@ The tournament has reached its max team registration limit and is now full.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentRegistrationReason</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 The team registration reason is unknown.

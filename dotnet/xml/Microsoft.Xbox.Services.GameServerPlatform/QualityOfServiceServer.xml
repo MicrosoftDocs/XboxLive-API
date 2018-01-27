@@ -1,7 +1,9 @@
-<Type Name="QualityOfServiceServer" FullName="Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer">
+﻿<Type Name="QualityOfServiceServer" FullName="Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer">
   <TypeSignature Language="C#" Value="public sealed class QualityOfServiceServer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QualityOfServiceServer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class QualityOfServiceServer" />
+  <TypeSignature Language="F#" Value="type QualityOfServiceServer = class&#xA;    interface __IQualityOfServiceServerPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents the server used to measure network quality of service (QoS) for the s
       <MemberSignature Language="C#" Value="public string SecureDeviceAddressBase64 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SecureDeviceAddressBase64" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer.SecureDeviceAddressBase64" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecureDeviceAddressBase64 As String" />
+      <MemberSignature Language="F#" Value="member this.SecureDeviceAddressBase64 : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer.SecureDeviceAddressBase64" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IQualityOfServiceServerPublicNonVirtuals.SecureDeviceAddressBase64</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The secure device address in base64 of the server.
       <MemberSignature Language="C#" Value="public string ServerFullQualifiedDomainName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServerFullQualifiedDomainName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer.ServerFullQualifiedDomainName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerFullQualifiedDomainName As String" />
+      <MemberSignature Language="F#" Value="member this.ServerFullQualifiedDomainName : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer.ServerFullQualifiedDomainName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IQualityOfServiceServerPublicNonVirtuals.ServerFullQualifiedDomainName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The full qualified domain name of the server.
       <MemberSignature Language="C#" Value="public string TargetLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer.TargetLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetLocation As String" />
+      <MemberSignature Language="F#" Value="member this.TargetLocation : string" Usage="Microsoft.Xbox.Services.GameServerPlatform.QualityOfServiceServer.TargetLocation" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IQualityOfServiceServerPublicNonVirtuals.TargetLocation</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

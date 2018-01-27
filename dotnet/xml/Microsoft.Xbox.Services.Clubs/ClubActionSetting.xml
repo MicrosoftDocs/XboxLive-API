@@ -1,7 +1,9 @@
-<Type Name="ClubActionSetting" FullName="Microsoft.Xbox.Services.Clubs.ClubActionSetting">
+﻿<Type Name="ClubActionSetting" FullName="Microsoft.Xbox.Services.Clubs.ClubActionSetting">
   <TypeSignature Language="C#" Value="public sealed class ClubActionSetting" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubActionSetting extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubActionSetting" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClubActionSetting" />
+  <TypeSignature Language="F#" Value="type ClubActionSetting = class&#xA;    interface __IClubActionSettingPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt; AllowedValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;valuetype Microsoft.Xbox.Services.Clubs.ClubRole&gt; AllowedValues" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSetting.AllowedValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedValues As IVectorView(Of ClubRole)" />
+      <MemberSignature Language="F#" Value="member this.AllowedValues : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubRole&gt;" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSetting.AllowedValues" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingPublicNonVirtuals.AllowedValues</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -48,7 +55,12 @@
       <MemberSignature Language="C#" Value="public bool CanViewerAct { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanViewerAct" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSetting.CanViewerAct" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanViewerAct As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanViewerAct : bool" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSetting.CanViewerAct" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingPublicNonVirtuals.CanViewerAct</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -66,7 +78,12 @@
       <MemberSignature Language="C#" Value="public bool CanViewerChangeSetting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanViewerChangeSetting" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSetting.CanViewerChangeSetting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanViewerChangeSetting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanViewerChangeSetting : bool" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSetting.CanViewerChangeSetting" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingPublicNonVirtuals.CanViewerChangeSetting</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -84,7 +101,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Clubs.ClubRole RequiredRole { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Clubs.ClubRole RequiredRole" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubActionSetting.RequiredRole" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiredRole As ClubRole" />
+      <MemberSignature Language="F#" Value="member this.RequiredRole : Microsoft.Xbox.Services.Clubs.ClubRole" Usage="Microsoft.Xbox.Services.Clubs.ClubActionSetting.RequiredRole" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubActionSettingPublicNonVirtuals.RequiredRole</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

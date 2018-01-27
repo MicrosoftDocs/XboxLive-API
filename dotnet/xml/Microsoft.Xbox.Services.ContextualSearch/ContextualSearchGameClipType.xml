@@ -1,7 +1,9 @@
-<Type Name="ContextualSearchGameClipType" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType">
+﻿<Type Name="ContextualSearchGameClipType" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType">
   <TypeSignature Language="C#" Value="public enum ContextualSearchGameClipType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchGameClipType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ContextualSearchGameClipType" />
+  <TypeSignature Language="F#" Value="type ContextualSearchGameClipType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="Achievement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType Achievement = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.Achievement" />
+      <MemberSignature Language="VB.NET" Value="Achievement" />
+      <MemberSignature Language="F#" Value="Achievement = 2" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.Achievement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Game clip is an achievement type</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="DeveloperInitiated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType DeveloperInitiated = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.DeveloperInitiated" />
+      <MemberSignature Language="VB.NET" Value="DeveloperInitiated" />
+      <MemberSignature Language="F#" Value="DeveloperInitiated = 1" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.DeveloperInitiated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Game clip is initiated by a developer / title</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Game clip type is unknown or not set. (not valid for upload or queries)</summary>
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="UserGenerated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType UserGenerated = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.UserGenerated" />
+      <MemberSignature Language="VB.NET" Value="UserGenerated" />
+      <MemberSignature Language="F#" Value="UserGenerated = 3" Usage="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType.UserGenerated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -79,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Game clip is a user-generated type</summary>
       </Docs>

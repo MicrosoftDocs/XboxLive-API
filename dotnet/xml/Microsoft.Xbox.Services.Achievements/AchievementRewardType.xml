@@ -1,7 +1,9 @@
-<Type Name="AchievementRewardType" FullName="Microsoft.Xbox.Services.Achievements.AchievementRewardType">
+﻿<Type Name="AchievementRewardType" FullName="Microsoft.Xbox.Services.Achievements.AchievementRewardType">
   <TypeSignature Language="C#" Value="public enum AchievementRewardType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AchievementRewardType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Achievements.AchievementRewardType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AchievementRewardType" />
+  <TypeSignature Language="F#" Value="type AchievementRewardType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="Art" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementRewardType Art = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementRewardType.Art" />
+      <MemberSignature Language="VB.NET" Value="Art" />
+      <MemberSignature Language="F#" Value="Art = 3" Usage="Microsoft.Xbox.Services.Achievements.AchievementRewardType.Art" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementRewardType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A digital art reward.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="Gamerscore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementRewardType Gamerscore = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementRewardType.Gamerscore" />
+      <MemberSignature Language="VB.NET" Value="Gamerscore" />
+      <MemberSignature Language="F#" Value="Gamerscore = 1" Usage="Microsoft.Xbox.Services.Achievements.AchievementRewardType.Gamerscore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementRewardType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A Gamerscore reward.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="InApp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementRewardType InApp = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementRewardType.InApp" />
+      <MemberSignature Language="VB.NET" Value="InApp" />
+      <MemberSignature Language="F#" Value="InApp = 2" Usage="Microsoft.Xbox.Services.Achievements.AchievementRewardType.InApp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementRewardType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An in-app reward, defined and delivered by the title.</summary>
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementRewardType Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementRewardType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Achievements.AchievementRewardType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -79,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementRewardType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The reward type is unknown.</summary>
       </Docs>

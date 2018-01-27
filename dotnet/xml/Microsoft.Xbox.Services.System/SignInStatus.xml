@@ -1,7 +1,9 @@
-<Type Name="SignInStatus" FullName="Microsoft.Xbox.Services.System.SignInStatus">
+﻿<Type Name="SignInStatus" FullName="Microsoft.Xbox.Services.System.SignInStatus">
   <TypeSignature Language="C#" Value="public enum SignInStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SignInStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.SignInStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SignInStatus" />
+  <TypeSignature Language="F#" Value="type SignInStatus = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Enumeration values that indicate the result status of sign in.
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.SignInStatus Success = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.SignInStatus.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="Microsoft.Xbox.Services.System.SignInStatus.Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Enumeration values that indicate the result status of sign in.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.SignInStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Signed in successfully.
@@ -43,6 +48,8 @@ Signed in successfully.
       <MemberSignature Language="C#" Value="UserCancel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.SignInStatus UserCancel = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.SignInStatus.UserCancel" />
+      <MemberSignature Language="VB.NET" Value="UserCancel" />
+      <MemberSignature Language="F#" Value="UserCancel = 2" Usage="Microsoft.Xbox.Services.System.SignInStatus.UserCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -51,6 +58,7 @@ Signed in successfully.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.SignInStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 The user decided to cancel the sign-in operation.
@@ -62,6 +70,8 @@ Can only be returned from SigninAsync().
       <MemberSignature Language="C#" Value="UserInteractionRequired" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.SignInStatus UserInteractionRequired = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.SignInStatus.UserInteractionRequired" />
+      <MemberSignature Language="VB.NET" Value="UserInteractionRequired" />
+      <MemberSignature Language="F#" Value="UserInteractionRequired = 1" Usage="Microsoft.Xbox.Services.System.SignInStatus.UserInteractionRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -70,6 +80,7 @@ Can only be returned from SigninAsync().
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.SignInStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Need to invoke the SignInAsync API (w/ UX) to let the user take necessary actions for the sign-in operation to continue.

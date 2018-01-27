@@ -1,7 +1,9 @@
-<Type Name="MultiplayerSubscriptionLostEventArgs" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs">
+﻿<Type Name="MultiplayerSubscriptionLostEventArgs" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerSubscriptionLostEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerSubscriptionLostEventArgs extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerSubscriptionLostEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerSubscriptionLostEventArgs" />
+  <TypeSignature Language="F#" Value="type MultiplayerSubscriptionLostEventArgs = class&#xA;    interface __IMultiplayerSubscriptionLostEventArgsPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>

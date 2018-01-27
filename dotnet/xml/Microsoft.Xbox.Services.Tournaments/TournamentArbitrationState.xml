@@ -1,7 +1,9 @@
-<Type Name="TournamentArbitrationState" FullName="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState">
+﻿<Type Name="TournamentArbitrationState" FullName="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState">
   <TypeSignature Language="C#" Value="public enum TournamentArbitrationState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentArbitrationState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TournamentArbitrationState" />
+  <TypeSignature Language="F#" Value="type TournamentArbitrationState = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Defines values used to indicate the state of a tournament game.
       <MemberSignature Language="C#" Value="Canceled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState Canceled = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.Canceled" />
+      <MemberSignature Language="VB.NET" Value="Canceled" />
+      <MemberSignature Language="F#" Value="Canceled = 2" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values used to indicate the state of a tournament game.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 The match was canceled, for example in the case of forfeiting
@@ -43,6 +48,8 @@ The match was canceled, for example in the case of forfeiting
       <MemberSignature Language="C#" Value="Completed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState Completed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.Completed" />
+      <MemberSignature Language="VB.NET" Value="Completed" />
+      <MemberSignature Language="F#" Value="Completed = 1" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.Completed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -51,6 +58,7 @@ The match was canceled, for example in the case of forfeiting
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Results were fully uploaded and complete
@@ -61,6 +69,8 @@ Results were fully uploaded and complete
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -69,6 +79,7 @@ Results were fully uploaded and complete
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 No arbitration state set.
@@ -79,6 +90,8 @@ No arbitration state set.
       <MemberSignature Language="C#" Value="NoResults" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState NoResults = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.NoResults" />
+      <MemberSignature Language="VB.NET" Value="NoResults" />
+      <MemberSignature Language="F#" Value="NoResults = 3" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.NoResults" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -87,6 +100,7 @@ No arbitration state set.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 The match begun, but no players or servers reported results in time before the arbitration deadline
@@ -97,6 +111,8 @@ The match begun, but no players or servers reported results in time before the a
       <MemberSignature Language="C#" Value="PartialResults" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState PartialResults = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.PartialResults" />
+      <MemberSignature Language="VB.NET" Value="PartialResults" />
+      <MemberSignature Language="F#" Value="PartialResults = 4" Usage="Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState.PartialResults" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -105,6 +121,7 @@ The match begun, but no players or servers reported results in time before the a
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentArbitrationState</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
 Some results were received, and results were compiled based on this incomplete data

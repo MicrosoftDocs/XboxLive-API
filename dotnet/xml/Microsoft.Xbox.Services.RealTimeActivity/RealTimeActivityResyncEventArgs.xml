@@ -1,7 +1,9 @@
-<Type Name="RealTimeActivityResyncEventArgs" FullName="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityResyncEventArgs">
+﻿<Type Name="RealTimeActivityResyncEventArgs" FullName="Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityResyncEventArgs">
   <TypeSignature Language="C#" Value="public sealed class RealTimeActivityResyncEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RealTimeActivityResyncEventArgs extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.RealTimeActivity.RealTimeActivityResyncEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RealTimeActivityResyncEventArgs" />
+  <TypeSignature Language="F#" Value="type RealTimeActivityResyncEventArgs = class&#xA;    interface __IRealTimeActivityResyncEventArgsPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>

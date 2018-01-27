@@ -1,7 +1,9 @@
-<Type Name="GetTokenAndSignatureResult" FullName="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult">
+﻿<Type Name="GetTokenAndSignatureResult" FullName="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult">
   <TypeSignature Language="C#" Value="public sealed class GetTokenAndSignatureResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GetTokenAndSignatureResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GetTokenAndSignatureResult" />
+  <TypeSignature Language="F#" Value="type GetTokenAndSignatureResult = class&#xA;    interface __IGetTokenAndSignatureResultPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -33,7 +35,12 @@ This class is returned as the result of a call to XboxLiveUser.GetTokenAndSignat
       <MemberSignature Language="C#" Value="public string AgeGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AgeGroup" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.AgeGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AgeGroup As String" />
+      <MemberSignature Language="F#" Value="member this.AgeGroup : string" Usage="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.AgeGroup" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IGetTokenAndSignatureResultPublicNonVirtuals.AgeGroup</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -53,7 +60,12 @@ The age group
       <MemberSignature Language="C#" Value="public string Gamertag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Gamertag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.Gamertag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Gamertag As String" />
+      <MemberSignature Language="F#" Value="member this.Gamertag : string" Usage="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.Gamertag" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IGetTokenAndSignatureResultPublicNonVirtuals.Gamertag</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -73,7 +85,12 @@ The gamertag name associated with the Xbox user's account.
       <MemberSignature Language="C#" Value="public string Privileges { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Privileges" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.Privileges" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Privileges As String" />
+      <MemberSignature Language="F#" Value="member this.Privileges : string" Usage="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.Privileges" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IGetTokenAndSignatureResultPublicNonVirtuals.Privileges</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -93,7 +110,12 @@ The privileges
       <MemberSignature Language="C#" Value="public string Signature { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Signature" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.Signature" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As String" />
+      <MemberSignature Language="F#" Value="member this.Signature : string" Usage="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.Signature" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IGetTokenAndSignatureResultPublicNonVirtuals.Signature</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -113,7 +135,12 @@ The digital signature for the HTTP request.
       <MemberSignature Language="C#" Value="public string Token { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Token" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.Token" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Token As String" />
+      <MemberSignature Language="F#" Value="member this.Token : string" Usage="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.Token" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IGetTokenAndSignatureResultPublicNonVirtuals.Token</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -133,7 +160,12 @@ The authorization token for the HTTP request.
       <MemberSignature Language="C#" Value="public string WebAccountId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string WebAccountId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.WebAccountId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebAccountId As String" />
+      <MemberSignature Language="F#" Value="member this.WebAccountId : string" Usage="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.WebAccountId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IGetTokenAndSignatureResultPublicNonVirtuals.WebAccountId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -156,7 +188,12 @@ for more information about WebAccount
       <MemberSignature Language="C#" Value="public string XboxUserHash { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserHash" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.XboxUserHash" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserHash As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserHash : string" Usage="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.XboxUserHash" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IGetTokenAndSignatureResultPublicNonVirtuals.XboxUserHash</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -176,7 +213,12 @@ The hashcode that identifies the user. This value is used for HTTP calls.
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.System.GetTokenAndSignatureResult.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.System.__IGetTokenAndSignatureResultPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

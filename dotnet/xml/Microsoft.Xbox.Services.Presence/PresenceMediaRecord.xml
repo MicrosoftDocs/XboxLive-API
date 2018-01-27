@@ -1,7 +1,9 @@
-<Type Name="PresenceMediaRecord" FullName="Microsoft.Xbox.Services.Presence.PresenceMediaRecord">
+﻿<Type Name="PresenceMediaRecord" FullName="Microsoft.Xbox.Services.Presence.PresenceMediaRecord">
   <TypeSignature Language="C#" Value="public sealed class PresenceMediaRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceMediaRecord extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.PresenceMediaRecord" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PresenceMediaRecord" />
+  <TypeSignature Language="F#" Value="type PresenceMediaRecord = class&#xA;    interface __IPresenceMediaRecordPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a media record for Rich Presence.
       <MemberSignature Language="C#" Value="public string MediaId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MediaId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceMediaRecord.MediaId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaId As String" />
+      <MemberSignature Language="F#" Value="member this.MediaId : string" Usage="Microsoft.Xbox.Services.Presence.PresenceMediaRecord.MediaId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceMediaRecordPublicNonVirtuals.MediaId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ ID of the media used by the Bing catalog or the provider catalog.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.PresenceMediaIdType MediaIdType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Presence.PresenceMediaIdType MediaIdType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceMediaRecord.MediaIdType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaIdType As PresenceMediaIdType" />
+      <MemberSignature Language="F#" Value="member this.MediaIdType : Microsoft.Xbox.Services.Presence.PresenceMediaIdType" Usage="Microsoft.Xbox.Services.Presence.PresenceMediaRecord.MediaIdType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceMediaRecordPublicNonVirtuals.MediaIdType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The ID type of the media.
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceMediaRecord.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Xbox.Services.Presence.PresenceMediaRecord.Name" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceMediaRecordPublicNonVirtuals.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

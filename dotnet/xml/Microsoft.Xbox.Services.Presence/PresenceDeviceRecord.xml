@@ -1,7 +1,9 @@
-<Type Name="PresenceDeviceRecord" FullName="Microsoft.Xbox.Services.Presence.PresenceDeviceRecord">
+﻿<Type Name="PresenceDeviceRecord" FullName="Microsoft.Xbox.Services.Presence.PresenceDeviceRecord">
   <TypeSignature Language="C#" Value="public sealed class PresenceDeviceRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresenceDeviceRecord extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.PresenceDeviceRecord" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PresenceDeviceRecord" />
+  <TypeSignature Language="F#" Value="type PresenceDeviceRecord = class&#xA;    interface __IPresenceDeviceRecordPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a device record for Rich Presence.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Presence.PresenceDeviceType DeviceType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Presence.PresenceDeviceType DeviceType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceDeviceRecord.DeviceType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceType As PresenceDeviceType" />
+      <MemberSignature Language="F#" Value="member this.DeviceType : Microsoft.Xbox.Services.Presence.PresenceDeviceType" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceRecord.DeviceType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceDeviceRecordPublicNonVirtuals.DeviceType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The device type associated with this record.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceTitleRecord&gt; PresenceTitleRecords { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Presence.PresenceTitleRecord&gt; PresenceTitleRecords" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Presence.PresenceDeviceRecord.PresenceTitleRecords" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresenceTitleRecords As IVectorView(Of PresenceTitleRecord)" />
+      <MemberSignature Language="F#" Value="member this.PresenceTitleRecords : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Presence.PresenceTitleRecord&gt;" Usage="Microsoft.Xbox.Services.Presence.PresenceDeviceRecord.PresenceTitleRecords" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Presence.__IPresenceDeviceRecordPublicNonVirtuals.PresenceTitleRecords</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

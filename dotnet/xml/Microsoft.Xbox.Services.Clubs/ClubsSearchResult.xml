@@ -1,7 +1,9 @@
-<Type Name="ClubsSearchResult" FullName="Microsoft.Xbox.Services.Clubs.ClubsSearchResult">
+﻿<Type Name="ClubsSearchResult" FullName="Microsoft.Xbox.Services.Clubs.ClubsSearchResult">
   <TypeSignature Language="C#" Value="public sealed class ClubsSearchResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubsSearchResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubsSearchResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClubsSearchResult" />
+  <TypeSignature Language="F#" Value="type ClubsSearchResult = class&#xA;    interface __IClubsSearchResultPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -30,7 +32,12 @@
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.Club&gt; Clubs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.Club&gt; Clubs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubsSearchResult.Clubs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Clubs As IVectorView(Of Club)" />
+      <MemberSignature Language="F#" Value="member this.Clubs : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.Club&gt;" Usage="Microsoft.Xbox.Services.Clubs.ClubsSearchResult.Clubs" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubsSearchResultPublicNonVirtuals.Clubs</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -48,7 +55,12 @@
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IMapView&lt;string,Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubSearchFacetResult&gt;&gt; SearchFacetResults { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IMapView`2&lt;string, class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Clubs.ClubSearchFacetResult&gt;&gt; SearchFacetResults" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Clubs.ClubsSearchResult.SearchFacetResults" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchFacetResults As IMapView(Of String, IVectorView(Of ClubSearchFacetResult))" />
+      <MemberSignature Language="F#" Value="member this.SearchFacetResults : Windows.Foundation.Collections.IMapView&lt;string, Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Clubs.ClubSearchFacetResult&gt;&gt;" Usage="Microsoft.Xbox.Services.Clubs.ClubsSearchResult.SearchFacetResults" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Clubs.__IClubsSearchResultPublicNonVirtuals.SearchFacetResults</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

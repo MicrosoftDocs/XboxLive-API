@@ -1,7 +1,9 @@
-<Type Name="XboxSocialUser" FullName="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser">
+﻿<Type Name="XboxSocialUser" FullName="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser">
   <TypeSignature Language="C#" Value="public sealed class XboxSocialUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxSocialUser extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxSocialUser" />
+  <TypeSignature Language="F#" Value="type XboxSocialUser = class&#xA;    interface __IXboxSocialUserPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a xbox social user containing social information
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.DisplayName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.DisplayName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The display name
       <MemberSignature Language="C#" Value="public string DisplayPicUrlRaw { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayPicUrlRaw" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.DisplayPicUrlRaw" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayPicUrlRaw As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayPicUrlRaw : string" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.DisplayPicUrlRaw" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.DisplayPicUrlRaw</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ The display picture uri
       <MemberSignature Language="C#" Value="public string Gamerscore { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Gamerscore" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.Gamerscore" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Gamerscore As String" />
+      <MemberSignature Language="F#" Value="member this.Gamerscore : string" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.Gamerscore" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.Gamerscore</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -92,7 +109,12 @@ The player's gamerscore
       <MemberSignature Language="C#" Value="public string Gamertag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Gamertag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.Gamertag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Gamertag As String" />
+      <MemberSignature Language="F#" Value="member this.Gamertag : string" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.Gamertag" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.Gamertag</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -112,7 +134,12 @@ The player's gamertag
       <MemberSignature Language="C#" Value="public bool IsFavorite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFavorite" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.IsFavorite" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFavorite As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFavorite : bool" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.IsFavorite" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.IsFavorite</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -132,7 +159,12 @@ Whether they are a favorite
       <MemberSignature Language="C#" Value="public bool IsFollowedByCaller { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFollowedByCaller" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.IsFollowedByCaller" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFollowedByCaller As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFollowedByCaller : bool" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.IsFollowedByCaller" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.IsFollowedByCaller</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -152,7 +184,12 @@ Whether they calling user is followed by this person
       <MemberSignature Language="C#" Value="public bool IsFollowingUser { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFollowingUser" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.IsFollowingUser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFollowingUser As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFollowingUser : bool" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.IsFollowingUser" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.IsFollowingUser</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -172,7 +209,12 @@ Whether the calling user is following them
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.PreferredColor PreferredColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Social.Manager.PreferredColor PreferredColor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.PreferredColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreferredColor As PreferredColor" />
+      <MemberSignature Language="F#" Value="member this.PreferredColor : Microsoft.Xbox.Services.Social.Manager.PreferredColor" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.PreferredColor" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.PreferredColor</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -192,7 +234,12 @@ Preferred color for the user
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord PresenceRecord { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord PresenceRecord" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.PresenceRecord" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresenceRecord As SocialManagerPresenceRecord" />
+      <MemberSignature Language="F#" Value="member this.PresenceRecord : Microsoft.Xbox.Services.Social.Manager.SocialManagerPresenceRecord" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.PresenceRecord" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.PresenceRecord</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -212,7 +259,12 @@ The user's presence record
       <MemberSignature Language="C#" Value="public string RealName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RealName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.RealName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RealName As String" />
+      <MemberSignature Language="F#" Value="member this.RealName : string" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.RealName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.RealName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -232,7 +284,12 @@ The real name
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.Manager.TitleHistory TitleHistory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Social.Manager.TitleHistory TitleHistory" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.TitleHistory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleHistory As TitleHistory" />
+      <MemberSignature Language="F#" Value="member this.TitleHistory : Microsoft.Xbox.Services.Social.Manager.TitleHistory" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.TitleHistory" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.TitleHistory</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -252,7 +309,12 @@ Title history for the user
       <MemberSignature Language="C#" Value="public bool UseAvatar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseAvatar" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.UseAvatar" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseAvatar As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseAvatar : bool" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.UseAvatar" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.UseAvatar</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -272,7 +334,12 @@ Whether to use the players avatar
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Social.Manager.XboxSocialUser.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.Manager.__IXboxSocialUserPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="ContextualSearchService" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService">
+﻿<Type Name="ContextualSearchService" FullName="Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService">
   <TypeSignature Language="C#" Value="public sealed class ContextualSearchService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSearchService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextualSearchService" />
+  <TypeSignature Language="F#" Value="type ContextualSearchService = class&#xA;    interface __IContextualSearchServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Provides methods to perform Xbox Live contextual search.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync (uint titleId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync([in]unsigned int32 titleId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetBroadcastsAsync(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBroadcastsAsync (titleId As UInteger) As IAsyncOperation(Of IVectorView(Of ContextualSearchBroadcast))" />
+      <MemberSignature Language="F#" Value="abstract member GetBroadcastsAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt;&#xA;override this.GetBroadcastsAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt;" Usage="contextualSearchService.GetBroadcastsAsync titleId" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchServicePublicNonVirtuals.GetBroadcastsAsync(System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -64,7 +71,12 @@ The result is a contextual_search_broadcasts_result object which contains inform
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync (uint titleId, uint skipItems, uint maxItems, string orderByStatName, bool orderAscending, string searchQuery);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync([in]unsigned int32 titleId, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems, [in]string orderByStatName, [in]bool orderAscending, [in]string searchQuery) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetBroadcastsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBroadcastsAsync (titleId As UInteger, skipItems As UInteger, maxItems As UInteger, orderByStatName As String, orderAscending As Boolean, searchQuery As String) As IAsyncOperation(Of IVectorView(Of ContextualSearchBroadcast))" />
+      <MemberSignature Language="F#" Value="abstract member GetBroadcastsAsync : uint32 * uint32 * uint32 * string * bool * string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt;&#xA;override this.GetBroadcastsAsync : uint32 * uint32 * uint32 * string * bool * string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt;" Usage="contextualSearchService.GetBroadcastsAsync (titleId, skipItems, maxItems, orderByStatName, orderAscending, searchQuery)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchServicePublicNonVirtuals.GetBroadcastsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -107,7 +119,12 @@ The result is a contextual_search_broadcasts_result object which contains inform
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync (uint titleId, uint skipItems, uint maxItems, string orderByStatName, bool orderAscending, string filterStatName, Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator filterOperator, string filterStatValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt; GetBroadcastsAsync([in]unsigned int32 titleId, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems, [in]string orderByStatName, [in]bool orderAscending, [in]string filterStatName, [in]valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator filterOperator, [in]string filterStatValue) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetBroadcastsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String,Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBroadcastsAsync (titleId As UInteger, skipItems As UInteger, maxItems As UInteger, orderByStatName As String, orderAscending As Boolean, filterStatName As String, filterOperator As ContextualSearchFilterOperator, filterStatValue As String) As IAsyncOperation(Of IVectorView(Of ContextualSearchBroadcast))" />
+      <MemberSignature Language="F#" Value="abstract member GetBroadcastsAsync : uint32 * uint32 * uint32 * string * bool * string * Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator * string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt;&#xA;override this.GetBroadcastsAsync : uint32 * uint32 * uint32 * string * bool * string * Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator * string -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchBroadcast&gt;&gt;" Usage="contextualSearchService.GetBroadcastsAsync (titleId, skipItems, maxItems, orderByStatName, orderAscending, filterStatName, filterOperator, filterStatValue)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchServicePublicNonVirtuals.GetBroadcastsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String,Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -153,7 +170,12 @@ The result is a contextual_search_broadcasts_result object which contains inform
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat&gt;&gt; GetConfigurationAsync (uint titleId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat&gt;&gt; GetConfigurationAsync([in]unsigned int32 titleId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetConfigurationAsync(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigurationAsync (titleId As UInteger) As IAsyncOperation(Of IVectorView(Of ContextualSearchConfiguredStat))" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigurationAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat&gt;&gt;&#xA;override this.GetConfigurationAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchConfiguredStat&gt;&gt;" Usage="contextualSearchService.GetConfigurationAsync titleId" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchServicePublicNonVirtuals.GetConfigurationAsync(System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -180,7 +202,12 @@ The result contains information to hydrate a UI.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt; GetGameClipsAsync (uint titleId, uint skipItems, uint maxItems, string orderByStatName, bool orderAscending, string searchQuery);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt; GetGameClipsAsync([in]unsigned int32 titleId, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems, [in]string orderByStatName, [in]bool orderAscending, [in]string searchQuery) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetGameClipsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGameClipsAsync (titleId As UInteger, skipItems As UInteger, maxItems As UInteger, orderByStatName As String, orderAscending As Boolean, searchQuery As String) As IAsyncOperation(Of ContextualSearchGameClipsResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetGameClipsAsync : uint32 * uint32 * uint32 * string * bool * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt;&#xA;override this.GetGameClipsAsync : uint32 * uint32 * uint32 * string * bool * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt;" Usage="contextualSearchService.GetGameClipsAsync (titleId, skipItems, maxItems, orderByStatName, orderAscending, searchQuery)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchServicePublicNonVirtuals.GetGameClipsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -240,7 +267,12 @@ The result is an object which contains information about game clips.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt; GetGameClipsAsync (uint titleId, uint skipItems, uint maxItems, string orderByStatName, bool orderAscending, string filterStatName, Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator filterOperator, string filterStatValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt; GetGameClipsAsync([in]unsigned int32 titleId, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems, [in]string orderByStatName, [in]bool orderAscending, [in]string filterStatName, [in]valuetype Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator filterOperator, [in]string filterStatValue) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ContextualSearch.ContextualSearchService.GetGameClipsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String,Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGameClipsAsync (titleId As UInteger, skipItems As UInteger, maxItems As UInteger, orderByStatName As String, orderAscending As Boolean, filterStatName As String, filterOperator As ContextualSearchFilterOperator, filterStatValue As String) As IAsyncOperation(Of ContextualSearchGameClipsResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetGameClipsAsync : uint32 * uint32 * uint32 * string * bool * string * Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt;&#xA;override this.GetGameClipsAsync : uint32 * uint32 * uint32 * string * bool * string * Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.ContextualSearch.ContextualSearchGameClipsResult&gt;" Usage="contextualSearchService.GetGameClipsAsync (titleId, skipItems, maxItems, orderByStatName, orderAscending, filterStatName, filterOperator, filterStatValue)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.ContextualSearch.__IContextualSearchServicePublicNonVirtuals.GetGameClipsAsync(System.UInt32,System.UInt32,System.UInt32,System.String,System.Boolean,System.String,Microsoft.Xbox.Services.ContextualSearch.ContextualSearchFilterOperator,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

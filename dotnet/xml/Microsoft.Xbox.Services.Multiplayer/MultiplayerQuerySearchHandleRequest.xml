@@ -1,7 +1,9 @@
-<Type Name="MultiplayerQuerySearchHandleRequest" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest">
+﻿<Type Name="MultiplayerQuerySearchHandleRequest" FullName="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest">
   <TypeSignature Language="C#" Value="public sealed class MultiplayerQuerySearchHandleRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MultiplayerQuerySearchHandleRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiplayerQuerySearchHandleRequest" />
+  <TypeSignature Language="F#" Value="type MultiplayerQuerySearchHandleRequest = class&#xA;    interface __IMultiplayerQuerySearchHandleRequestPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -35,6 +37,8 @@ Sets the search handle based on the configuration of this request.
       <MemberSignature Language="C#" Value="public MultiplayerQuerySearchHandleRequest (string serviceConfigurationId, string sessionTemplateName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]string serviceConfigurationId, [in]string sessionTemplateName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceConfigurationId As String, sessionTemplateName As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest : string * string -&gt; Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest" Usage="new Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest (serviceConfigurationId, sessionTemplateName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -61,7 +65,12 @@ Sets the search handle based on the configuration of this request.
       <MemberSignature Language="C#" Value="public bool OrderAscending { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OrderAscending" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.OrderAscending" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrderAscending As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OrderAscending : bool with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.OrderAscending" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQuerySearchHandleRequestPublicNonVirtuals.OrderAscending</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -81,7 +90,12 @@ The order to sort the search handles by.
       <MemberSignature Language="C#" Value="public string OrderBy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OrderBy" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.OrderBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrderBy As String" />
+      <MemberSignature Language="F#" Value="member this.OrderBy : string with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.OrderBy" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQuerySearchHandleRequestPublicNonVirtuals.OrderBy</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -102,7 +116,12 @@ Valid values are "Timestamp desc", "Timestamp asc" or any Numbers search attribu
       <MemberSignature Language="C#" Value="public string SearchFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SearchFilter" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.SearchFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchFilter As String" />
+      <MemberSignature Language="F#" Value="member this.SearchFilter : string with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.SearchFilter" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQuerySearchHandleRequestPublicNonVirtuals.SearchFilter</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -122,7 +141,12 @@ The filter to search for.
       <MemberSignature Language="C#" Value="public string ServiceConfigurationId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceConfigurationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.ServiceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceConfigurationId : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.ServiceConfigurationId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQuerySearchHandleRequestPublicNonVirtuals.ServiceConfigurationId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -142,7 +166,12 @@ The service configuration id that the sessions part of.
       <MemberSignature Language="C#" Value="public string SessionTemplateName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SessionTemplateName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.SessionTemplateName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionTemplateName As String" />
+      <MemberSignature Language="F#" Value="member this.SessionTemplateName : string" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.SessionTemplateName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQuerySearchHandleRequestPublicNonVirtuals.SessionTemplateName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -162,7 +191,12 @@ The name of the template that the sessions part of.
       <MemberSignature Language="C#" Value="public string SocialGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SocialGroup" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.SocialGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property SocialGroup As String" />
+      <MemberSignature Language="F#" Value="member this.SocialGroup : string with get, set" Usage="Microsoft.Xbox.Services.Multiplayer.MultiplayerQuerySearchHandleRequest.SocialGroup" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Multiplayer.__IMultiplayerQuerySearchHandleRequestPublicNonVirtuals.SocialGroup</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

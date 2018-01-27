@@ -1,7 +1,9 @@
-<Type Name="HopperStatisticsResponse" FullName="Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse">
+﻿<Type Name="HopperStatisticsResponse" FullName="Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse">
   <TypeSignature Language="C#" Value="public sealed class HopperStatisticsResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HopperStatisticsResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HopperStatisticsResponse" />
+  <TypeSignature Language="F#" Value="type HopperStatisticsResponse = class&#xA;    interface __IHopperStatisticsResponsePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a server response to a hopper statistics request.
       <MemberSignature Language="C#" Value="public Windows.Foundation.TimeSpan EstimatedWaitTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.TimeSpan EstimatedWaitTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse.EstimatedWaitTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EstimatedWaitTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.EstimatedWaitTime : Windows.Foundation.TimeSpan" Usage="Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse.EstimatedWaitTime" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Matchmaking.__IHopperStatisticsResponsePublicNonVirtuals.EstimatedWaitTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ Estimated wait time for a match request to be matched with other players.
       <MemberSignature Language="C#" Value="public string HopperName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HopperName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse.HopperName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HopperName As String" />
+      <MemberSignature Language="F#" Value="member this.HopperName : string" Usage="Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse.HopperName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Matchmaking.__IHopperStatisticsResponsePublicNonVirtuals.HopperName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -72,7 +84,12 @@ Name of the hopper in which a match was requested.
       <MemberSignature Language="C#" Value="public uint PlayersWaitingToMatch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 PlayersWaitingToMatch" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse.PlayersWaitingToMatch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlayersWaitingToMatch As UInteger" />
+      <MemberSignature Language="F#" Value="member this.PlayersWaitingToMatch : uint32" Usage="Microsoft.Xbox.Services.Matchmaking.HopperStatisticsResponse.PlayersWaitingToMatch" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Matchmaking.__IHopperStatisticsResponsePublicNonVirtuals.PlayersWaitingToMatch</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

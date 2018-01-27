@@ -1,7 +1,9 @@
-<Type Name="ServiceCallLoggingConfig" FullName="Microsoft.Xbox.Services.ServiceCallLoggingConfig">
+﻿<Type Name="ServiceCallLoggingConfig" FullName="Microsoft.Xbox.Services.ServiceCallLoggingConfig">
   <TypeSignature Language="C#" Value="public sealed class ServiceCallLoggingConfig" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceCallLoggingConfig extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.ServiceCallLoggingConfig" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceCallLoggingConfig" />
+  <TypeSignature Language="F#" Value="type ServiceCallLoggingConfig = class&#xA;    interface __IServiceCallLoggingConfigPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -35,7 +37,12 @@ Wrapper for Win32 service_call_logging_config object.
       <MemberSignature Language="C#" Value="public void Disable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Disable() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ServiceCallLoggingConfig.Disable" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disable ()" />
+      <MemberSignature Language="F#" Value="abstract member Disable : unit -&gt; unit&#xA;override this.Disable : unit -&gt; unit" Usage="serviceCallLoggingConfig.Disable " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.__IServiceCallLoggingConfigPublicNonVirtuals.Disable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -55,7 +62,12 @@ Disables service call logging
       <MemberSignature Language="C#" Value="public void Enable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Enable() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ServiceCallLoggingConfig.Enable" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Enable ()" />
+      <MemberSignature Language="F#" Value="abstract member Enable : unit -&gt; unit&#xA;override this.Enable : unit -&gt; unit" Usage="serviceCallLoggingConfig.Enable " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.__IServiceCallLoggingConfigPublicNonVirtuals.Enable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -75,7 +87,12 @@ Enables service call logging
       <MemberSignature Language="C#" Value="public void RegisterForProtocolActivation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterForProtocolActivation() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.ServiceCallLoggingConfig.RegisterForProtocolActivation" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterForProtocolActivation ()" />
+      <MemberSignature Language="F#" Value="abstract member RegisterForProtocolActivation : unit -&gt; unit&#xA;override this.RegisterForProtocolActivation : unit -&gt; unit" Usage="serviceCallLoggingConfig.RegisterForProtocolActivation " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.__IServiceCallLoggingConfigPublicNonVirtuals.RegisterForProtocolActivation</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -95,6 +112,8 @@ Enables Logs to be enabled/disabled through protocol activation
       <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.ServiceCallLoggingConfig SingletonInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.Xbox.Services.ServiceCallLoggingConfig SingletonInstance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.ServiceCallLoggingConfig.SingletonInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SingletonInstance As ServiceCallLoggingConfig" />
+      <MemberSignature Language="F#" Value="member this.SingletonInstance : Microsoft.Xbox.Services.ServiceCallLoggingConfig" Usage="Microsoft.Xbox.Services.ServiceCallLoggingConfig.SingletonInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>

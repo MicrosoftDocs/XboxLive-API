@@ -1,7 +1,9 @@
-<Type Name="AchievementType" FullName="Microsoft.Xbox.Services.Achievements.AchievementType">
+﻿<Type Name="AchievementType" FullName="Microsoft.Xbox.Services.Achievements.AchievementType">
   <TypeSignature Language="C#" Value="public enum AchievementType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AchievementType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Achievements.AchievementType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AchievementType" />
+  <TypeSignature Language="F#" Value="type AchievementType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementType All = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementType.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 1" Usage="Microsoft.Xbox.Services.Achievements.AchievementType.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Used as a request input parameter.
 All means to get all achievements regardless of type.</summary>
@@ -40,6 +45,8 @@ All means to get all achievements regardless of type.</summary>
       <MemberSignature Language="C#" Value="Challenge" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementType Challenge = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementType.Challenge" />
+      <MemberSignature Language="VB.NET" Value="Challenge" />
+      <MemberSignature Language="F#" Value="Challenge = 3" Usage="Microsoft.Xbox.Services.Achievements.AchievementType.Challenge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -48,6 +55,7 @@ All means to get all achievements regardless of type.</summary>
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A challenge achievement that can only be unlocked within a certain time period.
 Challenge achievements can't give Gamerscore as a reward.</summary>
@@ -57,6 +65,8 @@ Challenge achievements can't give Gamerscore as a reward.</summary>
       <MemberSignature Language="C#" Value="Persistent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementType Persistent = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementType.Persistent" />
+      <MemberSignature Language="VB.NET" Value="Persistent" />
+      <MemberSignature Language="F#" Value="Persistent = 2" Usage="Microsoft.Xbox.Services.Achievements.AchievementType.Persistent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -65,6 +75,7 @@ Challenge achievements can't give Gamerscore as a reward.</summary>
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A persistent achievement that may be unlocked at any time.
 Persistent achievements can give Gamerscore as a reward.</summary>
@@ -74,6 +85,8 @@ Persistent achievements can give Gamerscore as a reward.</summary>
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Achievements.AchievementType Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Achievements.AchievementType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Achievements.AchievementType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -82,6 +95,7 @@ Persistent achievements can give Gamerscore as a reward.</summary>
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Achievements.AchievementType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The achievement type is unknown.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="TitlePresenceState" FullName="Microsoft.Xbox.Services.Presence.TitlePresenceState">
+﻿<Type Name="TitlePresenceState" FullName="Microsoft.Xbox.Services.Presence.TitlePresenceState">
   <TypeSignature Language="C#" Value="public enum TitlePresenceState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitlePresenceState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Presence.TitlePresenceState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TitlePresenceState" />
+  <TypeSignature Language="F#" Value="type TitlePresenceState = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="Ended" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.TitlePresenceState Ended = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.TitlePresenceState.Ended" />
+      <MemberSignature Language="VB.NET" Value="Ended" />
+      <MemberSignature Language="F#" Value="Ended = 2" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceState.Ended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Presence.TitlePresenceState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 Indicates the user ended playing the title.
@@ -41,6 +46,8 @@ Indicates the user ended playing the title.
       <MemberSignature Language="C#" Value="Started" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.TitlePresenceState Started = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.TitlePresenceState.Started" />
+      <MemberSignature Language="VB.NET" Value="Started" />
+      <MemberSignature Language="F#" Value="Started = 1" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceState.Started" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -49,6 +56,7 @@ Indicates the user ended playing the title.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Presence.TitlePresenceState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Indicates the user started playing the title.
@@ -59,6 +67,8 @@ Indicates the user started playing the title.
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Presence.TitlePresenceState Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Presence.TitlePresenceState.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Presence.TitlePresenceState.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -67,6 +77,7 @@ Indicates the user started playing the title.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Presence.TitlePresenceState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Indicates this is a Unknown state.

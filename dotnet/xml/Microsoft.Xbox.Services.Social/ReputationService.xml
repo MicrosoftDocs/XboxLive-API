@@ -1,7 +1,9 @@
-<Type Name="ReputationService" FullName="Microsoft.Xbox.Services.Social.ReputationService">
+﻿<Type Name="ReputationService" FullName="Microsoft.Xbox.Services.Social.ReputationService">
   <TypeSignature Language="C#" Value="public sealed class ReputationService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReputationService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.ReputationService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReputationService" />
+  <TypeSignature Language="F#" Value="type ReputationService = class&#xA;    interface __IReputationServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Provides access methods for the reputation service.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SubmitBatchReputationFeedbackAsync (Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.ReputationFeedbackItem&gt; feedbackItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SubmitBatchReputationFeedbackAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.Social.ReputationFeedbackItem&gt; feedbackItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.ReputationService.SubmitBatchReputationFeedbackAsync(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Social.ReputationFeedbackItem})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SubmitBatchReputationFeedbackAsync (feedbackItems As IVectorView(Of ReputationFeedbackItem)) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member SubmitBatchReputationFeedbackAsync : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.ReputationFeedbackItem&gt; -&gt; Windows.Foundation.IAsyncAction&#xA;override this.SubmitBatchReputationFeedbackAsync : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.Social.ReputationFeedbackItem&gt; -&gt; Windows.Foundation.IAsyncAction" Usage="reputationService.SubmitBatchReputationFeedbackAsync feedbackItems" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__IReputationServicePublicNonVirtuals.SubmitBatchReputationFeedbackAsync(Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.Social.ReputationFeedbackItem})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -54,7 +61,11 @@ Provides access methods for the reputation service.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SubmitReputationFeedbackAsync (string xboxUserId, Microsoft.Xbox.Services.Social.ReputationFeedbackType reputationFeedbackType, string sessionName, string reasonMessage, string evidenceResourceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SubmitReputationFeedbackAsync([in]string xboxUserId, [in]valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType reputationFeedbackType, [in]string sessionName, [in]string reasonMessage, [in]string evidenceResourceId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.ReputationService.SubmitReputationFeedbackAsync(System.String,Microsoft.Xbox.Services.Social.ReputationFeedbackType,System.String,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member SubmitReputationFeedbackAsync : string * Microsoft.Xbox.Services.Social.ReputationFeedbackType * string * string * string -&gt; Windows.Foundation.IAsyncAction&#xA;override this.SubmitReputationFeedbackAsync : string * Microsoft.Xbox.Services.Social.ReputationFeedbackType * string * string * string -&gt; Windows.Foundation.IAsyncAction" Usage="reputationService.SubmitReputationFeedbackAsync (xboxUserId, reputationFeedbackType, sessionName, reasonMessage, evidenceResourceId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Social.__IReputationServicePublicNonVirtuals.SubmitReputationFeedbackAsync(System.String,Microsoft.Xbox.Services.Social.ReputationFeedbackType,System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

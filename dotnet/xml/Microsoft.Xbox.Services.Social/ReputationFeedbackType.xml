@@ -1,7 +1,9 @@
-<Type Name="ReputationFeedbackType" FullName="Microsoft.Xbox.Services.Social.ReputationFeedbackType">
+﻿<Type Name="ReputationFeedbackType" FullName="Microsoft.Xbox.Services.Social.ReputationFeedbackType">
   <TypeSignature Language="C#" Value="public enum ReputationFeedbackType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReputationFeedbackType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.ReputationFeedbackType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ReputationFeedbackType" />
+  <TypeSignature Language="F#" Value="type ReputationFeedbackType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="CommsPhishing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType CommsPhishing = int32(11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsPhishing" />
+      <MemberSignature Language="VB.NET" Value="CommsPhishing" />
+      <MemberSignature Language="F#" Value="CommsPhishing = 11" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsPhishing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report phishing message may send this feedback.
@@ -41,6 +46,8 @@ Titles that allow users to report phishing message may send this feedback.
       <MemberSignature Language="C#" Value="CommsPictureMessage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType CommsPictureMessage = int32(12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsPictureMessage" />
+      <MemberSignature Language="VB.NET" Value="CommsPictureMessage" />
+      <MemberSignature Language="F#" Value="CommsPictureMessage = 12" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsPictureMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -49,6 +56,7 @@ Titles that allow users to report phishing message may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report communication based on a picture may send this feedback.
@@ -59,6 +67,8 @@ Titles that allow users to report communication based on a picture may send this
       <MemberSignature Language="C#" Value="CommsSpam" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType CommsSpam = int32(13)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsSpam" />
+      <MemberSignature Language="VB.NET" Value="CommsSpam" />
+      <MemberSignature Language="F#" Value="CommsSpam = 13" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsSpam" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -67,6 +77,7 @@ Titles that allow users to report communication based on a picture may send this
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report spam messages may send this feedback.
@@ -77,6 +88,8 @@ Titles that allow users to report spam messages may send this feedback.
       <MemberSignature Language="C#" Value="CommsTextMessage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType CommsTextMessage = int32(14)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsTextMessage" />
+      <MemberSignature Language="VB.NET" Value="CommsTextMessage" />
+      <MemberSignature Language="F#" Value="CommsTextMessage = 14" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsTextMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -85,6 +98,7 @@ Titles that allow users to report spam messages may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report text messages may send this feedback.
@@ -95,6 +109,8 @@ Titles that allow users to report text messages may send this feedback.
       <MemberSignature Language="C#" Value="CommsVoiceMessage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType CommsVoiceMessage = int32(15)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsVoiceMessage" />
+      <MemberSignature Language="VB.NET" Value="CommsVoiceMessage" />
+      <MemberSignature Language="F#" Value="CommsVoiceMessage = 15" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommsVoiceMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -103,6 +119,7 @@ Titles that allow users to report text messages may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report voice messages may send this feedback.
@@ -113,6 +130,8 @@ Titles that allow users to report voice messages may send this feedback.
       <MemberSignature Language="C#" Value="CommunicationsAbusiveVoice" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType CommunicationsAbusiveVoice = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommunicationsAbusiveVoice" />
+      <MemberSignature Language="VB.NET" Value="CommunicationsAbusiveVoice" />
+      <MemberSignature Language="F#" Value="CommunicationsAbusiveVoice = 6" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommunicationsAbusiveVoice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -121,6 +140,7 @@ Titles that allow users to report voice messages may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report innappropriate voice communications
@@ -132,6 +152,8 @@ may send this feedback.
       <MemberSignature Language="C#" Value="CommunicationsInappropriateVideo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType CommunicationsInappropriateVideo = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommunicationsInappropriateVideo" />
+      <MemberSignature Language="VB.NET" Value="CommunicationsInappropriateVideo" />
+      <MemberSignature Language="F#" Value="CommunicationsInappropriateVideo = 5" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.CommunicationsInappropriateVideo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -140,6 +162,7 @@ may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report innappropriate video communications
@@ -151,6 +174,8 @@ may send this feedback.
       <MemberSignature Language="C#" Value="FairPlayCheater" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FairPlayCheater = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayCheater" />
+      <MemberSignature Language="VB.NET" Value="FairPlayCheater" />
+      <MemberSignature Language="F#" Value="FairPlayCheater = 1" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayCheater" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -159,6 +184,7 @@ may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Titles that are able to automatically determine that a user is cheating
@@ -170,6 +196,8 @@ may send this feedback without user intervention.
       <MemberSignature Language="C#" Value="FairPlayConsoleBanRequest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FairPlayConsoleBanRequest = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayConsoleBanRequest" />
+      <MemberSignature Language="VB.NET" Value="FairPlayConsoleBanRequest" />
+      <MemberSignature Language="F#" Value="FairPlayConsoleBanRequest = 16" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayConsoleBanRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -178,6 +206,7 @@ may send this feedback without user intervention.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report voice messages may send this feedback.
@@ -188,6 +217,8 @@ Titles that allow users to report voice messages may send this feedback.
       <MemberSignature Language="C#" Value="FairPlayIdler" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FairPlayIdler = int32(17)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayIdler" />
+      <MemberSignature Language="VB.NET" Value="FairPlayIdler" />
+      <MemberSignature Language="F#" Value="FairPlayIdler = 17" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayIdler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -196,6 +227,7 @@ Titles that allow users to report voice messages may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report if determine if a user stands idle on purpose in a game, usually round after round, may send this feedback.
@@ -206,6 +238,8 @@ Titles that allow users to report if determine if a user stands idle on purpose 
       <MemberSignature Language="C#" Value="FairPlayKicked" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FairPlayKicked = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayKicked" />
+      <MemberSignature Language="VB.NET" Value="FairPlayKicked" />
+      <MemberSignature Language="F#" Value="FairPlayKicked = 4" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayKicked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -214,6 +248,7 @@ Titles that allow users to report if determine if a user stands idle on purpose 
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
 When a user is voted out of a game (kicked), titles
@@ -225,6 +260,8 @@ may send this feedback without user intervention.
       <MemberSignature Language="C#" Value="FairPlayKillsTeammates" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FairPlayKillsTeammates = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayKillsTeammates" />
+      <MemberSignature Language="VB.NET" Value="FairPlayKillsTeammates" />
+      <MemberSignature Language="F#" Value="FairPlayKillsTeammates = 0" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayKillsTeammates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -233,6 +270,7 @@ may send this feedback without user intervention.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Titles that are able to automatically determine that a user kills a teammate
@@ -244,6 +282,8 @@ may send this feedback without user intervention.
       <MemberSignature Language="C#" Value="FairPlayLeaderboardCheater" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FairPlayLeaderboardCheater = int32(22)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayLeaderboardCheater" />
+      <MemberSignature Language="VB.NET" Value="FairPlayLeaderboardCheater" />
+      <MemberSignature Language="F#" Value="FairPlayLeaderboardCheater = 22" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayLeaderboardCheater" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -252,6 +292,7 @@ may send this feedback without user intervention.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report leaderboard cheating may send this feedback.
@@ -262,6 +303,8 @@ Titles that allow users to report leaderboard cheating may send this feedback.
       <MemberSignature Language="C#" Value="FairPlayQuitter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FairPlayQuitter = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayQuitter" />
+      <MemberSignature Language="VB.NET" Value="FairPlayQuitter" />
+      <MemberSignature Language="F#" Value="FairPlayQuitter = 3" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayQuitter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -270,6 +313,7 @@ Titles that allow users to report leaderboard cheating may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 Titles that are able to automatically determine that a user quit a game early
@@ -281,6 +325,8 @@ may send this feedback without user intervention.
       <MemberSignature Language="C#" Value="FairPlayTampering" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FairPlayTampering = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayTampering" />
+      <MemberSignature Language="VB.NET" Value="FairPlayTampering" />
+      <MemberSignature Language="F#" Value="FairPlayTampering = 2" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayTampering" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -289,6 +335,7 @@ may send this feedback without user intervention.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 Titles that are able to automatically determine that a user has tampered with on-disk content
@@ -300,6 +347,8 @@ may send this feedback without user intervention.
       <MemberSignature Language="C#" Value="FairPlayUnsporting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FairPlayUnsporting = int32(21)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayUnsporting" />
+      <MemberSignature Language="VB.NET" Value="FairPlayUnsporting" />
+      <MemberSignature Language="F#" Value="FairPlayUnsporting = 21" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayUnsporting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -308,6 +357,7 @@ may send this feedback without user intervention.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report unsporting behavior may send this feedback.
@@ -318,6 +368,8 @@ Titles that allow users to report unsporting behavior may send this feedback.
       <MemberSignature Language="C#" Value="FairPlayUserBanRequest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FairPlayUserBanRequest = int32(18)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayUserBanRequest" />
+      <MemberSignature Language="VB.NET" Value="FairPlayUserBanRequest" />
+      <MemberSignature Language="F#" Value="FairPlayUserBanRequest = 18" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.FairPlayUserBanRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -326,6 +378,7 @@ Titles that allow users to report unsporting behavior may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>
 Titles that report a recommendation to ban a user from Xbox Live may send this feedback.
@@ -336,6 +389,8 @@ Titles that report a recommendation to ban a user from Xbox Live may send this f
       <MemberSignature Language="C#" Value="InappropriateUserGeneratedContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType InappropriateUserGeneratedContent = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.InappropriateUserGeneratedContent" />
+      <MemberSignature Language="VB.NET" Value="InappropriateUserGeneratedContent" />
+      <MemberSignature Language="F#" Value="InappropriateUserGeneratedContent = 7" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.InappropriateUserGeneratedContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -344,6 +399,7 @@ Titles that report a recommendation to ban a user from Xbox Live may send this f
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report innappropriate user generated content
@@ -355,6 +411,8 @@ may send this feedback.
       <MemberSignature Language="C#" Value="PositiveHelpfulPlayer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType PositiveHelpfulPlayer = int32(9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.PositiveHelpfulPlayer" />
+      <MemberSignature Language="VB.NET" Value="PositiveHelpfulPlayer" />
+      <MemberSignature Language="F#" Value="PositiveHelpfulPlayer = 9" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.PositiveHelpfulPlayer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -363,6 +421,7 @@ may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to submit positive feedback on helpful fellow players
@@ -374,6 +433,8 @@ may send this feedback.
       <MemberSignature Language="C#" Value="PositiveHighQualityUserGeneratedContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType PositiveHighQualityUserGeneratedContent = int32(10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.PositiveHighQualityUserGeneratedContent" />
+      <MemberSignature Language="VB.NET" Value="PositiveHighQualityUserGeneratedContent" />
+      <MemberSignature Language="F#" Value="PositiveHighQualityUserGeneratedContent = 10" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.PositiveHighQualityUserGeneratedContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -382,6 +443,7 @@ may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to submit positive feedback on shared user generated content
@@ -393,6 +455,8 @@ may send this feedback.
       <MemberSignature Language="C#" Value="PositiveSkilledPlayer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType PositiveSkilledPlayer = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.PositiveSkilledPlayer" />
+      <MemberSignature Language="VB.NET" Value="PositiveSkilledPlayer" />
+      <MemberSignature Language="F#" Value="PositiveSkilledPlayer = 8" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.PositiveSkilledPlayer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -401,6 +465,7 @@ may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to vote on a most valuable player at the end of a multiplayer session
@@ -412,6 +477,8 @@ may send this feedback.
       <MemberSignature Language="C#" Value="UserContentGamerpic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType UserContentGamerpic = int32(19)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.UserContentGamerpic" />
+      <MemberSignature Language="VB.NET" Value="UserContentGamerpic" />
+      <MemberSignature Language="F#" Value="UserContentGamerpic = 19" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.UserContentGamerpic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -420,6 +487,7 @@ may send this feedback.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report inappropriate gamer picture may send this feedback.
@@ -430,6 +498,8 @@ Titles that allow users to report inappropriate gamer picture may send this feed
       <MemberSignature Language="C#" Value="UserContentPersonalinfo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType UserContentPersonalinfo = int32(20)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Social.ReputationFeedbackType.UserContentPersonalinfo" />
+      <MemberSignature Language="VB.NET" Value="UserContentPersonalinfo" />
+      <MemberSignature Language="F#" Value="UserContentPersonalinfo = 20" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackType.UserContentPersonalinfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -438,6 +508,7 @@ Titles that allow users to report inappropriate gamer picture may send this feed
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Social.ReputationFeedbackType</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>
 Titles that allow users to report inappropriate biography and other personal information may send this feedback.

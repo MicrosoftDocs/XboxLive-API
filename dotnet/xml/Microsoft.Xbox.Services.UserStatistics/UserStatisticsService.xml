@@ -1,7 +1,9 @@
-<Type Name="UserStatisticsService" FullName="Microsoft.Xbox.Services.UserStatistics.UserStatisticsService">
+﻿<Type Name="UserStatisticsService" FullName="Microsoft.Xbox.Services.UserStatistics.UserStatisticsService">
   <TypeSignature Language="C#" Value="public sealed class UserStatisticsService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UserStatisticsService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UserStatisticsService" />
+  <TypeSignature Language="F#" Value="type UserStatisticsService = class&#xA;    interface __IUserStatisticsServicePublicNonVirtuals&#xA;    interface __IUserStatisticsServiceProtectedNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents an endpoint that you can use to access the user statistic service.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt; GetMultipleUserStatisticsAsync (Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, string serviceConfigurationId, Windows.Foundation.Collections.IVectorView&lt;string&gt; statisticNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt; GetMultipleUserStatisticsAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]string serviceConfigurationId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; statisticNames) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.GetMultipleUserStatisticsAsync(Windows.Foundation.Collections.IVectorView{System.String},System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMultipleUserStatisticsAsync (xboxUserIds As IVectorView(Of String), serviceConfigurationId As String, statisticNames As IVectorView(Of String)) As IAsyncOperation(Of IVectorView(Of UserStatisticsResult))" />
+      <MemberSignature Language="F#" Value="abstract member GetMultipleUserStatisticsAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt;&#xA;override this.GetMultipleUserStatisticsAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt;" Usage="userStatisticsService.GetMultipleUserStatisticsAsync (xboxUserIds, serviceConfigurationId, statisticNames)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.UserStatistics.__IUserStatisticsServicePublicNonVirtuals.GetMultipleUserStatisticsAsync(Windows.Foundation.Collections.IVectorView{System.String},System.String,Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -58,7 +65,12 @@ Represents an endpoint that you can use to access the user statistic service.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt; GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync (Windows.Foundation.Collections.IVectorView&lt;string&gt; xboxUserIds, Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.RequestedStatistics&gt; requestedServiceConfigurationStatisticsCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt; GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync([in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; xboxUserIds, [in]class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.UserStatistics.RequestedStatistics&gt; requestedServiceConfigurationStatisticsCollection) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync(Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.UserStatistics.RequestedStatistics})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync (xboxUserIds As IVectorView(Of String), requestedServiceConfigurationStatisticsCollection As IVectorView(Of RequestedStatistics)) As IAsyncOperation(Of IVectorView(Of UserStatisticsResult))" />
+      <MemberSignature Language="F#" Value="abstract member GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; * Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.RequestedStatistics&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt;&#xA;override this.GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync : Windows.Foundation.Collections.IVectorView&lt;string&gt; * Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.RequestedStatistics&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&gt;" Usage="userStatisticsService.GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync (xboxUserIds, requestedServiceConfigurationStatisticsCollection)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.UserStatistics.__IUserStatisticsServicePublicNonVirtuals.GetMultipleUserStatisticsForMultipleServiceConfigurationsAsync(Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.Collections.IVectorView{Microsoft.Xbox.Services.UserStatistics.RequestedStatistics})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -82,7 +94,12 @@ Represents an endpoint that you can use to access the user statistic service.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt; GetSingleUserStatisticsAsync (string xboxUserId, string serviceConfigurationId, string statisticName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt; GetSingleUserStatisticsAsync([in]string xboxUserId, [in]string serviceConfigurationId, [in]string statisticName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.GetSingleUserStatisticsAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSingleUserStatisticsAsync (xboxUserId As String, serviceConfigurationId As String, statisticName As String) As IAsyncOperation(Of UserStatisticsResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetSingleUserStatisticsAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&#xA;override this.GetSingleUserStatisticsAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;" Usage="userStatisticsService.GetSingleUserStatisticsAsync (xboxUserId, serviceConfigurationId, statisticName)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.UserStatistics.__IUserStatisticsServicePublicNonVirtuals.GetSingleUserStatisticsAsync(System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -118,7 +135,12 @@ Get a specified statistic for a specified user.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt; GetSingleUserStatisticsAsync (string xboxUserId, string serviceConfigurationId, Windows.Foundation.Collections.IVectorView&lt;string&gt; statisticNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt; GetSingleUserStatisticsAsync([in]string xboxUserId, [in]string serviceConfigurationId, [in]class Windows.Foundation.Collections.IVectorView`1&lt;string&gt; statisticNames) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.GetSingleUserStatisticsAsync(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSingleUserStatisticsAsync (xboxUserId As String, serviceConfigurationId As String, statisticNames As IVectorView(Of String)) As IAsyncOperation(Of UserStatisticsResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetSingleUserStatisticsAsync : string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;&#xA;override this.GetSingleUserStatisticsAsync : string * string * Windows.Foundation.Collections.IVectorView&lt;string&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.UserStatistics.UserStatisticsResult&gt;" Usage="userStatisticsService.GetSingleUserStatisticsAsync (xboxUserId, serviceConfigurationId, statisticNames)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.UserStatistics.__IUserStatisticsServicePublicNonVirtuals.GetSingleUserStatisticsAsync(System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -149,7 +171,12 @@ Get a specified statistic for a specified user.
       <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt; StatisticChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt; StatisticChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.StatisticChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event StatisticChanged As EventHandler(Of StatisticChangeEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.StatisticChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt; " Usage="member this.StatisticChanged : Windows.Foundation.EventHandler&lt;Microsoft.Xbox.Services.UserStatistics.StatisticChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Xbox.Services.UserStatistics.__IUserStatisticsServicePublicNonVirtuals.StatisticChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -168,7 +195,12 @@ Registers for statistic change notifications.  Event handlers receive a Statisti
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription SubscribeToStatisticChange (string xboxUserId, string serviceConfigurationId, string statisticName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription SubscribeToStatisticChange([in]string xboxUserId, [in]string serviceConfigurationId, [in]string statisticName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.SubscribeToStatisticChange(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SubscribeToStatisticChange (xboxUserId As String, serviceConfigurationId As String, statisticName As String) As StatisticChangeSubscription" />
+      <MemberSignature Language="F#" Value="abstract member SubscribeToStatisticChange : string * string * string -&gt; Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription&#xA;override this.SubscribeToStatisticChange : string * string * string -&gt; Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription" Usage="userStatisticsService.SubscribeToStatisticChange (xboxUserId, serviceConfigurationId, statisticName)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.UserStatistics.__IUserStatisticsServicePublicNonVirtuals.SubscribeToStatisticChange(System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -197,7 +229,12 @@ You can register an event handler for statistic changes by using the StatisticCh
       <MemberSignature Language="C#" Value="public void UnsubscribeFromStatisticChange (Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription subscription);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnsubscribeFromStatisticChange([in]class Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription subscription) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.UserStatistics.UserStatisticsService.UnsubscribeFromStatisticChange(Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnsubscribeFromStatisticChange (subscription As StatisticChangeSubscription)" />
+      <MemberSignature Language="F#" Value="abstract member UnsubscribeFromStatisticChange : Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription -&gt; unit&#xA;override this.UnsubscribeFromStatisticChange : Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription -&gt; unit" Usage="userStatisticsService.UnsubscribeFromStatisticChange subscription" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.UserStatistics.__IUserStatisticsServicePublicNonVirtuals.UnsubscribeFromStatisticChange(Microsoft.Xbox.Services.UserStatistics.StatisticChangeSubscription)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

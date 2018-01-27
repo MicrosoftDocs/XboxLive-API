@@ -1,7 +1,9 @@
-<Type Name="EventsService" FullName="Microsoft.Xbox.Services.Events.EventsService">
+﻿<Type Name="EventsService" FullName="Microsoft.Xbox.Services.Events.EventsService">
   <TypeSignature Language="C#" Value="public sealed class EventsService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventsService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Events.EventsService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventsService" />
+  <TypeSignature Language="F#" Value="type EventsService = class&#xA;    interface __IEventsServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a service class that provides APIs that you can use to write in-game 
       <MemberSignature Language="C#" Value="public void WriteInGameEvent (string eventName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteInGameEvent([in]string eventName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Events.EventsService.WriteInGameEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteInGameEvent (eventName As String)" />
+      <MemberSignature Language="F#" Value="abstract member WriteInGameEvent : string -&gt; unit&#xA;override this.WriteInGameEvent : string -&gt; unit" Usage="eventsService.WriteInGameEvent eventName" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Events.__IEventsServicePublicNonVirtuals.WriteInGameEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -65,7 +72,12 @@ service drops the event with no notification.
       <MemberSignature Language="C#" Value="public void WriteInGameEvent (string eventName, Windows.Foundation.Collections.PropertySet dimensions, Windows.Foundation.Collections.PropertySet measurements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteInGameEvent([in]string eventName, [in]class Windows.Foundation.Collections.PropertySet dimensions, [in]class Windows.Foundation.Collections.PropertySet measurements) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Events.EventsService.WriteInGameEvent(System.String,Windows.Foundation.Collections.PropertySet,Windows.Foundation.Collections.PropertySet)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteInGameEvent (eventName As String, dimensions As PropertySet, measurements As PropertySet)" />
+      <MemberSignature Language="F#" Value="abstract member WriteInGameEvent : string * Windows.Foundation.Collections.PropertySet * Windows.Foundation.Collections.PropertySet -&gt; unit&#xA;override this.WriteInGameEvent : string * Windows.Foundation.Collections.PropertySet * Windows.Foundation.Collections.PropertySet -&gt; unit" Usage="eventsService.WriteInGameEvent (eventName, dimensions, measurements)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Events.__IEventsServicePublicNonVirtuals.WriteInGameEvent(System.String,Windows.Foundation.Collections.PropertySet,Windows.Foundation.Collections.PropertySet)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

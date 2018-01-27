@@ -1,7 +1,9 @@
-<Type Name="XboxUserProfile" FullName="Microsoft.Xbox.Services.Social.XboxUserProfile">
+﻿<Type Name="XboxUserProfile" FullName="Microsoft.Xbox.Services.Social.XboxUserProfile">
   <TypeSignature Language="C#" Value="public sealed class XboxUserProfile" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxUserProfile extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.XboxUserProfile" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XboxUserProfile" />
+  <TypeSignature Language="F#" Value="type XboxUserProfile = class&#xA;    interface __IXboxUserProfilePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents a user's Xbox Live profile.
       <MemberSignature Language="C#" Value="public string ApplicationDisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationDisplayName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxUserProfile.ApplicationDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationDisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationDisplayName : string" Usage="Microsoft.Xbox.Services.Social.XboxUserProfile.ApplicationDisplayName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxUserProfilePublicNonVirtuals.ApplicationDisplayName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -53,7 +60,12 @@ be a user's real name or their gamertag.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Uri ApplicationDisplayPictureResizeUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Uri ApplicationDisplayPictureResizeUri" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxUserProfile.ApplicationDisplayPictureResizeUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationDisplayPictureResizeUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.ApplicationDisplayPictureResizeUri : Windows.Foundation.Uri" Usage="Microsoft.Xbox.Services.Social.XboxUserProfile.ApplicationDisplayPictureResizeUri" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxUserProfilePublicNonVirtuals.ApplicationDisplayPictureResizeUri</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -79,7 +91,12 @@ Width   Height
       <MemberSignature Language="C#" Value="public string GameDisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GameDisplayName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxUserProfile.GameDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameDisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.GameDisplayName : string" Usage="Microsoft.Xbox.Services.Social.XboxUserProfile.GameDisplayName" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxUserProfilePublicNonVirtuals.GameDisplayName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -100,7 +117,12 @@ be a user's real name or their gamertag.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Uri GameDisplayPictureResizeUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Uri GameDisplayPictureResizeUri" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxUserProfile.GameDisplayPictureResizeUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameDisplayPictureResizeUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.GameDisplayPictureResizeUri : Windows.Foundation.Uri" Usage="Microsoft.Xbox.Services.Social.XboxUserProfile.GameDisplayPictureResizeUri" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxUserProfilePublicNonVirtuals.GameDisplayPictureResizeUri</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -126,7 +148,12 @@ Width   Height
       <MemberSignature Language="C#" Value="public string Gamerscore { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Gamerscore" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxUserProfile.Gamerscore" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Gamerscore As String" />
+      <MemberSignature Language="F#" Value="member this.Gamerscore : string" Usage="Microsoft.Xbox.Services.Social.XboxUserProfile.Gamerscore" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxUserProfilePublicNonVirtuals.Gamerscore</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -146,7 +173,12 @@ The user's gamerscore.
       <MemberSignature Language="C#" Value="public string Gamertag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Gamertag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxUserProfile.Gamertag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Gamertag As String" />
+      <MemberSignature Language="F#" Value="member this.Gamertag : string" Usage="Microsoft.Xbox.Services.Social.XboxUserProfile.Gamertag" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxUserProfilePublicNonVirtuals.Gamertag</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -166,7 +198,12 @@ The user's gamertag.
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.XboxUserProfile.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Social.XboxUserProfile.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IXboxUserProfilePublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

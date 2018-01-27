@@ -1,7 +1,9 @@
-<Type Name="GameServerMetadataResult" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult">
+﻿<Type Name="GameServerMetadataResult" FullName="Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult">
   <TypeSignature Language="C#" Value="public sealed class GameServerMetadataResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GameServerMetadataResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GameServerMetadataResult" />
+  <TypeSignature Language="F#" Value="type GameServerMetadataResult = class&#xA;    interface __IGameServerMetadataResultPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents information on game server image sets and game variants.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet&gt; GameServerImageSets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet&gt; GameServerImageSets" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult.GameServerImageSets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameServerImageSets As IVectorView(Of GameServerImageSet)" />
+      <MemberSignature Language="F#" Value="member this.GameServerImageSets : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.GameServerImageSet&gt;" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult.GameServerImageSets" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerMetadataResultPublicNonVirtuals.GameServerImageSets</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -52,7 +59,12 @@ The collection of game server image sets.
       <MemberSignature Language="C#" Value="public Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.GameVariant&gt; GameVariants { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.Foundation.Collections.IVectorView`1&lt;class Microsoft.Xbox.Services.GameServerPlatform.GameVariant&gt; GameVariants" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult.GameVariants" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GameVariants As IVectorView(Of GameVariant)" />
+      <MemberSignature Language="F#" Value="member this.GameVariants : Windows.Foundation.Collections.IVectorView&lt;Microsoft.Xbox.Services.GameServerPlatform.GameVariant&gt;" Usage="Microsoft.Xbox.Services.GameServerPlatform.GameServerMetadataResult.GameVariants" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.GameServerPlatform.__IGameServerMetadataResultPublicNonVirtuals.GameVariants</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

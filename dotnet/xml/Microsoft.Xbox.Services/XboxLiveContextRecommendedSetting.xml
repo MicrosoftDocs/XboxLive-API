@@ -1,7 +1,9 @@
-<Type Name="XboxLiveContextRecommendedSetting" FullName="Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting">
+﻿<Type Name="XboxLiveContextRecommendedSetting" FullName="Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting">
   <TypeSignature Language="C#" Value="public enum XboxLiveContextRecommendedSetting" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XboxLiveContextRecommendedSetting extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XboxLiveContextRecommendedSetting" />
+  <TypeSignature Language="F#" Value="type XboxLiveContextRecommendedSetting = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Enum used with DisableAsserts APIs
       <MemberSignature Language="C#" Value="ThisCodeNeedsToBeChangedToFollowBestPractices" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting ThisCodeNeedsToBeChangedToFollowBestPractices = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting.ThisCodeNeedsToBeChangedToFollowBestPractices" />
+      <MemberSignature Language="VB.NET" Value="ThisCodeNeedsToBeChangedToFollowBestPractices" />
+      <MemberSignature Language="F#" Value="ThisCodeNeedsToBeChangedToFollowBestPractices = 0" Usage="Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting.ThisCodeNeedsToBeChangedToFollowBestPractices" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Enum used with DisableAsserts APIs
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.XboxLiveContextRecommendedSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Passed to xboxLiveContext-&gt;Settings-&gt;DisableAsserts APIs

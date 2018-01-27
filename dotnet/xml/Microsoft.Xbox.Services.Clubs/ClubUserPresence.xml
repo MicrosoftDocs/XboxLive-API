@@ -1,7 +1,9 @@
-<Type Name="ClubUserPresence" FullName="Microsoft.Xbox.Services.Clubs.ClubUserPresence">
+﻿<Type Name="ClubUserPresence" FullName="Microsoft.Xbox.Services.Clubs.ClubUserPresence">
   <TypeSignature Language="C#" Value="public enum ClubUserPresence" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClubUserPresence extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Clubs.ClubUserPresence" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ClubUserPresence" />
+  <TypeSignature Language="F#" Value="type ClubUserPresence = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="Chat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence Chat = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Chat" />
+      <MemberSignature Language="VB.NET" Value="Chat" />
+      <MemberSignature Language="F#" Value="Chat = 2" Usage="Microsoft.Xbox.Services.Clubs.ClubUserPresence.Chat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>User is on the chat page.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="Feed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence Feed = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Feed" />
+      <MemberSignature Language="VB.NET" Value="Feed" />
+      <MemberSignature Language="F#" Value="Feed = 3" Usage="Microsoft.Xbox.Services.Clubs.ClubUserPresence.Feed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>User is viewing the club feed.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="InClub" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence InClub = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.InClub" />
+      <MemberSignature Language="VB.NET" Value="InClub" />
+      <MemberSignature Language="F#" Value="InClub = 1" Usage="Microsoft.Xbox.Services.Clubs.ClubUserPresence.InClub" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>User is viewing the club, but not on any specific page.</summary>
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="InGame" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence InGame = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.InGame" />
+      <MemberSignature Language="VB.NET" Value="InGame" />
+      <MemberSignature Language="F#" Value="InGame = 6" Usage="Microsoft.Xbox.Services.Clubs.ClubUserPresence.InGame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -79,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>User is playing the associated game.</summary>
       </Docs>
@@ -87,6 +101,8 @@
       <MemberSignature Language="C#" Value="NotInClub" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence NotInClub = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.NotInClub" />
+      <MemberSignature Language="VB.NET" Value="NotInClub" />
+      <MemberSignature Language="F#" Value="NotInClub = 0" Usage="Microsoft.Xbox.Services.Clubs.ClubUserPresence.NotInClub" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -95,6 +111,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>User is no longer on a club page.</summary>
       </Docs>
@@ -103,6 +120,8 @@
       <MemberSignature Language="C#" Value="Play" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence Play = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Play" />
+      <MemberSignature Language="VB.NET" Value="Play" />
+      <MemberSignature Language="F#" Value="Play = 5" Usage="Microsoft.Xbox.Services.Clubs.ClubUserPresence.Play" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -111,6 +130,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>User is on the play tab in the club (not actually playing anything).</summary>
       </Docs>
@@ -119,6 +139,8 @@
       <MemberSignature Language="C#" Value="Roster" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Clubs.ClubUserPresence Roster = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Clubs.ClubUserPresence.Roster" />
+      <MemberSignature Language="VB.NET" Value="Roster" />
+      <MemberSignature Language="F#" Value="Roster = 4" Usage="Microsoft.Xbox.Services.Clubs.ClubUserPresence.Roster" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -127,6 +149,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Clubs.ClubUserPresence</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>User is viewing the club roster/presence.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="AchievementService" FullName="Microsoft.Xbox.Services.Achievements.AchievementService">
+﻿<Type Name="AchievementService" FullName="Microsoft.Xbox.Services.Achievements.AchievementService">
   <TypeSignature Language="C#" Value="public sealed class AchievementService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AchievementService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Achievements.AchievementService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AchievementService" />
+  <TypeSignature Language="F#" Value="type AchievementService = class&#xA;    interface __IAchievementServicePublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -32,7 +34,12 @@ Represents an endpoint that you can use to access the Achievement service.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Achievements.Achievement&gt; GetAchievementAsync (string xboxUserId, string serviceConfigurationId, string achievementId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Achievements.Achievement&gt; GetAchievementAsync([in]string xboxUserId, [in]string serviceConfigurationId, [in]string achievementId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Achievements.AchievementService.GetAchievementAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAchievementAsync (xboxUserId As String, serviceConfigurationId As String, achievementId As String) As IAsyncOperation(Of Achievement)" />
+      <MemberSignature Language="F#" Value="abstract member GetAchievementAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Achievements.Achievement&gt;&#xA;override this.GetAchievementAsync : string * string * string -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Achievements.Achievement&gt;" Usage="achievementService.GetAchievementAsync (xboxUserId, serviceConfigurationId, achievementId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Achievements.__IAchievementServicePublicNonVirtuals.GetAchievementAsync(System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -69,7 +76,12 @@ This method calls V2 GET /users/xuid({xuid})/achievements/{scid}/{achievementId}
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Achievements.AchievementsResult&gt; GetAchievementsForTitleIdAsync (string xboxUserId, uint titleId, Microsoft.Xbox.Services.Achievements.AchievementType type, bool unlockedOnly, Microsoft.Xbox.Services.Achievements.AchievementOrderBy orderBy, uint skipItems, uint maxItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;class Microsoft.Xbox.Services.Achievements.AchievementsResult&gt; GetAchievementsForTitleIdAsync([in]string xboxUserId, [in]unsigned int32 titleId, [in]valuetype Microsoft.Xbox.Services.Achievements.AchievementType type, [in]bool unlockedOnly, [in]valuetype Microsoft.Xbox.Services.Achievements.AchievementOrderBy orderBy, [in]unsigned int32 skipItems, [in]unsigned int32 maxItems) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Achievements.AchievementService.GetAchievementsForTitleIdAsync(System.String,System.UInt32,Microsoft.Xbox.Services.Achievements.AchievementType,System.Boolean,Microsoft.Xbox.Services.Achievements.AchievementOrderBy,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAchievementsForTitleIdAsync (xboxUserId As String, titleId As UInteger, type As AchievementType, unlockedOnly As Boolean, orderBy As AchievementOrderBy, skipItems As UInteger, maxItems As UInteger) As IAsyncOperation(Of AchievementsResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetAchievementsForTitleIdAsync : string * uint32 * Microsoft.Xbox.Services.Achievements.AchievementType * bool * Microsoft.Xbox.Services.Achievements.AchievementOrderBy * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Achievements.AchievementsResult&gt;&#xA;override this.GetAchievementsForTitleIdAsync : string * uint32 * Microsoft.Xbox.Services.Achievements.AchievementType * bool * Microsoft.Xbox.Services.Achievements.AchievementOrderBy * uint32 * uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Microsoft.Xbox.Services.Achievements.AchievementsResult&gt;" Usage="achievementService.GetAchievementsForTitleIdAsync (xboxUserId, titleId, type, unlockedOnly, orderBy, skipItems, maxItems)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Achievements.__IAchievementServicePublicNonVirtuals.GetAchievementsForTitleIdAsync(System.String,System.UInt32,Microsoft.Xbox.Services.Achievements.AchievementType,System.Boolean,Microsoft.Xbox.Services.Achievements.AchievementOrderBy,System.UInt32,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -116,7 +128,12 @@ This method calls V2 GET /users/xuid({xuid})/achievements.
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction UpdateAchievementAsync (string xboxUserId, string achievementId, uint percentComplete);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction UpdateAchievementAsync([in]string xboxUserId, [in]string achievementId, [in]unsigned int32 percentComplete) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Achievements.AchievementService.UpdateAchievementAsync(System.String,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateAchievementAsync (xboxUserId As String, achievementId As String, percentComplete As UInteger) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAchievementAsync : string * string * uint32 -&gt; Windows.Foundation.IAsyncAction&#xA;override this.UpdateAchievementAsync : string * string * uint32 -&gt; Windows.Foundation.IAsyncAction" Usage="achievementService.UpdateAchievementAsync (xboxUserId, achievementId, percentComplete)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Achievements.__IAchievementServicePublicNonVirtuals.UpdateAchievementAsync(System.String,System.String,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -157,7 +174,12 @@ This method calls V2 POST /users/xuid({xuid})/achievements/{scid}/update
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction UpdateAchievementAsync (string xboxUserId, uint titleId, string serviceConfigurationId, string achievementId, uint percentComplete);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction UpdateAchievementAsync([in]string xboxUserId, [in]unsigned int32 titleId, [in]string serviceConfigurationId, [in]string achievementId, [in]unsigned int32 percentComplete) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Achievements.AchievementService.UpdateAchievementAsync(System.String,System.UInt32,System.String,System.String,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateAchievementAsync (xboxUserId As String, titleId As UInteger, serviceConfigurationId As String, achievementId As String, percentComplete As UInteger) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAchievementAsync : string * uint32 * string * string * uint32 -&gt; Windows.Foundation.IAsyncAction&#xA;override this.UpdateAchievementAsync : string * uint32 * string * string * uint32 -&gt; Windows.Foundation.IAsyncAction" Usage="achievementService.UpdateAchievementAsync (xboxUserId, titleId, serviceConfigurationId, achievementId, percentComplete)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Xbox.Services.Achievements.__IAchievementServicePublicNonVirtuals.UpdateAchievementAsync(System.String,System.UInt32,System.String,System.String,System.UInt32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

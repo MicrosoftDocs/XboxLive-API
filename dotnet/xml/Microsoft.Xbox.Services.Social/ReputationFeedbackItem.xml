@@ -1,7 +1,9 @@
-<Type Name="ReputationFeedbackItem" FullName="Microsoft.Xbox.Services.Social.ReputationFeedbackItem">
+﻿<Type Name="ReputationFeedbackItem" FullName="Microsoft.Xbox.Services.Social.ReputationFeedbackItem">
   <TypeSignature Language="C#" Value="public sealed class ReputationFeedbackItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReputationFeedbackItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.ReputationFeedbackItem" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReputationFeedbackItem" />
+  <TypeSignature Language="F#" Value="type ReputationFeedbackItem = class&#xA;    interface __IReputationFeedbackItemPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -38,6 +40,7 @@ Represents the parameters for submitting reputation feedback on a user
       <MemberSignature Language="C#" Value="public ReputationFeedbackItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.ReputationFeedbackItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -58,6 +61,7 @@ Represents the parameters for submitting reputation feedback on a user
       <MemberSignature Language="C#" Value="public ReputationFeedbackItem (string xboxUserId, Microsoft.Xbox.Services.Social.ReputationFeedbackType reputationFeedbackType, Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, string reasonMessage, string evidenceResourceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor([in]string xboxUserId, [in]valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType reputationFeedbackType, [in]class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference sessionReference, [in]string reasonMessage, [in]string evidenceResourceId) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.ReputationFeedbackItem.#ctor(System.String,Microsoft.Xbox.Services.Social.ReputationFeedbackType,Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Xbox.Services.Social.ReputationFeedbackItem : string * Microsoft.Xbox.Services.Social.ReputationFeedbackType * Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference * string * string -&gt; Microsoft.Xbox.Services.Social.ReputationFeedbackItem" Usage="new Microsoft.Xbox.Services.Social.ReputationFeedbackItem (xboxUserId, reputationFeedbackType, sessionReference, reasonMessage, evidenceResourceId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -91,7 +95,12 @@ Construct a ReputationFeedbackItem object
       <MemberSignature Language="C#" Value="public string EvidenceResourceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EvidenceResourceId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.ReputationFeedbackItem.EvidenceResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvidenceResourceId As String" />
+      <MemberSignature Language="F#" Value="member this.EvidenceResourceId : string" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackItem.EvidenceResourceId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IReputationFeedbackItemPublicNonVirtuals.EvidenceResourceId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -111,7 +120,12 @@ The Id of a resource that can be used as evidence for the feedback. Example: the
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Social.ReputationFeedbackType FeedbackType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Xbox.Services.Social.ReputationFeedbackType FeedbackType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.ReputationFeedbackItem.FeedbackType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FeedbackType As ReputationFeedbackType" />
+      <MemberSignature Language="F#" Value="member this.FeedbackType : Microsoft.Xbox.Services.Social.ReputationFeedbackType" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackItem.FeedbackType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IReputationFeedbackItemPublicNonVirtuals.FeedbackType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -131,7 +145,12 @@ The reputation feedback type being submitted.
       <MemberSignature Language="C#" Value="public string ReasonMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ReasonMessage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.ReputationFeedbackItem.ReasonMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReasonMessage As String" />
+      <MemberSignature Language="F#" Value="member this.ReasonMessage : string" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackItem.ReasonMessage" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IReputationFeedbackItemPublicNonVirtuals.ReasonMessage</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -151,7 +170,12 @@ User supplied text added to explain the reason for the feedback.
       <MemberSignature Language="C#" Value="public Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference SessionReference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference SessionReference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.ReputationFeedbackItem.SessionReference" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionReference As MultiplayerSessionReference" />
+      <MemberSignature Language="F#" Value="member this.SessionReference : Microsoft.Xbox.Services.Multiplayer.MultiplayerSessionReference" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackItem.SessionReference" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IReputationFeedbackItemPublicNonVirtuals.SessionReference</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -171,7 +195,12 @@ The reference to the multiplayer session directory session the user is sending f
       <MemberSignature Language="C#" Value="public string XboxUserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XboxUserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.ReputationFeedbackItem.XboxUserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XboxUserId As String" />
+      <MemberSignature Language="F#" Value="member this.XboxUserId : string" Usage="Microsoft.Xbox.Services.Social.ReputationFeedbackItem.XboxUserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Xbox.Services.Social.__IReputationFeedbackItemPublicNonVirtuals.XboxUserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>

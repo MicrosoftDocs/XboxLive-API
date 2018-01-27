@@ -1,7 +1,9 @@
-<Type Name="Joinability" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.Joinability">
+﻿<Type Name="Joinability" FullName="Microsoft.Xbox.Services.Multiplayer.Manager.Joinability">
   <TypeSignature Language="C#" Value="public enum Joinability" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Joinability extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Joinability" />
+  <TypeSignature Language="F#" Value="type Joinability = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -16,7 +18,7 @@
   </Attributes>
   <Docs>
     <summary>
-Defines values used to indicate join in progress state on who can join your game.
+Defines values used to indicate who can join your lobby.
 </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -25,6 +27,8 @@ Defines values used to indicate join in progress state on who can join your game
       <MemberSignature Language="C#" Value="Closed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.Joinability Closed = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.Closed" />
+      <MemberSignature Language="VB.NET" Value="Closed" />
+      <MemberSignature Language="F#" Value="Closed = 4" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values used to indicate join in progress state on who can join your game
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
 This option will close the lobby immediately.
@@ -43,6 +48,8 @@ This option will close the lobby immediately.
       <MemberSignature Language="C#" Value="DisableWhileGameInProgress" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.Joinability DisableWhileGameInProgress = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.DisableWhileGameInProgress" />
+      <MemberSignature Language="VB.NET" Value="DisableWhileGameInProgress" />
+      <MemberSignature Language="F#" Value="DisableWhileGameInProgress = 3" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.DisableWhileGameInProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -51,6 +58,7 @@ This option will close the lobby immediately.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 This option will close the lobby only when a game is in progress. All other times,
@@ -62,6 +70,8 @@ it will keep the lobby open for invite_only so invitees can join when no game is
       <MemberSignature Language="C#" Value="InviteOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.Joinability InviteOnly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.InviteOnly" />
+      <MemberSignature Language="VB.NET" Value="InviteOnly" />
+      <MemberSignature Language="F#" Value="InviteOnly = 2" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.InviteOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -70,6 +80,7 @@ it will keep the lobby open for invite_only so invitees can join when no game is
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 The lobby is joinable only via an invite.
@@ -80,6 +91,8 @@ The lobby is joinable only via an invite.
       <MemberSignature Language="C#" Value="JoinableByFriends" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.Joinability JoinableByFriends = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.JoinableByFriends" />
+      <MemberSignature Language="VB.NET" Value="JoinableByFriends" />
+      <MemberSignature Language="F#" Value="JoinableByFriends = 1" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.JoinableByFriends" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -88,6 +101,7 @@ The lobby is joinable only via an invite.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Default value. The lobby is joinable by users who are followed by an existing member of the session.
@@ -98,6 +112,8 @@ Default value. The lobby is joinable by users who are followed by an existing me
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Multiplayer.Manager.Joinability None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Xbox.Services.Multiplayer.Manager.Joinability.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -106,6 +122,7 @@ Default value. The lobby is joinable by users who are followed by an existing me
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Multiplayer.Manager.Joinability</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 Joinability not set or no lobby exists yet.

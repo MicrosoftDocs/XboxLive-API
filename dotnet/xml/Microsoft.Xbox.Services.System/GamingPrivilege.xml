@@ -1,7 +1,9 @@
-<Type Name="GamingPrivilege" FullName="Microsoft.Xbox.Services.System.GamingPrivilege">
+﻿<Type Name="GamingPrivilege" FullName="Microsoft.Xbox.Services.System.GamingPrivilege">
   <TypeSignature Language="C#" Value="public enum GamingPrivilege" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GamingPrivilege extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.System.GamingPrivilege" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GamingPrivilege" />
+  <TypeSignature Language="F#" Value="type GamingPrivilege = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="AddFriend" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege AddFriend = int32(255)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.AddFriend" />
+      <MemberSignature Language="VB.NET" Value="AddFriend" />
+      <MemberSignature Language="F#" Value="AddFriend = 255" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.AddFriend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>255</MemberValue>
       <Docs>
         <summary>The user can follow other Xbox LIVE users and add Xbox LIVE friends when this privilege is present.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="Broadcast" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege Broadcast = int32(190)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.Broadcast" />
+      <MemberSignature Language="VB.NET" Value="Broadcast" />
+      <MemberSignature Language="F#" Value="Broadcast = 190" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.Broadcast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>190</MemberValue>
       <Docs>
         <summary>The user can broadcast live gameplay.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="CloudGamingJoinSession" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege CloudGamingJoinSession = int32(208)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.CloudGamingJoinSession" />
+      <MemberSignature Language="VB.NET" Value="CloudGamingJoinSession" />
+      <MemberSignature Language="F#" Value="CloudGamingJoinSession = 208" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.CloudGamingJoinSession" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>208</MemberValue>
       <Docs>
         <summary>The user can join a cloud compute session if this privilege is present</summary>
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="CloudGamingManageSession" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege CloudGamingManageSession = int32(207)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.CloudGamingManageSession" />
+      <MemberSignature Language="VB.NET" Value="CloudGamingManageSession" />
+      <MemberSignature Language="F#" Value="CloudGamingManageSession = 207" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.CloudGamingManageSession" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -79,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>207</MemberValue>
       <Docs>
         <summary>The user can allocate a cloud compute cluster and manage a cloud compute cluster for a hosted game session if this privilege is present</summary>
       </Docs>
@@ -87,6 +101,8 @@
       <MemberSignature Language="C#" Value="CloudSavedGames" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege CloudSavedGames = int32(209)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.CloudSavedGames" />
+      <MemberSignature Language="VB.NET" Value="CloudSavedGames" />
+      <MemberSignature Language="F#" Value="CloudSavedGames = 209" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.CloudSavedGames" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -95,6 +111,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>209</MemberValue>
       <Docs>
         <summary>The user can save games in cloud title storage if this privilege is present</summary>
       </Docs>
@@ -103,6 +120,8 @@
       <MemberSignature Language="C#" Value="Communications" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege Communications = int32(252)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.Communications" />
+      <MemberSignature Language="VB.NET" Value="Communications" />
+      <MemberSignature Language="F#" Value="Communications = 252" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.Communications" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -111,6 +130,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>252</MemberValue>
       <Docs>
         <summary>The user can use asynchronous text messaging with anyone when this privilege is present. Extra privacy permissions checks are required to determine who the user is authorized to communicate with. Communicating with other users is subject to additional privacy permission checks</summary>
       </Docs>
@@ -119,6 +139,8 @@
       <MemberSignature Language="C#" Value="CommunicationVoiceIngame" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege CommunicationVoiceIngame = int32(205)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.CommunicationVoiceIngame" />
+      <MemberSignature Language="VB.NET" Value="CommunicationVoiceIngame" />
+      <MemberSignature Language="F#" Value="CommunicationVoiceIngame = 205" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.CommunicationVoiceIngame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -127,6 +149,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>205</MemberValue>
       <Docs>
         <summary>The user can participate in voice chat during parties and multiplayer game sessions if this privilege is present. Communicating with other users is subject to additional privacy permission checks</summary>
       </Docs>
@@ -135,6 +158,8 @@
       <MemberSignature Language="C#" Value="CommunicationVoiceSkype" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege CommunicationVoiceSkype = int32(206)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.CommunicationVoiceSkype" />
+      <MemberSignature Language="VB.NET" Value="CommunicationVoiceSkype" />
+      <MemberSignature Language="F#" Value="CommunicationVoiceSkype = 206" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.CommunicationVoiceSkype" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -143,6 +168,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>206</MemberValue>
       <Docs>
         <summary>The user can use voice communication with Skype on Xbox One if this privilege is present</summary>
       </Docs>
@@ -151,6 +177,8 @@
       <MemberSignature Language="C#" Value="GameDVR" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege GameDVR = int32(198)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.GameDVR" />
+      <MemberSignature Language="VB.NET" Value="GameDVR" />
+      <MemberSignature Language="F#" Value="GameDVR = 198" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.GameDVR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -159,6 +187,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>198</MemberValue>
       <Docs>
         <summary>The user can upload recorded in-game videos to the cloud if this privilege is present. Viewing GameDVRs is subject to privacy controls.</summary>
       </Docs>
@@ -167,6 +196,8 @@
       <MemberSignature Language="C#" Value="MultiplayerParties" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege MultiplayerParties = int32(203)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.MultiplayerParties" />
+      <MemberSignature Language="VB.NET" Value="MultiplayerParties" />
+      <MemberSignature Language="F#" Value="MultiplayerParties = 203" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.MultiplayerParties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -175,6 +206,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>203</MemberValue>
       <Docs>
         <summary>The user can join a party session if this privilege is present</summary>
       </Docs>
@@ -183,6 +215,8 @@
       <MemberSignature Language="C#" Value="MultiplayerSessions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege MultiplayerSessions = int32(254)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.MultiplayerSessions" />
+      <MemberSignature Language="VB.NET" Value="MultiplayerSessions" />
+      <MemberSignature Language="F#" Value="MultiplayerSessions = 254" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.MultiplayerSessions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -191,6 +225,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>254</MemberValue>
       <Docs>
         <summary>The user can join a multiplayer sessions for a game when this privilege is present.</summary>
       </Docs>
@@ -199,6 +234,8 @@
       <MemberSignature Language="C#" Value="PremiumContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege PremiumContent = int32(214)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.PremiumContent" />
+      <MemberSignature Language="VB.NET" Value="PremiumContent" />
+      <MemberSignature Language="F#" Value="PremiumContent = 214" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.PremiumContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -207,6 +244,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>214</MemberValue>
       <Docs>
         <summary>The user can purchase, download and launch premium content available with the Xbox LIVE Gold subscription if this privilege is present</summary>
       </Docs>
@@ -215,6 +253,8 @@
       <MemberSignature Language="C#" Value="PremiumVideo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege PremiumVideo = int32(224)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.PremiumVideo" />
+      <MemberSignature Language="VB.NET" Value="PremiumVideo" />
+      <MemberSignature Language="F#" Value="PremiumVideo = 224" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.PremiumVideo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -223,6 +263,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>224</MemberValue>
       <Docs>
         <summary>The user can access premium video services if this privilege is present</summary>
       </Docs>
@@ -231,6 +272,8 @@
       <MemberSignature Language="C#" Value="ProfileViewing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege ProfileViewing = int32(249)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.ProfileViewing" />
+      <MemberSignature Language="VB.NET" Value="ProfileViewing" />
+      <MemberSignature Language="F#" Value="ProfileViewing = 249" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.ProfileViewing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -239,6 +282,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>249</MemberValue>
       <Docs>
         <summary>The user is authorized to view other user's profiles when this privilege is present. Viewing other user's profiles is subject to additional privacy checks</summary>
       </Docs>
@@ -247,6 +291,8 @@
       <MemberSignature Language="C#" Value="PurchaseContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege PurchaseContent = int32(245)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.PurchaseContent" />
+      <MemberSignature Language="VB.NET" Value="PurchaseContent" />
+      <MemberSignature Language="F#" Value="PurchaseContent = 245" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.PurchaseContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -255,6 +301,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>245</MemberValue>
       <Docs>
         <summary>The user is authorized to purchase content when this privilege is present</summary>
       </Docs>
@@ -263,6 +310,8 @@
       <MemberSignature Language="C#" Value="ShareContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege ShareContent = int32(211)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.ShareContent" />
+      <MemberSignature Language="VB.NET" Value="ShareContent" />
+      <MemberSignature Language="F#" Value="ShareContent = 211" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.ShareContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -271,6 +320,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>211</MemberValue>
       <Docs>
         <summary>The user can share content with others if this privilege is present</summary>
       </Docs>
@@ -279,6 +329,8 @@
       <MemberSignature Language="C#" Value="ShareKinectContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege ShareKinectContent = int32(199)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.ShareKinectContent" />
+      <MemberSignature Language="VB.NET" Value="ShareKinectContent" />
+      <MemberSignature Language="F#" Value="ShareKinectContent = 199" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.ShareKinectContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -287,6 +339,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>199</MemberValue>
       <Docs>
         <summary>Kinect recorded content can be uploaded to the cloud for the user and made accessible to anyone if this privilege is present. Viewing other user's Kinect content is subject to a privacy setting.</summary>
       </Docs>
@@ -295,6 +348,8 @@
       <MemberSignature Language="C#" Value="SocialNetworkSharing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege SocialNetworkSharing = int32(220)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.SocialNetworkSharing" />
+      <MemberSignature Language="VB.NET" Value="SocialNetworkSharing" />
+      <MemberSignature Language="F#" Value="SocialNetworkSharing = 220" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.SocialNetworkSharing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -303,6 +358,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>220</MemberValue>
       <Docs>
         <summary>The user is allowed to share progress information on social networks when this privilege is present</summary>
       </Docs>
@@ -311,6 +367,8 @@
       <MemberSignature Language="C#" Value="SubscriptionContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege SubscriptionContent = int32(219)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.SubscriptionContent" />
+      <MemberSignature Language="VB.NET" Value="SubscriptionContent" />
+      <MemberSignature Language="F#" Value="SubscriptionContent = 219" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.SubscriptionContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -319,6 +377,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>219</MemberValue>
       <Docs>
         <summary>The user can purchase and download premium subscription content and use premium subscription features when this privilege is present</summary>
       </Docs>
@@ -327,6 +386,8 @@
       <MemberSignature Language="C#" Value="UserCreatedContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege UserCreatedContent = int32(247)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.UserCreatedContent" />
+      <MemberSignature Language="VB.NET" Value="UserCreatedContent" />
+      <MemberSignature Language="F#" Value="UserCreatedContent = 247" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.UserCreatedContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -335,6 +396,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>247</MemberValue>
       <Docs>
         <summary>The user is authorized to download and view online user created content when this privilege is present.</summary>
       </Docs>
@@ -343,6 +405,8 @@
       <MemberSignature Language="C#" Value="VideoCommunications" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege VideoCommunications = int32(235)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.VideoCommunications" />
+      <MemberSignature Language="VB.NET" Value="VideoCommunications" />
+      <MemberSignature Language="F#" Value="VideoCommunications = 235" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.VideoCommunications" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -351,6 +415,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>235</MemberValue>
       <Docs>
         <summary>The user can use video communication with Skype or other providers when this privilege is present. Communicating with other users is subject to additional privacy permission checks</summary>
       </Docs>
@@ -359,6 +424,8 @@
       <MemberSignature Language="C#" Value="ViewFriendsList" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.System.GamingPrivilege ViewFriendsList = int32(197)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.System.GamingPrivilege.ViewFriendsList" />
+      <MemberSignature Language="VB.NET" Value="ViewFriendsList" />
+      <MemberSignature Language="F#" Value="ViewFriendsList = 197" Usage="Microsoft.Xbox.Services.System.GamingPrivilege.ViewFriendsList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -367,6 +434,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.System.GamingPrivilege</ReturnType>
       </ReturnValue>
+      <MemberValue>197</MemberValue>
       <Docs>
         <summary>The user can view other user's friends list if this privilege is present.</summary>
       </Docs>

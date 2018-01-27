@@ -1,7 +1,9 @@
-<Type Name="TitleStorageETagMatchCondition" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition">
+﻿<Type Name="TitleStorageETagMatchCondition" FullName="Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition">
   <TypeSignature Language="C#" Value="public enum TitleStorageETagMatchCondition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleStorageETagMatchCondition extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TitleStorageETagMatchCondition" />
+  <TypeSignature Language="F#" Value="type TitleStorageETagMatchCondition = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="IfMatch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition IfMatch = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition.IfMatch" />
+      <MemberSignature Language="VB.NET" Value="IfMatch" />
+      <MemberSignature Language="F#" Value="IfMatch = 1" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition.IfMatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Perform the request if the Etag value specified matches the service value.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="IfNotMatch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition IfNotMatch = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition.IfNotMatch" />
+      <MemberSignature Language="VB.NET" Value="IfNotMatch" />
+      <MemberSignature Language="F#" Value="IfNotMatch = 2" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition.IfNotMatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Perform the request if the Etag value specified does not match the service value.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="NotUsed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition NotUsed = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition.NotUsed" />
+      <MemberSignature Language="VB.NET" Value="NotUsed" />
+      <MemberSignature Language="F#" Value="NotUsed = 0" Usage="Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition.NotUsed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.TitleStorage.TitleStorageETagMatchCondition</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>There is no match condition, perform the request regardless of the ETag value.</summary>
       </Docs>

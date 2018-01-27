@@ -1,7 +1,9 @@
-<Type Name="SocialGroupConstants" FullName="Microsoft.Xbox.Services.Social.SocialGroupConstants">
+﻿<Type Name="SocialGroupConstants" FullName="Microsoft.Xbox.Services.Social.SocialGroupConstants">
   <TypeSignature Language="C#" Value="public sealed class SocialGroupConstants" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocialGroupConstants extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Social.SocialGroupConstants" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocialGroupConstants" />
+  <TypeSignature Language="F#" Value="type SocialGroupConstants = class&#xA;    interface __ISocialGroupConstantsPublicNonVirtuals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -38,6 +40,7 @@ Contains constant data about social groups.
       <MemberSignature Language="C#" Value="public SocialGroupConstants ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.Social.SocialGroupConstants.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -58,6 +61,8 @@ Contains constant data about social groups.
       <MemberSignature Language="C#" Value="public static string Favorite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Favorite" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.SocialGroupConstants.Favorite" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Favorite As String" />
+      <MemberSignature Language="F#" Value="member this.Favorite : string" Usage="Microsoft.Xbox.Services.Social.SocialGroupConstants.Favorite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -78,6 +83,8 @@ A string describing the social group's favorites.
       <MemberSignature Language="C#" Value="public static string People { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string People" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.Social.SocialGroupConstants.People" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property People As String" />
+      <MemberSignature Language="F#" Value="member this.People : string" Usage="Microsoft.Xbox.Services.Social.SocialGroupConstants.People" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>

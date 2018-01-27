@@ -1,7 +1,9 @@
-<Type Name="TournamentGameResultSource" FullName="Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource">
+﻿<Type Name="TournamentGameResultSource" FullName="Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource">
   <TypeSignature Language="C#" Value="public enum TournamentGameResultSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TournamentGameResultSource extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TournamentGameResultSource" />
+  <TypeSignature Language="F#" Value="type TournamentGameResultSource = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -25,6 +27,8 @@ Defines values used to indicate the source for a tournament game state.
       <MemberSignature Language="C#" Value="Adjusted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource Adjusted = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Adjusted" />
+      <MemberSignature Language="VB.NET" Value="Adjusted" />
+      <MemberSignature Language="F#" Value="Adjusted = 3" Usage="Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Adjusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -33,6 +37,7 @@ Defines values used to indicate the source for a tournament game state.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
 Game result is adjusted by tournament administrator.
@@ -43,6 +48,8 @@ Game result is adjusted by tournament administrator.
       <MemberSignature Language="C#" Value="Arbitration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource Arbitration = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Arbitration" />
+      <MemberSignature Language="VB.NET" Value="Arbitration" />
+      <MemberSignature Language="F#" Value="Arbitration = 1" Usage="Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Arbitration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -51,6 +58,7 @@ Game result is adjusted by tournament administrator.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
 Game result source is from client arbitration submit.
@@ -61,6 +69,8 @@ Game result source is from client arbitration submit.
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -69,6 +79,7 @@ Game result source is from client arbitration submit.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 No game result source .
@@ -79,6 +90,8 @@ No game result source .
       <MemberSignature Language="C#" Value="Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource Server = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Server" />
+      <MemberSignature Language="VB.NET" Value="Server" />
+      <MemberSignature Language="F#" Value="Server = 2" Usage="Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource.Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -87,6 +100,7 @@ No game result source .
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TournamentGameResultSource</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
 Game result is determined by game servers.

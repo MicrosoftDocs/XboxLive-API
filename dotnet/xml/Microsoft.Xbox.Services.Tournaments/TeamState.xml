@@ -1,7 +1,9 @@
-<Type Name="TeamState" FullName="Microsoft.Xbox.Services.Tournaments.TeamState">
+﻿<Type Name="TeamState" FullName="Microsoft.Xbox.Services.Tournaments.TeamState">
   <TypeSignature Language="C#" Value="public enum TeamState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TeamState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.Tournaments.TeamState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TeamState" />
+  <TypeSignature Language="F#" Value="type TeamState = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="CheckedIn" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState CheckedIn = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.CheckedIn" />
+      <MemberSignature Language="VB.NET" Value="CheckedIn" />
+      <MemberSignature Language="F#" Value="CheckedIn = 4" Usage="Microsoft.Xbox.Services.Tournaments.TeamState.CheckedIn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary />
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="Completed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState Completed = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.Completed" />
+      <MemberSignature Language="VB.NET" Value="Completed" />
+      <MemberSignature Language="F#" Value="Completed = 6" Usage="Microsoft.Xbox.Services.Tournaments.TeamState.Completed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary />
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="Playing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState Playing = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.Playing" />
+      <MemberSignature Language="VB.NET" Value="Playing" />
+      <MemberSignature Language="F#" Value="Playing = 5" Usage="Microsoft.Xbox.Services.Tournaments.TeamState.Playing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary />
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="Registered" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState Registered = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.Registered" />
+      <MemberSignature Language="VB.NET" Value="Registered" />
+      <MemberSignature Language="F#" Value="Registered = 1" Usage="Microsoft.Xbox.Services.Tournaments.TeamState.Registered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -79,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary />
       </Docs>
@@ -87,6 +101,8 @@
       <MemberSignature Language="C#" Value="StandBy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState StandBy = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.StandBy" />
+      <MemberSignature Language="VB.NET" Value="StandBy" />
+      <MemberSignature Language="F#" Value="StandBy = 3" Usage="Microsoft.Xbox.Services.Tournaments.TeamState.StandBy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -95,6 +111,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary />
       </Docs>
@@ -103,6 +120,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Xbox.Services.Tournaments.TeamState.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -111,6 +130,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
 The team state is unknown.
@@ -121,6 +141,8 @@ The team state is unknown.
       <MemberSignature Language="C#" Value="Waitlisted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.Tournaments.TeamState Waitlisted = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.Tournaments.TeamState.Waitlisted" />
+      <MemberSignature Language="VB.NET" Value="Waitlisted" />
+      <MemberSignature Language="F#" Value="Waitlisted = 2" Usage="Microsoft.Xbox.Services.Tournaments.TeamState.Waitlisted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Xbox.Services</AssemblyName>
@@ -129,6 +151,7 @@ The team state is unknown.
       <ReturnValue>
         <ReturnType>Microsoft.Xbox.Services.Tournaments.TeamState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary />
       </Docs>
