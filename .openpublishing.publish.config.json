@@ -6,7 +6,7 @@
       "build_output_subfolder": "xboxlive-dotnet-api",
       "locale": "en-us",
       "monikers": [
-        "xboxlive-dotnet-1.0.171023001"
+        "xboxlive-dotnet-2017.11.20171204.01"
       ],
       "moniker_ranges": [],
       "open_to_public_contributors": true,
