@@ -1,0 +1,58 @@
+﻿<Type Name="PlayerReset" FullName="Microsoft.Xbox.Services.DevTools.PlayerReset.PlayerReset">
+  <TypeSignature Language="C#" Value="public class PlayerReset" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlayerReset extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.DevTools.PlayerReset.PlayerReset" />
+  <TypeSignature Language="VB.NET" Value="Public Class PlayerReset" />
+  <TypeSignature Language="F#" Value="type PlayerReset = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+    <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class for PlayerReset tooling functionality.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ResetPlayerDataAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.PlayerReset.UserResetResult&gt; ResetPlayerDataAsync (string serviceConfigurationId, string sandbox, string xboxUserId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Xbox.Services.DevTools.PlayerReset.UserResetResult&gt; ResetPlayerDataAsync(string serviceConfigurationId, string sandbox, string xboxUserId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.PlayerReset.PlayerReset.ResetPlayerDataAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResetPlayerDataAsync (serviceConfigurationId As String, sandbox As String, xboxUserId As String) As Task(Of UserResetResult)" />
+      <MemberSignature Language="F#" Value="static member ResetPlayerDataAsync : string * string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.PlayerReset.UserResetResult&gt;" Usage="Microsoft.Xbox.Services.DevTools.PlayerReset.PlayerReset.ResetPlayerDataAsync (serviceConfigurationId, sandbox, xboxUserId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Xbox.Services.DevTools.PlayerReset.PlayerReset/&lt;ResetPlayerDataAsync&gt;d__7))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.PlayerReset.UserResetResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sandbox" Type="System.String" />
+        <Parameter Name="xboxUserId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title for player data resetting</param>
+        <param name="sandbox">The target sandbox id for player resetting</param>
+        <param name="xboxUserId">The Xbox user id of the player to be reset</param>
+        <summary>
+            Reset one player's data in test sandboxes, includes: achievements, leaderboards, player stats and title history. 
+            </summary>
+        <returns>The UserResetResult object for the reset result</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
