@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework Name="xbox-devtools-dotnet-2018.2.180205004">
+  <Namespace Name="Microsoft.Xbox.Services.DevTools.Authentication">
+    <Type Name="Microsoft.Xbox.Services.DevTools.Authentication.DevAccount" Id="T:Microsoft.Xbox.Services.DevTools.Authentication.DevAccount">
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.Authentication.DevAccount.AccountId" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.Authentication.DevAccount.AccountMoniker" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.Authentication.DevAccount.AccountSource" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.Authentication.DevAccount.AccountType" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.Authentication.DevAccount.Id" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.Authentication.DevAccount.Name" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.DevTools.Authentication.DevAccountSource" Id="T:Microsoft.Xbox.Services.DevTools.Authentication.DevAccountSource">
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.Authentication.DevAccountSource.WindowsDevCenter" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.Authentication.DevAccountSource.XboxDeveloperPortal" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication" Id="T:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication">
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.GetDevTokenSilentlyAsync(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.GetDevTokenSilentlyAsync(System.String,System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.LoadLastSignedInUser" />
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.SignInAsync(Microsoft.Xbox.Services.DevTools.Authentication.DevAccountSource,System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.SignOut" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.DevTools.PlayerReset">
+    <Type Name="Microsoft.Xbox.Services.DevTools.PlayerReset.JobProviderStatus" Id="T:Microsoft.Xbox.Services.DevTools.PlayerReset.JobProviderStatus">
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.PlayerReset.JobProviderStatus.#ctor" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.PlayerReset.JobProviderStatus.ErrorMessage" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.PlayerReset.JobProviderStatus.Provider" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.PlayerReset.JobProviderStatus.Status" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.DevTools.PlayerReset.PlayerReset" Id="T:Microsoft.Xbox.Services.DevTools.PlayerReset.PlayerReset">
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.PlayerReset.PlayerReset.ResetPlayerDataAsync(System.String,System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.DevTools.PlayerReset.ResetOverallResult" Id="T:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetOverallResult">
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetOverallResult.CompletedError" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetOverallResult.Succeeded" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetOverallResult.Timeout" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetOverallResult.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus" Id="T:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus">
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.Abandoned" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.CompletedError" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.CompletedPartialSuccess" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.CompletedSuccess" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.InProgress" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.NotStarted" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.Queued" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.DevTools.PlayerReset.UserResetResult" Id="T:Microsoft.Xbox.Services.DevTools.PlayerReset.UserResetResult">
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.PlayerReset.UserResetResult.#ctor" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.PlayerReset.UserResetResult.OverallResult" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.PlayerReset.UserResetResult.ProviderStatus" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Xbox.Services.DevTools.TitleStorage">
+    <Type Name="Microsoft.Xbox.Services.DevTools.TitleStorage.GlobalStorageQuotaInfo" Id="T:Microsoft.Xbox.Services.DevTools.TitleStorage.GlobalStorageQuotaInfo">
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.TitleStorage.GlobalStorageQuotaInfo.#ctor" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.TitleStorage.GlobalStorageQuotaInfo.QuotaBytes" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.TitleStorage.GlobalStorageQuotaInfo.UsedBytes" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage" Id="T:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage">
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.DeleteGlobalStorageBlobAsync(System.String,System.String,System.String,Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType)" />
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.DownloadGlobalStorageBlobAsync(System.String,System.String,System.String,Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType)" />
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.GetGlobalStorageBlobMetaDataAsync(System.String,System.String,System.String,System.UInt32,System.UInt32)" />
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.GetGlobalStorageQuotaAsync(System.String,System.String)" />
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.UploadGlobalStorageBlobAsync(System.String,System.String,System.String,Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType,System.Byte[])" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadata" Id="T:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadata">
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadata.#ctor" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadata.Path" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadata.Size" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadata.Type" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult" Id="T:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult">
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.#ctor" />
+      <Member Id="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.GetNextAsync(System.UInt32)" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.HasNext" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.Items" />
+      <Member Id="P:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.TotalItems" />
+    </Type>
+    <Type Name="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType" Id="T:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType">
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType.Binary" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType.Config" />
+      <Member Id="F:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType.Json" />
+    </Type>
+  </Namespace>
+</Framework>
