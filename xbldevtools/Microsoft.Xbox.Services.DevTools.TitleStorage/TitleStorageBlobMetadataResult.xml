@@ -1,0 +1,136 @@
+﻿<Type Name="TitleStorageBlobMetadataResult" FullName="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult">
+  <TypeSignature Language="C#" Value="public class TitleStorageBlobMetadataResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TitleStorageBlobMetadataResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class TitleStorageBlobMetadataResult" />
+  <TypeSignature Language="F#" Value="type TitleStorageBlobMetadataResult = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+    <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class contains title storage metadata collection result.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TitleStorageBlobMetadataResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult&gt; GetNextAsync (uint maxItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult&gt; GetNextAsync(unsigned int32 maxItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.GetNextAsync(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextAsync (maxItems As UInteger) As Task(Of TitleStorageBlobMetadataResult)" />
+      <MemberSignature Language="F#" Value="member this.GetNextAsync : uint32 -&gt; System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult&gt;" Usage="titleStorageBlobMetadataResult.GetNextAsync maxItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult/&lt;GetNextAsync&gt;d__26))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="maxItems">The maximum number of items to return. (Optional)</param>
+        <summary>
+            Get next page of the current result collection.
+            </summary>
+        <returns>TitleStorageBlobMetadataResult object contains result collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasNext">
+      <MemberSignature Language="C#" Value="public bool HasNext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasNext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.HasNext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasNext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasNext : bool" Usage="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.HasNext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If current result collection has next page.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadata&gt; Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadata&gt; Items" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IEnumerable(Of TitleStorageBlobMetadata)" />
+      <MemberSignature Language="F#" Value="member this.Items : seq&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadata&gt;" Usage="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadata&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Collection of TitleStorageBlobMetadata objects returned by a service request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalItems">
+      <MemberSignature Language="C#" Value="public uint TotalItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TotalItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.TotalItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalItems As UInteger" />
+      <MemberSignature Language="F#" Value="member this.TotalItems : uint32" Usage="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult.TotalItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Total count of the items.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,167 @@
+﻿<Type Name="ToolAuthentication" FullName="Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication">
+  <TypeSignature Language="C#" Value="public class ToolAuthentication" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolAuthentication extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolAuthentication" />
+  <TypeSignature Language="F#" Value="type ToolAuthentication = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+    <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class for XboxLive developer account authentication.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetDevTokenSilentlyAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string&gt; GetDevTokenSilentlyAsync (string serviceConfigurationId, System.Collections.Generic.IEnumerable&lt;string&gt; sandboxes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string&gt; GetDevTokenSilentlyAsync(string serviceConfigurationId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; sandboxes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.GetDevTokenSilentlyAsync(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDevTokenSilentlyAsync (serviceConfigurationId As String, sandboxes As IEnumerable(Of String)) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="static member GetDevTokenSilentlyAsync : string * seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.GetDevTokenSilentlyAsync (serviceConfigurationId, sandboxes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication/&lt;GetDevTokenSilentlyAsync&gt;d__9))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sandboxes" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The target service configuration ID (SCID) for the eToken,  when empty, the token won't have access to a particular service configure</param>
+        <param name="sandboxes">The target sandbox list for the eToken, when empty, the token won't have any access to a particular sandbox</param>
+        <summary>
+            Attempt to fetch a developer eToken without triggering any UI.
+            </summary>
+        <returns>Developer eToken for specific serviceConfigurationId and sandbox</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDevTokenSilentlyAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string&gt; GetDevTokenSilentlyAsync (string serviceConfigurationId, string sandbox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string&gt; GetDevTokenSilentlyAsync(string serviceConfigurationId, string sandbox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.GetDevTokenSilentlyAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDevTokenSilentlyAsync (serviceConfigurationId As String, sandbox As String) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="static member GetDevTokenSilentlyAsync : string * string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.GetDevTokenSilentlyAsync (serviceConfigurationId, sandbox)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication/&lt;GetDevTokenSilentlyAsync&gt;d__8))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sandbox" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The target service configuration ID (SCID) for the eToken, when empty, the token won't have access to a particular service configure</param>
+        <param name="sandbox">The target sandbox for the eToken, when empty, the token won't have any access to a particular sandbox</param>
+        <summary>
+            Attempt to fetch a developer eToken without triggering any UI.
+            </summary>
+        <returns>Developer eToken for specific serviceConfigurationId and sandbox</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadLastSignedInUser">
+      <MemberSignature Language="C#" Value="public static Microsoft.Xbox.Services.DevTools.Authentication.DevAccount LoadLastSignedInUser ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Xbox.Services.DevTools.Authentication.DevAccount LoadLastSignedInUser() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.LoadLastSignedInUser" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadLastSignedInUser () As DevAccount" />
+      <MemberSignature Language="F#" Value="static member LoadLastSignedInUser : unit -&gt; Microsoft.Xbox.Services.DevTools.Authentication.DevAccount" Usage="Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.LoadLastSignedInUser " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.DevTools.Authentication.DevAccount</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Load the last signed in user from local cache and set as sign in info.
+            </summary>
+        <returns>The DevAccount object represents the last signed in dev account</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.Authentication.DevAccount&gt; SignInAsync (Microsoft.Xbox.Services.DevTools.Authentication.DevAccountSource accountSource, string userName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Xbox.Services.DevTools.Authentication.DevAccount&gt; SignInAsync(valuetype Microsoft.Xbox.Services.DevTools.Authentication.DevAccountSource accountSource, string userName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.SignInAsync(Microsoft.Xbox.Services.DevTools.Authentication.DevAccountSource,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SignInAsync (accountSource As DevAccountSource, userName As String) As Task(Of DevAccount)" />
+      <MemberSignature Language="F#" Value="static member SignInAsync : Microsoft.Xbox.Services.DevTools.Authentication.DevAccountSource * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.Authentication.DevAccount&gt;" Usage="Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.SignInAsync (accountSource, userName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication/&lt;SignInAsync&gt;d__10))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.Authentication.DevAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="accountSource" Type="Microsoft.Xbox.Services.DevTools.Authentication.DevAccountSource" />
+        <Parameter Name="userName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="accountSource">The account source where the developer account was registered.</param>
+        <param name="userName">The user name of the account, optional.</param>
+        <summary>
+            Attempt to sign in developer account, UI will be triggered if necessary 
+            </summary>
+        <returns>DevAccount object contains developer account info.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOut">
+      <MemberSignature Language="C#" Value="public static void SignOut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SignOut() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.SignOut" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SignOut ()" />
+      <MemberSignature Language="F#" Value="static member SignOut : unit -&gt; unit" Usage="Microsoft.Xbox.Services.DevTools.Authentication.ToolAuthentication.SignOut " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Sign out the current signed in developer account.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
