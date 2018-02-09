@@ -1,0 +1,208 @@
+﻿<Type Name="TitleStorage" FullName="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage">
+  <TypeSignature Language="C#" Value="public class TitleStorage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TitleStorage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage" />
+  <TypeSignature Language="VB.NET" Value="Public Class TitleStorage" />
+  <TypeSignature Language="F#" Value="type TitleStorage = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+    <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class for TitleStorage tooling functionality.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeleteGlobalStorageBlobAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteGlobalStorageBlobAsync (string serviceConfigurationId, string sandbox, string pathAndFileName, Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType blobType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteGlobalStorageBlobAsync(string serviceConfigurationId, string sandbox, string pathAndFileName, valuetype Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType blobType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.DeleteGlobalStorageBlobAsync(System.String,System.String,System.String,Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeleteGlobalStorageBlobAsync (serviceConfigurationId As String, sandbox As String, pathAndFileName As String, blobType As TitleStorageBlobType) As Task" />
+      <MemberSignature Language="F#" Value="static member DeleteGlobalStorageBlobAsync : string * string * string * Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.DeleteGlobalStorageBlobAsync (serviceConfigurationId, sandbox, pathAndFileName, blobType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage/&lt;DeleteGlobalStorageBlobAsync&gt;d__6))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sandbox" Type="System.String" />
+        <Parameter Name="pathAndFileName" Type="System.String" />
+        <Parameter Name="blobType" Type="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="sandbox">The target sandbox id for title storage</param>
+        <param name="pathAndFileName">Blob path and file name to store on XboxLive service.(example: "foo\bar\blob.txt")</param>
+        <param name="blobType">Title storage blob type</param>
+        <summary>
+            Deletes a blob from title storage.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadGlobalStorageBlobAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;byte[]&gt; DownloadGlobalStorageBlobAsync (string serviceConfigurationId, string sandbox, string pathAndFileName, Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType blobType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;unsigned int8[]&gt; DownloadGlobalStorageBlobAsync(string serviceConfigurationId, string sandbox, string pathAndFileName, valuetype Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType blobType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.DownloadGlobalStorageBlobAsync(System.String,System.String,System.String,Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DownloadGlobalStorageBlobAsync (serviceConfigurationId As String, sandbox As String, pathAndFileName As String, blobType As TitleStorageBlobType) As Task(Of Byte())" />
+      <MemberSignature Language="F#" Value="static member DownloadGlobalStorageBlobAsync : string * string * string * Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.DownloadGlobalStorageBlobAsync (serviceConfigurationId, sandbox, pathAndFileName, blobType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage/&lt;DownloadGlobalStorageBlobAsync&gt;d__5))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Byte[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sandbox" Type="System.String" />
+        <Parameter Name="pathAndFileName" Type="System.String" />
+        <Parameter Name="blobType" Type="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="sandbox">The target sandbox id for title storage</param>
+        <param name="pathAndFileName">Blob path and file name to store on XboxLive service.(example: "foo\bar\blob.txt")</param>
+        <param name="blobType">Title storage blob type</param>
+        <summary>
+            Downloads blob data from title storage.
+            </summary>
+        <returns>The byte array contains downloaded blob data</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalStorageBlobMetaDataAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult&gt; GetGlobalStorageBlobMetaDataAsync (string serviceConfigurationId, string sandbox, string path, uint maxItems, uint skipItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult&gt; GetGlobalStorageBlobMetaDataAsync(string serviceConfigurationId, string sandbox, string path, unsigned int32 maxItems, unsigned int32 skipItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.GetGlobalStorageBlobMetaDataAsync(System.String,System.String,System.String,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetGlobalStorageBlobMetaDataAsync (serviceConfigurationId As String, sandbox As String, path As String, maxItems As UInteger, skipItems As UInteger) As Task(Of TitleStorageBlobMetadataResult)" />
+      <MemberSignature Language="F#" Value="static member GetGlobalStorageBlobMetaDataAsync : string * string * string * uint32 * uint32 -&gt; System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult&gt;" Usage="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.GetGlobalStorageBlobMetaDataAsync (serviceConfigurationId, sandbox, path, maxItems, skipItems)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage/&lt;GetGlobalStorageBlobMetaDataAsync&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobMetadataResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sandbox" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="maxItems" Type="System.UInt32" />
+        <Parameter Name="skipItems" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="sandbox">The target sandbox id for title storage</param>
+        <param name="path">The root path to enumerate.  Results will be for blobs contained in this path and all subpaths.(Optional)</param>
+        <param name="maxItems">The maximum number of items to return.</param>
+        <param name="skipItems">The number of items to skip before returning results.</param>
+        <summary>
+            Gets a list of blob metadata objects under a given path for the title global storage.
+            </summary>
+        <returns>TitleStorageBlobMetadataResult object contains result collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalStorageQuotaAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.GlobalStorageQuotaInfo&gt; GetGlobalStorageQuotaAsync (string serviceConfigurationId, string sandbox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Xbox.Services.DevTools.TitleStorage.GlobalStorageQuotaInfo&gt; GetGlobalStorageQuotaAsync(string serviceConfigurationId, string sandbox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.GetGlobalStorageQuotaAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetGlobalStorageQuotaAsync (serviceConfigurationId As String, sandbox As String) As Task(Of GlobalStorageQuotaInfo)" />
+      <MemberSignature Language="F#" Value="static member GetGlobalStorageQuotaAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.GlobalStorageQuotaInfo&gt;" Usage="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.GetGlobalStorageQuotaAsync (serviceConfigurationId, sandbox)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage/&lt;GetGlobalStorageQuotaAsync&gt;d__2))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Xbox.Services.DevTools.TitleStorage.GlobalStorageQuotaInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sandbox" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="sandbox">The target sandbox id for title storage</param>
+        <summary>
+            Get title global storage quota information.
+            </summary>
+        <returns>GlobalStorageQuotaInfo object contains quota info</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadGlobalStorageBlobAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task UploadGlobalStorageBlobAsync (string serviceConfigurationId, string sandbox, string pathAndFileName, Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType blobType, byte[] blobBytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task UploadGlobalStorageBlobAsync(string serviceConfigurationId, string sandbox, string pathAndFileName, valuetype Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType blobType, unsigned int8[] blobBytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.UploadGlobalStorageBlobAsync(System.String,System.String,System.String,Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UploadGlobalStorageBlobAsync (serviceConfigurationId As String, sandbox As String, pathAndFileName As String, blobType As TitleStorageBlobType, blobBytes As Byte()) As Task" />
+      <MemberSignature Language="F#" Value="static member UploadGlobalStorageBlobAsync : string * string * string * Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType * byte[] -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage.UploadGlobalStorageBlobAsync (serviceConfigurationId, sandbox, pathAndFileName, blobType, blobBytes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorage/&lt;UploadGlobalStorageBlobAsync&gt;d__4))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceConfigurationId" Type="System.String" />
+        <Parameter Name="sandbox" Type="System.String" />
+        <Parameter Name="pathAndFileName" Type="System.String" />
+        <Parameter Name="blobType" Type="Microsoft.Xbox.Services.DevTools.TitleStorage.TitleStorageBlobType" />
+        <Parameter Name="blobBytes" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="serviceConfigurationId">The service configuration ID (SCID) of the title</param>
+        <param name="sandbox">The target sandbox id for title storage</param>
+        <param name="pathAndFileName">Blob path and file name to store on XboxLive service.(example: "foo\bar\blob.txt")</param>
+        <param name="blobType">Title storage blob type</param>
+        <param name="blobBytes">The byte array contains the blob data to upload.</param>
+        <summary>
+            Uploads blob data to title storage.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

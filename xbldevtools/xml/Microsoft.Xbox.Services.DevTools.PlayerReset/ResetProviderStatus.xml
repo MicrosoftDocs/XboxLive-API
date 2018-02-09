@@ -1,0 +1,169 @@
+﻿<Type Name="ResetProviderStatus" FullName="Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus">
+  <TypeSignature Language="C#" Value="public enum ResetProviderStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResetProviderStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ResetProviderStatus" />
+  <TypeSignature Language="F#" Value="type ResetProviderStatus = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+    <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Status of provider status of player reset job.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abandoned">
+      <MemberSignature Language="C#" Value="Abandoned" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus Abandoned = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.Abandoned" />
+      <MemberSignature Language="VB.NET" Value="Abandoned" />
+      <MemberSignature Language="F#" Value="Abandoned = 6" Usage="Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.Abandoned" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            The job was abandoned.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedError">
+      <MemberSignature Language="C#" Value="CompletedError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus CompletedError = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.CompletedError" />
+      <MemberSignature Language="VB.NET" Value="CompletedError" />
+      <MemberSignature Language="F#" Value="CompletedError = 5" Usage="Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.CompletedError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            The job has finished but some error.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedPartialSuccess">
+      <MemberSignature Language="C#" Value="CompletedPartialSuccess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus CompletedPartialSuccess = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.CompletedPartialSuccess" />
+      <MemberSignature Language="VB.NET" Value="CompletedPartialSuccess" />
+      <MemberSignature Language="F#" Value="CompletedPartialSuccess = 4" Usage="Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.CompletedPartialSuccess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            The job was partial success.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedSuccess">
+      <MemberSignature Language="C#" Value="CompletedSuccess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus CompletedSuccess = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.CompletedSuccess" />
+      <MemberSignature Language="VB.NET" Value="CompletedSuccess" />
+      <MemberSignature Language="F#" Value="CompletedSuccess = 3" Usage="Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.CompletedSuccess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            The job has successfully completed.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InProgress">
+      <MemberSignature Language="C#" Value="InProgress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus InProgress = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.InProgress" />
+      <MemberSignature Language="VB.NET" Value="InProgress" />
+      <MemberSignature Language="F#" Value="InProgress = 2" Usage="Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.InProgress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Resetting is in progress.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotStarted">
+      <MemberSignature Language="C#" Value="NotStarted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus NotStarted = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.NotStarted" />
+      <MemberSignature Language="VB.NET" Value="NotStarted" />
+      <MemberSignature Language="F#" Value="NotStarted = 1" Usage="Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.NotStarted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The job has not started.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Queued">
+      <MemberSignature Language="C#" Value="Queued" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus Queued = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.Queued" />
+      <MemberSignature Language="VB.NET" Value="Queued" />
+      <MemberSignature Language="F#" Value="Queued = 0" Usage="Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus.Queued" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Xbox.Services.DevTools</AssemblyName>
+        <AssemblyVersion>2018.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Xbox.Services.DevTools.PlayerReset.ResetProviderStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            The job has queued.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
