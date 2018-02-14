@@ -50,7 +50,9 @@
       "author": "KevinAsgari",
       "ms.author": "kevinasg",
       "ms.prod": "windows",
-      "ms.technology": "winrt-reference"
+      "ms.technology": "winrt-reference",
+      "breadcrumb_path": "/xboxlive_dotnet_toc/breadcrumb/toc.json",
+      "extendBreadcrumb": true
     },
     "fileMetadata": {},
     "template": [],
