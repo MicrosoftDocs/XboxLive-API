@@ -1,2 +1,6 @@
 - name: Docs
   tocHref: /
+  topicHref: /
+  - name: .NET API Browser
+    href: /dotnet/api
+    topicHref: /dotnet/api/
