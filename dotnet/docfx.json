@@ -52,6 +52,7 @@
       "ms.prod": "windows",
       "ms.technology": "winrt-reference",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
+      "ms.topic": "managed-reference",
       "extendBreadcrumb": true
     },
     "fileMetadata": {},
