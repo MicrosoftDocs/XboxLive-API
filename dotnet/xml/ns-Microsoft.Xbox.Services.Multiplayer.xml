@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.Multiplayer">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains classes and enumerations for managing a multiplayer session.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

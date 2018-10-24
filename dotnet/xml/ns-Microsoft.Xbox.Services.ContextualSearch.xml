@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.ContextualSearch">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains classes and enumerations that perform contextual search on Xbox Live.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>
