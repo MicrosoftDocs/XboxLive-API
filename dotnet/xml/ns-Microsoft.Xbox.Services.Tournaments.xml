@@ -1,5 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.Tournaments">
   <Docs>
-    <summary>Contains classes anbd enumerations for managing Xbox Live tournaments.</remarks>
+    <summary>Contains classes anbd enumerations for managing Xbox Live tournaments.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Namespace>
