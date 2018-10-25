@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.Presence">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains classes and enumerations that let you retrieve information about player's online presence on Xbox Live.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

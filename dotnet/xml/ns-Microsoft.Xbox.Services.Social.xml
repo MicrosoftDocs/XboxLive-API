@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.Social">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains classes and enumerations that let you retrieve information about a player's Xbox Live profile.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

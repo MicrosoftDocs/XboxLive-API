@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.Achievements">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains classes and enumerations that let you retrieve information about player achievements from Xbox Live.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>
