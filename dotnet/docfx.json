@@ -50,6 +50,7 @@
       "author": "KevinAsgari",
       "ms.author": "kevinasg",
       "ms.prod": "xboxlive",
+      "ms.devlang": "dotnet",
       "ms.technology": "winrt-reference",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "ms.topic": "managed-reference",
