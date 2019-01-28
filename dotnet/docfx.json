@@ -49,7 +49,7 @@
       "apiPlatform": "dotnet",
       "author": "KevinAsgari",
       "ms.author": "kevinasg",
-      "ms.prod": "windows",
+      "ms.prod": "xboxlive",
       "ms.technology": "winrt-reference",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "ms.topic": "managed-reference",
