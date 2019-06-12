@@ -13,15 +13,17 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "NetEnum": "Content",
+        "NetDelegate": "Content",
+        "NetNamespace": "Content",
+        "NetMember": "Content",
+        "NetType": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "base_path": "dotnet",
       "site_name": "Docs",
-      "customized_template_paths": [
-        "_dependentPackages/memberpage.plugins/content"
-      ],
       "customized_tasks": {
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
@@ -36,7 +38,8 @@
         "SourceXmlFolder": "xbldevtools/xml",
         "OutputYamlFolder": "xbldevtools/api",
         "Flatten": true,
-        "id": "xbldevtools"
+        "id": "xbldevtools",
+        "SDPMode": true
       },
       "SplitTOC": [
         "xbldevtools/api/xbldevtools/toc.yml"
@@ -58,13 +61,15 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "NetEnum": "Content",
+        "NetDelegate": "Content",
+        "NetNamespace": "Content",
+        "NetMember": "Content",
+        "NetType": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
-      "customized_template_paths": [
-        "_dependentPackages/memberpage.plugins/content"
-      ],
       "customized_tasks": {
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
@@ -79,10 +84,11 @@
         "SourceXmlFolder": "dotnet/xml",
         "OutputYamlFolder": "dotnet/api",
         "Flatten": true,
-        "id": "dotnet-template"
+        "id": "XboxLive-API",
+        "SDPMode": true
       },
       "SplitTOC": [
-        "dotnet/api/dotnet-template/toc.yml"
+        "dotnet/api/XboxLive-API/toc.yml"
       ],
       "DiffFolder": [
         "dotnet/api"
@@ -111,34 +117,18 @@
   "need_generate_intellisense": false,
   "dependent_packages": [
     {
-      "id": "Microsoft.DocAsCode.ECMA2Yaml",
-      "nuget_feed": "https://www.myget.org/F/op/api/v2",
-      "path_to_root": "_dependentPackages/ECMA2Yaml",
-      "target_framework": "net45",
-      "version": "latest"
-    },
-    {
-      "id": "memberpage.plugins",
-      "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
-      "path_to_root": "_dependentPackages/memberpage.plugins",
-      "target_framework": "net45",
-      "version": "latest"
-    },
-    {
-      "id": "Microsoft.OpenPublishing.CommonPlugins",
-      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
       "path_to_root": "_dependentPackages/CommonPlugins",
+      "target_framework": "net45",
+      "version": "latest-prerelease",
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
+      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2"
+    },
+    {
+      "id": "Microsoft.DocAsCode.ECMA2Yaml",
+      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
+      "path_to_root": "_dependentPackages/ECMA2Yaml",
       "target_framework": "net45",
       "version": "latest-prerelease"
     }
-  ],
-  "ECMA2Yaml": {
-    "SourceXmlFolder": "dotnet/xml",
-    "OutputYamlFolder": "dotnet/api",
-    "Flatten": true
-  },
-  "DiffFolder": [
-    "dotnet/api"
-  ],
-  "SplitTOC": "dotnet/api/toc.yml"
+  ]
 }
