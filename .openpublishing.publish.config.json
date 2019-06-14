@@ -79,10 +79,10 @@
         "SourceXmlFolder": "dotnet/xml",
         "OutputYamlFolder": "dotnet/api",
         "Flatten": true,
-        "id": "dotnet-template"
+        "id": "XboxLive-API"
       },
       "SplitTOC": [
-        "dotnet/api/dotnet-template/toc.yml"
+        "dotnet/api/XboxLive-API/toc.yml"
       ],
       "DiffFolder": [
         "dotnet/api"
