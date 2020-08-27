@@ -42,8 +42,6 @@
         "api/overwrites/**/*.md"
       ]
     },
-    "xref": [
-    ],
     "externalReference": [],
     "globalMetadata": {
       "apiPlatform": "dotnet",
