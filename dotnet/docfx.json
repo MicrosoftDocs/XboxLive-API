@@ -56,6 +56,7 @@
     },
     "fileMetadata": {},
     "template": [],
+    "isCanonicalUrlWithMoniker": true,
     "dest": "xboxlive-dotnet-api",
     "lruSize": 0
   }
