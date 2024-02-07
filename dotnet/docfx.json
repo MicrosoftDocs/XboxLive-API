@@ -47,9 +47,8 @@
       "apiPlatform": "dotnet",
       "author": "KevinAsgari",
       "ms.author": "kevinasg",
-      "ms.prod": "windows",
+      "ms.service": "windows",
       "products": ["https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"],
-      "ms.technology": "winrt-reference",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "ms.topic": "managed-reference",
       "extendBreadcrumb": true
