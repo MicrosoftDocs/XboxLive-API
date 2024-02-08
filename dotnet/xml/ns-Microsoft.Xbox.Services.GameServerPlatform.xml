@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.GameServerPlatform">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Classes for managing and referencing server resources allocated by the game server platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

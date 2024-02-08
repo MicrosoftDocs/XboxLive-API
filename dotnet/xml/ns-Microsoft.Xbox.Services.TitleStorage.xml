@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.TitleStorage">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Classes for handling title data in the cloud.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

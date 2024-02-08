@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.Events">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains classes that let you send an in-game event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

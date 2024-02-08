@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains classes, enumerations, and namespaces used for accessing the Xbox Live service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

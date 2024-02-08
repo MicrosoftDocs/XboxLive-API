@@ -217,7 +217,7 @@ The EventArgs object should be cast to a JoinLobbyCompletedEventArgs object for 
       <MemberValue>16</MemberValue>
       <Docs>
         <summary>
-Indicates that the LeaveGame() operation has completed. After recieving this event,
+Indicates that the LeaveGame() operation has completed. After receiving this event,
 the game session object will be set to null. You can join another game by calling
 JoinGame() or JoinGameFromLobby().
 </summary>

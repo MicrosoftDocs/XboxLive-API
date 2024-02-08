@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.System">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Configuration information for Xbox Live service objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>
