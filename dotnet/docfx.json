@@ -57,6 +57,7 @@
     "template": [],
     "isCanonicalUrlWithMoniker": true,
     "dest": "xboxlive-dotnet-api",
+    "isCanonicalUrlWithMoniker": true,
     "lruSize": 0
   }
 }
