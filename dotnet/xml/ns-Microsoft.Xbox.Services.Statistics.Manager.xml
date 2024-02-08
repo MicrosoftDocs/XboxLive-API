@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.Statistics.Manager">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains classes and enumerations for more easily managing user statistic scenarios.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

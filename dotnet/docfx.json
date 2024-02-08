@@ -42,21 +42,20 @@
         "api/overwrites/**/*.md"
       ]
     },
-    "xref": [
-    ],
     "externalReference": [],
     "globalMetadata": {
       "apiPlatform": "dotnet",
       "author": "KevinAsgari",
       "ms.author": "kevinasg",
-      "ms.prod": "windows",
-      "ms.technology": "winrt-reference",
+      "ms.service": "windows",
+      "products": ["https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"],
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "ms.topic": "managed-reference",
       "extendBreadcrumb": true
     },
     "fileMetadata": {},
     "template": [],
+    "isCanonicalUrlWithMoniker": true,
     "dest": "xboxlive-dotnet-api",
     "isCanonicalUrlWithMoniker": true,
     "lruSize": 0

@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.Clubs">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains classes and enumerations that let you create and configure xbox live clubs from within a game.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

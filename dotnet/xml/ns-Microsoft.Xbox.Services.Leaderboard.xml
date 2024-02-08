@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Xbox.Services.Leaderboard">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains classes and enumerations that let you retrieve leaderboard information from Xbox Live.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>
